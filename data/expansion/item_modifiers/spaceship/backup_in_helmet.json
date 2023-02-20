@@ -1,0 +1,16 @@
+[
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "exp.spaceship_backup"
+      },
+      "ops": [
+        {
+          "source": "data",
+          "target": "Inventory[{Slot:103b}].spaceship_store[{}]",
+          "op": "replace"
+        }
+      ]
+    }
+  ]
