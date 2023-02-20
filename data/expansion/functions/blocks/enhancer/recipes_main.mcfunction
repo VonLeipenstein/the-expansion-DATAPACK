@@ -1,0 +1,2 @@
+# equipment recipes(modules and colours)
+execute if block ~ ~ ~ minecraft:dropper[facing=up,triggered=false]{Items:[{Slot:5b,id:"minecraft:carrot_on_a_stick",tag:{space_jetpack:1b},Count:1b}]} run function expansion:blocks/enhancer/equipment_recipes

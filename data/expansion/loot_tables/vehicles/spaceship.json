@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_vehicles_spaceship_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Unbreakable:1b,exp_vehicle:1b,fuel_lvl:1,exp_spaceship:1b,expansion_coas:1b,onhead:0b,CustomModelData:1012002}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_vehicles_spaceship_tip1"
+                },
+                {
+                  "translate": "exp_vehicles_spaceship_tip2"
+                },
+                {
+                  "translate": "exp_vehicles_spaceship_tip3"
+                },
+                {
+                  "translate": "exp_vehicles_spaceship_tip4"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.knockback_resistance",
+                  "name": "generic.knockback_resistance",
+                  "amount": 1,
+                  "operation": "addition",
+                  "slot": "head"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

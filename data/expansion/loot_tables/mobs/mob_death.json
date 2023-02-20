@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jigsaw",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Invulnerable:1b,death_item:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

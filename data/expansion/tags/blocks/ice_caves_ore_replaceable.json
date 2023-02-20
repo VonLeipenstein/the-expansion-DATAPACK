@@ -1,0 +1,9 @@
+{
+          "replace": false,
+          "values": [
+                    "minecraft:blue_ice",
+                    "minecraft:packed_ice",
+                    "minecraft:deepslate",
+                    "minecraft:blackstone"
+          ]
+}

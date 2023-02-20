@@ -1,0 +1,2 @@
+execute as @p[predicate=!expansion:nbt_checks/armor/space_equipment/equipment] run function expansion:utilities/error_messages/equip_space_equipment
+execute unless score @s exp.timer_2 matches 0.. if entity @p[predicate=expansion:nbt_checks/armor/space_equipment/equipment] run scoreboard players set @s exp.timer_2 230

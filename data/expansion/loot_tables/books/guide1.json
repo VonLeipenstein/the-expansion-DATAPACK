@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{exp_guide1:1b,pages:[],title:\"Guide To Space Travel\",author:Von_Leipenstein}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "exp_guide1_name",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

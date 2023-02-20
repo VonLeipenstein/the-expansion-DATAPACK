@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:basalt",
+    "minecraft:smooth_basalt",
+    "minecraft:diorite",
+    "minecraft:smooth_quartz",
+    "minecraft:calcite"
+  ]
+}

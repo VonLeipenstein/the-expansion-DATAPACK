@@ -1,0 +1,51 @@
+{
+  "name": "expansion:jupiter/station/outer_bridge",
+  "fallback": "expansion:jupiter/station/dead_end",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "expansion:jupiter/station/outer_bridge_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "expansion:jupiter/station/outer_bridge_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "expansion:jupiter/station/dead_end_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "expansion:jupiter/station/dead_end_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "expansion:jupiter/station/dead_end_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "effects": {
+    "sky_color": 0,
+    "foliage_color": 12510378,
+    "grass_color": 15070173,
+    "fog_color": 0,
+    "water_color": 6394,
+    "water_fog_color": 6394,
+    "particle": {
+      "options": {
+        "type": "minecraft:end_rod"
+      },
+      "probability": 0.01
+    }
+  },
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [],
+    "monster": []
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "temperature": 0.5,
+  "temperature_modifier": "none",
+  "downfall": 0.5,
+  "has_precipitation": false,
+  "spawn_costs": {}
+}

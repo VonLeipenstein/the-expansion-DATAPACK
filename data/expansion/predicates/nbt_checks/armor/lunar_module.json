@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "items": [
+          "minecraft:carrot_on_a_stick"
+        ],
+        "nbt": "{onhead:1b,lunar_module:1b}"
+      }
+    }
+  }
+}

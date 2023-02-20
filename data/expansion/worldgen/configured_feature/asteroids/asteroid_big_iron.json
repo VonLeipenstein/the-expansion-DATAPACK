@@ -1,0 +1,93 @@
+{
+    "type": "minecraft:geode",
+    "config": {
+        "min_gen_offset": -24,
+        "max_gen_offset": 24,
+        "noise_multiplier": 0.03,
+        "invalid_blocks_threshold": 1000,
+        "outer_wall_distance": {
+            "type": "minecraft:uniform",
+            "value": {
+                "min_inclusive": 0,
+                "max_inclusive": 0
+            }
+        },
+        "distribution_points": {
+            "type": "minecraft:uniform",
+            "value": {
+                "min_inclusive": 5,
+                "max_inclusive": 5
+            }
+        },
+        "point_offset": {
+            "type": "minecraft:uniform",
+            "value": {
+                "min_inclusive": 1,
+                "max_inclusive": 2
+            }
+        },
+        "use_potential_placements_chance": 0,
+        "use_alternate_layer0_chance": 0.1,
+        "placements_require_layer0_alternate": false,
+        "blocks": {
+            "outer_layer_provider": {
+                "state": {
+                    "Name": "minecraft:stone"
+                },
+                "type": "minecraft:simple_state_provider"
+            },
+            "inner_placements": [
+                {
+                    "Properties": {
+                        "waterlogged": "false",
+                        "facing": "up"
+                    },
+                    "Name": "minecraft:air"
+                }
+            ],
+            "cannot_replace": "#minecraft:features_cannot_replace",
+            "invalid_blocks": "#minecraft:geode_invalid_blocks",
+            "filling_provider": {
+                "state": {
+                    "Name": "minecraft:deepslate",
+                    "Properties": {
+                        "axis": "x"
+                    }
+                },
+                "type": "minecraft:simple_state_provider"
+            },
+            "inner_layer_provider": {
+                "state": {
+                    "Name": "minecraft:deepslate",
+                    "Properties": {
+                        "axis": "x"
+                    }
+                },
+                "type": "minecraft:simple_state_provider"
+            },
+            "alternate_inner_layer_provider": {
+                "state": {
+                    "Name": "minecraft:deepslate_iron_ore"
+                },
+                "type": "minecraft:simple_state_provider"
+            },
+            "middle_layer_provider": {
+                "state": {
+                    "Name": "minecraft:stone"
+                },
+                "type": "minecraft:simple_state_provider"
+            }
+        },
+        "layers": {
+            "filling": 0.1,
+            "inner_layer": 1.2,
+            "middle_layer": 3.2,
+            "outer_layer": 4.2
+        },
+        "crack": {
+            "generate_crack_chance": 0,
+            "base_crack_size": 0,
+            "crack_point_offset": 0
+        }
+    }
+}

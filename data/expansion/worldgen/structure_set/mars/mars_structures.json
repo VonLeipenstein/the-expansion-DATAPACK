@@ -1,0 +1,27 @@
+{
+    "structures": [
+      {
+        "structure": "expansion:mars/cannon",
+        "weight": 3
+      },
+      {
+        "structure": "expansion:mars/warbase",
+        "weight": 2
+      },
+      {
+        "structure": "expansion:mars/robot",
+        "weight": 3
+      },
+      {
+        "structure": "expansion:mars/railship",
+        "weight": 2
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "spread_type": "triangular",
+      "spacing": 30,
+      "separation": 18,
+      "salt": 858616258
+    }
+  }

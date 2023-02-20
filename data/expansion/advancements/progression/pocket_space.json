@@ -1,0 +1,36 @@
+{
+    "parent": "expansion:progression/jupiter_station",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_pocketspace_title"
+        },
+        "description": {
+            "translate": "exp_advancement_pocketspace_desc"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:1012204}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:goto_storage": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "dimension": "expansion:storage"
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:goto_storage"
+        ]
+    ]
+}

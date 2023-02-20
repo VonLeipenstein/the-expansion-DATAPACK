@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "down",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "blocks": [
+        "minecraft:air",
+        "minecraft:black_concrete"
+      ]
+    },
+    "prioritize_tip": true,
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 1,
+            "max_inclusive": 1
+          }
+        },
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:end_rod",
+            "Properties": {
+              "facing": "down"
+            }
+          }
+        }
+      },
+      {
+        "height": {
+          "type": "minecraft:weighted_list",
+          "distribution": [
+            {
+              "weight": 3,
+              "data": 1
+            },
+            {
+              "weight": 0,
+              "data": 0
+            }
+          ]
+        },
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:tinted_glass"
+          }
+        }
+      }
+    ]
+  }
+}

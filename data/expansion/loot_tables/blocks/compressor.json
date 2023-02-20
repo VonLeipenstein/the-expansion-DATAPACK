@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_blocks_compressor_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Unbreakable:1b,exp_block:1b,expansion_coas:1b,compressor:1b,CustomModelData:1012304}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_blocks_compressor_tip1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+          "replace": false,
+          "values": [
+                    "minecraft:red_terracotta",
+                    "minecraft:calcite",
+                    "minecraft:deepslate",
+                    "minecraft:blackstone"
+          ]
+}

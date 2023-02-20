@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:basalt_columns",
+  "config": {
+    "reach": {
+      "type": "minecraft:constant",
+      "value": 2
+    },
+    "height": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 3,
+        "max_inclusive": 5
+      }
+    }
+  }
+}

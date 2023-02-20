@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:deepslate",
+    "minecraft:blackstone",
+    "minecraft:red_terracotta",
+    "minecraft:calcite",
+    "minecraft:packed_ice"
+  ]
+}

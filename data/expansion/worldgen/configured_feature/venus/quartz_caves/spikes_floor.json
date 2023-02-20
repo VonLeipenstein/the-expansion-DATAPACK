@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "up",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "blocks": "minecraft:air"
+    },
+    "prioritize_tip": false,
+    "layers": [
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 1,
+            "max_inclusive": 3
+          }
+        },
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:calcite"
+          }
+        }
+      },
+      {
+        "height": {
+          "type": "minecraft:uniform",
+          "value": {
+            "min_inclusive": 1,
+            "max_inclusive": 3
+          }
+        },
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:diorite_wall",
+            "Properties": {
+              "east": "none",
+              "north": "none",
+              "south": "none",
+              "up": "true",
+              "waterlogged": "false",
+              "west": "none"
+            }
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:end_rod",
+            "Properties": {
+              "facing": "up"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "expansion:mars/warbase/walls/wall_decoration_out",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "expansion:mars/warbase/walls/wall_cannon",
+        "processors": "expansion:degrade_warbase",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "expansion:mars/warbase/walls/wall_antenna",
+        "processors": "expansion:degrade_warbase",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

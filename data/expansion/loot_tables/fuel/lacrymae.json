@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_fuel_lacrymae_name",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{lacrymae:1b,from_extractor:1b,CustomPotionEffects:[{Id:1b,Amplifier:4b,Duration:600,ShowParticles:0b},{Id:3b,Amplifier:4b,Duration:600,ShowParticles:0b},{Id:5b,Amplifier:4b,Duration:600,ShowParticles:0b},{Id:7b,Amplifier:1b,Duration:1,ShowParticles:0b},{Id:9b,Amplifier:4b,Duration:1200,ShowParticles:0b},{Id:19b,Amplifier:1b,Duration:1200,ShowParticles:0b},{Id:24b,Amplifier:4b,Duration:1200,ShowParticles:0b}],CustomPotionColor:0,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_fuel_lacrymae_tip1"
+                },
+                {
+                  "translate": "exp_fuel_lacrymae_tip2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

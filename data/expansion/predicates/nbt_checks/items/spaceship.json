@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "nbt": "{Item:{id:\"minecraft:carrot_on_a_stick\",tag:{exp_spaceship:1b,onhead:1b}}}"
+    }
+}

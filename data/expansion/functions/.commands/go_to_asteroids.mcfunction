@@ -1,0 +1,1 @@
+execute in expansion:asteroids run tp @s ~ 128 ~

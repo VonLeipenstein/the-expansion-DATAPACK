@@ -1,0 +1,42 @@
+{
+  "type": "expansion:transporter_utility",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "expansion:storage",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "expansion:storage/storage_basic",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              1.2
+            ],
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

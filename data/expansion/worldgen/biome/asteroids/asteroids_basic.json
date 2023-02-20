@@ -1,0 +1,43 @@
+{
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 1024,
+    "water_color": 6394,
+    "water_fog_color": 6394
+  },
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [],
+    "monster": []
+  },
+  "carvers": {},
+  "features": [
+    [
+      "expansion:asteroids/asteroid_big",
+      "expansion:asteroids/asteroid_small"
+    ],
+    [
+      "expansion:asteroids/asteroid_hollow_ice"
+    ],
+    [],
+    [],
+    [],
+    [
+      "expansion:asteroids/space_trash_bottom",
+      "expansion:asteroids/space_trash_middle",
+      "expansion:asteroids/space_trash_top"
+    ],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "has_precipitation": false,
+  "spawn_costs": {}
+}

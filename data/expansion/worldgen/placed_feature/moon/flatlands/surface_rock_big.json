@@ -1,0 +1,18 @@
+{
+    "feature": "expansion:moon/flatlands/surface_rock_big",
+    "placement": [
+        {
+            "type": "minecraft:noise_based_count",
+            "noise_factor": 100,
+            "noise_to_count_ratio": 2,
+            "noise_offset": -0.6
+        },
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        }
+    ]
+}

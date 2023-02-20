@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:add",
+      "argument1": 10.0,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:blend_alpha"
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": -10.0,
+          "argument2": {
+            "type": "minecraft:spline",
+            "spline": {
+              "coordinate": "expansion:europa/continents",
+              "points": [
+                {
+                  "location": -0.19,
+                  "derivative": 0,
+                  "value": {
+                    "coordinate": "expansion:europa/erosion",
+                    "points": [
+                      {
+                        "location": -0.6,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:europa/ridges",
+                          "points": [
+                            {
+                              "location": -0.14448336252189153,
+                              "derivative": 0,
+                              "value": 6.57092819614711
+                            },
+                            {
+                              "location": 0.14448336252189153,
+                              "derivative": 0,
+                              "value": 6.57092819614711
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "location": 0.06,
+                  "derivative": 0,
+                  "value": {
+                    "coordinate": "expansion:europa/erosion",
+                    "points": [
+                      {
+                        "location": -0.6,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:europa/ridges",
+                          "points": [
+                            {
+                              "location": -0.14448336252189153,
+                              "derivative": 0,
+                              "value": 6.781085814360771
+                            },
+                            {
+                              "location": 0.14448336252189153,
+                              "derivative": 0,
+                              "value": 6.781085814360771
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

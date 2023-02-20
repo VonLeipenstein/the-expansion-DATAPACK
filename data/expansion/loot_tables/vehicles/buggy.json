@@ -1,0 +1,47 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_vehicles_buggy_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{moon_buggy:1b,exp_vehicle:1b,fuel_lvl:1,expansion_coas:1b,CustomModelData:1012008}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_vehicles_buggy_tip1"
+                },
+                {
+                  "translate": "exp_vehicles_buggy_tip2"
+                },
+                {
+                  "translate": "exp_vehicles_buggy_tip3"
+                },
+                {
+                  "translate": "exp_vehicles_buggy_tip4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "expansion:venus/rover_start_pool",
+  "biomes": "#expansion:venus_structures/rover",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "size": 7,
+  "start_height": {
+    "absolute": 0
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "max_distance_from_center": 100,
+  "use_expansion_hack": false
+}

@@ -1,0 +1,79 @@
+{
+  "parent": "expansion:progression/event_horizon",
+  "display": {
+    "title": {
+      "translate": "exp_advancement_tradeship_title"
+    },
+    "description": {
+      "translate": "exp_advancement_tradeship_desc"
+    },
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:1012002}"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "expansion:trade_cockpit": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:jigsaw"
+          ],
+          "nbt": "{spaceship_cockpit:1b}"
+        }
+      }
+    },
+    "expansion:trade_engines": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:jigsaw"
+          ],
+          "nbt": "{spaceship_engines:1b}"
+        }
+      }
+    },
+    "expansion:trade_left_wing": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:jigsaw"
+          ],
+          "nbt": "{spaceship_left_wing:1b}"
+        }
+      }
+    },
+    "expansion:trade_right_wing": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:jigsaw"
+          ],
+          "nbt": "{spaceship_right_wing:1b}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "expansion:trade_cockpit"
+    ],
+    [
+      "expansion:trade_engines"
+    ],
+    [
+      "expansion:trade_left_wing"
+    ],
+    [
+      "expansion:trade_right_wing"
+    ]
+  ]
+}

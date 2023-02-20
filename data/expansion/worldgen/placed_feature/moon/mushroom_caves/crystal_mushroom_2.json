@@ -1,0 +1,43 @@
+{
+  "feature": "expansion:moon/mushroom_caves/crystal_mushroom_2",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 8
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 0
+        },
+        "max_inclusive": {
+          "absolute": 56
+        }
+      }
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "down",
+      "max_steps": 20,
+      "target_condition": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "blocks": [
+          "minecraft:calcite",
+          "minecraft:light_blue_terracotta",
+          "minecraft:blackstone",
+          "minecraft:smooth_basalt"
+        ]
+      }
+    }
+  ]
+}

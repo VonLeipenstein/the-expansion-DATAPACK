@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "expansion:jupiter/station_start_pool",
+  "biomes": "#expansion:jupiter_structures/fleet",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "size": 7,
+  "start_height": {
+    "absolute": 128
+  },
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

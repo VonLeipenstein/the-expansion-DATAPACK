@@ -1,0 +1,28 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_hoe",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{steel_hoe:1b,crafting_amount:1b,ExpDamage:0b,ExpDurability:1200,CustomModelData:1012000}"
+              },
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "text": "Steel Hoe",
+                  "italic": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

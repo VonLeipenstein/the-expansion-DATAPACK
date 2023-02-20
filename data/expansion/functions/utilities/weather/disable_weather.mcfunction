@@ -1,0 +1,2 @@
+weather clear
+gamerule doWeatherCycle false

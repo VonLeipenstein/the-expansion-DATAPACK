@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "position": {
+              "y": {
+                "min": 500,
+                "max": 750
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "expansion:global/transitions/transitions_main"
+  }
+}

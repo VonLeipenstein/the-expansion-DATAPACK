@@ -1,0 +1,642 @@
+{
+  "type": "expansion:moon",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "expansion:moon",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "expansion:moon/crater",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.5750000000000001
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/crater_slopes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.5750000000000001,
+              -0.5
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/crater_rim",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.5,
+              -0.35000000000000003
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/crater_slopes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.35000000000000003,
+              -0.3
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/flatlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.3,
+              0.3
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/crater_slopes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.3,
+              0.35000000000000003
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/crater_rim",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.35000000000000003,
+              0.5
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/crater_slopes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.5,
+              0.5750000000000001
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/crater",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.5750000000000001,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/mushroom_caves",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.3
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              0.1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/cave",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -0.3,
+              0.3
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              0.4
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/ice_lake_caves",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              0.1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/cave",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.35000000000000003
+            ],
+            "erosion": [
+              0.1,
+              0.4
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/starsky_caves",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.5
+            ],
+            "erosion": [
+              0.4,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/cave",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.5,
+              0.5
+            ],
+            "erosion": [
+              0.4,
+              0.7000000000000001
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/starsky_caves",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.5,
+              1
+            ],
+            "erosion": [
+              0.7000000000000001,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/mushroom_caves",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.3
+            ],
+            "continentalness": [
+              -0.35000000000000003,
+              0.35000000000000003
+            ],
+            "erosion": [
+              0.1,
+              0.4
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/ice_lake_caves",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "continentalness": [
+              -0.35000000000000003,
+              0.35000000000000003
+            ],
+            "erosion": [
+              0.1,
+              0.4
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/cave",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.35000000000000003,
+              0.5
+            ],
+            "erosion": [
+              0.1,
+              0.7000000000000001
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/cave",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.5,
+              1
+            ],
+            "erosion": [
+              0.1,
+              0.4
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:moon/starsky_caves",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.5,
+              1
+            ],
+            "erosion": [
+              0.4,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

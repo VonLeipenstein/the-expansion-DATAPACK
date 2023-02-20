@@ -1,0 +1,48 @@
+{
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [],
+    "monster": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [
+      "expansion:venus/pancakes/basalt_columns"
+    ],
+    [
+      "expansion:venus/pancakes/diamonds",
+      "expansion:venus/pancakes/emeralds",
+      "expansion:venus/pancakes/lapis"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "effects": {
+    "sky_color": 16764692,
+    "foliage_color": 10387789,
+    "grass_color": 9470285,
+    "fog_color": 15434240,
+    "water_color": 5404,
+    "water_fog_color": 146514,
+    "particle": {
+      "options": {
+        "type": "minecraft:ash"
+      },
+      "probability": 0.1
+    }
+  },
+  "has_precipitation": false,
+  "temperature": 0.5,
+  "downfall": 0.5
+}

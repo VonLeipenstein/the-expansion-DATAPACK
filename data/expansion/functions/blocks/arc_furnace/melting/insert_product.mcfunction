@@ -1,0 +1,1 @@
+item replace block ~ ~ ~ container.7 from entity @s armor.feet

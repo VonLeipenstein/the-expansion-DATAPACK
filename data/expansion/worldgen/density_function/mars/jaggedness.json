@@ -1,0 +1,596 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:add",
+      "argument1": 0.0,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:blend_alpha"
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": -0.0,
+          "argument2": {
+            "type": "minecraft:spline",
+            "spline": {
+              "coordinate": "expansion:mars/continents",
+              "points": [
+                {
+                  "location": -0.2,
+                  "derivative": 0,
+                  "value": {
+                    "coordinate": "expansion:mars/erosion",
+                    "points": [
+                      {
+                        "location": -1,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:mars/ridges",
+                          "points": [
+                            {
+                              "location": -1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -1.0859305431878896,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.0859305431878896,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "location": -0.225,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:mars/ridges",
+                          "points": [
+                            {
+                              "location": -2.557880676758682,
+                              "derivative": 0,
+                              "value": 0.1379137611428285
+                            },
+                            {
+                              "location": -2.119768477292965,
+                              "derivative": 0,
+                              "value": -0.04730897346421582
+                            },
+                            {
+                              "location": -1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -1.0859305431878896,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.0859305431878896,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 2.119768477292965,
+                              "derivative": 0,
+                              "value": -0.04730897346421582
+                            },
+                            {
+                              "location": 2.557880676758682,
+                              "derivative": 0,
+                              "value": 0.1379137611428285
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "location": 0,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:mars/ridges",
+                          "points": [
+                            {
+                              "location": -2.557880676758682,
+                              "derivative": 0,
+                              "value": 0.2667358212956595
+                            },
+                            {
+                              "location": -2.119768477292965,
+                              "derivative": 0,
+                              "value": -0.09149919331518684
+                            },
+                            {
+                              "location": -1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -1.0859305431878896,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.0859305431878896,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 2.119768477292965,
+                              "derivative": 0,
+                              "value": -0.09149919331518684
+                            },
+                            {
+                              "location": 2.557880676758682,
+                              "derivative": 0,
+                              "value": 0.2667358212956595
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "location": 0.375,
+                  "derivative": 0,
+                  "value": {
+                    "coordinate": "expansion:mars/erosion",
+                    "points": [
+                      {
+                        "location": -1,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:mars/ridges",
+                          "points": [
+                            {
+                              "location": -1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.7119323241317899,
+                              "derivative": 0,
+                              "value": 0.9927772830711388
+                            },
+                            {
+                              "location": -0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.7119323241317899,
+                              "derivative": 0,
+                              "value": 0.6049272781240724
+                            },
+                            {
+                              "location": 0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "location": -0.225,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:mars/ridges",
+                          "points": [
+                            {
+                              "location": -2.0129118432769366,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -1.9060552092609084,
+                              "derivative": 0,
+                              "value": 0.32638326319397465
+                            },
+                            {
+                              "location": -1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.7119323241317899,
+                              "derivative": 0,
+                              "value": 0.5592414526649512
+                            },
+                            {
+                              "location": -0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.7119323241317899,
+                              "derivative": 0,
+                              "value": 0.34076163460170533
+                            },
+                            {
+                              "location": 0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.9060552092609084,
+                              "derivative": 0,
+                              "value": 0.32638326319397465
+                            },
+                            {
+                              "location": 2.0129118432769366,
+                              "derivative": 0,
+                              "value": 0
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "location": 0,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:mars/ridges",
+                          "points": [
+                            {
+                              "location": -2.0129118432769366,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -1.9060552092609084,
+                              "derivative": 0,
+                              "value": 0.32638326319397465
+                            },
+                            {
+                              "location": -1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.9060552092609084,
+                              "derivative": 0,
+                              "value": 0.32638326319397465
+                            },
+                            {
+                              "location": 2.0129118432769366,
+                              "derivative": 0,
+                              "value": 0
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "location": 1,
+                  "derivative": 0,
+                  "value": {
+                    "coordinate": "expansion:mars/erosion",
+                    "points": [
+                      {
+                        "location": -1,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:mars/ridges",
+                          "points": [
+                            {
+                              "location": -1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.7119323241317899,
+                              "derivative": 0,
+                              "value": 0.9927772830711388
+                            },
+                            {
+                              "location": -0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.7119323241317899,
+                              "derivative": 0,
+                              "value": 0.5000494706638963
+                            },
+                            {
+                              "location": 0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "location": -0.225,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:mars/ridges",
+                          "points": [
+                            {
+                              "location": -2.5258236865538732,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -2.5151380231522706,
+                              "derivative": 0,
+                              "value": 0.36008447384942877
+                            },
+                            {
+                              "location": -1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.7119323241317899,
+                              "derivative": 0,
+                              "value": 0.5592414526649512
+                            },
+                            {
+                              "location": -0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.7119323241317899,
+                              "derivative": 0,
+                              "value": 0.2816829082886848
+                            },
+                            {
+                              "location": 0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 2.5151380231522706,
+                              "derivative": 0,
+                              "value": 0.36008447384942877
+                            },
+                            {
+                              "location": 2.5258236865538732,
+                              "derivative": 0,
+                              "value": 0
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "location": 0,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:mars/ridges",
+                          "points": [
+                            {
+                              "location": -2.5258236865538732,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -2.5151380231522706,
+                              "derivative": 0,
+                              "value": 0.36008447384942877
+                            },
+                            {
+                              "location": -1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": -0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.3379341050756901,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 0.8481745325022261,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 1.556099732858415,
+                              "derivative": 0,
+                              "value": 0
+                            },
+                            {
+                              "location": 2.5151380231522706,
+                              "derivative": 0,
+                              "value": 0.36008447384942877
+                            },
+                            {
+                              "location": 2.5258236865538732,
+                              "derivative": 0,
+                              "value": 0
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

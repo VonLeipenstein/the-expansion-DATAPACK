@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+        "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+                {
+                    "data": {
+                        "Name": "minecraft:cobbled_deepslate",
+                        "Properties": {
+                            "axis": "Y"
+                        }
+                    },
+                    "weight": 3
+                },
+                {
+                    "data": {
+                        "Name": "minecraft:cobbled_deepslate_slab",
+                        "Properties": {
+                            "waterlogged": "false",
+                            "type": "bottom"
+                        }
+                    },
+                    "weight": 1
+                }
+            ]
+        }
+    }
+}

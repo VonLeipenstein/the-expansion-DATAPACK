@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "The Zwaluw Skin",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{spaceship_skin:1b,zwaluw_skin:1b,CustomModelData:1012022}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_vehicles_spaceship_name"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

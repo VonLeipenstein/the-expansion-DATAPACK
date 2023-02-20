@@ -1,0 +1,1 @@
+execute unless entity @a[predicate=expansion:dimension/space] unless entity @a[predicate=expansion:dimension/moon] unless entity @a[predicate=expansion:dimension/mars] unless entity @a[predicate=expansion:dimension/asteroids] unless entity @a[predicate=expansion:dimension/europa] run function expansion:utilities/weather/enable_weather

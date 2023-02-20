@@ -1,0 +1,46 @@
+{
+  "parent": "expansion:progression/venus",
+  "display": {
+    "title": {
+      "translate": "exp_advancement_warmingmod_title"
+    },
+    "description": {
+      "translate": "exp_advancement_warmingmod_desc"
+    },
+    "icon": {
+      "item": "minecraft:jigsaw",
+      "nbt": "{CustomModelData:123483}"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "expansion:warming_module": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "expansion:venus/venus_flatlands",
+            "dimension": "expansion:venus",
+            "structure": "expansion:venus/rover"
+          }
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:jigsaw"
+            ],
+            "nbt": "{warming_module:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "expansion:warming_module"
+    ]
+  ]
+}

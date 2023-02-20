@@ -1,0 +1,21 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:barrier",
+		"minecraft:bedrock",
+		"minecraft:structure_block",
+		"minecraft:command_block",
+		"minecraft:end_gateway",
+		"minecraft:end_portal",
+		"minecraft:end_portal_frame",
+		"minecraft:anvil",
+		"minecraft:enchanting_table",
+		"minecraft:obsidian",
+		"minecraft:ender_chest",
+		"minecraft:bubble_column",
+		"minecraft:lava",
+		"minecraft:water",
+		"minecraft:dragon_egg",
+		"minecraft:end_stone"
+	]
+}

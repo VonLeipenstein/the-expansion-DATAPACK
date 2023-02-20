@@ -1,0 +1,1 @@
+execute if entity @s[tag=exp.quercus_mob] run function expansion:mobs/quercus/quercus_tick

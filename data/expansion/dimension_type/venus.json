@@ -1,0 +1,26 @@
+{
+  "effects": "minecraft:the_nether",
+  "coordinate_scale": 1,
+  "has_skylight": true,
+  "has_ceiling": false,
+  "ultrawarm": true,
+  "natural": true,
+  "min_y": -64,
+  "height": 384,
+  "piglin_safe": true,
+  "bed_works": true,
+  "fixed_time": 8000,
+  "respawn_anchor_works": true,
+  "has_raids": false,
+  "logical_height": 384,
+  "infiniburn": "#minecraft:infiniburn_nether",
+  "ambient_light": 0,
+  "monster_spawn_block_light_limit": 0,
+  "monster_spawn_light_level": {
+    "type": "minecraft:uniform",
+    "value": {
+      "min_inclusive": 0,
+      "max_inclusive": 7
+    }
+  }
+}

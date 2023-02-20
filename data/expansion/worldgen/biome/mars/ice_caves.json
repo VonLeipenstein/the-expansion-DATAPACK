@@ -1,0 +1,59 @@
+{
+  "effects": {
+    "sky_color": 16757596,
+    "foliage_color": 2933548,
+    "grass_color": 1955613,
+    "fog_color": 16748564,
+    "water_color": 6394,
+    "water_fog_color": 6394,
+    "particle": {
+      "options": {
+        "type": "minecraft:snowflake"
+      },
+      "probability": 0.03
+    }
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "expansion:mars/ores/redstone",
+      "expansion:mars/ores/redstone_upper",
+      "expansion:mars/ores/iron",
+      "expansion:mars/ores/iron_upper",
+      "expansion:mars/ores/diamond",
+      "expansion:mars/ores/emerald",
+      "expansion:mars/ores/cryonite_ore_extra",
+      "expansion:mars/cave/blackstone_blobs",
+      "expansion:mars/cave/basalt_blobs"
+    ],
+    [
+      "expansion:mars/ores/cryonite_ore"
+    ],
+    [
+      "expansion:mars/ice_caves/floor_rocks",
+      "expansion:mars/ice_caves/icicles",
+      "expansion:mars/ice_caves/obsidian_lighting"
+    ]
+  ],
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [],
+    "monster": []
+  },
+  "spawn_costs": {},
+  "temperature": 0.5,
+  "temperature_modifier": "none",
+  "downfall": 0.5,
+  "has_precipitation": false
+}

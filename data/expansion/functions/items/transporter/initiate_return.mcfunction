@@ -1,0 +1,2 @@
+execute at @s run summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["exp.room_return"],ArmorItems:[{"id":"minecraft:stick",Count:1b},{},{},{}]}
+execute as @e[type=armor_stand,tag=exp.room_return,limit=1,sort=nearest] run function expansion:items/transporter/return

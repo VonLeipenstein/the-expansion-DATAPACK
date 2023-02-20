@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ICI",
+        "BFB",
+        "RRR"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:copper_ingot"
+        },
+        "C": {
+            "item": "minecraft:coal"
+        },
+        "B": {
+            "item": "minecraft:iron_block"
+        },
+        "R": {
+            "item": "minecraft:brick"
+        },
+        "F": {
+            "item": "minecraft:blast_furnace"
+        }
+        
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

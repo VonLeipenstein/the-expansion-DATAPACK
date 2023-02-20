@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_tools_cryoblaster_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Unbreakable:1b,exp_tool:1b,cryoblaster:1b,expansion_coas:1b,CustomModelData:1012202}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_tools_cryoblaster_tip1"
+                },
+                {
+                  "translate": "exp_tools_cryoblaster_tip2"
+                },
+                {
+                  "translate": "exp_tools_cryoblaster_tip3"
+                },
+                {
+                  "translate": "exp_tools_cryoblaster_tip4"
+                },
+                {
+                  "translate": "exp_tools_cryoblaster_tip5"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=exp.position_new] at @s run function expansion:items/transporter/return_particles

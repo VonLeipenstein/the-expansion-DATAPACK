@@ -1,0 +1,7 @@
+function expansion:utilities/raycast/placement/initiate
+execute as @e[tag=exp.ray,distance=..5,limit=1,sort=nearest] at @s align xyz positioned ~.5 ~ ~.5 run summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["exp.transporter","exp.room_origin"]}
+execute at @e[type=armor_stand,tag=exp.transporter,limit=1,sort=nearest] run summon villager ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,Tags:["exp.transporter_rcdet"],PersistenceRequired:1b,ActiveEffects:[{Id:11,Amplifier:5b,Duration:99999999,ShowParticles:0b},{Id:14,Amplifier:1b,Duration:99999999,ShowParticles:0b}]}
+execute at @e[tag=exp.ray,distance=..5,limit=1,sort=nearest] run item replace entity @e[type=armor_stand,tag=exp.transporter,limit=1,sort=nearest] armor.head from entity @s weapon.mainhand
+execute at @e[tag=exp.ray,distance=..5,limit=1,sort=nearest] run data modify entity @e[type=armor_stand,tag=exp.room_return,limit=1,sort=nearest] ArmorItems[0].tag.transport_pos set from entity @s ArmorItems[3].tag.transport_pos
+execute at @e[tag=exp.ray,distance=..5,limit=1,sort=nearest] if entity @e[type=minecraft:armor_stand,tag=exp.transporter,distance=..1] run item replace entity @s weapon.mainhand with minecraft:air
+execute as @e[tag=exp.ray,limit=1,sort=nearest] run kill @s

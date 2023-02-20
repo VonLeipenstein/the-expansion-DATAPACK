@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 5,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "expansion:venus_stone_replaceable"
+        },
+        "state": {
+          "Name": "minecraft:iron_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "expansion:venus_deepslate_replaceable"
+        },
+        "state": {
+          "Name": "minecraft:deepslate_iron_ore"
+        }
+      }
+    ]
+  }
+}

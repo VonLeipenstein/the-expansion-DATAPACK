@@ -1,0 +1,18 @@
+{
+    "feature": "expansion:europa/frozen_wastes/penitentes_300",
+    "placement": [
+        {
+            "type": "minecraft:noise_based_count",
+            "noise_to_count_ratio": 20,
+            "noise_factor": 300,
+            "noise_offset": -0.65
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "MOTION_BLOCKING"
+        },
+        {
+            "type": "minecraft:in_square"
+        }
+    ]
+}

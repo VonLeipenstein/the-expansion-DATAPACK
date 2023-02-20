@@ -1,0 +1,20 @@
+This license describes how The Expansion and its code may or may not be used. 
+Only the developer of this code is allowed to change this license in any way whenever they desire so.
+
+
+PERMITTED USES
+=====================
+
+	- You are PERMITTED to use any version of The Expansion for whatever personal purpose, as long as all other conditions in this license are respected.
+	
+	- You are PERMITTED to use any version of The Expansion on any Minecraft server, public or private, as long as all other conditions in this license are respected.
+	
+	- You are PERMITTED to use any personally modified version of The Expansion on any Minecraft server, public or private, as long as all other conditions in this license are respected.
+	
+
+
+PROHIBITED USES
+=====================
+	- You are FORBIDDEN to reupload, republish, or redistribute any assets from The Expansion.
+
+	- You are FORBIDDEN to reupload, republish, or redistribute any code from The Expansion.

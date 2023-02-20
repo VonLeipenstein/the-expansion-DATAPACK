@@ -1,0 +1,10 @@
+execute if entity @s[y_rotation=-135.1..-45] run summon minecraft:armor_stand ^ ^ ^ {Silent:1b,Small:1b,Invisible:1b,DisabledSlots:2039583,Invulnerable:1b,Rotation:[0f,0f],Tags:["exp.moon_buggy","exp.vehicle","smithed.block"],Passengers:[{id:"minecraft:interaction",Tags:["exp.buggy_rcdet","smithed.block"],height:0.5f,response:1b}]}
+execute if entity @s[y_rotation=45.1..135] run summon minecraft:armor_stand ^ ^ ^ {Silent:1b,Small:1b,Invisible:1b,DisabledSlots:2039583,Invulnerable:1b,Rotation:[180f,0f],Tags:["exp.moon_buggy","exp.vehicle","smithed.block"],Passengers:[{id:"minecraft:interaction",Tags:["exp.buggy_rcdet","smithed.block"],height:0.5f,response:1b}]}
+execute if entity @s[y_rotation=-45..45] run summon minecraft:armor_stand ^ ^ ^ {Silent:1b,Small:1b,Invisible:1b,DisabledSlots:2039583,Invulnerable:1b,Rotation:[90f,0f],Tags:["exp.moon_buggy","exp.vehicle","smithed.block"],Passengers:[{id:"minecraft:interaction",Tags:["exp.buggy_rcdet","smithed.block"],height:0.5f,response:1b}]}
+execute if entity @s[y_rotation=135.1..-135] run summon minecraft:armor_stand ^ ^ ^ {Silent:1b,Small:1b,Invisible:1b,DisabledSlots:2039583,Invulnerable:1b,Rotation:[270f,0f],Tags:["exp.moon_buggy","exp.vehicle","smithed.block"],Passengers:[{id:"minecraft:interaction",Tags:["exp.buggy_rcdet","smithed.block"],height:0.5f,response:1b}]}
+
+item replace entity @e[type=armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] armor.head from entity @s weapon.mainhand
+execute store result score @e[type=armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] exp.fuel_level run data get entity @s SelectedItem.tag.fuel_lvl
+
+scoreboard players set @e[type=armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] exp.fuel_max 129
+scoreboard players set @e[type=armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] exp.timer_1 1012007

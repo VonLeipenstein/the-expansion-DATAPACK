@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "expansion:nbt_checks/root_vehicle/buggy"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "expansion:nbt_checks/root_vehicle/spaceship"
+      }
+    ]
+  }
+  

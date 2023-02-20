@@ -1,0 +1,68 @@
+{
+  "effects": {
+    "sky_color": 0,
+    "foliage_color": 1424116,
+    "grass_color": 1424116,
+    "fog_color": 512,
+    "water_color": 6394,
+    "water_fog_color": 6394,
+    "particle": {
+      "options": {
+        "type": "minecraft:mycelium"
+      },
+      "probability": 0.2
+    }
+  },
+  "carvers": {},
+  "features": [
+    [],
+    [
+      "expansion:moon/mushroom_caves/floor_crystals"
+    ],
+    [
+      "expansion:moon/mushroom_caves/crystal_mushroom_1",
+      "expansion:moon/mushroom_caves/crystal_mushroom_2",
+      "expansion:moon/mushroom_caves/crystal_mushroom_3",
+      "expansion:moon/mushroom_caves/crystal_mushroom_4"
+    ],
+    [],
+    [
+      "expansion:moon/mushroom_caves/crystal_cluster_up",
+      "expansion:moon/mushroom_caves/crystal_cluster_down",
+      "expansion:moon/mushroom_caves/crystal_cluster_north",
+      "expansion:moon/mushroom_caves/crystal_cluster_east",
+      "expansion:moon/mushroom_caves/crystal_cluster_south",
+      "expansion:moon/mushroom_caves/crystal_cluster_west"
+    ],
+    [
+      "expansion:moon/mushroom_caves/blue_lighting",
+      "expansion:moon/mushroom_caves/lanterns"
+    ],
+    [],
+    [
+      "expansion:moon/ores/titanium",
+      "expansion:moon/ores/titanium_lower",
+      "expansion:moon/ores/copper",
+      "expansion:moon/ores/diamond",
+      "expansion:moon/ores/iron",
+      "expansion:moon/ores/gold",
+      "expansion:moon/ores/lapis"
+    ],
+    [],
+    [],
+    []
+  ],
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [],
+    "monster": []
+  },
+  "spawn_costs": {},
+  "temperature": 0.5,
+  "temperature_modifier": "none",
+  "downfall": 0.5,
+  "has_precipitation": false
+}

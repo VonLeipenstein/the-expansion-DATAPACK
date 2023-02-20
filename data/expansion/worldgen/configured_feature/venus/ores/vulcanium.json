@@ -1,0 +1,211 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "tries": 30,
+            "xz_spread": 2,
+            "y_spread": 2,
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:waxed_exposed_cut_copper_slab",
+                      "Properties": {
+                        "waterlogged": "true",
+                        "type": "double"
+                      }
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:environment_scan",
+                  "direction_of_search": "down",
+                  "max_steps": 5,
+                  "target_condition": {
+                    "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": [
+                    "minecraft:basalt",
+                    "minecraft:smooth_basalt",
+                    "minecraft:blackstone",
+                    "minecraft:waxed_exposed_cut_copper_slab",
+                    "minecraft:magma_block",
+                    "minecraft:deepslate",
+                    "minecraft:diorite",
+                    "minecraft:smooth_quartz",
+                    "minecraft:calcite"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "blocks": "minecraft:air"
+              }
+            ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "tries": 50,
+            "xz_spread": 1,
+            "y_spread": 6,
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:waxed_exposed_cut_copper_slab",
+                      "Properties": {
+                        "waterlogged": "true",
+                        "type": "double"
+                      }
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:environment_scan",
+                  "direction_of_search": "down",
+                  "max_steps": 5,
+                  "target_condition": {
+                    "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": [
+                    "minecraft:basalt",
+                    "minecraft:smooth_basalt",
+                    "minecraft:blackstone",
+                    "minecraft:waxed_exposed_cut_copper_slab",
+                    "minecraft:magma_block",
+                    "minecraft:deepslate",
+                    "minecraft:diorite",
+                    "minecraft:smooth_quartz",
+                    "minecraft:calcite"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "blocks": "minecraft:air"
+              }
+            ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "minecraft:random_patch",
+          "config": {
+            "tries": 16,
+            "xz_spread": 0,
+            "y_spread": 8,
+            "feature": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:simple_state_provider",
+                    "state": {
+                      "Name": "minecraft:waxed_exposed_cut_copper_slab",
+                      "Properties": {
+                        "waterlogged": "true",
+                        "type": "double"
+                      }
+                    }
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:environment_scan",
+                  "direction_of_search": "down",
+                  "max_steps": 8,
+                  "target_condition": {
+                    "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": [
+                    "minecraft:basalt",
+                    "minecraft:smooth_basalt",
+                    "minecraft:blackstone",
+                    "minecraft:waxed_exposed_cut_copper_slab",
+                    "minecraft:magma_block",
+                    "minecraft:deepslate",
+                    "minecraft:diorite",
+                    "minecraft:smooth_quartz",
+                    "minecraft:calcite"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  0,
+                  0
+                ],
+                "blocks": "minecraft:air"
+              }
+            ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

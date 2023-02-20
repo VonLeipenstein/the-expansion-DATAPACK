@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{exp_guide2:1b,pages:[],title:\"Guide To Interplanetary Travel\",author:Von_Leipenstein}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "exp_guide2_name",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

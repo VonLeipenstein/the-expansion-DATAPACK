@@ -1,0 +1,32 @@
+kill @e[type=minecraft:experience_orb,distance=..5]
+
+kill @e[type=armor_stand,tag=exp.planetarium_sun,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_mercury,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_venus,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_earth,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_mars,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_jupiter,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_saturn,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_uranus,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_neptune,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_pluto,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_moon,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_asteroids,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.planetarium_europa,distance=..11,limit=1,sort=nearest]
+
+kill @e[type=armor_stand,tag=exp.mini_sun,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_mercury,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_venus,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_earth,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_mars,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_jupiter,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_saturn,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_uranus,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_neptune,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_pluto,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_moon,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_asteroids,distance=..11,limit=1,sort=nearest]
+kill @e[type=armor_stand,tag=exp.mini_europa,distance=..11,limit=1,sort=nearest]
+
+execute as @p unless entity @s[gamemode=creative] run loot spawn ~ ~-2.5 ~ loot expansion:blocks/planetarium
+kill @s

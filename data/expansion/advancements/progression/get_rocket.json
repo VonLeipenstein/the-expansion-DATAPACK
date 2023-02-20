@@ -1,0 +1,39 @@
+{
+    "parent": "expansion:progression/get_steel",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_getrocket_title"
+        },
+        "description": {
+            "translate": "exp_advancement_getrocket_desc"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:1012000}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_rocket": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:carrot_on_a_stick"
+                        ],
+                        "nbt": "{exp_rocket:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_rocket"
+        ]
+    ]
+}

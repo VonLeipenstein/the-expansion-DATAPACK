@@ -1,0 +1,114 @@
+{
+  "parent": "expansion:progression/trade_spaceship",
+  "display": {
+    "title": {
+      "translate": "exp_advancement_allplanet_title"
+    },
+    "description": {
+      "translate": "exp_advancement_allplanet_desc"
+    },
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;1971029150,236406777,-1594983674,-1164605743],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQ2NTVkNzk1MjNmOGM3MzQ1ZDQ1MGVkOWZhY2VhNzA4ZWRlZjJlNzA4N2UwYzQ2MzE3N2E3ODQ0ODBmNDkzZSJ9fX0=\"}]}}}"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "expansion:goto_earth": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld"
+          }
+        }
+      }
+    },
+    "expansion:goto_moon": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "expansion:moon"
+          }
+        }
+      }
+    },
+    "expansion:goto_mars": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "expansion:mars"
+          }
+        }
+      }
+    },
+    "expansion:goto_venus": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "expansion:venus"
+          }
+        }
+      }
+    },
+    "expansion:goto_jupiter": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "expansion:jupiter"
+          }
+        }
+      }
+    },
+    "expansion:goto_europa": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "expansion:europa"
+          }
+        }
+      }
+    },
+    "expansion:goto_asteroids": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "expansion:asteroids"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "expansion:goto_earth"
+    ],
+    [
+      "expansion:goto_moon"
+    ],
+    [
+      "expansion:goto_mars"
+    ],
+    [
+      "expansion:goto_venus"
+    ],
+    [
+      "expansion:goto_jupiter"
+    ],
+    [
+      "expansion:goto_europa"
+    ],
+    [
+      "expansion:goto_asteroids"
+    ]
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "temperature": -1,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "temperature_modifier": "frozen",
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 1536,
+    "water_color": 8821154,
+    "water_fog_color": 8821154,
+    "grass_color": 16777215,
+    "foliage_color": 16777215
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [
+      "expansion:europa/basalt_depths/basalt"
+    ],
+    [
+      "expansion:europa/caves/ice_blobs",
+      "expansion:europa/ores/copper",
+      "expansion:europa/ores/diamond",
+      "expansion:europa/ores/iron",
+      "expansion:europa/ores/gold",
+      "expansion:europa/ores/lapis",
+      "expansion:europa/ores/emerald"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ]
+}

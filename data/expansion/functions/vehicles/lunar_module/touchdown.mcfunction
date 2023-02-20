@@ -1,0 +1,2 @@
+summon villager ~ ~1.5 ~0.7 {NoGravity:1b,Silent:1b,NoAI:1b,Tags:["exp.lunar_villager","smithed.block"],PersistenceRequired:1b,ActiveEffects:[{Id:11,Amplifier:5b,Duration:99999999,ShowParticles:0b},{Id:14,Amplifier:1b,Duration:99999999,ShowParticles:0b}]}
+execute on passengers on passengers run tag @s remove exp.landing_moon

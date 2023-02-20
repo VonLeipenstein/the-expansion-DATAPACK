@@ -1,0 +1,55 @@
+{
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [],
+    "monster": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [
+      "expansion:venus/quartz_caves/ceiling_crystals",
+      "expansion:venus/quartz_caves/floor_crystals"
+    ],
+    [
+      "expansion:venus/quartz_caves/spikes_floor",
+      "expansion:venus/quartz_caves/spikes_ceiling"
+    ],
+    [
+      "expansion:venus/ores/diamond",
+      "expansion:venus/ores/emerald",
+      "expansion:venus/ores/lapis",
+      "expansion:venus/ores/iron",
+      "expansion:venus/ores/vulcanium_extra",
+      "expansion:venus/ores/vulcanium_scattered"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "effects": {
+    "sky_color": 16764692,
+    "foliage_color": 10387789,
+    "grass_color": 9470285,
+    "fog_color": 0,
+    "water_color": 5404,
+    "water_fog_color": 146514,
+    "particle": {
+      "options": {
+        "type": "minecraft:end_rod"
+      },
+      "probability": 0.01
+    }
+  },
+  "has_precipitation": false,
+  "temperature": 0.5,
+  "downfall": 0.5
+}

@@ -1,0 +1,23 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "dimension": "expansion:moon"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "dimension": "expansion:mars"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "dimension": "expansion:europa"
+        }
+      }
+    ]
+  }

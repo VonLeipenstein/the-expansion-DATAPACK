@@ -1,0 +1,15 @@
+{
+  "name": "expansion:jupiter/station/station_bottom",
+  "fallback": "expansion:jupiter/station/station_bottom",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "expansion:jupiter/station/station_bottom",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

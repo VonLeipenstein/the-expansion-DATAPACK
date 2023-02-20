@@ -1,0 +1,52 @@
+{
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [],
+    "monster": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [
+      "expansion:venus/magma_caves/lava_delta",
+      "expansion:venus/magma_caves/lava_spring"
+    ],
+    [
+      "expansion:venus/ores/diamond",
+      "expansion:venus/ores/emerald",
+      "expansion:venus/ores/lapis",
+      "expansion:venus/ores/iron",
+      "expansion:venus/ores/vulcanium",
+      "expansion:venus/ores/vulcanium_scattered"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "effects": {
+    "sky_color": 16764692,
+    "foliage_color": 10387789,
+    "grass_color": 9470285,
+    "fog_color": 8013313,
+    "water_color": 5404,
+    "water_fog_color": 146514,
+    "particle": {
+      "options": {
+        "type": "minecraft:ash"
+      },
+      "probability": 0.1
+    }
+  },
+  "has_precipitation": false,
+  "temperature": 0.5,
+  "downfall": 0.5
+}

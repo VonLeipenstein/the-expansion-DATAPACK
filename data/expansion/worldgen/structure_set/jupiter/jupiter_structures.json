@@ -1,0 +1,23 @@
+{
+    "structures": [
+      {
+        "structure": "expansion:jupiter/station",
+        "weight": 2
+      },
+      {
+        "structure": "expansion:jupiter/wants",
+        "weight": 3
+      },
+      {
+        "structure": "expansion:jupiter/whale",
+        "weight": 2
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "spread_type": "triangular",
+      "spacing": 40,
+      "separation": 32,
+      "salt": 155285669
+    }
+  }

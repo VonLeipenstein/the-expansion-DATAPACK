@@ -1,0 +1,23 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:brain_coral",
+		"minecraft:brain_coral_fan",
+		"minecraft:bubble_coral",
+		"minecraft:bubble_coral_fan",
+		"minecraft:conduit",
+		"minecraft:fire_coral",
+		"minecraft:fire_coral_fan",
+		"minecraft:horn_coral",
+		"minecraft:horn_coral_fan",
+		"minecraft:kelp",
+		"minecraft:kelp_plant",
+		"minecraft:sea_pickle",
+		"minecraft:seagrass",
+		"minecraft:tall_seagrass",
+		"minecraft:tube_coral",
+		"minecraft:tube_coral_fan",
+		"minecraft:water",
+		"minecraft:lava"
+	]
+}

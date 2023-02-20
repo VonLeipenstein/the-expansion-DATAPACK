@@ -1,0 +1,5 @@
+execute if entity @s[tag=exp.scanning] if block ~ ~ ~ minecraft:dropper unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:0b,id:"minecraft:jigsaw",tag:{air_button:1b,gui_item:1b}}]} unless entity @e[type=armor_stand,tag=exp.oxygenator,tag=exp.scanning,distance=0.5..40,limit=1] run function expansion:blocks/oxygenator/buttons/display_air_button
+execute if block ~ ~ ~ minecraft:dropper unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:1b,id:"minecraft:jigsaw",tag:{oxygenator_button:1b,gui_item:1b}}]} unless entity @e[type=armor_stand,tag=exp.oxygenator,tag=exp.scanning,distance=0.5..40,limit=1] run function expansion:blocks/oxygenator/buttons/activate_button
+execute if block ~ ~ ~ minecraft:dropper unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:2b,id:"minecraft:jigsaw",tag:{sphere_button:1b,gui_item:1b}}]} run function expansion:blocks/oxygenator/buttons/display_sphere_button
+
+function expansion:blocks/oxygenator/gui

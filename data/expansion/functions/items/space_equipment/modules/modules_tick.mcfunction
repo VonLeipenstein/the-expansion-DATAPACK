@@ -1,0 +1,2 @@
+execute if entity @s[predicate=expansion:nbt_checks/armor/space_equipment/mobility] run function expansion:items/space_equipment/modules/mobility/mobility
+execute if entity @s[predicate=expansion:nbt_checks/armor/space_equipment/armored] run function expansion:items/space_equipment/modules/armored/protection

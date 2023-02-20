@@ -1,0 +1,23 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "dimension": "expansion:jupiter"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "dimension": "expansion:europa"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "dimension": "expansion:asteroids"
+        }
+      }
+    ]
+  }

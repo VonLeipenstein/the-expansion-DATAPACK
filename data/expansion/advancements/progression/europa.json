@@ -1,0 +1,36 @@
+{
+    "parent": "expansion:progression/jupiter",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_europa_title"
+        },
+        "description": {
+            "translate": "exp_advancement_europa_desc"
+        },
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;-1731276187,-1417851092,-1271908277,1572760271],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTMwYWZkOGY5NzE1NjYyYTg5M2MxNDRlZjg4NDhmNjlkZjc3ZDgyYmI2MGY5NGYxODJlZjgzNTA3OTI3NWVkNSJ9fX0=\"}]}}}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:goto_europa": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "dimension": "expansion:europa"
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:goto_europa"
+        ]
+    ]
+}

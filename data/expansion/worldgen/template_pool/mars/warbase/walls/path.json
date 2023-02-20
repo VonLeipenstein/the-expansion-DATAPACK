@@ -1,0 +1,15 @@
+{
+  "name": "expansion:mars/warbase/walls/living_quarters",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "expansion:mars/warbase/walls/path",
+        "processors": "expansion:degrade_warbase",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

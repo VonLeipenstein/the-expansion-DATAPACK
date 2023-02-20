@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:light_gray_concrete_powder",
+    "minecraft:blue_ice",
+    "minecraft:packed_ice",
+    "minecraft:ice",
+    "minecraft:light_blue_terracotta",
+    "minecraft:deepslate"
+  ]
+}

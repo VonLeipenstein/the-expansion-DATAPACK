@@ -1,0 +1,42 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:reference",
+              "name": "expansion:time/dark_night"
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": [
+                      "minecraft:spyglass"
+                    ]
+                  },
+                  "offhand": {
+                    "items": [
+                      "minecraft:writable_book"
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "item": {
+            "items": [
+              "minecraft:spyglass"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "expansion:items/expansion_guides/guide1/guide1_check"
+    }
+  }
+  

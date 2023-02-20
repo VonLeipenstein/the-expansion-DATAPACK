@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.1,
+        "feature": "expansion:asteroids/asteroid_small_stone"
+      },
+      {
+        "chance": 0.3,
+        "feature": "expansion:asteroids/asteroid_small_ice"
+      },
+      {
+        "chance": 0.1,
+        "feature": "expansion:asteroids/asteroid_small_iron"
+      },
+      {
+        "chance": 0.1,
+        "feature": "expansion:asteroids/asteroid_small_gold"
+      },
+      {
+        "chance": 0.1,
+        "feature": "expansion:asteroids/asteroid_small_redstone"
+      },
+      {
+        "chance": 0.1,
+        "feature": "expansion:asteroids/asteroid_small_lapis"
+      },
+      {
+        "chance": 0.1,
+        "feature": "expansion:asteroids/asteroid_small_emerald"
+      },
+      {
+        "chance": 0.1,
+        "feature": "expansion:asteroids/asteroid_small_diamond"
+      },
+      {
+        "chance": 0.1,
+        "feature": "expansion:asteroids/asteroid_small_copper"
+      }
+    ],
+    "default": "expansion:asteroids/asteroid_small_stone"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_tools_pocketspace_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Unbreakable:1b,exp_tool:1b,pocket_space:1b,room_id:0,expansion_coas:1b,CustomModelData:1012204}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "exp_tools_pocketspace_unassigned"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_tools_pocketspace_tip1"
+                },
+                {
+                  "translate": "exp_tools_pocketspace_tip2"
+                },
+                {
+                  "translate": "exp_tools_pocketspace_tip3"
+                },
+                {
+                  "translate": "exp_tools_pocketspace_tip4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

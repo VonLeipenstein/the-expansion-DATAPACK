@@ -1,0 +1,972 @@
+{
+  "type": "expansion:venus",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "expansion:venus",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "expansion:venus/volcanic_crater",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.765
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/volcanic_ridge",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -0.765,
+              -0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              -1,
+              -0.465
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -0.53,
+              -0.325
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              -0.465,
+              -0.065
+            ],
+            "humidity": [
+              -1,
+              -0.6
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -0.53,
+              -0.325
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              -0.465,
+              1
+            ],
+            "humidity": [
+              -0.6,
+              0.615
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -0.53,
+              -0.325
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              -0.465,
+              -0.065
+            ],
+            "humidity": [
+              0.615,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -0.53,
+              -0.325
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              -0.065,
+              0.065
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -0.53,
+              -0.325
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              0.065,
+              0.515
+            ],
+            "humidity": [
+              -1,
+              -0.6
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -0.53,
+              -0.325
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              0.065,
+              0.515
+            ],
+            "humidity": [
+              0.615,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -0.53,
+              -0.325
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              0.515,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -0.53,
+              -0.325
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/basalt_pit",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.3
+            ],
+            "erosion": [
+              -0.325,
+              0.325
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              -1,
+              -0.465
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              -0.465,
+              -0.065
+            ],
+            "humidity": [
+              -1,
+              -0.6
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              -0.465,
+              1
+            ],
+            "humidity": [
+              -0.6,
+              0.615
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              -0.465,
+              -0.065
+            ],
+            "humidity": [
+              0.615,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              -0.065,
+              0.065
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              0.065,
+              0.515
+            ],
+            "humidity": [
+              -1,
+              -0.6
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              0.065,
+              0.515
+            ],
+            "humidity": [
+              0.615,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              0.515,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/volcanic_ridge",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              0.53,
+              0.765
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/volcanic_crater",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              0.765,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              -1,
+              -0.465
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.3,
+              1
+            ],
+            "erosion": [
+              -0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              -0.465,
+              -0.065
+            ],
+            "humidity": [
+              -1,
+              -0.6
+            ],
+            "continentalness": [
+              -0.3,
+              1
+            ],
+            "erosion": [
+              -0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              -0.465,
+              1
+            ],
+            "humidity": [
+              -0.6,
+              0.615
+            ],
+            "continentalness": [
+              -0.3,
+              1
+            ],
+            "erosion": [
+              -0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              -0.465,
+              -0.065
+            ],
+            "humidity": [
+              0.615,
+              1
+            ],
+            "continentalness": [
+              -0.3,
+              1
+            ],
+            "erosion": [
+              -0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              -0.065,
+              0.065
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.3,
+              1
+            ],
+            "erosion": [
+              -0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              0.065,
+              0.515
+            ],
+            "humidity": [
+              -1,
+              -0.6
+            ],
+            "continentalness": [
+              -0.3,
+              1
+            ],
+            "erosion": [
+              -0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/pancakes",
+          "parameters": {
+            "temperature": [
+              0.065,
+              0.515
+            ],
+            "humidity": [
+              0.615,
+              1
+            ],
+            "continentalness": [
+              -0.3,
+              1
+            ],
+            "erosion": [
+              -0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/lava_delta_fields",
+          "parameters": {
+            "temperature": [
+              0.515,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.3,
+              1
+            ],
+            "erosion": [
+              -0.325,
+              0.53
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/magma_caves",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.17500000000000002
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/cave",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -0.17500000000000002,
+              0.35000000000000003
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:venus/quartz_caves",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              0.35000000000000003,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.2,
+              0.8
+            ],
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

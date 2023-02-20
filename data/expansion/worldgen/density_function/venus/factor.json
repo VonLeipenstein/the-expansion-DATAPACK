@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:flat_cache",
+  "argument": {
+    "type": "minecraft:cache_2d",
+    "argument": {
+      "type": "minecraft:add",
+      "argument1": 10.0,
+      "argument2": {
+        "type": "minecraft:mul",
+        "argument1": {
+          "type": "minecraft:blend_alpha"
+        },
+        "argument2": {
+          "type": "minecraft:add",
+          "argument1": -10.0,
+          "argument2": {
+            "type": "minecraft:spline",
+            "spline": {
+              "coordinate": "expansion:venus/continents",
+              "points": [
+                {
+                  "location": -0.19,
+                  "derivative": 0,
+                  "value": {
+                    "coordinate": "expansion:venus/erosion",
+                    "points": [
+                      {
+                        "location": -0.6,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:venus/ridges",
+                          "points": [
+                            {
+                              "location": -0.3889638747504234,
+                              "derivative": 0,
+                              "value": 7.14811229428848
+                            },
+                            {
+                              "location": 0.3889638747504234,
+                              "derivative": 0,
+                              "value": 7.14811229428848
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "location": -0.15,
+                  "derivative": 0,
+                  "value": {
+                    "coordinate": "expansion:venus/erosion",
+                    "points": [
+                      {
+                        "location": -0.6,
+                        "derivative": 0,
+                        "value": {
+                          "coordinate": "expansion:venus/ridges",
+                          "points": [
+                            {
+                              "location": -0.0026269702276707774,
+                              "derivative": 0,
+                              "value": 7.243432574430823
+                            },
+                            {
+                              "location": 0.0026269702276707774,
+                              "derivative": 0,
+                              "value": 7.243432574430823
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

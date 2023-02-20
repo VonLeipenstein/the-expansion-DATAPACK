@@ -1,0 +1,36 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{tank_lvl:96000,CustomModelData:1012258}"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "exp_tools_oxygentank_pressure"
+        },
+        {
+          "text": "100%",
+          "color": "aqua",
+          "bold": true
+        }
+      ],
+      {
+        "text": ""
+      },
+      {
+        "translate":"exp_lore_tooltips"
+      },
+      {
+        "translate": "exp_tools_oxygentank_tip1"
+      },
+      {
+        "translate": "exp_tools_oxygentank_tip2"
+      }
+    ],
+    "replace": true
+  }
+]
+  

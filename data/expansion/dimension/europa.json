@@ -1,0 +1,2082 @@
+{
+  "type": "expansion:europa",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "expansion:europa",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              -0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/chasm",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.33
+            ],
+            "erosion": [
+              -0.015,
+              0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0.125
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -1,
+              -0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.33,
+              -0.015
+            ],
+            "erosion": [
+              -0.015,
+              1
+            ],
+            "weirdness": [
+              -1,
+              -0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/chasm",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.015
+            ],
+            "erosion": [
+              -1,
+              -0.295
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0.125
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.315
+            ],
+            "erosion": [
+              -0.295,
+              0.29
+            ],
+            "weirdness": [
+              -1,
+              -0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/chasm",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.015
+            ],
+            "erosion": [
+              0.29,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0.125
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.015,
+              0.315
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              -0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              -0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/chasm",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              -0.015,
+              0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0.125
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -1,
+              -0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/frozen_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/snowy_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -0.1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/frozen_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/snowy_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -0.1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/frozen_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.1
+            ],
+            "continentalness": [
+              -0.33,
+              -0.015
+            ],
+            "erosion": [
+              -0.015,
+              1
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/snowy_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -0.1,
+              1
+            ],
+            "continentalness": [
+              -0.33,
+              -0.015
+            ],
+            "erosion": [
+              -0.015,
+              1
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/frozen_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.1
+            ],
+            "continentalness": [
+              -0.015,
+              0.315
+            ],
+            "erosion": [
+              -0.295,
+              0.29
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/snowy_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -0.1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.315
+            ],
+            "erosion": [
+              -0.295,
+              0.29
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/frozen_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.1
+            ],
+            "continentalness": [
+              0.015,
+              0.315
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/snowy_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -0.1,
+              1
+            ],
+            "continentalness": [
+              0.015,
+              0.315
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/frozen_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/snowy_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -0.1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/frozen_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/snowy_wastes",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -0.1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -0.56666666,
+              0.56666666
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              0.56666666,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              0.56666666,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.33,
+              -0.015
+            ],
+            "erosion": [
+              -0.015,
+              1
+            ],
+            "weirdness": [
+              0.56666666,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.315
+            ],
+            "erosion": [
+              -0.295,
+              0.29
+            ],
+            "weirdness": [
+              0.56666666,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.015,
+              0.315
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              0.56666666,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              0.56666666,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/highlands",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              0.56666666,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/crust",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/crust",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/crust",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.33,
+              -0.015
+            ],
+            "erosion": [
+              -0.015,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/crust",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.315
+            ],
+            "erosion": [
+              -0.295,
+              0.29
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/crust",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.015,
+              0.315
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/crust",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/crust",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.33
+            ],
+            "erosion": [
+              -0.015,
+              0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.125,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.015
+            ],
+            "erosion": [
+              -1,
+              -0.295
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.125,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.015
+            ],
+            "erosion": [
+              0.29,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.125,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              -0.015,
+              0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.125,
+              0.5
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/kelp_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.66
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/basalt_depths",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.015
+            ],
+            "erosion": [
+              -0.015,
+              0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/mushroom_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.66
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/kelp_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.66,
+              -0.33
+            ],
+            "erosion": [
+              -1,
+              -0.295
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.66,
+              -0.015
+            ],
+            "erosion": [
+              -0.295,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.66,
+              -0.015
+            ],
+            "erosion": [
+              0.015,
+              0.29
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/mushroom_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.66,
+              -0.33
+            ],
+            "erosion": [
+              0.29,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/kelp_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.33,
+              -0.015
+            ],
+            "erosion": [
+              -1,
+              -0.65
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.33,
+              -0.015
+            ],
+            "erosion": [
+              -0.65,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.33,
+              -0.015
+            ],
+            "erosion": [
+              0.29,
+              0.655
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/mushroom_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.33,
+              -0.015
+            ],
+            "erosion": [
+              0.655,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/basalt_depths",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.015
+            ],
+            "erosion": [
+              -1,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.015
+            ],
+            "erosion": [
+              -0.015,
+              0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/basalt_depths",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -0.015,
+              0.015
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/mushroom_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.015,
+              1
+            ],
+            "erosion": [
+              -1,
+              -0.65
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.015,
+              0.315
+            ],
+            "erosion": [
+              -0.65,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/basalt_depths",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.015,
+              1
+            ],
+            "erosion": [
+              -0.015,
+              0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.015,
+              0.315
+            ],
+            "erosion": [
+              0.015,
+              0.655
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/kelp_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.015,
+              1
+            ],
+            "erosion": [
+              0.655,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/mushroom_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              -0.65,
+              -0.295
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              0.66
+            ],
+            "erosion": [
+              -0.295,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/subterran_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              0.66
+            ],
+            "erosion": [
+              0.015,
+              0.29
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/kelp_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.315,
+              1
+            ],
+            "erosion": [
+              0.29,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/mushroom_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.66,
+              1
+            ],
+            "erosion": [
+              -0.295,
+              -0.015
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/kelp_forest",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0.66,
+              1
+            ],
+            "erosion": [
+              0.015,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.5,
+              0.8
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "expansion:europa/crust",
+          "parameters": {
+            "temperature": [
+              -1,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              0.8,
+              1.2
+            ],
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

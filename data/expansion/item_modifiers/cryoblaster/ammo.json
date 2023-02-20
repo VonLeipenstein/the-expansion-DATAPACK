@@ -1,0 +1,59 @@
+[ 
+    {
+        "function": "minecraft:copy_nbt",
+        "source": {
+        "type": "minecraft:storage",
+        "source": "expansion:ammo"
+        },
+        "ops": [
+        {
+            "source": "data.ammo",
+            "target": "ammo",
+            "op": "replace"
+        }
+        ]
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          [
+            {
+              "translate": "exp_weapons_railgun_ammo"
+            },
+            {
+              "score": {
+                "name": "@s",
+                "objective": "exp.ammo"
+              },
+              "color": "aqua",
+              "bold": true
+            }
+          ]
+        ],
+        {
+          "text": ""
+        },
+        {
+          "translate":"exp_lore_tooltips"
+        },
+        {
+          "translate": "exp_tools_cryoblaster_tip1"
+        },
+        {
+          "translate": "exp_tools_cryoblaster_tip2"
+        },
+        {
+          "translate": "exp_tools_cryoblaster_tip3"
+        },
+        {
+          "translate": "exp_tools_cryoblaster_tip4"
+        },
+        {
+          "translate": "exp_tools_cryoblaster_tip5"
+        }
+      ],
+      "replace": true
+    }
+]

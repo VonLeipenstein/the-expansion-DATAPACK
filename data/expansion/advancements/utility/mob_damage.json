@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "direct_entity": {
+            "nbt": "{Tags:[\"exp.quercus_mob\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "expansion:mobs/quercus/deals_damage"
+  }
+}

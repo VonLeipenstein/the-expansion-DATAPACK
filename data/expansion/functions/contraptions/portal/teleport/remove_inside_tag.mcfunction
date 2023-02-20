@@ -1,0 +1,2 @@
+execute at @s if entity @e[type=armor_stand,tag=exp.portal_main,distance=..20,limit=1,sort=nearest] unless entity @e[type=armor_stand,tag=exp.portal_main,distance=..1.1,limit=1,sort=nearest] run tag @s remove exp.inside_portal
+execute if entity @s[tag=exp.inside_portal] run schedule function expansion:contraptions/portal/teleport/schedule_inside_tag 10t

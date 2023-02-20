@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:multiface_growth",
+  "config": {
+    "search_range": 20,
+    "chance_of_spreading": 1,
+    "can_place_on_floor": true,
+    "can_place_on_ceiling": true,
+    "can_place_on_wall": true,
+    "can_be_placed_on": [
+      "minecraft:blue_ice",
+      "minecraft:packed_ice",
+      "minecraft:deepslate",
+      "minecraft:stone"
+    ]
+  }
+}

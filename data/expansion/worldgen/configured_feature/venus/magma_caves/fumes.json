@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "down",
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "blocks": [
+        "minecraft:blackstone",
+        "minecraft:deepslate"
+      ]
+    },
+    "prioritize_tip": true,
+    "layers": [
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:lava"
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:campfire",
+            "Properties": {
+              "waterlogged": "false",
+              "facing": "north",
+              "lit": "true",
+              "signal_fire": "true"
+            }
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:hay_block"
+          }
+        }
+      }
+    ]
+  }
+}

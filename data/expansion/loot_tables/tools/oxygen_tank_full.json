@@ -1,0 +1,54 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_tools_oxygentank_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{oxygen_tank:1b,exp_tool:1b,tank_lvl:96000,expansion_coas:1b,Unbreakable:1b,CustomModelData:1012258}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "exp_tools_oxygentank_pressure"
+                  },
+                  {
+                    "text": "100%",
+                    "color": "aqua",
+                    "bold": true
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_tools_oxygentank_tip1"
+                },
+                {
+                  "translate": "exp_tools_oxygentank_tip2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

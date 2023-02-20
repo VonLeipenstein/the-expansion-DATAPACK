@@ -1,0 +1,14 @@
+{
+    "structures": [
+      {
+        "structure": "expansion:europa/whale",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:random_spread",
+      "spacing": 32,
+      "separation": 20,
+      "salt": 20697602
+    }
+  }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 1,
+    "discard_chance_on_air_exposure": 0.9,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "expansion:venus_deepslate_replaceable"
+        },
+        "state": {
+          "Name": "minecraft:waxed_exposed_cut_copper_slab",
+          "Properties": {
+            "waterlogged": "true",
+            "type": "double"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": ""
+      },
+      {
+        "translate":"exp_modules_cooling_applied"
+      }
+      ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{has_module:1b,cooling_module:1b}"
+  }  
+]
