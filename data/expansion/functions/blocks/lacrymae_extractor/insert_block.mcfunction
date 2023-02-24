@@ -1,4 +1,4 @@
-item replace entity @s armor.head from entity @p weapon.mainhand expansion:portal/count_to_1
+item replace entity @s container.0 from entity @p weapon.mainhand expansion:portal/count_to_1
 
 execute store result score @s exp.hold_count run data get entity @p SelectedItem.Count
 scoreboard players operation @s exp.hold_count -= #1 exp.const

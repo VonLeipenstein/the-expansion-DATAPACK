@@ -22,5 +22,3 @@ execute as @s[tag=exp.portal_main,tag=exp.activated_portal] run function expansi
 execute as @s[tag=exp.tesla_coil] run function expansion:blocks/tesla_coil/tesla_coil_tick
 # modification station
 execute as @s[tag=exp.modstation] run function expansion:blocks/modification_station/modstation_tick
-
-

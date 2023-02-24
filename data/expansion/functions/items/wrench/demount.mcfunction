@@ -5,4 +5,4 @@ execute if entity @s[tag=exp.return_capsule] run function expansion:vehicles/ret
 execute if entity @s[tag=exp.spaceship] run function expansion:vehicles/spaceship/demount
 execute if entity @s[tag=exp.module_bottom] run function expansion:vehicles/lunar_module/demount_bottom
 execute if entity @s[tag=exp.rocket_part] run function expansion:blocks/rocket_parts/destroy
-execute positioned ~ ~1 ~ if entity @s[tag=exp.portal_bottom] run function expansion:contraptions/portal/assembly/destroy_portal/destroy_portal
+execute positioned ~ ~1 ~ if entity @s[tag=exp.portal_main] run function expansion:contraptions/portal/assembly/destroy_portal/destroy_portal
