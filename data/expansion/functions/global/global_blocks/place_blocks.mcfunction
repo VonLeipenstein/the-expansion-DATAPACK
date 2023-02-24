@@ -22,6 +22,8 @@ execute if predicate expansion:nbt_checks/selected_item/assembler run function e
 execute if predicate expansion:nbt_checks/selected_item/blocks/rocket_part run function expansion:blocks/rocket_parts/place
 # tesla coil
 execute if predicate expansion:nbt_checks/selected_item/blocks/tesla_coil run function expansion:blocks/tesla_coil/place
+# modification station
+execute if predicate expansion:nbt_checks/selected_item/blocks/modstation run function expansion:blocks/modification_station/place
 
 # planetarium
 execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium if entity @e[tag=exp.planetarium,limit=1,sort=nearest,distance=..22] run function expansion:utilities/error_messages/planetarium_error

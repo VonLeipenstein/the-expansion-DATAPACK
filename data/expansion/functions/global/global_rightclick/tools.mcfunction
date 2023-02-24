@@ -14,3 +14,5 @@ execute if entity @s[predicate=expansion:nbt_checks/selected_item/items/pocket_s
 execute if predicate expansion:nbt_checks/selected_item/items/fleet_finder run function expansion:items/fleet_finder/find
 # railgun
 execute if predicate expansion:nbt_checks/selected_item/items/railgun unless score @s[tag=!exp.inside_spaceship] exp.warmup matches 1.. unless score @s exp.cooldown matches 1.. run function expansion:items/railgun/main
+# pet drone
+execute if predicate expansion:nbt_checks/selected_item/items/pet_drone unless entity @s[tag=exp.has_active_drone] run function expansion:items/drone_pet/summon

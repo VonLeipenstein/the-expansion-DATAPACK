@@ -3,8 +3,12 @@
   "entity": "this",
   "predicate": {
     "vehicle": {
-      "type": "minecraft:armor_stand",
-      "nbt": "{Tags:[\"exp.moon_buggy\"]}"
+      "type": "minecraft:item_display",
+      "nbt": "{Tags:[\"exp.buggy_display\"]}",
+      "vehicle": {
+        "type": "minecraft:armor_stand",
+        "nbt": "{Tags:[\"exp.moon_buggy\"]}"
+      }
     }
   }
 }

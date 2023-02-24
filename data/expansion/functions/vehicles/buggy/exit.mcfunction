@@ -1,5 +1,9 @@
 execute at @e[type=armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] run summon interaction ~ ~ ~ {Tags:["exp.buggy_rcdet","smithed.block"],height:0.5f,response:1b}
-ride @e[type=interaction,tag=exp.buggy_rcdet,limit=1,sort=nearest] mount @e[type=armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest]
+item replace entity @e[type=minecraft:item_display,tag=exp.buggy_display,limit=1,sort=nearest] container.0 from entity @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] armor.head
+item replace entity @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] armor.head with minecraft:air
+ride @e[type=interaction,tag=exp.buggy_rcdet,limit=1,sort=nearest] mount @e[type=item_display,tag=exp.buggy_display,limit=1,sort=nearest]
+
+data modify entity @e[type=minecraft:item_display,tag=exp.buggy_display,limit=1,sort=nearest] Rotation[0] set from entity @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] Rotation[0]
 
 execute at @e[type=armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] run stopsound @a player expansion:buggy.engine_driving
 

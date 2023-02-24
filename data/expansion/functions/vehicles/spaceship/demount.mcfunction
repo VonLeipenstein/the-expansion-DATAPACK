@@ -2,7 +2,7 @@
 execute on passengers store result entity @s ArmorItems[3].tag.fuel_lvl int 1 run execute on vehicle run scoreboard players get @s exp.fuel_level
 
 # substract one from the spaceship custom model data so it changes to the flying version
-execute on passengers run function expansion:vehicles/decrease_model
+execute on passengers run function expansion:vehicles/spaceship/model_switching/decrease_model_alt
 
 # spawn the placeholder item and copy all the spaceship data to it
 loot spawn ~ ~ ~ loot expansion:vehicles/spaceship

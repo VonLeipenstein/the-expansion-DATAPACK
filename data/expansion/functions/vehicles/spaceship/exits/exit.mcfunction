@@ -13,7 +13,7 @@ ride @e[type=interaction,tag=exp.spaceship_rcdet,distance=..1,limit=1,sort=neare
 data modify entity @e[type=minecraft:item_display,tag=exp.spaceship_display,limit=1,sort=nearest] Rotation[0] set from entity @e[type=armor_stand,tag=exp.spaceship,limit=1,sort=nearest] Rotation[0]
 
 # change the model to the landed version
-execute as @e[type=item_display,tag=exp.spaceship_display,limit=1,sort=nearest] run function expansion:vehicles/increase_model
+execute as @e[type=item_display,tag=exp.spaceship_display,limit=1,sort=nearest] run function expansion:vehicles/spaceship/model_switching/increase_model
 
 # teleport the player next to the spaceship
 execute as @e[type=armor_stand,tag=exp.spaceship,limit=1,sort=nearest] at @s rotated ~ 0 run tp @p[tag=!exp.ejected,tag=exp.inside_spaceship] ^-2 ^ ^1 ~ ~

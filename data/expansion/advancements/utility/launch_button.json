@@ -5,18 +5,8 @@
       "conditions": {
         "player": [
           {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "vehicle": {
-                "type": "minecraft:armor_stand",
-                "nbt": "{Tags:[\"exp.rocket_seat\"]}",
-                "vehicle": {
-                  "type": "minecraft:armor_stand",
-                  "nbt": "{Tags:[\"exp.rocket\"]}"
-                }
-              }
-            }
+            "condition": "minecraft:reference",
+            "name": "expansion:nbt_checks/root_vehicle/rocket"
           }
         ],
         "entity": [

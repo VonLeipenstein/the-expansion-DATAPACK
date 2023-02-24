@@ -1,5 +1,6 @@
 # destroy rocket
 kill @e[type=armor_stand,tag=exp.rocket,limit=1,sort=nearest]
+kill @e[type=item_display,tag=exp.rocket_display,limit=1,sort=nearest]
 kill @e[type=armor_stand,tag=exp.rocket_seat,limit=1,sort=nearest]
 
 # disable weather

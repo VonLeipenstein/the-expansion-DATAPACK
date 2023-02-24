@@ -28,6 +28,9 @@ execute if predicate expansion:nbt_checks/armor/space_equipment/has_module run f
 # rocket boots
 execute if predicate expansion:nbt_checks/armor/rocket_boots run function expansion:items/rocket_boots/main
 
+# pet drone
+execute if entity @s[tag=exp.has_active_drone] as @e[type=armor_stand,tag=exp.pet_drone,limit=1,sort=nearest] run function expansion:items/drone_pet/movement/main
+
 # death fix function
 execute if score @s exp.death matches 1.. run function expansion:global/player_death
 

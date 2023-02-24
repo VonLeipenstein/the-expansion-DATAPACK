@@ -8,6 +8,7 @@ data modify entity @e[type=item,nbt={Item:{tag:{moon_buggy:1b}}},limit=1,sort=ne
 playsound expansion:wrench.create player @a ~ ~ ~
 execute positioned ~ ~1 ~ as @p at @s run tp @s ~ ~0.001 ~
 kill @e[type=interaction,tag=exp.buggy_rcdet,distance=..5,limit=1,sort=nearest]
+kill @e[type=item_display,tag=exp.buggy_display,distance=..5,limit=1,sort=nearest]
 kill @s
 
 

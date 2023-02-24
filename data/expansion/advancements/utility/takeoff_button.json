@@ -5,18 +5,8 @@
       "conditions": {
         "player": [
           {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "vehicle": {
-                "type": "minecraft:armor_stand",
-                "nbt": "{Tags:[\"exp.module_seat\"]}",
-                "vehicle": {
-                  "type": "minecraft:armor_stand",
-                  "nbt": "{Tags:[\"exp.lunar_module\"]}"
-                }
-              }
-            }
+            "condition": "minecraft:reference",
+            "name": "expansion:nbt_checks/root_vehicle/lunar_module"
           }
         ],
         "entity": [
@@ -24,8 +14,8 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:villager",
-              "nbt": "{Tags:[\"exp.lunar_villager\"]}"
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"exp.module_takeoff\"]}"
             }
           }
         ]

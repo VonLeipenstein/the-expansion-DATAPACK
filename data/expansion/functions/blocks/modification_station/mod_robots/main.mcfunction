@@ -1,0 +1,2 @@
+execute if score @e[type=armor_stand,tag=exp.modstation,limit=1,sort=nearest] exp.timer_1 matches 1.. run function expansion:blocks/modification_station/mod_robots/swarm_ship
+execute unless score @e[type=armor_stand,tag=exp.modstation,limit=1,sort=nearest] exp.timer_1 matches 1.. run function expansion:blocks/modification_station/mod_robots/return_to_block

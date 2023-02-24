@@ -17,7 +17,7 @@ data modify entity @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit
 ride @s mount @e[type=armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest]
 
 # change the model to the flying version of the spaceship
-execute on vehicle run function expansion:vehicles/decrease_model
+execute on vehicle run function expansion:vehicles/spaceship/model_switching/decrease_model
 
 # give the player the blaster trigger item, but only if they have no item in their offhand to prevent it from being replaced
 execute unless entity @s[nbt={Inventory:[{Slot:-106b}]}] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Fire!","color":"white","bold":false,"italic":false,"underlined":false}'},Unbreakable:1b,CustomModelData:1012006,ship_blaster:1b} 1
