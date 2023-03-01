@@ -25,6 +25,6 @@ scoreboard players operation #velocity_z exp.math = #cos_tet exp.math
 scoreboard players operation #velocity_z exp.math *= #cos_phi exp.math
 
 # multiply the motion values with the speed.
-scoreboard players operation #velocity_x exp.math *= @s exp.speed
-scoreboard players operation #velocity_y exp.math *= @s exp.speed
-scoreboard players operation #velocity_z exp.math *= @s exp.speed
+scoreboard players operation #velocity_x exp.math *= @s exp.counter_1
+scoreboard players operation #velocity_y exp.math *= @s exp.counter_1
+scoreboard players operation #velocity_z exp.math *= @s exp.counter_1

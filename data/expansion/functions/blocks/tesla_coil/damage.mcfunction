@@ -1,5 +1,7 @@
 # damage
-damage @s[tag=exp.zapped,tag=!exp.active_coil] 5 minecraft:generic
+damage @s[tag=exp.zapped,tag=!exp.active_coil] 6 minecraft:generic
+
+effect give @s minecraft:mining_fatigue 2 5 true
 
 # particles
 execute if entity @s[tag=exp.zapped] anchored eyes run particle minecraft:flash ~ ~1.2 ~ 0 0 0 0 1 force

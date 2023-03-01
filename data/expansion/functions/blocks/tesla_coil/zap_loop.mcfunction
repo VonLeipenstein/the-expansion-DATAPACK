@@ -3,7 +3,6 @@ tp @s ^ ^ ^0.20
 # particles
 particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.2 1 force
 particle minecraft:electric_spark ~ ~ ~ 0 0 0 0 1 force
-particle minecraft:wax_off ~ ~ ~ 0 0 0 0.5 1 force
 
 scoreboard players add @s exp.max_range 1
 

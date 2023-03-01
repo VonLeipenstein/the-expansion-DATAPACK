@@ -15,3 +15,5 @@ effect clear @s minecraft:resistance
 # remove the tags from the player
 tag @s remove exp.inside_spaceship
 tag @s[tag=!exp.ejected] remove exp.inside_vehicle
+
+tag @e[type=armor_stand,tag=exp.spaceship,limit=1,sort=nearest] remove exp.player_inside

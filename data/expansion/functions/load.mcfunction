@@ -101,6 +101,8 @@ scoreboard players set #-46496 exp.const -46496
 scoreboard players set #1 exp.const 1
 scoreboard players set #-1 exp.const -1
 scoreboard players set #2 exp.const 2
+scoreboard players set #10 exp.const 10
+scoreboard players set #40 exp.const 40
 scoreboard players set #-90 exp.const -90
 scoreboard players set #90 exp.const 90
 scoreboard players set #180 exp.const 180

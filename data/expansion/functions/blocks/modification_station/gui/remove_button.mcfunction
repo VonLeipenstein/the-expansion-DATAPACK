@@ -1,0 +1,1 @@
+execute unless score @s exp.counter_1 matches ..4 as @e[type=item_display,tag=exp.spaceship_display,predicate=expansion:nbt_checks/root_vehicle/spaceship_mod_ship,distance=..50,limit=1,sort=nearest] run function expansion:blocks/modification_station/remove_mods/initiate

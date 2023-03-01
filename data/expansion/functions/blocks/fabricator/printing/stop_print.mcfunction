@@ -6,15 +6,10 @@ data modify entity @s ArmorItems[1].Count set value 1
 
 execute store success score @s exp.bool run data modify entity @s ArmorItems[1] set from entity @s ArmorItems[0]
 
-
 execute if data block ~ ~ ~ Items[{Slot:15b}] unless score @s exp.bool matches 1 run function expansion:blocks/fabricator/printing/increment_count
 
 # if there is no item, simply put put the feet armor item in there
 execute unless data block ~ ~ ~ Items[{Slot:15b}] run function expansion:blocks/fabricator/printing/insert_item
-
-# display the crafted item if the printer is done printing the whole batch. coas need a different display from jigsaws to make it look good.
-execute if block ~ ~ ~ barrel{Items:[{Slot:15b,id:"minecraft:carrot_on_a_stick"}]} run item replace entity @e[type=armor_stand,tag=exp.head_item,limit=1,sort=nearest] weapon.offhand from entity @s armor.feet
-execute if block ~ ~ ~ barrel{Items:[{Slot:15b,id:"minecraft:jigsaw"}]} run item replace entity @e[type=armor_stand,tag=exp.hand_item,limit=1,sort=nearest] armor.head from entity @s armor.feet
 
 # remove the feet item which was holding the item until the print was complete
 item replace entity @s armor.feet with air

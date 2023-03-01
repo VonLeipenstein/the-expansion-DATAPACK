@@ -1,9 +1,10 @@
-tag @e[type=armor_stand,tag=exp.mod_ship,limit=1,sort=nearest] add exp.being_modified
-tag @s add exp.modifying_ship
+function expansion:blocks/modification_station/mod_robots/summon
 
+execute if block ~ ~ ~ barrel{Items:[{Slot:0b,tag:{fuel_mod:1b}}]} run item replace block ~ ~ ~ container.0 with minecraft:air
+execute if block ~ ~ ~ barrel{Items:[{Slot:9b,tag:{blaster_mod:1b}}]} run item replace block ~ ~ ~ container.9 with minecraft:air
+execute if block ~ ~ ~ barrel{Items:[{Slot:18b,tag:{speed_mod:1b}}]} run item replace block ~ ~ ~ container.18 with minecraft:air
+execute if block ~ ~ ~ barrel{Items:[{Slot:5b,tag:{spaceship_skin:1b}}]} run item replace block ~ ~ ~ container.5 with minecraft:air
 
-execute if block ~ ~ ~ barrel{Items:[{Slot:5b,tag:{spaceship_skin:1b}}]} run data modify entity @s ArmorItems[3].tag.UpgradeStorage.skin.CustomModelData set from block ~ ~ ~ Items[{Slot:5b}].tag.CustomModelData
-
-execute store result score @s exp.spaceship_cmd run data get entity @s ArmorItems[3].tag.UpgradeStorage.skin.CustomModelData
-scoreboard players add @s exp.spaceship_cmd 1
-execute store result entity @s ArmorItems[3].tag.UpgradeStorage.skin.CustomModelData int 1 run scoreboard players get @s exp.spaceship_cmd
+scoreboard players set @s exp.counter_1 0
+scoreboard players reset @s exp.bool
+scoreboard players set @s exp.timer_1 200

@@ -1,0 +1,19 @@
+{
+          "replace": false,
+          "values": [
+                    "minecraft:air",
+                    "minecraft:fire",
+                    "minecraft:grass",
+                    "minecraft:lava",
+                    "minecraft:light",
+                    "minecraft:moss_carpet",
+                    "minecraft:rooted_dirt",
+                    "minecraft:seagrass",
+                    "minecraft:snow",
+                    "minecraft:soul_fire",
+                    "minecraft:spruce_button",
+                    "minecraft:structure_void",
+                    "minecraft:void_air",
+                    "minecraft:water"
+          ]
+}

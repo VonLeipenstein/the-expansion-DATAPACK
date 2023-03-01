@@ -5,5 +5,3 @@ data merge entity @e[type=minecraft:item_display,tag=exp.rocket_display,limit=1,
 
 summon interaction ~0.6 ~3 ~ {Tags:["exp.rocket_interactor","exp.launch_button","smithed.block"],width:0.5f,height:0.5f,response:1b}
 summon interaction ~-0.6 ~3 ~ {Tags:["exp.rocket_interactor","exp.fuel_button","smithed.block"],width:0.5f,height:0.5f,response:1b}
-
-scoreboard players set @e[type=armor_stand,tag=exp.rocket,limit=1,sort=nearest] exp.fuel_level 0
