@@ -10,14 +10,14 @@
               {
                 "function": "minecraft:set_name",
                 "name": {
-                  "translate": "exp_items_blastermod_name",
+                  "translate": "exp_items_regularblast_name",
                   "italic": false
                 },
                 "entity": "this"
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{spaceship_mod:1b,blaster_mod:1b,crafting_count:1b}"
+                "tag": "{spaceship_mod:1b,blaster_mod:1b,id:0b,crafting_count:1b}"
               }
             ]
           }

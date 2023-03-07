@@ -25,7 +25,7 @@
             {
               "score": {
                 "name": "@s",
-                "objective": "exp.room_id"
+                "objective": "exp.unique_id"
               },
               "color": "aqua",
               "bold": true

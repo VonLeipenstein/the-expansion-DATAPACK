@@ -58,7 +58,7 @@ scoreboard objectives add exp.y dummy
 scoreboard objectives add exp.z dummy
 
 # pocket space utility
-scoreboard objectives add exp.room_id dummy
+scoreboard objectives add exp.unique_id dummy
 scoreboard objectives add exp.room_count dummy
 
 # weapons/damage

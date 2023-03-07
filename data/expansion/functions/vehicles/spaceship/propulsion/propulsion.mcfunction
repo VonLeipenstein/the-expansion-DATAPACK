@@ -11,6 +11,10 @@ scoreboard players operation @s exp.counter_1 /= #10 exp.const
 # movement
 execute unless score @s exp.speed matches ..10 run function expansion:vehicles/spaceship/propulsion/fly
 
+# update the speed percentage when the speed changes
+scoreboard players operation .w exp.wasd += .s exp.wasd
+execute if score .w exp.wasd matches 1.. run function expansion:vehicles/spaceship/propulsion/speed_percentage
+
 #execute if predicate expansion:nbt_checks/armor/spaceship run function expansion:vehicles/spaceship/engine_particles/spaceship
 #execute if predicate expansion:nbt_checks/armor/the_boston run function expansion:vehicles/spaceship/engine_particles/the_boston
 #execute if predicate expansion:nbt_checks/armor/bomber run function expansion:vehicles/spaceship/engine_particles/bomber

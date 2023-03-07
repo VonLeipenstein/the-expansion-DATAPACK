@@ -7,4 +7,5 @@ playsound expansion:wrench.create block @a ~ ~ ~
 execute positioned ~ ~1 ~ as @p at @s run tp @s ~ ~0.001 ~
 execute on passengers on passengers run kill @s
 execute on passengers run kill @s
+kill @e[type=interaction,tag=exp.rocket_interactor,limit=2,sort=nearest]
 kill @s
