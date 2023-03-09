@@ -21,7 +21,5 @@ tag @s[predicate=expansion:nbt_checks/root_vehicle/spaceship] remove exp.trying_
 tag @s[predicate=expansion:nbt_checks/root_vehicle/spaceship] remove exp.transitioning
 effect clear @s[predicate=expansion:nbt_checks/root_vehicle/spaceship] levitation
 effect clear @s[predicate=expansion:nbt_checks/root_vehicle/spaceship] blindness
-scoreboard players operation @e[type=armor_stand,tag=exp.spaceship,limit=1,sort=nearest] exp.speed = @s[predicate=expansion:nbt_checks/root_vehicle/spaceship] exp.speed
-scoreboard players operation @e[type=armor_stand,tag=exp.spaceship,limit=1,sort=nearest] exp.fuel_level = @s[predicate=expansion:nbt_checks/root_vehicle/spaceship] exp.fuel_level
-scoreboard players operation @e[type=armor_stand,tag=exp.spaceship,limit=1,sort=nearest] exp.value = @s[predicate=expansion:nbt_checks/root_vehicle/spaceship] exp.value
-scoreboard players operation @e[type=armor_stand,tag=exp.spaceship,limit=1,sort=nearest] exp.counter_1 = @s[predicate=expansion:nbt_checks/root_vehicle/spaceship] exp.counter_1
+
+execute at @s if predicate expansion:nbt_checks/root_vehicle/spaceship as @e[type=armor_stand,tag=exp.spaceship,limit=1,sort=nearest] run function expansion:vehicles/spaceship/transition/merge_scores

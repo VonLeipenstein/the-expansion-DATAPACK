@@ -5,3 +5,5 @@ execute if block ~ ~-1 ~ minecraft:fern run setblock ~ ~-1 ~ minecraft:poppy rep
 execute if block ~ ~-1 ~ minecraft:grass run setblock ~ ~-1 ~ minecraft:fern replace
 execute if block ~ ~-1 ~ minecraft:grass_block run setblock ~ ~ ~ minecraft:grass replace
 execute if block ~ ~-1 ~ minecraft:light_gray_concrete_powder run setblock ~ ~-1 ~ minecraft:grass_block replace
+
+kill @s

@@ -1,2 +1,0 @@
-execute if score #player_yaw exp.math matches 180.. run scoreboard players remove #player_yaw exp.math 360
-execute if score #player_yaw exp.math matches ..-180 run scoreboard players add #player_yaw exp.math 360

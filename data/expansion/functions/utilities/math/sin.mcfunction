@@ -6,15 +6,15 @@
 scoreboard players operation #factor1 exp.math = #180 exp.const
 scoreboard players operation #factor1 exp.math -= #input exp.math
 
+
 # calculate numerator
 scoreboard players operation #num exp.math = #factor1 exp.math
 scoreboard players operation #num exp.math *= #input exp.math
 scoreboard players operation #num exp.math *= #400 exp.const
 
 # calculate denumerator
-scoreboard players operation #denum exp.math = #factor1 exp.math
-scoreboard players operation #denum exp.math *= #input exp.math
-scoreboard players operation #denum exp.math -= #40500 exp.const
+execute store result score #denum exp.math run scoreboard players operation #factor1 exp.math *= #input exp.math
+scoreboard players remove #denum exp.math 40500
 scoreboard players operation #denum exp.math *= #-1 exp.const
 
 # calculate output

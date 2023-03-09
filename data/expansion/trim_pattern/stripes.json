@@ -1,0 +1,7 @@
+{
+    "asset_id": "expansion:stripes",
+    "description": {
+      "translate": "trim_pattern.expansion.stripes"
+    },
+    "template_item": "minecraft:stick"
+  }

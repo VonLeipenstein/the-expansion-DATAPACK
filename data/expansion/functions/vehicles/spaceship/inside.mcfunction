@@ -7,11 +7,10 @@ execute if entity @s[scores={exp.fuel_percentage=0..10}] run title @p actionbar 
 execute if score @s exp.fuel_level matches 1.. run function expansion:vehicles/spaceship/propulsion/propulsion
 
 # make the spaceship float in space when speed is 0 (or when fuel runs out)
-scoreboard players set @s[scores={exp.fuel_level=0}] exp.speed 0
-execute if predicate expansion:dimension/zero_gravity if score @s exp.speed matches ..10 run data merge entity @s {Motion:[0.0,0.0,0.0]}
+data merge entity @s[predicate=expansion:dimension/zero_gravity,scores={exp.speed=..10}] {Motion:[0.0,0.0,0.0]}
 
 # antidupe for the blaster item
-function expansion:vehicles/spaceship/antidupe
+execute on passengers on passengers unless predicate expansion:nbt_checks/selected_item/items/blasters run function expansion:vehicles/spaceship/antidupe
 
 # spaceship blasters
 execute unless score @s exp.counter_2 matches 1.. on passengers on passengers if score @s exp.rightclick matches 1.. if predicate expansion:nbt_checks/selected_item/items/blasters unless predicate expansion:nbt_checks/selected_item/blocks/planetarium unless predicate expansion:nbt_checks/selected_item/items/fleet_finder on vehicle on vehicle run function expansion:vehicles/spaceship/blasters/determine_blaster

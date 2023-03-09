@@ -2,5 +2,5 @@ execute as @e[type=armor_stand,tag=exp.position_new,limit=1,sort=random] if scor
 
 loot spawn ~ ~ ~ loot expansion:tools/pocket_space
 data modify entity @e[type=item,nbt={Item:{tag:{pocket_space:1b}}},limit=1,sort=nearest] Item set from entity @s ArmorItems[3]
-execute as @e[type=villager,tag=exp.transporter_rcdet,limit=1,sort=nearest] run function expansion:utilities/erase_entity
+kill @e[type=interaction,tag=exp.transporter_rcdet,limit=1,sort=nearest]
 kill @s

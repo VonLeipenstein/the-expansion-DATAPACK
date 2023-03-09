@@ -1,1 +1,1 @@
-execute as @e[type=armor_stand,tag=exp.position_new] at @s run function expansion:items/transporter/return_particles
+execute as @e[type=armor_stand,tag=exp.position_new,limit=1,sort=nearest] at @s run function expansion:items/transporter/return_particles

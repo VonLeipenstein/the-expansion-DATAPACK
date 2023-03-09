@@ -4,3 +4,6 @@ execute unless entity @s[predicate=expansion:nbt_checks/root_vehicle/rocket] unl
 # attempt to make the player ride the lunar module when landing on the moon.
 execute if entity @s[tag=exp.landing_moon] run function expansion:global/transitions/moon_earth/earth_moon_finish
 
+# store players position
+function expansion:global/position
+

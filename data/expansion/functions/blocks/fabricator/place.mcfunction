@@ -9,5 +9,6 @@ data merge entity @e[type=minecraft:item_display,tag=exp.fabricator_display,limi
 
 execute unless entity @s[gamemode=creative] run item replace entity @s weapon.mainhand with air
 setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"exp_blocks_fabricator_gui_name","color":"dark_grey"}'} replace
+function expansion:blocks/fabricator/gui/gui
 playsound minecraft:block.metal.place voice @s
 

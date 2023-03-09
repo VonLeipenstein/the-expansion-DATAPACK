@@ -5,7 +5,7 @@
     "equipment": {
       "feet": {
         "items": [
-          "minecraft:leather_boots"
+          "minecraft:iron_boots"
         ],
         "nbt": "{rocket_boots:1b}"
       }

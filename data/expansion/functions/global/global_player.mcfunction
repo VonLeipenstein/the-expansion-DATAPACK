@@ -8,9 +8,6 @@ execute if score @s give_guide1 matches 1 run function expansion:items/expansion
 execute unless entity @s[scores={exp.use_sword=0,exp.use_pickaxe=0,exp.use_axe=0,exp.use_shovel=0,exp.use_hoe=0}] run function expansion:utilities/custom_durability/add_scores
 execute if score @s exp.use_tool matches 1.. run function expansion:utilities/custom_durability/material_check
 
-# store players position
-function expansion:global/position
-
 # planet effects
 execute if entity @s[tag=exp.has_oxygen] run function expansion:global/oxygen_regulation/remove_oxygen_tag
 execute if predicate expansion:dimension/oxygen_absent if entity @s[gamemode=!creative,gamemode=!spectator,tag=!exp.has_oxygen,tag=!exp.generator,tag=!exp.inside_vehicle] run function expansion:global/oxygen_regulation/oxygen_tick
@@ -18,6 +15,7 @@ execute if predicate expansion:dimension/cold_planet if entity @s[gamemode=!crea
 execute if predicate expansion:dimension/hot_planet if entity @s[gamemode=!creative,gamemode=!spectator,tag=!exp.has_oxygen,tag=!exp.generator,tag=!exp.inside_vehicle] run function expansion:global/temperature_regulation/hot_planet
 execute if predicate expansion:dimension/low_gravity run function expansion:utilities/gravity/low_gravity/gravity
 execute if predicate expansion:dimension/zero_gravity run function expansion:utilities/gravity/zero_gravity/main
+execute if predicate expansion:dimension/storage run function expansion:items/transporter/storage_tick
 
 # run the vehicle functions if the player is inside a vehicle
 execute if entity @s[tag=exp.inside_vehicle] run function expansion:global/global_vehicles/vehicles_tick

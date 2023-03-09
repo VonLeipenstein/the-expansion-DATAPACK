@@ -8,3 +8,5 @@ execute if block ~ ~-1 ~ minecraft:grass run setblock ~ ~-1 ~ minecraft:fern rep
 execute if block ~ ~-1 ~ minecraft:grass_block run setblock ~ ~ ~ minecraft:grass replace
 execute if block ~ ~-1 ~ minecraft:red_sand run setblock ~ ~-1 ~ minecraft:grass_block replace
 execute if block ~ ~-1 ~ minecraft:red_sandstone run setblock ~ ~-1 ~ minecraft:grass_block replace
+
+kill @s

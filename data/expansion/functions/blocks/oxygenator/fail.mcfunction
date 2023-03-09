@@ -26,3 +26,5 @@ tag @s remove exp.pressurized
 
 # stop the scan
 tag @s remove exp.scanning
+
+say fail

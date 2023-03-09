@@ -8,7 +8,7 @@ execute unless score #total_system exp.gen_success matches 1 as @a[tag=exp.gener
 execute as @a at @s run function expansion:global/global_player
 
 # mobs
-#execute as @e[tag=exp.mob] at @s run function expansion:mobs/mobs_tick
+execute as @e[type=#expansion:mob_template,tag=exp.mob] at @s run function expansion:mobs/mobs_tick
 #execute as @e[type=item,nbt={Item:{id:"minecraft:jigsaw",tag:{death_item:1b}}},limit=1] at @s run function expansion:mobs/mob_death
 
 # blocks

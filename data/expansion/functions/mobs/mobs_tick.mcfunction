@@ -1,1 +1,1 @@
-execute if entity @s[tag=exp.quercus_mob] run function expansion:mobs/quercus/quercus_tick
+execute if entity @s[tag=exp.evil_drone] run function expansion:mobs/evil_drone/main
