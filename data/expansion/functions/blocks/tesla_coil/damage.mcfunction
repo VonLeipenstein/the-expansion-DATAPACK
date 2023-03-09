@@ -1,5 +1,5 @@
 # damage
-damage @s[tag=exp.zapped,tag=!exp.active_coil] 6 minecraft:generic
+damage @s[tag=exp.zapped,tag=!exp.active_coil] 6 expansion:zapped
 
 effect give @s minecraft:mining_fatigue 2 5 true
 

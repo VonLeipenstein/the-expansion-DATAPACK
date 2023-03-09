@@ -5,5 +5,3 @@ execute if entity @s[y_rotation=135.1..-135] run summon armor_stand ~ ~ ~ {Invul
 execute unless entity @s[gamemode=creative] run item replace entity @s weapon.mainhand with air
 setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'{"translate":"exp_blocks_arcfurnace_name","color":"dark_grey"}'} replace
 playsound minecraft:block.metal.place voice @s
-
-say place

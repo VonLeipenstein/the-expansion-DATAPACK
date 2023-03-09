@@ -4,7 +4,7 @@ particle dust 1 0 0 1 ^ ^ ^ 0 0 0 5 1 force
 particle dust 1 0 0 1 ^ ^ ^-.25 0 0 0 5 1 force
 particle dust 1 0 0 1 ^ ^ ^-.5 0 0 0 5 1 force
 
-execute positioned ~-.05 ~-.05 ~-.05 as @p[dx=0,dy=0,dz=0] positioned ~-.9 ~-.9 ~-.9 if entity @s[dx=0,dy=0,dz=0] run damage @s 4
+execute positioned ~-.05 ~-.05 ~-.05 as @p[dx=0,dy=0,dz=0] positioned ~-.9 ~-.9 ~-.9 if entity @s[dx=0,dy=0,dz=0] run damage @s 4 expansion:drone_laser
 
 execute unless block ~ ~ ~ #expansion:expansion_air run kill @s
 
