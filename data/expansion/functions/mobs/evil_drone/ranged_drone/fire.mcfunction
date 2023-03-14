@@ -1,4 +1,4 @@
-execute facing entity @p eyes summon minecraft:marker run function expansion:mobs/evil_drone/ranged_drone/summon_laser
+execute positioned ~ ~.5 ~ facing entity @p eyes summon minecraft:marker run function expansion:mobs/evil_drone/ranged_drone/summon_laser
 
 playsound expansion:spaceship.blaster player @a ~ ~ ~ 0.5 1 0.01
 

@@ -1,0 +1,15 @@
+{
+    "name": "expansion:entities/san_holo",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "location": "expansion:entities/evil_drone",
+          "processors": "minecraft:empty",
+          "projection": "rigid",
+          "element_type": "minecraft:single_pool_element"
+        }
+      }
+    ]
+  }
