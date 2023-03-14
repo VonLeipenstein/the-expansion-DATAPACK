@@ -1,4 +1,4 @@
-execute if score #earth exp.timer_2 matches 42 run kill @e[type=armor_stand,tag=exp.earth]
+execute if score #earth exp.timer_2 matches 42 run kill @e[type=minecraft:armor_stand,tag=exp.earth]
 execute if score #earth exp.timer_2 matches 180 run tellraw @a {"text":"Generating earth... [Object 1/6]","color":"dark_purple"}
 
 execute if score #earth exp.timer_2 matches 36 run place template expansion:space/planets/earth/sphere_middle ~-23 ~-23 ~-23 

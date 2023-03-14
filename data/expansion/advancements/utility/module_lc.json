@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"exp.module_rcdet\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "expansion:vehicles/lunar_module/click_detection/leftclick"
+  }
+}

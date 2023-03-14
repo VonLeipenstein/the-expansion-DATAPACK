@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:vehicles/buggy/enter"
+    "function": "expansion:vehicles/buggy/click_detection/rightclick"
   }
 }

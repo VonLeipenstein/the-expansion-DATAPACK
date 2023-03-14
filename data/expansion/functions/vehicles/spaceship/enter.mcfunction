@@ -6,15 +6,20 @@ tag @p add exp.inside_vehicle
 tag @p remove exp.rising
 tag @p remove exp.falling
 
+# dismiss the pet drone if it was active
+execute if entity @s[tag=exp.has_active_drone] run function expansion:items/drone_pet/dismiss
+
+# align the rotation of the player with the spaceship
 execute rotated as @s run tp @p ^ ^ ^ ~ ~
 
-kill @e[type=interaction,tag=exp.spaceship_rcdet,limit=1,sort=nearest]
-summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["exp.spaceship_display"]}
-item replace entity @e[type=armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest] armor.head from entity @e[type=item_display,tag=exp.spaceship_display,limit=1,sort=nearest] container.0
-kill @e[type=item_display,tag=exp.spaceship_display,limit=1,sort=nearest]
-ride @e[type=armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest] mount @s
+# make the entity stack
+execute on passengers on passengers run kill @s
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["exp.spaceship_display"]}
+item replace entity @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest] armor.head from entity @e[type=minecraft:item_display,tag=exp.spaceship_display,limit=1,sort=nearest] container.0
+execute on passengers run kill @s
+ride @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest] mount @s
 data modify entity @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest] Rotation set from entity @s Rotation
-ride @p mount @e[type=armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest]
+ride @p mount @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest]
 
 # change the model to the flying version of the spaceship
 execute on passengers run function expansion:vehicles/spaceship/model_switching/decrease_model
@@ -26,7 +31,7 @@ data merge entity @s {NoGravity:0b}
 tag @s add exp.player_inside
 tag @s remove exp.mod_ship
 
-# check if the fuel mod is present and assign a cooldown value
+# merge any upgrade values with the spaceship
 scoreboard players set @s exp.value 40
 execute on passengers if data entity @s ArmorItems[3].tag.ModStorage.fuel.tag.value on vehicle store result score @s exp.value on passengers run data get entity @s ArmorItems[3].tag.ModStorage.fuel.tag.value
 

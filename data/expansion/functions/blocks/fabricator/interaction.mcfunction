@@ -9,4 +9,4 @@ execute if entity @s[tag=exp.barrel_open] run function expansion:blocks/fabricat
 execute if score @s exp.cooldown matches 1.. run function expansion:blocks/fabricator/gui/flash
 
 # remove the display items when their respective item is removed from the block inventory
-execute unless score @s exp.timer_1 matches 1..20 unless data block ~ ~ ~ Items[{Slot:15b}] run item replace entity @e[type=item_display,tag=exp.fabricator_display,limit=1,sort=nearest] container.0 with air
+execute unless score @s exp.timer_1 matches 1..20 unless data block ~ ~ ~ Items[{Slot:15b}] run item replace entity @e[type=minecraft:item_display,tag=exp.fabricator_display,limit=1,sort=nearest] container.0 with air

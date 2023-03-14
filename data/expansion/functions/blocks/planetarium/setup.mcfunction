@@ -14,16 +14,16 @@ summon minecraft:armor_stand ~ ~ ~ {Tags:["exp.planetarium_europa","exp.planetar
 summon minecraft:armor_stand ~ ~ ~ {Tags:["exp.planetarium_asteroids","exp.planetarium_part","smithed.block"],Marker:1b,NoGravity:1b,Invulnerable:1b,DisabledSlots:2039583,Invisible:1b}
 
 # give the centered armor stands a rotation such that the planets are not all in one straight line
-tp @e[type=armor_stand,tag=exp.planetarium_mercury,limit=1,sort=nearest] ~ ~ ~ ~40 ~
-tp @e[type=armor_stand,tag=exp.planetarium_venus,limit=1,sort=nearest] ~ ~ ~ ~160 ~
-tp @e[type=armor_stand,tag=exp.planetarium_earth,limit=1,sort=nearest] ~ ~ ~ ~360 ~
-tp @e[type=armor_stand,tag=exp.planetarium_mars,limit=1,sort=nearest] ~ ~ ~ ~240 ~
-tp @e[type=armor_stand,tag=exp.planetarium_jupiter,limit=1,sort=nearest] ~ ~ ~ ~280 ~
-tp @e[type=armor_stand,tag=exp.planetarium_saturn,limit=1,sort=nearest] ~ ~ ~ ~200 ~
-tp @e[type=armor_stand,tag=exp.planetarium_uranus,limit=1,sort=nearest] ~ ~ ~ ~120 ~
-tp @e[type=armor_stand,tag=exp.planetarium_neptune,limit=1,sort=nearest] ~ ~ ~ ~320 ~
-tp @e[type=armor_stand,tag=exp.planetarium_pluto,limit=1,sort=nearest] ~ ~ ~ ~80 ~
-tp @e[type=armor_stand,tag=exp.planetarium_moon,limit=1,sort=nearest] ~ ~ ~ ~360 ~
+tp @e[type=minecraft:armor_stand,tag=exp.planetarium_mercury,limit=1,sort=nearest] ~ ~ ~ ~40 ~
+tp @e[type=minecraft:armor_stand,tag=exp.planetarium_venus,limit=1,sort=nearest] ~ ~ ~ ~160 ~
+tp @e[type=minecraft:armor_stand,tag=exp.planetarium_earth,limit=1,sort=nearest] ~ ~ ~ ~360 ~
+tp @e[type=minecraft:armor_stand,tag=exp.planetarium_mars,limit=1,sort=nearest] ~ ~ ~ ~240 ~
+tp @e[type=minecraft:armor_stand,tag=exp.planetarium_jupiter,limit=1,sort=nearest] ~ ~ ~ ~280 ~
+tp @e[type=minecraft:armor_stand,tag=exp.planetarium_saturn,limit=1,sort=nearest] ~ ~ ~ ~200 ~
+tp @e[type=minecraft:armor_stand,tag=exp.planetarium_uranus,limit=1,sort=nearest] ~ ~ ~ ~120 ~
+tp @e[type=minecraft:armor_stand,tag=exp.planetarium_neptune,limit=1,sort=nearest] ~ ~ ~ ~320 ~
+tp @e[type=minecraft:armor_stand,tag=exp.planetarium_pluto,limit=1,sort=nearest] ~ ~ ~ ~80 ~
+tp @e[type=minecraft:armor_stand,tag=exp.planetarium_moon,limit=1,sort=nearest] ~ ~ ~ ~360 ~
 
 # summon the planet armor stands. these armor stands represent the planets and will determine the rotation of every planet
 summon minecraft:armor_stand ~ ~1.2 ~ {Tags:["exp.mini_sun","exp.planetarium_part","smithed.block"],Fire:9000000,Marker:1b,Invulnerable:1b,DisabledSlots:2039583,Invisible:1b,NoGravity:1b,Small:0b,CustomNameVisible:0b,CustomName:'{"text":"","italic":false}',ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;29464294,160580508,-1779136758,1804506042],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMzNzgzMmM0MTM1MjU1NTU1M2Q4NmFhYWUxMzQxOTMzMWUzYWRlOTk3YmNlMGI4MTEzN2Q1MjA0ZTRjZGU3ZSJ9fX0="}]}}}}]}

@@ -8,11 +8,11 @@ summon item_display ~ ~1.6 ~ {item:{id:"minecraft:jigsaw",Count:1b,tag:{CustomMo
 data merge entity @e[type=minecraft:item_display,tag=exp.assembler_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,1.683f,0.0f],scale:[-0.62f,0.62f,-0.62f]}}
 data merge entity @e[type=minecraft:item_display,tag=exp.assembler_product,limit=1,sort=nearest] {transformation:{translation:[0.0f,0.0f,0.0f],scale:[-0.25f,0.25f,-0.25f]}}
 
-data modify entity @e[type=item_display,tag=exp.assembler_product,limit=1,sort=nearest] Rotation[0] set from entity @e[type=item_display,tag=exp.assembler_display,limit=1,sort=nearest] Rotation[0]
+data modify entity @e[type=minecraft:item_display,tag=exp.assembler_product,limit=1,sort=nearest] Rotation[0] set from entity @e[type=minecraft:item_display,tag=exp.assembler_display,limit=1,sort=nearest] Rotation[0]
 
-execute as @e[type=item_display,tag=exp.assembler_display,limit=1,sort=nearest] at @s run summon armor_stand ^ ^ ^1 {Invulnerable:1b,NoGravity:1b,Marker:0b,Invisible:1b,Rotation:[90f,0f],DisabledSlots:2039583,Tags:["exp.assembler","exp.block","smithed.block"]}
-execute as @e[type=item_display,tag=exp.assembler_display,limit=1,sort=nearest] at @s run setblock ^ ^ ^1 minecraft:barrel{CustomName:'{"translate":"exp_blocks_assembler_gui_name","color":"dark_grey"}'} replace
-execute as @e[type=item_display,tag=exp.assembler_display,limit=1,sort=nearest] at @s positioned ^ ^ ^1 run function expansion:contraptions/assembler/gui
+execute as @e[type=minecraft:item_display,tag=exp.assembler_display,limit=1,sort=nearest] at @s run summon minecraft:armor_stand ^ ^ ^1 {Invulnerable:1b,NoGravity:1b,Marker:0b,Invisible:1b,Rotation:[90f,0f],DisabledSlots:2039583,Tags:["exp.assembler","exp.block","smithed.block"]}
+execute as @e[type=minecraft:item_display,tag=exp.assembler_display,limit=1,sort=nearest] at @s run setblock ^ ^ ^1 minecraft:barrel{CustomName:'{"translate":"exp_blocks_assembler_gui_name","color":"dark_grey"}'} replace
+execute as @e[type=minecraft:item_display,tag=exp.assembler_display,limit=1,sort=nearest] at @s positioned ^ ^ ^1 run function expansion:contraptions/assembler/gui
 
 playsound minecraft:block.metal.place voice @s
 

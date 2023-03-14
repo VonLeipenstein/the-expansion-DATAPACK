@@ -1,9 +1,9 @@
-execute if score @s exp.gravity_delay matches -10.. run scoreboard players remove @s exp.gravity_delay 1
-execute if score @s exp.gravity_delay matches 0 run attribute @s minecraft:generic.armor modifier add 69-34f-243a-f3e-34b "levitation_fix" 10 add 
+scoreboard players remove @s[scores={exp.gravity_delay=-10}] exp.gravity_delay 1
+attribute @s[scores={exp.gravity_delay=0}] minecraft:generic.armor modifier add 69-34f-243a-f3e-34b "levitation_fix" 10 add 
 
-execute if score @s exp.gravity_delay matches 0 run effect give @s levitation 1 255 true
-execute if score @s exp.gravity_delay matches -5 run effect clear @s levitation
-execute if score @s exp.gravity_delay matches -5 run effect give @s levitation 1 254 true
-execute if score @s exp.gravity_delay matches -10 run effect clear @s levitation
-execute if score @s exp.gravity_delay matches -10 run tp @s ~ ~ ~
-execute if score @s exp.gravity_delay matches -10 run attribute @s minecraft:generic.armor modifier remove 69-34f-243a-f3e-34b
+effect give @s[scores={exp.gravity_delay=0}] levitation 1 255 true
+effect clear @s[scores={exp.gravity_delay=-5}] levitation
+effect give @s[scores={exp.gravity_delay=-5}] levitation 1 254 true
+effect clear @s[scores={exp.gravity_delay=-10}] levitation
+tp @s[scores={exp.gravity_delay=-10}] ~ ~ ~
+attribute @s[scores={exp.gravity_delay=-10}] minecraft:generic.armor modifier remove 69-34f-243a-f3e-34b

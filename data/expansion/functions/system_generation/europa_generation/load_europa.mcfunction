@@ -1,4 +1,4 @@
-execute if score #europa exp.timer_2 matches 42 run kill @e[type=armor_stand,tag=exp.europa]
+execute if score #europa exp.timer_2 matches 42 run kill @e[type=minecraft:armor_stand,tag=exp.europa]
 execute if score #europa exp.timer_2 matches 180 run tellraw @a {"text":"Generating europa... [Object 6/6]","color":"dark_purple"}
 
 execute if score #europa exp.timer_2 matches 36 run place template expansion:space/planets/europa/sphere_middle ~-23 ~-23 ~-23 

@@ -35,11 +35,11 @@ execute store result entity @s ArmorItems[3].tag.portal_array[0].bit10 byte 1 ru
 execute store result entity @s ArmorItems[3].tag.portal_array[0].bit11 byte 1 run scoreboard players get .bit11 exp.value
 
 # Store the color code in the array.
-execute store result entity @s ArmorItems[3].tag.portal_array[0].core1 byte 1 run scoreboard players get @e[type=armor_stand,tag=exp.port_1,limit=1,sort=nearest] exp.hold_value_alt
-execute store result entity @s ArmorItems[3].tag.portal_array[0].core2 byte 1 run scoreboard players get @e[type=armor_stand,tag=exp.port_2,limit=1,sort=nearest] exp.hold_value_alt
-execute store result entity @s ArmorItems[3].tag.portal_array[0].core3 byte 1 run scoreboard players get @e[type=armor_stand,tag=exp.port_3,limit=1,sort=nearest] exp.hold_value_alt
-execute store result entity @s ArmorItems[3].tag.portal_array[0].core4 byte 1 run scoreboard players get @e[type=armor_stand,tag=exp.port_4,limit=1,sort=nearest] exp.hold_value_alt
-execute store result entity @s ArmorItems[3].tag.portal_array[0].core5 byte 1 run scoreboard players get @e[type=armor_stand,tag=exp.port_5,limit=1,sort=nearest] exp.hold_value_alt
+execute store result entity @s ArmorItems[3].tag.portal_array[0].core1 byte 1 run scoreboard players get @e[type=minecraft:armor_stand,tag=exp.port_1,limit=1,sort=nearest] exp.hold_value_alt
+execute store result entity @s ArmorItems[3].tag.portal_array[0].core2 byte 1 run scoreboard players get @e[type=minecraft:armor_stand,tag=exp.port_2,limit=1,sort=nearest] exp.hold_value_alt
+execute store result entity @s ArmorItems[3].tag.portal_array[0].core3 byte 1 run scoreboard players get @e[type=minecraft:armor_stand,tag=exp.port_3,limit=1,sort=nearest] exp.hold_value_alt
+execute store result entity @s ArmorItems[3].tag.portal_array[0].core4 byte 1 run scoreboard players get @e[type=minecraft:armor_stand,tag=exp.port_4,limit=1,sort=nearest] exp.hold_value_alt
+execute store result entity @s ArmorItems[3].tag.portal_array[0].core5 byte 1 run scoreboard players get @e[type=minecraft:armor_stand,tag=exp.port_5,limit=1,sort=nearest] exp.hold_value_alt
 
 # Store the position in the array.
 execute store result entity @s ArmorItems[3].tag.portal_array[0].x double 1 run data get entity @s Pos[0]

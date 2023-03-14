@@ -1,13 +1,13 @@
 # determine the location of the planet
-execute if entity @s[tag=exp.planetarium_mercury] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_mercury,limit=1,sort=nearest] ^ ^2 ^1
-execute if entity @s[tag=exp.planetarium_venus] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_venus,limit=1,sort=nearest] ^ ^2 ^2
-execute if entity @s[tag=exp.planetarium_earth] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_earth,limit=1,sort=nearest] ^ ^2 ^3
-execute if entity @s[tag=exp.planetarium_mars] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_mars,limit=1,sort=nearest] ^ ^2 ^4
-execute if entity @s[tag=exp.planetarium_jupiter] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_jupiter,limit=1,sort=nearest] ^ ^1.2 ^6
-execute if entity @s[tag=exp.planetarium_saturn] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_saturn,limit=1,sort=nearest] ^ ^1.2 ^7
-execute if entity @s[tag=exp.planetarium_uranus] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_uranus,limit=1,sort=nearest] ^ ^2 ^8
-execute if entity @s[tag=exp.planetarium_neptune] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_neptune,limit=1,sort=nearest] ^ ^2 ^9
-execute if entity @s[tag=exp.planetarium_pluto] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_pluto,limit=1,sort=nearest] ^ ^2 ^10
+execute if entity @s[tag=exp.planetarium_mercury] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_mercury,limit=1,sort=nearest] ^ ^2 ^1
+execute if entity @s[tag=exp.planetarium_venus] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_venus,limit=1,sort=nearest] ^ ^2 ^2
+execute if entity @s[tag=exp.planetarium_earth] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_earth,limit=1,sort=nearest] ^ ^2 ^3
+execute if entity @s[tag=exp.planetarium_mars] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_mars,limit=1,sort=nearest] ^ ^2 ^4
+execute if entity @s[tag=exp.planetarium_jupiter] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_jupiter,limit=1,sort=nearest] ^ ^1.2 ^6
+execute if entity @s[tag=exp.planetarium_saturn] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_saturn,limit=1,sort=nearest] ^ ^1.2 ^7
+execute if entity @s[tag=exp.planetarium_uranus] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_uranus,limit=1,sort=nearest] ^ ^2 ^8
+execute if entity @s[tag=exp.planetarium_neptune] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_neptune,limit=1,sort=nearest] ^ ^2 ^9
+execute if entity @s[tag=exp.planetarium_pluto] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_pluto,limit=1,sort=nearest] ^ ^2 ^10
 
 # change the orbit of the planet
 execute if entity @s[tag=exp.planetarium_mercury] at @s run tp @s ~ ~ ~ ~-0.204 ~
@@ -35,13 +35,13 @@ execute if entity @s[tag=exp.mini_neptune] at @s run tp @s ~ ~ ~ ~-27.0 ~
 execute if entity @s[tag=exp.mini_pluto] at @s run tp @s ~ ~ ~ ~-2.9 ~
 
 # the moon
-execute if entity @s[tag=exp.mini_earth] at @s run tp @e[type=armor_stand,tag=exp.planetarium_moon] ~ ~ ~
-execute if entity @s[tag=exp.planetarium_moon] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_moon] ^ ^0.5 ^0.3 ~ ~
+execute if entity @s[tag=exp.mini_earth] at @s run tp @e[type=minecraft:armor_stand,tag=exp.planetarium_moon] ~ ~ ~
+execute if entity @s[tag=exp.planetarium_moon] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_moon] ^ ^0.5 ^0.3 ~ ~
 execute if entity @s[tag=exp.planetarium_moon] at @s run tp @s ~ ~ ~ ~-0.67 ~
 
 # europa
-execute if entity @s[tag=exp.mini_jupiter] at @s run tp @e[type=armor_stand,tag=exp.planetarium_europa] ~ ~ ~
-execute if entity @s[tag=exp.planetarium_europa] at @s rotated ~ 0 run tp @e[type=armor_stand,tag=exp.mini_europa] ^ ^1.2 ^0.4 ~ ~
+execute if entity @s[tag=exp.mini_jupiter] at @s run tp @e[type=minecraft:armor_stand,tag=exp.planetarium_europa] ~ ~ ~
+execute if entity @s[tag=exp.planetarium_europa] at @s rotated ~ 0 run tp @e[type=minecraft:armor_stand,tag=exp.mini_europa] ^ ^1.2 ^0.4 ~ ~
 execute if entity @s[tag=exp.planetarium_europa] at @s run tp @s ~ ~ ~ ~5.14 ~
 
 # asteroids particles

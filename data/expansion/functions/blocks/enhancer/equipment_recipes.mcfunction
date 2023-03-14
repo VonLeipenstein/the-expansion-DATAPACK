@@ -13,7 +13,7 @@ scoreboard players operation @s[tag=exp.valid_item] exp.hold_count -= #1 exp.con
 execute if score @s[tag=exp.valid_item] exp.hold_count matches 1.. run item modify block ~ ~ ~ container.3 expansion:utility/set_count_from_score
 execute if score @s[tag=exp.valid_item] exp.hold_count matches 0 run item replace block ~ ~ ~ container.3 with minecraft:air
 
-execute if entity @s[tag=exp.valid_item] run item replace entity @e[type=armor_stand,tag=exp.enhancer_display,limit=1,sort=nearest] armor.head from block ~ ~ ~ container.5
+execute if entity @s[tag=exp.valid_item] run item replace entity @e[type=minecraft:armor_stand,tag=exp.enhancer_display,limit=1,sort=nearest] armor.head from block ~ ~ ~ container.5
 
 # play sound
 execute if entity @s[tag=exp.valid_item] run playsound minecraft:block.anvil.use voice @p

@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:vehicles/lunar_module/enter"
+    "function": "expansion:vehicles/lunar_module/click_detection/rightclick"
   }
 }

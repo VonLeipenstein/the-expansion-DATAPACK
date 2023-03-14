@@ -1,5 +1,5 @@
 # set the room_id of the armor stand equal to the room_id of the player
-scoreboard players operation @s exp.unique_id = @e[type=armor_stand,tag=exp.room_origin,limit=1,sort=nearest] exp.unique_id
+scoreboard players operation @s exp.unique_id = @e[type=minecraft:armor_stand,tag=exp.room_origin,limit=1,sort=nearest] exp.unique_id
 
 function expansion:items/transporter/save_dimension
 

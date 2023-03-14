@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^1.5 as @e[type=minecraft:armor_stand,tag=exp.transporter,distance=..3,limit=1,sort=nearest] at @s run function expansion:items/transporter/transport_block/pick_up
+advancement revoke @s only expansion:utility/transporter_lc

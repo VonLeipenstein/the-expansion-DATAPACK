@@ -1,4 +1,4 @@
-execute if score #mars exp.timer_2 matches 42 run kill @e[type=armor_stand,tag=exp.mars]
+execute if score #mars exp.timer_2 matches 42 run kill @e[type=minecraft:armor_stand,tag=exp.mars]
 execute if score #mars exp.timer_2 matches 180 run tellraw @a {"text":"Generating mars... [Object 3/6]","color":"dark_purple"}
 
 execute if score #mars exp.timer_2 matches 36 run place template expansion:space/planets/mars/sphere_middle ~-23 ~-23 ~-23 

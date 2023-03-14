@@ -1,12 +1,12 @@
-kill @e[type=interaction,tag=exp.module_takeoff,limit=1,sort=nearest]
+kill @e[type=minecraft:interaction,tag=exp.module_takeoff,limit=1,sort=nearest]
 playsound expansion:lunarmodule.launch player @p ~ ~ ~
 particle flame ~ ~2 ~ 0 0 0 0.2 200
 particle minecraft:cloud ~ ~2 ~ 0 0 0 0.3 300
 title @p subtitle {"text":"Do not leave the lunar module from now on.","color":"gold","bold":true}
 
 # summon a new module part to be the bottom
-execute unless entity @e[type=armor_stand,tag=exp.module_bottom,distance=0.1,limit=1,sort=nearest] run summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["exp.module_bottom"],Passengers:[{id:"minecraft:item_display",Tags:["exp.mbottom_display"],item_display:"head",item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:1012020}}}],DisabledSlots:2039583}
-execute as @e[type=armor_stand,tag=exp.module_bottom,limit=1,sort=nearest] on passengers run data merge entity @s {transformation:{translation:[0.0f,0.22f,0.0f],scale:[-0.62f,0.62f,-0.62f]}}
+execute unless entity @e[type=minecraft:armor_stand,tag=exp.module_bottom,distance=0.1,limit=1,sort=nearest] run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Tags:["exp.module_bottom"],Passengers:[{id:"minecraft:item_display",Tags:["exp.mbottom_display"],item_display:"head",item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:1012020}}}],DisabledSlots:2039583}
+execute as @e[type=minecraft:armor_stand,tag=exp.module_bottom,limit=1,sort=nearest] on passengers run data merge entity @s {transformation:{translation:[0.0f,0.22f,0.0f],scale:[-0.62f,0.62f,-0.62f]}}
 
 # make the current module the module top
 execute on passengers run data modify entity @s item.tag.CustomModelData set value 1012021

@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:vehicles/rocket/enter_rocket"
+    "function": "expansion:vehicles/rocket/click_detection/rightclick"
   }
 }

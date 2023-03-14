@@ -5,5 +5,3 @@ ride @s mount @e[type=minecraft:item_display,tag=exp.buggy_display,limit=1,sort=
 
 tag @s add exp.inside_buggy
 tag @s add exp.inside_vehicle
-
-advancement revoke @s only expansion:utility/buggy_rc

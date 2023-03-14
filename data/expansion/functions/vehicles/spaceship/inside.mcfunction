@@ -21,4 +21,4 @@ scoreboard players add @s[scores={exp.fuel_level=1..,exp.speed=11..}] exp.timer_
 execute if score @s exp.timer_1 >= @s exp.value run function expansion:vehicles/spaceship/fuel/use_fuel
 
 # marker functions
-execute if entity @p[predicate=expansion:dimension/space,tag=exp.markertag1] run function expansion:vehicles/spaceship/markers/markers
+execute if entity @p[predicate=expansion:dimension/space,tag=exp.markertag1] as @e[type=minecraft:armor_stand,tag=exp.planet_marker,limit=7,sort=nearest] run function expansion:vehicles/spaceship/markers/markers

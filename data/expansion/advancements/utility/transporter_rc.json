@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:items/transporter/transport_block/rc_options"
+    "function": "expansion:items/transporter/transport_block/click_detection/rightclick"
   }
 }

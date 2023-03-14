@@ -1,14 +1,15 @@
-execute store result entity @s ArmorItems[3].tag.fuel_lvl int 1 run scoreboard players get @s exp.fuel_level
-data modify entity @s ArmorItems[3].tag.CustomModelData set value 1012008
+execute as @p unless entity @s[gamemode=creative] run loot spawn ~ ~1 ~ loot expansion:vehicles/buggy
 
-loot spawn ~ ~ ~ loot expansion:vehicles/buggy
+execute on passengers run data modify entity @s item.tag.CustomModelData set value 1012008
+execute on passengers store result entity @s item.tag.fuel_lvl int 1 on vehicle run scoreboard players get @s exp.fuel_level
 
-data modify entity @e[type=item,nbt={Item:{tag:{moon_buggy:1b}}},limit=1,sort=nearest] Item set from entity @s ArmorItems[3]
+execute on passengers run data modify entity @e[type=item,nbt={Item:{tag:{moon_buggy:1b}}},limit=1,sort=nearest] Item set from entity @s item
 
-playsound expansion:wrench.create player @a ~ ~ ~
+playsound block.metal.break block @a ~ ~ ~
+
 execute positioned ~ ~1 ~ as @p at @s run tp @s ~ ~0.001 ~
-kill @e[type=interaction,tag=exp.buggy_rcdet,distance=..5,limit=1,sort=nearest]
-kill @e[type=item_display,tag=exp.buggy_display,distance=..5,limit=1,sort=nearest]
+execute on passengers on passengers run kill @s
+execute on passengers run kill @s
 kill @s
 
 

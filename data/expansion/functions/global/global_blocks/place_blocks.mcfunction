@@ -26,9 +26,10 @@ execute if predicate expansion:nbt_checks/selected_item/blocks/tesla_coil run fu
 execute if predicate expansion:nbt_checks/selected_item/blocks/modstation run function expansion:blocks/modification_station/place
 
 # planetarium
-execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium if entity @e[tag=exp.planetarium,limit=1,sort=nearest,distance=..22] run function expansion:utilities/error_messages/planetarium_error
-execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium unless entity @e[tag=exp.planetarium,limit=1,sort=nearest,distance=..22] run function expansion:blocks/planetarium/place
-# planetarium used for markers in space
-execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium if predicate expansion:dimension/space if entity @s[tag=exp.inside_spaceship] run function expansion:vehicles/spaceship/markers/marker_switcher
+execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium if entity @e[type=minecraft:armor_stand,tag=exp.planetarium,limit=1,sort=nearest,distance=..22] run function expansion:utilities/error_messages/planetarium_error
+execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium unless entity @s[tag=exp.planetarium_error] run function expansion:blocks/planetarium/place
+tag @s[tag=exp.planetarium_error] remove exp.planetarium_error
 
-execute unless entity @s[gamemode=creative] run item replace entity @s weapon.mainhand with minecraft:air
+# finish the block placing
+item replace entity @s[gamemode=!creative] weapon.mainhand with minecraft:air
+playsound minecraft:block.metal.place block @s

@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:vehicles/spaceship/rc_options"
+    "function": "expansion:vehicles/spaceship/click_detection/rightclick"
   }
 }

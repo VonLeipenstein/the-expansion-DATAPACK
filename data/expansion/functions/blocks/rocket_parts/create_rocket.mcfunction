@@ -7,6 +7,6 @@ particle minecraft:wax_off ~ ~3 ~ 0.5 3 0.5 0.05 500
 
 playsound expansion:wrench.create block @a ~ ~ ~
 
-kill @e[type=armor_stand,tag=exp.rocket_bottom,distance=..1,limit=1,sort=nearest]
-execute positioned ~ ~2 ~ run kill @e[type=armor_stand,tag=exp.rocket_cockpit,distance=..1,limit=1,sort=nearest]
+kill @e[type=minecraft:armor_stand,tag=exp.rocket_bottom,distance=..1,limit=1,sort=nearest]
+execute positioned ~ ~2 ~ run kill @e[type=minecraft:armor_stand,tag=exp.rocket_cockpit,distance=..1,limit=1,sort=nearest]
 kill @s

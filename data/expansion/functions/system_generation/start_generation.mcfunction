@@ -1,7 +1,7 @@
 tag @a[tag=exp.generator] remove exp.generator
 tag @r add exp.generator
 execute as @a[tag=exp.generator] at @s run forceload add ~ ~
-execute as @a[tag=exp.generator] at @s run summon armor_stand ~ ~ ~ {Tags:["exp.player_spawn"],NoGravity:1b,Invisible:1b,Marker:1b}
+execute as @a[tag=exp.generator] at @s run summon minecraft:armor_stand ~ ~ ~ {Tags:["exp.player_spawn"],NoGravity:1b,Invisible:1b,Marker:1b}
 
 tellraw @a ["",{"text":"Solar System is absent or incomplete, starting system generation in 20 seconds. Please do not interrupt this process."}]
 

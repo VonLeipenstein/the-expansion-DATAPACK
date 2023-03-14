@@ -1,5 +1,5 @@
 # finish the scan by killing all the armor stands and resetting the block counter
-kill @e[type=marker,tag=exp.oxygen_marker,distance=..20]
+kill @e[type=minecraft:marker,tag=exp.oxygen_marker,distance=..20]
 scoreboard players set @s exp.counter_1 0
 
 # give the oxygenator a tag that it will keep until a scan fails. This is to give players that enter an already exp.pressurized base immediate access to oxygen

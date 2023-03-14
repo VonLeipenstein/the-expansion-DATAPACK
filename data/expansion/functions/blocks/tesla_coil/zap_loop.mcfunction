@@ -10,7 +10,7 @@ scoreboard players add @s exp.max_range 1
 execute facing entity @e[tag=exp.zap_target,limit=1,sort=nearest] eyes run function expansion:blocks/tesla_coil/bend_lightning
 
 # run this function again if the conditions are met
-execute as @s[scores={exp.max_range=..200}] unless entity @e[tag=exp.zap_target,distance=..2.1,limit=1,sort=nearest] at @s if block ^ ^ ^0.25 #expansion:expansion_air run function expansion:blocks/tesla_coil/zap_loop
+execute if entity @s[scores={exp.max_range=..200}] unless entity @e[tag=exp.zap_target,distance=..2.1,limit=1,sort=nearest] at @s if block ^ ^ ^0.25 #expansion:expansion_air run function expansion:blocks/tesla_coil/zap_loop
 
 # add a tag to recognise if the entity has actually been hit by the lightning
 tag @e[tag=exp.zap_target,distance=..2.1,limit=1,sort=nearest] add exp.zapped

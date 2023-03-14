@@ -5,4 +5,5 @@ execute if predicate expansion:nbt_checks/selected_item/vehicles/rocket run func
 execute if predicate expansion:nbt_checks/selected_item/vehicles/lunar_module run function expansion:vehicles/lunar_module/place
 execute if predicate expansion:nbt_checks/selected_item/vehicles/return_capsule run function expansion:vehicles/return_capsule/place
 
-execute unless entity @s[gamemode=creative] run item replace entity @s weapon.mainhand with minecraft:air
+item replace entity @s[gamemode=!creative] weapon.mainhand with minecraft:air
+playsound block.metal.place block @s ~ ~ ~

@@ -1,1 +1,1 @@
-execute in expansion:space run tp @s ~ 128 ~
+execute in expansion:space run tp @s ~ 512 ~

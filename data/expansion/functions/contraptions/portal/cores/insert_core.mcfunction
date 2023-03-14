@@ -9,6 +9,6 @@ execute if score @s exp.hold_count matches 1.. run item replace entity @p weapon
 execute if score @s exp.hold_count matches 0 run item replace entity @p weapon.mainhand with minecraft:air
 
 # exp.hold_value keeps track of core count
-execute as @e[type=armor_stand,tag=exp.portal_main,limit=1,sort=nearest] run function expansion:contraptions/portal/cores/add_core_count
+execute as @e[type=minecraft:armor_stand,tag=exp.portal_main,limit=1,sort=nearest] run function expansion:contraptions/portal/cores/add_core_count
 
 playsound expansion:portal.insert_core block @a ~ ~ ~ 1 1 0

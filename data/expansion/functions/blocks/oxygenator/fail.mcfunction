@@ -1,5 +1,5 @@
 # finish the scan by killing all the armor stands and resetting the block counter
-kill @e[type=marker,tag=exp.oxygen_marker,distance=..20]
+kill @e[type=minecraft:marker,tag=exp.oxygen_marker,distance=..20]
 scoreboard players set @s exp.counter_1 0
 scoreboard players set @s exp.counter_2 0
 item replace block ~ ~ ~ container.1 with minecraft:air

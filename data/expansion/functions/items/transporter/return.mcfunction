@@ -1,11 +1,11 @@
-data modify entity @s ArmorItems[0].tag.return_dim set from entity @e[type=armor_stand,tag=exp.position_new,limit=1,sort=nearest] ArmorItems[0].tag.return_dim
+data modify entity @s ArmorItems[0].tag.return_dim set from entity @e[type=minecraft:armor_stand,tag=exp.position_new,limit=1,sort=nearest] ArmorItems[0].tag.return_dim
 
-execute at @s store result score @s exp.x run data get entity @e[type=armor_stand,tag=exp.position_new,limit=1,sort=nearest] ArmorItems[0].tag.return_pos[0]
-execute at @s store result score @s exp.y run data get entity @e[type=armor_stand,tag=exp.position_new,limit=1,sort=nearest] ArmorItems[0].tag.return_pos[1]
-execute at @s store result score @s exp.z run data get entity @e[type=armor_stand,tag=exp.position_new,limit=1,sort=nearest] ArmorItems[0].tag.return_pos[2]
+execute at @s store result score @s exp.x run data get entity @e[type=minecraft:armor_stand,tag=exp.position_new,limit=1,sort=nearest] ArmorItems[0].tag.return_pos[0]
+execute at @s store result score @s exp.y run data get entity @e[type=minecraft:armor_stand,tag=exp.position_new,limit=1,sort=nearest] ArmorItems[0].tag.return_pos[1]
+execute at @s store result score @s exp.z run data get entity @e[type=minecraft:armor_stand,tag=exp.position_new,limit=1,sort=nearest] ArmorItems[0].tag.return_pos[2]
 
-kill @e[type=armor_stand,tag=exp.room_position,tag=!exp.position_new,limit=1,sort=nearest]
-tag @e[type=armor_stand,tag=exp.position_new,limit=1,sort=nearest] remove exp.position_new
+kill @e[type=minecraft:armor_stand,tag=exp.room_position,tag=!exp.position_new,limit=1,sort=nearest]
+tag @e[type=minecraft:armor_stand,tag=exp.position_new,limit=1,sort=nearest] remove exp.position_new
 
 execute unless data entity @s ArmorItems[0].tag{return_dim:-1} unless data entity @s ArmorItems[0].tag{return_dim:7} in expansion:transporter_utility store result entity @s Pos[0] double 100000 run scoreboard players get @s exp.x
 execute unless data entity @s ArmorItems[0].tag{return_dim:-1} unless data entity @s ArmorItems[0].tag{return_dim:7} in expansion:transporter_utility store result entity @s Pos[1] double 1 run scoreboard players get @s exp.y

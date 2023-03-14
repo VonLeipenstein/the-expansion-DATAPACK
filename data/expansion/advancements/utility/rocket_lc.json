@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"exp.rocket_rcdet\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "expansion:vehicles/rocket/click_detection/leftclick"
+  }
+}

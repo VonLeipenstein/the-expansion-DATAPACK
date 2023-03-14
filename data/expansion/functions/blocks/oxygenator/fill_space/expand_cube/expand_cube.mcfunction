@@ -2,7 +2,7 @@
 tag @s remove exp.scanning
 
 # run the expand function at some of the oxygen markers
-execute at @e[type=marker,tag=exp.oxygen_marker,tag=!exp.scanned,limit=4,sort=furthest,distance=..19] run function expansion:blocks/oxygenator/fill_space/expand_cube/pressurize
+execute at @e[type=minecraft:marker,tag=exp.oxygen_marker,tag=!exp.scanned,limit=4,sort=furthest,distance=..19] run function expansion:blocks/oxygenator/fill_space/expand_cube/pressurize
 
 # kill any markers that have no other markers near them
-execute as @e[type=marker,tag=exp.oxygen_marker,tag=exp.scanned,limit=4,sort=furthest,distance=..20] run function expansion:blocks/oxygenator/fill_space/expand_cube/kill_markers
+execute as @e[type=minecraft:marker,tag=exp.oxygen_marker,tag=exp.scanned,limit=4,sort=furthest,distance=..20] run function expansion:blocks/oxygenator/fill_space/expand_cube/kill_markers

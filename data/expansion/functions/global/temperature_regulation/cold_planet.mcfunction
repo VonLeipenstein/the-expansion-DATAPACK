@@ -1,1 +1,1 @@
-execute unless entity @s[predicate=expansion:nbt_checks/armor/space_equipment/warming] run function expansion:global/temperature_regulation/freeze
+execute unless predicate expansion:nbt_checks/armor/space_equipment/warming if entity @s[gamemode=!creative,gamemode=!spectator,tag=!exp.has_oxygen,tag=!exp.generator,tag=!exp.inside_vehicle] run function expansion:global/temperature_regulation/freeze

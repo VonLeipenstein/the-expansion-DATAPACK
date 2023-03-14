@@ -2,7 +2,7 @@
 data modify entity @s Rotation[0] set from storage expansion:portal portal_out[0].facing
 
 # Stores the dimensions of the home portal and the target portal in scoreboards.
-#execute store result score @s exp.dim_test run data get entity @e[type=armor_stand,tag=exp.portal_main,limit=1,sort=nearest] ArmorItems[3].tag.portal_array[0].dim
+#execute store result score @s exp.dim_test run data get entity @e[type=minecraft:armor_stand,tag=exp.portal_main,limit=1,sort=nearest] ArmorItems[3].tag.portal_array[0].dim
 execute store result score @s exp.dim_test run data get storage expansion:portal portal_out[0].dim
 
 # Remove the teleport tag within a few ticks

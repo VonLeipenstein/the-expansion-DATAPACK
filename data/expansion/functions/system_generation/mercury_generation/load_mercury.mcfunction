@@ -1,4 +1,4 @@
-execute if score #mercury exp.timer_2 matches 42 run kill @e[type=armor_stand,tag=exp.mercury]
+execute if score #mercury exp.timer_2 matches 42 run kill @e[type=minecraft:armor_stand,tag=exp.mercury]
 execute if score #mercury exp.timer_2 matches 41 run tellraw @a {"text":"Generating mercury... [Object 1/7]","color":"dark_purple"}
 
 execute if score #mercury exp.timer_2 matches 36 run place template expansion:space/planets/mercury/sphere_middle ~-23 ~-23 ~-23 

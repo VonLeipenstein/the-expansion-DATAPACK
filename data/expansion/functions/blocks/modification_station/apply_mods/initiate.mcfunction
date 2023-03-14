@@ -1,4 +1,4 @@
-tag @e[type=armor_stand,tag=exp.mod_ship,distance=..50,limit=1,sort=nearest] add exp.being_modified
+tag @e[type=minecraft:armor_stand,tag=exp.mod_ship,distance=..50,limit=1,sort=nearest] add exp.being_modified
 tag @s add exp.modifying_ship
 
 # store any upgrades inside the armor stands head item and check if there is any
