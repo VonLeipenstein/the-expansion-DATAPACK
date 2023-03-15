@@ -13,7 +13,7 @@ data merge entity @s[predicate=expansion:dimension/zero_gravity,scores={exp.spee
 execute on passengers on passengers unless predicate expansion:nbt_checks/selected_item/items/blasters run function expansion:vehicles/spaceship/antidupe
 
 # spaceship blasters
-execute unless score @s exp.counter_2 matches 1.. on passengers on passengers if score @s exp.rightclick matches 1.. if predicate expansion:nbt_checks/selected_item/items/blasters unless predicate expansion:nbt_checks/selected_item/blocks/planetarium unless predicate expansion:nbt_checks/selected_item/items/fleet_finder on vehicle on vehicle run function expansion:vehicles/spaceship/blasters/determine_blaster
+execute unless score @s exp.counter_2 matches 1.. if score @s exp.speed matches 11.. on passengers on passengers if score @s exp.rightclick matches 1.. if predicate expansion:nbt_checks/selected_item/items/blasters unless predicate expansion:nbt_checks/selected_item/blocks/planetarium unless predicate expansion:nbt_checks/selected_item/items/fleet_finder on vehicle on vehicle run function expansion:vehicles/spaceship/blasters/determine_blaster
 scoreboard players remove @s[scores={exp.counter_2=1..}] exp.counter_2 1
 
 # fuel functions, exp.value is decided the interval at which fuel is removed. this can be changed by a fuel upgrade

@@ -14,4 +14,4 @@ execute if entity @s[tag=exp.falling] run function expansion:utilities/gravity/z
 # make all other entities float
 execute as @e[type=!player,tag=!exp.spaceship,distance=..50,nbt=!{NoGravity:1b},limit=1,sort=nearest] run data merge entity @s {NoGravity:1b}
 
-execute if predicate expansion:dimension/space run function expansion:global/transitions/planet_detection
+execute if predicate expansion:dimension/space unless entity @s[gamemode=spectator] run function expansion:global/transitions/planet_detection

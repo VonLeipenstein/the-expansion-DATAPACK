@@ -1,4 +1,4 @@
-tp @s ^ ^ ^1
+tp @s ^ ^ ^0.75
 
 particle dust 1 0 0 1 ^ ^ ^ 0 0 0 5 1 force
 particle dust 1 0 0 1 ^ ^ ^-.25 0 0 0 5 1 force

@@ -1,3 +1,6 @@
-summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Small:1b,Tags:["exp.pet_drone"],CustomName:'{"text":"Clinton"}',Passengers:[{id:"minecraft:interaction",Tags:["exp.pet_drone_rcdet"],response:1b,width:0.5f,height:0.5f}],ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;-530335708,-39763925,-1339303156,1781086208],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE3MDUyODZjZjQ1ZmQyMDAxMzBmNjc1NmE3Njg2ZTE1ZjAzZGZiYTRmM2E2MDQ4MzAyYmUxODlhMDY5OTE0NCJ9fX0="}]}}}}]}
+summon minecraft:armor_stand ~ ~1 ~ {Marker:1b,Invisible:1b,Small:1b,Tags:["exp.pet_drone"],CustomName:'{"text":"Clinton"}',Passengers:[{id:"minecraft:interaction",Tags:["exp.pet_drone_rcdet"],response:1b,width:0.5f,height:0.5f}]}
 tag @s add exp.has_active_drone
+execute positioned ~ ~1 ~ run item replace entity @e[type=minecraft:armor_stand,tag=exp.pet_drone,distance=..0.01,limit=1,sort=nearest] armor.head from entity @s weapon.mainhand
 item replace entity @s weapon.mainhand with minecraft:air
+
+playsound expansion:drone.error neutral @a ~ ~ ~

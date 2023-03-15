@@ -1,3 +1,5 @@
+execute at @e[type=minecraft:armor_stand,tag=exp.pet_drone,limit=1,sort=nearest] run playsound expansion:drone.dismiss neutral @a ~ ~ ~
+
 tag @s remove exp.has_active_drone
 execute as @e[type=minecraft:armor_stand,tag=exp.pet_drone,limit=1,sort=nearest] on passengers run kill @s
 kill @e[type=minecraft:armor_stand,tag=exp.pet_drone,limit=1,sort=nearest]
