@@ -7,4 +7,4 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:5b,tag:{spaceship_skin:1b}}]} run ite
 
 scoreboard players set @s exp.counter_1 0
 scoreboard players reset @s exp.bool
-scoreboard players set @s exp.timer_1 200
+scoreboard players set @s exp.timer_1 300

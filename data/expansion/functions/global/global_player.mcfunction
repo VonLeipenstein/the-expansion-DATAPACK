@@ -13,11 +13,7 @@ execute if entity @s[tag=exp.has_oxygen] unless entity @e[type=minecraft:armor_s
 execute if predicate expansion:dimension/oxygen_absent if entity @s[gamemode=!creative,gamemode=!spectator,tag=!exp.has_oxygen,tag=!exp.generator,tag=!exp.inside_vehicle] run function expansion:global/oxygen_regulation/oxygen_tick
 
 # temperature, gravity & planet events
-execute if predicate expansion:dimension/cold_planet run function expansion:global/temperature_regulation/cold_planet
-execute if predicate expansion:dimension/hot_planet run function expansion:global/temperature_regulation/hot_planet
-execute if predicate expansion:dimension/low_gravity run function expansion:utilities/gravity/low_gravity/gravity
-execute if predicate expansion:dimension/zero_gravity run function expansion:utilities/gravity/zero_gravity/main
-execute if predicate expansion:dimension/storage run function expansion:items/transporter/storage_tick
+execute if predicate expansion:dimension/exp_dimensions run function expansion:global/global_planets
 
 # run the vehicle functions if the player is inside a vehicle
 execute if entity @s[tag=exp.inside_vehicle] run function expansion:global/global_vehicles/vehicles_tick
@@ -31,7 +27,7 @@ execute if predicate expansion:nbt_checks/armor/rocket_boots run function expans
 # pet drone
 execute if entity @s[tag=exp.has_active_drone] as @e[type=minecraft:armor_stand,tag=exp.pet_drone,limit=1,sort=nearest] run function expansion:items/drone_pet/movement/main
 
-# death fix function
+# death fix for vehicles
 execute if score @s exp.death matches 1.. run function expansion:global/player_death
 
 # cooldown utility

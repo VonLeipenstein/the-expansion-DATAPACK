@@ -4,24 +4,6 @@
       {
         "condition": "minecraft:location_check",
         "predicate": {
-          "dimension": "minecraft:overworld"
-        }
-      },
-      {
-        "condition": "minecraft:location_check",
-        "predicate": {
-          "dimension": "minecraft:the_nether"
-        }
-      },
-      {
-        "condition": "minecraft:location_check",
-        "predicate": {
-          "dimension": "minecraft:the_end"
-        }
-      },
-      {
-        "condition": "minecraft:location_check",
-        "predicate": {
           "dimension": "expansion:storage"
         }
       },

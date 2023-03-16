@@ -2,5 +2,4 @@ execute anchored eyes facing entity @e[type=minecraft:armor_stand,tag=exp.being_
 
 execute if predicate expansion:chance/020_chance run tp @s ~ ~ ~ ~10 ~
 
-particle firework ~ ~ ~ 0 0 0 0 1
-particle wax_off ~ ~ ~ 0 0 0 0 1
+execute if entity @e[type=minecraft:armor_stand,tag=exp.being_modified,distance=..8,limit=1,sort=nearest] run particle firework ~ ~1 ~ 0 0 0 0 1
