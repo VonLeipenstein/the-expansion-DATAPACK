@@ -1,7 +1,7 @@
 execute if score #moon exp.timer_2 matches 42 run kill @e[type=minecraft:armor_stand,tag=exp.moon]
 execute if score #moon exp.timer_2 matches 180 run tellraw @a {"text":"Generating moon... [Object 2/6]","color":"dark_purple"}
 
-execute if score #moon exp.timer_2 matches 36 run place template expansion:space/planets/moon/sphere_middle ~-23 ~-23 ~-23 
+#execute if score #moon exp.timer_2 matches 36 run place template expansion:space/planets/moon/sphere_middle ~-23 ~-23 ~-23 
 execute if score #moon exp.timer_2 matches 35 run place template expansion:space/planets/moon/sphere_bottom ~-23 ~-70 ~-23 
 execute if score #moon exp.timer_2 matches 34 run place template expansion:space/planets/moon/sphere_top ~-23 ~24 ~-23 
 
@@ -39,5 +39,5 @@ execute if score #moon exp.timer_2 matches 10 run place template expansion:space
 
 execute if score #moon exp.timer_2 matches 3 run summon minecraft:armor_stand ~ ~ ~ {Tags:["planet_structure","exp.moon"],NoGravity:1b}
 execute if score #moon exp.timer_2 matches 2 run scoreboard players set #moon exp.gen_success 1
-execute if score #moon exp.timer_2 matches 1 run scoreboard players set #mars exp.delay 200
+execute if score #moon exp.timer_2 matches 1 run scoreboard players set #mars exp.delay 100
 scoreboard players remove #moon exp.timer_2 1

@@ -117,4 +117,7 @@ scoreboard players set #100000 exp.const 100000
 scoreboard players set #1000000 exp.const 1000000
 
 # start the reload delay to check if the solar system is generated
-scoreboard players set #reload exp.delay 400
+schedule function expansion:global/dimension_test 200t append
+execute unless score #generating_space exp.bool matches 1 run schedule function expansion:global/post_load 220t append
+
+schedule function expansion:global/10t_tick 20t append

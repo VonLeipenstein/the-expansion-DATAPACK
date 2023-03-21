@@ -1,7 +1,7 @@
 execute if score #venus exp.timer_2 matches 42 run kill @e[type=minecraft:armor_stand,tag=exp.venus]
 execute if score #venus exp.timer_2 matches 180 run tellraw @a {"text":"Generating venus... [Object 4/6]","color":"dark_purple"}
 
-execute if score #venus exp.timer_2 matches 36 run place template expansion:space/planets/venus/sphere_middle ~-23 ~-23 ~-23 
+#execute if score #venus exp.timer_2 matches 36 run place template expansion:space/planets/venus/sphere_middle ~-23 ~-23 ~-23 
 execute if score #venus exp.timer_2 matches 35 run place template expansion:space/planets/venus/sphere_bottom ~-23 ~-70 ~-23 
 execute if score #venus exp.timer_2 matches 34 run place template expansion:space/planets/venus/sphere_top ~-23 ~24 ~-23 
 
@@ -39,5 +39,5 @@ execute if score #venus exp.timer_2 matches 10 run place template expansion:spac
 
 execute if score #venus exp.timer_2 matches 3 run summon minecraft:armor_stand ~ ~ ~ {Tags:["planet_structure","exp.venus"],NoGravity:1b}
 execute if score #venus exp.timer_2 matches 2 run scoreboard players set #venus exp.gen_success 1
-execute if score #venus exp.timer_2 matches 1 run scoreboard players set #jupiter exp.delay 200
+execute if score #venus exp.timer_2 matches 1 run scoreboard players set #jupiter exp.delay 100
 scoreboard players remove #venus exp.timer_2 1

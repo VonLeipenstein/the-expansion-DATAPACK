@@ -27,6 +27,9 @@ execute on passengers run function expansion:vehicles/spaceship/model_switching/
 # remove nogravity from leaving in space
 data merge entity @s {NoGravity:0b}
 
+# reset the motion storage in this function in case it corrupts for some weird reason. 
+data merge storage expansion:motion {Motion:[0.0d,0.0d,0.0d]}
+
 # tags to regulate the mod station
 tag @s add exp.player_inside
 tag @s remove exp.mod_ship

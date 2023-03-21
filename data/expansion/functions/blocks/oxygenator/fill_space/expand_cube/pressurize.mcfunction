@@ -7,7 +7,7 @@ execute positioned ~ ~ ~1 run function expansion:blocks/oxygenator/fill_space/ch
 execute positioned ~ ~ ~-1 run function expansion:blocks/oxygenator/fill_space/check_new_pos
 
 # tag the current marker with the exp.scanned tag so it can be killed when there are no markers near it
-tag @e[type=minecraft:marker,limit=1,sort=nearest] add exp.scanned
+tag @e[type=minecraft:marker,distance=..0.001,limit=1,sort=arbitrary] add exp.scanned
 
 # reassign the exp.scanning tag so the exp.scanning will continue
 tag @s[tag=!exp.scanning] add exp.scanning

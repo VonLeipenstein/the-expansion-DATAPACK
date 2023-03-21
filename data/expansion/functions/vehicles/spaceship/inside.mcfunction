@@ -16,9 +16,9 @@ execute on passengers on passengers unless predicate expansion:nbt_checks/select
 execute unless score @s exp.counter_2 matches 1.. if score @s exp.speed matches 11.. on passengers on passengers if score @s exp.rightclick matches 1.. if predicate expansion:nbt_checks/selected_item/items/blasters unless predicate expansion:nbt_checks/selected_item/blocks/planetarium unless predicate expansion:nbt_checks/selected_item/items/fleet_finder on vehicle on vehicle run function expansion:vehicles/spaceship/blasters/determine_blaster
 scoreboard players remove @s[scores={exp.counter_2=1..}] exp.counter_2 1
 
-# fuel functions, exp.value is decided the interval at which fuel is removed. this can be changed by a fuel upgrade
+# fuel functions, exp.value decides the interval at which fuel is removed. this can be changed by a fuel upgrade
 scoreboard players add @s[scores={exp.fuel_level=1..,exp.speed=11..}] exp.timer_1 1
 execute if score @s exp.timer_1 >= @s exp.value run function expansion:vehicles/spaceship/fuel/use_fuel
 
 # marker functions
-execute if entity @p[predicate=expansion:dimension/space,tag=exp.markertag1] as @e[type=minecraft:armor_stand,tag=exp.planet_marker,limit=7,sort=nearest] run function expansion:vehicles/spaceship/markers/markers
+execute if entity @p[predicate=expansion:dimension/space,tag=exp.markertag1] as @e[type=minecraft:armor_stand,tag=exp.planet_marker,distance=..20,limit=7,sort=nearest] run function expansion:vehicles/spaceship/markers/markers
