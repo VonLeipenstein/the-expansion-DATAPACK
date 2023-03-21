@@ -33,21 +33,6 @@
                 },
                 {
                   "translate": "exp_vehicles_spaceship_tip3"
-                },
-                {
-                  "translate": "exp_vehicles_spaceship_tip4"
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "minecraft:generic.knockback_resistance",
-                  "name": "generic.knockback_resistance",
-                  "amount": 1,
-                  "operation": "addition",
-                  "slot": "head"
                 }
               ]
             }

@@ -17,7 +17,33 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{spaceship_mod:1b,blaster_mod:1b,id:1b,crafting_count:1b}"
+                "tag": "{spaceship_mod:1b,blaster_mod:1b,id:1b,crafting_count:1b,CustomModelData:123507}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "translate": "exp_items_applyupgrade_tip"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_items_modspecs_tip"
+                  },
+                  {
+                    "translate": "exp_items_diggingblast_tip1"
+                  },
+                  {
+                    "translate": "exp_items_diggingblast_tip2"
+                  },
+                  {
+                    "translate": "exp_items_diggingblast_tip3"
+                  },
+                  {
+                    "translate": "exp_items_diggingblast_tip4"
+                  }
+                ]
               }
             ]
           }

@@ -17,7 +17,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{computing_core:1b,crafting_count:1b}"
+                "tag": "{ai_core:1b,crafting_count:1b,CustomModelData:123492}"
               }
             ]
           }
