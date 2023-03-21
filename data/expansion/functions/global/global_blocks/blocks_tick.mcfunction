@@ -22,3 +22,5 @@ execute if entity @s[tag=exp.portal_main,tag=exp.activated_portal] run function 
 execute if entity @s[tag=exp.tesla_coil] run function expansion:blocks/tesla_coil/tesla_coil_tick
 # modification station
 execute if entity @s[tag=exp.modstation] run function expansion:blocks/modification_station/modstation_tick
+# drone home
+execute if entity @s[tag=exp.drone_home] run function expansion:mobs/evil_drone/drone_home/tick

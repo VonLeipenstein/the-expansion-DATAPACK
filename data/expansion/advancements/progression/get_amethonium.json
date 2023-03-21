@@ -1,0 +1,39 @@
+{
+    "parent": "expansion:progression/get_titanium",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_getamethonium_title"
+        },
+        "description": {
+            "translate": "exp_advancement_getamethonium_desc"
+        },
+        "icon": {
+            "item": "minecraft:jigsaw",
+            "nbt": "{CustomModelData:123601}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_amethonium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:jigsaw"
+                        ],
+                        "nbt": "{amethonium_ingot:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_amethonium"
+        ]
+    ]
+}

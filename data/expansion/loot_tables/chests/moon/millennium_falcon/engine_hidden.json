@@ -6,6 +6,21 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
+          "name": "expansion:items/spaceship_mods/speed_mk1"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "expansion:items/spaceship_mods/fuel_mk1"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
           "name": "expansion:fuel/lacrymae",
           "functions": [
             {

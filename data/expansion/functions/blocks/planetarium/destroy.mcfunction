@@ -1,4 +1,5 @@
 kill @e[type=minecraft:experience_orb,distance=..5]
+kill @e[type=item,nbt={Item:{id:"minecraft:jigsaw",tag:{gui_item:1b}}},distance=..1]
 
 kill @e[type=minecraft:armor_stand,tag=exp.planetarium_sun,distance=..11,limit=1,sort=nearest]
 kill @e[type=minecraft:armor_stand,tag=exp.planetarium_mercury,distance=..11,limit=1,sort=nearest]

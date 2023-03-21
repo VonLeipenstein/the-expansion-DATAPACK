@@ -1,11 +1,10 @@
-execute as @p unless entity @s[gamemode=creative] run loot spawn ~ ~ ~ loot expansion:vehicles/rocket
+execute as @p unless entity @s[gamemode=creative] at @s run loot spawn ~ ~ ~ loot expansion:vehicles/rocket
 
-execute on passengers run data modify entity @e[type=item,nbt={Item:{tag:{exp_rocket:1b}}},limit=1,sort=nearest] Item.tag.CustomModelData set from entity @s item.tag.CustomModelData
-execute store result entity @e[type=item,nbt={Item:{tag:{exp_rocket:1b}}},limit=1,sort=nearest] Item.tag.fuel_lvl int 1 run scoreboard players get @s exp.fuel_level
+execute store result entity @e[type=item,nbt={Item:{tag:{exp_rocket:1b}}},limit=1,sort=nearest] Item.tag.fuel_lvl int 1 on vehicle on vehicle run scoreboard players get @s exp.fuel_level
+data merge entity @e[type=item,nbt={Item:{tag:{exp_rocket:1b}}},limit=1,sort=nearest] {PickupDelay:0s}
 
 playsound block.metal.break block @a ~ ~ ~
-execute positioned ~ ~1 ~ as @p at @s run tp @s ~ ~0.001 ~
-execute on passengers on passengers run kill @s
-execute on passengers run kill @s
+execute on vehicle on vehicle run kill @s
+execute on vehicle run kill @s
 execute positioned ~ ~3 ~ run kill @e[type=minecraft:interaction,tag=exp.rocket_interactor,limit=2,sort=nearest]
 kill @s

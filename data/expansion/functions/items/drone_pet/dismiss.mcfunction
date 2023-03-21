@@ -7,3 +7,5 @@ kill @e[type=minecraft:armor_stand,tag=exp.pet_drone,limit=1,sort=nearest]
 # give the player the drone, or spawn it if this function is called from player_death
 loot give @s[scores={exp.death=0}] loot expansion:tools/pet_drone
 execute if score @s exp.death matches 1 run loot spawn ~ ~ ~ loot expansion:tools/pet_drone
+
+advancement revoke @s only expansion:utility/drone_pet_lc

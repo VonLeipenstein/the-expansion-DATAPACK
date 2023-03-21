@@ -1,5 +1,5 @@
 {
-    "parent": "expansion:progression/event_horizon",
+    "parent": "expansion:progression/trade_spaceship",
     "display": {
         "title": {
             "translate": "exp_advancement_getplanetarium_title"

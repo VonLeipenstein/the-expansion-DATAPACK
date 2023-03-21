@@ -4,33 +4,22 @@
       "rolls": 3,
       "entries": [
         {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:iron_ingot",
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "name": "expansion:tools/oxygen_tank_full",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5,
-                "max": 10
+                "min": 0,
+                "max": 1
               }
             }
           ]
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 1,
-          "name": "expansion:tools/oxygen_tank_full",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
+          "weight": 8,
           "name": "expansion:items/materials/raw_titanium",
           "functions": [
             {
@@ -43,134 +32,73 @@
           ]
         },
         {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:book",
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "expansion:vehicles/skins/zwaluw",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              },
-              "treasure": true
+              "function": "minecraft:set_count",
+              "count": 1
             }
           ]
         }
       ]
     },
     {
-      "rolls": 4,
+      "rolls": 5,
       "entries": [
         {
-          "type": "minecraft:item",
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "expansion:items/materials/amethonium_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "minecraft:comparator",
+          "name": "expansion:items/amethonium_plate",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5,
-                "max": 10
+                "min": 1,
+                "max": 2
               }
             }
           ]
         },
         {
-          "type": "minecraft:item",
+          "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "minecraft:lever",
+          "name": "expansion:items/computing_core",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5,
-                "max": 10
+                "min": 0,
+                "max": 1
               }
             }
           ]
         },
         {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:redstone",
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "expansion:items/processing_unit",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 20,
-                "max": 30
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:light_blue_stained_glass_pane",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 10,
-                "max": 20
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:white_concrete",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 20,
-                "max": 30
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:orange_concrete",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 20,
-                "max": 30
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:blackstone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 20,
-                "max": 30
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:gray_stained_glass",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 20,
-                "max": 30
+                "min": 1,
+                "max": 2
               }
             }
           ]

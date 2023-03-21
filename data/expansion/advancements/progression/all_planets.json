@@ -1,5 +1,5 @@
 {
-  "parent": "expansion:progression/trade_spaceship",
+  "parent": "expansion:progression/space",
   "display": {
     "title": {
       "translate": "exp_advancement_allplanet_title"

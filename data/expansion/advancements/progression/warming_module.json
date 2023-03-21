@@ -1,5 +1,5 @@
 {
-  "parent": "expansion:progression/venus",
+  "parent": "expansion:progression/get_vulcanium",
   "display": {
     "title": {
       "translate": "exp_advancement_warmingmod_title"

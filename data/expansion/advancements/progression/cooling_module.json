@@ -1,5 +1,5 @@
 {
-  "parent": "expansion:progression/mars",
+  "parent": "expansion:progression/get_cryonite",
   "display": {
     "title": {
       "translate": "exp_advancement_coolingmod_title"

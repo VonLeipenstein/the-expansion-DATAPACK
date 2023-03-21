@@ -1,18 +1,18 @@
 {
   "pools": [
     {
-      "rolls": 3,
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 2,
           "name": "minecraft:diamond",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1,
-                "max": 2
+                "min": 3,
+                "max": 4
               }
             }
           ]
@@ -30,80 +30,78 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:book",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              },
-              "treasure": true
-            }
-          ]
         }
       ]
     },
     {
-      "rolls": 6,
+      "rolls": 5,
       "entries": [
         {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:sea_lantern",
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "expansion:items/thruster",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5,
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "expansion:items/simple_mechanism",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "name": "expansion:items/steel/steel_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
                 "max": 15
               }
             }
           ]
         },
         {
-          "type": "minecraft:item",
+          "type": "minecraft:loot_table",
           "weight": 2,
-          "name": "minecraft:light_blue_stained_glass",
+          "name": "expansion:items/steel/steel_plate",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
-                "max": 20
+                "min": 2,
+                "max": 4
               }
             }
           ]
         },
         {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:cyan_stained_glass",
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "expansion:items/copper_wire",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 20,
-                "max": 30
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:white_stained_glass",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 20,
-                "max": 30
+                "min": 2,
+                "max": 6
               }
             }
           ]

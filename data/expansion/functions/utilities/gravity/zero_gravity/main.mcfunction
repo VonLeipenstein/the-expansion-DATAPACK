@@ -12,6 +12,7 @@ execute if entity @s[tag=exp.rising] run function expansion:utilities/gravity/ze
 execute if entity @s[tag=exp.falling] run function expansion:utilities/gravity/zero_gravity/falling
 
 # make all other entities float
-execute as @e[type=!player,tag=!exp.spaceship,distance=..50,nbt=!{NoGravity:1b},limit=1,sort=nearest] run data merge entity @s {NoGravity:1b}
+execute as @e[type=!minecraft:player,tag=!exp.spaceship,tag=!exp.zero_gravity,distance=..50,limit=1,sort=nearest] run function expansion:utilities/gravity/zero_gravity/make_float
 
+# detect if the player is close to planets if they're in space
 execute if predicate expansion:dimension/space unless entity @s[gamemode=spectator] run function expansion:global/transitions/planet_detection

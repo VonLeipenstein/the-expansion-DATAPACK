@@ -7,7 +7,7 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-        "nbt": "{exp_spaceship:1b,onhead:1b,CustomModelData:1012002}"
+        "nbt": "{CustomModelData:1012002}"
       }
     }
   }

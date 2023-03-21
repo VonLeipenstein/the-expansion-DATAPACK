@@ -20,5 +20,9 @@ scoreboard players remove @s[scores={exp.counter_2=1..}] exp.counter_2 1
 scoreboard players add @s[scores={exp.fuel_level=1..,exp.speed=11..}] exp.timer_1 1
 execute if score @s exp.timer_1 >= @s exp.value run function expansion:vehicles/spaceship/fuel/use_fuel
 
+# make the correct particles run depending on the skin
+execute on passengers if predicate expansion:nbt_checks/armor/spaceship on vehicle at @s anchored eyes run function expansion:vehicles/spaceship/engine_particles/spaceship
+execute on passengers if predicate expansion:nbt_checks/armor/zwaluw on vehicle at @s anchored eyes run function expansion:vehicles/spaceship/engine_particles/zwaluw
+
 # marker functions
 execute if entity @p[predicate=expansion:dimension/space,tag=exp.markertag1] as @e[type=minecraft:armor_stand,tag=exp.planet_marker,distance=..20,limit=7,sort=nearest] run function expansion:vehicles/spaceship/markers/markers

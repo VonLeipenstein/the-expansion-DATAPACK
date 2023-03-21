@@ -1,0 +1,39 @@
+{
+    "parent": "expansion:progression/moon",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_gettitanium_title"
+        },
+        "description": {
+            "translate": "exp_advancement_gettitanium_desc"
+        },
+        "icon": {
+            "item": "minecraft:purpur_slab",
+            "nbt": "{CustomModelData:123456}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_titanium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:jigsaw"
+                        ],
+                        "nbt": "{raw_titanium:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_titanium"
+        ]
+    ]
+}

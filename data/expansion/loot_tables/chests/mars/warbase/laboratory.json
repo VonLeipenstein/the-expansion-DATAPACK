@@ -11,8 +11,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 3,
-                "max": 8
+                "min": 1,
+                "max": 4
               }
             }
           ]
@@ -34,13 +34,13 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "expansion:items/processing_unit",
+          "name": "expansion:items/circuit_board",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 5,
-                "max": 10
+                "min": 3,
+                "max": 5
               }
             }
           ]
@@ -48,7 +48,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "expansion:items/steel/steel_ingot",
+          "name": "expansion:items/materials/cryonite_crystal",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -56,22 +56,6 @@
                 "min": 10,
                 "max": 20
               }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:book",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              },
-              "treasure": true
             }
           ]
         }

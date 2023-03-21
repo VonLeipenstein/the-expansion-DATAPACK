@@ -9,3 +9,6 @@ execute as @e[type=minecraft:armor_stand,tag=exp.block] at @s run function expan
 
 # slowcasting
 execute as @e[type=minecraft:marker,tag=exp.slowcast] at @s run function expansion:utilities/raycast/slowcast/main
+
+#
+execute as @e[type=item,nbt={Item:{id:"minecraft:jigsaw",tag:{expansion_ore:1b}}},limit=1,sort=arbitrary] at @s run function expansion:blocks/ores/fix_water

@@ -6,6 +6,26 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
+          "name": "expansion:items/spaceship_mods/blaster_2"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "expansion:items/spaceship_mods/speed_mk2"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "expansion:items/spaceship_mods/fuel_mk2"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
           "name": "expansion:items/modules/cooling"
         },
         {
