@@ -17,7 +17,7 @@ execute at @s anchored eyes positioned ^ ^ ^3 run function expansion:items/railg
 tp @s ~ ~ ~ ~ ~-2
 
 # technical details
-scoreboard players set @s exp.cooldown 20
+scoreboard players set @s exp.cooldown 15
 scoreboard players remove @s exp.ammo 1
 execute store result storage expansion:ammo data.ammo byte 1 run scoreboard players get @s exp.ammo
 item modify entity @s weapon.mainhand expansion:railgun/ammo

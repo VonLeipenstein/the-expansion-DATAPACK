@@ -7,4 +7,5 @@ loot insert ~ ~ ~ loot expansion:tools/pocket_space
 loot insert ~ ~ ~ loot expansion:tools/wrench
 loot insert ~ ~ ~ loot expansion:tools/fleet_finder
 loot insert ~ ~ ~ loot expansion:tools/oxygen_tank
+loot insert ~ ~ ~ loot expansion:tools/pet_drone
 loot insert ~ ~ ~ loot expansion:tools/oxygen_tank_full

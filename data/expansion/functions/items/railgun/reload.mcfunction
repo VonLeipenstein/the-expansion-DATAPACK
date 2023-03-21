@@ -1,5 +1,5 @@
 scoreboard players set @s exp.ammo 2
-scoreboard players set @s exp.cooldown 20
+scoreboard players set @s exp.cooldown 2
 
 execute store result storage expansion:ammo data.ammo byte 1 run scoreboard players get @s exp.ammo
 item modify entity @s weapon.mainhand expansion:railgun/ammo
