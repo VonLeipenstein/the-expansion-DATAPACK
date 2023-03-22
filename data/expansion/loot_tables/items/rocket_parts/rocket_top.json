@@ -17,7 +17,21 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{rocket_top:1b,rocket_part:1b,crafting_count:1b,expansion_coas:1b,exp_block:1b,CustomModelData:1012297}"
+              "tag": "{rocket_top:1b,rocket_part:1b,crafting_count:1b,expansion_coas:1b,exp_block:1b,CustomModelData:1012294}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_items_rocketpart_tip"
+                },
+                {
+                  "translate": "exp_items_rockettop_tip1"
+                }
+              ]
             }
           ]
         }

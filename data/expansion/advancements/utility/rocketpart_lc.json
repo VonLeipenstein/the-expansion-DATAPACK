@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"exp.rocketpart_rcdet\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "expansion:blocks/rocket_parts/init_pickup"
+  }
+}

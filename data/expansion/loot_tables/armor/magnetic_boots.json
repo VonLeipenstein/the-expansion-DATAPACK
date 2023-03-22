@@ -17,19 +17,16 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{magnetic_boots:1b}"
+              "tag": "{magnetic_boots:1b,CustomModelData:1012000}"
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "translate": "exp_lore_tooltips",
-                  "underlined": true,
-                  "color": "aqua"
+                  "translate": "exp_lore_tooltips"
                 },
                 {
-                  "translate": "exp_armor_magnboots_tip1",
-                  "color": "aqua"
+                  "translate": "exp_armor_magnboots_tip1"
                 }
               ]
             }

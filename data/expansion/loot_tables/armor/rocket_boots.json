@@ -17,19 +17,19 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{rocket_boots:1b}"
+              "tag": "{rocket_boots:1b,CustomModelData:1012001}"
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "translate": "exp_lore_tooltips",
-                  "underlined": true,
-                  "color": "aqua"
+                  "translate": "exp_lore_tooltips"
                 },
                 {
-                  "translate": "exp_armor_rocketboots_tip1",
-                  "color": "aqua"
+                  "translate": "exp_armor_rocketboots_tip1"
+                },
+                {
+                  "translate": "exp_armor_rocketboots_tip2"
                 }
               ]
             }
