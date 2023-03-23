@@ -6,5 +6,5 @@ execute on vehicle at @s anchored eyes run particle minecraft:large_smoke ~ ~ ~ 
 # run the touchdown when landing on the ground
 execute on vehicle if entity @s[nbt={OnGround:1b}] run function expansion:vehicles/return_capsule/touchdown
 
-
+effect give @s minecraft:resistance 1 5 true
 

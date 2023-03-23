@@ -4,4 +4,3 @@ execute at @s run tp @s ~ ~-1.5 ~
 data merge entity @s {NoGravity:1b}
 
 tag @p remove exp.landing_earth
-tag @p remove exp.inside_vehicle

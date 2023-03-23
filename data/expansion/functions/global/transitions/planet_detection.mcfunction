@@ -6,4 +6,4 @@ execute positioned 1358 128 1741 if entity @s[distance=..100] run function expan
 execute positioned -2873 128 1536 if entity @s[distance=..100] run function expansion:global/transitions/from_space/space_to_jupiter
 execute positioned -3557 128 1635 if entity @s[distance=..100] run function expansion:global/transitions/from_space/space_to_europa
 
-execute if predicate expansion:location/space_edge run function expansion:global/transitions/from_space/space_to_asteroids
+execute if predicate expansion:location/asteroids_edge run function expansion:global/transitions/from_space/space_to_asteroids
