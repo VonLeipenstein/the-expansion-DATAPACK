@@ -3,3 +3,4 @@ setblock ~ ~ ~ chest{CustomName:'{"text":"Equipment","color":"#00FFEE"}'} replac
 
 loot insert ~ ~ ~ loot expansion:armor/space_equipment/space_equipment_blue
 loot insert ~ ~ ~ loot expansion:armor/magnetic_boots
+loot insert ~ ~ ~ loot expansion:armor/rocket_boots

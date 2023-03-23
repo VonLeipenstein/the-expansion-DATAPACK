@@ -1,8 +1,8 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 2,
-    "discard_chance_on_air_exposure": 0,
+    "size": 8,
+    "discard_chance_on_air_exposure": 0.3,
     "targets": [
       {
         "target": {
@@ -10,7 +10,11 @@
           "tag": "expansion:mars_cave_replaceable"
         },
         "state": {
-          "Name": "minecraft:deepslate_redstone_ore"
+          "Name": "minecraft:purpur_slab",
+          "Properties": {
+            "type": "double",
+            "waterlogged": "true"
+          }
         }
       }
     ]

@@ -24,6 +24,9 @@ ride @p mount @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,so
 # change the model to the flying version of the spaceship
 execute on passengers run function expansion:vehicles/spaceship/model_switching/decrease_model
 
+# calculate the fuel percentage so the actionbar can show up
+function expansion:utilities/fuel_percentage
+
 # remove nogravity from leaving in space
 data merge entity @s {NoGravity:0b}
 

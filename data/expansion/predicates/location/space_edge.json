@@ -4,7 +4,7 @@
       "position": {
         "x": {
           "min": -4100,
-          "max": -4000
+          "max": -6000
         }
       },
       "dimension": "expansion:space"

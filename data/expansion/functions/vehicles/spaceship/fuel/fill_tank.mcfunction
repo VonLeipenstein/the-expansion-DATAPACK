@@ -1,5 +1,5 @@
 execute if entity @p[nbt={Inventory:[{id:"minecraft:potion",tag:{lacrymae:1b}}]}] run tag @p add exp.has_lacrymae
-execute if entity @p[tag=exp.has_lacrymae] if score @s exp.fuel_level < @s exp.fuel_max run clear @p minecraft:potion{lacrymae:1b} 1
+execute if entity @p[tag=exp.has_lacrymae] if score @s exp.fuel_level < @s exp.fuel_max run item replace entity @s weapon.mainhand with minecraft:air
 execute if entity @p[tag=exp.has_lacrymae] run scoreboard players set @s exp.fuel_level 256
 execute if entity @p[tag=exp.has_lacrymae] run title @p title {"text":"Fuel level at 100%","color":"green","bold":true}
 
