@@ -31,10 +31,21 @@
         "placements_require_layer0_alternate": false,
         "blocks": {
             "outer_layer_provider": {
-                "state": {
-                    "Name": "minecraft:stone"
-                },
-                "type": "minecraft:simple_state_provider"
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                        "weight": 10,
+                        "data": {
+                            "Name": "minecraft:stone"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "Name": "minecraft:granite"
+                        }
+                    }
+                ]
             },
             "inner_placements": [
                 {

@@ -1,15 +1,15 @@
 {
     "type": "minecraft:geode",
     "config": {
-        "min_gen_offset": -30,
-        "max_gen_offset": 30,
+        "min_gen_offset": -16,
+        "max_gen_offset": 16,
         "noise_multiplier": 0.03,
         "invalid_blocks_threshold": 1000,
         "outer_wall_distance": {
             "type": "minecraft:uniform",
             "value": {
-                "min_inclusive": 0,
-                "max_inclusive": 0
+                "min_inclusive": 1,
+                "max_inclusive": 1
             }
         },
         "distribution_points": {
@@ -32,7 +32,7 @@
         "blocks": {
             "outer_layer_provider": {
                 "state": {
-                    "Name": "minecraft:ice"
+                    "Name": "minecraft:packed_ice"
                 },
                 "type": "minecraft:simple_state_provider"
             },

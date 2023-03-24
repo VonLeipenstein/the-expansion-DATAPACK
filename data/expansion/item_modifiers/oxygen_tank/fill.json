@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_nbt",
-    "tag": "{tank_lvl:96000,CustomModelData:1012258}"
+    "tag": "{tank_lvl:48000,CustomModelData:1012258}"
   },
   {
     "function": "minecraft:set_lore",

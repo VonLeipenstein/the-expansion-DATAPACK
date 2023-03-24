@@ -17,7 +17,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{oxygen_tank:1b,exp_tool:1b,tank_lvl:96000,expansion_coas:1b,Unbreakable:1b,CustomModelData:1012258}"
+              "tag": "{oxygen_tank:1b,exp_tool:1b,tank_lvl:48000,expansion_coas:1b,Unbreakable:1b,CustomModelData:1012258}"
             },
             {
               "function": "minecraft:set_lore",

@@ -17,7 +17,7 @@
               },
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{spaceship_mod:1b,fuel_mod:1b,mk:1b,value:60b,crafting_count:1b,CustomModelData:123503}"
+                "tag": "{spaceship_mod:1b,fuel_mod:1b,mk:1b,value:75b,crafting_count:1b,CustomModelData:123503}"
               },
               {
                 "function": "minecraft:set_lore",

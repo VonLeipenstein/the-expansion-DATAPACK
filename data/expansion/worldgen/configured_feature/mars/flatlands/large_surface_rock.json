@@ -87,6 +87,6 @@
     },
     "min_gen_offset": -30,
     "max_gen_offset": 30,
-    "invalid_blocks_threshold": 1000
+    "invalid_blocks_threshold": 100000
   }
 }

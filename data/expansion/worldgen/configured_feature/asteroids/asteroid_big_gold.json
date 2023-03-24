@@ -1,8 +1,8 @@
 {
     "type": "minecraft:geode",
     "config": {
-        "min_gen_offset": -24,
-        "max_gen_offset": 24,
+        "min_gen_offset": -16,
+        "max_gen_offset": 16,
         "noise_multiplier": 0.03,
         "invalid_blocks_threshold": 1000,
         "outer_wall_distance": {
@@ -15,8 +15,8 @@
         "distribution_points": {
             "type": "minecraft:uniform",
             "value": {
-                "min_inclusive": 5,
-                "max_inclusive": 5
+                "min_inclusive": 3,
+                "max_inclusive": 4
             }
         },
         "point_offset": {
@@ -31,10 +31,21 @@
         "placements_require_layer0_alternate": false,
         "blocks": {
             "outer_layer_provider": {
-                "state": {
-                    "Name": "minecraft:stone"
-                },
-                "type": "minecraft:simple_state_provider"
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                        "weight": 10,
+                        "data": {
+                            "Name": "minecraft:stone"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "data": {
+                            "Name": "minecraft:granite"
+                        }
+                    }
+                ]
             },
             "inner_placements": [
                 {

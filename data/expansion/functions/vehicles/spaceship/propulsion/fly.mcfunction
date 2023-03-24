@@ -1,3 +1,8 @@
+# incorporate the speed mod into the speed. 
+scoreboard players operation @s exp.counter_1 = @s exp.delay
+scoreboard players operation @s exp.counter_1 *= @s exp.speed
+scoreboard players operation @s exp.counter_1 /= #10 exp.const
+
 # make the armor stand rotate slowly towards the players rotation.
 execute unless score .d exp.wasd matches 1 anchored eyes rotated as @p positioned ^ ^ ^4 rotated as @s positioned ^ ^ ^40 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ~ ~ ~ ~ ~
 

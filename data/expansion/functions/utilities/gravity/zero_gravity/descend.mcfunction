@@ -5,4 +5,3 @@ tag @s[tag=exp.rising] remove exp.rising
 tag @s[tag=exp.falling] remove exp.falling
 #playsound entity.cat.hiss master @s ~ ~ ~ 0.1 2 1 
 tag @s add exp.spacewalking
-say falling

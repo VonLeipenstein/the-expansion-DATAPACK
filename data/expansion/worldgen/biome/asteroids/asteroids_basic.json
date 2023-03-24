@@ -16,11 +16,10 @@
   "carvers": {},
   "features": [
     [
-      "expansion:asteroids/asteroid_big",
-      "expansion:asteroids/asteroid_small"
+      "expansion:asteroids/asteroid_big"
     ],
     [
-      "expansion:asteroids/asteroid_hollow_ice"
+      "expansion:asteroids/asteroid_small"
     ],
     [],
     [],

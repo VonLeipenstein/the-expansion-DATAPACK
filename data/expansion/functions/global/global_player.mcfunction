@@ -22,7 +22,7 @@ execute if entity @s[tag=exp.inside_vehicle] run function expansion:global/globa
 execute if predicate expansion:nbt_checks/armor/space_equipment/has_module run function expansion:items/space_equipment/modules/modules_tick
 
 # rocket boots
-execute if predicate expansion:nbt_checks/armor/rocket_boots run function expansion:items/rocket_boots/main
+execute if predicate expansion:nbt_checks/armor/rocket_boots unless predicate expansion:dimension/zero_gravity run function expansion:items/rocket_boots/main
 
 # pet drone
 execute if entity @s[tag=exp.has_active_drone] as @e[type=minecraft:armor_stand,tag=exp.pet_drone,limit=1,sort=nearest] run function expansion:items/drone_pet/movement/main

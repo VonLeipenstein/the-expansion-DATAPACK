@@ -3,10 +3,6 @@
   "config": {
     "features": [
       {
-        "chance": 0.1,
-        "feature": "expansion:asteroids/asteroid_big_stone"
-      },
-      {
         "chance": 0.3,
         "feature": "expansion:asteroids/asteroid_big_ice"
       },
@@ -37,6 +33,10 @@
       {
         "chance": 0.1,
         "feature": "expansion:asteroids/asteroid_big_copper"
+      },
+      {
+        "chance": 0.02,
+        "feature": "expansion:asteroids/asteroid_hollow_ice"
       }
     ],
     "default": "expansion:asteroids/asteroid_big_stone"

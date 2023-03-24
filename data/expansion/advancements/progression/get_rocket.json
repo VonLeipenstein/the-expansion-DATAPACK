@@ -18,17 +18,8 @@
     },
     "criteria": {
         "expansion:get_rocket": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "items": [
-                            "minecraft:carrot_on_a_stick"
-                        ],
-                        "nbt": "{exp_rocket:1b}"
-                    }
-                ]
-            }
+            "trigger": "minecraft:impossible",
+            "conditions": {}
         }
     },
     "requirements": [

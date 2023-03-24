@@ -1,22 +1,22 @@
 {
     "type": "minecraft:geode",
     "config": {
-        "min_gen_offset": -24,
-        "max_gen_offset": 24,
-        "noise_multiplier": 0.03,
+        "min_gen_offset": -16,
+        "max_gen_offset": 16,
+        "noise_multiplier": 0.06,
         "invalid_blocks_threshold": 1000,
         "outer_wall_distance": {
             "type": "minecraft:uniform",
             "value": {
-                "min_inclusive": 0,
-                "max_inclusive": 0
+                "min_inclusive": 4,
+                "max_inclusive": 5
             }
         },
         "distribution_points": {
             "type": "minecraft:uniform",
             "value": {
-                "min_inclusive": 5,
-                "max_inclusive": 5
+                "min_inclusive": 3,
+                "max_inclusive": 4
             }
         },
         "point_offset": {
@@ -78,13 +78,17 @@
             },
             "alternate_inner_layer_provider": {
                 "state": {
-                    "Name": "minecraft:deepslate_diamond_ore"
+                    "Name": "minecraft:waxed_exposed_cut_copper_slab",
+                    "Properties": {
+                        "waterlogged": "true",
+                        "type": "double"
+                    }
                 },
                 "type": "minecraft:simple_state_provider"
             },
             "middle_layer_provider": {
                 "state": {
-                    "Name": "minecraft:stone"
+                    "Name": "minecraft:magma_block"
                 },
                 "type": "minecraft:simple_state_provider"
             }

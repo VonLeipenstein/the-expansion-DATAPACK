@@ -3,7 +3,7 @@
     "placement": [
         {
             "type": "count",
-            "count": 4
+            "count": 3
         },
         {
             "type": "minecraft:in_square"
@@ -18,42 +18,6 @@
                     "below_top": 129
                 },
                 "type": "minecraft:uniform"
-            }
-        },
-        {
-            "type": "minecraft:block_predicate_filter",
-            "predicate": {
-                "type": "minecraft:all_of",
-                "predicates": [
-                    {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                            0,
-                            -1,
-                            0
-                        ],
-                        "blocks": [
-                            "minecraft:air"
-                        ]
-                    },
-                    {
-                        "type": "minecraft:matching_blocks",
-                        "blocks": [
-                            "minecraft:air"
-                        ]
-                    },
-                    {
-                        "type": "minecraft:matching_blocks",
-                        "offset": [
-                            0,
-                            1,
-                            0
-                        ],
-                        "blocks": [
-                            "minecraft:air"
-                        ]
-                    }
-                ]
             }
         }
     ]
