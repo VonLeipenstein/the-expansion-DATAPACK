@@ -10,7 +10,7 @@ data merge entity @e[type=minecraft:item_display,tag=exp.assembler_product,limit
 
 data modify entity @e[type=minecraft:item_display,tag=exp.assembler_product,limit=1,sort=nearest] Rotation[0] set from entity @e[type=minecraft:item_display,tag=exp.assembler_display,limit=1,sort=nearest] Rotation[0]
 
-execute as @e[type=minecraft:item_display,tag=exp.assembler_display,limit=1,sort=nearest] at @s run summon minecraft:armor_stand ^ ^ ^1 {Invulnerable:1b,NoGravity:1b,Marker:0b,Invisible:1b,Rotation:[90f,0f],DisabledSlots:2039583,Tags:["exp.assembler","exp.block","smithed.block"]}
+execute as @e[type=minecraft:item_display,tag=exp.assembler_display,limit=1,sort=nearest] at @s run summon minecraft:armor_stand ^ ^ ^1 {Invulnerable:1b,NoGravity:1b,Marker:1b,Invisible:1b,Rotation:[90f,0f],DisabledSlots:2039583,Tags:["exp.assembler","exp.block","smithed.block"]}
 execute as @e[type=minecraft:item_display,tag=exp.assembler_display,limit=1,sort=nearest] at @s run setblock ^ ^ ^1 minecraft:barrel{CustomName:'{"translate":"exp_blocks_assembler_gui_name","color":"dark_grey"}'} replace
 execute as @e[type=minecraft:item_display,tag=exp.assembler_display,limit=1,sort=nearest] at @s positioned ^ ^ ^1 run function expansion:contraptions/assembler/gui
 

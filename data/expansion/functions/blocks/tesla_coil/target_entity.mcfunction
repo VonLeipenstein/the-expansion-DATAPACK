@@ -9,8 +9,5 @@ execute unless entity @e[type=minecraft:armor_stand,tag=exp.zap_target,distance=
 # shoot the zap raycast
 function expansion:blocks/tesla_coil/zap_cast
 
-# zap sound
-playsound expansion:teslacoil.zap block @a ~ ~ ~ 0.6 1
-
 # damage the entities that have been shocked
-execute as @e[tag=exp.zap_target,distance=..10,limit=1,sort=nearest] at @s run function expansion:blocks/tesla_coil/damage
+execute as @e[tag=exp.zapped,distance=..10,limit=1,sort=nearest] at @s run function expansion:blocks/tesla_coil/damage

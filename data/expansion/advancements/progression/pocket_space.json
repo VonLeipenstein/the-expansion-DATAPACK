@@ -11,9 +11,9 @@
             "item": "minecraft:carrot_on_a_stick",
             "nbt": "{CustomModelData:1012204}"
         },
-        "frame": "task",
+        "frame": "challenge",
         "show_toast": true,
-        "announce_to_chat": false,
+        "announce_to_chat": true,
         "hidden": false
     },
     "criteria": {

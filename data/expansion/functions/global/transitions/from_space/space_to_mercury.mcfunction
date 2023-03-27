@@ -1,3 +1,6 @@
-#function expansion:vehicles/spaceship/transitions/transition_debug_step_1
-execute in expansion:mercury run tp @s ~ 450 ~ ~ 89
-function expansion:vehicles/spaceship/markers/kill_markers
+execute if entity @s[tag=exp.inside_spaceship] run function expansion:vehicles/spaceship/transition/start
+
+summon minecraft:marker ~ ~ ~ {Tags:["exp.transition_marker"]}
+execute as @e[type=minecraft:marker,tag=exp.transition_marker,distance=..0.1,limit=1,sort=nearest] run function expansion:vehicles/spaceship/transition/teleports/to_mercury
+
+tag @s remove exp.tp_to_marker

@@ -1,6 +1,6 @@
 {
   "effects": "minecraft:overworld",
-  "coordinate_scale": 10,
+  "coordinate_scale": 1,
   "has_skylight": true,
   "has_ceiling": false,
   "ultrawarm": false,

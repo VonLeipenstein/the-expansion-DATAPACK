@@ -1,5 +1,5 @@
 {
-    "parent": "expansion:progression/get_amethonium",
+    "parent": "expansion:progression/get_assembler",
     "display": {
         "title": {
             "translate": "exp_advancement_getrailgun_title"

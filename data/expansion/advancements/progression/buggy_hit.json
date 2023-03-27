@@ -1,0 +1,30 @@
+{
+    "parent": "expansion:progression/ride_buggy",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_buggyhit_title"
+        },
+        "description": {
+            "translate": "exp_advancement_buggyhit_desc"
+        },
+        "icon": {
+            "item": "minecraft:jigsaw",
+            "nbt": "{CustomModelData:123457}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "expansion:buggy_hit": {
+            "trigger": "minecraft:impossible",
+            "conditions": {}
+        }
+    },
+    "requirements": [
+        [
+            "expansion:buggy_hit"
+        ]
+    ]
+}

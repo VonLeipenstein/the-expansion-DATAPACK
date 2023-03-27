@@ -1,3 +1,6 @@
 execute if entity @s[tag=exp.inside_spaceship] run function expansion:vehicles/spaceship/transition/start
-function expansion:vehicles/spaceship/markers/kill_markers
-execute in expansion:moon run tp @s 0 450 0 ~ 90
+
+summon minecraft:marker ~ ~ ~ {Tags:["exp.transition_marker"]}
+execute as @e[type=minecraft:marker,tag=exp.transition_marker,distance=..0.1,limit=1,sort=nearest] run function expansion:vehicles/spaceship/transition/teleports/to_moon
+
+tag @s remove exp.tp_to_marker
