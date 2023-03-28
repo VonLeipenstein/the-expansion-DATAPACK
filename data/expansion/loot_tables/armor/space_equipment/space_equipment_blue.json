@@ -17,7 +17,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Unbreakable:1b,exp_tool:1b,space_jetpack:1b,expansion_coas:1b,CustomModelData:1012100}"
+              "tag": "{Unbreakable:1b,exp_tool:1b,space_equipment:1b,expansion_coas:1b,CustomModelData:1012100}"
             },
             {
               "function": "minecraft:set_lore",

@@ -7,7 +7,7 @@
         "items": [
           "minecraft:carrot_on_a_stick"
         ],
-        "nbt": "{space_jetpack:1b,cooling_module:1b}"
+        "nbt": "{space_equipment:1b,cooling_module:1b}"
       }
     }
   }
