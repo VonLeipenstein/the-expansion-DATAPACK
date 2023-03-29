@@ -1,7 +1,5 @@
 # cryoblaster
 execute if predicate expansion:nbt_checks/selected_item/items/cryoblaster unless entity @s[tag=exp.inside_vehicle] run function expansion:items/cryoblaster/cryoblaster
-# wrenc
-execute if predicate expansion:nbt_checks/selected_item/items/wrench unless entity @s[tag=exp.inside_vehicle] run function expansion:items/wrench/wrench
 # space equipment
 execute if predicate expansion:nbt_checks/selected_item/space_equipment/equipment run function expansion:items/space_equipment/equip
 # oxygen system

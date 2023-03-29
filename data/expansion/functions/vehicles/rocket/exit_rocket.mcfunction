@@ -1,6 +1,6 @@
 # swap the player with the rightclick entity
 kill @e[type=minecraft:armor_stand,tag=exp.rocket_seat,distance=..7,limit=1,sort=nearest]
-execute at @e[type=minecraft:armor_stand,tag=exp.rocket,distance=..7,limit=1,sort=nearest] run summon minecraft:interaction ~ ~ ~ {Tags:["exp.rocket_rcdet","smithed.block","exp.rocket_interactor"],width:2f,height:6f,response:1b}
+execute at @e[type=minecraft:armor_stand,tag=exp.rocket,distance=..7,limit=1,sort=nearest] run summon minecraft:interaction ~ ~ ~ {Silent:1b,Tags:["exp.rocket_rcdet","smithed.block","exp.rocket_interactor"],width:2f,height:6f,response:1b}
 ride @e[type=minecraft:interaction,tag=exp.rocket_rcdet,distance=..7,limit=1,sort=nearest] mount @e[type=minecraft:item_display,tag=exp.rocket_display,distance=..7,limit=1,sort=nearest]
 
 # stop the launching sound and reset the timer
