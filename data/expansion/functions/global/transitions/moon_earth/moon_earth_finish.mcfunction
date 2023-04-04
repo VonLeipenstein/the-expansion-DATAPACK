@@ -1,5 +1,5 @@
 # summon a lunar module if this function hasn't been run before
-execute at @s[tag=!exp.trying_transition] run summon minecraft:armor_stand ~ ~ ~ {NoGravity:0b,Invisible:1b,Tags:["exp.return_capsule","exp.vehicle","smithed.block"],DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,CustomModelData:1012007,return_capsule:1b}}]}
+execute at @s[tag=!exp.trying_transition] run summon minecraft:armor_stand ~ ~ ~ {Silent:1b,NoGravity:0b,Invisible:1b,Tags:["exp.return_capsule","exp.vehicle","smithed.block"],DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,CustomModelData:1012007,return_capsule:1b}}]}
 
 # apply levitation so the player doesn't fall in case of lag
 effect give @s[tag=!exp.trying_transition] minecraft:levitation 1000 255 true

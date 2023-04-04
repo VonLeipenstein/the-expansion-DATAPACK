@@ -1,8 +1,8 @@
-execute positioned ^ ^-1 ^ run summon minecraft:armor_stand ^-1.69 ^0.42 ^ {Tags:["exp.core_port","exp.port_1","exp.portal_stand","smithed.block"],Marker:0b,DisabledSlots:2039583,NoGravity:1b,Invulnerable:1b,Invisible:1b}
-execute positioned ^ ^-1 ^ run summon minecraft:armor_stand ^-1.02 ^1.69 ^ {Tags:["exp.core_port","exp.port_2","exp.portal_stand","smithed.block"],Marker:0b,DisabledSlots:2039583,Pose:{Head:[0f,0f,-45f]},NoGravity:1b,Invulnerable:1b,Invisible:1b}
-execute positioned ^ ^-1 ^ run summon minecraft:armor_stand ^ ^2.115 ^ {Tags:["exp.core_port","exp.port_3","exp.portal_stand","smithed.block"],Marker:0b,DisabledSlots:2039583,NoGravity:1b,Invulnerable:1b,Invisible:1b}
-execute positioned ^ ^-1 ^ run summon minecraft:armor_stand ^1.02 ^1.69 ^ {Tags:["exp.core_port","exp.port_4","exp.portal_stand","smithed.block"],Marker:0b,DisabledSlots:2039583,Pose:{Head:[0f,0f,45f]},NoGravity:1b,Invulnerable:1b,Invisible:1b}
-execute positioned ^ ^-1 ^ run summon minecraft:armor_stand ^1.69 ^0.42 ^ {Tags:["exp.core_port","exp.port_5","exp.portal_stand","smithed.block"],Marker:0b,DisabledSlots:2039583,NoGravity:1b,Invulnerable:1b,Invisible:1b}
+execute positioned ^ ^-1 ^ run summon minecraft:armor_stand ^-1.69 ^0.42 ^ {Silent:1b,Tags:["exp.core_port","exp.port_1","exp.portal_stand","smithed.block"],Marker:0b,DisabledSlots:2039583,NoGravity:1b,Invulnerable:1b,Invisible:1b}
+execute positioned ^ ^-1 ^ run summon minecraft:armor_stand ^-1.02 ^1.69 ^ {Silent:1b,Tags:["exp.core_port","exp.port_2","exp.portal_stand","smithed.block"],Marker:0b,DisabledSlots:2039583,Pose:{Head:[0f,0f,-45f]},NoGravity:1b,Invulnerable:1b,Invisible:1b}
+execute positioned ^ ^-1 ^ run summon minecraft:armor_stand ^ ^2.115 ^ {Silent:1b,Tags:["exp.core_port","exp.port_3","exp.portal_stand","smithed.block"],Marker:0b,DisabledSlots:2039583,NoGravity:1b,Invulnerable:1b,Invisible:1b}
+execute positioned ^ ^-1 ^ run summon minecraft:armor_stand ^1.02 ^1.69 ^ {Silent:1b,Tags:["exp.core_port","exp.port_4","exp.portal_stand","smithed.block"],Marker:0b,DisabledSlots:2039583,Pose:{Head:[0f,0f,45f]},NoGravity:1b,Invulnerable:1b,Invisible:1b}
+execute positioned ^ ^-1 ^ run summon minecraft:armor_stand ^1.69 ^0.42 ^ {Silent:1b,Tags:["exp.core_port","exp.port_5","exp.portal_stand","smithed.block"],Marker:0b,DisabledSlots:2039583,NoGravity:1b,Invulnerable:1b,Invisible:1b}
 
 execute positioned ^ ^-1 ^ run summon minecraft:interaction ^ ^3.5 ^ {Tags:["exp.portal_core_rcdet","smithed.block"],width:0.6,height:0.6,response:1b}
 execute positioned ^ ^-1 ^ run summon minecraft:interaction ^1.758 ^1.8 ^ {Tags:["exp.portal_core_rcdet","smithed.block"],width:0.6,height:0.6,response:1b}

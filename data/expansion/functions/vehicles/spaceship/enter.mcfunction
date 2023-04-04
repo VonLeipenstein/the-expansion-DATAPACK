@@ -14,7 +14,7 @@ execute rotated as @s run tp @p ^ ^ ^ ~ ~
 
 # make the entity stack
 execute on passengers on passengers run kill @s
-summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["exp.spaceship_display"]}
+summon minecraft:armor_stand ~ ~ ~ {Silent:1b,Marker:1b,Invisible:1b,Tags:["exp.spaceship_display"]}
 item replace entity @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest] armor.head from entity @e[type=minecraft:item_display,tag=exp.spaceship_display,limit=1,sort=nearest] container.0
 execute on passengers run kill @s
 ride @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest] mount @s
