@@ -12,7 +12,7 @@
                 "function": "minecraft:set_count",
                 "count": {
                   "min": 3,
-                  "max": 5
+                  "max": 4
                 }
               }
             ]
@@ -30,8 +30,8 @@
               {
                 "function": "minecraft:set_count",
                 "count": {
-                  "min": 5,
-                  "max": 7
+                  "min": 10,
+                  "max": 14
                 }
               }
             ]
@@ -44,14 +44,11 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "name": "expansion:items/thruster",
+            "name": "expansion:items/simple_mechanism",
             "functions": [
               {
                 "function": "minecraft:set_count",
-                "count": {
-                  "min": 2,
-                  "max": 3
-                }
+                "count": 1
               }
             ]
           }

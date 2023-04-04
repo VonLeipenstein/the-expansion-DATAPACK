@@ -9,7 +9,6 @@ scoreboard players set @p[tag=exp.generator,gamemode=survival] exp.gamemode 0
 scoreboard players set @p[tag=exp.generator,gamemode=creative] exp.gamemode 1
 scoreboard players set @p[tag=exp.generator,gamemode=spectator] exp.gamemode 2
 scoreboard players set @p[tag=exp.generator,gamemode=adventure] exp.gamemode 3
-execute as @p[tag=exp.generator] run gamemode spectator
 
 scoreboard players reset #earth exp.timer_2
 scoreboard players reset #moon exp.timer_2

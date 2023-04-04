@@ -7,3 +7,4 @@ summon minecraft:item_display ~ ~1.5 ~ {Tags:["exp.modstation_display"],item_dis
 data merge entity @e[type=minecraft:item_display,tag=exp.modstation_display,limit=1,sort=nearest] {transformation:{scale:[0.08f,0.08f,0.08f]}}
 
 setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'{"translate":"exp_blocks_modstation_name","color":"dark_grey"}'} replace
+execute as @e[type=minecraft:armor_stand,tag=exp.modstation,limit=1,sort=nearest] run function expansion:blocks/modification_station/gui/gui

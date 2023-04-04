@@ -14,7 +14,7 @@ execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:9b}]} run item replace 
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:13b}]} run item replace block ~ ~ ~ container.13 with minecraft:jigsaw{fabricator_button:1b,CustomModelData:124401,display:{Name:'{"text":"Print","italic": false,"color": "green"}'},gui_item:1b}
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:14b}]} run item replace block ~ ~ ~ container.14 with minecraft:jigsaw{CustomModelData:124401,display:{Name:'{"text":""}'},gui_item:1b}
 #execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:15b}]} run item replace block ~ ~ ~ container.15 with minecraft:jigsaw{CustomModelData:124401,display:{Name:'{"text":""}'},gui_item:1b}
-execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b}]} run item replace block ~ ~ ~ container.16 with minecraft:jigsaw{CustomModelData:124401,display:{Name:'{"text":""}'},gui_item:1b}
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b}]} run function expansion:blocks/fabricator/gui/fix_loader
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:17b}]} run item replace block ~ ~ ~ container.17 with minecraft:jigsaw{CustomModelData:124401,display:{Name:'{"text":""}'},gui_item:1b}
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:18b}]} run item replace block ~ ~ ~ container.18 with minecraft:jigsaw{CustomModelData:124401,display:{Name:'{"text":""}'},gui_item:1b}
 #execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:19b}]} run item replace block ~ ~ ~ container.19 with minecraft:jigsaw{CustomModelData:124401,display:{Name:'{"text":""}'},gui_item:1b}

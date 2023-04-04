@@ -11,8 +11,8 @@
               {
                 "function": "minecraft:set_count",
                 "count": {
-                  "min": 2, 
-                  "max": 5
+                  "min": 20, 
+                  "max": 26
                 }
               }
             ]
@@ -30,8 +30,27 @@
               {
                 "function": "minecraft:set_count",
                 "count": {
-                  "min": 5, 
-                  "max": 8
+                  "min": 10, 
+                  "max": 12
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "name": "expansion:items/simple_mechanism",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2, 
+                  "max": 3
                 }
               }
             ]
@@ -51,12 +70,7 @@
                 "count": 1
               }
             ]
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
+          },
           {
             "type": "minecraft:loot_table",
             "weight": 1,

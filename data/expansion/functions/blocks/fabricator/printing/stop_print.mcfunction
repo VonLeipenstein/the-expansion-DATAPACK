@@ -16,6 +16,9 @@ item replace entity @s armor.feet with air
 # remove the testing item
 item replace entity @s armor.legs with air
 
+# reset the loader
+data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 124470
+
 # stop the animation
 function expansion:blocks/fabricator/animation/animation_stop
 
