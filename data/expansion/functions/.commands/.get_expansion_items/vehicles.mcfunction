@@ -11,6 +11,7 @@ loot insert ~ ~ ~ loot expansion:vehicles/skins/zwaluw
 loot insert ~ ~ ~ loot expansion:items/rocket_parts/rocket_bottom
 loot insert ~ ~ ~ loot expansion:items/rocket_parts/rocket_cockpit
 loot insert ~ ~ ~ loot expansion:items/rocket_parts/rocket_top
+loot insert ~ ~ ~ loot expansion:items/spaceship_parts/spaceship_nose
 loot insert ~ ~ ~ loot expansion:items/spaceship_parts/spaceship_cockpit
 loot insert ~ ~ ~ loot expansion:items/spaceship_parts/spaceship_engines
 loot insert ~ ~ ~ loot expansion:items/spaceship_parts/spaceship_left_wing
