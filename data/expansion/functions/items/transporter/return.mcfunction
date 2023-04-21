@@ -15,9 +15,9 @@ execute if data entity @s ArmorItems[0].tag{return_dim:-1} in expansion:transpor
 execute if data entity @s ArmorItems[0].tag{return_dim:-1} in expansion:transporter_utility store result entity @s Pos[1] double 1 run scoreboard players get @s exp.y
 execute if data entity @s ArmorItems[0].tag{return_dim:-1} in expansion:transporter_utility store result entity @s Pos[2] double 800000 run scoreboard players get @s exp.z
 
-execute if data entity @s ArmorItems[0].tag{return_dim:7} in expansion:transporter_utility store result entity @s Pos[0] double 1000000 run scoreboard players get @s exp.x
+execute if data entity @s ArmorItems[0].tag{return_dim:7} in expansion:transporter_utility store result entity @s Pos[0] double 100000 run scoreboard players get @s exp.x
 execute if data entity @s ArmorItems[0].tag{return_dim:7} in expansion:transporter_utility store result entity @s Pos[1] double 1 run scoreboard players get @s exp.y
-execute if data entity @s ArmorItems[0].tag{return_dim:7} in expansion:transporter_utility store result entity @s Pos[2] double 1000000 run scoreboard players get @s exp.z
+execute if data entity @s ArmorItems[0].tag{return_dim:7} in expansion:transporter_utility store result entity @s Pos[2] double 100000 run scoreboard players get @s exp.z
 
 # tp player to origin armor stand
 execute if data entity @s ArmorItems[0].tag{return_dim:-2} at @s in minecraft:the_end run tp @p ~.5 ~ ~.5

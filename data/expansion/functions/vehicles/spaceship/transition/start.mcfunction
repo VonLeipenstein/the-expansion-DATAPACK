@@ -15,4 +15,3 @@ execute on vehicle run kill @s
 
 scoreboard players set @s exp.cooldown 20
 tag @s add exp.transitioning
-tag @s add exp.tp_to_marker

@@ -17,7 +17,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Unbreakable:1b,exp_tool:1b,pocket_space:1b,room_id:0,expansion_coas:1b,CustomModelData:1012204}"
+              "tag": "{Unbreakable:1b,exp_block:1b,pocket_space:1b,room_id:0,expansion_coas:1b,CustomModelData:1012204}"
             },
             {
               "function": "minecraft:set_lore",

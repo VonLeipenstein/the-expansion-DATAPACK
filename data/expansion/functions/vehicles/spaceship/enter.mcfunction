@@ -48,4 +48,4 @@ scoreboard players set @s exp.unique_id 0
 execute on passengers if data entity @s ArmorItems[3].tag.ModStorage.blaster.tag.id on vehicle store result score @s exp.unique_id on passengers run data get entity @s ArmorItems[3].tag.ModStorage.blaster.tag.id
 
 # give the player the blaster trigger item, but only if they have no item in their offhand to prevent it from being replaced
-execute unless entity @p[nbt={Inventory:[{Slot:-106b}]}] run item replace entity @p weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Fire!","color":"white","bold":false,"italic":false,"underlined":false}'},Unbreakable:1b,CustomModelData:1012006,ship_blaster:1b,exp_tool:1b,expansion_coas:1b} 1
+execute as @p unless entity @s[nbt={Inventory:[{Slot:-106b}]}] run item replace entity @s weapon.offhand with minecraft:carrot_on_a_stick{display:{Name:'{"text":"Fire!","color":"white","bold":false,"italic":false,"underlined":false}'},Unbreakable:1b,CustomModelData:1012006,ship_blaster:1b,exp_tool:1b,expansion_coas:1b} 1

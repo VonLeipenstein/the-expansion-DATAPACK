@@ -24,11 +24,10 @@ execute if predicate expansion:nbt_checks/selected_item/blocks/rocket_part run f
 execute if predicate expansion:nbt_checks/selected_item/blocks/tesla_coil run function expansion:blocks/tesla_coil/place
 # modification station
 execute if predicate expansion:nbt_checks/selected_item/blocks/modstation run function expansion:blocks/modification_station/place
-
+# transporter (pocket space)
+execute if predicate expansion:nbt_checks/selected_item/items/pocket_space run function expansion:blocks/transporter/place
 # planetarium
-execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium if entity @e[type=minecraft:armor_stand,tag=exp.planetarium,limit=1,sort=nearest,distance=..22] run function expansion:utilities/error_messages/planetarium_error
-execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium unless entity @s[tag=exp.planetarium_error] run function expansion:blocks/planetarium/place
-tag @s[tag=exp.planetarium_error] remove exp.planetarium_error
+execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium run function expansion:blocks/planetarium/place_check
 
 # finish the block placing
 item replace entity @s[gamemode=!creative] weapon.mainhand with minecraft:air

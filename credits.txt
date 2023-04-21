@@ -1,7 +1,11 @@
 Credits:
-- Quercus
-	Made the Jupiter Fleet, Venus Rovers, Starwars ships, Event Horizon, Jupiter spaceship skin, enhanced the Mars Warbase
+- Quercus, the MVP
+	Made the Spaceship model & texture, Jupiter Fleet, Venus Rovers, Starwars ships, Event Horizon, Jupiter spaceship skin, enhanced the Mars Warbase
 - Kerix
 	Made the Night Claw spaceship skin
 - Tristan_Arthur
-	Made the Mars Cannon, Mars Warbase, Mars Robot, enhanced the Railgunship.
+	Made the Mars Cannon, Mars Warbase, Mars Robot, enhanced the Railgunship
+- Asher Griffiths
+	Made the logo art(was slightly adjusted by EricIsntSmart), check out his other work here! https://scientiaavium.weebly.com/
+- IceBear
+	Did the Chinese translation

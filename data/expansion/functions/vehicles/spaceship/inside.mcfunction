@@ -10,7 +10,7 @@ execute if score @s exp.fuel_level matches 1.. run function expansion:vehicles/s
 execute if score @s exp.speed matches ..10 run function expansion:vehicles/spaceship/propulsion/no_speed
 
 # antidupe for the blaster item
-execute on passengers on passengers unless predicate expansion:nbt_checks/selected_item/items/blasters run function expansion:vehicles/spaceship/antidupe
+execute on passengers on passengers unless predicate expansion:nbt_checks/selected_item/items/blasters unless entity @s[nbt={Inventory:[{Slot:-106b}]}] run function expansion:vehicles/spaceship/antidupe
 
 # spaceship blasters
 execute unless score @s exp.counter_2 matches 1.. if score @s exp.speed matches 11.. on passengers on passengers if score @s exp.rightclick matches 1.. if predicate expansion:nbt_checks/selected_item/items/blasters unless predicate expansion:nbt_checks/selected_item/blocks/planetarium unless predicate expansion:nbt_checks/selected_item/items/fleet_finder on vehicle on vehicle run function expansion:vehicles/spaceship/blasters/determine_blaster
