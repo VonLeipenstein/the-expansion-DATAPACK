@@ -1,0 +1,3 @@
+execute if score @s aj.fabricator.animation.printer.print.loop_mode = $aj.loop_mode.loop aj.i run scoreboard players set @s aj.fabricator.animation.printer.print.local_anim_time 0
+execute if score @s aj.fabricator.animation.printer.print.loop_mode = $aj.loop_mode.once aj.i run function fabricator:animations/printer.print/stop
+execute if score @s aj.fabricator.animation.printer.print.loop_mode = $aj.loop_mode.hold aj.i run function fabricator:animations/printer.print/pause

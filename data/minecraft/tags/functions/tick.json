@@ -1,5 +1,8 @@
 {
-    "values": [
-        "expansion:tick"
-    ]
+	"replace": false,
+	"values": [
+		"expansion:tick",
+		"zzz_fabricator_internal:tick",
+		"zzz_assembler_internal:tick"
+	]
 }

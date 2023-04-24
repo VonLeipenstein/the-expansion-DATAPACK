@@ -1,0 +1,1 @@
+kill @e[tag=aj.assembler.rig_entity]

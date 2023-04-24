@@ -1,0 +1,1 @@
+execute as @e[type=#fabricator:aj_root,tag=aj.fabricator.root] run function zzz_fabricator_internal:remove/as_root

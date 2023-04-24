@@ -19,9 +19,6 @@ item replace entity @s armor.legs with air
 # reset the loader
 data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 124470
 
-# stop the animation
-function expansion:blocks/fabricator/animation/animation_stop
-
 # run the print again if there are still items inside the printer
 execute if data block ~ ~ ~ Items[{Slot:2b}] run function expansion:blocks/fabricator/gui/button_push
 

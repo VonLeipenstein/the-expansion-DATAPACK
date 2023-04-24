@@ -1,0 +1,1 @@
+function zzz_fabricator_internal:animations/printer.print/pause

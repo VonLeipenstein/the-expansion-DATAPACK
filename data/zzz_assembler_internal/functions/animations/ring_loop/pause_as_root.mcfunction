@@ -1,0 +1,1 @@
+tag @s remove aj.assembler.animation.ring_loop

@@ -1,1 +1,0 @@
-data modify entity @s ArmorItems[3].tag.display.color set value 8388608

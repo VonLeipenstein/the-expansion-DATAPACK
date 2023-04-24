@@ -1,0 +1,3 @@
+execute if score @s aj.assembler.animation.ring_loop.loop_mode = $aj.loop_mode.loop aj.i run scoreboard players set @s aj.assembler.animation.ring_loop.local_anim_time 0
+execute if score @s aj.assembler.animation.ring_loop.loop_mode = $aj.loop_mode.once aj.i run function assembler:animations/ring_loop/stop
+execute if score @s aj.assembler.animation.ring_loop.loop_mode = $aj.loop_mode.hold aj.i run function assembler:animations/ring_loop/pause
