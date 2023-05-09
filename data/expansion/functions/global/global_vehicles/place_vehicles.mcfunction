@@ -4,6 +4,7 @@ execute if predicate expansion:nbt_checks/selected_item/vehicles/spaceship run f
 execute if predicate expansion:nbt_checks/selected_item/vehicles/rocket run function expansion:vehicles/rocket/place
 execute if predicate expansion:nbt_checks/selected_item/vehicles/lunar_module run function expansion:vehicles/lunar_module/place
 execute if predicate expansion:nbt_checks/selected_item/vehicles/return_capsule run function expansion:vehicles/return_capsule/place
+execute if predicate expansion:nbt_checks/selected_item/vehicles/mech run function expansion:vehicles/mech/place
 
 item replace entity @s[gamemode=!creative] weapon.mainhand with minecraft:air
 playsound block.metal.place block @s ~ ~ ~

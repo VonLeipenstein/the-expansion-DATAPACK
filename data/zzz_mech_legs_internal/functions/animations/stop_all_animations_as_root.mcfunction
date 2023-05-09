@@ -1,0 +1,1 @@
+function zzz_mech_legs_internal:animations/walking/pause

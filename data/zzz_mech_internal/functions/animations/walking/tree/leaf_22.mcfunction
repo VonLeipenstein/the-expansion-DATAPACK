@@ -1,0 +1,1 @@
+execute on passengers run function zzz_mech_internal:animations/walking/tree/leaf_22_as_bone

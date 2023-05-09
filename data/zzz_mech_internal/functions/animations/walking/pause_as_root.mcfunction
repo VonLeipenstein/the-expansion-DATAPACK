@@ -1,0 +1,1 @@
+tag @s remove aj.mech.animation.walking

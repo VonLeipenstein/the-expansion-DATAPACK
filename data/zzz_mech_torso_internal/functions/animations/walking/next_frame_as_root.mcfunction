@@ -1,0 +1,1 @@
+function zzz_mech_torso_internal:animations/walking/tick_animation

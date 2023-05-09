@@ -4,3 +4,4 @@ execute if entity @s[tag=exp.inside_spaceship] run function expansion:vehicles/s
 execute if entity @s[tag=exp.inside_buggy] run function expansion:vehicles/buggy/buggy_tick
 execute if entity @s[tag=exp.inside_module] run function expansion:vehicles/lunar_module/lunar_module_tick
 execute if entity @s[tag=exp.inside_capsule] run function expansion:vehicles/return_capsule/return_capsule_tick
+execute if entity @s[tag=exp.inside_mech] run function expansion:vehicles/mech/mech_tick

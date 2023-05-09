@@ -2,7 +2,8 @@
 	"replace": false,
 	"values": [
 		"expansion:tick",
-		"zzz_fabricator_internal:tick",
-		"zzz_assembler_internal:tick"
+		"zzz_mech_internal:tick",
+		"zzz_mech_torso_internal:tick",
+		"zzz_mech_legs_internal:tick"
 	]
 }

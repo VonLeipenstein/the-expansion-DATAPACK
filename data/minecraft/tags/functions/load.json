@@ -3,6 +3,9 @@
 	"values": [
 		"expansion:load",
 		"zzz_fabricator_internal:load",
-		"zzz_assembler_internal:load"
+		"zzz_assembler_internal:load",
+		"zzz_mech_internal:load",
+		"zzz_mech_torso_internal:load",
+		"zzz_mech_legs_internal:load"
 	]
 }

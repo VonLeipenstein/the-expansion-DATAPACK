@@ -1,0 +1,1 @@
+execute as @e[type=#mech:aj_root,tag=aj.mech.root] run function zzz_mech_internal:tick_as_root

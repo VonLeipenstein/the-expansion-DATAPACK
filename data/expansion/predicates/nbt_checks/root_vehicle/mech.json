@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "vehicle": {
+      "type": "minecraft:armor_stand",
+      "nbt": "{Tags:[\"exp.mech_seat\"]}",
+      "vehicle": {
+        "type": "minecraft:armor_stand",
+        "nbt": "{Tags:[\"exp.mech\"]}"
+      }
+    }
+  }
+}
