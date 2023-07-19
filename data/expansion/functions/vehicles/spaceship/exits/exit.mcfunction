@@ -1,7 +1,7 @@
 # summon an item_display entity and copy the spaceship item from the display armor stand. kill the display armor stand for the next steps
 summon item_display ~ ~ ~ {Silent:1b,Tags:["exp.spaceship_display","smithed.block"],item_display:"head"}
 item replace entity @e[type=minecraft:item_display,tag=exp.spaceship_display,limit=1,sort=nearest] container.0 from entity @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest] armor.head
-data merge entity @e[type=minecraft:item_display,tag=exp.spaceship_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,2.0f,0.0f],scale:[-0.7f,0.7f,-0.7f]}}
+data merge entity @e[type=minecraft:item_display,tag=exp.spaceship_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,2.0f,0.0f],scale:[0.7f,0.7f,0.7f]}}
 kill @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest]
 
 # summon the interaction entity

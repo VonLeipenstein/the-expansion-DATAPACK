@@ -5,7 +5,7 @@ execute if entity @s[y_rotation=135.1..-135] run summon minecraft:armor_stand ^ 
 
 item replace entity @e[type=minecraft:item_display,tag=exp.buggy_display,limit=1,sort=nearest] container.0 from entity @s weapon.mainhand
 data modify entity @e[type=minecraft:item_display,tag=exp.buggy_display,limit=1,sort=nearest] Rotation[0] set from entity @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] Rotation[0]
-data merge entity @e[type=minecraft:item_display,tag=exp.buggy_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,0.22f,0.0f],scale:[-0.43f,0.43f,-0.43f]}}
+data merge entity @e[type=minecraft:item_display,tag=exp.buggy_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,0.22f,0.0f],scale:[0.43f,0.43f,0.43f]}}
 execute store result score @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] exp.fuel_level run data get entity @s SelectedItem.tag.fuel_lvl
 
 scoreboard players set @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] exp.fuel_max 129

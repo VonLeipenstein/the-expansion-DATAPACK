@@ -11,7 +11,7 @@ execute positioned ^ ^-1 ^ run summon minecraft:interaction ^-1.2 ^3.0 ^ {Tags:[
 execute positioned ^ ^-1 ^ run summon minecraft:interaction ^1.2 ^3.0 ^ {Tags:["exp.portal_core_rcdet","smithed.block"],width:0.6,height:0.6,response:1b}
 
 summon minecraft:item_display ~ ~-1 ~ {Rotation:[0f,0f],Tags:["exp.portal_display"],item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:1012605},item_display:"head"}}
-data merge entity @e[type=minecraft:item_display,tag=exp.portal_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,2.01f,0.0f],scale:[-2f,2f,-2f]}}
+data merge entity @e[type=minecraft:item_display,tag=exp.portal_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,2.01f,0.0f],scale:[2f,2f,2f]}}
 data modify entity @e[type=minecraft:item_display,tag=exp.portal_display,limit=1,sort=nearest] Rotation[0] set from entity @s Rotation[0]
 
 summon minecraft:interaction ~ ~-1 ~ {Tags:["exp.portal_rcdet","smithed.block"],height:1.1f,width:1.1f,response:1b}

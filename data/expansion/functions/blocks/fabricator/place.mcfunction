@@ -10,7 +10,7 @@ ride @e[type=item_display,tag=aj.fabricator.root,limit=1,sort=nearest] mount @e[
 
 # Place the display entity
 summon minecraft:item_display ~ ~1 ~ {Tags:["exp.fabricator_display","exp.block","smithed.block"],item_display:"head",width:1,height:1}
-data merge entity @e[type=minecraft:item_display,tag=exp.fabricator_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,0.735f,0.0f],scale:[-0.25f,0.25f,-0.25f]}}
+data merge entity @e[type=minecraft:item_display,tag=exp.fabricator_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,0.735f,0.0f],scale:[0.25f,0.25f,0.25f]}}
 
 setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"exp_blocks_fabricator_gui_name","color":"dark_grey"}'} replace
 function expansion:blocks/fabricator/gui/gui
