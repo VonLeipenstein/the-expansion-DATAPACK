@@ -1,0 +1,1 @@
+function animated_java:mech_legs/zzzzzzzz/animations/walking/pause_as_root

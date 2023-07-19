@@ -1,0 +1,2 @@
+scoreboard players set @s aj.mech_torso.rig_loaded 1
+execute unless score @s aj.mech_torso.export_version = aj.mech_torso.export_version aj.i at @s run function animated_java:mech_torso/zzzzzzzz/mark_outdated_rig

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.mech_torso.locator_origin.locator] at @s on origin run tp @s ^0 ^0.875 ^0.19383 ~0 ~0

@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.mech_torso.locator_origin.locator] run function animated_java:mech_torso/zzzzzzzz/summon/locator_locator/as_origin
+function #animated_java:mech_torso/on_summon/as_locator_origins

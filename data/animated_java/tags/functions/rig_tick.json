@@ -2,6 +2,8 @@
 	"replace": false,
 	"values": [
 		"animated_java:fabricator/zzzzzzzz/tick",
-		"animated_java:assembler/zzzzzzzz/tick"
+		"animated_java:assembler/zzzzzzzz/tick",
+		"animated_java:mech_legs/zzzzzzzz/tick",
+		"animated_java:mech_torso/zzzzzzzz/tick"
 	]
 }

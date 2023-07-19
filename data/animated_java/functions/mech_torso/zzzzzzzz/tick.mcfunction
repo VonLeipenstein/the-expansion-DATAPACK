@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.mech_torso.root] run function animated_java:mech_torso/zzzzzzzz/tick_as_root
