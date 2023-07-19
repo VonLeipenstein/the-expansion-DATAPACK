@@ -1,0 +1,1 @@
+function animated_java:assembler/zzzzzzzz/animations/ring_loop/pause_as_root

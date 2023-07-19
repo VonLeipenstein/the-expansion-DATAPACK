@@ -18,4 +18,4 @@ data remove block ~ ~ ~ Items[{Slot:20b}]
 data remove block ~ ~ ~ Items[{Slot:21b}]
 data remove block ~ ~ ~ Items[{Slot:22b}]
 
-execute on passengers run function assembler:animations/ring_loop/play
+execute on passengers run function animated_java:assembler/animations/ring_loop/play

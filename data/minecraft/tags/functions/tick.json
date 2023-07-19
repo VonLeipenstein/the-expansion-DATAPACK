@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"expansion:tick"
+		"expansion:tick",
+		"animated_java:tick"
 	]
 }

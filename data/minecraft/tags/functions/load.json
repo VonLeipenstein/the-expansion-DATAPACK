@@ -1,6 +1,8 @@
 {
 	"replace": false,
 	"values": [
-		"expansion:load"
+		"expansion:load",
+		"animated_java:fabricator/zzzzzzzz/load",
+		"animated_java:assembler/zzzzzzzz/load"
 	]
 }

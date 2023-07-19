@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..200 run function animated_java:assembler/zzzzzzzz/animations/ring_loop/tree/branch_0_200

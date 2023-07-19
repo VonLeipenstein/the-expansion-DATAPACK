@@ -1,0 +1,1 @@
+function animated_java:fabricator/zzzzzzzz/animations/printer.print/tick_animation

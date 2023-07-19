@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 192..199 run function animated_java:assembler/zzzzzzzz/animations/ring_loop/tree/branch_192_199
+execute if score @s aj.anim_time matches 200 run function animated_java:assembler/zzzzzzzz/animations/ring_loop/tree/leaf_200

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:fabricator/zzzzzzzz/animations/printer.print/tree/leaf_3_as_bone

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.fabricator.root] run function animated_java:fabricator/zzzzzzzz/tick_as_root

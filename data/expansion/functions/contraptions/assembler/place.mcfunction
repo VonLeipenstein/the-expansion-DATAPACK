@@ -1,8 +1,8 @@
 # summon the model
-execute if entity @s[y_rotation=-135.1..-45] positioned ~ ~1 ~ rotated 90 0 run function assembler:summon
-execute if entity @s[y_rotation=45.1..135] positioned ~ ~1 ~ rotated 270 0 run function assembler:summon
-execute if entity @s[y_rotation=-45..45] positioned ~ ~1 ~ rotated 180 0 run function assembler:summon
-execute if entity @s[y_rotation=135.1..-135] positioned ~ ~1 ~ rotated 0 0 run function assembler:summon
+execute if entity @s[y_rotation=-135.1..-45] positioned ~ ~1 ~ rotated 90 0 run function animated_java:assembler/summon
+execute if entity @s[y_rotation=45.1..135] positioned ~ ~1 ~ rotated 270 0 run function animated_java:assembler/summon
+execute if entity @s[y_rotation=-45..45] positioned ~ ~1 ~ rotated 180 0 run function animated_java:assembler/summon
+execute if entity @s[y_rotation=135.1..-135] positioned ~ ~1 ~ rotated 0 0 run function animated_java:assembler/summon
 
 summon item_display ~ ~1.6 ~ {item:{id:"minecraft:jigsaw",Count:1b,tag:{CustomModelData:124402}},Tags:["exp.assembler_product"],item_display:"head",width:3,height:3}
 
@@ -17,7 +17,7 @@ execute as @e[type=minecraft:item_display,tag=aj.assembler.root,limit=1,sort=nea
 
 ride @e[type=item_display,tag=aj.assembler.root,limit=1,sort=nearest] mount @e[type=armor_stand,tag=exp.assembler,limit=1,sort=nearest]
 
-execute as @e[type=item_display,tag=aj.assembler.root,limit=1,sort=nearest] run function assembler:animations/ring_loop/stop
+execute as @e[type=item_display,tag=aj.assembler.root,limit=1,sort=nearest] run function animated_java:assembler/animations/ring_loop/stop
 
 playsound minecraft:block.metal.place voice @s
 
