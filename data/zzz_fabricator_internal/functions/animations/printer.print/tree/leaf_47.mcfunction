@@ -1,1 +1,0 @@
-execute on passengers run function zzz_fabricator_internal:animations/printer.print/tree/leaf_47_as_bone

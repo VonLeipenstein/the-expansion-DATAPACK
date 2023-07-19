@@ -1,2 +1,0 @@
-scoreboard players remove @s aj.tween_time 1
-execute if score @s aj.tween_time matches ..0 on passengers store result entity @s interpolation_duration int 1 run scoreboard players get $aj.default_interpolation_duration aj.i

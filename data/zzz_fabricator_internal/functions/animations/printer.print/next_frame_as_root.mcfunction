@@ -1,1 +1,0 @@
-function zzz_fabricator_internal:animations/printer.print/tick_animation

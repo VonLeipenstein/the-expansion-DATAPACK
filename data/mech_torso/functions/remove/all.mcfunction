@@ -1,1 +1,0 @@
-kill @e[tag=aj.mech_torso.rig_entity]

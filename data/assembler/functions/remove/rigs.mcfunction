@@ -1,1 +1,0 @@
-execute as @e[type=#assembler:aj_root,tag=aj.assembler.root] run function zzz_assembler_internal:remove/as_root

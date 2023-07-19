@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.mech.animation.walking] run function zzz_mech_internal:animations/walking/tick

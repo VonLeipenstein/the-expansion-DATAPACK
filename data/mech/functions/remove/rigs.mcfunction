@@ -1,1 +1,0 @@
-execute as @e[type=#mech:aj_root,tag=aj.mech.root] run function zzz_mech_internal:remove/as_root

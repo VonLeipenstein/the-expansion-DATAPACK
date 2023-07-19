@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..60 run function zzz_fabricator_internal:animations/printer.print/tree/branch_0_60

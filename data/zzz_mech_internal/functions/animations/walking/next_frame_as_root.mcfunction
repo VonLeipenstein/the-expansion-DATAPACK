@@ -1,1 +1,0 @@
-function zzz_mech_internal:animations/walking/tick_animation

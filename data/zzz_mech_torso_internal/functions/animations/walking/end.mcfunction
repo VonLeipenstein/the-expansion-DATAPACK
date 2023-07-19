@@ -1,3 +1,0 @@
-execute if score @s aj.mech_torso.animation.walking.loop_mode = $aj.loop_mode.loop aj.i run scoreboard players set @s aj.mech_torso.animation.walking.local_anim_time 0
-execute if score @s aj.mech_torso.animation.walking.loop_mode = $aj.loop_mode.once aj.i run function mech_torso:animations/walking/stop
-execute if score @s aj.mech_torso.animation.walking.loop_mode = $aj.loop_mode.hold aj.i run function mech_torso:animations/walking/pause

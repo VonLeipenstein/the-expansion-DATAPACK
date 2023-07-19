@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.assembler.animation.ring_loop] run function zzz_assembler_internal:animations/ring_loop/tick

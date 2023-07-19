@@ -1,1 +1,0 @@
-execute as @e[type=#mech_legs:aj_root,tag=aj.mech_legs.root] run function zzz_mech_legs_internal:tick_as_root

@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.fabricator.animation.printer.print] run function zzz_fabricator_internal:animations/printer.print/tick

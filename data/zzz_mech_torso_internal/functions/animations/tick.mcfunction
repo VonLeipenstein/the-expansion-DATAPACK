@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.mech_torso.animation.walking] run function zzz_mech_torso_internal:animations/walking/tick

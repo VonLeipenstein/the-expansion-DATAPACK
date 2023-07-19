@@ -1,1 +1,0 @@
-function zzz_assembler_internal:animations/ring_loop/pause

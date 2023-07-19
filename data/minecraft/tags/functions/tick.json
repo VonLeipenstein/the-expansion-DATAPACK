@@ -1,9 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"expansion:tick",
-		"zzz_mech_internal:tick",
-		"zzz_mech_torso_internal:tick",
-		"zzz_mech_legs_internal:tick"
+		"expansion:tick"
 	]
 }
