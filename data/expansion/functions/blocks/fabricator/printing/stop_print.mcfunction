@@ -17,7 +17,7 @@ item replace entity @s armor.feet with air
 item replace entity @s armor.legs with air
 
 # reset the loader
-data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 124470
+execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:16b,tag:{gui_item:1b}}]} run data modify block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData set value 124470
 
 # run the print again if there are still items inside the printer
 execute if data block ~ ~ ~ Items[{Slot:2b}] run function expansion:blocks/fabricator/gui/button_push
