@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+            "type": "minecraft:interaction",
+            "nbt": "{Tags:[\"exp.mech_interaction\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "expansion:vehicles/mech/click_detection/lefthand"
+  }
+}

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:mech_legs/zzzzzzzz/animations/idle/tree/leaf_0_as_bone

@@ -11,6 +11,10 @@ execute if score #variant aj.i = $aj.mech_torso.variant.default aj.id run functi
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.mech_torso.animation.walking aj.id run function animated_java:mech_torso/zzzzzzzz/animations/walking/apply_frame_as_root
 execute if score #animation aj.i = $aj.mech_torso.animation.walking aj.id run scoreboard players operation @s aj.mech_torso.animation.walking.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.mech_torso.animation.walking_backwards aj.id run function animated_java:mech_torso/zzzzzzzz/animations/walking_backwards/apply_frame_as_root
+execute if score #animation aj.i = $aj.mech_torso.animation.walking_backwards aj.id run scoreboard players operation @s aj.mech_torso.animation.walking_backwards.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.mech_torso.animation.idle aj.id run function animated_java:mech_torso/zzzzzzzz/animations/idle/apply_frame_as_root
+execute if score #animation aj.i = $aj.mech_torso.animation.idle aj.id run scoreboard players operation @s aj.mech_torso.animation.idle.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.mech_torso.animation.swing aj.id run function animated_java:mech_torso/zzzzzzzz/animations/swing/apply_frame_as_root
 execute if score #animation aj.i = $aj.mech_torso.animation.swing aj.id run scoreboard players operation @s aj.mech_torso.animation.swing.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:mech_torso/on_summon/as_root

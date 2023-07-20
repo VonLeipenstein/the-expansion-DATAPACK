@@ -11,6 +11,10 @@ execute if score #variant aj.i = $aj.mech_legs.variant.default aj.id run functio
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.mech_legs.animation.walking aj.id run function animated_java:mech_legs/zzzzzzzz/animations/walking/apply_frame_as_root
 execute if score #animation aj.i = $aj.mech_legs.animation.walking aj.id run scoreboard players operation @s aj.mech_legs.animation.walking.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.mech_legs.animation.walking_backwards aj.id run function animated_java:mech_legs/zzzzzzzz/animations/walking_backwards/apply_frame_as_root
+execute if score #animation aj.i = $aj.mech_legs.animation.walking_backwards aj.id run scoreboard players operation @s aj.mech_legs.animation.walking_backwards.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.mech_legs.animation.idle aj.id run function animated_java:mech_legs/zzzzzzzz/animations/idle/apply_frame_as_root
+execute if score #animation aj.i = $aj.mech_legs.animation.idle aj.id run scoreboard players operation @s aj.mech_legs.animation.idle.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:mech_legs/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
