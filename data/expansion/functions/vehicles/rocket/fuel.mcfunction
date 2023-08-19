@@ -3,9 +3,7 @@ execute if entity @p[nbt={Inventory:[{id:"minecraft:blaze_powder"}]}] unless sco
 execute if score @s exp.fuel_level = @s exp.fuel_max run title @p title {"text":"Fuel level at 100%","color":"green","bold":true}
 
 # calculate how much blaze powder is still needed
-scoreboard players operation @s exp.counter_1 = @s exp.fuel_max
-scoreboard players operation @s exp.counter_1 -= @s exp.fuel_level
-scoreboard players operation @s exp.counter_1 /= #40 exp.const
+function expansion:vehicles/rocket/calculate_fuel
 
 # gather more fuel title
 title @p subtitle {"text":" "}
