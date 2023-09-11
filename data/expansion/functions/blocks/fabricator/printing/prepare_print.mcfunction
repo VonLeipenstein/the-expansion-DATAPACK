@@ -13,6 +13,8 @@ execute unless score @s exp.bool matches 0 unless data block ~ ~ ~ Items[{Slot:1
 # prevent printing when the output slot is full
 execute if block ~ ~ ~ barrel{Items:[{Slot:15b,id:"minecraft:jigsaw",Count:64b}]} run tag @s remove exp.print_ready
 execute if block ~ ~ ~ barrel{Items:[{Slot:15b,id:"minecraft:carrot_on_a_stick",Count:1b}]} run tag @s remove exp.print_ready
+execute if block ~ ~ ~ barrel{Items:[{Slot:15b,id:"minecraft:iron_boots",Count:1b}]} run tag @s remove exp.print_ready
+
 
 # start the print if conditions are met
 execute if entity @s[tag=exp.print_ready] run function expansion:blocks/fabricator/printing/start_print

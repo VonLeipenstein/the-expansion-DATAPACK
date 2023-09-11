@@ -25,3 +25,4 @@ loot insert ~ ~ ~ loot expansion:items/monochrome_monitor
 loot insert ~ ~ ~ loot expansion:items/warming_element
 loot insert ~ ~ ~ loot expansion:items/cooling_element
 loot insert ~ ~ ~ loot expansion:items/robot_arm
+loot insert ~ ~ ~ loot expansion:items/thruster
