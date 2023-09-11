@@ -24,6 +24,8 @@ scoreboard objectives add exp.hold_value_alt dummy
 scoreboard objectives add exp.sneak_delay dummy
 scoreboard objectives add exp.gravity_delay dummy
 
+scoreboard objectives add exp.drone_id dummy
+
 # fuel
 scoreboard objectives add exp.fuel_level dummy
 scoreboard objectives add exp.fuel_max dummy

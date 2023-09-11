@@ -12,6 +12,3 @@ execute if predicate expansion:nbt_checks/selected_item/items/fleet_finder run f
 execute if predicate expansion:nbt_checks/selected_item/items/railgun unless score @s[tag=!exp.inside_vehicle] exp.warmup matches 1.. unless score @s exp.cooldown matches 1.. run function expansion:items/railgun/main
 # pet drone
 execute if predicate expansion:nbt_checks/selected_item/items/pet_drone if entity @s[tag=!exp.has_active_drone,tag=!exp.inside_vehicle] run function expansion:items/drone_pet/summon
-
-# planetarium used for markers in space
-execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium if predicate expansion:dimension/space if entity @s[tag=exp.inside_spaceship] run function expansion:vehicles/spaceship/markers/marker_switcher

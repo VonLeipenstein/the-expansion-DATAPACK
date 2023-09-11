@@ -1,11 +1,5 @@
-execute at @e[type=minecraft:armor_stand,tag=exp.pet_drone,limit=1,sort=nearest] run playsound expansion:drone.dismiss neutral @a ~ ~ ~
+scoreboard players operation #search exp.drone_id = @s exp.drone_id
 
-tag @s remove exp.has_active_drone
-execute as @e[type=minecraft:armor_stand,tag=exp.pet_drone,limit=1,sort=nearest] on passengers run kill @s
-kill @e[type=minecraft:armor_stand,tag=exp.pet_drone,limit=1,sort=nearest]
-
-# give the player the drone, or spawn it if this function is called from player_death
-loot give @s[scores={exp.death=0}] loot expansion:tools/pet_drone
-execute if score @s exp.death matches 1 run loot spawn ~ ~ ~ loot expansion:tools/pet_drone
+execute at @s as @e[type=minecraft:armor_stand,tag=exp.pet_drone,predicate=expansion:compare_score/drone_id,limit=1,sort=nearest] on passengers if data entity @s[type=interaction] attack.player run function expansion:items/drone_pet/delete
 
 advancement revoke @s only expansion:utility/drone_pet_lc
