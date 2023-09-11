@@ -1,1 +1,0 @@
-execute as @e[tag=exp.teleported,limit=1] run function expansion:contraptions/portal/teleport/remove_tp_tag

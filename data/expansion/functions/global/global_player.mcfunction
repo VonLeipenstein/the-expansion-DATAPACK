@@ -1,7 +1,7 @@
 # global rightclick actions
 execute if score @s exp.rightclick matches 1.. if predicate expansion:nbt_checks/selected_item/expansion_coas run function expansion:global/global_rightclick/rightclick_main
 
-# guide 1
+# guide
 execute if score @s give_guide1 matches 1 run function expansion:items/expansion_guides/guide1/spawn_guide1
 
 # custom durability, Credits to Cloudwolf (https://www.youtube.com/watch?v=XoTR_kFAlkc)

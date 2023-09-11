@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:global/transitions/transitions_main"
+    "function": "expansion:global/transitions/init"
   }
 }

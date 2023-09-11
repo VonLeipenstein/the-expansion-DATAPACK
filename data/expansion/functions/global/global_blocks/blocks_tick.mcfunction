@@ -15,9 +15,9 @@ execute if entity @s[tag=exp.fabricator] run function expansion:blocks/fabricato
 # oxygenator
 execute if entity @s[tag=exp.oxygenator] run function expansion:blocks/oxygenator/oxygenator_tick
 # assembler
-execute if entity @s[tag=exp.assembler] positioned ~ ~-1 ~ run function expansion:contraptions/assembler/assembler_tick
+execute if entity @s[tag=exp.assembler] positioned ~ ~-1 ~ run function expansion:blocks/assembler/assembler_tick
 # portal
-execute if entity @s[tag=exp.portal_main,tag=exp.activated_portal] run function expansion:contraptions/portal/portal_tick
+execute if entity @s[tag=exp.portal_main,tag=exp.activated_portal] run function expansion:blocks/portal/portal_tick
 # assembler
 execute if entity @s[tag=exp.tesla_coil] run function expansion:blocks/tesla_coil/tesla_coil_tick
 # modification station

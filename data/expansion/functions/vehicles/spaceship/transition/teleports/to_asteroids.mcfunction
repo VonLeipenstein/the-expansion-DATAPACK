@@ -1,5 +1,5 @@
-data modify entity @s Pos set from entity @p Inventory[{Slot:103b}].tag.Inventory[].spaceship_store[].tag.ReturnPos.asteroids
+data modify entity @s Pos set from entity @p[tag=exp.spaceship_pilot] Inventory[{Slot:103b}].tag.Inventory[].spaceship_store[].tag.ReturnPos.asteroids
 
-execute at @s in expansion:asteroids run tp @p[tag=exp.tp_to_marker] ~ 450 ~ ~ 89
+execute at @s in expansion:asteroids run tp @a[tag=exp.transition_temp] ~ 450 ~ ~ 89
 
 kill @s

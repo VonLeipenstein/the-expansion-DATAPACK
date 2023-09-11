@@ -1,1 +1,0 @@
-execute as @e[tag=exp.inside_portal,limit=1] run function expansion:contraptions/portal/teleport/remove_inside_tag

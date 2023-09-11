@@ -1,5 +1,6 @@
 # summon a spaceship if this function hasn't been run before
-execute at @s[tag=!exp.trying_transition] run summon minecraft:armor_stand ~ ~ ~ {Silent:1b,NoGravity:0b,Invulnerable:1b,Small:1b,Marker:0b,Invisible:1b,Tags:["exp.spaceship","exp.vehicle","smithed.block"],DisabledSlots:4144959,Passengers:[{id:"minecraft:armor_stand",Small:0b,Marker:1b,Invisible:1b,Tags:["exp.spaceship_display"],Pose:{Head:[0f,1f,0f]}}]}
+execute at @s[tag=!exp.trying_transition,tag=!exp.summoned_new_ship,tag=exp.spaceship_pilot] if loaded ~ ~ ~ run function expansion:vehicles/spaceship/transition/summon_new
+
 # apply levitation so the player doesn't fall in case of lag
 effect give @s[tag=!exp.trying_transition] minecraft:levitation 1000 255 true
 effect give @s[tag=!exp.trying_transition] minecraft:blindness 1000 255 true

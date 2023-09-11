@@ -1,5 +1,5 @@
 # calculate the roll
-execute unless score .d exp.wasd matches 1 run function expansion:vehicles/spaceship/propulsion/calculate_tilt
+function expansion:vehicles/spaceship/propulsion/calculate_tilt
 
 # yaw
 execute store result entity @s Rotation[0] float 1 run scoreboard players get #angle_ver exp.math

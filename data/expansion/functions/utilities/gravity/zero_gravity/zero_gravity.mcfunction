@@ -2,7 +2,7 @@
 execute if entity @s[predicate=expansion:nbt_checks/armor/space_equipment/equipment] run function expansion:utilities/gravity/zero_gravity/movement
 
 # apply exp.rising tag when jumping
-tag @s[scores={exp.jump=1..},predicate=!expansion:nbt_checks/armor/magnetic_boots] add exp.rising
+tag @s[scores={exp.jump=1..}] add exp.rising
 
 # apply levitation 255 when correct conditions are met
 execute if entity @s[tag=!exp.rising,tag=!exp.falling,tag=!exp.spacewalking] run function expansion:utilities/gravity/zero_gravity/apply_levitation

@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:contraptions/portal/cores/swap_cores"
+    "function": "expansion:blocks/portal/cores/swap_cores"
   }
 }

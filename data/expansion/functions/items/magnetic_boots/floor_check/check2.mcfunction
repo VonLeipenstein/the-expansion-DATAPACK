@@ -1,0 +1,1 @@
+execute positioned ~ ~-1 ~ if block ~ ~ ~ #expansion:expansion_air run tag @s add exp.no_floor

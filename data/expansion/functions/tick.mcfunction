@@ -10,8 +10,5 @@ execute as @e[type=minecraft:armor_stand,tag=exp.block] at @s run function expan
 # slowcasting
 execute as @e[type=minecraft:marker,tag=exp.slowcast] at @s run function expansion:utilities/raycast/slowcast/main
 
-# animated java rigs
-execute as @e[type=minecraft:item_display,tag=aj.expansion_rig] run function expansion:aj_main
-
-#
+# remove water when mining ores
 execute as @e[type=item,nbt={Item:{id:"minecraft:jigsaw",tag:{expansion_ore:1b}}},limit=1,sort=arbitrary] at @s run function expansion:blocks/ores/fix_water
