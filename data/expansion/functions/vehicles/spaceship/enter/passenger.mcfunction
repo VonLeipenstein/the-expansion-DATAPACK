@@ -9,7 +9,7 @@ scoreboard players add @s exp.passenger_count 1
 function expansion:items/magnetic_boots/floor_check/remove_tags
 
 # dismiss the pet drone if it was active
-execute if entity @s[tag=exp.has_active_drone] run function expansion:items/drone_pet/dismiss
+execute as @p[tag=exp.has_active_drone] run function expansion:items/drone_pet/force_dismiss
 
 # align the rotation of the player with the spaceship
 execute rotated as @s run tp @p ^ ^ ^ ~ ~

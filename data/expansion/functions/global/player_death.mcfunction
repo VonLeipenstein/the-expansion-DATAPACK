@@ -6,7 +6,7 @@ execute if entity @s[tag=exp.inside_buggy] run function expansion:vehicles/buggy
 execute if entity @s[tag=exp.inside_capsule] run function expansion:vehicles/return_capsule/exit
 
 # dismiss the drone pet
-execute if entity @s[tag=exp.has_active_drone] run function expansion:items/drone_pet/dismiss
+execute if entity @s[tag=exp.has_active_drone] run function expansion:items/drone_pet/force_dismiss
 
 # reset the scoreboard
 scoreboard players set @s exp.death 0

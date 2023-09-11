@@ -1,7 +1,7 @@
 tag @s add exp.inside_rocket
 tag @s add exp.inside_vehicle
 
-execute if entity @s[tag=exp.has_active_drone] run function expansion:items/drone_pet/dismiss
+execute if entity @s[tag=exp.has_active_drone] run function expansion:items/drone_pet/force_dismiss
 
 # swap the rightclick villager with the rocket_seat armor stand and mount the player on top of that
 kill @e[type=minecraft:interaction,tag=exp.rocket_rcdet,limit=1,sort=nearest]
