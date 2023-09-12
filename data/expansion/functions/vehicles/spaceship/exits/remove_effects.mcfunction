@@ -11,3 +11,4 @@ effect clear @s minecraft:resistance
 tag @s remove exp.inside_spaceship
 tag @s remove exp.inside_vehicle
 tag @s remove exp.spaceship_pilot
+tag @s remove exp.exiting_ship

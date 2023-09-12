@@ -21,5 +21,5 @@ execute store result storage expansion:motion Motion[1] double 0.0001 run scoreb
 execute store result storage expansion:motion Motion[2] double -0.000001 run scoreboard players get #velocity_z exp.math
 data modify entity @s Motion set from storage expansion:motion Motion
 
-# regulate the display of the model(y_rot, x_rot and roll)
+# regulate the display of the model(yaw, pitch and roll)
 execute on passengers if entity @s[type=armor_stand,tag=exp.spaceship_display] run function expansion:vehicles/spaceship/propulsion/model_rotation

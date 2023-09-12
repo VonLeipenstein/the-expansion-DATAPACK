@@ -1,14 +1,24 @@
-# remove passenger count
-scoreboard players remove @e[type=minecraft:armor_stand,tag=exp.spaceship,limit=1,sort=nearest] exp.passenger_count 1
+# temporary tag
+tag @s add exp.exiting_ship
+# make the player ride the spaceship to make it easier to detect entities
+ride @s mount @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest]
 
-# when the pilot leaves the ship first
-execute if entity @s[tag=exp.spaceship_pilot] unless score @e[type=minecraft:armor_stand,tag=exp.spaceship,limit=1,sort=nearest] exp.passenger_count matches 0 run tag @p[tag=!exp.spaceship_pilot,tag=exp.inside_spaceship] add exp.spaceship_pilot
+# remove passenger count
+execute on vehicle on vehicle run scoreboard players remove @s exp.passenger_count 1
+
+# when the pilot leaves the ship first make the other passenger the new pilot
+execute if entity @s[tag=exp.spaceship_pilot] on vehicle on vehicle unless score @s exp.passenger_count matches 0 on passengers on passengers run tag @s[tag=!exp.spaceship_pilot,tag=exp.inside_spaceship,tag=!exp.exiting_ship] add exp.spaceship_pilot
+
+execute unless entity @s[tag=exp.spaceship_pilot] run function expansion:vehicles/spaceship/exits/restore_passenger_helmet
+execute if entity @s[tag=exp.spaceship_pilot] run function expansion:vehicles/spaceship/exits/restore_pilot_helmet
 
 # run when this is the last player to leave the ship
-execute if score @e[type=minecraft:armor_stand,tag=exp.spaceship,limit=1,sort=nearest] exp.passenger_count matches 0 run function expansion:vehicles/spaceship/exits/pilot
+execute on vehicle on vehicle if score @s exp.passenger_count matches 0 run function expansion:vehicles/spaceship/exits/pilot
 
 # teleport the player next to the spaceship
-execute at @s rotated ~ 0 on passengers on passengers run tp @s[tag=!exp.ejected,tag=exp.inside_spaceship] ^-2 ^ ^1 ~ ~
+execute on vehicle on vehicle at @s rotated ~ 0 on passengers on passengers run tp @s[tag=exp.exiting_ship,tag=exp.inside_spaceship] ^-2 ^ ^1 ~ ~
+
+ride @s dismount
 
 # remove basic player effects
 function expansion:vehicles/spaceship/exits/remove_effects

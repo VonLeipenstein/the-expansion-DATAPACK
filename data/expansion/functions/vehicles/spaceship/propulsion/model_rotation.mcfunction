@@ -1,5 +1,6 @@
-# makes the spaceship rotate with you when looking right up, limitation of euler rotations or something
-execute if score #pitch exp.math matches ..-89 on vehicle run tp @s ~ ~ ~ ~ ~1
+# fix angles being weird when lookinh straight up or down. limitation of Euler angles or something
+execute if score #pitch exp.math matches ..-89 on vehicle run data modify entity @s Rotation[1] set value -89.0f
+execute if score #pitch exp.math matches 88.. on vehicle run data modify entity @s Rotation[1] set value 88.0f
 
 # pitch
 execute store result entity @s Pose.Head[0] float 1 run scoreboard players get #pitch exp.math
