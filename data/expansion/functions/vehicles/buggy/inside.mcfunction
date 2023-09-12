@@ -9,10 +9,11 @@ execute if score .w exp.wasd matches 1 unless score .s exp.wasd matches 1 if sco
 execute if score .s exp.wasd matches 1 unless score .w exp.wasd matches 1 if score @s exp.speed matches 11..100 run scoreboard players remove @s exp.speed 4
 execute if score .s exp.wasd matches 1 unless score .w exp.wasd matches 1 if score @s exp.speed matches -99..10 run scoreboard players remove @s exp.speed 1
 
+# zero gravity things
+execute if predicate expansion:dimension/zero_gravity if block ^ ^-1 ^ #expansion:expansion_air if block ^ ^-2 ^ #expansion:expansion_air run data merge entity @s {NoGravity:1b}
+
 # movement
-execute unless score @s exp.speed matches -11..11 unless predicate expansion:dimension/zero_gravity run function expansion:vehicles/buggy/propulsion/drive
+execute unless score @s exp.speed matches -11..11 run function expansion:vehicles/buggy/propulsion/drive
 
 # break the buggy when it hits water
 execute if block ~ ~ ~ #expansion:expansion_liquid run function expansion:vehicles/buggy/liquid_interaction
-
-

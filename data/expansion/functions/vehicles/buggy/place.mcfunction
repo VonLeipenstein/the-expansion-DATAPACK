@@ -7,6 +7,7 @@ item replace entity @e[type=minecraft:item_display,tag=exp.buggy_display,limit=1
 data modify entity @e[type=minecraft:item_display,tag=exp.buggy_display,limit=1,sort=nearest] Rotation[0] set from entity @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] Rotation[0]
 data merge entity @e[type=minecraft:item_display,tag=exp.buggy_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,0.22f,0.0f],scale:[0.43f,0.43f,0.43f]}}
 execute store result score @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] exp.fuel_level run data get entity @s SelectedItem.tag.fuel_lvl
+execute if predicate expansion:dimension/zero_gravity run data merge entity @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] {NoGravity:1b}
 
 scoreboard players set @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] exp.fuel_max 129
 scoreboard players set @e[type=minecraft:armor_stand,tag=exp.moon_buggy,limit=1,sort=nearest] exp.timer_1 1012007

@@ -1,6 +1,7 @@
 # store rotation data and assign it to a scoreboard value
 execute store result score #angle exp.math run data get entity @s Rotation[0] 1
 scoreboard players operation #input exp.math = #angle exp.math
+
 # the sin approximation algorithm only works for angles between 0 and 180 so make any negative angles positive
 execute unless score #input exp.math matches 0.. run scoreboard players operation #input exp.math *= #-1 exp.const
 
@@ -10,6 +11,10 @@ execute if score .a exp.wasd matches 1 unless score .d exp.wasd matches 1 run fu
 execute if score .d exp.wasd matches 1 unless score .a exp.wasd matches 1 run function expansion:vehicles/buggy/propulsion/turn_right
 # merge the new rotation with the armor stand
 execute store result entity @s Rotation[0] float 1 run scoreboard players get #turn exp.math 
+
+# zero gravity things
+execute if predicate expansion:dimension/zero_gravity if score @s exp.speed matches ..-11 unless block ^ ^-1 ^-1 #expansion:expansion_air run data merge entity @s[nbt={NoGravity:1b}] {NoGravity:0b}
+execute if predicate expansion:dimension/zero_gravity if score @s exp.speed matches 11.. unless block ^ ^-1 ^1 #expansion:expansion_air run data merge entity @s[nbt={NoGravity:1b}] {NoGravity:0b}
 
 # calculate the motion vector
 function expansion:vehicles/buggy/propulsion/move
