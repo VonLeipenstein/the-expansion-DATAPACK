@@ -1,8 +1,3 @@
-# swap the player with the rightclick entity
-kill @e[type=minecraft:armor_stand,tag=exp.rocket_seat,distance=..7,limit=1,sort=nearest]
-execute at @e[type=minecraft:armor_stand,tag=exp.rocket,distance=..7,limit=1,sort=nearest] run summon minecraft:interaction ~ ~ ~ {Silent:1b,Tags:["exp.rocket_rcdet","smithed.block","exp.rocket_interactor"],width:2f,height:6f,response:1b}
-ride @e[type=minecraft:interaction,tag=exp.rocket_rcdet,distance=..7,limit=1,sort=nearest] mount @e[type=minecraft:item_display,tag=exp.rocket_display,distance=..7,limit=1,sort=nearest]
-
 # stop the launching sound and reset the timer
 scoreboard players reset @e[type=minecraft:armor_stand,tag=exp.rocket,distance=..7,limit=1,sort=nearest] exp.timer_2
 stopsound @s player expansion:rocket.launch
@@ -12,3 +7,4 @@ execute at @e[type=minecraft:armor_stand,tag=exp.rocket,distance=..7,limit=1,sor
 tag @s remove exp.inside_rocket
 tag @s remove exp.inside_vehicle
 tag @s remove exp.launching
+tag @s remove exp.rocket_pilot

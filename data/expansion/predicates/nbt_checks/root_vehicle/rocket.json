@@ -4,15 +4,7 @@
   "predicate": {
     "vehicle": {
       "type": "minecraft:armor_stand",
-      "nbt": "{Tags:[\"exp.rocket_seat\"]}",
-      "vehicle": {
-        "type": "minecraft:item_display",
-        "nbt": "{Tags:[\"exp.rocket_display\"]}",
-        "vehicle": {
-          "type": "minecraft:armor_stand",
-          "nbt": "{Tags:[\"exp.rocket\"]}"
-        }
-      }
+      "nbt": "{Tags:[\"exp.rocket_seat\"]}"
     }
   }
 }

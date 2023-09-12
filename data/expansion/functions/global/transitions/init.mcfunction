@@ -1,7 +1,7 @@
 # --- run from the space_transition advancement
 
 # moon-earth transitions
-execute if entity @s[tag=exp.inside_rocket,predicate=expansion:dimension/overworld] at @s run function expansion:global/transitions/moon_earth/earth_to_moon
+execute if entity @s[tag=exp.inside_rocket,tag=exp.rocket_pilot,predicate=expansion:dimension/overworld] at @s run function expansion:global/transitions/moon_earth/earth_to_moon
 execute if entity @s[tag=exp.inside_module,tag=!exp.landing_moon,predicate=expansion:dimension/moon] at @s run function expansion:global/transitions/moon_earth/moon_to_earth
 
 # spaceship transitions

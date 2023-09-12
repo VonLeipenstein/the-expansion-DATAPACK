@@ -1,12 +1,12 @@
 # summon a lunar module if this function hasn't been run before
-execute at @s[tag=!exp.trying_transition] run summon minecraft:armor_stand ~ ~ ~ {Silent:1b,NoGravity:0b,Invisible:1b,Tags:["exp.lunar_module","exp.vehicle","smithed.block"],Passengers:[{id:"minecraft:item_display",Tags:["exp.module_display"],item_display:"head",Passengers:[{id:"minecraft:armor_stand",Small:1b,Silent:1b,Invulnerable:1b,Tags:["exp.module_seat","smithed.block"]}]}],DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Unbreakable:1b,CustomModelData:1012004,lunar_module:1b}}]}
+execute if entity @s[tag=!exp.summoned_new_module,tag=exp.rocket_pilot] at @s if loaded ~ ~ ~ run function expansion:vehicles/lunar_module/summon_new
 
 # apply levitation so the player doesn't fall in case of lag
 effect give @s[tag=!exp.trying_transition] minecraft:levitation 1000 255 true
 effect give @s[tag=!exp.trying_transition] minecraft:blindness 1000 255 true
 
 # apply a tag so some things in this function only run once
-tag @s add exp.trying_transition
+tag @s[tag=exp.rocket_pilot] add exp.trying_transition
 
 # attempt to enter the lunar module
 ride @s mount @e[type=minecraft:armor_stand,tag=exp.module_seat,limit=1,sort=nearest]

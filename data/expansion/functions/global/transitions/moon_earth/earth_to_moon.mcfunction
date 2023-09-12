@@ -1,14 +1,14 @@
+tag @s add exp.landing_moon
+execute on vehicle on passengers on passengers on passengers run tag @s[type=player] add exp.landing_moon
+
 # destroy rocket
-kill @e[type=minecraft:armor_stand,tag=exp.rocket,limit=1,sort=nearest]
-kill @e[type=minecraft:item_display,tag=exp.rocket_display,limit=1,sort=nearest]
-kill @e[type=minecraft:armor_stand,tag=exp.rocket_seat,limit=1,sort=nearest]
+execute if entity @s[tag=exp.rocket_pilot] on vehicle on vehicle run function expansion:vehicles/rocket/destroy
 
 # disable weather
-function expansion:utilities/weather/disable_weather
+execute if entity @s[tag=exp.rocket_pilot] run function expansion:utilities/weather/disable_weather
 
+# cooldown, don't remember what this was for but keeping it just in case
 scoreboard players set @s exp.cooldown 10
 
 # teleport
-execute in expansion:moon run tp @s ~ 450 ~
-tag @s add exp.landing_moon
-
+execute as @a[tag=exp.landing_moon,distance=..6,limit=2,sort=nearest] in expansion:moon run tp @s ~ 450 ~
