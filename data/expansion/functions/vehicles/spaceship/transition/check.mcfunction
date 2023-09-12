@@ -1,5 +1,5 @@
 # summon a spaceship if this function hasn't been run before
-execute at @s[tag=!exp.trying_transition,tag=exp.spaceship_pilot] if loaded ~ ~ ~ run function expansion:vehicles/spaceship/transition/summon_new
+execute at @s[tag=!exp.trying_transition,tag=!exp.summoned_new_ship,tag=exp.spaceship_pilot] if loaded ~ ~ ~ run function expansion:vehicles/spaceship/transition/summon_new
 
 # apply levitation so the player doesn't fall in case of lag
 effect give @s[tag=!exp.trying_transition] minecraft:levitation 1000 255 true

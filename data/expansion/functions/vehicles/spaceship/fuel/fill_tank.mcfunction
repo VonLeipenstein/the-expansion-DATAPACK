@@ -9,4 +9,6 @@ execute as @p[tag=!exp.has_lacrymae] run title @s title {"text":"Get more Lacrym
 
 execute on passengers run data remove entity @s[type=minecraft:interaction] interaction
 
+function expansion:utilities/fuel_percentage
+
 tag @p[tag=exp.has_lacrymae] remove exp.has_lacrymae

@@ -3,3 +3,6 @@ execute if predicate expansion:dimension/hot_planet run function expansion:globa
 execute if predicate expansion:dimension/low_gravity run function expansion:utilities/gravity/low_gravity/main
 execute if predicate expansion:dimension/zero_gravity run function expansion:utilities/gravity/zero_gravity/main
 execute if predicate expansion:dimension/storage run function expansion:items/transporter/storage_tick
+
+# detect if the player is close to planets if they're in space
+execute if predicate expansion:dimension/space unless entity @s[gamemode=spectator] run function expansion:global/transitions/planet_detection

@@ -12,11 +12,11 @@ execute if score @s exp.use_tool matches 1.. run function expansion:utilities/cu
 execute if entity @s[tag=exp.has_oxygen] unless entity @e[type=minecraft:armor_stand,tag=exp.oxygenator,tag=exp.scanning,distance=..20,limit=1,sort=nearest] run function expansion:global/oxygen_regulation/remove_oxygen_tag
 execute if predicate expansion:dimension/oxygen_absent if entity @s[gamemode=!creative,gamemode=!spectator,tag=!exp.has_oxygen,tag=!exp.generator,tag=!exp.inside_vehicle] run function expansion:global/oxygen_regulation/oxygen_tick
 
-# temperature, gravity & planet events
-execute if predicate expansion:dimension/exp_dimensions run function expansion:global/global_planets
-
 # run the vehicle functions if the player is inside a vehicle
 execute if entity @s[tag=exp.inside_vehicle] run function expansion:global/global_vehicles/vehicles_tick
+
+# temperature, gravity & planet events
+execute if predicate expansion:dimension/exp_dimensions run function expansion:global/global_planets
 
 # equipment modules
 execute if predicate expansion:nbt_checks/armor/space_equipment/has_module run function expansion:items/space_equipment/modules/modules_tick
