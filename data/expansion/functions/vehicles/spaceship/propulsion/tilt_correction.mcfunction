@@ -1,2 +1,2 @@
-execute if score #angle_tilt exp.math matches 180.. run scoreboard players remove #angle_tilt exp.math 360
-execute if score #angle_tilt exp.math matches ..-180 run scoreboard players add #angle_tilt exp.math 360
+execute if score #roll exp.math matches 180.. run scoreboard players remove #roll exp.math 360
+execute if score #roll exp.math matches ..-180 run scoreboard players add #roll exp.math 360

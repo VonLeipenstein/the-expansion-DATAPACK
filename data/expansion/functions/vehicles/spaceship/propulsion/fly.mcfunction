@@ -8,9 +8,9 @@ execute anchored eyes rotated as @p[tag=exp.spaceship_pilot] positioned ^ ^ ^4 r
 
 # store rotation data of the armor stand and assign it to a scoreboard value.
 data modify storage expansion:rotation Rotation set from entity @s Rotation
-execute store result score #angle_hor exp.math run data get storage expansion:rotation Rotation[1] 1
-execute store result score #angle_ver exp.math run data get storage expansion:rotation Rotation[0] 1
-execute store result score #angle_tilt exp.math run data get entity @p[tag=exp.spaceship_pilot] Rotation[0] 1
+execute store result score #pitch exp.math run data get storage expansion:rotation Rotation[1] 1
+execute store result score #yaw exp.math run data get storage expansion:rotation Rotation[0] 1
+execute store result score #roll exp.math run data get entity @p[tag=exp.spaceship_pilot] Rotation[0] 1
 
 # calculate the motion vector values.
 function expansion:vehicles/spaceship/propulsion/motion_calculation
@@ -21,5 +21,5 @@ execute store result storage expansion:motion Motion[1] double 0.0001 run scoreb
 execute store result storage expansion:motion Motion[2] double -0.000001 run scoreboard players get #velocity_z exp.math
 data modify entity @s Motion set from storage expansion:motion Motion
 
-# regulate the display of the model(yaw, pitch and roll)
+# regulate the display of the model(y_rot, x_rot and roll)
 execute on passengers if entity @s[type=armor_stand,tag=exp.spaceship_display] run function expansion:vehicles/spaceship/propulsion/model_rotation
