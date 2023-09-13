@@ -1,8 +1,4 @@
-execute if entity @s[tag=exp.inside_spaceship,tag=exp.spaceship_pilot] run function expansion:vehicles/spaceship/transition/start
+# triggers when not inside the ship
+execute unless entity @s[tag=exp.inside_spaceship] in expansion:mars run tp @s ~ 450 ~ ~ 89
 
-tag @s add exp.tp_to_marker
-summon minecraft:marker ~ ~ ~ {Tags:["exp.transition_marker"]}
-execute as @e[type=minecraft:marker,tag=exp.transition_marker,distance=..0.1,limit=1,sort=nearest] run function expansion:vehicles/spaceship/transition/teleports/to_mars
-tag @s remove exp.tp_to_marker
-
-function expansion:vehicles/spaceship/transition/remove_temp_tag
+execute if entity @s[tag=exp.inside_spaceship,tag=exp.spaceship_pilot] run function expansion:vehicles/spaceship/transition/teleports/to_mars/init

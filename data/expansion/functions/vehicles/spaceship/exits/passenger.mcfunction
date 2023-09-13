@@ -6,11 +6,11 @@ ride @s mount @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,so
 # remove passenger count
 execute on vehicle on vehicle run scoreboard players remove @s exp.passenger_count 1
 
-# when the pilot leaves the ship first make the other passenger the new pilot
-execute if entity @s[tag=exp.spaceship_pilot] on vehicle on vehicle unless score @s exp.passenger_count matches 0 on passengers on passengers run tag @s[tag=!exp.spaceship_pilot,tag=exp.inside_spaceship,tag=!exp.exiting_ship] add exp.spaceship_pilot
-
 execute unless entity @s[tag=exp.spaceship_pilot] run function expansion:vehicles/spaceship/exits/restore_passenger_helmet
 execute if entity @s[tag=exp.spaceship_pilot] run function expansion:vehicles/spaceship/exits/restore_pilot_helmet
+
+# when the pilot leaves the ship first make the other passenger the new pilot
+execute if entity @s[tag=exp.spaceship_pilot] on vehicle on vehicle unless score @s exp.passenger_count matches 0 on passengers on passengers run function expansion:vehicles/spaceship/exits/assign_new_pilot
 
 # run when this is the last player to leave the ship
 execute on vehicle on vehicle if score @s exp.passenger_count matches 0 run function expansion:vehicles/spaceship/exits/pilot
@@ -22,3 +22,5 @@ ride @s dismount
 
 # remove basic player effects
 function expansion:vehicles/spaceship/exits/remove_effects
+
+say exit

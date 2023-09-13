@@ -15,5 +15,6 @@ ride @s mount @e[type=minecraft:armor_stand,tag=exp.module_seat,limit=1,sort=nea
 tag @s[predicate=expansion:nbt_checks/root_vehicle/lunar_module] add exp.inside_module
 tag @s[tag=exp.inside_module] remove exp.trying_transition
 tag @s[tag=exp.inside_module] remove exp.inside_rocket
+tag @s[tag=exp.summoned_new_module] remove exp.summoned_new_module
 effect clear @s[tag=exp.inside_module] levitation
 effect clear @s[tag=exp.inside_module] blindness

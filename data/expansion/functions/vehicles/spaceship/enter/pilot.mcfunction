@@ -1,5 +1,5 @@
 # assign a pilot tag to the first player who enters
-tag @p add exp.spaceship_pilot
+tag @p[tag=exp.clicked_ship] add exp.spaceship_pilot
 
 # convert the model from the item display to the armor stand
 execute on passengers run item replace entity @s[type=minecraft:armor_stand,tag=exp.spaceship_display] armor.head from entity @e[type=minecraft:item_display,tag=exp.spaceship_display,limit=1,sort=nearest] container.0

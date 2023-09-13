@@ -1,2 +1,2 @@
-execute on passengers run kill @s
+execute on passengers run kill @s[type=!player]
 kill @s
