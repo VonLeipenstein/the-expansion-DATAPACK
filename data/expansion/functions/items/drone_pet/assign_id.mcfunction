@@ -1,2 +1,2 @@
-scoreboard players add #global exp.drone_id 1
-scoreboard players operation @s exp.drone_id = #global exp.drone_id
+scoreboard players add #drone_id exp.unique_id 1
+scoreboard players operation @s exp.unique_id = #drone_id exp.unique_id

@@ -21,14 +21,6 @@
       "trigger": "minecraft:location",
       "conditions": {
         "player": {
-          "equipment": {
-            "head": {
-              "items": [
-                "minecraft:carrot_on_a_stick"
-              ],
-              "nbt": "{exp_spaceship:1b,onhead:1b}"
-            }
-          },
           "location": {
             "dimension": "expansion:space"
           }

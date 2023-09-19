@@ -22,7 +22,6 @@
       "conditions": {
         "player": {
           "location": {
-            "biome": "expansion:mars/mars_flatlands",
             "dimension": "expansion:mars",
             "structure": "expansion:mars/cannon"
           }

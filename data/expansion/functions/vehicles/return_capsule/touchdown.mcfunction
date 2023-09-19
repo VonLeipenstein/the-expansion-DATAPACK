@@ -3,4 +3,4 @@ playsound minecraft:entity.generic.explode master @a ~ ~ ~ 10 0.2 1
 execute at @s run tp @s ~ ~-1.5 ~
 data merge entity @s {NoGravity:1b}
 
-tag @p remove exp.landing_earth
+execute on passengers run tag @s remove exp.landing_earth

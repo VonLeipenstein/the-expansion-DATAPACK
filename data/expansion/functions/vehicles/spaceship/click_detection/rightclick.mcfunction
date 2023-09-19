@@ -11,6 +11,9 @@ execute at @s if predicate expansion:nbt_checks/root_vehicle/spaceship unless pr
 # planetarium used for markers in space
 execute at @s if predicate expansion:nbt_checks/root_vehicle/spaceship if predicate expansion:nbt_checks/selected_item/blocks/planetarium if predicate expansion:dimension/space if entity @s[tag=exp.spaceship_pilot] run function expansion:vehicles/spaceship/markers/marker_switcher
 
+# fleet finder
+execute at @s if predicate expansion:nbt_checks/root_vehicle/spaceship if predicate expansion:nbt_checks/selected_item/items/fleet_finder run function expansion:items/fleet_finder/find
+
 # reset advancement trigger
 advancement revoke @s only expansion:utility/spaceship_rc
 tag @s remove exp.clicked_ship

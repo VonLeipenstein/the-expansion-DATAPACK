@@ -15,6 +15,9 @@ execute if entity @s[tag=exp.spaceship_pilot] on vehicle on vehicle unless score
 # run when this is the last player to leave the ship
 execute on vehicle on vehicle if score @s exp.passenger_count matches 0 run function expansion:vehicles/spaceship/exits/pilot
 
+# slow falling effect to make sure the player doesn't take accumulated fall damage
+effect give @s slow_falling 1 1 true
+
 # teleport the player next to the spaceship
 execute on vehicle on vehicle at @s rotated ~ 0 on passengers on passengers run tp @s[tag=exp.exiting_ship,tag=exp.inside_spaceship] ^-2 ^ ^1 ~ ~
 
@@ -22,5 +25,3 @@ ride @s dismount
 
 # remove basic player effects
 function expansion:vehicles/spaceship/exits/remove_effects
-
-say exit

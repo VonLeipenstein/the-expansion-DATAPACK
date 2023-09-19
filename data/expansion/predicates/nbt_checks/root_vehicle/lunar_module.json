@@ -3,16 +3,8 @@
   "entity": "this",
   "predicate": {
     "vehicle": {
-      "type": "minecraft:armor_stand",
-      "nbt": "{Tags:[\"exp.module_seat\"]}",
-      "vehicle": {
-        "type": "minecraft:item_display",
-        "nbt": "{Tags:[\"exp.module_display\"]}",
-        "vehicle": {
-          "type": "minecraft:armor_stand",
-          "nbt": "{Tags:[\"exp.lunar_module\"]}"
-        }
-      }
+      "type": "minecraft:camel",
+      "nbt": "{Tags:[\"exp.module_seats\"]}"
     }
   }
 }

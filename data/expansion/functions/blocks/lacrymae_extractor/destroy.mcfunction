@@ -5,6 +5,7 @@ execute as @e[type=minecraft:item_display,tag=exp.extractor_display,limit=1,sort
 
 execute at @e[type=minecraft:item_display,tag=exp.extractor_display,limit=1,sort=nearest] run fill ~ ~-1 ~ ~ ~-1 ~ air replace
 
+kill @e[type=item,nbt={Item:{id:"minecraft:dropper"}},limit=1,sort=nearest]
 kill @e[type=item,nbt={Item:{id:"minecraft:jigsaw",tag:{gui_item:1b}}},distance=..1]
 kill @e[type=minecraft:item_display,tag=exp.extractor_display,limit=1,sort=nearest]
 kill @e[type=minecraft:interaction,tag=exp.extractor_rcdet,limit=1,sort=nearest]

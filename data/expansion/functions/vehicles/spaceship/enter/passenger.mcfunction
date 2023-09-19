@@ -29,5 +29,3 @@ scoreboard players add @s exp.passenger_count 1
 
 # invisibility for passengers
 effect give @p[tag=exp.inside_spaceship,tag=!exp.spaceship_pilot,tag=exp.clicked_ship] invisibility infinite 1 true
-
-say enter

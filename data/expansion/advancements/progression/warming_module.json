@@ -22,7 +22,6 @@
       "conditions": {
         "player": {
           "location": {
-            "biome": "expansion:venus/venus_flatlands",
             "dimension": "expansion:venus",
             "structure": "expansion:venus/rover"
           }

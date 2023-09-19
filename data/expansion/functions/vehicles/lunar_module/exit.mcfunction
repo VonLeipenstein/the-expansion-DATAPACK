@@ -1,11 +1,11 @@
-scoreboard players reset @e[type=minecraft:armor_stand,tag=exp.lunar_module,limit=1,sort=nearest] exp.timer_2
+tag @p[tag=exp.inside_module,predicate=!expansion:nbt_checks/root_vehicle/lunar_module] add exp.exiting_module
+scoreboard players reset @s exp.timer_2
 
-# swap the player with the rightclick villager
-kill @e[type=minecraft:armor_stand,tag=exp.module_seat,limit=1,sort=nearest]
-execute at @e[type=minecraft:armor_stand,tag=exp.lunar_module,limit=1,sort=nearest] run summon minecraft:interaction ~ ~ ~ {Tags:["exp.module_rcdet","exp.module_interactor","smithed.block"],width:3f,height:4f,response:1b}
-ride @e[type=minecraft:interaction,tag=exp.module_rcdet,limit=1,sort=nearest] mount @e[type=minecraft:item_display,tag=exp.module_display,limit=1,sort=nearest]
+scoreboard players remove @s exp.passenger_count 1
 
-execute at @e[type=minecraft:armor_stand,tag=exp.lunar_module,limit=1,sort=nearest] positioned ^ ^ ^3 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air run tp @s ~ ~ ~
+execute at @s positioned ^ ^ ^3 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air run tp @p[tag=exp.exiting_module] ~ ~ ~
 
-tag @s remove exp.inside_module
-tag @s remove exp.inside_vehicle
+tag @p[tag=exp.exiting_module] remove exp.inside_module
+tag @p[tag=exp.exiting_module] remove exp.inside_vehicle
+tag @p[tag=exp.exiting_module] remove exp.landing_moon
+tag @p[tag=exp.exiting_module] remove exp.exiting_module
