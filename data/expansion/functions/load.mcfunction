@@ -122,6 +122,7 @@ scoreboard players set #1000 exp.const 1000
 scoreboard players set #10000 exp.const 10000
 scoreboard players set #40500 exp.const 40500
 scoreboard players set #57295 exp.const 57295
+scoreboard players set #-90000 exp.const -90000
 scoreboard players set #100000 exp.const 100000
 scoreboard players set #1000000 exp.const 1000000
 

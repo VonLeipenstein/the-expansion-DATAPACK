@@ -1,19 +1,21 @@
 # vertical rotation
 scoreboard players operation #input exp.math = #yaw exp.math
+scoreboard players operation #input exp.math /= #1000 exp.const
 execute unless score #input exp.math matches 0.. run scoreboard players operation #input exp.math *= #-1 exp.const
 function expansion:utilities/math/sin
-execute if score #yaw exp.math matches -180..0 run scoreboard players operation #num exp.math *= #-1 exp.const
+execute if score #yaw exp.math matches -180000..0 run scoreboard players operation #num exp.math *= #-1 exp.const
 scoreboard players operation #sin_tet exp.math = #num exp.math
 
 function expansion:utilities/math/cos
-execute if score #yaw exp.math matches -90..90 run scoreboard players operation #num exp.math *= #-1 exp.const
+execute if score #yaw exp.math matches -90000..90000 run scoreboard players operation #num exp.math *= #-1 exp.const
 scoreboard players operation #cos_tet exp.math = #num exp.math
 
 # horizontal rotation
 scoreboard players operation #input exp.math = #pitch exp.math
+scoreboard players operation #input exp.math /= #1000 exp.const
 execute unless score #input exp.math matches 0.. run scoreboard players operation #input exp.math *= #-1 exp.const
 function expansion:utilities/math/sin
-execute if score #pitch exp.math matches 0..90 run scoreboard players operation #num exp.math *= #-1 exp.const
+execute if score #pitch exp.math matches 0..90000 run scoreboard players operation #num exp.math *= #-1 exp.const
 scoreboard players operation #sin_phi exp.math = #num exp.math
 
 function expansion:utilities/math/cos
