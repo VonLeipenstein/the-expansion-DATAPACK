@@ -1,6 +1,5 @@
 execute if entity @s[tag=exp.initiate] run function expansion:blocks/oxygenator/initiate_scan
 
-# expand the 
 execute unless score @s exp.counter_1 > @s exp.hold_value run function expansion:blocks/oxygenator/fill_space/expand_cube/expand_cube
 
 execute unless score @s exp.timer_1 matches 1.. run function expansion:blocks/oxygenator/leaves/leaves_check

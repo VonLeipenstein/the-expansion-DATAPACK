@@ -3,8 +3,8 @@
     "predicate": {
       "position": {
         "x": {
-          "min": -4100,
-          "max": -6000
+          "min": -6000,
+          "max": -4100
         }
       },
       "dimension": "expansion:space"

@@ -1,3 +1,6 @@
+# add a tag to be able to target the player who is currently running this function from any context
+tag @s add exp.tick_player
+
 # global rightclick actions
 execute if score @s exp.rightclick matches 1.. if predicate expansion:nbt_checks/selected_item/expansion_coas run function expansion:global/global_rightclick/rightclick_main
 
@@ -41,3 +44,6 @@ scoreboard players set @s[scores={exp.rightclick=1..}] exp.rightclick 0
 
 # delete gui items
 clear @s minecraft:jigsaw{gui_item:1b}
+
+# remove ticking tag
+tag @s remove exp.tick_player

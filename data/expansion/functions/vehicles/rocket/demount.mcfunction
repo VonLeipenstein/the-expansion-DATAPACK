@@ -5,6 +5,7 @@ data merge entity @e[type=item,nbt={Item:{tag:{exp_rocket:1b}}},limit=1,sort=nea
 
 playsound block.metal.break block @a ~ ~ ~
 
-execute at @s positioned ~ ~3 ~ run kill @e[type=minecraft:interaction,tag=exp.rocket_interactor,limit=2,sort=nearest]
+execute at @s positioned ~ ~2 ~ run kill @e[type=minecraft:interaction,tag=exp.rocket_interactor,tag=exp.launch_button,limit=1,sort=nearest]
+execute at @s positioned ~ ~2 ~ run kill @e[type=minecraft:interaction,tag=exp.rocket_interactor,tag=exp.fuel_button,limit=1,sort=nearest]
 
 function expansion:vehicles/rocket/destroy

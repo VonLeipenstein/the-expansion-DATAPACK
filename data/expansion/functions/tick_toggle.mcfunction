@@ -1,0 +1,1 @@
+execute unless score #expansion_tick exp.bool matches 0 run function expansion:tick

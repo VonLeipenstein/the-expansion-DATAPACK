@@ -1,2 +1,0 @@
-execute as @e[type=minecraft:armor_stand,tag=exp.shield_generator,distance=..0.1,limit=1,sort=nearest] at @s run function expansion:blocks/terraformer/shield_generator
-execute unless block ~ ~ ~ minecraft:dropper run function expansion:blocks/terraformer/destroy

@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"expansion:tick",
+		"expansion:tick_toggle",
 		"animated_java:tick"
 	]
 }
