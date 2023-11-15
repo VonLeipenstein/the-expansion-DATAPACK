@@ -1,5 +1,5 @@
+# create the room
 fill ~-11 ~-1 ~-11 ~11 ~21 ~11 minecraft:barrier hollow
 
-execute if block ~ ~-1 ~ minecraft:barrier run effect clear @p levitation
-execute if block ~ ~-1 ~ minecraft:barrier run tag @s remove exp.room_generator
-execute if block ~ ~-1 ~ minecraft:barrier run scoreboard players set @p exp.warmup 0
+# summon an armor stand for the return portal
+execute summon minecraft:armor_stand run function expansion:items/transporter/transport/return_beacon

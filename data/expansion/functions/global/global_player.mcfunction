@@ -31,6 +31,9 @@ execute if predicate expansion:nbt_checks/armor/rocket_boots unless predicate ex
 scoreboard players operation #search exp.unique_id = @s exp.unique_id
 execute if entity @s[tag=exp.has_active_drone] as @e[type=minecraft:armor_stand,tag=exp.pet_drone,predicate=expansion:compare_score/unique_id,limit=1,sort=nearest] run function expansion:items/drone_pet/movement/main
 
+# pocket space transportation
+execute if entity @s[tag=exp.check_loaded] run function expansion:items/transporter/transport/check_loaded
+
 # death fix for vehicles
 execute if score @s exp.death matches 1.. run function expansion:global/player_death
 

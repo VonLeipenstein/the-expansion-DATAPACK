@@ -1,6 +1,6 @@
 {
   "effects": "minecraft:the_nether",
-  "coordinate_scale": 0.00001,
+  "coordinate_scale": 1,
   "has_skylight": false,
   "has_ceiling": false,
   "ultrawarm": false,

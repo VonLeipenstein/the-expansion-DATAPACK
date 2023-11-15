@@ -1,2 +1,3 @@
-execute as @e[type=minecraft:armor_stand,tag=exp.transporter,distance=..3,limit=1,sort=nearest] run function expansion:blocks/transporter/pick_up
+execute at @e[type=minecraft:interaction,tag=exp.transporter_rcdet,nbt={attack:{}},limit=1,sort=nearest] as @e[type=minecraft:armor_stand,tag=exp.transporter,distance=..1,limit=1,sort=nearest] run function expansion:blocks/transporter/pick_up
+data remove entity @e[type=minecraft:interaction,tag=exp.transporter_rcdet,nbt={attack:{}},limit=1,sort=nearest] attack
 advancement revoke @s only expansion:utility/transporter_lc

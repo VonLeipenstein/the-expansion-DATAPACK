@@ -1,13 +1,15 @@
-execute if predicate expansion:dimension/the_end run data modify entity @s ArmorItems[0].tag.return_dim set value -2
-execute if predicate expansion:dimension/the_nether run data modify entity @s ArmorItems[0].tag.return_dim set value -1
-execute if predicate expansion:dimension/overworld run data modify entity @s ArmorItems[0].tag.return_dim set value 0
-execute if predicate expansion:dimension/moon run data modify entity @s ArmorItems[0].tag.return_dim set value 1
-execute if predicate expansion:dimension/mars run data modify entity @s ArmorItems[0].tag.return_dim set value 2
-execute if predicate expansion:dimension/venus run data modify entity @s ArmorItems[0].tag.return_dim set value 3
-execute if predicate expansion:dimension/mercury run data modify entity @s ArmorItems[0].tag.return_dim set value 4
-execute if predicate expansion:dimension/jupiter run data modify entity @s ArmorItems[0].tag.return_dim set value 5
-execute if predicate expansion:dimension/europa run data modify entity @s ArmorItems[0].tag.return_dim set value 6
-execute if predicate expansion:dimension/space run data modify entity @s ArmorItems[0].tag.return_dim set value 7
-execute if predicate expansion:dimension/asteroids run data modify entity @s ArmorItems[0].tag.return_dim set value 8
+execute if predicate expansion:dimension/the_end run scoreboard players set @s exp.dim_test -2
+execute if predicate expansion:dimension/the_nether run scoreboard players set @s exp.dim_test -1
+execute if predicate expansion:dimension/overworld run scoreboard players set @s exp.dim_test 0
+execute if predicate expansion:dimension/moon run scoreboard players set @s exp.dim_test 1
+execute if predicate expansion:dimension/mars run scoreboard players set @s exp.dim_test 2
+execute if predicate expansion:dimension/venus run scoreboard players set @s exp.dim_test 3
+execute if predicate expansion:dimension/mercury run scoreboard players set @s exp.dim_test 4
+execute if predicate expansion:dimension/jupiter run scoreboard players set @s exp.dim_test 5
+execute if predicate expansion:dimension/europa run scoreboard players set @s exp.dim_test 6
+execute if predicate expansion:dimension/space run scoreboard players set @s exp.dim_test 7
+execute if predicate expansion:dimension/asteroids run scoreboard players set @s exp.dim_test 8
 
-data modify entity @s ArmorItems[0].tag.return_pos set from entity @s Pos
+execute store result score @s exp.x run data get entity @s Pos[0] 1
+execute store result score @s exp.y run data get entity @s Pos[1] 1
+execute store result score @s exp.z run data get entity @s Pos[2] 1

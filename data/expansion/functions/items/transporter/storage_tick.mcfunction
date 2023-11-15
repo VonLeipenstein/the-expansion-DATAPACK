@@ -1,1 +1,1 @@
-execute as @e[type=minecraft:armor_stand,tag=exp.position_new,limit=1,sort=nearest] at @s run function expansion:items/transporter/return_particles
+execute as @e[type=minecraft:armor_stand,tag=exp.return_beacon,limit=1,sort=nearest] at @s run function expansion:items/transporter/return_particles

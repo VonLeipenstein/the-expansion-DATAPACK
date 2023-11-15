@@ -1,2 +1,8 @@
-execute at @s run summon minecraft:armor_stand ~ ~ ~ {Silent:1b,Marker:1b,Invisible:1b,Tags:["exp.room_return"],ArmorItems:[{"id":"minecraft:stick",Count:1b},{},{},{}]}
-execute as @e[type=minecraft:armor_stand,tag=exp.room_return,limit=1,sort=nearest] run function expansion:items/transporter/return
+# set some scores to avoid entity selection
+scoreboard players operation #temp exp.dim_test = @s exp.dim_test
+scoreboard players operation #temp exp.x = @s exp.x
+scoreboard players operation #temp exp.y = @s exp.y
+scoreboard players operation #temp exp.z = @s exp.z
+
+# return the player
+execute at @s summon minecraft:armor_stand run function expansion:items/transporter/return
