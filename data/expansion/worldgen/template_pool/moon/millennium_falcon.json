@@ -1,11 +1,11 @@
 {
-  "name": "expansion:starwars/millennium_falcon/body",
+  "name": "expansion:starwars/millennium_falcon",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
       "element": {
-        "location": "expansion:starwars/millennium_falcon/body",
+        "location": "expansion:starwars/millennium_falcon",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

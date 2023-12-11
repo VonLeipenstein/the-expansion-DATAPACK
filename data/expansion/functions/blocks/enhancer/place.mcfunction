@@ -6,4 +6,4 @@ execute if entity @s[y_rotation=135.1..-135] run summon minecraft:armor_stand ~ 
 summon minecraft:armor_stand ~ ~ ~ {Silent:1b,Small:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Invisible:1b,Tags:["exp.enhancer_display","exp.block","smithed.block"]}
 execute as @e[type=minecraft:armor_stand,tag=exp.enhancer,limit=1,sort=nearest] at @s rotated ~ ~ run tp @e[type=minecraft:armor_stand,tag=exp.enhancer_display,limit=1,sort=nearest] ~ ~0.95 ~ ~ ~
 
-setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'{"translate":"exp_blocks_enhancer_name","color":"dark_grey"}'} replace
+setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'{"translate":"exp_blocks_enhancer_name","color":"dark_gray"}'} replace

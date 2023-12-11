@@ -1,1 +1,1 @@
-execute positioned ~ ~-1.62 ~ run function expansion:vehicles/return_capsule/summon_return_capsule
+execute positioned ~ ~-1.7 ~ run function expansion:vehicles/return_capsule/summon_return_capsule

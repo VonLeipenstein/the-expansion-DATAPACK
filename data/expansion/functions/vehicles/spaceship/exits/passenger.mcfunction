@@ -18,6 +18,9 @@ execute on vehicle on vehicle if score @s exp.passenger_count matches 0 run func
 # slow falling effect to make sure the player doesn't take accumulated fall damage
 effect give @s slow_falling 1 1 true
 
+# clear the speed effect (used for FOV)
+effect clear @s speed
+
 # teleport the player next to the spaceship
 execute on vehicle on vehicle at @s rotated ~ 0 on passengers on passengers run tp @s[tag=exp.exiting_ship,tag=exp.inside_spaceship] ^-2 ^ ^1 ~ ~
 

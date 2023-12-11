@@ -7,5 +7,5 @@ summon minecraft:item_display ~ ~1.42 ~ {Tags:["exp.extractor_display","exp.bloc
 data merge entity @e[type=minecraft:item_display,tag=exp.extractor_display,limit=1,sort=nearest] {transformation:{translation:[0.0f,0.0f,0.0f],scale:[0.45f,0.45f,0.45f]}}
 summon minecraft:interaction ~ ~1 ~ {Tags:["exp.extractor_rcdet","smithed.block"],width:1.0f,height:1.0f,response:1b}
 
-setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'{"text":"Lacrymae Extractor","color":"dark_grey"}'} replace
+setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'{"text":"Lacrymae Extractor","color":"dark_gray"}'} replace
 

@@ -13,6 +13,6 @@ execute if entity @s[y_rotation=135.1..-135] positioned ~ ~1.48 ~ rotated 0 0 ru
 
 ride @e[type=item_display,tag=aj.fabricator.root,limit=1,sort=nearest] mount @e[type=armor_stand,tag=exp.fabricator,limit=1,sort=nearest]
 
-setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"exp_blocks_fabricator_gui_name","color":"dark_grey"}'} replace
+setblock ~ ~ ~ minecraft:barrel{CustomName:'{"translate":"exp_blocks_fabricator_gui_name","color":"dark_gray"}'} replace
 function expansion:blocks/fabricator/gui/gui
 

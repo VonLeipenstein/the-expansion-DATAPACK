@@ -12,5 +12,8 @@ execute if score @s exp.speed matches ..10 run function expansion:vehicles/space
 # remove blaster cooldown
 scoreboard players remove @s[scores={exp.counter_2=1..}] exp.counter_2 1
 
+# speed for bigger FOV
+effect give @p[tag=exp.spaceship_pilot] speed 1 4 true
+
 # marker functions
 execute unless entity @s[tag=exp.spaceship_has_markers] on passengers on passengers if entity @s[predicate=expansion:dimension/space,tag=exp.markertag1] as @e[type=minecraft:armor_stand,tag=exp.planet_marker,distance=..20,limit=7,sort=nearest] run function expansion:vehicles/spaceship/markers/markers

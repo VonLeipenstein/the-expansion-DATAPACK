@@ -32,3 +32,5 @@ execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium run f
 # finish the block placing
 item replace entity @s[gamemode=!creative] weapon.mainhand with minecraft:air
 playsound minecraft:block.metal.place block @s
+
+say placed
