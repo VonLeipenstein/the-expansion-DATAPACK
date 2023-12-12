@@ -4,6 +4,8 @@ tag @s add exp.vehicle
 tag @s add smithed.block
 tag @s add exp.new_ship
 
+say summon new ship
+
 execute summon armor_stand run function expansion:vehicles/spaceship/transition/summon_new/armor_stand
 execute summon interaction run function expansion:vehicles/spaceship/transition/summon_new/hitbox
 execute summon item_display run function expansion:vehicles/spaceship/transition/summon_new/display

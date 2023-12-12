@@ -1,5 +1,5 @@
 # --- only runs as the spaceship pilot
-
+say to europa
 function expansion:vehicles/spaceship/transition/start
 
 execute summon minecraft:marker run function expansion:vehicles/spaceship/transition/teleports/to_europa/teleport

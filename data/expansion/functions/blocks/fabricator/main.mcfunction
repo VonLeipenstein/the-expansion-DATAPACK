@@ -1,5 +1,3 @@
-# --- executed from expansion:global/global_blocks ---
-
 # destroy the block if the barrel is destroyed
 execute unless block ~ ~ ~ minecraft:barrel run function expansion:blocks/fabricator/destroy
 
