@@ -3,7 +3,7 @@ execute at @s on vehicle on vehicle run function expansion:vehicles/spaceship/tr
 
 # copy the spaceship item over to the players head slot item
 execute unless data entity @s Inventory[{Slot:103b}].id run item replace entity @s armor.head with minecraft:stick{spaceship_backup_stick:1b} 1
-data modify storage exp.spaceship_backup data set from entity @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest] ArmorItems[3]
+execute on vehicle run data modify storage exp.spaceship_backup data set from entity @s[type=minecraft:armor_stand,tag=exp.spaceship_display] ArmorItems[3]
 item modify entity @s armor.head expansion:spaceship/backup_in_helmet
 
 # kill any markers present

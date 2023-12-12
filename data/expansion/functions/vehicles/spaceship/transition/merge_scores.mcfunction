@@ -9,5 +9,9 @@ scoreboard players operation @s exp.passenger_count = @p[tag=exp.spaceship_pilot
 
 execute on passengers if entity @s[type=item_display,tag=exp.spaceship_display] run data merge entity @s {transformation:{translation:[0.0f,2.0f,0.0f],scale:[0.7f,0.7f,0.7f]}}
 
+tag @s remove exp.new_ship
+
+execute at @s rotated as @p[tag=exp.spaceship_pilot] run tp @s ~ ~ ~ ~ ~
+
 function expansion:vehicles/spaceship/propulsion/speed_percentage
 function expansion:utilities/fuel_percentage

@@ -1,9 +1,9 @@
-execute unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:0b}]} run item replace block ~ ~ ~ container.0 with minecraft:jigsaw{air_button:1b,CustomModelData:124401,display:{Name:'{"text":"Display Air","italic": false,"color": "white"}'},gui_item:1b}
+execute unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:0b}]} run item replace block ~ ~ ~ container.0 with minecraft:jigsaw{air_button:1b,CustomModelData:124401,display:{Name:'{"translate":"exp_blocks_oxygenator_button_air","italic": false,"color": "white"}'},gui_item:1b}
 
-execute unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:1b}]} if score @s exp.bool matches 0 run item replace block ~ ~ ~ container.1 with minecraft:jigsaw{oxygenator_button:1b,CustomModelData:124401,display:{Name:'{"text":"Pressurize Room","italic": false,"color": "green"}'},gui_item:1b}
-execute unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:1b}]} if score @s exp.bool matches 1 run item replace block ~ ~ ~ container.1 with minecraft:jigsaw{oxygenator_button:1b,CustomModelData:124401,display:{Name:'{"text":"De-Pressurize Room","italic": false,"color": "red"}'},gui_item:1b}
+execute unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:1b}]} if score @s exp.bool matches 0 run item replace block ~ ~ ~ container.1 with minecraft:jigsaw{oxygenator_button:1b,CustomModelData:124401,display:{Name:'{"translate":"exp_blocks_oxygenator_button_pressure","italic": false,"color": "green"}'},gui_item:1b}
+execute unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:1b}]} if score @s exp.bool matches 1 run item replace block ~ ~ ~ container.1 with minecraft:jigsaw{oxygenator_button:1b,CustomModelData:124401,display:{Name:'{"translate":"exp_blocks_oxygenator_button_depressure","italic": false,"color": "red"}'},gui_item:1b}
 
-execute unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:2b}]} run item replace block ~ ~ ~ container.2 with minecraft:jigsaw{sphere_button:1b,CustomModelData:124401,display:{Name:'{"text":"Display 20-Radius Sphere","italic": false,"color": "white"}'},gui_item:1b}
+execute unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:2b}]} run item replace block ~ ~ ~ container.2 with minecraft:jigsaw{sphere_button:1b,CustomModelData:124401,display:{Name:'{"translate":"exp_blocks_oxygenator_button_sphere","italic": false,"color": "white"}'},gui_item:1b}
 
 execute unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:3b}]} run item replace block ~ ~ ~ container.3 with minecraft:jigsaw{CustomModelData:124401,display:{Name:'{"text":""}'},gui_item:1b}
 execute unless block ~ ~ ~ minecraft:dropper{Items:[{Slot:4b}]} run item replace block ~ ~ ~ container.4 with minecraft:jigsaw{CustomModelData:124420,display:{Name:'{"text":""}'},gui_item:1b}

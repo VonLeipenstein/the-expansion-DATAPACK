@@ -11,4 +11,4 @@ execute unless entity @s[tag=exp.transitioning] unless predicate expansion:nbt_c
 execute if entity @s[tag=exp.transitioning] run function expansion:vehicles/spaceship/transition/check
 
 # store players position
-function expansion:global/position
+function expansion:player/store_position

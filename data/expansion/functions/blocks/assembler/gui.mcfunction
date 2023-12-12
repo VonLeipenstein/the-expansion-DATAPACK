@@ -6,7 +6,7 @@ execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:8b}]} run item replace 
 
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:9b}]} run item replace block ~ ~ ~ container.9 with minecraft:jigsaw{CustomModelData:124401,display:{Name:'{"text":""}'},gui_item:1b}
 
-execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:14b}]} run item replace block ~ ~ ~ container.14 with minecraft:jigsaw{assembler_button:1b,CustomModelData:124405,display:{Name:'{"text":"Assemble","italic": false,"color": "green"}'},gui_item:1b}
+execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:14b}]} run item replace block ~ ~ ~ container.14 with minecraft:jigsaw{assembler_button:1b,CustomModelData:124405,display:{Name:'{"translate":"exp_blocks_assembler_button_print","italic": false,"color": "green"}'},gui_item:1b}
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:15b}]} run item replace block ~ ~ ~ container.15 with minecraft:jigsaw{CustomModelData:124401,display:{Name:'{"text":""}'},gui_item:1b}
 
 execute unless block ~ ~ ~ minecraft:barrel{Items:[{Slot:17b}]} run item replace block ~ ~ ~ container.17 with minecraft:jigsaw{CustomModelData:124401,display:{Name:'{"text":""}'},gui_item:1b}

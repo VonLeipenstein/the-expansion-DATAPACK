@@ -1,7 +1,7 @@
 setblock ~ ~ ~ chest{CustomName:'{"text":"Portal","color":"#00FFEE"}'} replace
 
 
-loot insert ~ ~ ~ loot expansion:blocks/portal
+loot insert ~ ~ ~ loot expansion:contraptions/portal
 loot insert ~ ~ ~ loot expansion:items/portal_cores/portal_core_blue
 loot insert ~ ~ ~ loot expansion:items/portal_cores/portal_core_green
 loot insert ~ ~ ~ loot expansion:items/portal_cores/portal_core_yellow

@@ -1,1 +1,1 @@
-function expansion:utilities/solar_system_fix/fix_all
+function expansion:solar_system/generation/fix_structures/fix_all

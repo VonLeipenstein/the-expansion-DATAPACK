@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:global/transitions/init"
+    "function": "expansion:solar_system/transitions/init"
   }
 }

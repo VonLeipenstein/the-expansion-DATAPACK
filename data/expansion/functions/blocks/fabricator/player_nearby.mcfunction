@@ -1,6 +1,6 @@
 # Functions that run when the barrel is opened or closed. mainly to prevent the barrel sound from playing
-execute unless entity @s[tag=exp.barrel_open] if block ~ ~ ~ minecraft:barrel[open=true] run function expansion:utilities/barrel_utility/open_barrel
-execute if entity @s[tag=exp.barrel_open] if block ~ ~ ~ minecraft:barrel[open=false] run function expansion:utilities/barrel_utility/close_barrel
+execute unless entity @s[tag=exp.barrel_open] if block ~ ~ ~ minecraft:barrel[open=true] run function expansion:utilities/barrel/open_barrel
+execute if entity @s[tag=exp.barrel_open] if block ~ ~ ~ minecraft:barrel[open=false] run function expansion:utilities/barrel/close_barrel
 
 # functions that run when the barrel is open(when a player interacts with it)
 execute if entity @s[tag=exp.barrel_open] run function expansion:blocks/fabricator/crafting

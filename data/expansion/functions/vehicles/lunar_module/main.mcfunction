@@ -4,5 +4,5 @@ execute unless predicate expansion:nbt_checks/root_vehicle/lunar_module unless e
 
 execute if entity @s[tag=exp.landing_moon] on vehicle on vehicle run function expansion:vehicles/lunar_module/landing
 
-execute if entity @s[tag=exp.landing_earth] unless score @s exp.cooldown matches 1.. run function expansion:global/transitions/moon_earth/moon_earth_check
+execute if entity @s[tag=exp.landing_earth] unless score @s exp.cooldown matches 1.. run function expansion:solar_system/transitions/moon_earth/moon_earth_check
 

@@ -9,4 +9,4 @@ tag @s remove exp.summoned_new_ship
 effect clear @s levitation
 effect clear @s blindness
 
-execute if entity @s[tag=exp.spaceship_pilot] at @s on vehicle on vehicle run function expansion:vehicles/spaceship/transition/merge_scores
+execute if entity @s[tag=exp.spaceship_pilot] on vehicle on vehicle run function expansion:vehicles/spaceship/transition/merge_scores

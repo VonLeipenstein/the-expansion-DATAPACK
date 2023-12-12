@@ -11,5 +11,5 @@ loot insert ~ ~ ~ loot expansion:blocks/compressor
 loot insert ~ ~ ~ loot expansion:blocks/tesla_coil
 loot insert ~ ~ ~ loot expansion:blocks/enhancer
 loot insert ~ ~ ~ loot expansion:blocks/modstation
-loot insert ~ ~ ~ loot expansion:blocks/assembler
-loot insert ~ ~ ~ loot expansion:blocks/portal
+loot insert ~ ~ ~ loot expansion:contraptions/assembler
+loot insert ~ ~ ~ loot expansion:contraptions/portal
