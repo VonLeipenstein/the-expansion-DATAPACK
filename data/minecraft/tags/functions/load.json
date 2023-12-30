@@ -3,8 +3,8 @@
 	"values": [
 		"expansion:load",
 		"animated_java:assembler/zzzzzzzz/load",
+		"animated_java:fabricator/zzzzzzzz/load",
 		"animated_java:mech_legs/zzzzzzzz/load",
-		"animated_java:mech_torso/zzzzzzzz/load",
-		"animated_java:fabricator/zzzzzzzz/load"
+		"animated_java:mech_torso/zzzzzzzz/load"
 	]
 }
