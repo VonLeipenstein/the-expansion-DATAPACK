@@ -15,7 +15,7 @@ execute if predicate expansion:nbt_checks/selected_item/blocks/oxygenator run fu
 # portal
 execute if predicate expansion:nbt_checks/selected_item/portal run function expansion:blocks/portal/assembly/place_portal/place_portal_init
 # assembler
-execute if predicate expansion:nbt_checks/selected_item/assembler run function expansion:blocks/assembler/place
+execute if predicate expansion:nbt_checks/selected_item/assembler run function expansion:blocks/assembler/place/init
 # rocket parts
 execute if predicate expansion:nbt_checks/selected_item/blocks/rocket_part run function expansion:blocks/rocket_parts/place
 # tesla coil

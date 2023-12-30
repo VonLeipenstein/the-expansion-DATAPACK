@@ -21,6 +21,7 @@
       "trigger": "minecraft:location",
       "conditions": {
         "player": {
+          "nbt": "{Tags:[\"exp.inside_spaceship\"]}",
           "location": {
             "dimension": "expansion:space"
           }
