@@ -1,5 +1,3 @@
-function expansion:blocks/assembler/animation/animation_stop
-
 item replace block ~ ~ ~ container.16 from entity @s armor.feet
 item replace entity @s armor.feet with air
 

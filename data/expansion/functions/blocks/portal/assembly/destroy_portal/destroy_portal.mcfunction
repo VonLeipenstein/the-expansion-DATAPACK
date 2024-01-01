@@ -5,7 +5,7 @@ execute as @e[type=minecraft:armor_stand,tag=exp.port_3,distance=..3,limit=1,sor
 execute as @e[type=minecraft:armor_stand,tag=exp.port_4,distance=..3,limit=1,sort=nearest] at @s run function expansion:blocks/portal/assembly/destroy_portal/retrieve_cores
 execute as @e[type=minecraft:armor_stand,tag=exp.port_5,distance=..3,limit=1,sort=nearest] at @s run function expansion:blocks/portal/assembly/destroy_portal/retrieve_cores
 
-loot give @p loot expansion:blocks/portal
+loot give @p loot expansion:contraptions/portal
 
 kill @e[type=minecraft:interaction,tag=exp.portal_rcdet,limit=1,sort=nearest]
 
