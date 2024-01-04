@@ -5,7 +5,5 @@ execute at @s if entity @s[tag=!exp.summoned_new_ship,tag=exp.spaceship_pilot] i
 effect give @s minecraft:levitation 1000 255 true
 effect give @s minecraft:blindness 1000 255 true
 
-say check
-
 # copy the item out of the spaceship storage to the players head
 execute if predicate expansion:nbt_checks/root_vehicle/spaceship run function expansion:vehicles/spaceship/transition/finish
