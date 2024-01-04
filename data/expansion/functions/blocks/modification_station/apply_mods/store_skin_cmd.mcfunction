@@ -1,4 +1,4 @@
-data modify entity @s ArmorItems[3].tag.ModStorage.skin set from block ~ ~ ~ Items[{Slot:5b}]
+execute store success score @s exp.bool run data modify entity @s ArmorItems[3].tag.ModStorage.skin set from block ~ ~ ~ Items[{Slot:5b}]
 
 execute store result score @s exp.spaceship_cmd run data get entity @s ArmorItems[3].tag.ModStorage.skin.tag.CustomModelData
 scoreboard players add @s exp.spaceship_cmd 1

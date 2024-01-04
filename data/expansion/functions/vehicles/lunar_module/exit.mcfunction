@@ -9,3 +9,4 @@ tag @p[tag=exp.exiting_module] remove exp.inside_module
 tag @p[tag=exp.exiting_module] remove exp.inside_vehicle
 tag @p[tag=exp.exiting_module] remove exp.landing_moon
 tag @p[tag=exp.exiting_module] remove exp.exiting_module
+tag @p[tag=exp.exiting_module] remove exp.module_pilot
