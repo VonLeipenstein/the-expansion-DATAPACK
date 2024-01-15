@@ -1,4 +1,6 @@
 {
 	"replace": false,
-	"values": []
+	"values": [
+		"expansion:vehicles/mech/summon/tp_interp"
+	]
 }

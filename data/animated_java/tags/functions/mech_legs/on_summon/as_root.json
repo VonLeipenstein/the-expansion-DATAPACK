@@ -1,4 +1,6 @@
 {
 	"replace": false,
-	"values": []
+	"values": [
+		"animated_java:mech_legs/animations/idle/play"
+	]
 }

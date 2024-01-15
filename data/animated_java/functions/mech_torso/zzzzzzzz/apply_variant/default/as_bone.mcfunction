@@ -1,4 +1,3 @@
-
 execute if entity @s[tag=aj.mech_torso.bone.left_hand] run data modify entity @s item.tag.CustomModelData set value 53
 execute if entity @s[tag=aj.mech_torso.bone.left_arm_low] run data modify entity @s item.tag.CustomModelData set value 54
 execute if entity @s[tag=aj.mech_torso.bone.left_arm] run data modify entity @s item.tag.CustomModelData set value 55

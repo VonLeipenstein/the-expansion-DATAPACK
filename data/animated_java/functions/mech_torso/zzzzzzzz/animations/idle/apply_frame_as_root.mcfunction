@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..40 run function animated_java:mech_torso/zzzzzzzz/animations/idle/tree/branch_0_40
+execute if score @s aj.anim_time matches 0 run function animated_java:mech_torso/zzzzzzzz/animations/idle/tree/leaf_0

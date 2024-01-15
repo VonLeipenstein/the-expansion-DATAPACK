@@ -3,7 +3,7 @@
   "entity": "this",
   "predicate": {
     "vehicle": {
-      "type": "minecraft:armor_stand",
+      "type": "minecraft:cat",
       "nbt": "{Tags:[\"exp.mech_seat\"]}",
       "vehicle": {
         "type": "minecraft:armor_stand",
