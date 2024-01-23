@@ -1,1 +1,0 @@
-execute if entity @s[tag=exp.mech_attack_init] run function expansion:vehicles/mech/attacks/swing/init

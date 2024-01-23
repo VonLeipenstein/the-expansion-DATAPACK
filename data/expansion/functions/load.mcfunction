@@ -40,6 +40,9 @@ scoreboard objectives add exp.oxygen_percent dummy
 scoreboard objectives add exp.speed dummy
 scoreboard objectives add exp.spaceship_trigger trigger
 scoreboard objectives add exp.passenger_count dummy
+scoreboard objectives add exp.mech_left_id dummy
+scoreboard objectives add exp.mech_right_id dummy
+
 
 # timers
 scoreboard objectives add exp.timer_1 dummy

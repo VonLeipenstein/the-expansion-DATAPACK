@@ -1,6 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"animated_java:mech_torso/animations/idle/play"
+		"expansion:vehicles/mech/summon/set_data"
 	]
 }

@@ -1,8 +1,8 @@
-execute on vehicle on vehicle run tag @s add exp.mech_attack.swing
-execute on vehicle on vehicle run tag @s add exp.mech_attack_init
+scoreboard players add @s exp.counter_1 2
+execute if score @s exp.counter_1 matches 3..4 if score @s exp.mech_left_id = @s exp.mech_right_id run tag @s add exp.mech.action.combo
 
-execute on vehicle on vehicle run scoreboard players set @s exp.timer_1 30
+tag @s[scores={exp.mech_right_id=1,exp.counter_1=..2}] add exp.mech.action.swing
+tag @s[scores={exp.mech_right_id=2,exp.counter_1=..2}] add exp.mech.action.shoot
+tag @s[scores={exp.mech_right_id=3,exp.counter_1=..2}] add exp.mech.action.drill
 
-tag @s add exp.exit_mech
-execute on vehicle on vehicle if score @s exp.delay matches 1.. run function expansion:vehicles/mech/exit/exit
-tag @s remove exp.exit_mech
+tag @s[tag=!exp.mech.action.combo,scores={exp.counter_1=..2}] add exp.mech.action.right

@@ -1,0 +1,4 @@
+execute unless data block ~ ~ ~ Items[{Slot:0b}] if data entity @s item.tag.ModStorage.fuel.id run function expansion:blocks/modification_station/spaceship/remove_mods/fuel
+execute unless data block ~ ~ ~ Items[{Slot:9b}] if data entity @s item.tag.ModStorage.blaster.id run function expansion:blocks/modification_station/spaceship/remove_mods/blaster
+execute unless data block ~ ~ ~ Items[{Slot:18b}] if data entity @s item.tag.ModStorage.speed.id run function expansion:blocks/modification_station/spaceship/remove_mods/speed
+execute unless data block ~ ~ ~ Items[{Slot:5b}] if data entity @s item.tag.ModStorage.skin.id run function expansion:blocks/modification_station/spaceship/remove_mods/skin

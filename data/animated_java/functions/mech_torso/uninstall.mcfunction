@@ -8,9 +8,19 @@ scoreboard objectives remove aj.mech_torso.rig_loaded
 scoreboard objectives remove aj.mech_torso.animation.walking.local_anim_time
 scoreboard objectives remove aj.mech_torso.animation.walking_backwards.local_anim_time
 scoreboard objectives remove aj.mech_torso.animation.idle.local_anim_time
-scoreboard objectives remove aj.mech_torso.animation.swing.local_anim_time
+scoreboard objectives remove aj.mech_torso.animation.sword_swing_l.local_anim_time
+scoreboard objectives remove aj.mech_torso.animation.sword_swing_r.local_anim_time
+scoreboard objectives remove aj.mech_torso.animation.blaster_shoot_r.local_anim_time
+scoreboard objectives remove aj.mech_torso.animation.blaster_shoot_l.local_anim_time
+scoreboard objectives remove aj.mech_torso.animation.blaster_shoot_combo.local_anim_time
+scoreboard objectives remove aj.mech_torso.animation.sword_swing_combo.local_anim_time
 scoreboard objectives remove aj.mech_torso.animation.walking.loop_mode
 scoreboard objectives remove aj.mech_torso.animation.walking_backwards.loop_mode
 scoreboard objectives remove aj.mech_torso.animation.idle.loop_mode
-scoreboard objectives remove aj.mech_torso.animation.swing.loop_mode
+scoreboard objectives remove aj.mech_torso.animation.sword_swing_l.loop_mode
+scoreboard objectives remove aj.mech_torso.animation.sword_swing_r.loop_mode
+scoreboard objectives remove aj.mech_torso.animation.blaster_shoot_r.loop_mode
+scoreboard objectives remove aj.mech_torso.animation.blaster_shoot_l.loop_mode
+scoreboard objectives remove aj.mech_torso.animation.blaster_shoot_combo.loop_mode
+scoreboard objectives remove aj.mech_torso.animation.sword_swing_combo.loop_mode
 tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The mech_torso Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]

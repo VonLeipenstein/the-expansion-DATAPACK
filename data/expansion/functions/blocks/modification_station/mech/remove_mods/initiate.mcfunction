@@ -1,0 +1,2 @@
+execute unless data block ~ ~ ~ Items[{Slot:9b}] if data entity @s ArmorItems[3].tag.ModStorage.lefthand.id run function expansion:blocks/modification_station/mech/remove_mods/lefthand
+execute unless data block ~ ~ ~ Items[{Slot:14b}] if data entity @s ArmorItems[3].tag.ModStorage.righthand.id run function expansion:blocks/modification_station/mech/remove_mods/righthand

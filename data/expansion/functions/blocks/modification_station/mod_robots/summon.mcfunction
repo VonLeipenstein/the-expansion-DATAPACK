@@ -9,3 +9,9 @@ tp @e[type=minecraft:armor_stand,tag=exp.drone2,limit=1,sort=nearest] ^-0.5 ^ ^ 
 tp @e[type=minecraft:armor_stand,tag=exp.drone3,limit=1,sort=nearest] ^0.5 ^ ^ ~45 ~
 tp @e[type=minecraft:armor_stand,tag=exp.drone4,limit=1,sort=nearest] ^-0.5 ^ ^ ~-45 ~
 tp @e[type=minecraft:armor_stand,tag=exp.drone5,limit=1,sort=nearest] ^ ^ ^0.5 ~ ~
+
+scoreboard players operation @e[type=minecraft:armor_stand,tag=exp.drone1,limit=1,sort=nearest] exp.unique_id = @s exp.unique_id
+scoreboard players operation @e[type=minecraft:armor_stand,tag=exp.drone2,limit=1,sort=nearest] exp.unique_id = @s exp.unique_id
+scoreboard players operation @e[type=minecraft:armor_stand,tag=exp.drone3,limit=1,sort=nearest] exp.unique_id = @s exp.unique_id
+scoreboard players operation @e[type=minecraft:armor_stand,tag=exp.drone4,limit=1,sort=nearest] exp.unique_id = @s exp.unique_id
+scoreboard players operation @e[type=minecraft:armor_stand,tag=exp.drone5,limit=1,sort=nearest] exp.unique_id = @s exp.unique_id
