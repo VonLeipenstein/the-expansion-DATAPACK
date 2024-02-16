@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:mech_torso/zzzzzzzz/animations/gatling_stop_l/tree/leaf_0_as_bone

@@ -12,3 +12,6 @@ execute positioned ~ ~1.48 ~ rotated 0 0 run function animated_java:mech_torso/s
 # mount the animated java rigs to the entity stack
 ride @e[type=item_display,tag=aj.mech_legs.root,limit=1,sort=nearest] mount @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest]
 ride @e[type=item_display,tag=aj.mech_torso.root,limit=1,sort=nearest] mount @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest]
+
+execute as @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest] run function expansion:vehicles/mech/actions/lefthand/equip/hand
+execute as @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest] run function expansion:vehicles/mech/actions/righthand/equip/hand

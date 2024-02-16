@@ -1,1 +1,0 @@
-tag @s remove aj.mech_torso.animation.blaster_shoot_combo

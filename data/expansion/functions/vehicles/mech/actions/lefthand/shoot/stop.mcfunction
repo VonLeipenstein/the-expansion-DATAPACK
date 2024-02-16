@@ -1,0 +1,3 @@
+function animated_java:mech_torso/animations/gatling_shooting_l/stop
+
+function animated_java:mech_torso/animations/gatling_stop_l/play

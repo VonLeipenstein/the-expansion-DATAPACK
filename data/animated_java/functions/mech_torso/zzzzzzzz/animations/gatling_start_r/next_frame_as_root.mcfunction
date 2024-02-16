@@ -1,0 +1,1 @@
+function animated_java:mech_torso/zzzzzzzz/animations/gatling_start_r/tick_animation

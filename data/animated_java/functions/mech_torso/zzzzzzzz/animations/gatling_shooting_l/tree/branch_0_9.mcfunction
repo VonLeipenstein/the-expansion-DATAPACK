@@ -1,0 +1,3 @@
+execute if score @s aj.anim_time matches 0..7 run function animated_java:mech_torso/zzzzzzzz/animations/gatling_shooting_l/tree/branch_0_7
+execute if score @s aj.anim_time matches 8 run function animated_java:mech_torso/zzzzzzzz/animations/gatling_shooting_l/tree/leaf_8
+execute if score @s aj.anim_time matches 9 run function animated_java:mech_torso/zzzzzzzz/animations/gatling_shooting_l/tree/leaf_9

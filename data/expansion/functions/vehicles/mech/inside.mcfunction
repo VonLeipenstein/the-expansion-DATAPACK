@@ -16,11 +16,9 @@ execute unless score .w exp.wasd matches 1 unless score .a exp.wasd matches 1 un
 execute if score .s exp.wasd matches 1 if entity @s[tag=!exp.mech_walking_back] run function expansion:vehicles/mech/anim_control/start_walking_back
 execute unless score .s exp.wasd matches 1 if entity @s[tag=exp.mech_walking_back] run function expansion:vehicles/mech/anim_control/stop_walking_back
 
-# initiate attacks
-execute if score @s exp.counter_1 matches 1.. run function expansion:vehicles/mech/actions/warmup
-
 # during attacks
-execute if score @s exp.cooldown matches 1.. run function expansion:vehicles/mech/actions/main
+execute if entity @s[tag=exp.mech.action.left] run function expansion:vehicles/mech/actions/lefthand/main
+execute if entity @s[tag=exp.mech.action.right] run function expansion:vehicles/mech/actions/righthand/main
 
 # movement
 execute if score .total exp.wasd matches 1.. unless score @s exp.sneak_delay matches 1.. unless predicate expansion:dimension/zero_gravity unless block ~ ~-.1 ~ #expansion:expansion_air run function expansion:vehicles/mech/propulsion/drive

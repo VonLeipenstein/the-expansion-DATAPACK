@@ -1,0 +1,1 @@
+function animated_java:mech_torso/zzzzzzzz/animations/empty_shield/tick_animation
