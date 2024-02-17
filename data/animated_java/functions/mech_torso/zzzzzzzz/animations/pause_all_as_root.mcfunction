@@ -5,14 +5,10 @@ function animated_java:mech_torso/zzzzzzzz/animations/walking_backwards_body/pau
 function animated_java:mech_torso/zzzzzzzz/animations/walking_backwards_left/pause_as_root
 function animated_java:mech_torso/zzzzzzzz/animations/walking_backwards_right/pause_as_root
 function animated_java:mech_torso/zzzzzzzz/animations/idle/pause_as_root
-function animated_java:mech_torso/zzzzzzzz/animations/sword_swing_l_old/pause_as_root
-function animated_java:mech_torso/zzzzzzzz/animations/sword_swing_r_old/pause_as_root
 function animated_java:mech_torso/zzzzzzzz/animations/rocket_shoot_r/pause_as_root
 function animated_java:mech_torso/zzzzzzzz/animations/rocket_shoot_l/pause_as_root
-function animated_java:mech_torso/zzzzzzzz/animations/rocket_shoot_combo/pause_as_root
 function animated_java:mech_torso/zzzzzzzz/animations/sword_swing_r/pause_as_root
 function animated_java:mech_torso/zzzzzzzz/animations/sword_swing_l/pause_as_root
-function animated_java:mech_torso/zzzzzzzz/animations/sword_swing_combo/pause_as_root
 function animated_java:mech_torso/zzzzzzzz/animations/gatling_start_l/pause_as_root
 function animated_java:mech_torso/zzzzzzzz/animations/gatling_shooting_l/pause_as_root
 function animated_java:mech_torso/zzzzzzzz/animations/gatling_stop_l/pause_as_root

@@ -1,0 +1,15 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:marker",
+		"minecraft:armor_stand",
+		"minecraft:item_display",
+		"minecraft:block_display",
+		"minecraft:text_display",
+		"minecraft:interaction",
+		"minecraft:item_frame",
+		"minecraft:item",
+		"minecraft:snowball",
+		"minecraft:cat"
+	]
+}

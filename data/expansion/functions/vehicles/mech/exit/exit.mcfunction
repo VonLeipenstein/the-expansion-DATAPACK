@@ -10,6 +10,10 @@ scoreboard players reset @s exp.sneak_delay
 function expansion:vehicles/mech/anim_control/stop_walking
 function expansion:vehicles/mech/anim_control/stop_walking_back
 
+execute on passengers if entity @s[type=minecraft:item_display,tag=aj.mech_torso.root] run function animated_java:mech_torso/animations/pause_all
+
+effect clear @p[tag=exp.exit_mech] speed
+
 # remove tags from the player
 tag @p[tag=exp.exit_mech] remove exp.inside_mech
 tag @p[tag=exp.exit_mech] remove exp.inside_vehicle

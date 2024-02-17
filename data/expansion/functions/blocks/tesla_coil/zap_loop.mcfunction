@@ -13,4 +13,4 @@ execute facing entity @e[tag=exp.zap_target,distance=..12,limit=1,sort=nearest] 
 tag @e[tag=exp.zap_target,distance=..2.1,limit=1,sort=arbitrary] add exp.zapped
 
 # run this function again if the conditions are met
-execute if entity @s[scores={exp.max_range=..200}] unless entity @e[tag=exp.zapped,distance=..2.1,limit=1,sort=arbitrary] at @s if block ^ ^ ^0.25 #expansion:expansion_air run function expansion:blocks/tesla_coil/zap_loop
+execute if entity @s[scores={exp.max_range=..200}] unless entity @e[tag=exp.zapped,distance=..2.1,limit=1,sort=arbitrary] at @s if block ^ ^ ^0.25 #expansion:air run function expansion:blocks/tesla_coil/zap_loop

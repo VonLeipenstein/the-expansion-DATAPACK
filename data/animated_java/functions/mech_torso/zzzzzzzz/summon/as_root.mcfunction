@@ -33,22 +33,14 @@ execute if score #animation aj.i = $aj.mech_torso.animation.walking_backwards_ri
 execute if score #animation aj.i = $aj.mech_torso.animation.walking_backwards_right aj.id run scoreboard players operation @s aj.mech_torso.animation.walking_backwards_right.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.mech_torso.animation.idle aj.id run function animated_java:mech_torso/zzzzzzzz/animations/idle/apply_frame_as_root
 execute if score #animation aj.i = $aj.mech_torso.animation.idle aj.id run scoreboard players operation @s aj.mech_torso.animation.idle.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.mech_torso.animation.sword_swing_l_old aj.id run function animated_java:mech_torso/zzzzzzzz/animations/sword_swing_l_old/apply_frame_as_root
-execute if score #animation aj.i = $aj.mech_torso.animation.sword_swing_l_old aj.id run scoreboard players operation @s aj.mech_torso.animation.sword_swing_l_old.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.mech_torso.animation.sword_swing_r_old aj.id run function animated_java:mech_torso/zzzzzzzz/animations/sword_swing_r_old/apply_frame_as_root
-execute if score #animation aj.i = $aj.mech_torso.animation.sword_swing_r_old aj.id run scoreboard players operation @s aj.mech_torso.animation.sword_swing_r_old.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.mech_torso.animation.rocket_shoot_r aj.id run function animated_java:mech_torso/zzzzzzzz/animations/rocket_shoot_r/apply_frame_as_root
 execute if score #animation aj.i = $aj.mech_torso.animation.rocket_shoot_r aj.id run scoreboard players operation @s aj.mech_torso.animation.rocket_shoot_r.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.mech_torso.animation.rocket_shoot_l aj.id run function animated_java:mech_torso/zzzzzzzz/animations/rocket_shoot_l/apply_frame_as_root
 execute if score #animation aj.i = $aj.mech_torso.animation.rocket_shoot_l aj.id run scoreboard players operation @s aj.mech_torso.animation.rocket_shoot_l.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.mech_torso.animation.rocket_shoot_combo aj.id run function animated_java:mech_torso/zzzzzzzz/animations/rocket_shoot_combo/apply_frame_as_root
-execute if score #animation aj.i = $aj.mech_torso.animation.rocket_shoot_combo aj.id run scoreboard players operation @s aj.mech_torso.animation.rocket_shoot_combo.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.mech_torso.animation.sword_swing_r aj.id run function animated_java:mech_torso/zzzzzzzz/animations/sword_swing_r/apply_frame_as_root
 execute if score #animation aj.i = $aj.mech_torso.animation.sword_swing_r aj.id run scoreboard players operation @s aj.mech_torso.animation.sword_swing_r.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.mech_torso.animation.sword_swing_l aj.id run function animated_java:mech_torso/zzzzzzzz/animations/sword_swing_l/apply_frame_as_root
 execute if score #animation aj.i = $aj.mech_torso.animation.sword_swing_l aj.id run scoreboard players operation @s aj.mech_torso.animation.sword_swing_l.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.mech_torso.animation.sword_swing_combo aj.id run function animated_java:mech_torso/zzzzzzzz/animations/sword_swing_combo/apply_frame_as_root
-execute if score #animation aj.i = $aj.mech_torso.animation.sword_swing_combo aj.id run scoreboard players operation @s aj.mech_torso.animation.sword_swing_combo.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.mech_torso.animation.gatling_start_l aj.id run function animated_java:mech_torso/zzzzzzzz/animations/gatling_start_l/apply_frame_as_root
 execute if score #animation aj.i = $aj.mech_torso.animation.gatling_start_l aj.id run scoreboard players operation @s aj.mech_torso.animation.gatling_start_l.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.mech_torso.animation.gatling_shooting_l aj.id run function animated_java:mech_torso/zzzzzzzz/animations/gatling_shooting_l/apply_frame_as_root

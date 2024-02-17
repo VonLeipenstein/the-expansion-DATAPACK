@@ -1,6 +1,9 @@
 # add a tag to be able to target the player who is currently running this function from any context
 tag @s add exp.tick_player
 
+# unique id
+execute unless score @s exp.unique_id matches 1.. run function expansion:player/assign_id
+
 # global rightclick actions
 execute if score @s exp.rightclick matches 1.. if predicate expansion:nbt_checks/selected_item/expansion_coas run function expansion:player/rightclick/main
 

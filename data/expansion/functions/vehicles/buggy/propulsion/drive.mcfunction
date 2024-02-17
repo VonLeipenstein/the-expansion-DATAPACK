@@ -13,24 +13,24 @@ execute if score .d exp.wasd matches 1 unless score .a exp.wasd matches 1 run fu
 execute store result entity @s Rotation[0] float 1 run scoreboard players get #turn exp.math 
 
 # zero gravity things
-execute if predicate expansion:dimension/zero_gravity if score @s exp.speed matches ..-11 unless block ^ ^-1 ^-1 #expansion:expansion_air run data merge entity @s[nbt={NoGravity:1b}] {NoGravity:0b}
-execute if predicate expansion:dimension/zero_gravity if score @s exp.speed matches 11.. unless block ^ ^-1 ^1 #expansion:expansion_air run data merge entity @s[nbt={NoGravity:1b}] {NoGravity:0b}
+execute if predicate expansion:dimension/zero_gravity if score @s exp.speed matches ..-11 unless block ^ ^-1 ^-1 #expansion:air run data merge entity @s[nbt={NoGravity:1b}] {NoGravity:0b}
+execute if predicate expansion:dimension/zero_gravity if score @s exp.speed matches 11.. unless block ^ ^-1 ^1 #expansion:air run data merge entity @s[nbt={NoGravity:1b}] {NoGravity:0b}
 
 # calculate the motion vector
 function expansion:vehicles/buggy/propulsion/move
 
 # going up- and downhill
-execute rotated ~ 0 unless block ^ ^0.5 ^1 #expansion:expansion_air if block ^ ^1.5 ^1 #expansion:expansion_air run tp @s ^ ^1 ^0.2
-execute rotated ~ 0 unless block ^ ^0.5 ^-1 #expansion:expansion_air if block ^ ^1.5 ^-1 #expansion:expansion_air run tp @s ^ ^1 ^-0.2
+execute rotated ~ 0 unless block ^ ^0.5 ^1 #expansion:air if block ^ ^1.5 ^1 #expansion:air run tp @s ^ ^1 ^0.2
+execute rotated ~ 0 unless block ^ ^0.5 ^-1 #expansion:air if block ^ ^1.5 ^-1 #expansion:air run tp @s ^ ^1 ^-0.2
 
 # aesthetic effects
 function expansion:vehicles/buggy/wheels_animation
 function expansion:vehicles/buggy/sound_loop
 
 # stop the buggy when it hits something
-execute rotated ~ 0 unless block ^ ^0.5 ^1 #expansion:expansion_air unless block ^ ^1.5 ^1 #expansion:expansion_air run scoreboard players set @s exp.speed 0
-execute rotated ~ 0 unless block ^ ^0.5 ^1 #expansion:expansion_air unless block ^ ^1.5 ^1 #expansion:expansion_air run tp @s ^ ^ ^-0.1
-execute rotated ~ 0 unless block ^ ^0.5 ^-1 #expansion:expansion_air unless block ^ ^1.5 ^-1 #expansion:expansion_air run tp @s ^ ^ ^0.1
+execute rotated ~ 0 unless block ^ ^0.5 ^1 #expansion:air unless block ^ ^1.5 ^1 #expansion:air run scoreboard players set @s exp.speed 0
+execute rotated ~ 0 unless block ^ ^0.5 ^1 #expansion:air unless block ^ ^1.5 ^1 #expansion:air run tp @s ^ ^ ^-0.1
+execute rotated ~ 0 unless block ^ ^0.5 ^-1 #expansion:air unless block ^ ^1.5 ^-1 #expansion:air run tp @s ^ ^ ^0.1
 
 # calculate percentage of speed
 scoreboard players operation #speed exp.math = @s exp.speed
