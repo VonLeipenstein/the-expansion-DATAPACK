@@ -75,6 +75,8 @@ scoreboard players set #6 exp.const 6
 scoreboard players set #7 exp.const 7
 scoreboard players set #8 exp.const 8
 scoreboard players set #10 exp.const 10
+scoreboard players set #14 exp.const 14
+scoreboard players set #36 exp.const 36
 scoreboard players set #40 exp.const 40
 scoreboard players set #-90 exp.const -90
 scoreboard players set #90 exp.const 90
@@ -93,3 +95,7 @@ scoreboard players set #1000000 exp.const 1000000
 schedule function expansion:solar_system/dimension_test 200t append
 execute unless score #generating_space exp.bool matches 1 run schedule function expansion:post_load 220t append
 schedule function expansion:5t_tick 20t append
+
+
+forceload add 0 0
+summon item_display 0. 0 0. {UUID:[I;0,0,0,0]}

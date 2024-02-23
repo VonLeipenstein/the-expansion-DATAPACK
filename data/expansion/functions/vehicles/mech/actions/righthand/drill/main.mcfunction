@@ -8,3 +8,9 @@ scoreboard players operation #temp exp.mech_right_dur = @s exp.mech_right_dur
 scoreboard players operation #temp exp.mech_right_dur %= #2 exp.const
 
 execute if score #temp exp.mech_right_dur matches 0 if score @s exp.mech_right_dur matches 20.. run function expansion:vehicles/mech/actions/righthand/drill/check
+
+
+# sound loop
+scoreboard players operation #temp exp.mech_right_dur = @s exp.mech_right_dur
+scoreboard players operation #temp exp.mech_right_dur %= #40 exp.const
+execute if score #temp exp.mech_right_dur matches 0 run playsound expansion:mech.drill.loop ambient @a ~ ~ ~ 0.2

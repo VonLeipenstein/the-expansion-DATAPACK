@@ -11,5 +11,8 @@ execute positioned ~ ~1.48 ~ rotated as @e[type=armor_stand,tag=exp.mech,limit=1
 ride @e[type=item_display,tag=aj.mech_legs.root,limit=1,sort=nearest] mount @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest]
 ride @e[type=item_display,tag=aj.mech_torso.root,limit=1,sort=nearest] mount @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest]
 
-execute as @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest] run function expansion:vehicles/mech/actions/lefthand/equip/hand
-execute as @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest] run function expansion:vehicles/mech/actions/righthand/equip/hand
+scoreboard players reset #temp exp.mech_left_id
+scoreboard players reset #temp exp.mech_right_id
+execute store result score #temp exp.mech_left_id run data get entity @s SelectedItem.tag.mech_left_id
+execute store result score #temp exp.mech_right_id run data get entity @s SelectedItem.tag.mech_right_id
+execute as @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest] run function expansion:vehicles/mech/summon/equip_modules

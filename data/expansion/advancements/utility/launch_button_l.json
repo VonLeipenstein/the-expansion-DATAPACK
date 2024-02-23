@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "expansion:nbt_checks/root_vehicle/rocket"
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"exp.rocket_interactor\",\"exp.launch_button\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "expansion:vehicles/rocket/buttons/launch_button_push"
+  }
+}

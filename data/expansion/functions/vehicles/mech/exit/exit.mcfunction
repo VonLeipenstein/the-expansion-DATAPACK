@@ -4,7 +4,8 @@ execute at @s positioned ^ ^ ^2 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ min
 # reset scores
 scoreboard players reset @s exp.timer_2
 scoreboard players reset @s exp.speed
-scoreboard players reset @s exp.sneak_delay
+scoreboard players set @s exp.mech_left_dur 0
+scoreboard players set @s exp.mech_right_dur 0
 
 # reset animations
 function expansion:vehicles/mech/anim_control/stop_walking

@@ -19,6 +19,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.mech_legs.export_version aj.i -538858017
+scoreboard players set aj.mech_legs.export_version aj.i 720104177
 scoreboard players reset * aj.mech_legs.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.mech_legs.root] run function animated_java:mech_legs/zzzzzzzz/on_load

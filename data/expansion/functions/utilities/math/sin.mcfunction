@@ -6,7 +6,6 @@
 scoreboard players operation #factor1 exp.math = #180 exp.const
 scoreboard players operation #factor1 exp.math -= #input exp.math
 
-
 # calculate numerator
 scoreboard players operation #num exp.math = #factor1 exp.math
 scoreboard players operation #num exp.math *= #input exp.math

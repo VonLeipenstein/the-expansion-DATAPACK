@@ -2,6 +2,9 @@
 scoreboard players reset @e[type=minecraft:armor_stand,tag=exp.rocket,distance=..7,limit=1,sort=nearest] exp.timer_2
 stopsound @s player expansion:rocket.launch
 
+# restore the interaction
+execute if entity @s[tag=exp.rocket_pilot] as @e[type=minecraft:armor_stand,tag=exp.rocket,distance=..7,limit=1,sort=nearest] on passengers on passengers if entity @s[tag=exp.rocket_pilot_rcdet] run data merge entity @s {width:2f,height:2f}
+
 # place the player next to the rocket
 execute at @e[type=minecraft:armor_stand,tag=exp.rocket,distance=..7,limit=1,sort=nearest] positioned ^ ^ ^2 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air run tp @s ~ ~ ~
 tag @s remove exp.inside_rocket
