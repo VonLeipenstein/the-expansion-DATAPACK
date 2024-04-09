@@ -11,4 +11,5 @@ scoreboard players operation #temp exp.unique_id = @s exp.unique_id
 
 # stop searching
 tag @e[tag=exp.rocket_target,limit=1] remove exp.rocket_target
+scoreboard players reset @s exp.max_range
 kill @s

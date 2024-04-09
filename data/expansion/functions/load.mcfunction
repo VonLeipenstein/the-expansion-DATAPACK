@@ -1,3 +1,9 @@
+# reset triggers
+scoreboard objectives remove exp.rightclick
+scoreboard objectives remove exp.jump
+scoreboard objectives remove exp.death
+scoreboard objectives remove give_guide1
+
 # trigger scoreboards
 scoreboard objectives add exp.rightclick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add exp.jump minecraft.custom:minecraft.jump

@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:armor_stand"
+		"minecraft:armor_stand",
+		"minecraft:wandering_trader"
 	]
 }

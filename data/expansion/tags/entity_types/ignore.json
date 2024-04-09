@@ -2,7 +2,6 @@
 	"replace": false,
 	"values": [
 		"minecraft:marker",
-		"minecraft:armor_stand",
 		"minecraft:item_display",
 		"minecraft:block_display",
 		"minecraft:text_display",
@@ -10,6 +9,14 @@
 		"minecraft:item_frame",
 		"minecraft:item",
 		"minecraft:snowball",
-		"minecraft:cat"
+		"minecraft:cat",
+		"minecraft:area_effect_cloud",
+		"minecraft:boat",
+		"minecraft:chest_boat",
+		"minecraft:minecart",
+		"minecraft:chest_minecart",
+		"minecraft:furnace_minecart",
+		"#minecraft:arrows",
+		"minecraft:falling_block"
 	]
 }

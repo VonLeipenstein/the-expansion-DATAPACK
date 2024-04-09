@@ -7,6 +7,8 @@ scoreboard players reset @s exp.speed
 scoreboard players set @s exp.mech_left_dur 0
 scoreboard players set @s exp.mech_right_dur 0
 
+data merge entity @s {NoAI:1b}
+
 # reset animations
 function expansion:vehicles/mech/anim_control/stop_walking
 function expansion:vehicles/mech/anim_control/stop_walking_back
@@ -18,3 +20,4 @@ effect clear @p[tag=exp.exit_mech] speed
 # remove tags from the player
 tag @p[tag=exp.exit_mech] remove exp.inside_mech
 tag @p[tag=exp.exit_mech] remove exp.inside_vehicle
+tag @p[tag=exp.exit_mech] remove exp.mech_pilot

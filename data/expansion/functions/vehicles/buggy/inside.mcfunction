@@ -16,4 +16,4 @@ execute if predicate expansion:dimension/zero_gravity if block ^ ^-1 ^ #expansio
 execute unless score @s exp.speed matches -11..11 run function expansion:vehicles/buggy/propulsion/drive
 
 # break the buggy when it hits water
-execute if block ~ ~ ~ #expansion:expansion_liquid run function expansion:vehicles/buggy/liquid_interaction
+execute if block ~ ~ ~ #expansion:liquid run function expansion:vehicles/buggy/liquid_interaction

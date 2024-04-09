@@ -1,6 +1,6 @@
 tag @s add exp.homing_rocket
 
-execute positioned ^ ^ ^ rotated ~ ~ run tp @s ^ ^ ^10 ~ ~
+execute positioned ^ ^ ^ rotated ~ ~ run tp @s ^ ^ ^10.5 ~ ~
 
 scoreboard players set @s exp.max_range 300
 scoreboard players set @s exp.unique_id -1
