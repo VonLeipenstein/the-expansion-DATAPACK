@@ -1,10 +1,14 @@
-execute if score @s exp.timer_1 matches 0 run function expansion:vehicles/mech/actions/lefthand/equip/rocket
-execute if score @s exp.timer_1 matches 0 run function expansion:vehicles/mech/actions/righthand/equip/rocket
+# stop attacks that need a manual stop trigger like the gatling gun
+execute if score @s exp.mech_left_dur matches 100.. run function expansion:mobs/mech/behavior/lefthand/stop_attack
+execute if score @s exp.mech_right_dur matches 100.. run function expansion:mobs/mech/behavior/righthand/stop_attack
 
-scoreboard players add @s exp.timer_1 1
-execute if score @s exp.timer_1 matches 40 run tag @s add exp.mech.action.left
-execute if score @s exp.timer_1 matches 80 run tag @s add exp.mech.action.right
-execute if score @s exp.timer_1 matches 80 run scoreboard players set @s exp.timer_1 0
+# switch weapons if no attack or cooldown is currently active
+execute if predicate expansion:chance/050_chance unless entity @s[tag=exp.equipped_weapon_left] unless score @s exp.mech_left_dur matches 1.. unless score @s exp.mech_left_cooldown matches 1.. run function expansion:mobs/mech/behavior/lefthand/equip_weapon
+execute if predicate expansion:chance/050_chance unless entity @s[tag=exp.equipped_weapon_right] unless score @s exp.mech_right_dur matches 1.. unless score @s exp.mech_right_cooldown matches 1.. run function expansion:mobs/mech/behavior/righthand/equip_weapon
+
+# initiate attacks if no attack or cooldown is currently active
+execute unless score @s exp.mech_left_dur matches 1.. unless score @s exp.mech_left_cooldown matches 1.. run function expansion:mobs/mech/behavior/lefthand/start_attack
+execute unless score @s exp.mech_right_dur matches 1.. unless score @s exp.mech_right_cooldown matches 1.. run function expansion:mobs/mech/behavior/righthand/start_attack
 
 # follow the player around on a timer
 function expansion:mobs/mech/behavior/follow_player/main
@@ -13,4 +17,6 @@ function expansion:mobs/mech/behavior/follow_player/main
 execute store result score @s exp.x run data get entity @s Motion[0] 100000
 execute store result score @s exp.z run data get entity @s Motion[2] 100000
 scoreboard players operation @s exp.x += @s exp.z
-execute unless score @s exp.x matches 0 on passengers on passengers on passengers run scoreboard players set .w exp.wasd 1
+execute unless score @s exp.x matches 0 on passengers on passengers run scoreboard players set .w exp.wasd 1
+
+# freeze the movement of the mech during certain attacks

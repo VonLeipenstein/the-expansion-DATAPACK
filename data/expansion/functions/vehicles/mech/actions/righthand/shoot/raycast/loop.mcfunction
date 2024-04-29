@@ -1,4 +1,4 @@
-#particle dust_color_transition 0 1 1 1 0 1 0 ~ ~ ~ 0 0 0 0 5 force
+#execute if predicate expansion:chance/010_chance run 
 particle mycelium ~ ~ ~ 0 0 0 0 1 force
 
 scoreboard players remove @s exp.max_range 1

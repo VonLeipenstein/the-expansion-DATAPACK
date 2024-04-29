@@ -9,7 +9,8 @@ execute on passengers if entity @s[tag=aj.mech_torso.root] run function animated
 
 playsound block.metal.break block @a ~ ~ ~
 
+execute on passengers on passengers run function expansion:utilities/erase_entity
 execute on passengers run function expansion:utilities/erase_entity
-kill @s
+function expansion:utilities/erase_entity
 
 

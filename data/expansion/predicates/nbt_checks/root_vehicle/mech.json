@@ -5,14 +5,10 @@
     "vehicle": {
       "type": "minecraft:cat",
       "nbt": "{Tags:[\"exp.mech_seat\"]}",
-      "vehicle": {
-        "type": "minecraft:armor_stand",
-        "nbt": "{Tags:[\"exp.AI_resetter\"]}",
         "vehicle": {
           "type": "minecraft:wandering_trader",
           "nbt": "{Tags:[\"exp.mech\"]}"
         }
-      }
     }
   }
 }

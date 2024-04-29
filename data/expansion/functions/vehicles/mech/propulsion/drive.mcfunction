@@ -8,7 +8,7 @@ execute unless score #input exp.math matches 0.. run scoreboard players operatio
 scoreboard players set @s exp.speed 7
 
 # rotate the main entity of the mech slowly with the player view
-execute at @s on passengers on passengers on passengers if entity @s[type=player] anchored eyes rotated as @s on vehicle on vehicle on vehicle run function expansion:vehicles/mech/propulsion/rotate_mech_with_player
+execute at @s on passengers on passengers if entity @s[type=player] anchored eyes rotated as @s on vehicle on vehicle run function expansion:vehicles/mech/propulsion/rotate_mech_with_player
 
 # make the legs turn with the mech
 execute at @s rotated as @s on passengers if entity @s[tag=aj.mech_legs.root] positioned ^ ^ ^8 rotated as @s positioned ^ ^ ^40 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^ ~ 0

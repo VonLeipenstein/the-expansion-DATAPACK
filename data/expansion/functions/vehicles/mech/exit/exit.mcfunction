@@ -7,8 +7,6 @@ scoreboard players reset @s exp.speed
 scoreboard players set @s exp.mech_left_dur 0
 scoreboard players set @s exp.mech_right_dur 0
 
-data merge entity @s {NoAI:1b}
-
 # reset animations
 function expansion:vehicles/mech/anim_control/stop_walking
 function expansion:vehicles/mech/anim_control/stop_walking_back

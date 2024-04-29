@@ -33,6 +33,8 @@ scoreboard objectives add exp.mech_left_id dummy
 scoreboard objectives add exp.mech_right_id dummy
 scoreboard objectives add exp.mech_left_dur dummy
 scoreboard objectives add exp.mech_right_dur dummy
+scoreboard objectives add exp.mech_left_cooldown dummy
+scoreboard objectives add exp.mech_right_cooldown dummy
 # timers
 scoreboard objectives add exp.timer_1 dummy
 scoreboard objectives add exp.timer_2 dummy
@@ -64,6 +66,7 @@ scoreboard objectives add exp.equipment_cmd dummy
 scoreboard objectives add exp.spaceship_cmd dummy
 # math
 scoreboard objectives add exp.math dummy
+scoreboard objectives add exp.random dummy
 # wasd detection
 scoreboard objectives add exp.wasd dummy
 scoreboard objectives add exp.wasd.x dummy
