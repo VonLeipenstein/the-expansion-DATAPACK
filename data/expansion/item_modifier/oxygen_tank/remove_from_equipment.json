@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        [
+          {
+            "translate": "exp_armor_equipment_notank",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      ]
+    ],
+    "mode": "replace_section",
+    "offset": 1,
+    "size": 1
+  }
+]
+

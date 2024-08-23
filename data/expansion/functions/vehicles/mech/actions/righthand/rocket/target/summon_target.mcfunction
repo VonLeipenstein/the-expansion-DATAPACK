@@ -1,1 +1,0 @@
-summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Silent:1b,Tags:["exp.rocket_target_fake","exp.dont_ignore"]}

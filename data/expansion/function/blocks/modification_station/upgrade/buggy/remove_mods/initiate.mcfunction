@@ -1,0 +1,2 @@
+execute unless items block ~ ~ ~ container.0 * if data entity @s ArmorItems[0].components.minecraft:custom_data.ModStorage.speed_mod.id run function expansion:blocks/modification_station/upgrade/buggy/remove_mods/speed_mod
+execute unless items block ~ ~ ~ container.9 * if data entity @s ArmorItems[0].components.minecraft:custom_data.ModStorage.oxygen_tank.id run function expansion:blocks/modification_station/upgrade/buggy/remove_mods/oxygen_tank

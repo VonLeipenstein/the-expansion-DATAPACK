@@ -6,21 +6,21 @@
       },
       {
         "structure": "expansion:mars/warbase",
-        "weight": 2
+        "weight": 1
       },
       {
         "structure": "expansion:mars/robot",
-        "weight": 3
+        "weight": 2
       },
       {
         "structure": "expansion:mars/railship",
-        "weight": 2
+        "weight": 1
       }
     ],
     "placement": {
       "type": "minecraft:random_spread",
       "spread_type": "triangular",
-      "spacing": 30,
+      "spacing": 40,
       "separation": 18,
       "salt": 858616258
     }

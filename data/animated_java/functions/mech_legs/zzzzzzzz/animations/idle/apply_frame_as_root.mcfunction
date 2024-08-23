@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0 run function animated_java:mech_legs/zzzzzzzz/animations/idle/tree/leaf_0

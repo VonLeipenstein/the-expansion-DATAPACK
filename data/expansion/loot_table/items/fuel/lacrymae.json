@@ -1,0 +1,109 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_fuel_lacrymae_name",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+
+              "tag": "{lacrymae:1b,from_extractor:1b,custom_potion_effects:[{id:\"minecraft:speed\",amplifier:4b,duration:600,show_particles:0b},{id:\"minecraft:haste\",amplifier:4b,duration:600,show_particles:0b},{id:\"minecraft:strength\",amplifier:4b,duration:600,show_particles:0b},{id:\"minecraft:instant_damage\",amplifier:1b,duration:1,show_particles:0b},{id:\"minecraft:nausea\",amplifier:4b,duration:1200,show_particles:0b},{id:\"minecraft:poison\",amplifier:1b,duration:1200,show_particles:0b},{id:\"minecraft:glowing\",amplifier:4b,duration:1200,show_particles:0b}],CustomPotionColor:6160481,HideFlags:63}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:awkward",
+                  "custom_color": 6160481,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:instant_damage",
+                      "amplifier": 4,
+                      "duration": 1,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    },
+                    {
+                      "id": "minecraft:nausea",
+                      "amplifier": 4,
+                      "duration": 600,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    },
+                    {
+                      "id": "minecraft:poison",
+                      "amplifier": 4,
+                      "duration": 600,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    },
+                    {
+                      "id": "minecraft:glowing",
+                      "amplifier": 4,
+                      "duration": 600,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    },
+                    {
+                      "id": "minecraft:speed",
+                      "amplifier": 4,
+                      "duration": 100,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    },
+                    {
+                      "id": "minecraft:haste",
+                      "amplifier": 4,
+                      "duration": 100,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    },
+                    {
+                      "id": "minecraft:strength",
+                      "amplifier": 4,
+                      "duration": 100,
+                      "ambient": false,
+                      "show_particles": false,
+                      "show_icon": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_fuel_lacrymae_tip1"
+                },
+                {
+                  "translate": "exp_fuel_lacrymae_tip2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

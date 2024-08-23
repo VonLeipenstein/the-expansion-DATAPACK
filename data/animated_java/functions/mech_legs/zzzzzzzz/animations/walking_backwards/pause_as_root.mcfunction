@@ -1,1 +1,0 @@
-tag @s remove aj.mech_legs.animation.walking_backwards

@@ -1,1 +1,0 @@
-function animated_java:mech_torso/zzzzzzzz/animations/drill_stop_r/tick_animation

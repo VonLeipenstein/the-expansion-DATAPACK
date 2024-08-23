@@ -1,0 +1,71 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_weapons_railgun_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 1012500
+            },
+            {
+              "function": "minecraft:set_components",
+                  "components": {
+                  "!minecraft:max_damage": {},
+                  "minecraft:unbreakable": {
+                      "show_in_tooltip": false
+                      }
+                  }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Unbreakable:1b,exp_tool:1b,railgun:1b,expansion_coas:1b,ammo:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+          "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "translate": "exp_weapons_railgun_ammo"
+                  },
+                  {
+                    "text": "0",
+                    "bold": true,
+                    "color": "aqua"
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_weapons_railgun_tip1"
+                },
+                {
+                  "translate": "exp_weapons_railgun_tip2"
+                },
+                {
+                  "translate": "exp_weapons_railgun_tip3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

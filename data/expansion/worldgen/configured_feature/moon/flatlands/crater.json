@@ -82,10 +82,8 @@
     "placements_require_layer0_alternate": false,
     "outer_wall_distance": {
       "type": "minecraft:uniform",
-      "value": {
         "min_inclusive": 0,
         "max_inclusive": 0
-      }
     },
     "distribution_points": 6,
     "point_offset": 0,

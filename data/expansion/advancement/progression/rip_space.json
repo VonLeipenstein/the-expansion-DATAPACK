@@ -1,0 +1,20 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:skeleton_skull"
+      },
+      "title": "Hey, I Have Been Here Before",
+      "description": "Create a loop in space-time, you're in trouble now",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "expansion:progression/pocket_space",
+    "criteria": {
+      "unobtainable": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+  

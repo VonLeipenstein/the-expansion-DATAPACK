@@ -1,0 +1,39 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "dimension": "expansion:moon"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "dimension": "expansion:mars"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "dimension": "expansion:venus"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "dimension": "expansion:jupiter"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "dimension": "expansion:europa"
+      }
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "expansion:dimension/zero_gravity"
+    }
+  ]
+}

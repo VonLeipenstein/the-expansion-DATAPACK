@@ -1,0 +1,55 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_items_rockettop_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 1012294
+            },
+            {
+              "function": "minecraft:set_components",
+                  "components": {
+                  "!minecraft:max_damage": {},
+                  "minecraft:unbreakable": {
+                      "show_in_tooltip": false
+                      }
+                  }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{rocket_top:1b,rocket_part:1b,crafting_count:1,expansion_coas:1b,exp_block:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+          "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_items_rocketpart_tip"
+                },
+                {
+                  "translate": "exp_items_rockettop_tip1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

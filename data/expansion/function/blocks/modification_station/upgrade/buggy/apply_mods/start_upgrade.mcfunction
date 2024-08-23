@@ -1,0 +1,2 @@
+execute if block ~ ~ ~ barrel{Items:[{Slot:0b,components:{"minecraft:custom_data":{speed_mod:1b}}}]} if data entity @s ArmorItems[3].components.minecraft:custom_data.ModStorage.speed_mod.id run item replace block ~ ~ ~ container.0 with minecraft:air
+execute if block ~ ~ ~ barrel{Items:[{Slot:9b,components:{"minecraft:custom_data":{oxygen_tank:1b}}}]} if data entity @s ArmorItems[3].components.minecraft:custom_data.ModStorage.oxygen_tank.id run item replace block ~ ~ ~ container.9 with minecraft:air

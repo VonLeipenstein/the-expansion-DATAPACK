@@ -1,0 +1,1 @@
+advancement grant @p[tag=exp.check_loaded] only expansion:progression/rip_space

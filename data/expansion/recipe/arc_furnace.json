@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "blocks",
+    "pattern": [
+        "ICI",
+        "BFB",
+        "RRR"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:copper_ingot"
+        },
+        "C": {
+            "item": "minecraft:coal"
+        },
+        "B": {
+            "item": "minecraft:iron_block"
+        },
+        "R": {
+            "item": "minecraft:brick"
+        },
+        "F": {
+            "item": "minecraft:blast_furnace"
+        }
+        
+    },
+    "result": {
+        "id": "minecraft:carrot_on_a_stick",
+        "count": 1,
+        "components": {
+            "minecraft:custom_model_data": 1012306,
+            "minecraft:custom_name": "{\"translate\":\"exp_blocks_arcfurnace_name\",\"italic\": false}",
+            "minecraft:max_stack_size": 64,
+            "minecraft:unbreakable": {
+              "show_in_tooltip": false
+            },
+            "!minecraft:max_damage": {},
+            "minecraft:custom_data": {"crafting_count":1,"expansion_coas":1,"exp_block":1,"arc_furnace":1}
+          }
+    }
+}

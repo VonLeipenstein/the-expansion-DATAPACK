@@ -1,0 +1,15 @@
+execute if entity @s[y_rotation=-135.1..-45] run summon minecraft:armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,NoGravity:1b,Marker:0b,Invisible:1b,DisabledSlots:2039583,Rotation:[270f,0f],Tags:["exp.modstation","exp.block","smithed.block"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":1012312}}]}
+execute if entity @s[y_rotation=45.1..135] run summon minecraft:armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,NoGravity:1b,Marker:0b,Invisible:1b,DisabledSlots:2039583,Rotation:[90f,0f],Tags:["exp.modstation","exp.block","smithed.block"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":1012312}}]}
+execute if entity @s[y_rotation=-45..45] run summon minecraft:armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,NoGravity:1b,Marker:0b,Invisible:1b,DisabledSlots:2039583,Rotation:[360f,0f],Tags:["exp.modstation","exp.block","smithed.block"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":1012312}}]}
+execute if entity @s[y_rotation=135.1..-135] run summon minecraft:armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,NoGravity:1b,Marker:0b,Invisible:1b,DisabledSlots:2039583,Rotation:[180f,0f],Tags:["exp.modstation","exp.block","smithed.block"],ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":1012312}}]}
+
+summon minecraft:item_display ~ ~1.5 ~ {Tags:["exp.modstation_display"],item_display:"head",teleport_duration:1}
+data merge entity @e[type=minecraft:item_display,tag=exp.modstation_display,limit=1,sort=nearest] {transformation:{scale:[0.08f,0.08f,0.08f],translation:[0f,-0.5f,0f]}}
+ride @e[type=minecraft:item_display,tag=exp.modstation_display,limit=1,sort=nearest] mount @e[type=minecraft:armor_stand,tag=exp.modstation,limit=1,sort=nearest]
+
+setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'{"translate":"exp_blocks_modstation_name","color":"dark_gray"}'} replace
+execute as @e[type=minecraft:armor_stand,tag=exp.modstation,limit=1,sort=nearest] run function expansion:blocks/modification_station/gui/none
+
+# give this block a unique id for modstations
+scoreboard players add #modstation_id exp.unique_id 1
+scoreboard players operation @e[type=minecraft:armor_stand,tag=exp.modstation,limit=1,sort=nearest] exp.unique_id = #modstation_id exp.unique_id

@@ -1,0 +1,24 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        [
+          {
+            "translate": "exp_armor_equipment_protmod"
+          },
+          {
+            "text": "Warming",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      ]
+    ],
+    "mode": "replace_section",
+    "offset": 3,
+    "size": 1
+  }
+]

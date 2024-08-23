@@ -1,0 +1,1 @@
+execute unless entity @s[tag=exp.reached_spawn_cap] if predicate expansion:dimension/moon unless entity @e[type=minecraft:armor_stand,tag=exp.evil_drone,distance=..30,limit=1,sort=nearest] unless entity @p[distance=..30] run function expansion:mobs/evil_drone/summon_ranged

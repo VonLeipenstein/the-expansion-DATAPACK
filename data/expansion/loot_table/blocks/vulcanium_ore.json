@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:waxed_exposed_cut_copper_slab",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "exp_blocks_vulcaniumeore_name",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_state": {
+                  "type": "double",
+                  "waterlogged": "true"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 123456
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{vulcanium_ore:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

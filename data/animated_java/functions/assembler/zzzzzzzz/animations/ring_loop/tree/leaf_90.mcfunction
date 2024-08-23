@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:assembler/zzzzzzzz/animations/ring_loop/tree/leaf_90_as_bone

@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:mech_torso/zzzzzzzz/apply_variant/empty_left/as_bone

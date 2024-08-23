@@ -1,0 +1,45 @@
+[
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "expansion:oxygen_calc"
+    },
+    "ops": [
+      {
+        "source": "data.oxygen_lvl",
+        "target": "oxygen_lvl",
+        "op": "replace"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        [
+          {
+            "translate": "exp_tools_oxygentank_pressure"
+          },
+          {
+            "score": {
+              "name": "#temp",
+              "objective": "exp.oxygen_percent"
+            },
+            "color": "aqua",
+            "bold": true
+          },
+          {
+            "text": "%",
+            "color": "aqua",
+            "bold": true
+          }
+        ]
+      ]
+    ],
+    "mode": "replace_section",
+    "offset": 1,
+    "size": 1
+  }
+]

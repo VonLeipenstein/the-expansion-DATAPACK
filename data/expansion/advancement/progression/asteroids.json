@@ -1,0 +1,51 @@
+{
+    "parent": "expansion:progression/space",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_asteroids_title"
+        },
+        "description": {
+            "translate": "exp_advancement_asteroids_desc"
+        },
+        "icon": {
+            "id": "minecraft:player_head",
+            "components": {
+                "minecraft:profile": {
+                  "id": [
+                    1188610083,
+                    -975484637,
+                    -1252568678,
+                    182649834
+                  ],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNlMWM1ZTY1ZTEzNTU5YmY2MGUxNTRmMTdmNmFmM2E4ZTU2MDhhNDk4N2VjZDFlMGZhZTc1MWM2ZjgyNzI2In19fQ"
+                    }
+                  ]
+                }
+              }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:goto_asteroids": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "dimension": "expansion:asteroids"
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:goto_asteroids"
+        ]
+    ]
+}

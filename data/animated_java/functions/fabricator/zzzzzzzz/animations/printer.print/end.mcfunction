@@ -1,3 +1,0 @@
-execute if score @s aj.fabricator.animation.printer.print.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:fabricator/zzzzzzzz/animations/printer.print/end_loop
-execute if score @s aj.fabricator.animation.printer.print.loop_mode = $aj.loop_mode.once aj.i run function animated_java:fabricator/animations/printer.print/stop
-execute if score @s aj.fabricator.animation.printer.print.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:fabricator/animations/printer.print/pause

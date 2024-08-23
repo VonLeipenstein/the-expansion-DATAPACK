@@ -1,1 +1,0 @@
-function animated_java:assembler/zzzzzzzz/animations/ring_loop/tick_animation

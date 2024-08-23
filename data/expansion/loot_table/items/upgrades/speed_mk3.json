@@ -1,0 +1,62 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "translate": "exp_items_speedmod_name",
+                  "italic": false
+                },
+                "entity": "this"
+              },
+              {
+                "function": "minecraft:set_custom_model_data",
+                "value": 123502
+              },
+              {
+                "function": "minecraft:set_components",
+                    "components": {
+                    "!minecraft:max_damage": {},
+                    "minecraft:unbreakable": {
+                        "show_in_tooltip": false
+                        }
+                    }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{spaceship_mod:1b,buggy_mod:1b,mech_mod:1b,speed_mod:1b,mk:3b,value:20b,crafting_count:1}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "translate": "exp_items_applyupgrade_tip"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_items_modspecs_tip"
+                  },
+                  {
+                    "translate": "exp_items_mk3_name"
+                  },
+                  {
+                    "translate": "exp_items_speedmodmk3_tip1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

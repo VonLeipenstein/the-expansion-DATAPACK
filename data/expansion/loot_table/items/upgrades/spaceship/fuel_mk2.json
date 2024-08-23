@@ -1,0 +1,62 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "translate": "exp_items_fuelmod_name",
+                  "italic": false
+                },
+                "entity": "this"
+              },
+              {
+                "function": "minecraft:set_custom_model_data",
+                "value": 123504
+              },
+              {
+                "function": "minecraft:set_components",
+                    "components": {
+                    "!minecraft:max_damage": {},
+                    "minecraft:unbreakable": {
+                        "show_in_tooltip": false
+                        }
+                    }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{spaceship_mod:1b,fuel_mod:1b,mk:2b,value:100l,crafting_count:1}"
+              },
+              {
+                "function": "minecraft:set_lore",
+          "mode": "replace_all",
+                "lore": [
+                  {
+                    "translate": "exp_items_applyupgrade_tip"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_items_modspecs_tip"
+                  },
+                  {
+                    "translate": "exp_items_mk2_name"
+                  },
+                  {
+                    "translate": "exp_items_fuelmodmk2_tip1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

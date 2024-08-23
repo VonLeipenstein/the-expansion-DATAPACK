@@ -6,17 +6,17 @@
       },
       {
         "structure": "expansion:moon/event_horizon",
-        "weight": 2
+        "weight": 1
       },
       {
         "structure": "expansion:moon/millennium_falcon",
-        "weight": 2
+        "weight": 1
       }
     ],
     "placement": {
       "type": "minecraft:random_spread",
       "spread_type": "triangular",
-      "spacing": 30,
+      "spacing": 50,
       "separation": 24,
       "salt": 265721320
     }

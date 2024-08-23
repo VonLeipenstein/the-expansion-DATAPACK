@@ -1,0 +1,57 @@
+[ 
+    {
+        "function": "minecraft:copy_custom_data",
+        "source": {
+        "type": "minecraft:storage",
+        "source": "expansion:transporter_room_id"
+        },
+        "ops": [
+        {
+            "source": "data.room_id",
+            "target": "room_id",
+            "op": "replace"
+        }
+        ]
+    },
+    {
+      "function": "minecraft:set_lore",
+          "mode": "replace_all",
+      "entity": "this",
+      "lore": [
+        [
+          [
+            {
+              "translate": "exp_tools_pocketspace_roomid"
+            },
+            {
+              "score": {
+                "name": "#temp",
+                "objective": "exp.unique_id"
+              },
+              "color": "aqua",
+              "bold": true
+            }
+          ]
+        ],
+        {
+          "text": ""
+        },
+        {
+            "translate":"exp_lore_tooltips"
+          },
+          {
+            "translate": "exp_tools_pocketspace_tip1"
+          },
+          {
+            "translate": "exp_tools_pocketspace_tip2"
+          },
+          {
+            "translate": "exp_tools_pocketspace_tip3"
+          },
+          {
+            "translate": "exp_tools_pocketspace_tip4"
+          }
+      ],
+      "replace": true
+    }
+]

@@ -1,0 +1,47 @@
+{
+  "parent": "expansion:progression/get_cryonite",
+  "display": {
+    "title": {
+      "translate": "exp_advancement_coolingmod_title"
+    },
+    "description": {
+      "translate": "exp_advancement_coolingmod_desc"
+    },
+    "icon": {
+          "id": "minecraft:jigsaw",
+          "components": {
+            "minecraft:custom_model_data": 123482
+          }
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "expansion:cooling_module": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "expansion:mars",
+            "structures": "expansion:mars/cannon"
+          }
+        },
+        "items": [
+          {
+            "items": [
+              "minecraft:jigsaw"
+            ],
+            "custom_data": "{cooling_module:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "expansion:cooling_module"
+    ]
+  ]
+}

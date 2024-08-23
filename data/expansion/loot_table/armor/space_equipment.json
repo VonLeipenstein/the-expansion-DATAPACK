@@ -1,0 +1,118 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "exp_armor_equipment_name",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 1012100
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:max_damage": {},
+                "minecraft:unbreakable": {
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{Unbreakable:1b,exp_tool:1b,space_equipment:1b,ModStorage:{},expansion_coas:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "translate": "exp_armor_equipment_notank",
+                    "color": "aqua",
+                    "bold": true,
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "translate": "exp_armor_equipment_protmod"
+                  },
+                  {
+                    "text": "None",
+                    "color": "red",
+                    "bold": true,
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "translate": "exp_armor_equipment_utilmod"
+                  },
+                  {
+                    "text": "None",
+                    "color": "red",
+                    "bold": true,
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_armor_equipment_tip1"
+                },
+                {
+                  "translate": "exp_armor_equipment_tip2"
+                },
+                {
+                  "translate": "exp_armor_equipment_tip3"
+                },
+                {
+                  "translate": "exp_armor_equipment_tip4"
+                },
+                {
+                  "translate": "exp_armor_equipment_tip5"
+                }
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "id": "generic.armor",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "head"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

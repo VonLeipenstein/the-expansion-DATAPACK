@@ -1,0 +1,68 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "translate": "exp_items_diggingblast_name",
+                  "italic": false
+                },
+                "entity": "this"
+              },
+              {
+                "function": "minecraft:set_custom_model_data",
+                "value": 123507
+              },
+              {
+                "function": "minecraft:set_components",
+                    "components": {
+                    "!minecraft:max_damage": {},
+                    "minecraft:unbreakable": {
+                        "show_in_tooltip": false
+                        }
+                    }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{spaceship_mod:1b,blaster_mod:1b,id:1b,crafting_count:1}"
+              },
+              {
+                "function": "minecraft:set_lore",
+          "mode": "replace_all",
+                "lore": [
+                  {
+                    "translate": "exp_items_applyupgrade_tip"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_items_modspecs_tip"
+                  },
+                  {
+                    "translate": "exp_items_diggingblast_tip1"
+                  },
+                  {
+                    "translate": "exp_items_diggingblast_tip2"
+                  },
+                  {
+                    "translate": "exp_items_diggingblast_tip3"
+                  },
+                  {
+                    "translate": "exp_items_diggingblast_tip4"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

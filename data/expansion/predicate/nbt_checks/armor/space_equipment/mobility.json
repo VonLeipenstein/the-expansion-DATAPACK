@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "items": [
+          "minecraft:carrot_on_a_stick"
+        ],
+        "predicates": {
+            "minecraft:custom_data": "{space_equipment:1b,ModStorage:{utility:{components:{\"minecraft:custom_data\":{jumping_module:1b}}}}}"
+        }
+      }
+    }
+  }
+}

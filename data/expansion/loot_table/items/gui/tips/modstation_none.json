@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jigsaw",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_blocks_guitip_info",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 124401
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{gui_item:1b,gui_button:0b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate":"exp_blocks_modstation_noneguitip1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+  

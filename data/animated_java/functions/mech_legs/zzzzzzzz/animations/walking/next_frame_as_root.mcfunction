@@ -1,1 +1,0 @@
-function animated_java:mech_legs/zzzzzzzz/animations/walking/tick_animation

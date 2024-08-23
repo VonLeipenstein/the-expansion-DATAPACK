@@ -1,0 +1,43 @@
+{
+    "parent": "expansion:progression/trade_spaceship",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_getplanetarium_title"
+        },
+        "description": {
+            "translate": "exp_advancement_getplanetarium_desc"
+        },
+        "icon": {
+          "id": "minecraft:carrot_on_a_stick",
+          "components": {
+            "minecraft:custom_model_data": 1012303
+          }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_planetarium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:carrot_on_a_stick"
+                        ],
+                        "predicates": {
+                            "minecraft:custom_data": "{planetarium:1b}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_planetarium"
+        ]
+    ]
+}

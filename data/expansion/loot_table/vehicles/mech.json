@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_vehicles_mech_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_custom_data",
+
+              "tag": "{mech:1b,exp_vehicle:1b,fuel_lvl:1,expansion_coas:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+          "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_vehicles_mech_tip1"
+                },
+                {
+                  "translate": "exp_vehicles_mech_tip2"
+                },
+                {
+                  "translate": "exp_vehicles_mech_tip3"
+                },
+                {
+                  "translate": "exp_vehicles_mech_tip4"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

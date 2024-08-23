@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mossy_cobblestone_slab",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "exp_blocks_cryoniteore_name",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:block_state": {
+                  "type": "double",
+                  "waterlogged": "true"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 123456
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{cryonite_ore:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jigsaw",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_items_coreyellow_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 126004
+            },
+            {
+              "function": "minecraft:set_components",
+                  "components": {
+                  "!minecraft:max_damage": {},
+                  "minecraft:unbreakable": {
+                      "show_in_tooltip": false
+                      }
+                  }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{portal_core:1b,yellow_core:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

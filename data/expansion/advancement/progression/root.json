@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "translate": "exp_advancement_root_title"
+        },
+        "description": {
+            "translate": "exp_advancement_root_desc"
+        },
+        "icon": {
+          "id": "minecraft:carrot_on_a_stick",
+          "components": {
+            "minecraft:custom_model_data": 1012002
+          }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "expansion:textures/guides/star_sky.png"
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

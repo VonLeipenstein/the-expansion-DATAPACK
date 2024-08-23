@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "entity": "this",
+          "name": {
+            "translate": "exp_blocks_fabricator_name",
+            "italic": false
+          }
+        },
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            {
+              "translate": "exp_lore_tooltips"
+            },
+            {
+              "translate": "exp_blocks_fabricator_tip1"
+            }
+          ]
+        },
+        {
+          "function": "minecraft:set_custom_model_data",
+          "value": 1012308
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:max_stack_size": 64,
+            "!minecraft:max_damage": {},
+            "minecraft:unbreakable": {
+              "show_in_tooltip": false
+            }
+          }
+        },
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{crafting_count:1,expansion_coas:1b,exp_block:1b,fabricator:1b}"
+        }
+      ]
+    }
+  ]
+}
+

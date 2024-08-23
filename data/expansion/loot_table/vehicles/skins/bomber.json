@@ -1,0 +1,60 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Night Claw",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 1012018
+            },
+            {
+              "function": "minecraft:set_components",
+                  "components": {
+                  "!minecraft:max_damage": {},
+                  "minecraft:unbreakable": {
+                      "show_in_tooltip": false
+                      }
+                  }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{spaceship_skin:1b,bomber_skin:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+          "mode": "replace_all",
+              "lore": [
+                {
+                  "text": "Inter Planetary Bomber-629 (IPB-629)",
+                  "underlined": false,
+                  "color": "aqua"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_vehicles_combine_skin"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

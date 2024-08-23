@@ -1,0 +1,11 @@
+# add a temporary tag to the ship display to make sure we select the correct ship
+execute as @n[type=minecraft:armor_stand,tag=exp.mod_vehicle,predicate=expansion:compare_score/modstation,distance=..50] on passengers run tag @s[type=item_display,tag=exp.spaceship_display] add exp.display_marker
+
+# store any upgrades inside the armor stands head item and check if there is any
+execute if block ~ ~ ~ barrel{Items:[{Slot:0b,components:{"minecraft:custom_data":{fuel_mod:1b}},count:1}]} unless data entity @e[type=minecraft:item_display,tag=exp.display_marker,limit=1] item.components.minecraft:custom_data.ModStorage.fuel.id store success score @s exp.bool run data modify entity @s ArmorItems[3].components.minecraft:custom_data.ModStorage.fuel set from block ~ ~ ~ Items[{Slot:0b}]
+execute if block ~ ~ ~ barrel{Items:[{Slot:9b,components:{"minecraft:custom_data":{blaster_mod:1b}},count:1}]} unless data entity @e[type=minecraft:item_display,tag=exp.display_marker,limit=1] item.components.minecraft:custom_data.ModStorage.blaster.id store success score @s exp.bool run data modify entity @s ArmorItems[3].components.minecraft:custom_data.ModStorage.blaster set from block ~ ~ ~ Items[{Slot:9b}]
+execute if block ~ ~ ~ barrel{Items:[{Slot:18b,components:{"minecraft:custom_data":{speed_mod:1b}},count:1}]} unless data entity @e[type=minecraft:item_display,tag=exp.display_marker,limit=1] item.components.minecraft:custom_data.ModStorage.speed.id store success score @s exp.bool run data modify entity @s ArmorItems[3].components.minecraft:custom_data.ModStorage.speed set from block ~ ~ ~ Items[{Slot:18b}]
+execute if block ~ ~ ~ barrel{Items:[{Slot:5b,components:{"minecraft:custom_data":{spaceship_skin:1b}},count:1}]} unless data entity @e[type=minecraft:item_display,tag=exp.display_marker,limit=1] item.components.minecraft:custom_data.ModStorage.skin.id run function expansion:blocks/modification_station/upgrade/spaceship/apply_mods/store_skin_cmd
+
+# remove temporary tag
+tag @e[type=item_display,tag=exp.display_marker] remove exp.display_marker

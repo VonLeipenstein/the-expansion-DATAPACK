@@ -1,0 +1,19 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "mode": "append",
+    "lore": [
+      {
+        "text": ""
+      },
+      {
+        "translate":"exp_modules_armored_applied"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_custom_data",
+
+    "tag": "{has_module:1b,armored_module:1b}"
+  }  
+]

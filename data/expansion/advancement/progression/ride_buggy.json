@@ -1,0 +1,42 @@
+{
+    "parent": "expansion:progression/get_assembler",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_ridebuggy_title"
+        },
+        "description": {
+            "translate": "exp_advancement_ridebuggy_desc"
+        },
+        "icon": {
+          "id": "minecraft:carrot_on_a_stick",
+          "components": {
+            "minecraft:custom_model_data": 1012008
+          }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:ride_buggy": {
+          "trigger": "minecraft:started_riding",
+          "conditions": {
+            "player": {
+              "location": {
+                "dimension": "expansion:moon"
+              },
+              "vehicle": {
+                "type": "minecraft:item_display",
+                "nbt": "{Tags:[\"exp.buggy_display\"]}"
+              }
+            }
+          }
+        }
+      },
+    "requirements": [
+        [
+            "expansion:ride_buggy"
+        ]
+    ]
+}

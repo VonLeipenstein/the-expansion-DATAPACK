@@ -1,1 +1,0 @@
-execute if block ~ ~ ~ minecraft:dropper[facing=up,triggered=false]{Items:[{Slot:3b},{Slot:5b}]} run function expansion:blocks/enhancer/recipes_main

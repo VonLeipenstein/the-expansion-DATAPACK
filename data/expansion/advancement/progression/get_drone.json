@@ -1,0 +1,43 @@
+{
+    "parent": "expansion:progression/get_assembler",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_getdrone_title"
+        },
+        "description": {
+            "translate": "exp_advancement_getdrone_desc"
+        },
+        "icon": {
+          "id": "minecraft:carrot_on_a_stick",
+          "components": {
+            "minecraft:custom_model_data": 1012411
+          }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_drone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:carrot_on_a_stick"
+                        ],
+                        "predicates": {
+                            "minecraft:custom_data": "{pet_drone:1b}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_drone"
+        ]
+    ]
+}

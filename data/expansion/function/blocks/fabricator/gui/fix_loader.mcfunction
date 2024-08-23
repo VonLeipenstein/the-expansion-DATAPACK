@@ -1,0 +1,2 @@
+loot replace block ~ ~ ~ container.16 loot expansion:items/gui/loader/0
+execute if score @s exp.timer_1 matches 1.. if score @s exp.counter_1 matches 124470.. store result block ~ ~ ~ Items[{Slot:16b}].components.minecraft:custom_model_data double 1 run scoreboard players get @s exp.counter_1

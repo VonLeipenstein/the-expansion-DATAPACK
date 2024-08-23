@@ -1,0 +1,43 @@
+{
+    "parent": "expansion:progression/venus",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_getvulcanium_title"
+        },
+        "description": {
+            "translate": "exp_advancement_getvulcanium_desc"
+        },
+        "icon": {
+          "id": "minecraft:waxed_exposed_cut_copper_slab",
+          "components": {
+            "minecraft:custom_model_data": 123456
+          }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_vulcanium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:jigsaw"
+                        ],
+                        "predicates": {
+                            "minecraft:custom_data": "{vulcanium_shard:1b}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_vulcanium"
+        ]
+    ]
+}

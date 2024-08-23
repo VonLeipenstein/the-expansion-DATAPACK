@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:jigsaw",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_modules_warming_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 123483
+            },
+            {
+              "function": "minecraft:set_components",
+                  "components": {
+                  "!minecraft:max_damage": {},
+                  "minecraft:unbreakable": {
+                      "show_in_tooltip": false
+                      }
+                  }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{exp_module:1b,warming_module:1b,crafting_count:1}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "exp_modules_all_tip1"
+                },
+                {
+                  "translate": "exp_modules_warming_tip2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

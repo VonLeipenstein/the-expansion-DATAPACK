@@ -3,38 +3,28 @@
   "config": {
     "column_radius": {
       "type": "minecraft:uniform",
-      "value": {
         "min_inclusive": 3,
         "max_inclusive": 12
-      }
     },
     "height_scale": {
       "type": "minecraft:uniform",
-      "value": {
         "min_inclusive": 1,
         "max_exclusive": 1.5
-      }
     },
     "stalactite_bluntness": {
       "type": "minecraft:uniform",
-      "value": {
         "min_inclusive": 1,
         "max_exclusive": 1.5
-      }
     },
     "stalagmite_bluntness": {
       "type": "minecraft:uniform",
-      "value": {
         "min_inclusive": 1,
         "max_exclusive": 1.5
-      }
     },
     "wind_speed": {
       "type": "minecraft:uniform",
-      "value": {
         "min_inclusive": 0.5,
         "max_exclusive": 0.6
-      }
     },
     "max_column_radius_to_cave_height_ratio": 0.33,
     "floor_to_ceiling_search_range": 100,

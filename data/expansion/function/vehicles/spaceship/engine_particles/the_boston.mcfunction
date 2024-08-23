@@ -1,0 +1,1 @@
+execute anchored eyes run particle minecraft:dust{color:[0.000d,0.969d,1.000d],scale:1} ^ ^-0.6 ^-0.2 0.1 0.1 0.1 0 10 force

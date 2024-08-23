@@ -1,1 +1,0 @@
-function animated_java:mech_torso/zzzzzzzz/animations/empty_punch1_l/tick_animation
