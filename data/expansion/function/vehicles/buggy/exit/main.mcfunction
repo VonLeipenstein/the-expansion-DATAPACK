@@ -1,6 +1,6 @@
 execute at @s run stopsound @a player expansion:buggy.engine_driving
 
-execute at @s positioned ^1 ^ ^ if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air run tp @p[tag=exp.exits_buggy] ~ ~ ~
+execute at @s positioned ^1 ^ ^ if block ~ ~ ~ #expansion:air if block ~ ~1 ~ #expansion:air run tp @p[tag=exp.exits_buggy] ~ ~ ~
 
 function expansion:vehicles/buggy/anim_control/stop_driving
 

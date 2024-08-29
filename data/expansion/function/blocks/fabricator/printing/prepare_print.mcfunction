@@ -10,9 +10,9 @@ execute unless score @s exp.bool matches 1 if items block ~ ~ ~ container.15 * r
 # if there is no item in the output slot
 execute unless score @s exp.bool matches 0 unless items block ~ ~ ~ container.15 * run tag @s add exp.print_ready
 
-# prevent printing when the output slot is full
+# prevent printing when the output slot is full and handle some exceptions
 execute if block ~ ~ ~ barrel{Items:[{Slot:15b,id:"minecraft:jigsaw",count:64}]} run tag @s remove exp.print_ready
-#execute if block ~ ~ ~ barrel{Items:[{Slot:15b,id:"minecraft:carrot_on_a_stick",count:1}]} run tag @s remove exp.print_ready
+execute if block ~ ~ ~ barrel{Items:[{Slot:15b,components:{"minecraft:custom_data":{oxygen_tank:1b}}}]} run tag @s remove exp.print_ready
 execute if block ~ ~ ~ barrel{Items:[{Slot:15b,id:"minecraft:iron_boots",count:1}]} run tag @s remove exp.print_ready
 
 # start the print if conditions are met

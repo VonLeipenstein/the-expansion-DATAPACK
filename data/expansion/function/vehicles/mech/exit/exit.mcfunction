@@ -1,5 +1,5 @@
 # teleport the player in front of the mech
-execute at @s positioned ^ ^ ^2 if block ~ ~ ~ minecraft:air if block ~ ~1 ~ minecraft:air run tp @p[tag=exp.exit_mech] ~ ~ ~
+execute at @s positioned ^ ^ ^2 if block ~ ~ ~ #expansion:air if block ~ ~1 ~ #expansion:air run tp @p[tag=exp.exit_mech] ~ ~ ~
 
 # reset scores
 scoreboard players reset @s exp.timer_2

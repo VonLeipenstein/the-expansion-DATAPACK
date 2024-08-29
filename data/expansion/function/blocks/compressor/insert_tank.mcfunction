@@ -15,6 +15,9 @@ execute store result score @s exp.fuel_max run data get entity @s item.component
 execute if items entity @s container.0 minecraft:carrot_on_a_stick[minecraft:custom_data~{oxygen_tank:1b}] run function expansion:blocks/compressor/display_tank
 execute if items entity @s container.0 minecraft:carrot_on_a_stick[minecraft:custom_data~{space_equipment:1b}] run function expansion:blocks/compressor/display_equipment
 
+# remove the custom name from the interaction
+data merge entity @n[type=interaction,tag=exp.compressor_rcdet] {CustomName:'""'}
+
 # intiate the compression process
 execute as @e[type=minecraft:armor_stand,tag=exp.compressor,limit=1,sort=nearest] run function expansion:blocks/compressor/compress/start
 
