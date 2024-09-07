@@ -19,8 +19,8 @@ execute on target if entity @s[tag=exp.has_active_drone] run function expansion:
 
 # shrink the rockets hitbox
 #data merge entity @s[tag=exp.rocket_pilot_rcdet] {width:0,height:0}
-tag @s remove exp.rocket_pilot_rcdet
-tag @s add exp.rocket_button_rcdet
+execute if entity @s[tag=exp.rocket_pilot_rcdet] run tag @s add exp.rocket_button_rcdet
+execute if entity @s[tag=exp.rocket_pilot_rcdet] run tag @s remove exp.rocket_pilot_rcdet
 
 # remove the rightclick data from the interaction entity
 data remove entity @s interaction
