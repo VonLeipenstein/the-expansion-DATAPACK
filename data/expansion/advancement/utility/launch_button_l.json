@@ -23,6 +23,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:vehicles/rocket/buttons/launch_button_push"
+    "function": "expansion:vehicles/rocket/click_detection/buttons/launch_button_push"
   }
 }

@@ -1,0 +1,1 @@
+execute on vehicle on vehicle at @s run function expansion:vehicles/rocket/launch_init

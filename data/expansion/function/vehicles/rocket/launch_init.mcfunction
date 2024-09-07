@@ -1,7 +1,11 @@
 # check for an obsidian launchpad
-execute if block ~ ~-1 ~ minecraft:obsidian if block ~1 ~-1 ~ minecraft:obsidian if block ~-1 ~-1 ~ minecraft:obsidian if block ~ ~-1 ~1 minecraft:obsidian if block ~ ~-1 ~-1 minecraft:obsidian if block ~1 ~-1 ~1 minecraft:obsidian if block ~-1 ~-1 ~-1 minecraft:obsidian if block ~-1 ~-1 ~1 minecraft:obsidian if block ~1 ~-1 ~-1 minecraft:obsidian run tag @e[type=minecraft:armor_stand,tag=exp.rocket,limit=1,sort=nearest] add exp.launchpad_good
+execute unless function expansion:vehicles/rocket/has_launchpad on passengers on passengers if entity @p[tag=exp.clicked] run return run function expansion:utilities/error_messages/launchpad
 
-# start launch or check for errors if the launch failed
-execute if predicate expansion:nbt_checks/armor/space_equipment/equipment as @e[type=minecraft:armor_stand,tag=exp.rocket,limit=1,sort=nearest] if score @s[tag=exp.launchpad_good] exp.fuel_level = @s exp.fuel_max run scoreboard players set @s exp.timer_2 230
-execute as @e[type=minecraft:armor_stand,tag=exp.rocket,limit=1,sort=nearest] unless score @s exp.timer_2 matches 1.. run function expansion:vehicles/rocket/launch_errors
-tag @s remove exp.launchpad_good
+# check if the player is wearing space equipment
+execute unless entity @p[tag=exp.clicked,predicate=expansion:nbt_checks/armor/space_equipment/equipment] on passengers on passengers if entity @p[tag=exp.clicked] run return run function expansion:utilities/error_messages/equip_space_equipment
+
+# check if the rocket is fully fueled
+execute unless score @s exp.fuel_level = @s exp.fuel_max on passengers on passengers if entity @p[tag=exp.clicked] run return run function expansion:utilities/error_messages/low_fuel
+
+# if all else succeeds, start the launch
+scoreboard players set @s exp.timer_2 230
