@@ -1,0 +1,19 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 2,
+            "value": "expansion:tools/oxygen_tanks/tier2/empty"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:tools/oxygen_tanks/tier2/full"
+          }
+        ]
+      }
+    ]
+}

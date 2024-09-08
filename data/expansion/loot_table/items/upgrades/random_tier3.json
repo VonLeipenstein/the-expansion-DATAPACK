@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:items/upgrades/speed_mk3"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:items/upgrades/spaceship/fuel_mk3"
+          }
+        ]
+      }
+    ]
+  }
+  

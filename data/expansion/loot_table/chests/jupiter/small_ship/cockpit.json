@@ -6,7 +6,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 4,
-          "value": "expansion:tools/oxygen_tanks/tier1/full",
+          "value": "expansion:tools/oxygen_tanks/tier1/random",
           "functions": [
             {
               "function": "minecraft:set_count",

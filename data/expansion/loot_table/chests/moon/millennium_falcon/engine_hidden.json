@@ -5,13 +5,22 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "expansion:items/upgrades/spaceship/speed_mk1"
+          "weight": 2,
+          "value": "expansion:items/upgrades/random_tier1"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/upgrades/spaceship/fuel_mk1"
+          "value": "expansion:items/fuel/lacrymae",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
         }
       ]
     },
@@ -21,63 +30,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/fuel/lacrymae",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 4
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 4,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "expansion:items/steel/steel_ingot",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 10,
-                "max": 18
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:iron_block",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:diamond",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 15
-              }
-            }
-          ]
+          "value": "expansion:tools/wrench"
         }
       ]
     },
@@ -85,9 +38,37 @@
       "rolls": 3,
       "entries": [
         {
-          "type": "minecraft:item",
+          "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "minecraft:redstone_block",
+          "value": "expansion:items/simple_mechanism",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:items/thruster",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:items/steel/steel_plate",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -99,46 +80,42 @@
           ]
         },
         {
-          "type": "minecraft:item",
+          "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "minecraft:coal",
+          "value": "expansion:items/elektromotor",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
-                "max": 20
+                "min": 1,
+                "max": 2
               }
             }
           ]
         },
         {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:andesite",
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "expansion:items/electromagnet",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
-                "max": 20
+                "min": 4,
+                "max": 7
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
         {
-          "type": "minecraft:item",
+          "type": "minecraft:loot_table",
           "weight": 1,
-          "name": "minecraft:redstone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 10,
-                "max": 20
-              }
-            }
-          ]
+          "value": "expansion:chests/moon/chest_filler"
         }
       ]
     }
