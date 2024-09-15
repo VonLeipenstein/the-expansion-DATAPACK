@@ -14,5 +14,3 @@ execute if entity @s[tag=exp.planetarium_amogus] at @s run function expansion:bl
 execute if entity @s[tag=exp.planetarium_asteroids] at @s run function expansion:blocks/planetarium/spin/pivots/asteroids
 
 execute if entity @s[tag=exp.planetarium_sun] at @s run function expansion:blocks/planetarium/spin/displays/sun
-
-execute as @e[type=item_display,tag=exp.planetarium_comet,predicate=expansion:compare_score/unique_id] run function expansion:blocks/planetarium/spin/comets

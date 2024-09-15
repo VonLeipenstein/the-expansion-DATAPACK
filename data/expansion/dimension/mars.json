@@ -1237,7 +1237,7 @@
           }
         },
         {
-          "biome": "expansion:mars/nether_edge",
+          "biome": "expansion:mars/ice_caves",
           "parameters": {
             "temperature": [
               -0.45,
@@ -1297,7 +1297,7 @@
           }
         },
         {
-          "biome": "expansion:mars/nether_edge",
+          "biome": "expansion:mars/ice_caves",
           "parameters": {
             "temperature": [
               -0.45,
@@ -1387,7 +1387,7 @@
           }
         },
         {
-          "biome": "expansion:mars/nether_edge",
+          "biome": "expansion:mars/ice_caves",
           "parameters": {
             "temperature": [
               0.305,
@@ -1417,7 +1417,7 @@
           }
         },
         {
-          "biome": "expansion:mars/nether_edge",
+          "biome": "expansion:mars/ice_caves",
           "parameters": {
             "temperature": [
               0.305,
