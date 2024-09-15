@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "translate": "exp_blocks_vulcaniumeore_name",
+                "translate": "exp_blocks_vulcaniumore_name",
                 "italic": false
               }
             },

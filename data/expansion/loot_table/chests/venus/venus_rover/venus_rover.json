@@ -1,7 +1,7 @@
 {
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:loot_table",
@@ -11,12 +11,12 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/upgrades/speed_mk3"
+          "value": "expansion:items/upgrades/random_tier3"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/upgrades/spaceship/fuel_mk3"
+          "value": "expansion:tools/oxygen_tanks/tier3/random"
         }
       ]
     },
@@ -26,27 +26,21 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:tools/oxygen_tanks/tier3/empty"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "expansion:tools/oxygen_tanks/tier3/full"
+          "value": "expansion:items/cooling_element",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "expansion:items/upgrades/equipment/cold_protection"
-        }
-      ]
-    },
-    {
-      "rolls": 4,
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:loot_table",
@@ -58,6 +52,76 @@
               "count": {
                 "min": 5,
                 "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:items/complex_mechanism",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:items/amethonium_plate",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:items/materials/amethonium_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:items/simple_mechanism",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:blocks/vulcanium_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
               }
             }
           ]
@@ -98,7 +162,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
+                "min": 5,
                 "max": 8
               }
             }
@@ -107,7 +171,7 @@
       ]
     },
     {
-      "rolls": 16,
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",

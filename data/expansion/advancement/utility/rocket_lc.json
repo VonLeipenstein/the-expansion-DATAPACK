@@ -5,7 +5,7 @@
       "conditions": {
         "entity": {
             "type": "minecraft:interaction",
-            "nbt": "{Tags:[\"exp.rocket_rcdet\"]}"
+            "nbt": "{Tags:[\"exp.rocket_pilot_rcdet\"]}"
         }
       }
     }

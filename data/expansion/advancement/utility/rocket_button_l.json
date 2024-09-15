@@ -15,7 +15,7 @@
             "entity": "this",
             "predicate": {
               "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"exp.rocket_interactor\",\"exp.fuel_button\"]}"
+              "nbt": "{Tags:[\"exp.rocket_interactor\",\"exp.rocket_button_rcdet\"]}"
             }
           }
         ]
@@ -23,6 +23,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:vehicles/rocket/buttons/fuel_button_push"
+    "function": "expansion:vehicles/rocket/click_detection/buttons/click"
   }
 }

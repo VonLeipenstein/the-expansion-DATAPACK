@@ -16,15 +16,29 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 18
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "rolls": 6,
+      "rolls": 4,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 1,
+          "weight": 2,
           "name": "minecraft:beef",
           "functions": [
             {
@@ -77,6 +91,62 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 18
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 18
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:mutton",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 18
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:chicken",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 18
+              }
+            }
+          ]
         }
       ]
     },
@@ -91,8 +161,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 20,
-                "max": 30
+                "min": 5,
+                "max": 10
               }
             }
           ]
@@ -105,8 +175,22 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 20,
-                "max": 30
+                "min": 5,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:blue_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 10
               }
             }
           ]

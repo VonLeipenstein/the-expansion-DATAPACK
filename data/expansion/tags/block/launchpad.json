@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:obsidian",
+        "minecraft:crying_obsidian",
+        "minecraft:bedrock",
+        "#minecraft:beacon_base_blocks"
+    ]
+}
