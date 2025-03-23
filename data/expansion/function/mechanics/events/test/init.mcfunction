@@ -1,1 +1,1 @@
-execute if predicate expansion:periodic/10 summon marker run function expansion:mechanics/events/lightning/cast
+execute if predicate expansion:periodic/40 summon marker run function expansion:mechanics/events/lightning/cast

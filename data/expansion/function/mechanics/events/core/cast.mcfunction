@@ -3,7 +3,7 @@ execute store result entity @s Rotation[1] float 1 run function expansion:utilit
 
 # speed is the amount of blocks per tick the signal travels
 # half the max range divides the load over 2 ticks
-scoreboard players set #temp exp.speed 100
+scoreboard players set #temp exp.speed 2
 # max range is the max amount of blocks the signal can travel (/2 in this case)
 scoreboard players set #temp exp.max_range 50
 # allowed number of branches
@@ -15,6 +15,6 @@ scoreboard players set #temp exp.size 50
 # damage is a BOOL that determines if this zap can deal damage
 scoreboard players set #temp exp.damage 0
 # determined which particles are displayed
-scoreboard players set #temp exp.unique_id 3
+scoreboard players set #temp exp.unique_id 4
 
-execute at @s positioned ~ ~ ~ positioned ^ ^ ^1 summon marker run function expansion:projectiles/electric_arc/cast
+execute at @s positioned ~ ~50 ~ positioned ^ ^ ^1 summon marker run function expansion:projectiles/electric_arc/cast

@@ -1,2 +1,2 @@
 #execute if predicate expansion:chance/010_chance run 
-function expansion:mechanics/events/lightning/cast
+execute summon marker run function expansion:mechanics/events/core/cast

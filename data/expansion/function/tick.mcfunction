@@ -14,4 +14,5 @@ execute as @e[type=#expansion:block_base,tag=exp.block] at @s positioned ~ ~-1 ~
 execute as @e[type=#expansion:slowcasters,tag=exp.slowcast] at @s run function expansion:projectiles/main
 
 # lightning tests
-#execute as @e[type=armor_stand,tag=exp.test] at @s run function expansion:mechanics/events/test/init
+#execute as @e[type=armor_stand,tag=exp.test] at @s run function expansion:mechanics/events/core/init
+#execute as @e[type=armor_stand,tag=exp.test2] at @s run function expansion:mechanics/events/lightning/init

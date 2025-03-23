@@ -6,8 +6,8 @@ scoreboard players operation #temp exp.yaw = @s exp.yaw
 scoreboard players operation #temp exp.pitch = @s exp.pitch
 
 # get a random value
-execute store result score #random exp.yaw run random value 10..30
-execute store result score #random exp.pitch run random value 10..30
+execute store result score #random exp.yaw run random value 10..35
+execute store result score #random exp.pitch run random value 10..35
 execute if predicate expansion:chance/050_chance run scoreboard players operation #random exp.yaw *= #-1 exp.const
 execute if predicate expansion:chance/050_chance run scoreboard players operation #random exp.pitch *= #-1 exp.const
 
