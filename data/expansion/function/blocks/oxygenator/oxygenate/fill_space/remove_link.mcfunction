@@ -1,2 +1,2 @@
-execute on origin run kill @s
+#execute on origin run kill @s
 kill @s

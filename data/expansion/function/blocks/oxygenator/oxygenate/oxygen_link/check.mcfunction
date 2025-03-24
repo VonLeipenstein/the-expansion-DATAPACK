@@ -1,9 +1,5 @@
+# give oxygen to entities who haven't yet recieved oxygen
 execute on origin if entity @s[tag=exp.recieved_oxygen] run return run function expansion:blocks/oxygenator/oxygenate/give_oxygen
 
-scoreboard players reset #temp exp.bool
-
-execute on origin if entity @s[tag=exp.recieved_oxygen] run scoreboard players set #temp exp.bool 1
-
-execute unless score #temp exp.bool matches 1 run function expansion:blocks/oxygenator/oxygenate/oxygen_link/remove
-
-scoreboard players reset #temp exp.bool
+# remove oxygen from entities that previously had oxygen but left the base
+execute if function expansion:blocks/oxygenator/oxygenate/oxygen_link/not_found run function expansion:blocks/oxygenator/oxygenate/oxygen_link/remove

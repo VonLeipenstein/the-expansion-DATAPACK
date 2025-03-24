@@ -1,2 +1,2 @@
 # remove markers that have no active neighbours
-execute unless function expansion:blocks/oxygenator/oxygenate/fill_space/has_neighbours run function expansion:blocks/oxygenator/oxygenate/fill_space/remove_link
+execute at @s unless entity @e[type=marker,tag=exp.new_scanner,distance=..1.01,limit=1] run kill @s
