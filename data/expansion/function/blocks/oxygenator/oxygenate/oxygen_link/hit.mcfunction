@@ -1,5 +1,5 @@
 # ignore entities that are not players or compressors for future runs
-execute unless entity @s[type=player] unless entity @s[tag=exp.compressor] run return run tag @s add exp.oxygenator.ignore
+execute unless function expansion:blocks/terraformer/valid_entity run return run tag @s add exp.oxygenator.ignore
 
 # create a link to this oxygenator if I didnt have one
 execute unless entity @s[tag=exp.oxygenated] run function expansion:blocks/oxygenator/oxygenate/oxygen_link/prepare

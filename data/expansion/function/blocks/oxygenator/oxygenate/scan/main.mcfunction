@@ -3,7 +3,11 @@ execute if score @s exp.timer_1 matches 1 run function expansion:blocks/oxygenat
 scoreboard players add @s exp.timer_1 1
 
 # visualize airflow
-execute if entity @s[tag=exp.displaying_air] on passengers if entity @s[tag=exp.scanner_link] on origin at @s run particle end_rod ~ ~.5 ~
+#execute if entity @s[tag=exp.displaying_air] on passengers if entity @s[tag=exp.scanner_link] on origin at @s run particle soul_fire_flame ^ ^.5 ^-0.4
+#execute if entity @s[tag=exp.displaying_air] on passengers if entity @s[tag=exp.scanner_link] on origin at @s run particle end_rod ^ ^.5 ^-0.2
+execute if entity @s[tag=exp.displaying_air] on passengers if entity @s[tag=exp.scanner_link] on origin at @s run particle flame ~ ~.5 ~
+#execute if entity @s[tag=exp.displaying_air] on passengers if entity @s[tag=exp.scanner_link] on origin at @s run particle end_rod ^ ^.5 ^0.2
+#execute if entity @s[tag=exp.displaying_air] on passengers if entity @s[tag=exp.scanner_link] on origin at @s run particle flame ^ ^.5 ^0.4
 
 # reset the score that keeps track of the amount of currently present scanners
 scoreboard players reset @s exp.hold_value
@@ -17,7 +21,7 @@ scoreboard players reset #temp exp.counter_2
 execute store success score #temp exp.oxygen_max if entity @s[tag=exp.pressurized]
 
 # fill the base with oxygen markers
-execute at @s on passengers if entity @s[type=snowball,tag=exp.scanner_link] run function expansion:blocks/oxygenator/oxygenate/fill_space/main
+execute at @s on passengers if entity @s[tag=exp.scanner_link] run function expansion:blocks/oxygenator/oxygenate/fill_space/main
 
 # remove leaves from the block
 execute if predicate expansion:periodic/500 run item modify block ~ ~ ~ container.6 expansion:utility/reduce_count

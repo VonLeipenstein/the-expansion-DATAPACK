@@ -1,5 +1,5 @@
-scoreboard players set @s exp.bool 2
-execute at @s run function expansion:blocks/oxygenator/oxygenate/fill_space/add_marker
+execute at @s positioned ~ ~-1 ~ run function expansion:blocks/oxygenator/oxygenate/fill_space/add_marker
+execute at @s summon snowball run function expansion:blocks/oxygenator/oxygenate/fill_space/link_marker
 
 # reset the block counter
 scoreboard players reset @s exp.hold_count
