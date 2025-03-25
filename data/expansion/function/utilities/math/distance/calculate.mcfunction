@@ -1,0 +1,22 @@
+# INPUT: 
+# scoreboard players set #x1 exp.math <x1>
+# scoreboard players set #x2 exp.math <x2>
+# scoreboard players set #y1 exp.math <y1>
+# scoreboard players set #y2 exp.math <y2>
+# scoreboard players set #z1 exp.math <z1>
+# scoreboard players set #z2 exp.math <z2>
+
+scoreboard players operation #x2 exp.math -= #x1 exp.math
+scoreboard players operation #x2 exp.math *= #x2 exp.math
+
+scoreboard players operation #y2 exp.math -= #y1 exp.math
+scoreboard players operation #y2 exp.math *= #y2 exp.math
+
+scoreboard players operation #z2 exp.math -= #z1 exp.math
+scoreboard players operation #z2 exp.math *= #z2 exp.math
+
+scoreboard players operation #x2 exp.math += #y2 exp.math
+scoreboard players operation #x2 exp.math += #z2 exp.math
+
+scoreboard players operation #x sqrt = #x2 exp.math
+return run function expansion:utilities/math/sqrt/calculate

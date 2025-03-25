@@ -10,6 +10,6 @@ execute if score #pitch exp.math matches ..-1 run scoreboard players operation #
 scoreboard players operation #pitch exp.math /= #-90000 exp.const
 scoreboard players add #pitch exp.math 100
 
-#scoreboard players operation #pitch exp.math /= #1000 exp.const
+scoreboard players operation #pitch exp.math /= #1000 exp.const
 scoreboard players operation #roll exp.math *= #pitch exp.math
 
