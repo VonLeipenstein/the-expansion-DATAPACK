@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:item_display",
+		"minecraft:interaction",
 		"minecraft:player"
 	]
 }

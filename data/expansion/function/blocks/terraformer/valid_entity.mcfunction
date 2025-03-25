@@ -1,4 +1,4 @@
-execute if entity @s[type=item_display,tag=!exp.compressor] run return fail
+execute if entity @s[type=interaction,tag=!exp.compressor.rcdet] run return fail
 
 execute if entity @s[type=#expansion:wants_oxygen] run return 1
 

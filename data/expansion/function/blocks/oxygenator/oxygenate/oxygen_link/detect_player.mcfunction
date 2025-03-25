@@ -1,1 +1,1 @@
-execute as @e[type=#expansion:wants_oxygen,tag=!exp.recieved_oxygen,tag=!exp.oxygenator.ignore,distance=..20,limit=1] facing entity @s feet run function expansion:blocks/oxygenator/oxygenate/oxygen_link/find_player
+execute as @e[type=#expansion:wants_oxygen,tag=!exp.oxygenated,tag=!exp.oxygenator.ignore,distance=..20,limit=1] facing entity @s feet run function expansion:blocks/oxygenator/oxygenate/oxygen_link/find_player

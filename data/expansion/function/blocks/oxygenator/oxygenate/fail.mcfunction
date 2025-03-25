@@ -10,7 +10,9 @@ execute if score @s exp.bool matches -1 on passengers if entity @s[tag=exp.oxyge
 execute if score @s exp.bool matches 4 run scoreboard players set @s exp.cooldown 20
 
 # remove all the oxygen scanner markers
-execute as @e[type=marker,tag=exp.oxygen_marker,predicate=expansion:compare_score/unique_id,distance=..25] run kill @s
+scoreboard players operation #search exp.unique_id = @s exp.unique_id
+execute positioned ~-11 ~-11 ~-11 as @e[type=item_display,tag=exp.oxygen_marker,predicate=expansion:compare_score/unique_id,dx=22,dy=22,dz=22] run kill @s
+scoreboard players reset #search exp.unique_id
 
 # remove oxygen from connected players
 execute on passengers if entity @s[tag=exp.oxygen_link] run function expansion:blocks/oxygenator/oxygenate/oxygen_link/remove
