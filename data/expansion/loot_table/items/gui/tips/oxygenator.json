@@ -44,6 +44,12 @@
                 },
                 {
                   "translate":"exp_blocks_oxygenator_guitip5"
+                },
+                {
+                  "translate":"exp_blocks_oxygenator_guitip6"
+                },
+                {
+                  "translate":"exp_blocks_oxygenator_guitip7"
                 }
               ]
             }
