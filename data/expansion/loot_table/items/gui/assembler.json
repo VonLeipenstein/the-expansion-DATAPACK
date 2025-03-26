@@ -24,7 +24,8 @@
                     "strings": [
                       "gui"
                     ]
-                  }
+                  },
+                  "tooltip_style": "expansion:empty"
                 }
               },
               {

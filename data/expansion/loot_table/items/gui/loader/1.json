@@ -28,7 +28,8 @@
                     "floats": [
                       1
                     ]
-                  }
+                  },
+                  "tooltip_style": "expansion:empty"
                 }
               },
               {

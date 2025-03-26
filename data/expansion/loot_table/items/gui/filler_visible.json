@@ -19,7 +19,8 @@
                 "function": "minecraft:set_components",
                 "components": 
                 {
-                  "item_model": "expansion:gui_filler_visible"
+                  "item_model": "expansion:gui_filler_visible",
+                  "tooltip_style": "expansion:empty"
                 }
               },
               {

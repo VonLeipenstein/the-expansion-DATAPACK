@@ -1,6 +1,10 @@
 # prepare the ID score
 scoreboard players operation #search exp.unique_id = @s exp.unique_id
 
+# reset scores
+scoreboard players reset #temp exp.hold_value
+scoreboard players reset #temp exp.oxygen_lvl
+
 # signal to all the oxygen markers whether or not the base is already pressurized
 # used to give players entering a pressurized base instant access to oxygen instead of having to wait until the end of the current scan
 execute store success score #temp exp.oxygen_max if entity @s[tag=exp.pressurized]

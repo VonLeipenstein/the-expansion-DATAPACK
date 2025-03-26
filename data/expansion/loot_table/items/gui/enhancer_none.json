@@ -25,7 +25,8 @@
                       "gui",
                       "none"
                     ]
-                  }
+                  },
+                  "tooltip_style": "expansion:empty"
                 }
               },
               {

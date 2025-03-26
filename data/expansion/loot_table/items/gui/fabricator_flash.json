@@ -25,7 +25,8 @@
                       "gui",
                       "flash"
                     ]
-                  }
+                  },
+                  "tooltip_style": "expansion:empty"
                 }
               },
               {

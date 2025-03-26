@@ -25,7 +25,8 @@
                       "gui",
                       "buggy"
                     ]
-                  }
+                  },
+                  "tooltip_style": "expansion:empty"
                 }
               },
               {

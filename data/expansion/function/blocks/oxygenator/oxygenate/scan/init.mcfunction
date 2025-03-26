@@ -13,5 +13,11 @@ execute if score #random exp.math matches 5 at @s positioned ~ ~-0.5 ~ align xyz
 # Tag all the entities which are currently connected
 execute on passengers if entity @s[tag=exp.oxygen_link] on origin run tag @s add exp.getting_oxygen
 
+# add all entities within 5 blocks so failed titles come through
+execute at @s as @a[distance=..5] run function expansion:blocks/oxygenator/oxygenate/oxygen_link/create
+
 # start the animated block texture
-execute if entity @s[tag=!exp.pressurized] run function expansion:blocks/oxygenator/gui/animated_texture/start
+function expansion:blocks/oxygenator/gui/animated_texture/start
+
+# make sure the perform is synchronized with this
+scoreboard players reset @s exp.timer_2

@@ -19,7 +19,8 @@
                 "function": "minecraft:set_components",
                 "components": 
                 {
-                  "item_model": "expansion:empty"
+                  "item_model": "expansion:empty",
+                  "tooltip_style": "expansion:empty"
                 }
               },
               {

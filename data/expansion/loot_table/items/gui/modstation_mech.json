@@ -25,7 +25,8 @@
                       "gui",
                       "mech"
                     ]
-                  }
+                  },
+                  "tooltip_style": "expansion:empty"
                 }
               },
               {

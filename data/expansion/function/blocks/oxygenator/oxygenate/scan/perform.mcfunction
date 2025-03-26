@@ -1,11 +1,7 @@
-# reset score
-scoreboard players reset #temp exp.hold_value
-scoreboard players reset #temp exp.oxygen_lvl
-
 # expand scan layer
-execute positioned ~-11 ~-11 ~-11 as @e[type=item_display,tag=exp.oxygen_marker,scores={exp.delay=1..},predicate=expansion:compare_score/unique_id,dx=22,dy=22,dz=22,limit=300] run function expansion:blocks/oxygenator/oxygenate/fill_space/main
+execute as @e[type=item_display,tag=exp.oxygen_marker,scores={exp.delay=1..},predicate=expansion:compare_score/unique_id,distance=..20,limit=300] run function expansion:blocks/oxygenator/oxygenate/fill_space/main
 # kill previous layer
-execute positioned ~-11 ~-11 ~-11 run kill @e[type=item_display,tag=exp.oxygen_marker,scores={exp.delay=0},predicate=expansion:compare_score/unique_id,dx=22,dy=22,dz=22,limit=100]
+kill @e[type=item_display,tag=exp.oxygen_marker,scores={exp.delay=0},predicate=expansion:compare_score/unique_id,distance=..20,limit=100]
 
 # establish an oxygen link if an eligible entity was found
 # can only happen once a tick

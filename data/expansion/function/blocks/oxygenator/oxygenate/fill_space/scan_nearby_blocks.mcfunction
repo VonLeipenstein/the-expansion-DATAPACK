@@ -3,7 +3,7 @@
 scoreboard players add #temp exp.hold_value 1
 
 # stop the scan if this entity is out of range
-execute positioned ~1 ~1 ~1 unless entity @s[dx=20,dy=20,dz=20] run return run scoreboard players set #temp exp.hold_value 10000
+execute positioned ~-10 ~-10 ~-10 unless entity @s[dx=20,dy=20,dz=20] run return run scoreboard players set #temp exp.hold_value 10000
 
 # check if the scanner is inside a corner
 # if it is, cast a ray to the nearest oxygen-eligible entity

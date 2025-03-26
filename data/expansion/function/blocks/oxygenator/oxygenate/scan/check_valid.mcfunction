@@ -7,7 +7,7 @@ execute unless score @s exp.hold_value matches 1.. run return 1
 execute if score @s exp.hold_value matches 1000.. run return 2
 
 # the maximum scanning capacity was exceeded
-execute if score @s exp.hold_value matches 100.. run return 3
+execute if score @s exp.hold_value matches 200.. run return 3
 
 # leaves are depleted
 execute unless items block ~ ~-1 ~ container.6 #expansion:leaves run return 4

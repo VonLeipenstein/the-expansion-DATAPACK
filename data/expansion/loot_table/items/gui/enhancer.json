@@ -25,7 +25,8 @@
                       "gui",
                       "weapon"
                     ]
-                  }
+                  },
+                  "tooltip_style": "expansion:empty"
                 }
               },
               {
