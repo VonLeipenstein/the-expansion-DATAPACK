@@ -24,7 +24,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{gui_item:1b,gui_button:1b}"
+                "tag": "{gui_item:1b,gui_button:1b,depressure:1b}"
               }
             ]
           }

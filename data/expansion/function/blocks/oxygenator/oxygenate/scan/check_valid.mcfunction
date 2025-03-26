@@ -10,7 +10,7 @@ execute if score @s exp.hold_value matches 1000.. run return 2
 execute if score @s exp.hold_value matches 100.. run return 3
 
 # leaves are depleted
-execute unless items block ~ ~ ~ container.6 #expansion:leaves run return 4
+execute unless items block ~ ~-1 ~ container.6 #expansion:leaves run return 4
 
 # player pushed the depressurize button
 execute if entity @s[tag=exp.depressurize] run return 5
