@@ -1,3 +1,4 @@
+particle end_rod
 # stop and ignore invalid entities
 execute unless function expansion:blocks/terraformer/valid_entity run return run tag @s add exp.oxygenator.ignore
 

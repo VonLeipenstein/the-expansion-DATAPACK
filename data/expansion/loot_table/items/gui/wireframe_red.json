@@ -5,7 +5,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:jigsaw",
+            "name": "minecraft:poisonous_potato",
             "functions": [
               {
                 "function": "minecraft:set_name",
@@ -19,7 +19,9 @@
                 "function": "minecraft:set_components",
                 "components": 
                 {
-                  "item_model": "expansion:blocks/wireframe_red"
+                  "item_model": "expansion:blocks/wireframe_red",
+                  "!consumable": {},
+                  "!minecraft:food": {}
                 }
               },
               {

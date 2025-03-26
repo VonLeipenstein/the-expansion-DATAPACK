@@ -5,7 +5,7 @@ scoreboard players operation #search exp.unique_id = @s exp.unique_id
 # used to give players entering a pressurized base instant access to oxygen instead of having to wait until the end of the current scan
 execute store success score #temp exp.oxygen_max if entity @s[tag=exp.pressurized]
 
-# Padd the info on whether the air should be visible (used in fill_space/init_marker)
+# add the info on whether the air should be visible (used in fill_space/init_marker)
 execute store success score #temp exp.value if entity @s[tag=exp.displaying_air]
 
 # initiate the scan

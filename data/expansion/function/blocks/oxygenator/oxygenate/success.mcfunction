@@ -13,4 +13,4 @@ scoreboard players reset #search exp.unique_id
 # prepare the oxygenator for another scan so the scanning loops as long as it is successfull
 scoreboard players set @s exp.timer_1 1
 # also set a cooldown so this doesn't run continuously
-scoreboard players set @s exp.cooldown 200
+scoreboard players set @s exp.cooldown 20
