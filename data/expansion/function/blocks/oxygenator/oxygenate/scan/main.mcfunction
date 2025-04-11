@@ -12,7 +12,7 @@ execute store success score #temp exp.value if entity @s[tag=exp.displaying_air]
 # Fill the base with oxygen markers
 scoreboard players add @s exp.timer_2 1
 execute at @s if score @s exp.timer_2 matches 1 run function expansion:blocks/oxygenator/oxygenate/scan/perform
-scoreboard players set @s[scores={exp.timer_2=1}] exp.timer_2 0
+scoreboard players set @s[scores={exp.timer_2=3}] exp.timer_2 0
 
 # Remove leaves from the block
 execute if predicate expansion:periodic/500 if items block ~ ~ ~ container.6 #expansion:leaves run item modify block ~ ~ ~ container.6 expansion:utility/reduce_count

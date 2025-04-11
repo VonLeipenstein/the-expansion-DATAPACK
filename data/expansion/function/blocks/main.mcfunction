@@ -11,13 +11,13 @@ execute if entity @p[distance=..50] run tag @s add exp.loaded
 execute if entity @s[tag=exp.player_nearby] if block ~ ~ ~ minecraft:barrel run function expansion:utilities/barrel/toggle_open
 
 ## blocks that need to be loaded regardless of nearest player distance
-execute if entity @s[tag=exp.oxygenator] run return run function expansion:blocks/oxygenator/main
 execute if entity @s[tag=exp.terraformer] run return run function expansion:blocks/terraformer/main
 execute if entity @s[tag=exp.modstation] run return run function expansion:blocks/modification_station/main
 execute if entity @s[tag=exp.drone_home] run return run function expansion:mobs/evil_drone/drone_home/main
 
 ## blocks that only function when a player is within 50 blocks
 execute unless entity @s[tag=exp.loaded] run return fail
+execute if entity @s[tag=exp.oxygenator] run return run function expansion:blocks/oxygenator/main
 execute if entity @s[tag=exp.lacrymae_extractor] run return run function expansion:blocks/lacrymae_extractor/main
 execute if entity @s[tag=exp.planetarium] run return run function expansion:blocks/planetarium/main
 execute if entity @s[tag=exp.compressor] run return run function expansion:blocks/compressor/main

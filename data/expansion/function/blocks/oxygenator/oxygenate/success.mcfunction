@@ -8,10 +8,9 @@ execute unless entity @s[tag=exp.pressurized] run function expansion:blocks/oxyg
 # Evaluate the success of this scan by the max amount of scanners used (causative for almost all lag)
 # If the best max amount of scanners is smaller than the previously established best max amount,
 # Replace it and the best_start_pos with the start_pos of this scan.
-tellraw @a [{"text": "Scan: "},{"score":{"name":"@s","objective":"exp.passenger_count"}}]
-tellraw @a [{"text": "Current: "},{"score":{"name":"@s","objective":"exp.counter_1"}}]
-tellraw @a [{"text": "Best: "},{"score":{"name":"@s","objective":"exp.counter_2"}}]
-
+#tellraw @a [{"text": "Scan: "},{"score":{"name":"@s","objective":"exp.passenger_count"}}]
+#tellraw @a [{"text": "Current: "},{"score":{"name":"@s","objective":"exp.counter_1"}}]
+#tellraw @a [{"text": "Best: "},{"score":{"name":"@s","objective":"exp.counter_2"}}]
 execute unless score @s exp.counter_1 >= @s exp.counter_2 run data modify entity @s item.components."minecraft:custom_data".best_start_pos set from entity @s item.components."minecraft:custom_data".start_pos
 execute unless score @s exp.counter_1 >= @s exp.counter_2 run scoreboard players operation @s exp.counter_2 = @s exp.counter_1
 

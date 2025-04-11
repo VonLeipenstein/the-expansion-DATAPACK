@@ -46,7 +46,7 @@
                     "id": "exp.movement_speed",
                     "amount": 0,
                     "operation": "add_multiplied_base",
-                    "slot": "legs"
+                    "slot": "head"
                   }
               ]
             },
