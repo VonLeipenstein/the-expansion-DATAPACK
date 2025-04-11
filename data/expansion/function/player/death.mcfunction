@@ -11,5 +11,10 @@ execute if entity @s[tag=exp.has_active_drone] run function expansion:mobs/drone
 # reset gravity
 function expansion:mechanics/gravity/remove_all
 
+# reset oxygen
+tag @s remove exp.inside_habitable_space
+tag @s remove exp.getting_oxygen
+tag @s remove exp.oxygenated
+
 # reset the scoreboard
 scoreboard players set @s exp.death -20

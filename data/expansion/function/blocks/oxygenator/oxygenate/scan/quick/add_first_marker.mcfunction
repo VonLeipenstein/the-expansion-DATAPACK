@@ -1,0 +1,2 @@
+function expansion:blocks/oxygenator/oxygenate/fill_space/add_marker
+data modify entity @s item.components."minecraft:custom_data".start_pos set from entity @e[type=item_display,distance=..0.01,tag=exp.oxygen_marker,limit=1] Pos

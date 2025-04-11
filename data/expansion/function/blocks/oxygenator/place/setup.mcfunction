@@ -12,4 +12,4 @@ execute on passengers if entity @s[tag=exp.wireframe_display] run loot replace e
 
 execute store result score @s exp.unique_id run random value 1..2147483647
 
-scoreboard players set @s exp.bool 0
+scoreboard players set @s exp.counter_2 0

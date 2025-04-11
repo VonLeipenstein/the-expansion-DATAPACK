@@ -5,12 +5,14 @@ execute on passengers if entity @s[tag=exp.oxygen_link] run function expansion:b
 # give the oxygenator a tag that it will keep until a scan fails. This is to give players that enter an already exp.pressurized base immediate access to oxygen
 execute unless entity @s[tag=exp.pressurized] run function expansion:blocks/oxygenator/oxygenate/scan/first_success
 
-# remove all the oxygen scanner markers
-scoreboard players operation #search exp.unique_id = @s exp.unique_id
-execute positioned ~-11 ~-11 ~-11 as @e[type=item_display,tag=exp.oxygen_marker,predicate=expansion:compare_score/unique_id,dx=22,dy=22,dz=22] run kill @s
-scoreboard players reset #search exp.unique_id
+# Evaluate the success of this scan by the max amount of scanners used (causative for almost all lag)
+# If the best max amount of scanners is smaller than the previously established best max amount,
+# Replace it and the best_start_pos with the start_pos of this scan.
+say success
+tellraw @a {"score":{"name":"@s","objective":"exp.counter_1"}}
+tellraw @a {"score":{"name":"@s","objective":"exp.counter_2"}}
+execute unless score @s exp.counter_1 >= @s exp.counter_2 run data modify entity @s item.components."minecraft:custom_data".best_start_pos set from entity @s item.components."minecraft:custom_data".start_pos
+execute unless score @s exp.counter_1 >= @s exp.counter_2 run scoreboard players operation @s exp.counter_2 = @s exp.counter_1
 
-# prepare the oxygenator for another scan so the scanning loops as long as it is successfull
-scoreboard players set @s exp.timer_1 1
-# also set a cooldown so this doesn't run continuously
-scoreboard players set @s exp.cooldown 20
+# Set a cooldown to the next scan
+scoreboard players set @s exp.cooldown 40

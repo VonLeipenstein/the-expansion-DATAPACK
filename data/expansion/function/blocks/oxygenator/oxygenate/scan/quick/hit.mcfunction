@@ -1,6 +1,6 @@
-# 
+# If the max amount of bounces is reached, summon a marker here
 scoreboard players remove #temp exp.hold_count 1
-execute unless score #temp exp.hold_count matches 1.. run return run function expansion:blocks/oxygenator/oxygenate/fill_space/add_marker
+execute unless score #temp exp.hold_count matches 1.. run return run function expansion:blocks/oxygenator/oxygenate/scan/quick/add_first_marker
 
 # cast new rays in a random direction perpendicular to the wall
 execute store result score #random exp.math run random value 0..3
