@@ -5,13 +5,18 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 3,
+          "weight": 5,
           "value": "expansion:items/modules/random_mk2"
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 2,
+          "weight": 4,
           "value": "expansion:items/modules/random_mk3"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:items/modules/slot"
         }
       ]
     }

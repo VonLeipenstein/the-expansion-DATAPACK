@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "weight": 3,
+          "weight": 20,
           "value": "expansion:items/modules/random_mk1"
         },
         {
