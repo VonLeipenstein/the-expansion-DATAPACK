@@ -11,7 +11,7 @@ scoreboard players reset #temp exp.oxygen_lvl
 # score that keeps track of the amount of currently present scanners
 scoreboard players operation @s exp.hold_value = #temp exp.hold_value
 # store the total amount of scanners
-scoreboard players operation @s exp.counter_1 += @s exp.hold_value
+execute if score @s exp.hold_value > @s exp.counter_1 run scoreboard players operation @s exp.counter_1 = @s exp.hold_value
 
 # Merge the number of current scans with the score of the text display
 execute on passengers if entity @s[type=text_display] run function expansion:blocks/oxygenator/gui/text_display/merge_scan_score

@@ -1,7 +1,15 @@
 scoreboard players operation #search exp.unique_id = @s exp.unique_id
 
-# start a scan from a random position (usually a corner) of the room
-function expansion:blocks/oxygenator/oxygenate/scan/init/random_startpos
+# Either start a scan from a random position (usually corner) in the room or from the currently best documented position
+execute store result score #random exp.math run random value 0..100
+scoreboard players set #temp exp.math 0
+execute if score @s exp.passenger_count matches 10.. run scoreboard players set #temp exp.math 20
+execute if score @s exp.passenger_count matches 20.. run scoreboard players set #temp exp.math 50
+execute if score @s exp.passenger_count matches 40.. run scoreboard players set #temp exp.math 80
+execute if score @s exp.passenger_count matches 80.. run scoreboard players set #temp exp.math 95
+
+execute if score #random exp.math > #temp exp.math run function expansion:blocks/oxygenator/oxygenate/scan/init/random_startpos
+execute if score #random exp.math <= #temp exp.math run function expansion:blocks/oxygenator/oxygenate/scan/init/best_startpos
 
 # Tag all the entities which are currently connected
 execute on passengers if entity @s[tag=exp.oxygen_link] on origin run tag @s add exp.getting_oxygen

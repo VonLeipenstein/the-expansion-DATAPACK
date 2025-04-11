@@ -1,0 +1,4 @@
+execute unless data entity @s item.components."minecraft:custom_data".best_start_pos run return run function expansion:blocks/oxygenator/oxygenate/scan/init/random_startpos
+
+function expansion:blocks/oxygenator/oxygenate/fill_space/add_marker
+data modify entity @e[type=item_display,distance=..0.01,tag=exp.oxygen_marker,limit=1] Pos set from entity @s item.components."minecraft:custom_data".best_start_pos
