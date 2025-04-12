@@ -1,4 +1,5 @@
 scoreboard players operation #search exp.unique_id = @s exp.unique_id
+scoreboard players set #temp exp.bool 1
 
 # Either start a scan from a random position (usually corner) in the room or from the currently best documented position
 execute store result score #random exp.math run random value 0..100
@@ -25,3 +26,4 @@ scoreboard players reset @s exp.timer_2
 scoreboard players reset #search exp.unique_id
 # reset registered max amount of scanners
 scoreboard players set @s exp.counter_1 0
+scoreboard players reset #temp exp.bool

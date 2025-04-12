@@ -5,4 +5,4 @@ execute unless function expansion:blocks/terraformer/valid_entity run return run
 execute if entity @s[distance=..1] run return run function expansion:blocks/oxygenator/oxygenate/oxygen_link/hit
 
 # repeat
-execute positioned ^ ^ ^1 unless block ~ ~ ~ #expansion:airtight run function expansion:blocks/oxygenator/oxygenate/oxygen_link/find_player
+execute positioned ^ ^ ^0.7 unless block ~ ~ ~ #expansion:airtight run function expansion:blocks/oxygenator/oxygenate/oxygen_link/find_player

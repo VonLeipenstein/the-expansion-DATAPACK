@@ -8,4 +8,4 @@ execute if score @s exp.timer_2 matches 1.. at @s run function expansion:vehicle
 execute if entity @s[tag=exp.launching] at @s run function expansion:vehicles/rocket/propulsion
 
 # actionbar
-execute if predicate expansion:periodic/10 run function expansion:vehicles/rocket/actionbar
+execute if predicate expansion:periodic/5 run function expansion:vehicles/rocket/actionbar

@@ -18,4 +18,5 @@ execute unless score @s exp.counter_1 >= @s exp.counter_2 run scoreboard players
 scoreboard players add @s exp.passenger_count 1
 
 # Set a cooldown to the next scan
-scoreboard players set @s exp.cooldown 40
+# make this a bit random so multiple oxygenators wont consistently overlap
+execute store result score @s exp.cooldown run random value 5..10

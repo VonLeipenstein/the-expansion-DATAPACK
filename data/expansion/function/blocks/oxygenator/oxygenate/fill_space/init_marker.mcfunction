@@ -3,7 +3,7 @@ scoreboard players operation @s exp.unique_id = #search exp.unique_id
 # render glass cubes if the togle for visible air is set to true
 execute if score #temp exp.value matches 1 run item replace entity @s contents with light_blue_stained_glass
 
-#data merge entity @s {transformation:{scale:[0.5,0.5,0.5]}}
+data merge entity @s {transformation:{translation:[0.5,0.2,-0.5],scale:[0.5,0.5,0.5]}}
 
 tag @s add exp.oxygen_marker
 
