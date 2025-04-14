@@ -1,6 +1,6 @@
 # store any upgrades inside the armor stands head item and check if there is any, don't overwrite existing upgrades
 data remove storage expansion:temp ModStorage
-execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin run data modify storage expansion:temp ModStorage set from entity @s ArmorItems[3].components."minecraft:custom_data".ModStorage
+execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin run data modify storage expansion:temp ModStorage set from entity @s data.ModStorage
 
 ## upgrades
 # if there is an item in slot 9, and there is no data in the lefthand id, add the item to the lefthand

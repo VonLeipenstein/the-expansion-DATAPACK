@@ -1,4 +1,4 @@
-setblock ~ ~ ~ chest{CustomName:'{"text":"Upgrades","color":"#00FFEE"}'} replace
+setblock ~ ~ ~ chest{CustomName:{text:"Upgrades",color:"#00FFEE"}} replace
 
 loot insert ~ ~ ~ loot expansion:blocks/enhancer
 loot insert ~ ~ ~ loot expansion:items/modules/armor/mk1/regular

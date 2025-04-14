@@ -13,6 +13,6 @@ execute if entity @s[tag=exp.europa_marker] run function expansion:vehicles/spac
 
 execute store result score #temp2 exp.distance run function expansion:utilities/math/distance/calculate
 
-execute on passengers run data merge entity @s {text:'[{"text":"Distance:\\n","color": "green"},{"score":{"name":"#temp2","objective":"exp.distance"}},""]'}
+execute on passengers run data merge entity @s {text:[{text:"Distance:\n",color: "green"},{score:{name:"#temp2",objective:"exp.distance"}}]}
 
 scoreboard players reset #temp2 exp.distance

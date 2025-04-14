@@ -12,4 +12,4 @@ execute if score @s exp.fuel_percentage matches 10..49 run data modify storage e
 execute if score @s exp.fuel_percentage matches 0..9 run data modify storage expansion:temp actionbar.fuel[0].color set value "red"
 
 # display the title
-title @p[tag=exp.inside_rocket] actionbar [{"text":"Altitude: "},{"storage":"expansion:temp","nbt": "actionbar.position", "interpret": true, "bold": true},{"text":"    "},{"translate":"exp_screentxt_fuel_actionbar"},{"storage":"expansion:temp","nbt": "actionbar.fuel", "interpret": true, "bold": true}]
+title @p[tag=exp.inside_rocket] actionbar [{text:"Altitude: "},{storage:"expansion:temp",nbt: "actionbar.position", interpret: true, bold: true},{text:"    "},{translate:"exp_screentxt_fuel_actionbar"},{storage:"expansion:temp",nbt: "actionbar.fuel", interpret: true, bold: true}]

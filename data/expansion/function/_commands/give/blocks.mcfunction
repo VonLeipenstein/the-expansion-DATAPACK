@@ -1,4 +1,4 @@
-setblock ~ ~ ~ chest{CustomName:'{"text":"Blocks","color":"#00FFEE"}'} replace
+setblock ~ ~ ~ chest{CustomName:{text:"Blocks",color:"#00FFEE"}} replace
 
 
 loot insert ~ ~ ~ loot expansion:blocks/fabricator

@@ -8,7 +8,7 @@ execute at @s rotated ~ 0 run function animated_java:buggy/summon {args: {}}
 ride @e[type=item_display,tag=aj.buggy.root,distance=..0.01,limit=1] mount @s
 
 # copy the buggy item to a storage
-data modify entity @s ArmorItems[0] set from entity @p[tag=exp.tick_player] SelectedItem
+data modify entity @s equipment.feet set from entity @p[tag=exp.tick_player] SelectedItem
 
 # make the buggy weightless if it is in a zero gravity environment
 data merge entity @s[predicate=expansion:dimension/zero_gravity] {NoGravity:1b}
@@ -20,4 +20,4 @@ execute rotated as @s on passengers if entity @s[tag=exp.buggy_turn] positioned 
 function expansion:vehicles/buggy/oxygen/merge_scores_from_tank
 # extract speed data from the item
 scoreboard players set @s exp.speed_mod 10
-execute if data entity @s ArmorItems[0].components."minecraft:custom_data".ModStorage.speed_mod.components."minecraft:custom_data".value store result score @s exp.speed_mod run data get entity @s ArmorItems[0].components."minecraft:custom_data".ModStorage.speed_mod.components."minecraft:custom_data".value
+execute if data entity @s data.ModStorage.speed_mod.components."minecraft:custom_data".value store result score @s exp.speed_mod run data get entity @s data.ModStorage.speed_mod.components."minecraft:custom_data".value

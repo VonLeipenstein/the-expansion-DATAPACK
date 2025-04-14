@@ -1,4 +1,4 @@
-setblock ~ ~ ~ minecraft:cobblestone{CustomName:'{"translate":"exp_blocks_planetarium_name","color":"dark_gray"}'} replace
+setblock ~ ~ ~ minecraft:cobblestone{CustomName:{translate:"exp_blocks_planetarium_name",color:"dark_gray"}} replace
 
 # place the main block
 tag @s add exp.block

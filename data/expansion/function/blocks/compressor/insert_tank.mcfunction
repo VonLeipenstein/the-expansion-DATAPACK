@@ -15,5 +15,5 @@ execute if items entity @s container.0 *[minecraft:custom_data~{exp_item:{name:"
 function expansion:blocks/compressor/compress/start
 
 # remove the custom name from the compressor
-execute on passengers if entity @s[type=interaction] run data merge entity @s {CustomName:'""'}
+execute on passengers if entity @s[type=interaction] run data merge entity @s {CustomName:""}
 

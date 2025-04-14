@@ -4,11 +4,11 @@
 loot replace block ~ ~ ~ container.9 loot expansion:items/gui/filler
 
 # correction because the system didn't understand the slot otherwise because I removed its data in the crafting in the assembler
-data modify entity @s ArmorItems[0].components."minecraft:custom_data".ModStorage.oxygen_tank.Slot set value 9b
+data modify entity @s data.ModStorage.oxygen_tank.Slot set value 9b
 
 # copy from the buggy to the placeholder item and remove buggy data
-data modify block ~ ~ ~ Items[{Slot:9b}] set from entity @s ArmorItems[0].components."minecraft:custom_data".ModStorage.oxygen_tank
-data remove entity @s ArmorItems[0].components."minecraft:custom_data".ModStorage.oxygen_tank
+data modify block ~ ~ ~ Items[{Slot:9b}] set from entity @s data.ModStorage.oxygen_tank
+data remove entity @s data.ModStorage.oxygen_tank
 
 # calculate tanks new percentage and find the new tank cmd
 scoreboard players operation #input exp.math = @s exp.oxygen_lvl

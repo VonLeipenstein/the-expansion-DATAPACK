@@ -2,7 +2,7 @@ kill @e[type=minecraft:interaction,tag=exp.module_takeoff,limit=1,sort=nearest]
 playsound expansion:lunarmodule.launch player @p ~ ~ ~
 particle flame ~ ~2 ~ 0 0 0 0.2 200
 particle minecraft:cloud ~ ~2 ~ 0 0 0 0.3 300
-title @p subtitle {"text":"Do not leave the lunar module from now on.","color":"gold","bold":true}
+title @p subtitle {text:"Do not leave the lunar module from now on.",color:"gold",bold:true}
 
 tp @s ~ ~4 ~
 effect give @s minecraft:levitation infinite 20 true

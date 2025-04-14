@@ -1,2 +1,2 @@
-tellraw @p[predicate=expansion:compare_score/unique_id,tag=exp.has_active_drone] [{"text":"[","color":"green"},{"selector":"@s","color":"green"},{"translate":"exp_drone_hithead","color":"green"}]
+tellraw @p[predicate=expansion:compare_score/unique_id,tag=exp.has_active_drone] [{text:"[",color:"green"},{selector:"@s",color:"green"},{translate:"exp_drone_hithead",color:"green"}]
 tag @s remove exp.located_structure

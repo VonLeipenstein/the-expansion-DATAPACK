@@ -6,14 +6,14 @@ item replace entity @s[tag=!exp.added_data] armor.head with jigsaw[minecraft:ite
 data merge entity @s[tag=!exp.added_data] {Silent:1b,Marker:1b,Invisible:1b}
 
 # add an entry for a return position
-data modify entity @s ArmorItems[3].components."minecraft:custom_data".returns insert 0 value {position:{},dimension:0,id:0}
+data modify entity @s data.returns insert 0 value {position:{},dimension:0,id:0}
 
 # fill in the data
-execute store result entity @s ArmorItems[3].components."minecraft:custom_data".returns[0].position.x double 1 run scoreboard players get #temp exp.x
-execute store result entity @s ArmorItems[3].components."minecraft:custom_data".returns[0].position.y double 1 run scoreboard players get #temp exp.y
-execute store result entity @s ArmorItems[3].components."minecraft:custom_data".returns[0].position.z double 1 run scoreboard players get #temp exp.z
-execute store result entity @s ArmorItems[3].components."minecraft:custom_data".returns[0].dimension double 1 run scoreboard players get #temp exp.dim_test
-execute store result entity @s ArmorItems[3].components."minecraft:custom_data".returns[0].id double 1 run scoreboard players get #temp exp.unique_id
+execute store result entity @s data.returns[0].position.x double 1 run scoreboard players get #temp exp.x
+execute store result entity @s data.returns[0].position.y double 1 run scoreboard players get #temp exp.y
+execute store result entity @s data.returns[0].position.z double 1 run scoreboard players get #temp exp.z
+execute store result entity @s data.returns[0].dimension double 1 run scoreboard players get #temp exp.dim_test
+execute store result entity @s data.returns[0].id double 1 run scoreboard players get #temp exp.unique_id
 
 # reset the scores
 scoreboard players reset #temp exp.dim_test

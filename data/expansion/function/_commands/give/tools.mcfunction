@@ -1,4 +1,4 @@
-setblock ~ ~ ~ chest{CustomName:'{"text":"Tools","color":"#00FFEE"}'} replace
+setblock ~ ~ ~ chest{CustomName:{text:"Tools",color:"#00FFEE"}} replace
 
 
 loot insert ~ ~ ~ loot expansion:tools/cryoblaster

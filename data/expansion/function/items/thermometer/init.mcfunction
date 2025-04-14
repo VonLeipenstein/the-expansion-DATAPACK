@@ -12,7 +12,7 @@ execute if score @s exp.temperature matches 1.. run function expansion:items/the
 execute if score @s exp.temperature matches ..-1 run function expansion:items/thermometer/cold_resist
 
 # display the title
-tellraw @s ["",{"storage":"expansion:temp","nbt": "tellraw.temperature", "interpret": true,"bold": true},{"text":"\n"},{"storage":"expansion:temp","nbt": "tellraw.head", "interpret": true},{"text":"\n"},{"storage":"expansion:temp","nbt": "tellraw.chest", "interpret": true},{"text":"\n"},{"storage":"expansion:temp","nbt": "tellraw.legs", "interpret": true},{"text":"\n"},{"storage":"expansion:temp","nbt": "tellraw.feet", "interpret": true}]
+tellraw @s ["",{"storage":"expansion:temp","nbt": "tellraw.temperature", "interpret": true,bold: true},{text:"\n"},{"storage":"expansion:temp","nbt": "tellraw.head", "interpret": true},{text:"\n"},{"storage":"expansion:temp","nbt": "tellraw.chest", "interpret": true},{text:"\n"},{"storage":"expansion:temp","nbt": "tellraw.legs", "interpret": true},{text:"\n"},{"storage":"expansion:temp","nbt": "tellraw.feet", "interpret": true}]
 
 # reset data storages & scores
 data remove storage expansion:temp tellraw

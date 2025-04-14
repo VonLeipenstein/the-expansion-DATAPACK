@@ -1,4 +1,4 @@
-setblock ~ ~ ~ chest{CustomName:'{"text":"Crafting items","color":"#00FFEE"}'} replace
+setblock ~ ~ ~ chest{CustomName:{text:"Crafting items",color:"#00FFEE"}} replace
 
 
 loot insert ~ ~ ~ loot expansion:items/steel_ingot

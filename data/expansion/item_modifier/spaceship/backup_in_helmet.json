@@ -8,7 +8,7 @@
       "ops": [
         {
           "source": "data",
-          "target": "Inventory[{Slot:103b}].spaceship_store[{}]",
+          "target": "equipment.head.spaceship_store[{}]",
           "op": "replace"
         }
       ]

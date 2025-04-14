@@ -13,5 +13,5 @@ scoreboard players add @s exp.cooldown 80
 execute on vehicle on passengers on passengers if entity @s[tag=exp.mech_pilot] at @s anchored eyes positioned ^ ^ ^4 summon marker run function expansion:projectiles/homing_rocket/target/cast
 
 # store the target UUID for later reference
-execute on vehicle run data modify entity @s ArmorItems[3].components."minecraft:custom_data".rocket_target append from storage expansion:owner data.current_UUID
+execute on vehicle run data modify entity @s data.rocket_target append from storage expansion:owner data.current_UUID
 data remove storage expansion:owner data.current_UUID

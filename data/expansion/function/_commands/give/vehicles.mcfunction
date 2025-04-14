@@ -1,4 +1,4 @@
-setblock ~ ~ ~ chest{CustomName:'{"text":"Vehicles","color":"#00FFEE"}'} replace
+setblock ~ ~ ~ chest{CustomName:{text:"Vehicles",color:"#00FFEE"}} replace
 
 
 loot insert ~ ~ ~ loot expansion:items/fuel/lacrymae

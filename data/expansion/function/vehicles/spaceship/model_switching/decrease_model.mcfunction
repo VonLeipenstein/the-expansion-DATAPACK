@@ -1,1 +1,1 @@
-data remove entity @s ArmorItems[3].components.minecraft:custom_model_data.strings[1]
+data remove entity @s equipment.head.components.minecraft:custom_model_data.strings[1]

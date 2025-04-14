@@ -1,5 +1,5 @@
 # merge the mod array with the mech
-data modify entity @s ArmorItems[3].components."minecraft:custom_data".ModStorage merge from storage expansion:temp ModStorage
+data modify entity @s data.ModStorage merge from storage expansion:temp ModStorage
 
 # set tags and stuff
 execute if data storage expansion:temp ModStorage.lefthand.components."minecraft:custom_data".sword on passengers if entity @s[tag=exp.left_arm_control] run function expansion:vehicles/mech/actions/swing/equip

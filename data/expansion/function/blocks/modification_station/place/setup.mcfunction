@@ -3,7 +3,7 @@ tag @s remove exp.modstation.new
 function expansion:blocks/set_rotation
 
 # block
-setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'{"translate":"exp_blocks_modstation_name","color":"dark_gray"}'} replace
+setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:{translate:"exp_blocks_modstation_name",color:"dark_gray"}} replace
 
 # pre-load GUI
 function expansion:blocks/modification_station/gui/none

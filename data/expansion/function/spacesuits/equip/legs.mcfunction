@@ -2,4 +2,4 @@ item modify entity @s armor.legs {"function": "minecraft:set_custom_data",tag:{e
 
 tag @s add exp.armor.legs
 
-data modify storage expansion:temp equipment set from entity @s Inventory[{Slot:101b}]
+data modify storage expansion:temp equipment set from entity @s equipment.legs

@@ -1,4 +1,4 @@
-setblock ~ ~ ~ chest{CustomName:'{"text":"Armor","color":"#00FFEE"}'} replace
+setblock ~ ~ ~ chest{CustomName:{text:"Armor",color:"#00FFEE"}} replace
 
 loot insert ~ ~ ~ loot expansion:armor/diver/set
 loot insert ~ ~ ~ loot expansion:armor/nasa/set

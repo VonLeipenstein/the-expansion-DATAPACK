@@ -16,4 +16,4 @@ execute if score #temp exp.counter_2 matches 1.. run data modify storage expansi
 scoreboard players reset #temp exp.counter_2
 
 # display the title
-title @s actionbar [{"translate":"exp_screentxt_oxygen_level"},{"storage":"expansion:temp","nbt": "actionbar.oxygen", "interpret": true, "bold": true},{"text":"    "},{"text":"Suit Integrity: "},{"storage":"expansion:temp","nbt": "actionbar.integrity", "interpret": true, "bold": true}]
+title @s actionbar [{translate:"exp_screentxt_oxygen_level"},{storage:"expansion:temp",nbt: "actionbar.oxygen", interpret: true, bold: true},{text:"    "},{text:"Suit Integrity: "},{storage:"expansion:temp",nbt: "actionbar.integrity", interpret: true, bold: true}]

@@ -1,13 +1,13 @@
 {
 	"pack": {
-		"pack_format": 61,
-		"description": "The Expansion - Explore Space In Minecraft [1.21.4]"
+		"pack_format": 71,
+		"description": "The Expansion - Explore Space In Minecraft [1.21.5]"
 	},
 	"overlays": {
 		"entries": [
 			{
 				"directory": "animated_java",
-				"formats": 61
+				"formats": 71
 			}
 		]
 	}

@@ -6,7 +6,7 @@ execute unless score @s exp.oxygen_max matches 1.. run return fail
 
 # Merge my oxygen score with the tanks in my equipment
 scoreboard players operation #input exp.oxygen_lvl = @s exp.oxygen_lvl
-data modify storage expansion:temp ModStorage set from entity @s Inventory[{Slot:102b}].components."minecraft:custom_data".ModStorage
+data modify storage expansion:temp ModStorage set from entity @s equipment.chest.components."minecraft:custom_data".ModStorage
 function expansion:spacesuits/set_oxygen_data/init_loop
 
 # calculate new oxygen tank lore sprites

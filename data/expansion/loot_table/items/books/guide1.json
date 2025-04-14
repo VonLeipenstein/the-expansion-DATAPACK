@@ -55,37 +55,37 @@
                     {
                       "translate":"exp_guide1_contents"},
                     {
-                      "translate":"exp_guide1_contents_chapter1","clickEvent":{"action":"change_page","value":"4"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_chapter1","click_event":{"action":"change_page","page":4},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_oxygen","clickEvent":{"action":"change_page","value":"4"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_oxygen","click_event":{"action":"change_page","page":4},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_temperature","clickEvent":{"action":"change_page","value":"5"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_temperature","click_event":{"action":"change_page","page":5},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_spacesuit","clickEvent":{"action":"change_page","value":"6"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_spacesuit","click_event":{"action":"change_page","page":6},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_checklist","clickEvent":{"action":"change_page","value":"7"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_checklist","click_event":{"action":"change_page","page":7},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_chapter2","clickEvent":{"action":"change_page","value":"8"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_chapter2","click_event":{"action":"change_page","page":8},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_itemrecipes","clickEvent":{"action":"change_page","value":"8"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_itemrecipes","click_event":{"action":"change_page","page":8},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_blockrecipes","clickEvent":{"action":"change_page","value":"9"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_blockrecipes","click_event":{"action":"change_page","page":9},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_toolrecipes","clickEvent":{"action":"change_page","value":"10"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_toolrecipes","click_event":{"action":"change_page","page":10},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_armorrecipes","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_armorrecipes","click_event":{"action":"change_page","page":11},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_vehiclerecipes","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_vehiclerecipes","click_event":{"action":"change_page","page":12},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     }
                   ]
                 },
@@ -95,25 +95,25 @@
                       "translate":"exp_guide1_contents"
                     },
                     {
-                      "translate":"exp_guide1_contents_chapter3","clickEvent":{"action":"change_page","value":"13"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_chapter3","click_event":{"action":"change_page","page":13},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_moon","clickEvent":{"action":"change_page","value":"13"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_moon","click_event":{"action":"change_page","page":13},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_mars","clickEvent":{"action":"change_page","value":"14"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_mars","click_event":{"action":"change_page","page":14},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_venus","clickEvent":{"action":"change_page","value":"15"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_venus","click_event":{"action":"change_page","page":15},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_jupiter","clickEvent":{"action":"change_page","value":"16"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_jupiter","click_event":{"action":"change_page","page":16},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_europa","clickEvent":{"action":"change_page","value":"17"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_europa","click_event":{"action":"change_page","page":17},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_asteroids","clickEvent":{"action":"change_page","value":"18"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_asteroids","click_event":{"action":"change_page","page":18},"hover_event":{"action":"show_text","value":[{"translate":"exp_guide1_clicktogo"}]}
                     }
                   ]
                 },
@@ -163,9 +163,9 @@
                       "with":[
                         {
                           "text":"\uff00",
-                          "hoverEvent": {
+                          "hover_event": {
                             "action":"show_text",
-                            "contents": [
+                            "value": [
                               {"translate":"exp_items_steelingot_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff50"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -182,9 +182,9 @@
                       "with": [
                         {
                           "text":"\uff02",
-                          "hoverEvent": {
+                          "hover_event": {
                             "action":"show_text",
-                            "contents": [
+                            "value": [
                               {"translate":"exp_items_steelplate_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff52"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -201,9 +201,9 @@
                       "with": [
                         {
                           "text":"\uff03",
-                          "hoverEvent": {
+                          "hover_event": {
                             "action":"show_text",
-                            "contents": [
+                            "value": [
                               {"translate":"exp_items_gear_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff53"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -220,9 +220,9 @@
                       "with": [
                         {
                           "text":"\uff04",
-                          "hoverEvent": {
+                          "hover_event": {
                             "action":"show_text",
-                            "contents": [
+                            "value": [
                               {"translate":"exp_items_fan_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff94"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -238,9 +238,9 @@
                       "font":"expansion:default","with":[
                         {
                           "text":"\uff05",
-                          "hoverEvent": {
+                          "hover_event": {
                             "action":"show_text",
-                            "contents": [
+                            "value": [
                               {"translate":"exp_items_copper_wire_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff54"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -257,9 +257,9 @@
                       "with":[
                         {
                           "text":"\uff06",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_simplemechanism_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff55"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -279,9 +279,9 @@
                       "with":[
                         {
                           "text":"\uff07",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_cpu_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff56"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -298,9 +298,9 @@
                       "with":[
                         {
                           "text":"\uff08",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_oxygenfilter_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff57"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -317,9 +317,9 @@
                       "with":[
                         {
                           "text":"\uff10",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_electromagnet_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff58"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -336,9 +336,9 @@
                       "with":[
                         {
                           "text":"\uff11",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_elektromotor_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff59"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -358,9 +358,9 @@
                       "with":[
                         {
                           "text":"\uff13",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_thruster_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff61"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -377,9 +377,9 @@
                       "with":[
                         {
                           "text":"\ufb08",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_monochromemonitor_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb07"}]},
                               {"translate":"exp_guide1_tintedglasstip"},
@@ -400,9 +400,9 @@
                       "with":[
                         {
                           "text":"\uff01",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_amethoniumingot_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff51"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -419,9 +419,9 @@
                       "with":[
                         {
                           "text":"\uff14",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_amethoniumplate_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff62"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -438,9 +438,9 @@
                       "with":[
                         {
                           "text":"\uff15",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_circuitboard_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff63"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -457,9 +457,9 @@
                       "with":[
                         {
                           "text":"\uff16",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_complexmechanism_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff64"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -476,9 +476,9 @@
                       "with":[
                         {
                           "text":"\uff17",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_robotarm_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff65"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -495,9 +495,9 @@
                       "with":[
                         {
                           "text":"\uff18",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_coolingelement_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff66"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -517,9 +517,9 @@
                       "with":[
                         {
                           "text":"\uff19",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_heatingelement_name"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff67"}]},
                               {"translate":"exp_guide_craftedin"},
@@ -546,9 +546,9 @@
                       ,"with":[
                         {
                           "text":"\uff20 ",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_arcfurnace_name"},
                               {"translate":"exp_guide1_arcfurnace_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff68"}]},
@@ -567,9 +567,9 @@
                       "with":[
                         {
                           "text":"\uff21",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_fabricator_name"},
                               {"translate":"exp_guide1_fabricator_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa06"}]},
@@ -589,9 +589,9 @@
                       "with":[
                         {
                           "text":"\uff22",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_assembler_name"},
                               {"translate":"exp_guide1_assembler_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff70"}]},
@@ -612,9 +612,9 @@
                       "with":[
                         {
                           "text":"\uff23",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_compressor_name"},
                               {"translate":"exp_guide1_compressor_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff71"}]},
@@ -632,9 +632,9 @@
                       "with":[
                         {
                           "text":"\uff24",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_oxygenator_name"},
                               {"translate":"exp_guide1_oxygenator_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff72"}]},
@@ -652,9 +652,9 @@
                       "with":[
                         {
                           "text":"\uff25",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_terraformer_name"},
                               {"translate":"exp_guide1_terraformer_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff73"}]},
@@ -675,9 +675,9 @@
                       "with":[
                         {
                           "text":"\uff27",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_extractor_name"},
                               {"translate":"exp_guide1_extractor_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff74"}]},
@@ -695,9 +695,9 @@
                       "with":[
                         {
                           "text":"\uff26",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_planetarium_name"},
                               {"translate":"exp_guide1_planetarium_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff75"}]},
@@ -715,9 +715,9 @@
                       "with":[
                         {
                           "text":"\uff28",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_enhancer_name"},
                               {"translate":"exp_guide1_enhancer_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff76"}]},
@@ -735,9 +735,9 @@
                       "with":[
                         {
                           "text":"\uff29",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_teslacoil_name"},
                               {"translate":"exp_guide1_teslacoil_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb02"}]},
@@ -755,9 +755,9 @@
                       "with":[
                         {
                           "text":"\ufb10",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_blocks_modstation_name"},
                               {"translate":"exp_guide1_modstation_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb03"}]},
@@ -785,9 +785,9 @@
                       "with":[
                         {
                           "text":"\uff09",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_tools_oxygentank_name"},{"translate":"exp_modules_mk1"},
                               {"translate":"exp_guide1_oxygentank_lore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff78"}]},
@@ -805,9 +805,9 @@
                       "with":[
                         {
                           "text":"\ufa11",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_tools_oxygentank_name"},{"translate":"exp_modules_mk2"},
                               {"translate":"exp_guide1_oxygentankmk2_lore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa12"}]},
@@ -828,9 +828,9 @@
                       "with":[
                         {
                           "text":"\uff36",
-                            "hoverEvent":{
+                            "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_weapons_railgun_name"},
                               {"translate":"exp_guide1_railgun_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff79"}]},
@@ -847,8 +847,8 @@
                       "with":[
                         {
                           "text":"\uff37",
-                          "hoverEvent":{
-                            "action":"show_text","contents":[{"translate":"exp_tools_cryoblaster_name"},
+                          "hover_event":{
+                            "action":"show_text","value":[{"translate":"exp_tools_cryoblaster_name"},
                             {"translate":"exp_guide1_cryoblaster_tip"},
                             {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff80"}]},
                             {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}
@@ -867,9 +867,9 @@
                       "with":[
                         {
                           "text":"\uff38",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_tools_wrench_name"},
                               {"translate":"exp_guide1_wrench_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff81"}]},
@@ -886,9 +886,9 @@
                       "with":[
                         {
                           "text":"\ufa35",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_tools_repairkit_name"},
                               {"translate":"exp_guide1_repairkit_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa36"}]},
@@ -905,9 +905,9 @@
                       "with":[
                         {
                           "text":"\ufa37",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_tools_thermometer_name"},
                               {"translate":"exp_guide1_thermometer_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa38"}]},
@@ -924,9 +924,9 @@
                       "with":[
                         {
                           "text":"\ufb09",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_drone_name"},
                               {"translate":"exp_guide1_drone_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb04"}]},
@@ -943,9 +943,9 @@
                       "with":[
                         {
                           "text":"\ufb11",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_fuelmod_name"},
                               {"translate":"exp_guide1_fuelmod_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb13"}]},
@@ -962,9 +962,9 @@
                       "with":[
                         {
                           "text":"\ufb12",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_items_speedmod_name"},
                               {"translate":"exp_guide1_speedmod_tip"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb14"}]},
@@ -991,9 +991,9 @@
                       "with":[
                         {
                           "text":"\ufa13",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_suit_diver_helmet"},
                               {"translate":"exp_suit_diver_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa21"}]},
@@ -1012,9 +1012,9 @@
                       "with":[
                         {
                           "text":"\ufa14",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_suit_diver_chestplate"},
                               {"translate":"exp_suit_diver_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa22"}]},
@@ -1032,9 +1032,9 @@
                       "with":[
                         {
                           "text":"\ufa15",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_suit_diver_leggings"},
                               {"translate":"exp_suit_diver_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa23"}]},
@@ -1052,9 +1052,9 @@
                       "with":[
                         {
                           "text":"\ufa16",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_suit_diver_boots"},
                               {"translate":"exp_suit_diver_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa24"}]},
@@ -1075,9 +1075,9 @@
                       "with":[
                         {
                           "text":"\ufa17",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_suit_nasa_helmet"},
                               {"translate":"exp_suit_nasa_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa25"}]},
@@ -1096,9 +1096,9 @@
                       "with":[
                         {
                           "text":"\ufa18",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_suit_nasa_chestplate"},
                               {"translate":"exp_suit_nasa_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa26"}]},
@@ -1116,9 +1116,9 @@
                       "with":[
                         {
                           "text":"\ufa19",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_suit_nasa_leggings"},
                               {"translate":"exp_suit_nasa_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa27"}]},
@@ -1136,9 +1136,9 @@
                       "with":[
                         {
                           "text":"\ufa20",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_suit_nasa_boots"},
                               {"translate":"exp_suit_nasa_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa28"}]},
@@ -1159,9 +1159,9 @@
                       "with":[
                         {
                           "text":"\uff40",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_modules_coldresist_name"},{"translate":"exp_modules_mk1"},
                               {"translate":"exp_modules_coldresistmk1_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff83"}]},
@@ -1180,9 +1180,9 @@
                       "with":[
                         {
                           "text":"\uff39",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_modules_heatresist_name"},{"translate":"exp_modules_mk1"},
                               {"translate":"exp_modules_heatresistmk1_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff82"}]},
@@ -1201,9 +1201,9 @@
                       "with":[
                         {
                           "text":"\ufa33",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_modules_durability_name"},{"translate":"exp_modules_mk1"},
                               {"translate":"exp_modules_durabilitymk1_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb05"}]},
@@ -1222,9 +1222,9 @@
                       "with":[
                         {
                           "text":"\ufb17",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_modules_rocket_name"},
                               {"translate":"exp_modules_rocket_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb19"}]},
@@ -1243,9 +1243,9 @@
                       "with":[
                         {
                           "text":"\ufb16",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_modules_magnetic_name"},
                               {"translate":"exp_modules_magnetic_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb18"}]},
@@ -1267,9 +1267,9 @@
                       "with":[
                         {
                           "text":"\ufa29",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_modules_coldresist_name"},{"translate":"exp_modules_mk2"},
                               {"translate":"exp_modules_coldresistmk2_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa31"}]},
@@ -1288,9 +1288,9 @@
                       "with":[
                         {
                           "text":"\ufa30",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_modules_heatresist_name"},{"translate":"exp_modules_mk2"},
                               {"translate":"exp_modules_heatresistmk2_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa32"}]},
@@ -1309,9 +1309,9 @@
                       "with":[
                         {
                           "text":"\ufa34",
-                          "hoverEvent":{
+                          "hover_event":{
                             "action":"show_text",
-                            "contents":[
+                            "value":[
                               {"translate":"exp_modules_durability_name"},{"translate":"exp_modules_mk2"},
                               {"translate":"exp_modules_durabilitymk2_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb06"}]},
@@ -1330,44 +1330,44 @@
                     {
                       "translate":"exp_guide1_vehiclerecipes"},
                     {
-                      "translate":"exp_guide1_rocket"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff30  ","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_rocket_name"},{"translate":"exp_guide1_rocket_tip"},{"translate":"exp_guide1_rocket_craft"}]}}]
+                      "translate":"exp_guide1_rocket"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff30  ","hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_rocket_name"},{"translate":"exp_guide1_rocket_tip"},{"translate":"exp_guide1_rocket_craft"}]}}]
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff41  ","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_rocketbottom_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff85"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff41  ","hover_event":{"action":"show_text","value":[{"translate":"exp_items_rocketbottom_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff85"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff42  ","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_rocketcockpit_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff86"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff42  ","hover_event":{"action":"show_text","value":[{"translate":"exp_items_rocketcockpit_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff86"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff43  ","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_rockettop_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff87"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff43  ","hover_event":{"action":"show_text","value":[{"translate":"exp_items_rockettop_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff87"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
                     },
                     {
                       "translate":"exp_guide1_buggy"},
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff31  ","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_buggy_name"},{"translate":"exp_guide1_buggy_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff88"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff31  ","hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_buggy_name"},{"translate":"exp_guide1_buggy_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff88"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}]}}]
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff12","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_buggywheel_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff60"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff12","hover_event":{"action":"show_text","value":[{"translate":"exp_items_buggywheel_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff60"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
                     },
                     {
                       "translate":"exp_guide1_spaceship"},
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff48 ","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_shipnose_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb20"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff48 ","hover_event":{"action":"show_text","value":[{"translate":"exp_items_shipnose_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb20"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff47 ","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_shipcockpit_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff92"}]},{"translate":"exp_guide1_tintedglasstip"},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff47 ","hover_event":{"action":"show_text","value":[{"translate":"exp_items_shipcockpit_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff92"}]},{"translate":"exp_guide1_tintedglasstip"},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff46 ","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_shipengines_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff93"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff46 ","hover_event":{"action":"show_text","value":[{"translate":"exp_items_shipengines_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff93"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff44 ","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_shiplwing_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff90"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff44 ","hover_event":{"action":"show_text","value":[{"translate":"exp_items_shiplwing_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff90"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff45\n\n\n","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_shiprwing_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff91"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff45\n\n\n","hover_event":{"action":"show_text","value":[{"translate":"exp_items_shiprwing_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff91"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide1_spaceship_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff89"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide1_spaceship_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff89"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}]}}]
                     }
                   ]
                 },
@@ -1389,19 +1389,19 @@
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff95","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_rawtitanium_name"},{"translate":"exp_guide1_ore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff98"}]},{"translate":"exp_guide1_oredesc_titanium_moon"}]}}]
+                      "with":[{"text":"\uff95","hover_event":{"action":"show_text","value":[{"translate":"exp_items_rawtitanium_name"},{"translate":"exp_guide1_ore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff98"}]},{"translate":"exp_guide1_oredesc_titanium_moon"}]}}]
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\ufb01","hoverEvent":{"action":"show_text","contents":[{"translate":"item.minecraft.amethyst_shard"},{"translate":"exp_guide1_oredesc_amethyst"}]}}]
+                      "with":[{"text":"\ufb01","hover_event":{"action":"show_text","value":[{"translate":"item.minecraft.amethyst_shard"},{"translate":"exp_guide1_oredesc_amethyst"}]}}]
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\ufb15","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_computingcore_name"},{"translate":"exp_items_itemdesc_aicore"}]}}]
+                      "with":[{"text":"\ufb15","hover_event":{"action":"show_text","value":[{"translate":"exp_items_computingcore_name"},{"translate":"exp_items_itemdesc_aicore"}]}}]
                     },
                     {
                       "translate":"exp_guide1_temperature","color":"black","font":"minecraft:default"
@@ -1410,19 +1410,19 @@
                       "translate":"exp_guide1_moontemp",
                       "color":"black",
                       "font":"minecraft:default",
-                      "hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_tempexplainer"}}},{"translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
+                      "hover_event":{"action":"show_text","value":{"translate":"exp_guide1_tempexplainer"}}},{"translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff30","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_rocket_name"},{"translate":"exp_guide_click"}]}}]
+                      "with":[{"text":"\uff30","click_event":{"action":"change_page","page":12},"hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_rocket_name"},{"translate":"exp_guide_click"}]}}]
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
+                      "with":[{"text":"\uff32","click_event":{"action":"change_page","page":12},"hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
                     }
                   ]
                 },
@@ -1438,22 +1438,22 @@
                       "translate":"exp_guide1_materials","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff95","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_rawtitanium_name"},{"translate":"exp_guide1_ore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff98"}]},{"translate":"exp_guide1_oredesc_titanium_mars"}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff95","hover_event":{"action":"show_text","value":[{"translate":"exp_items_rawtitanium_name"},{"translate":"exp_guide1_ore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff98"}]},{"translate":"exp_guide1_oredesc_titanium_mars"}]}}]
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff96","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_cryonite_name"},{"translate":"exp_guide1_ore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff99"}]},{"translate":"exp_guide1_oredesc_cryonite"}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff96","hover_event":{"action":"show_text","value":[{"translate":"exp_items_cryonite_name"},{"translate":"exp_guide1_ore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff99"}]},{"translate":"exp_guide1_oredesc_cryonite"}]}}]
                     },
                     {
                       "translate":"exp_guide1_temperature","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide1_marstemp","color":"black","font":"minecraft:default","hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_tempexplainer"}}
+                      "translate":"exp_guide1_marstemp","color":"black","font":"minecraft:default","hover_event":{"action":"show_text","value":{"translate":"exp_guide1_tempexplainer"}}
                     },
                     {
                       "translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","click_event":{"action":"change_page","page":12},"hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
                     }
                   ]
                 },
@@ -1469,19 +1469,19 @@
                       "translate":"exp_guide1_materials","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff97","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_vulcanium_name"},{"translate":"exp_guide1_ore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\ufb00"}]},{"translate":"exp_guide1_oredesc_vulcanium"}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff97","hover_event":{"action":"show_text","value":[{"translate":"exp_items_vulcanium_name"},{"translate":"exp_guide1_ore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\ufb00"}]},{"translate":"exp_guide1_oredesc_vulcanium"}]}}]
                     },
                     {
                       "translate":"exp_guide1_temperature","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide1_venustemp","color":"black","font":"minecraft:default","hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_tempexplainer"}}
+                      "translate":"exp_guide1_venustemp","color":"black","font":"minecraft:default","hover_event":{"action":"show_text","value":{"translate":"exp_guide1_tempexplainer"}}
                     },
                     {
                       "translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","click_event":{"action":"change_page","page":12},"hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
                     }
                   ]
                 },
@@ -1506,9 +1506,9 @@
                       "translate":"exp_guide1_jupitertemp",
                       "color":"black",
                       "font":"minecraft:default",
-                      "hoverEvent":{
+                      "hover_event":{
                         "action":"show_text",
-                        "contents":{"translate":"exp_guide1_tempexplainer"}
+                        "value":{"translate":"exp_guide1_tempexplainer"}
                         }
                       },
                     {"translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"},
@@ -1519,8 +1519,8 @@
                       "with":[
                         {
                           "text":"\uff32",
-                          "clickEvent":{"action":"change_page","value":"12"},
-                          "hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
+                          "click_event":{"action":"change_page","page":12},
+                          "hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
                         }
                       ]
                     }
@@ -1545,7 +1545,7 @@
                     },
                     {
                       "translate":"exp_guide1_europatemp","color":"black","font":"minecraft:default",
-                      "hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_tempexplainer"}}
+                      "hover_event":{"action":"show_text","value":{"translate":"exp_guide1_tempexplainer"}}
                     },
                     {
                       "translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
@@ -1557,8 +1557,8 @@
                       "with":[
                         {
                           "text":"\uff32",
-                          "clickEvent":{"action":"change_page","value":"12"},
-                          "hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
+                          "click_event":{"action":"change_page","page":12},
+                          "hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
                         }
                       ]
                     }
@@ -1585,7 +1585,7 @@
                       "translate":"exp_guide1_spacetemp",
                       "color":"black",
                       "font":"minecraft:default",
-                      "hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_tempexplainer"}}
+                      "hover_event":{"action":"show_text","value":{"translate":"exp_guide1_tempexplainer"}}
                     },
                     {
                       "translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
@@ -1597,8 +1597,8 @@
                       "with":[
                         {
                           "text":"\uff32",
-                          "clickEvent":{"action":"change_page","value":"12"},
-                          "hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
+                          "click_event":{"action":"change_page","page":12},
+                          "hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
                         }
                       ]
                     }

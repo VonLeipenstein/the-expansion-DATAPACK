@@ -12,7 +12,7 @@ execute as @p[tag=exp.transporting] run function expansion:items/transporter/sav
 execute in expansion:storage run tp @s 0 0 0
 
 # tellraw
-tellraw @p[tag=exp.transporting] ["",{"text":"Entered Pocket Space: ","color":"aqua"},{"score":{"name":"#temp","objective":"exp.unique_id"},"bold":true}]
+tellraw @p[tag=exp.transporting] ["",{text:"Entered Pocket Space: ",color:"aqua"},{score:{name:"#temp",objective:"exp.unique_id"},bold:true}]
 
 # change the position of this armor stand according to the unique ID of the transporter
 execute store result entity @s Pos[0] double 1000 run scoreboard players get #temp exp.unique_id

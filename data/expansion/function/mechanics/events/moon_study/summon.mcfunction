@@ -9,4 +9,4 @@ scoreboard players reset @s exp.timer_1
 
 item replace entity @s weapon.offhand with minecraft:air
 
-tellraw @s [{"translate":"exp_moonstudy_6"}]
+tellraw @s [{translate:"exp_moonstudy_6"}]
