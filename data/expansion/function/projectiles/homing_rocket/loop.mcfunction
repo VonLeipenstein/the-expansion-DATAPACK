@@ -20,10 +20,11 @@ execute at @s run tp @s ^ ^ ^1.2
 execute if score @s exp.cooldown matches 0 positioned ~-.5 ~-.5 ~-.5 if entity @n[type=!#expansion:ignore,dx=0,dy=0,dz=0] run function expansion:projectiles/homing_rocket/explode
 execute unless block ~ ~ ~ #expansion:air run function expansion:projectiles/homing_rocket/explode
 
-particle campfire_cosy_smoke ~ ~ ~ 0 0 0 0 1 force
-particle flame ^ ^ ^-0.5 0 0 0 0.01 2 force
-particle flame ^ ^ ^ 0 0 0 0.01 2 force
-particle flame ^ ^ ^-1 0 0 0 0.01 2 force
+#particle campfire_cosy_smoke ~ ~ ~ 0 0 0 0 1 force
+#particle flame ^ ^ ^-0.5 0 0 0 0.01 2 force
+#particle flame ^ ^ ^ 0 0 0 0.01 2 force
+#particle flame ^ ^ ^-1 0 0 0 0.01 2 force
+particle minecraft:dust{color:[0.000d,0.969d,1.000d],scale:1} ^ ^ ^ 0.1 0 0.1 0 10 force
 
 scoreboard players remove @s exp.max_range 1
 scoreboard players remove @s[scores={exp.cooldown=1..}] exp.cooldown 1

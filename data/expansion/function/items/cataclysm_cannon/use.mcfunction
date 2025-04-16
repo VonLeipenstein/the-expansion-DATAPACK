@@ -1,1 +1,1 @@
-execute anchored eyes positioned ^ ^-.3 ^1 summon item_display run function expansion:projectiles/cataclysm/cast
+execute anchored eyes positioned ^ ^-.3 ^5 summon item_display run function expansion:projectiles/cataclysm/cast

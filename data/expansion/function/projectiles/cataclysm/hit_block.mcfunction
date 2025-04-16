@@ -1,3 +1,3 @@
 kill @s
 
-particle explosion_emitter
+particle end_rod ~ ~ ~ 0 0 0 0.2 500 force
