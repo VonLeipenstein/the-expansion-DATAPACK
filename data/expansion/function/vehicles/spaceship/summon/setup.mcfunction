@@ -24,7 +24,7 @@ execute store result score @s exp.fuel_level run data get entity @p[tag=exp.tick
 function expansion:vehicles/spaceship/markers/deactivate_markers
 
 # set scores
-scoreboard players set @s exp.fuel_max 256
+scoreboard players set @s exp.fuel_max 24000
 scoreboard players set @s exp.speed 10
 
 tag @s remove exp.new_vehicle

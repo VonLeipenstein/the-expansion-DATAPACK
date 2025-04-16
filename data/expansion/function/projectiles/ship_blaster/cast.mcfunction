@@ -1,8 +1,8 @@
 execute unless function expansion:projectiles/slowcaster_debug run return fail
 
 # render the bullet
-item replace entity @s container.0 with redstone_block
-data merge entity @s {transformation:{scale:[0.15,0.15,2.0]},teleport_duration:1}
+item replace entity @s container.0 with poisonous_potato[item_model="expansion:laser_bullet"]
+data merge entity @s {transformation:{scale:[3,3,3]},teleport_duration:1,brightness:{block:15,sky:15}}
 
 tag @s add exp.ship_blaster
 tag @s add exp.slowcast

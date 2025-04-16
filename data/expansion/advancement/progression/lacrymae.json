@@ -8,11 +8,9 @@
             "translate": "exp_advancement_lacrymae_desc"
         },
         "icon": {
-            "id": "minecraft:potion",
+            "id": "minecraft:poisonous_potato",
             "components": {
-                "minecraft:potion_contents": {
-                    "custom_color": 6160481
-                }
+                "item_model": "expansion:fuel_canister"
             }
         },
         "frame": "task",
@@ -27,10 +25,14 @@
                 "items": [
                     {
                         "items": [
-                            "minecraft:potion"
+                            "minecraft:poisonous_potato"
                         ],
                         "predicates": {
-                            "minecraft:custom_data": "{from_extractor:1b}"
+                            "custom_data": {
+                                "exp_item":{
+                                  "name":"fuel_canister"
+                                }
+                              }
                         }
                     }
                 ]

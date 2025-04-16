@@ -1,0 +1,29 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "exp_tools_fuelcanister_lvl"
+        },
+        {
+          "score": {
+            "name": "#temp",
+            "objective": "exp.percentage"
+          },
+          "color": "aqua",
+          "bold": true
+        },
+        {
+          "text": "%",
+          "color": "aqua",
+          "bold": true
+        }
+      ]
+    ],
+    "mode": "replace_section",
+    "offset": 1,
+    "size": 1
+  }
+]

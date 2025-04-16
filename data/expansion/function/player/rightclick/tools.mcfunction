@@ -21,3 +21,5 @@ execute if predicate expansion:nbt_checks/selected_item/items/cryoblaster run re
 execute if predicate expansion:nbt_checks/selected_item/items/arc_thrower run return run function expansion:items/arc_thrower/use
 # blaster
 execute if predicate expansion:nbt_checks/selected_item/items/blaster run return run function expansion:items/blaster/use
+# blaster
+execute if predicate expansion:nbt_checks/selected_item/items/cataclysm_cannon run return run function expansion:items/cataclysm_cannon/use

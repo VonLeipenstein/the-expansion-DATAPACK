@@ -20,7 +20,7 @@
                 "components": 
                 {
                   "item_model": "expansion:gui_filler_visible",
-                  "tooltip_style": "expansion:empty"
+                  "tooltip_display": {"hide_tooltip": true}
                 }
               },
               {

@@ -20,14 +20,11 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/fuel/lacrymae",
+          "value": "expansion:tools/fuel_canister/mk2/random",
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
+              "count": 1
             }
           ]
         }

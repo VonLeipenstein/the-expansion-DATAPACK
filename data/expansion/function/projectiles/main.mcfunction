@@ -11,3 +11,5 @@ execute if entity @s[tag=exp.drone_laser] run return run function expansion:proj
 execute if entity @s[tag=exp.homing_rocket] run return run function expansion:projectiles/homing_rocket/loop
 
 execute if entity @s[tag=exp.autocannon_bullet] run return run function expansion:projectiles/autocannon_bullet/loop
+
+execute if entity @s[tag=exp.cataclysm] run return run function expansion:projectiles/cataclysm/loop

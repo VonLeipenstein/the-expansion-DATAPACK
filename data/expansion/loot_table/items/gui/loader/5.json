@@ -29,7 +29,7 @@
                       5
                     ]
                   },
-                  "tooltip_style": "expansion:empty"
+                  "tooltip_display": {"hide_tooltip": true}
                 }
               },
               {

@@ -1,14 +1,40 @@
-execute on passengers on target if entity @s[nbt={Inventory:[{id:"minecraft:potion",components:{"minecraft:custom_data":{exp_item:{name:"lacrymae"}}}}]}] run tag @s add exp.has_lacrymae
+# get the parameters
+execute store result score #source exp.fuel_level run data get entity @p[tag=exp.clicked_ship] SelectedItem.components."minecraft:custom_data".fuel.lvl
+execute store result score #source exp.fuel_max run data get entity @p[tag=exp.clicked_ship] SelectedItem.components."minecraft:custom_data".fuel.max
+scoreboard players operation #target exp.fuel_level = @s exp.fuel_level
+scoreboard players operation #target exp.fuel_max = @s exp.fuel_max
 
-execute if entity @p[tag=exp.has_lacrymae] if score @s exp.fuel_level < @s exp.fuel_max run item replace entity @p[tag=exp.has_lacrymae] weapon.mainhand with minecraft:air
-execute if entity @p[tag=exp.has_lacrymae] run scoreboard players set @s exp.fuel_level 256
-execute as @p[tag=exp.has_lacrymae] run title @s title {translate:"exp_screentxt_fuelsuccess"}
+# fill the spaceship
+scoreboard players operation #missing exp.fuel_level = #target exp.fuel_max
+scoreboard players operation #missing exp.fuel_level -= #target exp.fuel_level
+execute if score #missing exp.fuel_level > #source exp.fuel_level run scoreboard players operation #missing exp.fuel_level = #source exp.fuel_level
+scoreboard players operation #target exp.fuel_level += #missing exp.fuel_level
+scoreboard players operation #source exp.fuel_level -= #missing exp.fuel_level
 
-title @p[tag=!exp.has_lacrymae] subtitle {text:" "}
-execute as @p[tag=!exp.has_lacrymae] run title @s title {translate:"exp_screentxt_rocket_fuelfail3"}
+# merge the new fuel level with the spaceship
+scoreboard players operation @s exp.fuel_level = #target exp.fuel_level
 
+# calculate sources new percentage
+scoreboard players operation #input exp.math = #source exp.fuel_level
+scoreboard players operation #max exp.math = #source exp.fuel_max
+execute store result score #source exp.fuel_percentage run function expansion:utilities/percentage
+
+# merge the fuel level with the players fuel canister
+execute store result storage expansion:temp data.fuel.lvl int 1 run scoreboard players get #source exp.fuel_level
+scoreboard players operation #temp exp.percentage = #source exp.fuel_percentage
+item modify entity @p[tag=exp.clicked_ship] weapon.mainhand expansion:fuel_canister/merge_level_from_data
+
+# remove interaction data
 execute on passengers run data remove entity @s[type=minecraft:interaction] interaction
 
+# calculate the new fuel percentage
 function expansion:utilities/fuel_percentage
 
-tag @p[tag=exp.has_lacrymae] remove exp.has_lacrymae
+# reset scores
+scoreboard players reset #temp exp.percentage
+scoreboard players reset #target exp.fuel_level
+scoreboard players reset #target exp.fuel_max
+scoreboard players reset #source exp.fuel_level
+scoreboard players reset #source exp.fuel_max
+scoreboard players reset #source exp.fuel_percentage
+scoreboard players reset #missing exp.fuel_level

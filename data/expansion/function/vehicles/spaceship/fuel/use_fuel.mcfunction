@@ -1,4 +1,3 @@
-scoreboard players remove @s exp.fuel_level 1
-scoreboard players set @s exp.timer_1 0
-scoreboard players set @s[scores={exp.fuel_level=0}] exp.speed 0
+scoreboard players remove @s exp.fuel_level 2
+execute unless score @s exp.fuel_level matches 1.. run scoreboard players set @s exp.speed 0
 function expansion:utilities/fuel_percentage

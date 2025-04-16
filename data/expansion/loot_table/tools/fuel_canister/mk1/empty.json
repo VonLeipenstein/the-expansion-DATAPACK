@@ -1,0 +1,80 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "exp_tools_fuelcanister_name",
+                  "italic": false
+                },
+                {
+                  "translate": "exp_modules_mk1"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+                  "components": {
+                    "item_model": "expansion:fuel_canister",
+                    "custom_model_data": {
+                      "floats": [1]
+                    },
+                    "minecraft:max_stack_size": 1,
+                    "!minecraft:max_damage": {},
+                    "minecraft:unbreakable": {},
+                    "tooltip_display": {"hidden_components":["minecraft:unbreakable"]},
+                    "!minecraft:consumable": {},
+                    "!minecraft:food": {}
+                }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{exp_item:{name:\"fuel_canister\",crafting_count:1,max_stack_size:1,exp_tool:1b,expansion_coas:1b},tier:1b,fuel:{lvl:0,max:48000}}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "translate": "exp_tools_fuelcanister_lvl"
+                  },
+                  {
+                    "text": "0%",
+                    "color": "aqua",
+                    "bold": true
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_tools_fuelcanister_tip1"
+                },
+                {
+                  "translate": "exp_tools_fuelcanister_tip2"
+                },
+                {
+                  "translate": "exp_tools_fuelcanister_tip3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

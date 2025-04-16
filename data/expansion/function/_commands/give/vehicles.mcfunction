@@ -1,7 +1,8 @@
 setblock ~ ~ ~ chest{CustomName:{text:"Vehicles",color:"#00FFEE"}} replace
 
 
-loot insert ~ ~ ~ loot expansion:items/fuel/lacrymae
+loot insert ~ ~ ~ loot expansion:tools/fuel_canister/mk1/full
+loot insert ~ ~ ~ loot expansion:tools/fuel_canister/mk2/full
 loot insert ~ ~ ~ loot expansion:vehicles/spaceship
 loot insert ~ ~ ~ loot expansion:vehicles/rocket
 loot insert ~ ~ ~ loot expansion:vehicles/lunar_module

@@ -16,7 +16,7 @@
         "show_toast": true,
         "announce_to_chat": false,
         "hidden": false,
-        "background": "expansion:textures/guides/star_sky.png"
+        "background": "expansion:guides/star_sky"
     },
     "criteria": {
         "tick": {

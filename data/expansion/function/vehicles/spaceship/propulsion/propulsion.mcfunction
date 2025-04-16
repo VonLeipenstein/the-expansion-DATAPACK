@@ -12,8 +12,7 @@ scoreboard players set #total exp.math 90
 execute on passengers on passengers if entity @s[type=player] if predicate expansion:input/any on vehicle on vehicle store result score #temp exp.speed run function expansion:vehicles/spaceship/propulsion/speed_percentage
 
 # fuel functions, exp.value decides the interval at which fuel is removed. this can be changed by a fuel upgrade
-scoreboard players add @s[scores={exp.fuel_level=1..,exp.speed=11..}] exp.timer_1 1
-execute if score @s exp.timer_1 >= @s exp.value run function expansion:vehicles/spaceship/fuel/use_fuel
+function expansion:vehicles/spaceship/fuel/use_fuel
 
 # make the correct particles run depending on the skin
 execute on passengers if predicate expansion:nbt_checks/armor/spaceship on vehicle at @s anchored eyes run function expansion:vehicles/spaceship/engine_particles/spaceship

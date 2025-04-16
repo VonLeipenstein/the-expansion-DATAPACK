@@ -1,8 +1,33 @@
+# particles
 playsound minecraft:block.brewing_stand.brew block @a ~ ~ ~
 particle minecraft:cloud ~ ~0.7 ~ 0.3 0.3 0.3 0 50
 
-loot insert ~ ~ ~ loot expansion:items/fuel/lacrymae
+# increase the canisters fuel lvl
+execute store result score #temp exp.fuel_level run data get block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.lvl
+execute store result score #temp exp.fuel_max run data get block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.max
 
-execute on passengers run item replace entity @s[tag=exp.extractor_display] container.0 with minecraft:obsidian
+# Add a bound random amount to the fuel level of the canister
+execute store result score #add exp.fuel_level run random value 10000..15000
+scoreboard players operation #temp exp.fuel_level += #add exp.fuel_level
 
-scoreboard players set @s exp.timer_1 0
+# merge the new fuel level with the canister
+execute if score #temp exp.fuel_level > #temp exp.fuel_max run scoreboard players operation #temp exp.fuel_level = #temp exp.fuel_max
+execute store result block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.lvl int 1 run scoreboard players get #temp exp.fuel_level
+
+# calculate canisters new percentage
+scoreboard players operation #input exp.math = #temp exp.fuel_level
+scoreboard players operation #max exp.math = #temp exp.fuel_max
+execute store result score #temp exp.percentage run function expansion:utilities/percentage
+item modify block ~ ~ ~ container.6 expansion:fuel_canister/merge_percent_from_score
+
+# convert a crying obsidian to obsidian
+item modify block ~ ~ ~ container.1 expansion:utility/reduce_count
+execute if items block ~ ~ ~ container.8 obsidian run item modify block ~ ~ ~ container.8 expansion:utility/increase_count
+execute unless items block ~ ~ ~ container.8 obsidian run item replace block ~ ~ ~ container.8 with obsidian
+
+# reset scores
+scoreboard players reset #temp exp.fuel_level
+scoreboard players reset #temp exp.fuel_max
+scoreboard players reset #temp exp.percentage
+scoreboard players reset #add exp.fuel_level
+scoreboard players reset @s exp.timer_1

@@ -1,7 +1,10 @@
-# destroy the block if the dropper is gone
+# Destroy the block if the dropper is gone
 execute unless block ~ ~ ~ minecraft:dropper run function expansion:blocks/lacrymae_extractor/destroy
 
-# extract lacrymae
+# Start extraction if conditions are met
+execute unless score @s exp.timer_1 matches 1.. if function expansion:blocks/lacrymae_extractor/check_valid run scoreboard players set @s exp.timer_1 40
+
+# while extracting
 execute if score @s exp.timer_1 matches 1.. run function expansion:blocks/lacrymae_extractor/extract/main
 
 # GUI
