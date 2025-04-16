@@ -20,7 +20,7 @@ execute if function expansion:spacesuits/unequip/check_tags run function expansi
 execute if predicate expansion:armor/any run function expansion:spacesuits/main
 
 ## Gravity
-execute if predicate expansion:periodic/10 run function expansion:mechanics/gravity/main
+execute if predicate expansion:periodic/5 run function expansion:mechanics/gravity/main
 execute if score @s exp.gravity_id = #zero exp.gravity_id run function expansion:mechanics/gravity/zero/main
 
 ## Oxygen
