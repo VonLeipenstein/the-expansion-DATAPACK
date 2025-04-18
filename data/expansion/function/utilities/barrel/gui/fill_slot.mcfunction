@@ -4,3 +4,6 @@ execute if data storage expansion:temp Item run function expansion:utilities/bar
 
 # replace the slot
 $loot replace block ~ ~ ~ container.$(Slot) loot expansion:items/gui/$(Type)
+
+# Also remove gui items from all nearby players
+clear @a[distance=..10] minecraft:jigsaw[custom_data~{gui_item:1b}]
