@@ -41,7 +41,7 @@ function expansion:player/decrement_scores
 
 ## stinky section
 # delete gui items
-clear @s minecraft:jigsaw[custom_data~{gui_item:1b}]
+execute if items entity @s inventory.* *[custom_data~{gui_item:1b}] run clear @s minecraft:jigsaw[custom_data~{gui_item:1b}]
 # remove water when mining ores
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{expansion_ore:1b}}}},distance=..10,limit=5] at @s run function expansion:blocks/ores/fix_water
 # kill gui items

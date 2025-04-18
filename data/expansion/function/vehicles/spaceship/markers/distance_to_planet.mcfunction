@@ -1,7 +1,8 @@
 ## DISTANCE TEST
-execute store result score #x2 exp.math run data get entity @s Pos[0]
-execute store result score #y2 exp.math run data get entity @s Pos[1]
-execute store result score #z2 exp.math run data get entity @s Pos[2]
+function expansion:utilities/store_pos_in_score
+scoreboard players operation #x2 exp.math = @s exp.x
+scoreboard players operation #y2 exp.math = @s exp.y
+scoreboard players operation #z2 exp.math = @s exp.z
 
 # rotate the markers towards the planet
 execute if entity @s[tag=exp.earth_marker] run function expansion:vehicles/spaceship/markers/position/earth
@@ -11,8 +12,6 @@ execute if entity @s[tag=exp.venus_marker] run function expansion:vehicles/space
 execute if entity @s[tag=exp.jupiter_marker] run function expansion:vehicles/spaceship/markers/position/jupiter
 execute if entity @s[tag=exp.europa_marker] run function expansion:vehicles/spaceship/markers/position/europa
 
-execute store result score #temp2 exp.distance run function expansion:utilities/math/distance/calculate
-
-execute on passengers run data merge entity @s {text:[{text:"Distance:\n",color: "green"},{score:{name:"#temp2",objective:"exp.distance"}}]}
-
-scoreboard players reset #temp2 exp.distance
+# merge the calculated distance with the text display
+execute on passengers store result score @s exp.distance run function expansion:utilities/math/distance/calculate
+execute on passengers run data modify entity @s text.extra set value [{score:{name:"@s",objective:"exp.distance"}}]

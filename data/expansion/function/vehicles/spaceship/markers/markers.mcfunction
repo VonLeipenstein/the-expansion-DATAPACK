@@ -18,4 +18,4 @@ execute if entity @s[tag=exp.asteroids_marker] facing -10000 128 ~ run rotate @s
 execute at @s on passengers run rotate @s ~ ~
 
 # calculate distances for highlighted markers
-execute if predicate expansion:periodic/10 if entity @s[tag=exp.highlighted_marker] run function expansion:vehicles/spaceship/markers/distance_to_planet
+execute if entity @s[tag=exp.highlighted_marker,tag=!exp.asteroids_marker] run function expansion:vehicles/spaceship/markers/distance_to_planet
