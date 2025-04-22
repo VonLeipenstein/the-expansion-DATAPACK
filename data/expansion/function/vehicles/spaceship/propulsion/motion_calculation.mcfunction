@@ -35,3 +35,9 @@ scoreboard players operation #temp exp.speed_mod /= #10 exp.const
 scoreboard players operation #velocity_x exp.math *= #temp exp.speed_mod
 scoreboard players operation #velocity_y exp.math *= #temp exp.speed_mod
 scoreboard players operation #velocity_z exp.math *= #temp exp.speed_mod
+
+# merge the calculated vector with the motion and make the armor stand move.
+execute store result storage expansion:motion Motion[0] double -0.000001 run scoreboard players get #velocity_x exp.math
+execute store result storage expansion:motion Motion[1] double 0.0001 run scoreboard players get #velocity_y exp.math
+execute store result storage expansion:motion Motion[2] double -0.000001 run scoreboard players get #velocity_z exp.math
+data modify entity @s Motion set from storage expansion:motion Motion

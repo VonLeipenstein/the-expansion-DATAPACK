@@ -8,7 +8,6 @@ execute if score @s exp.passenger_count matches 10.. run scoreboard players set 
 execute if score @s exp.passenger_count matches 20.. run scoreboard players set #temp exp.math 50
 execute if score @s exp.passenger_count matches 40.. run scoreboard players set #temp exp.math 80
 execute if score @s exp.passenger_count matches 80.. run scoreboard players set #temp exp.math 95
-
 execute if score #random exp.math > #temp exp.math run function expansion:blocks/oxygenator/oxygenate/scan/init/random_startpos
 execute if score #random exp.math <= #temp exp.math run function expansion:blocks/oxygenator/oxygenate/scan/init/best_startpos
 
