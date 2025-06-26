@@ -1,1 +1,3 @@
-{"values":["animated_java:global/on_tick","expansion:tick_toggle"]}
+{
+	"values": ["animated_java:global/on_tick", "expansion:tick_toggle"]
+}
