@@ -1,15 +1,16 @@
-# rotate the root and rotation marker with the players rotation
-execute on passengers if entity @s[type=minecraft:armor_stand,tag=exp.spaceship_display] on passengers if entity @s[tag=exp.spaceship_pilot] anchored eyes rotated as @s on vehicle on vehicle run function expansion:vehicles/spaceship/propulsion/rotate_stack_with_player
-
-# store rotation data of the armor stand and assign it to a scoreboard value.
-execute on passengers if entity @s[type=marker,tag=exp.ship_rotation] run data modify storage expansion:rotation Rotation set from entity @s Rotation
-execute store result score #pitch exp.math run data get storage expansion:rotation Rotation[1] 1000
-execute store result score #yaw exp.math run data get storage expansion:rotation Rotation[0] 1000
-# Store the rotation of the player via the mock entity
-execute store result score #roll exp.math on passengers if entity @s[type=marker,tag=exp.player_rotation] run data get entity @s Rotation[0] 1000
-
-# calculate the motion vector values.
+# Calculate motion vector vector 
 function expansion:vehicles/spaceship/propulsion/motion_calculation
 
-# regulate the display of the model(yaw, pitch and roll)
-execute on passengers if entity @s[type=armor_stand,tag=exp.spaceship_display] run function expansion:vehicles/spaceship/propulsion/model_rotation
+# remove fuel
+scoreboard players remove @s exp.fuel_level 2
+function expansion:utilities/fuel_percentage
+
+# make the correct particles run depending on the skin
+execute unless entity @s[tag=exp.hyperjumping] on passengers if predicate expansion:nbt_checks/armor/spaceship on vehicle at @s anchored eyes run function expansion:vehicles/spaceship/engine_particles/spaceship
+execute unless entity @s[tag=exp.hyperjumping] on passengers if predicate expansion:nbt_checks/armor/zwaluw on vehicle at @s anchored eyes run function expansion:vehicles/spaceship/engine_particles/zwaluw
+
+# during hyperjump
+execute if entity @s[tag=exp.hyperjumping] run particle end_rod ^ ^ ^ 5 5 5 0 100
+
+# remove tag that locks the ships rotation
+tag @s[tag=exp.ignore_player_rotation] remove exp.ignore_player_rotation

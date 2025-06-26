@@ -1,6 +1,6 @@
 # copy the data from the ship display to a storage to avoid selectors
 data remove storage expansion:temp ModStorage
-execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin on passengers if entity @s[type=item_display,tag=exp.spaceship_display] run data modify storage expansion:temp ModStorage set from entity @s item.components."minecraft:custom_data".ModStorage
+execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin on passengers if entity @s[tag=exp.spaceship_display] run data modify storage expansion:temp ModStorage set from entity @s item.components."minecraft:custom_data".ModStorage
 
 # store any upgrades inside the displays item and check if there is any
 execute if items block ~ ~ ~ container.0 *[custom_data~{fuel_mod:1b}] unless data storage expansion:temp ModStorage.fuel.id run data modify entity @s item.components."minecraft:custom_data".ModStorage.fuel set from block ~ ~ ~ Items[{Slot:0b}]

@@ -2,16 +2,16 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "equipment": {
-      "head": {
-        "components": {
-          "minecraft:custom_model_data": {
-            "strings": [
-              "spaceship"
-            ]
+      "slots":{
+        "contents": {
+            "components": {
+            "minecraft:custom_model_data": {
+              "strings": [
+                "spaceship"
+              ]
+            }
           }
         }
       }
-    }
   }
 }

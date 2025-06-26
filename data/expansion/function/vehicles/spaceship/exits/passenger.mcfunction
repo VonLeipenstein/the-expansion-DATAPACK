@@ -1,16 +1,13 @@
 # temporary tag
 tag @s add exp.exiting_ship
 # make the player ride the spaceship to make it easier to detect entities
-ride @s mount @e[type=minecraft:armor_stand,tag=exp.spaceship_display,distance=..10,limit=1,sort=nearest]
+ride @s mount @e[tag=exp.spaceship_seat,distance=..10,limit=1,sort=nearest]
 
 # kill any planetarium markers that may be present
 execute on vehicle on vehicle run function expansion:vehicles/spaceship/markers/deactivate_markers
 
 # remove passenger count
 execute on vehicle on vehicle run scoreboard players remove @s exp.passenger_count 1
-
-#execute unless entity @s[tag=exp.spaceship_pilot] run function expansion:vehicles/spaceship/exits/restore_passenger_helmet
-#execute if entity @s[tag=exp.spaceship_pilot] run function expansion:vehicles/spaceship/exits/restore_pilot_helmet
 
 # when the pilot leaves the ship first make the other passenger the new pilot
 execute if entity @s[tag=exp.spaceship_pilot] on vehicle on vehicle unless score @s exp.passenger_count matches 0 on passengers on passengers run function expansion:vehicles/spaceship/exits/assign_new_pilot

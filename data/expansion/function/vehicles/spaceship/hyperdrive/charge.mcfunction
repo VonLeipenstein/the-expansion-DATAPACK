@@ -1,1 +1,1 @@
-scoreboard players add @s exp.warmup 1
+scoreboard players set @s exp.speed 300

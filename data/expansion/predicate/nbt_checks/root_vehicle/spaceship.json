@@ -3,7 +3,7 @@
   "entity": "this",
   "predicate": {
     "vehicle": {
-      "nbt": "{Tags:[\"exp.spaceship_display\"]}"
+      "nbt": "{Tags:[\"exp.spaceship_seat\"]}"
     }
   }
 }
