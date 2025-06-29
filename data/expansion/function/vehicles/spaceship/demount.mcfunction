@@ -2,7 +2,7 @@
 execute on passengers if entity @s[tag=exp.spaceship_display] store result entity @s item.components."minecraft:custom_data".fuel_lvl int 1 on vehicle run scoreboard players get @s exp.fuel_level
 
 # substract one from the spaceship custom model data so it changes to the flying version
-execute on passengers if entity @s[tag=exp.spaceship_display] run function expansion:vehicles/spaceship/model_switching/decrease_model
+execute on passengers if entity @s[tag=exp.spaceship_display] run data remove entity @s item.components.minecraft:custom_model_data.strings[1]
 
 # spawn the placeholder item and copy all the spaceship data to it
 execute as @p[tag=exp.clicked_ship] unless entity @s[gamemode=creative] at @s run loot spawn ~ ~ ~ loot expansion:vehicles/spaceship

@@ -4,16 +4,16 @@ function expansion:blocks/set_rotation
 execute on passengers if entity @s[tag=exp.spaceship_display] run item replace entity @s container.0 from entity @p[tag=exp.tick_player] weapon.mainhand
 
 # set model transformations
-execute on passengers if entity @s[tag=exp.spaceship_display] run data merge entity @s {transformation:{translation:[0.0f,2.0f,0.0f],scale:[0.6f,0.6f,0.6f]},interpolation_duration:5,teleport_duration:5}
+execute on passengers if entity @s[tag=exp.spaceship_display] run data merge entity @s {transformation:{translation:[0.0f,0.0f,0.0f],scale:[0.6f,0.6f,0.6f]},interpolation_duration:5,teleport_duration:5}
 
 # merge model rotation with the base entity
 execute on passengers if entity @s[tag=exp.spaceship_display] store result entity @s Rotation[0] float 1 on vehicle run data get entity @s Rotation[0]
 
 # switch the model to the landed version
-execute on passengers as @s[tag=exp.spaceship_display] run function expansion:vehicles/spaceship/model_switching/increase_model
+execute on passengers if entity @s[tag=exp.spaceship_display] run data modify entity @s item.components.minecraft:custom_model_data.strings insert 1 value "landed"
 
 # adjust seat scale to put the player at the correct height
-execute on passengers run attribute @s[tag=exp.spaceship_seat] minecraft:scale base set 1.4
+attribute @s minecraft:scale base set 0.82
 
 # apply nogravity if in a zero gravity environment
 data merge entity @s[predicate=expansion:dimension/zero_gravity] {NoGravity:1b}

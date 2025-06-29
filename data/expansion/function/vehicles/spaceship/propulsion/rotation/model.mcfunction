@@ -6,7 +6,7 @@ execute store result score @s exp.roll on vehicle run scoreboard players get @s 
 data modify storage expansion:rotation in.rotation set value [0f,0f,0f]
 data modify storage expansion:rotation transformation set from entity @s transformation
 
-# make sure y rotation is always horizontal, this is done with the quaternion
+# make sure y rotation of the model is always horizontal, this is done with the quaternion
 execute unless entity @s[y_rotation=-1..1] rotated as @s run rotate @s ~ 0
 
 # calculate

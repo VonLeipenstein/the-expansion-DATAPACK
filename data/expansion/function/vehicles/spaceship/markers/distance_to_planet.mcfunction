@@ -4,7 +4,7 @@ scoreboard players operation #x2 exp.math = @s exp.x
 scoreboard players operation #y2 exp.math = @s exp.y
 scoreboard players operation #z2 exp.math = @s exp.z
 
-# rotate the markers towards the planet
+# Get the coordinates of every planet
 execute if entity @s[tag=exp.earth_marker] run function expansion:vehicles/spaceship/markers/position/earth
 execute if entity @s[tag=exp.moon_marker] run function expansion:vehicles/spaceship/markers/position/moon
 execute if entity @s[tag=exp.mars_marker] run function expansion:vehicles/spaceship/markers/position/mars

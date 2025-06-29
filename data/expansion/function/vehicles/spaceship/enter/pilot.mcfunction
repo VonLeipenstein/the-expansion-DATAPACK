@@ -5,7 +5,7 @@ tag @p[tag=exp.clicked_ship] add exp.spaceship_pilot
 execute on passengers store result entity @s[tag=exp.spaceship_seat] Rotation[0] float 1 on vehicle run data get entity @s Rotation[0]
 
 # change the model to the flying version of the spaceship
-execute on passengers if entity @s[tag=exp.spaceship_display] run function expansion:vehicles/spaceship/model_switching/decrease_model
+execute on passengers if entity @s[tag=exp.spaceship_display] run data remove entity @s item.components.minecraft:custom_model_data.strings[1]
 
 # calculate the fuel percentage so the actionbar can show up
 function expansion:utilities/fuel_percentage

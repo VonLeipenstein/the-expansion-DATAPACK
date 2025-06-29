@@ -1,9 +1,5 @@
-# synchronize the rotation of the display with the spaceship armor stand
-rotate @s ~ 0
-execute rotated as @s on passengers run rotate @s ~ ~
-
 # change the model to the landed version
-execute on passengers as @s[tag=exp.spaceship_display] run function expansion:vehicles/spaceship/model_switching/increase_model
+execute on passengers as @s[tag=exp.spaceship_display] run data modify entity @s item.components.minecraft:custom_model_data.strings insert 1 value "landed"
 
 tag @s remove exp.player_inside
 

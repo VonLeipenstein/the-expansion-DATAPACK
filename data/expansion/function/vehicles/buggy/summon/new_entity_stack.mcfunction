@@ -1,1 +1,31 @@
-summon minecraft:armor_stand ^ ^ ^ {Silent:1b,Small:1b,Invisible:1b,DisabledSlots:2039583,Invulnerable:1b,Rotation:[0f,0f],Tags:["exp.moon_buggy","exp.moddable_vehicle","exp.new_vehicle","exp.vehicle","smithed.block"],attributes:[{id:"minecraft:scale",base:0.8}],Passengers:[{id:"minecraft:interaction",Tags:["exp.buggy_rcdet","smithed.block"],height:0.5f,width:1.5f,response:0b},{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,Tags:["exp.buggy_turn","smithed.block"]}]}
+summon minecraft:armor_stand ^ ^ ^ {\
+    Silent:1b,\
+    Small:1b,\
+    Invisible:1b,\
+    DisabledSlots:2039583,\
+    Invulnerable:1b,\
+    Rotation:[0f,0f],\
+    Tags:[\
+        "exp.moon_buggy",\
+        "exp.moddable_vehicle",\
+        "exp.new_vehicle",\
+        "exp.vehicle",\
+        "smithed.block"\
+    ],\
+    attributes:[{id:"minecraft:scale",base:0.8}],\
+    Passengers:[\
+        {\
+            id:"minecraft:interaction",\
+            Tags:["exp.buggy_rcdet","smithed.block"],\
+            height:0.5f,\
+            width:1.5f,\
+            response:0b\
+        },\
+        {\
+            id:"minecraft:armor_stand",\
+            Marker:1b,\
+            Invisible:1b,\
+            Tags:["exp.buggy_turn","smithed.block"]\
+        }\
+    ]\
+}

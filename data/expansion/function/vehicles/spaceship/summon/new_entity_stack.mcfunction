@@ -15,13 +15,36 @@ summon minecraft:armor_stand ^ ^ ^ {\
     Rotation:[0.0f,0.0f],\
     DisabledSlots:4144959,\
     Passengers:[\
-        {id:"minecraft:item_display",Tags:["exp.spaceship_display","exp.vehicle_display"],item_display:"head"},\
-        {id:"minecraft:armor_stand",Tags:["exp.spaceship_seat"],Silent:1b,Marker:1b,Small:1b,Invisible:1b},\
-        {id:"minecraft:interaction",Tags:["exp.spaceship_rcdet"],width:2f,height:2f,response:0b},\
-        {id:"minecraft:marker",Tags:["exp.player_rotation"]},\
-        {id:"minecraft:marker",Tags:["exp.model_rotation"]},\
-        {id:"minecraft:marker",Tags:["exp.ship_rotation"]},\
-        {id:"minecraft:item_display",\
+        {\
+            id:"minecraft:item_display",\
+            Tags:["exp.spaceship_display","exp.vehicle_display"],\
+            item_display:"head"\
+        },\
+        {\
+            id:"minecraft:armor_stand",\
+            Tags:["exp.spaceship_seat"],\
+            Silent:1b,\
+            Marker:1b,\
+            Small:1b,\
+            Invisible:1b\
+        },\
+        {\
+            id:"minecraft:interaction",\
+            Tags:["exp.spaceship_rcdet"],\
+            width:2f,\
+            height:2f,\
+            response:0b\
+        },\
+        {\
+            id:"minecraft:marker",\
+            Tags:["exp.player_rotation"]\
+        },\
+        {\
+            id:"minecraft:marker",\
+            Tags:["exp.model_rotation"]\
+        },\
+        {\
+            id:"minecraft:item_display",\
             CustomNameVisible:0b,\
             teleport_duration:10,\
             Tags:[\
@@ -41,7 +64,8 @@ summon minecraft:armor_stand ^ ^ ^ {\
                 }\
             }\
         },\
-        {id:"minecraft:item_display",\
+        {\
+            id:"minecraft:item_display",\
             CustomNameVisible:0b,\
             teleport_duration:10,\
             Tags:[\
@@ -61,7 +85,8 @@ summon minecraft:armor_stand ^ ^ ^ {\
                 }\
             }\
         },\
-        {id:"minecraft:item_display",\
+        {\
+            id:"minecraft:item_display",\
             CustomNameVisible:0b,\
             teleport_duration:10,\
             Tags:[\
@@ -81,7 +106,8 @@ summon minecraft:armor_stand ^ ^ ^ {\
                 }\
             }\
         },\
-        {id:"minecraft:item_display",\
+        {\
+            id:"minecraft:item_display",\
             CustomNameVisible:0b,\
             teleport_duration:10,\
             Tags:[\
@@ -101,7 +127,8 @@ summon minecraft:armor_stand ^ ^ ^ {\
                 }\
             }\
         },\
-        {id:"minecraft:item_display",\
+        {\
+            id:"minecraft:item_display",\
             CustomNameVisible:0b,\
             teleport_duration:10,\
             Tags:[\
@@ -121,7 +148,8 @@ summon minecraft:armor_stand ^ ^ ^ {\
                 }\
             }\
         },\
-        {id:"minecraft:item_display",\
+        {\
+            id:"minecraft:item_display",\
             CustomNameVisible:0b,\
             teleport_duration:10,\
             Tags:[\
@@ -141,7 +169,8 @@ summon minecraft:armor_stand ^ ^ ^ {\
                 }\
             }\
         },\
-        {id:"minecraft:item_display",\
+        {\
+            id:"minecraft:item_display",\
             CustomNameVisible:0b,\
             teleport_duration:10,\
             Tags:["exp.planet_marker","exp.asteroids_marker"],\
