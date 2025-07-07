@@ -819,7 +819,7 @@
                       ]
                     },
                     {
-                      "translate":"exp_guide1_fuelcanisters"
+                      "translate":"exp_guide1_fuelcells"
                     },
                     {
                       "translate":"exp_guide_item_display",
@@ -831,8 +831,8 @@
                           "hover_event":{
                             "action":"show_text",
                             "value":[
-                              {"translate":"exp_tools_fuelcanister_name"},{"translate":"exp_modules_mk1"},
-                              {"translate":"exp_guide1_fuelcanister_lore"},
+                              {"translate":"exp_tools_fuelcell_name"},{"translate":"exp_modules_mk1"},
+                              {"translate":"exp_guide1_fuelcell_lore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa40"}]},
                               {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
                             ]
@@ -850,8 +850,8 @@
                           "hover_event":{
                             "action":"show_text",
                             "value":[
-                              {"translate":"exp_tools_fuelcanister_name"},{"translate":"exp_modules_mk2"},
-                              {"translate":"exp_guide1_fuelcanister_lore"},{"translate":"exp_guide1_fuelcanistermk2_lore"},
+                              {"translate":"exp_tools_fuelcell_name"},{"translate":"exp_modules_mk2"},
+                              {"translate":"exp_guide1_fuelcell_lore"},{"translate":"exp_guide1_fuelcellmk2_lore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa42"}]},
                               {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
                             ]

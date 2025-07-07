@@ -1,18 +1,115 @@
-data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:diamond",count:10},sell:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_name":{translate:"exp_blocks_planetarium_name","italic":false},lore:[{translate:"exp_lore_tooltips","underlined": true},{translate: "exp_blocks_planetarium_tip1"}],"minecraft:item_model":"expansion:blocks/planetarium","minecraft:unbreakable":{},"minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},"minecraft:custom_data":{exp_item:{name:"planetarium",expansion_coas:1b,exp_block:1b}}}}}
+data modify entity @s Offers.Recipes append value \
+{\
+    maxUses:2147483647,\
+    buy:{id:"minecraft:diamond",count:10},\
+    sell:{\
+        id:"minecraft:carrot_on_a_stick",\
+        count:1,\
+        components:{\
+            "minecraft:custom_name":{translate:"exp_blocks_planetarium_name","italic":false},\
+            "minecraft:lore":[{translate:"exp_lore_tooltips","underlined": true},{translate: "exp_blocks_planetarium_tip1"}],\
+            "minecraft:item_model":"expansion:blocks/planetarium",\
+            "minecraft:unbreakable":{},\
+            "minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},\
+            "minecraft:custom_data":{exp_item:{name:"planetarium",expansion_coas:1b,exp_block:1b}}\
+        }\
+    }\
+}
 
-data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:diamond",count:5},sell:{id:"minecraft:poisonous_potato",count:1,components:{"minecraft:custom_data":{exp_item:{name:"fuel_canister",crafting_count:1,max_stack_size:1,exp_tool:1b,expansion_coas:1b},tier:1b,fuel:{lvl:48000,max:48000}},"minecraft:custom_name":[{"translate": "exp_tools_fuelcanister_name","italic": false},{"translate": "exp_modules_mk1"}],"item_model": "expansion:fuel_canister","custom_model_data": {"floats": [1]},"minecraft:max_stack_size": 1,"!minecraft:max_damage": {},"minecraft:unbreakable": {},"tooltip_display": {"hidden_components":["minecraft:unbreakable"]},"!minecraft:consumable":{},"!minecraft:food":{},"minecraft:lore":[{"text": ""},[{"translate": "exp_tools_fuelcanister_lvl"},{"text": "100%","color": "aqua","bold": true}],{"text": ""},{"translate": "exp_lore_tooltips"},{"translate": "exp_tools_fuelcanister_tip1"},{"translate": "exp_tools_fuelcanister_tip2"},{"translate": "exp_tools_fuelcanister_tip3"}]}}}
+data modify entity @s Offers.Recipes append value \
+{\
+    maxUses:2147483647,\
+    buy:{id:"minecraft:diamond",count:5},\
+    sell:{\
+        id:"minecraft:carrot_on_a_stick",\
+        count:1,\
+        components:{\
+            "minecraft:custom_data":{exp_item:{name:"fuel_cell",crafting_count:1,max_stack_size:1,exp_tool:1b,expansion_coas:1b},tier:1b,fuel:{lvl:48000,max:48000},icon:{layer1:"\uff01",layer2:"\ufa00"}},\
+            "minecraft:custom_name":[{"translate": "exp_tools_fuelcell_name","italic": false},{"translate": "exp_modules_mk1"}],\
+            "item_model": "expansion:fuel_cell",\
+            "custom_model_data": {"floats": [1,100],"strings": ["lacrymae"]},\
+            "minecraft:max_stack_size": 1,\
+            "!minecraft:max_damage": {},\
+            "minecraft:unbreakable": {},\
+            "tooltip_display": {"hidden_components":["minecraft:unbreakable"]},\
+            "minecraft:lore":[\
+                {"text": ""},\
+                [{"translate": "exp_tools_fuelcell_lvl"},{"text": "100%","color": "aqua","bold": true}],\
+                {"text": ""},\
+                {"translate": "exp_lore_tooltips"},\
+                {"translate": "exp_tools_fuelcell_tip1"},\
+                {"translate": "exp_tools_fuelcell_tip2"},\
+                {"translate": "exp_tools_fuelcell_tip3"}\
+            ]\
+        }\
+    }\
+}
 
-data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_complexmechanism_name","italic":false},"minecraft:custom_data":{exp_item:{name:"complex_mechanism",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/complex_mechanism"}},buyB:{id:"minecraft:crying_obsidian",count:12},sell:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_name":{translate:"exp_blocks_extractor_name","italic":false},lore:[{translate:"exp_lore_tooltips","underlined": true},{translate: "exp_blocks_extractor_tip1"},{translate: "exp_blocks_extractor_tip2"}],"minecraft:item_model":"expansion:blocks/extractor","minecraft:unbreakable":{},"minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},"minecraft:custom_data":{exp_item:{name:"extractor",expansion_coas:1b,exp_block:1b}}}}}
+data modify entity @s Offers.Recipes append value \
+{\
+    maxUses:2147483647,\
+    buy:{\
+        id:"minecraft:jigsaw",\
+        count:1,\
+        components:{\
+            "minecraft:custom_name":{translate:"exp_items_complexmechanism_name","italic":false},\
+            "minecraft:custom_data":{exp_item:{name:"complex_mechanism",crafting_count:1,max_stack_size:64}},\
+            "minecraft:item_model":"expansion:crafting/complex_mechanism"\
+        }\
+    },\
+    buyB:{\
+        id:"minecraft:crying_obsidian",\
+        count:12\
+    },\
+    sell:{\
+        id:"minecraft:carrot_on_a_stick",\
+        count:1,\
+        components:{\
+            "minecraft:custom_name":{translate:"exp_blocks_extractor_name","italic":false},\
+            lore:[{translate:"exp_lore_tooltips","underlined": true},{translate: "exp_blocks_extractor_tip1"},{translate: "exp_blocks_extractor_tip2"}],\
+            "minecraft:item_model":"expansion:blocks/extractor",\
+            "minecraft:unbreakable":{},\
+            "minecraft:tooltip_display":{hidden_components:["minecraft:unbreakable"]},\
+            "minecraft:custom_data":{exp_item:{name:"extractor",expansion_coas:1b,exp_block:1b}}\
+        }\
+    }\
+}
 
-data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:jigsaw",count:35,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},buyB:{id:"minecraft:jigsaw",count:2,components:{"minecraft:custom_name":{translate:"exp_items_cpu_name","italic":false},"minecraft:custom_data":{exp_item:{name:"processing_unit",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/cpu"}},sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shipcockpit_name","italic":false},"minecraft:custom_data":{exp_item:{name:"spaceship_cockpit"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/cockpit"}}}
+data modify entity @s Offers.Recipes append value \
+{\
+    maxUses:2147483647,\
+    buy:{id:"minecraft:jigsaw",count:35,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},\
+    buyB:{id:"minecraft:jigsaw",count:2,components:{"minecraft:custom_name":{translate:"exp_items_cpu_name","italic":false},"minecraft:custom_data":{exp_item:{name:"processing_unit",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/cpu"}},\
+    sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shipcockpit_name","italic":false},"minecraft:custom_data":{exp_item:{name:"spaceship_cockpit"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/cockpit"}}\
+}
 
-data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:jigsaw",count:30,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},buyB:{id:"minecraft:jigsaw",count:2,components:{"minecraft:custom_name":{translate:"exp_items_thruster_name","italic":false},"minecraft:custom_data":{exp_item:{name:"thruster",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/thruster"}},sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shipengines_name","italic":false},"minecraft:custom_data":{exp_item:{name:"spaceship_engines"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/engines"}}}
+data modify entity @s Offers.Recipes append value \
+{\
+    maxUses:2147483647,buy:{id:"minecraft:jigsaw",count:30,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},\
+    buyB:{id:"minecraft:jigsaw",count:2,components:{"minecraft:custom_name":{translate:"exp_items_thruster_name","italic":false},"minecraft:custom_data":{exp_item:{name:"thruster",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/thruster"}},\
+    sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shipengines_name","italic":false},"minecraft:custom_data":{exp_item:{name:"spaceship_engines"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/engines"}}\
+}
 
-data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:jigsaw",count:20,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shiprwing_name"},"minecraft:custom_data":{exp_item:{name:"spaceship_right_wing"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/rightwing"}}}
+data modify entity @s Offers.Recipes append value \
+{\
+    maxUses:2147483647,\
+    buy:{id:"minecraft:jigsaw",count:20,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},\
+    sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shiprwing_name"},"minecraft:custom_data":{exp_item:{name:"spaceship_right_wing"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/rightwing"}}\
+}
 
-data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:jigsaw",count:20,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shiplwing_name"},"minecraft:custom_data":{exp_item:{name:"spaceship_left_wing"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/leftwing"}}}
+data modify entity @s Offers.Recipes append value \
+{\
+    maxUses:2147483647,\
+    buy:{id:"minecraft:jigsaw",count:20,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},\
+    sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shiplwing_name"},"minecraft:custom_data":{exp_item:{name:"spaceship_left_wing"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/leftwing"}}\
+}
 
-data modify entity @s Offers.Recipes append value {maxUses:2147483647,buy:{id:"minecraft:jigsaw",count:15,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shipnose_name"},"minecraft:custom_data":{exp_item:{name:"spaceship_nose"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/nose"}}}
+data modify entity @s Offers.Recipes append value \
+{\
+    maxUses:2147483647,\
+    buy:{id:"minecraft:jigsaw",count:15,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},\
+    sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shipnose_name"},"minecraft:custom_data":{exp_item:{name:"spaceship_nose"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/nose"}}\
+}
 
 # set moon gravity
 function expansion:mechanics/gravity/moon

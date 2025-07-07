@@ -46,7 +46,7 @@
                 },
                 [
                   {
-                    "translate": "exp_tools_fuelcanister_lvl"
+                    "translate": "exp_tools_fuelcell_lvl"
                   },
                   {
                     "text": "100%",
@@ -61,13 +61,13 @@
                   "translate": "exp_lore_tooltips"
                 },
                 {
-                  "translate": "exp_tools_fuelcanister_tip1"
+                  "translate": "exp_tools_fuelcell_tip1"
                 },
                 {
-                  "translate": "exp_tools_fuelcanister_tip2"
+                  "translate": "exp_tools_fuelcell_tip2"
                 },
                 {
-                  "translate": "exp_tools_fuelcanister_tip3"
+                  "translate": "exp_tools_fuelcell_tip3"
                 }
               ]
             }

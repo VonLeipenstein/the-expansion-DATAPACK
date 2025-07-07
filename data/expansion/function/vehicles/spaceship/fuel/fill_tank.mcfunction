@@ -19,10 +19,10 @@ scoreboard players operation #input exp.math = #source exp.fuel_level
 scoreboard players operation #max exp.math = #source exp.fuel_max
 execute store result score #source exp.fuel_percentage run function expansion:utilities/percentage
 
-# merge the fuel level with the players fuel canister
+# merge the fuel level with the players fuel cell
 execute store result storage expansion:temp data.fuel.lvl int 1 run scoreboard players get #source exp.fuel_level
 scoreboard players operation #temp exp.percentage = #source exp.fuel_percentage
-item modify entity @p[tag=exp.clicked_ship] weapon.mainhand expansion:fuel_canister/merge_level_from_data
+item modify entity @p[tag=exp.clicked_ship] weapon.mainhand expansion:fuel_cell/merge_level_from_data
 
 # remove interaction data
 execute on passengers run data remove entity @s[type=minecraft:interaction] interaction

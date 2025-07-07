@@ -2,23 +2,23 @@
 playsound minecraft:block.brewing_stand.brew block @a ~ ~ ~
 particle minecraft:cloud ~ ~0.7 ~ 0.3 0.3 0.3 0 50
 
-# increase the canisters fuel lvl
+# increase the cells fuel lvl
 execute store result score #temp exp.fuel_level run data get block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.lvl
 execute store result score #temp exp.fuel_max run data get block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.max
 
-# Add a bound random amount to the fuel level of the canister
+# Add a bound random amount to the fuel level of the cell
 execute store result score #add exp.fuel_level run random value 8000..12000
 scoreboard players operation #temp exp.fuel_level += #add exp.fuel_level
 
-# merge the new fuel level with the canister
+# merge the new fuel level with the cell
 execute if score #temp exp.fuel_level > #temp exp.fuel_max run scoreboard players operation #temp exp.fuel_level = #temp exp.fuel_max
 execute store result block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.lvl int 1 run scoreboard players get #temp exp.fuel_level
 
-# calculate canisters new percentage
+# calculate cells new percentage
 scoreboard players operation #input exp.math = #temp exp.fuel_level
 scoreboard players operation #max exp.math = #temp exp.fuel_max
 execute store result score #temp exp.percentage run function expansion:utilities/percentage
-item modify block ~ ~ ~ container.6 expansion:fuel_canister/merge_percent_from_score
+item modify block ~ ~ ~ container.6 expansion:fuel_cell/merge_percent_from_score
 
 # update the cells custom model data
 execute store result block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_model_data".floats[1] float 1 run scoreboard players get #temp exp.percentage

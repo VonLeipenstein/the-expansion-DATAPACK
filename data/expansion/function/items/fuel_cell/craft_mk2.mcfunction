@@ -9,7 +9,7 @@ execute store result score #input exp.math run data get entity @s item.component
 execute store result score #max exp.math run data get entity @s item.components."minecraft:custom_data".fuel.max
 execute store result score #temp exp.percentage run function expansion:utilities/percentage
 
-item modify entity @s contents expansion:fuel_canister/merge_percent_from_score
+item modify entity @s contents expansion:fuel_cell/merge_percent_from_score
 execute store result entity @s item.components."minecraft:custom_model_data".floats[1] float 1 run scoreboard players get #temp exp.percentage
 
 scoreboard players reset #temp exp.oxygen_percent

@@ -16,10 +16,10 @@ execute store result entity @s item.components."minecraft:max_damage" int 1 run 
 
 # reset armor
 scoreboard players reset #temp exp.armor
-execute store result entity @s item.components."minecraft:attribute_modifiers".modifiers[{type:"minecraft:armor"}].amount int 1 run data get entity @s item.components."minecraft:custom_data".armor.base
+execute store result entity @s item.components."minecraft:attribute_modifiers"[{type:"minecraft:armor"}].amount int 1 run data get entity @s item.components."minecraft:custom_data".armor.base
 
 # reset speed
 scoreboard players reset #temp exp.speed
-execute store result entity @s item.components."minecraft:attribute_modifiers".modifiers[{type:"minecraft:movement_speed"}].amount int 1 run data get entity @s item.components."minecraft:custom_data".speed.base
+execute store result entity @s item.components."minecraft:attribute_modifiers"[{type:"minecraft:movement_speed"}].amount int 1 run data get entity @s item.components."minecraft:custom_data".speed.base
 
 data remove storage expansion:temp icons

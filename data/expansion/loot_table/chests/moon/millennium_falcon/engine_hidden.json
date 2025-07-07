@@ -11,7 +11,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:tools/fuel_canister/mk1/random",
+          "value": "expansion:tools/fuel_cell/tier1/random",
           "functions": [
             {
               "function": "minecraft:set_count",

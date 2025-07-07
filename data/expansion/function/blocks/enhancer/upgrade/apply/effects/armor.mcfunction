@@ -7,7 +7,7 @@ execute store result score #base exp.armor run data get entity @s item.component
 scoreboard players operation #temp exp.armor += #base exp.armor
 
 # merge the total back to the attribute modifier
-execute store result entity @s item.components."minecraft:attribute_modifiers".modifiers[{type:"minecraft:armor"}].amount double 1 run scoreboard players get #temp exp.armor
+execute store result entity @s item.components."minecraft:attribute_modifiers"[{type:"minecraft:armor"}].amount double 1 run scoreboard players get #temp exp.armor
 
 # reset scores
 scoreboard players reset #base exp.armor

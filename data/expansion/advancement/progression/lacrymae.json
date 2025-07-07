@@ -29,12 +29,12 @@
                 "items": [
                     {
                         "items": [
-                            "minecraft:poisonous_potato"
+                            "minecraft:carrot_on_a_stick"
                         ],
                         "predicates": {
                             "custom_data": {
                                 "exp_item":{
-                                  "name":"fuel_canister"
+                                  "name":"fuel_cell"
                                 }
                               }
                         }
