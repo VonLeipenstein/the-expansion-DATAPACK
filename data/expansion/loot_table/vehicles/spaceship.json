@@ -30,7 +30,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"spaceship\",exp_vehicle:1b,expansion_coas:1b},fuel_lvl:0}"
+              "tag": "{exp_item:{name:\"spaceship\",exp_vehicle:1b,expansion_coas:1b},stats:{speed_max:{base:100,add_percent:0},fuel_lvl:0,fuel_max:{base:24000,add_percent:0},fuel_efficiency:{base:100,add_percent:0},blaster:{type:\"regular\",id:0}}}"
             },
             {
               "function": "minecraft:set_lore",

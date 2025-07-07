@@ -6,7 +6,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/modules/spaceship/blaster_2"
+          "value": "expansion:items/modules/blaster/gatling"
         },
         {
           "type": "minecraft:loot_table",

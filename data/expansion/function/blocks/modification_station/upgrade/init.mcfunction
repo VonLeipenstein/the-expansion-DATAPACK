@@ -1,6 +1,10 @@
-# put the vehicle in the origin of the snowball
-execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin run data modify storage expansion:owner data.store_UUID set from entity @s UUID
+execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin run tag @s add exp.being_modified
 
-execute on passengers if entity @s[tag=exp.modstation.bot_link] on origin run function expansion:blocks/modification_station/mod_robots/link_to_vehicle
+scoreboard players reset @s exp.bool
+execute if function expansion:blocks/modification_station/upgrade/spaceship/selected run function expansion:blocks/modification_station/upgrade/spaceship/apply_mods/initiate
+execute if function expansion:blocks/modification_station/upgrade/mech/selected run function expansion:blocks/modification_station/upgrade/mech/apply_mods/initiate
+execute if function expansion:blocks/modification_station/upgrade/buggy/selected run function expansion:blocks/modification_station/upgrade/buggy/apply_mods/initiate
 
-data remove storage expansion:owner data.store_UUID
+# start the upgrade if at least one of the transfers succeeded
+execute if score #temp exp.bool matches 1 run scoreboard players set @s exp.timer_1 200
+scoreboard players reset @s exp.bool

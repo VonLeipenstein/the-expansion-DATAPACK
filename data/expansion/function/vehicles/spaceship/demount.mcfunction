@@ -1,5 +1,7 @@
-# store the fuel level inside the spaceship item
-execute on passengers if entity @s[tag=exp.spaceship_display] store result entity @s item.components."minecraft:custom_data".fuel_lvl int 1 on vehicle run scoreboard players get @s exp.fuel_level
+# store the fuel cell inside the spaceship item
+execute on passengers if entity @s[tag=exp.fuel_slot] run function expansion:vehicles/spaceship/fuel/update_cell
+execute on passengers if entity @s[tag=exp.fuel_slot] run data modify storage expansion:temp fuel_cell set from entity @s item
+execute on passengers if entity @s[tag=exp.spaceship_display] run data modify entity @s item.components."minecraft:custom_data".fuel_cell set from storage expansion:temp fuel_cell
 
 # substract one from the spaceship custom model data so it changes to the flying version
 execute on passengers if entity @s[tag=exp.spaceship_display] run data remove entity @s item.components.minecraft:custom_model_data.strings[1]

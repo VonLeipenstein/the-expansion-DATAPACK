@@ -1,7 +1,8 @@
 # update the speed percentage when the speed changes
 scoreboard players set #offset exp.math 10
-scoreboard players set #total exp.math 90
-execute if function expansion:vehicles/spaceship/input/any store result score #temp exp.speed run function expansion:vehicles/spaceship/propulsion/speed_percentage
+scoreboard players operation #total exp.math = @s exp.speed_max
+scoreboard players operation #total exp.math -= #offset exp.math
+execute store result score #temp exp.speed run function expansion:vehicles/spaceship/propulsion/speed_percentage
 
 # prepare the actionbar text in storage
 data merge storage expansion:temp {actionbar:{position:[[{text:"◀",color:"white"},{score:{name:"@s",objective:"exp.x"}},{text:", "}],[{text:"",color:"white"},{score:{name:"@s",objective:"exp.y"}},{text:", "}],[{text:"",color:"white"},{score:{name:"@s",objective:"exp.z"}},{text:"▶"}]],speed:[{text:"◀",color:"green"},{score:{name:"#temp",objective:"exp.speed"}},{text:"%▶"}],fuel:[{text:"◀",color:"green"},{score:{name:"@s",objective:"exp.fuel_percentage"}},{text:"%▶"}]}}

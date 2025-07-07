@@ -10,7 +10,11 @@
         "icon": {
             "id": "minecraft:poisonous_potato",
             "components": {
-                "item_model": "expansion:fuel_canister"
+                "item_model": "expansion:fuel_cell",
+                "custom_model_data": {
+                    "floats": [1,100],
+                    "strings": ["lacrymae"]
+                }
             }
         },
         "frame": "task",

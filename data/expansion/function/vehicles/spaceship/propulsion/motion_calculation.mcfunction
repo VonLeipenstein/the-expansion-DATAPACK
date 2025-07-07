@@ -26,15 +26,10 @@ execute store result score #velocity_x exp.math run scoreboard players operation
 scoreboard players operation #velocity_y exp.math = #sin_phi exp.math
 execute store result score #velocity_z exp.math run scoreboard players operation #cos_tet exp.math *= #cos_phi exp.math
 
-# incorporate the speed mod into the speed. 
-scoreboard players operation #temp exp.speed_mod = @s exp.speed
-scoreboard players operation #temp exp.speed_mod *= @s exp.speed_mod
-scoreboard players operation #temp exp.speed_mod /= #10 exp.const
-
 # multiply the motion values with the speed.
-scoreboard players operation #velocity_x exp.math *= #temp exp.speed_mod
-scoreboard players operation #velocity_y exp.math *= #temp exp.speed_mod
-scoreboard players operation #velocity_z exp.math *= #temp exp.speed_mod
+scoreboard players operation #velocity_x exp.math *= @s exp.speed
+scoreboard players operation #velocity_y exp.math *= @s exp.speed
+scoreboard players operation #velocity_z exp.math *= @s exp.speed
 
 # merge the calculated vector with the motion and make the armor stand move.
 execute store result storage expansion:motion Motion[0] double -0.000001 run scoreboard players get #velocity_x exp.math

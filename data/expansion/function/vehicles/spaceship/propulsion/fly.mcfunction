@@ -1,8 +1,8 @@
-# Calculate motion vector vector 
+# Calculate motion vector
 function expansion:vehicles/spaceship/propulsion/motion_calculation
 
 # remove fuel
-scoreboard players remove @s exp.fuel_level 2
+execute if predicate expansion:periodic/10 run function expansion:vehicles/spaceship/fuel/remove
 function expansion:utilities/fuel_percentage
 
 # make the correct particles run depending on the skin

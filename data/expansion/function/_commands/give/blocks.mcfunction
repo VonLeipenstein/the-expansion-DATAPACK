@@ -12,4 +12,3 @@ loot insert ~ ~ ~ loot expansion:blocks/tesla_coil
 loot insert ~ ~ ~ loot expansion:blocks/enhancer
 loot insert ~ ~ ~ loot expansion:blocks/modstation
 loot insert ~ ~ ~ loot expansion:blocks/assembler
-loot insert ~ ~ ~ loot expansion:blocks/portal

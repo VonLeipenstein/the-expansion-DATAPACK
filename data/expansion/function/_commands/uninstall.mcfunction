@@ -35,12 +35,7 @@ scoreboard objectives remove exp.distance
 scoreboard objectives remove exp.dim_test
 scoreboard objectives remove exp.gen_success
 scoreboard objectives remove exp.gamemode
-scoreboard objectives remove exp.equipment_cmd
-scoreboard objectives remove exp.spaceship_cmd
 scoreboard objectives remove exp.math
-scoreboard objectives remove exp.wasd
-scoreboard objectives remove exp.wasd.x
-scoreboard objectives remove exp.wasd.z
 
 function expansion:_commands/functions/disable
 

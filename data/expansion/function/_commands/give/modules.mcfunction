@@ -22,12 +22,3 @@ loot insert ~ ~ ~ loot expansion:items/modules/speed/mk3/regular
 loot insert ~ ~ ~ loot expansion:items/modules/magnetic
 loot insert ~ ~ ~ loot expansion:items/modules/rocket
 loot insert ~ ~ ~ loot expansion:items/modules/slot
-
-loot insert ~ ~ ~ loot expansion:blocks/modstation
-loot insert ~ ~ ~ loot expansion:items/modules/spaceship/blaster_1
-loot insert ~ ~ ~ loot expansion:items/modules/spaceship/blaster_2
-loot insert ~ ~ ~ loot expansion:items/modules/spaceship/fuel_mk1
-loot insert ~ ~ ~ loot expansion:items/modules/spaceship/fuel_mk2
-loot insert ~ ~ ~ loot expansion:items/modules/spaceship/fuel_mk3
-loot insert ~ ~ ~ loot expansion:items/modules/speed_mk1
-loot insert ~ ~ ~ loot expansion:items/modules/speed_mk2

@@ -6,12 +6,12 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/modules/speed_mk3"
+            "value": "expansion:items/modules/vehicle_speed/mk3"
           },
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/modules/spaceship/fuel_mk3"
+            "value": "expansion:items/modules/vehicle_fuel/mk3"
           }
         ]
       }

@@ -16,21 +16,10 @@ data merge entity @s {NoGravity:0b}
 # reset the motion storage in this function in case it corrupts for some weird reason. 
 data merge storage expansion:motion {Motion:[0.0d,0.0d,0.0d]}
 
+# Initialize the actionbar
+function expansion:vehicles/spaceship/actionbar
+
 # tags to regulate the mod station, make sure the ship is deselected
 tag @s add exp.player_inside
 tag @s remove exp.mod_vehicle
 scoreboard players reset @s exp.unique_id
-
-# merge any upgrade values with the spaceship
-scoreboard players set @s exp.value 50
-execute if data entity @s data.ModStorage.fuel.components."minecraft:custom_data".value store result score @s exp.value \
-        on passengers if entity @s[tag=exp.spaceship_display] run data get entity @s data.ModStorage.fuel.components."minecraft:custom_data".value
-
-scoreboard players set @s exp.speed_mod 10
-execute if data entity @s data.ModStorage.speed.components."minecraft:custom_data".value store result score @s exp.delay \
-        on passengers if entity @s[tag=exp.spaceship_display] run data get entity @s data.ModStorage.speed.components."minecraft:custom_data".speed_mod
-        
-scoreboard players set @s exp.unique_id 0
-execute if data entity @s data.ModStorage.blaster.components."minecraft:custom_data".id store result score @s exp.unique_id \
-        on passengers if entity @s[tag=exp.spaceship_display] run data get entity @s data.ModStorage.blaster.components."minecraft:custom_data".id
-

@@ -1,0 +1,15 @@
+{
+  "function": "minecraft:set_lore",
+  "mode": "append",
+  "lore": [
+    {
+      "text": ""
+    },
+    {
+      "translate": "exp_modules_exclusive"
+    },
+    {
+      "translate": "exp_modules_exclusive_spaceship"
+    }
+  ]
+}

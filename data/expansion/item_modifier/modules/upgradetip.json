@@ -1,0 +1,15 @@
+{
+  "function": "minecraft:set_lore",
+  "mode": "append",
+  "lore": [
+    {
+      "text": ""
+    },
+    {
+      "translate": "exp_upgrades_whenapplied_line1"
+    },
+    {
+      "translate": "exp_upgrades_whenapplied_line2"
+    }
+  ]
+}

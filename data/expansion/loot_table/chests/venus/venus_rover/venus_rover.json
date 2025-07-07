@@ -6,7 +6,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/modules/spaceship/blaster_1"
+          "value": "expansion:items/modules/blaster/digging"
         },
         {
           "type": "minecraft:loot_table",

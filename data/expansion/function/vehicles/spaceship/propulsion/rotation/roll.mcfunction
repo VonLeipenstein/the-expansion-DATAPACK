@@ -2,6 +2,11 @@ execute store result score @s exp.roll on passengers if entity @s[tag=exp.player
 
 # make sure the tilt angle is in the correct format
 scoreboard players operation @s exp.roll -= @s exp.yaw
+
+# don't calculate the rest if the difference is not great enough
+execute if score @s exp.roll matches -10..10 run return 0
+
+# calculate the roll otherwise
 execute unless score @s exp.roll matches -180000..180000 run function expansion:vehicles/spaceship/propulsion/rotation/roll_correction
 execute if score @s exp.roll matches 45000.. run scoreboard players set @s exp.roll 45000
 execute if score @s exp.roll matches ..-45000 run scoreboard players set @s exp.roll -45000

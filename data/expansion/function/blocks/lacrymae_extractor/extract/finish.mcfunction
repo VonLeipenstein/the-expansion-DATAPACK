@@ -7,7 +7,7 @@ execute store result score #temp exp.fuel_level run data get block ~ ~ ~ Items[{
 execute store result score #temp exp.fuel_max run data get block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.max
 
 # Add a bound random amount to the fuel level of the canister
-execute store result score #add exp.fuel_level run random value 10000..15000
+execute store result score #add exp.fuel_level run random value 8000..12000
 scoreboard players operation #temp exp.fuel_level += #add exp.fuel_level
 
 # merge the new fuel level with the canister
@@ -19,6 +19,9 @@ scoreboard players operation #input exp.math = #temp exp.fuel_level
 scoreboard players operation #max exp.math = #temp exp.fuel_max
 execute store result score #temp exp.percentage run function expansion:utilities/percentage
 item modify block ~ ~ ~ container.6 expansion:fuel_canister/merge_percent_from_score
+
+# update the cells custom model data
+execute store result block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_model_data".floats[1] float 1 run scoreboard players get #temp exp.percentage
 
 # convert a crying obsidian to obsidian
 item modify block ~ ~ ~ container.1 expansion:utility/reduce_count

@@ -3,8 +3,8 @@ execute on passengers if entity @s[tag=exp.spaceship_seat] on passengers run eff
 execute on passengers if entity @s[tag=exp.spaceship_seat] on passengers run effect give @s resistance 1 4 true
 
 # Detect player input
-execute if function expansion:vehicles/spaceship/input/forward if score @s exp.speed matches -10..99 run scoreboard players add @s exp.speed 1
-execute if function expansion:vehicles/spaceship/input/backward if score @s exp.speed matches 11..100 run scoreboard players remove @s exp.speed 1
+execute if function expansion:vehicles/spaceship/input/forward if score @s exp.speed < @s exp.speed_max if score @s exp.speed matches -10.. run scoreboard players add @s exp.speed 1
+execute if function expansion:vehicles/spaceship/input/backward if score @s exp.speed <= @s exp.speed_max if score @s exp.speed matches 11.. run scoreboard players remove @s exp.speed 1
 
 # hyperjump
 execute if entity @s[tag=exp.hyperjumping] run function expansion:vehicles/spaceship/hyperdrive/stop

@@ -1,0 +1,3 @@
+execute if entity @s[tag=exp.spaceship] run return run function expansion:blocks/modification_station/upgrade/spaceship/apply_mods/apply_upgrade
+execute if entity @s[tag=exp.moon_buggy] run return run function expansion:blocks/modification_station/upgrade/mech/apply_mods/apply_upgrade
+execute if entity @s[tag=exp.mech] run return run function expansion:blocks/modification_station/upgrade/buggy/apply_mods/apply_upgrade

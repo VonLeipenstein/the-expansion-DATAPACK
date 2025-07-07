@@ -36,6 +36,11 @@ summon minecraft:armor_stand ^ ^ ^ {\
             response:0b\
         },\
         {\
+            id:"minecraft:item_display",\
+            Tags:["exp.fuel_slot"],\
+            item_display:"none"\
+        },\
+        {\
             id:"minecraft:marker",\
             Tags:["exp.player_rotation"]\
         },\

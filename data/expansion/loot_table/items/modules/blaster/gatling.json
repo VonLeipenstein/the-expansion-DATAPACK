@@ -1,0 +1,74 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "translate": "exp_items_gatlingblast_name",
+                  "italic": false
+                },
+                "entity": "this"
+              },
+              {
+                "function": "minecraft:set_components",
+                    "components": {
+                      "item_model": "expansion:modules/vehicle",
+                      "custom_model_data": {
+                        "strings": ["blaster"],
+                        "floats": [3]
+                      },
+                    "minecraft:max_stack_size": 64,
+                    "!minecraft:max_damage": {},
+                    "minecraft:unbreakable": {},
+                        "tooltip_display": {"hidden_components":["minecraft:unbreakable"]}
+                    }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{exp_item:{name:\"spaceship_blaster\",crafting_count:1,max_stack_size:64},spaceship_mod:1b,blaster_mod:1b,blaster:{type:\"gatling\",id:2}}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_upgrades_ifadded"
+                  },
+                  {
+                    "translate": "exp_items_gatlingblast_tip1"
+                  },
+                  {
+                    "translate": "exp_items_gatlingblast_tip2"
+                  },
+                  {
+                    "translate": "exp_items_gatlingblast_tip3"
+                  },
+                  {
+                    "translate": "exp_items_gatlingblast_tip4"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:reference",
+                "name": "expansion:modules/upgradetip"
+              },
+              {
+                "function": "minecraft:reference",
+                "name": "expansion:modules/exclusive_spaceship"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

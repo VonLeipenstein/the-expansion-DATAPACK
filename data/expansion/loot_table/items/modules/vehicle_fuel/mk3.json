@@ -1,0 +1,78 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                  "translate": "exp_items_fuelmod_name",
+                  "italic": false
+                  },
+                  {
+                    "translate": "exp_modules_mk3"
+                  }
+                ],
+                "entity": "this"
+              },
+              {
+                "function": "minecraft:set_components",
+                    "components": {
+                      "item_model": "expansion:modules/vehicle",
+                      "custom_model_data": {
+                        "strings": ["fuel"],
+                        "floats": [3]
+                      },
+                    "minecraft:max_stack_size": 64,
+                    "!minecraft:max_damage": {},
+                    "minecraft:unbreakable": {},
+                        "tooltip_display": {"hidden_components":["minecraft:unbreakable"]}
+                    }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{exp_item:{name:\"fuel_upgrade\",crafting_count:1,max_stack_size:64},spaceship_mod:1b,fuel_mod:1b,mk:3b,fuel_efficiency:{add_percent:-40}}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_upgrades_ifadded"
+                  },
+                  [
+                    {
+                      "translate": "exp_upgrades_fuelefficiency_lore"
+                    },
+                    {
+                      "text": "-40%",
+                      "color": "green",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:reference",
+                "name": "expansion:modules/upgradetip"
+              },
+              {
+                "function": "minecraft:reference",
+                "name": "expansion:modules/exclusive_spaceship"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

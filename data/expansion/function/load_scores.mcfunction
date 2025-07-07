@@ -21,15 +21,10 @@ scoreboard objectives add exp.percentage dummy
 scoreboard objectives add exp.gravity dummy
 scoreboard objectives add exp.gravity_modifier dummy
 scoreboard objectives add exp.gravity_id dummy
-scoreboard players set #moon exp.gravity_id 1
-scoreboard players set #mars exp.gravity_id 2
-scoreboard players set #venus exp.gravity_id 3
-scoreboard players set #jupiter exp.gravity_id 4
-scoreboard players set #europa exp.gravity_id 5
-scoreboard players set #zero exp.gravity_id 6
 # fuel
 scoreboard objectives add exp.fuel_level dummy
 scoreboard objectives add exp.fuel_max dummy
+scoreboard objectives add exp.fuel_efficiency dummy
 scoreboard objectives add exp.fuel_percentage dummy
 # oxygen
 scoreboard objectives add exp.oxygen_lvl dummy
@@ -45,6 +40,7 @@ scoreboard objectives add exp.armor dummy
 # vehicles
 scoreboard objectives add exp.speed dummy
 scoreboard objectives add exp.speed_mod dummy
+scoreboard objectives add exp.speed_max dummy
 scoreboard objectives add exp.passenger_count dummy
 scoreboard objectives add exp.mech_action_id dummy
 scoreboard objectives add exp.mech_action_dur dummy
@@ -84,7 +80,6 @@ scoreboard objectives add exp.arc_id dummy
 scoreboard objectives add exp.ammo dummy
 scoreboard objectives add exp.max_ammo dummy
 scoreboard objectives add exp.max_range dummy
-
 # mobs
 scoreboard objectives add exp.health dummy
 scoreboard objectives add exp.max_health dummy
@@ -94,15 +89,17 @@ scoreboard objectives add exp.dim_test dummy
 scoreboard objectives add exp.gen_success dummy
 # gamemode save
 scoreboard objectives add exp.gamemode dummy
-# saves the custommodeldata of the equipment and spaceship when mounting vehicles
-scoreboard objectives add exp.equipment_cmd dummy
-scoreboard objectives add exp.spaceship_cmd dummy
 # math
 scoreboard objectives add exp.math dummy
-# wasd detection
-scoreboard objectives add exp.wasd dummy
-scoreboard objectives add exp.wasd.x dummy
-scoreboard objectives add exp.wasd.z dummy
+
+
+# planet gravity
+scoreboard players set #moon exp.gravity_id 1
+scoreboard players set #mars exp.gravity_id 2
+scoreboard players set #venus exp.gravity_id 3
+scoreboard players set #jupiter exp.gravity_id 4
+scoreboard players set #europa exp.gravity_id 5
+scoreboard players set #zero exp.gravity_id 6
 # constants
 scoreboard objectives add exp.const dummy
 scoreboard players set #-46496 exp.const -46496
