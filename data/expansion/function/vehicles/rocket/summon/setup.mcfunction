@@ -6,6 +6,12 @@ execute on passengers if entity @s[type=minecraft:item_display,tag=exp.rocket_di
 # set the fuel level from the handheld item
 execute store result score @s exp.fuel_level run data get entity @p[tag=exp.tick_player] SelectedItem.components."minecraft:custom_data".fuel_lvl
 
+# Overlayed on 1.21.6+
+function expansion:vehicles/rocket/summon/set_camera_distance
+
+# initialize the waypoint (1.21.6+)
+function expansion:vehicles/rocket/summon/set_waypoint
+
 # set the max fuel
 scoreboard players set @s exp.fuel_max 640
 

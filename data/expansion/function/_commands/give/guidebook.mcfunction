@@ -1,0 +1,1 @@
+loot give @s loot expansion:items/guidebook

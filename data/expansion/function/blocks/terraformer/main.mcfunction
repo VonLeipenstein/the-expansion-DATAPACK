@@ -5,6 +5,9 @@ execute if score @s exp.counter_1 matches 1 positioned ~ ~0.5 ~ run function exp
 # terraforming settings
 execute if predicate expansion:periodic/10 if score @s exp.bool matches 1 at @s run function expansion:blocks/terraformer/terraform/main
 
+# particles
+particle trial_spawner_detection_ominous ~ ~1 ~ 0.1 0.0 0.1 0 1
+
 # GUI and buttons
 execute if entity @s[tag=exp.player_nearby] run function expansion:blocks/terraformer/player_nearby
 

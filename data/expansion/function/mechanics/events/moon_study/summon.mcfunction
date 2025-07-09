@@ -1,4 +1,4 @@
-loot spawn ~ ~ ~ loot expansion:items/books/guide1
+loot spawn ~ ~ ~ loot expansion:items/guidebook
 
 scoreboard players enable @s give_guide1
 scoreboard players set @s give_guide1 0

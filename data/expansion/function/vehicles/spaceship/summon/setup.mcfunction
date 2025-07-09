@@ -26,6 +26,12 @@ execute on passengers if entity @s[tag=exp.fuel_slot] run data merge entity @s {
 # adjust seat scale to put the player at the correct height
 attribute @s minecraft:scale base set 0.82
 
+# set the camera_distance attribute (1.21.6+)
+function expansion:vehicles/spaceship/summon/set_camera_distance
+
+# initialize the waypoint (1.21.6+)
+function expansion:vehicles/spaceship/summon/set_waypoint
+
 # apply nogravity if in a zero gravity environment
 data merge entity @s[predicate=expansion:dimension/zero_gravity] {NoGravity:1b}
 

@@ -9,6 +9,7 @@ execute if items block ~ ~ ~ container.10 *[minecraft:custom_data~{exp.enhanceab
 
 # rotate the display if an equipment is active
 execute if items entity @s contents * run rotate @s ~-2 ~
+execute if items entity @s contents * run particle trial_spawner_detection_ominous ~ ~1 ~ 0.2 0.0 0.2 0 1
 
 # gui
 execute unless items entity @s contents *[minecraft:custom_data~{exp.enhanceable:1b}] run function expansion:blocks/enhancer/gui/none

@@ -6,6 +6,7 @@ summon minecraft:armor_stand ~ ~ ~ {\
     Tags:[\
         "exp.lunar_module",\
         "exp.vehicle",\
+        "exp.new_vehicle",\
         "smithed.block"\
     ],\
     Passengers:[\

@@ -13,6 +13,9 @@ data modify entity @s equipment.feet set from entity @p[tag=exp.tick_player] Sel
 # make the buggy weightless if it is in a zero gravity environment
 data merge entity @s[predicate=expansion:dimension/zero_gravity] {NoGravity:1b}
 
+# initialize the waypoint (1.21.6+)
+function expansion:vehicles/buggy/summon/set_waypoint
+
 # align the player with the buggy
 execute rotated as @s on passengers if entity @s[tag=exp.buggy_turn] positioned as @s run rotate @s ~ ~
 

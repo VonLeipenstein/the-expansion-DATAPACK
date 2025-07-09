@@ -24,7 +24,7 @@
               },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{gui_item:1b,gui_button:0b}"
+              "tag": "{gui_item:1b,gui_button:0b,mech_tip:1b}"
             },
             {
               "function": "minecraft:set_lore",

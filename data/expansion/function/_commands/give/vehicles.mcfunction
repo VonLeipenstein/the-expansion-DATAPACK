@@ -8,7 +8,6 @@ loot insert ~ ~ ~ loot expansion:vehicles/rocket
 loot insert ~ ~ ~ loot expansion:vehicles/lunar_module
 loot insert ~ ~ ~ loot expansion:vehicles/buggy
 loot insert ~ ~ ~ loot expansion:vehicles/return_capsule
-loot insert ~ ~ ~ loot expansion:vehicles/skins/zwaluw
 loot insert ~ ~ ~ loot expansion:items/rocket_bottom
 loot insert ~ ~ ~ loot expansion:items/rocket_cockpit
 loot insert ~ ~ ~ loot expansion:items/rocket_top

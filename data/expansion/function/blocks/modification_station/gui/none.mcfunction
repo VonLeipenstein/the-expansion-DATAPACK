@@ -25,3 +25,5 @@ execute unless items block ~ ~ ~ container.23 *[custom_data~{gui_item:1b}] run f
 execute unless items block ~ ~ ~ container.24 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:24, Type:"filler"}
 execute unless items block ~ ~ ~ container.25 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:25, Type:"filler"}
 execute unless items block ~ ~ ~ container.26 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:26, Type:"icons/remove"}
+
+execute on passengers if entity @s[tag=exp.modstation_display] run data remove entity @s item

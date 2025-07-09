@@ -14,4 +14,4 @@ execute unless items block ~ ~ ~ container.1 * \
         unless items block ~ ~ ~ container.22 * \
         run return 1
 
-return 1
+return fail

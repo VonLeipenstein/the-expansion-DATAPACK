@@ -10,7 +10,8 @@
             "font":"expansion:module_icons",
             "color":"white",
             "italic":false,
-            "separator":{"text":""}
+            "separator":{"text":""},
+            "shadow_color": 0
         },
         {
             "storage":"expansion:temp",
@@ -19,7 +20,8 @@
             "font":"expansion:module_icons",
             "color":"white",
             "italic":false,
-            "separator":{"text":""}
+            "separator":{"text":""},
+            "shadow_color": 0
         }
     ],
     "mode":"replace_section",
