@@ -1,5 +1,5 @@
 # speed for bigger FOV
-execute on passengers if entity @s[tag=exp.spaceship_seat] on passengers run effect give @s speed 1 4 true
+#execute on passengers if entity @s[tag=exp.spaceship_seat] on passengers run effect give @s speed 1 4 true
 execute on passengers if entity @s[tag=exp.spaceship_seat] on passengers run effect give @s resistance 1 4 true
 
 # Detect player input

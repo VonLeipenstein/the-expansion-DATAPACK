@@ -27,7 +27,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"amethonium_plate\",crafting_count:1,max_stack_size:64}}"
+              "tag": "{exp_item:{name:\"amethonium_plate\",crafting_count:2,max_stack_size:64}}"
             }
           ]
         }

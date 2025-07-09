@@ -27,8 +27,8 @@
                 "dimension": "expansion:moon"
               },
               "vehicle": {
-                "type": "minecraft:item_display",
-                "nbt": "{Tags:[\"exp.buggy_display\"]}"
+                "type": "minecraft:armor_stand",
+                "nbt": "{Tags:[\"exp.moon_buggy\"]}"
               }
             }
           }

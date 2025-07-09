@@ -10,7 +10,7 @@
         "icon": {
           "id": "minecraft:jigsaw",
           "components": {
-            "item_model": "expansion:crafting/buggy_wheel"
+            "item_model": "expansion:crafting/buggy_tire"
           }
         },
         "frame": "challenge",
