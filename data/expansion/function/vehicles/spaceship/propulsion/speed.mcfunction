@@ -12,7 +12,7 @@ execute if function expansion:vehicles/spaceship/input/jump if predicate expansi
 execute if entity @s[tag=exp.hyperjumping] run function expansion:vehicles/spaceship/hyperdrive/charge
 
 # Prevent flying when the fuel is gone
-execute unless score @s exp.fuel_level matches 1.. run scoreboard players set @s exp.speed 0
+execute unless score @s exp.fuel_level matches 1.. run scoreboard players set @s exp.speed 10
 
 # return value
 return run scoreboard players get @s exp.speed

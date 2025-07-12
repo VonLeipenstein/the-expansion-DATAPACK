@@ -1,7 +1,7 @@
 # only lose oxygen if my oxygen score is greater than 0
 execute unless score @s exp.oxygen_lvl matches 1.. run return fail
 
-# consume a base of 10 oxygen 
+# consume a base of 10 oxygen
 scoreboard players set #temp exp.oxygen_lvl 10
 
 # Lose a percentage of your oxygen based on your suit integrity
