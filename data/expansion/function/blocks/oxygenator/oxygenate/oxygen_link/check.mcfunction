@@ -1,5 +1,6 @@
-# Remove oxygen from entities that previously had oxygen but left the base
-execute if function expansion:blocks/oxygenator/oxygenate/oxygen_link/not_found run return run function expansion:blocks/oxygenator/oxygenate/oxygen_link/remove
+# Cut the oxygen supply if the link entities didn't find their target
+execute if entity @s[tag=!exp.found_target] run return run tag @s remove exp.enabled_oxygen
 
-# Give oxygen to linked entities (who haven't yet recieved oxygen)
-execute on origin run function expansion:blocks/oxygenator/oxygenate/give_oxygen
+# enable the oxygen supply to entities that did reach their target
+tag @s add exp.enabled_oxygen
+tag @s remove exp.found_target

@@ -8,9 +8,6 @@ execute if entity @s[tag=exp.inside_vehicle] run return fail
 # always lose oxygen under water
 execute if function expansion:spacesuits/integrity/detect_water run return 1
 
-# never lose oxygen within range of a terraformer or oxygenator
-execute if entity @s[tag=exp.inside_habitable_space] run return fail
-
 # never lose oxygen in planets that have ambient oxygen
 execute unless predicate expansion:dimension/oxygen_absent run return fail
 

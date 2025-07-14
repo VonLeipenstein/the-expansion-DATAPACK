@@ -5,9 +5,6 @@ execute if entity @s[gamemode=spectator] run return fail
 # never suffocate inside a vehicle
 execute if entity @s[tag=exp.inside_vehicle] run return fail
 
-# never suffocate within range of a terraformer or oxygenator
-execute if entity @s[tag=exp.inside_habitable_space] run return fail
-
 # never suffocate in planets that have ambient oxygen
 execute unless predicate expansion:dimension/oxygen_absent run return fail
 

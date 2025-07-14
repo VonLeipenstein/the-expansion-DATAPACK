@@ -1,10 +1,10 @@
-# remove all the oxygen scanner markers
+# Destroy all the oxygen scanner markers
 function expansion:blocks/oxygenator/oxygenate/kill_own_scanners
 
-# remove oxygen from connected players
-execute on passengers if entity @s[tag=exp.oxygen_link] run function expansion:blocks/oxygenator/oxygenate/oxygen_link/remove
+# Cut oxygen from connected players
+execute on passengers if entity @s[tag=exp.oxygen_link,tag=exp.enabled_oxygen] run tag @s remove exp.enabled_oxygen
 
-# stop the animated texture
+# Stop the animated texture
 function expansion:blocks/oxygenator/gui/animated_texture/stop
 
 # remove the tag that ensures immediate access to oxygen, the base will have to be repressurized.

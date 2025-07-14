@@ -1,0 +1,1 @@
+execute on origin positioned ~-24 ~-24 ~-24 if entity @s[dx=47,dy=47,dz=47] run return 1

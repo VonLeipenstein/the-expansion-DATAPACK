@@ -24,8 +24,8 @@
           },
           {
             "score": {
-              "name": "#output",
-              "objective": "exp.percentage"
+              "name": "#temp",
+              "objective": "exp.oxygen_percent"
             },
             "color": "aqua",
             "bold": true,

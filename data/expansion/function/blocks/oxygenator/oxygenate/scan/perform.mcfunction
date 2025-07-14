@@ -2,11 +2,10 @@
 execute as @e[type=item_display,tag=exp.oxygen_marker,scores={exp.delay=1..},predicate=expansion:compare_score/unique_id,distance=..20,limit=300] run function expansion:blocks/oxygenator/oxygenate/fill_space/main
 # Kill previous layer
 kill @e[type=item_display,tag=exp.oxygen_marker,scores={exp.delay=0},predicate=expansion:compare_score/unique_id,distance=..20,limit=100]
-
-# Establish an oxygen link if an eligible entity was found
-# Only one link can be added per tick
-execute if score #temp exp.oxygen_lvl matches 1 summon snowball run function expansion:blocks/oxygenator/oxygenate/oxygen_link/finish
-scoreboard players reset #temp exp.oxygen_lvl
+# for each oxygen link, try to reach their origin with a ray
+execute at @e[type=item_display,tag=exp.oxygen_marker,predicate=expansion:compare_score/unique_id,predicate=expansion:location/cornered,distance=..20,limit=1] \
+        on passengers if entity @s[tag=exp.oxygen_link,tag=!exp.found_target] if function expansion:blocks/oxygenator/oxygenate/oxygen_link/detect_player \
+        run function expansion:blocks/oxygenator/oxygenate/oxygen_link/found_target
 
 # score that keeps track of the amount of currently present scanners
 scoreboard players operation @s exp.hold_value = #temp exp.hold_value

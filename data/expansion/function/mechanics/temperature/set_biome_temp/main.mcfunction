@@ -1,5 +1,3 @@
-execute if entity @s[tag=exp.inside_habitable_space] run return run scoreboard players set @s exp.temperature 0
-
 # set dimension (and biome) specific temperatures
 execute if dimension expansion:moon run return run function expansion:mechanics/temperature/set_biome_temp/moon
 execute if dimension expansion:mars run return run function expansion:mechanics/temperature/set_biome_temp/mars

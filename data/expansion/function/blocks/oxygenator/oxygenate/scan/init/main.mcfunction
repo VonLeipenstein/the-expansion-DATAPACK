@@ -11,9 +11,6 @@ execute if score @s exp.passenger_count matches 80.. run scoreboard players set 
 execute if score #random exp.math > #temp exp.math run function expansion:blocks/oxygenator/oxygenate/scan/init/random_startpos
 execute if score #random exp.math <= #temp exp.math run function expansion:blocks/oxygenator/oxygenate/scan/init/best_startpos
 
-# Tag all the entities which are currently connected
-execute on passengers if entity @s[tag=exp.oxygen_link] on origin run tag @s add exp.getting_oxygen
-
 # Start the animated block texture
 function expansion:blocks/oxygenator/gui/animated_texture/start
 

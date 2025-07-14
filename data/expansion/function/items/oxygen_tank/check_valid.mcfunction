@@ -3,6 +3,6 @@ execute unless score #source exp.oxygen_lvl matches 1.. run return fail
 
 execute if score @s exp.oxygen_max matches 0 run return fail
 
-execute if score @s exp.oxygen_lvl = @s exp.oxygen_max run return fail
+#execute if score @s exp.oxygen_lvl = @s exp.oxygen_max run return fail
 
 return 1
