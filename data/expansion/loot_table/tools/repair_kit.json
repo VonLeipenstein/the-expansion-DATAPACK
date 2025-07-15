@@ -20,7 +20,7 @@
                     "components": {
                       "item_model": "expansion:repair_kit",
                       "minecraft:max_stack_size": 1,
-                      "minecraft:max_damage": 1000,
+                      "minecraft:max_damage": 2000,
                       "minecraft:damage": 0
                     }
               },

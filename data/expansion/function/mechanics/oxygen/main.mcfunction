@@ -13,3 +13,6 @@ execute if predicate expansion:periodic/10 unless score @s exp.oxygen_lvl matche
 # Remove oxygen
 # Needs to be after suffocate so the entire next tick has the chance to refill the lost oxygen
 execute if predicate expansion:periodic/10 if score @s exp.oxygen_lvl matches 1.. run function expansion:mechanics/oxygen/lose
+
+# instantly replenish oxygen if the player is on a planet with oxygen, unless if the player is wearing a full suit
+execute if predicate expansion:dimension/oxygen_available unless predicate expansion:armor/all run scoreboard players operation @s exp.oxygen_lvl = @s exp.oxygen_max

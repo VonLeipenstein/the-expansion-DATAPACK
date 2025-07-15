@@ -1,5 +1,5 @@
 # deplete durability from the item
-scoreboard players set #temp exp.damage 10000
+scoreboard players set #temp exp.damage 5000
 item modify entity @s weapon.mainhand expansion:space_equipment/damage
 scoreboard players reset #temp exp.damage
 

@@ -4,17 +4,17 @@ execute if function expansion:spacesuits/equip/check_tags run function expansion
 # Apply set bonusses if the players wears a full set of armor of the same type (Before the durability calculation)
 execute if predicate expansion:armor/all run function expansion:spacesuits/set_bonus/main
 
-# Periodically loop through the armor pieces and re-calculate the durability, while also adding any temperature damage
-execute if predicate expansion:periodic/10 unless entity @s[tag=exp.inside_vehicle] unless entity @s[gamemode=creative] unless entity @s[gamemode=spectator] run function expansion:spacesuits/integrity/main
+# Extract all the armor scores
+execute if predicate expansion:periodic/10 run function expansion:spacesuits/extract_scores
 
-# Attempt to refill the players oxygen supply if it is not already full
-execute unless score @s exp.oxygen_lvl = @s exp.oxygen_max if predicate expansion:armor/chest run function expansion:spacesuits/player_oxygen/replenish_from_tank
+# Apply temperature damage to suit pieces
+execute if predicate expansion:periodic/10 run function expansion:spacesuits/integrity/main
 
-# Lose a percentage of the player oxygen based on suit integrity
-execute if predicate expansion:periodic/10 run function expansion:spacesuits/player_oxygen/leakage_loss
+# Leak oxygen and refill a players reserve only if the player wears a full suit
+execute if predicate expansion:armor/all run function expansion:spacesuits/oxygen/main
 
 # Actionbar
-execute if predicate expansion:periodic/10 unless entity @s[tag=exp.inside_vehicle] run function expansion:spacesuits/actionbar
+execute if predicate expansion:periodic/10 unless entity @s[tag=exp.inside_vehicle] run function expansion:spacesuits/actionbar/main
 
 ## Other Modules
 # rocket boots module

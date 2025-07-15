@@ -16,7 +16,6 @@ tellraw @s ["",{"storage":"expansion:temp","nbt": "tellraw.temperature", "interp
 
 # reset data storages & scores
 data remove storage expansion:temp tellraw
-data remove storage expansion:temp armor
 scoreboard players reset #head exp.cold_resist
 scoreboard players reset #head exp.heat_resist
 scoreboard players reset #chest exp.cold_resist

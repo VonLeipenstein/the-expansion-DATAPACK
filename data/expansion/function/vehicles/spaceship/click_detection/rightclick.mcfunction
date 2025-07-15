@@ -11,10 +11,8 @@ execute at @s if predicate expansion:nbt_checks/root_vehicle/spaceship unless pr
 # fleet finder
 execute at @s if predicate expansion:nbt_checks/root_vehicle/spaceship if predicate expansion:nbt_checks/selected_item/items/fleet_finder run function expansion:items/fleet_finder/find
 
-# stop further functions
-execute if predicate expansion:nbt_checks/root_vehicle/spaceship run return run tag @s remove exp.clicked_ship
-
 # fuel
-execute at @s if items entity @s weapon.mainhand *[minecraft:custom_data~{exp_item:{name:"fuel_cell"}}] as @e[type=minecraft:interaction,tag=exp.spaceship_rcdet,nbt={interaction:{}},limit=1,sort=nearest] on vehicle run function expansion:vehicles/spaceship/fuel/swap_cell
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{exp_item:{name:"fuel_cell"}}] if predicate expansion:nbt_checks/root_vehicle/spaceship run function expansion:utilities/error_messages/swapcell_inship
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{exp_item:{name:"fuel_cell"}}] unless predicate expansion:nbt_checks/root_vehicle/spaceship at @s as @e[type=minecraft:interaction,tag=exp.spaceship_rcdet,nbt={interaction:{}},limit=1,sort=nearest] on vehicle run function expansion:vehicles/spaceship/fuel/swap_cell
 
 tag @s remove exp.clicked_ship

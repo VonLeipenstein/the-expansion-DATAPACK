@@ -17,7 +17,7 @@ data merge entity @s {NoGravity:0b}
 data merge storage expansion:motion {Motion:[0.0d,0.0d,0.0d]}
 
 # Initialize the actionbar
-function expansion:vehicles/spaceship/actionbar
+function expansion:vehicles/spaceship/actionbar/main
 
 # tags to regulate the mod station, make sure the ship is deselected
 tag @s add exp.player_inside

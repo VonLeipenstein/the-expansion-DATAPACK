@@ -5,8 +5,8 @@ execute if score @s exp.counter_1 matches 1 positioned ~ ~0.5 ~ run function exp
 # terraforming settings
 execute if predicate expansion:periodic/10 if score @s exp.bool matches 1 at @s run function expansion:blocks/terraformer/terraform/main
 
-# give linked players oxygen
-execute on passengers if entity @s[tag=exp.oxygen_link] on origin run function expansion:mechanics/oxygen/replenish
+# give linked players oxygen and reset their temperature score
+execute on passengers if entity @s[tag=exp.oxygen_link] on origin run function expansion:blocks/terraformer/connected_player
 
 # particles
 particle trial_spawner_detection_ominous ~ ~1 ~ 0.1 0.0 0.1 0 1

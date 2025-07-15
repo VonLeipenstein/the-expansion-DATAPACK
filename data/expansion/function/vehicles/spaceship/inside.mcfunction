@@ -25,6 +25,6 @@ execute if entity @s[tag=exp.has_active_markers] unless predicate expansion:dime
 
 ## --- MISC.
 # actionbar
-function expansion:vehicles/spaceship/actionbar
+function expansion:vehicles/spaceship/actionbar/main
 # remove blaster cooldown
 scoreboard players remove @s[scores={exp.counter_2=1..}] exp.counter_2 1

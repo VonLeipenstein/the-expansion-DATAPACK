@@ -1,32 +1,51 @@
-# Copy a players armor to a storage
-function expansion:utilities/copy_armor_to_storage
+## All relevant values were retrieved in extract_scores
 
 # Deal water damage to the suit
 execute unless predicate expansion:armor/diver/set if function expansion:spacesuits/integrity/detect_water run function expansion:spacesuits/integrity/water_damage
 
-# For each armor piece, check if it is resistant enough and if not damage it
-scoreboard players reset #temp exp.counter_1
-scoreboard players reset #temp exp.counter_2
-function expansion:spacesuits/integrity/iterate_over_armor
+# Get a positive variant of the temperature score
+scoreboard players operation #base exp.temperature = @s exp.temperature
+execute if score #base exp.temperature matches ..-1 run scoreboard players operation #base exp.temperature *= #-1 exp.const
 
-# Apply accumulated damage to the equipment pieces, only damage expansion armor
-execute if score #head exp.damage matches 1.. if items entity @s armor.head *[max_damage] if predicate expansion:armor/head run function expansion:spacesuits/integrity/damage/head
-execute if score #chest exp.damage matches 1.. if items entity @s armor.chest *[max_damage] if predicate expansion:armor/chest run function expansion:spacesuits/integrity/damage/chest
-execute if score #legs exp.damage matches 1.. if items entity @s armor.legs *[max_damage] if predicate expansion:armor/legs run function expansion:spacesuits/integrity/damage/legs
-execute if score #feet exp.damage matches 1.. if items entity @s armor.feet *[max_damage] if predicate expansion:armor/feet run function expansion:spacesuits/integrity/damage/feet
+# reset damage for later use
+scoreboard players set #helmet exp.damage 0
+scoreboard players set #chestpiece exp.damage 0
+scoreboard players set #leggings exp.damage 0
+scoreboard players set #boots exp.damage 0
 
-# Calculate the new integrity percentage
-function expansion:spacesuits/integrity/calculate
+# calculate the damage for each piece
+scoreboard players operation #ambient exp.temperature = #base exp.temperature
+execute if score #helmet exp.temperature < #ambient exp.temperature store result score #helmet exp.damage run scoreboard players operation #ambient exp.temperature -= #helmet exp.temperature
+scoreboard players operation #ambient exp.temperature = #base exp.temperature
+execute if score #chestpiece exp.temperature < #ambient exp.temperature store result score #chestpiece exp.damage run scoreboard players operation #ambient exp.temperature -= #chestpiece exp.temperature
+scoreboard players operation #ambient exp.temperature = #base exp.temperature
+execute if score #leggings exp.temperature < #ambient exp.temperature store result score #leggings exp.damage run scoreboard players operation #ambient exp.temperature -= #leggings exp.temperature
+scoreboard players operation #ambient exp.temperature = #base exp.temperature
+execute if score #boots exp.temperature < #ambient exp.temperature store result score #boots exp.damage run scoreboard players operation #ambient exp.temperature -= #boots exp.temperature
+
+# damage all pieces regardless of resistances if not wearing a full suit
+execute unless predicate expansion:armor/all run function expansion:spacesuits/integrity/missing_piece
+
+# apply the damage to each piece
+execute if score #helmet exp.damage matches 1.. run function expansion:spacesuits/integrity/damage/head
+execute if score #chestpiece exp.damage matches 1.. run function expansion:spacesuits/integrity/damage/chest
+execute if score #leggings exp.damage matches 1.. run function expansion:spacesuits/integrity/damage/legs
+execute if score #boots exp.damage matches 1.. run function expansion:spacesuits/integrity/damage/feet
+
+# Calculate the integrity percentage, lags behind one tick
+scoreboard players set @s exp.suit_integrity 0
+scoreboard players operation @s exp.suit_integrity += #helmet exp.suit_integrity
+scoreboard players operation @s exp.suit_integrity += #chestpiece exp.suit_integrity
+scoreboard players operation @s exp.suit_integrity += #leggings exp.suit_integrity
+scoreboard players operation @s exp.suit_integrity += #boots exp.suit_integrity
+scoreboard players operation @s exp.suit_integrity /= #4 exp.const
 
 # Reset scores
-scoreboard players reset #temp exp.counter_1
 scoreboard players reset #value exp.suit_integrity
 scoreboard players reset #max exp.suit_integrity
-
-scoreboard players reset #head exp.damage
-scoreboard players reset #chest exp.damage
-scoreboard players reset #legs exp.damage
-scoreboard players reset #feet exp.damage
-
-# Reset storage
-data remove storage expansion:temp armor
+scoreboard players reset #helmet exp.damage
+scoreboard players reset #chestpiece exp.damage
+scoreboard players reset #leggings exp.damage
+scoreboard players reset #boots exp.damage
+scoreboard players reset #base exp.temperature
+scoreboard players reset #ambient exp.temperature

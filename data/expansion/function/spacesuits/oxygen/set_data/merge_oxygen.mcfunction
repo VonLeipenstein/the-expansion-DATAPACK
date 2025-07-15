@@ -1,10 +1,10 @@
 ## Parameters
-# - #new exp.oxygen_lvl : new oxygen lvl
+# - #temp exp.oxygen_lvl : new oxygen lvl
 # - #new exp.oxygen_percent : new oxygen percent
 
 # Merge my oxygen score with the tanks in my equipment
 data modify storage expansion:temp ModStorage set from entity @s equipment.chest.components."minecraft:custom_data".ModStorage
-function expansion:spacesuits/set_oxygen_data/init_loop
+function expansion:spacesuits/oxygen/set_data/init_loop
 
 # calculate new oxygen tank lore sprites
 function expansion:spacesuits/module_icons/init_loop
