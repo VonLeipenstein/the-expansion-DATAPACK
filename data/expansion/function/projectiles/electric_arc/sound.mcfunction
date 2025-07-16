@@ -25,4 +25,4 @@ execute if block ~ ~-1 ~ note_block[note=22] run playsound expansion:teslacoil.z
 execute if block ~ ~-1 ~ note_block[note=23] run playsound expansion:teslacoil.zap block @a ~ ~ ~ 1.0 1.94
 execute if block ~ ~-1 ~ note_block[note=24] run playsound expansion:teslacoil.zap block @a ~ ~ ~ 1.0 2.00
 
-execute unless block ~ ~-1 ~ note_block run playsound expansion:teslacoil.zap block @a ~ ~ ~ 1.0 1.0
+execute unless block ~ ~-1 ~ note_block run playsound expansion:teslacoil.zap block @a ~ ~ ~ 0.2 1.0

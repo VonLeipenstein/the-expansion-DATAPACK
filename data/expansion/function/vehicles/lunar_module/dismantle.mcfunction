@@ -1,1 +1,1 @@
-tellraw @p {translate:"exp_vehicles_dismantle_module"}
+execute as @p run function expansion:utilities/error_messages/no_dismantle_module

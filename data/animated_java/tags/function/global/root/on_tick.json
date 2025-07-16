@@ -6,6 +6,7 @@
 		"animated_java:enhancer/root/on_tick",
 		"animated_java:fabricator/root/on_tick",
 		"animated_java:mech_legs/root/on_tick",
-		"animated_java:mech_torso/root/on_tick"
+		"animated_java:mech_torso/root/on_tick",
+		"animated_java:rocket/root/on_tick"
 	]
 }

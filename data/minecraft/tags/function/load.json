@@ -5,6 +5,8 @@
 		"exp_hitbox:load",
 		"expansion:load",
 		"expansion:utilities/math/sqrt/load",
-		"tu:assets/unload","tu:assets/load"
+		
+		"tu:assets/unload",
+		"tu:assets/load"
 	]
 }

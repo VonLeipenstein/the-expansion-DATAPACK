@@ -6,4 +6,6 @@ execute if block ~ ~-1 ~ minecraft:short_grass run setblock ~ ~-1 ~ minecraft:fe
 execute if block ~ ~-1 ~ minecraft:grass_block run setblock ~ ~ ~ minecraft:short_grass replace
 execute if block ~ ~-1 ~ minecraft:light_gray_concrete_powder run setblock ~ ~-1 ~ minecraft:grass_block replace
 
+particle minecraft:happy_villager ~ ~ ~ .5 0 .5 0 20 force
+
 kill @s
