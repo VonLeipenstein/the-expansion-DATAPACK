@@ -8,9 +8,9 @@
             "translate": "exp_advancement_getcryonite_desc"
         },
         "icon": {
-          "id": "minecraft:mossy_cobblestone_slab",
+          "id": "minecraft:jigsaw",
           "components": {
-            "item_model": "expansion:blocks/cryonite_ore"
+            "item_model": "expansion:crafting/cryonite_crystal"
           }
         },
         "frame": "task",

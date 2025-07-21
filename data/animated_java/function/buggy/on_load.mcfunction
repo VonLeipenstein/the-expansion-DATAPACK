@@ -3,3 +3,4 @@ scoreboard objectives add aj.steer_left.frame dummy
 scoreboard objectives add aj.steer_right.frame dummy
 scoreboard objectives add aj.drive.frame dummy
 scoreboard objectives add aj.drive_back.frame dummy
+scoreboard objectives add aj.setup_text.frame dummy

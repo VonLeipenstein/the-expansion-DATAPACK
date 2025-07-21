@@ -4,3 +4,4 @@ tag @s remove aj.buggy.animation.steer_left.playing
 tag @s remove aj.buggy.animation.steer_right.playing
 tag @s remove aj.buggy.animation.drive.playing
 tag @s remove aj.buggy.animation.drive_back.playing
+tag @s remove aj.buggy.animation.setup_text.playing

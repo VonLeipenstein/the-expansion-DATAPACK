@@ -92,6 +92,9 @@ scoreboard objectives add exp.gamemode dummy
 # math
 scoreboard objectives add exp.math dummy
 
+# player oxygen stat
+scoreboard players set #player.max exp.oxygen_max 60
+scoreboard players set #player.consumption exp.oxygen_lvl 10
 
 # planet gravity
 scoreboard players set #moon exp.gravity_id 1

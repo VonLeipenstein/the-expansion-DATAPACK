@@ -5,7 +5,7 @@
 # The player only suffocates if its own reserve runs out
 
 # Initiate a players oxygen score if they don't yet have any
-execute unless score @s exp.oxygen_max matches 0.. run function expansion:mechanics/oxygen/init
+execute unless score @s exp.oxygen_max = #player exp.oxygen_max run function expansion:mechanics/oxygen/init
 
 # Suffocate player
 execute if predicate expansion:periodic/10 unless score @s exp.oxygen_lvl matches 1.. run function expansion:mechanics/oxygen/suffocate

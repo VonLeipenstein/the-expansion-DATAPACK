@@ -1,0 +1,40 @@
+{
+    "parent": "expansion:progression/moon",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_getaiunit_title"
+        },
+        "description": {
+            "translate": "exp_advancement_getaiunit_desc"
+        },
+        "icon": {
+          "id": "minecraft:jigsaw",
+          "components": {
+            "item_model": "expansion:crafting/computing_core"
+          }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_computing_unit": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": "{exp_item:{name:\"computing_core\"}}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_computing_unit"
+        ]
+    ]
+}

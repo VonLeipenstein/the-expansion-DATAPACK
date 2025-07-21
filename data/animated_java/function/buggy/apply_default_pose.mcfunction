@@ -5,4 +5,5 @@ execute on passengers if entity @s[tag=aj.buggy.bone.hexadecagon] run data merge
 execute on passengers if entity @s[tag=aj.buggy.bone.hexadecagon2] run data merge entity @s {transformation: [-1f,0f,0f,-0.9878f,0f,1f,0f,-0.3464f,0f,0f,-1f,1.5203f,0f,0f,0f,1f], start_interpolation: 0}
 execute on passengers if entity @s[tag=aj.buggy.bone.hexadecagon3] run data merge entity @s {transformation: [-1f,0f,0f,1.0103f,0f,1f,0f,-0.3464f,0f,0f,-1f,1.5203f,0f,0f,0f,1f], start_interpolation: 0}
 execute on passengers if entity @s[tag=aj.buggy.bone.hexadecagon4] run data merge entity @s {transformation: [-1f,0f,0f,1.0103f,0f,1f,0f,-0.3464f,0f,0f,-1f,-0.7297f,0f,0f,0f,1f], start_interpolation: 0}
+execute on passengers if entity @s[tag=aj.buggy.bone.text_display] run data merge entity @s {transformation: [-0.19f,0f,0f,0.0138f,0f,0.1755f,0.0727f,0.4589f,0f,0.0727f,-0.1755f,0.8078f,0f,0f,0f,1f], start_interpolation: 0}
 execute on passengers if entity @s[tag=aj.buggy.bone.root] run data merge entity @s {transformation: [-2.2708f,0f,0f,-0.0112f,0f,2.2708f,0f,0.1589f,0f,0f,-2.2708f,0.0422f,0f,0f,0f,1f], start_interpolation: 0}

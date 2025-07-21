@@ -1,0 +1,107 @@
+{
+  "parent": "expansion:progression/get_fabricator",
+  "display": {
+    "title": {
+      "translate": "exp_advancement_diversuit_title"
+    },
+    "description": {
+      "translate": "exp_advancement_diversuit_desc"
+    },
+    "icon": {
+          "id": "minecraft:poisonous_potato",
+          "components": {
+            "item_model": "expansion:armor/diver/helmet"
+          }
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "expansion:diver_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"diver_helmet"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "expansion:diver_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"diver_chestplate"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+        "expansion:diver_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"diver_leggings"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+        "expansion:diver_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"diver_boots"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "expansion:diver_helmet",
+      "expansion:diver_chestplate",
+      "expansion:diver_leggings",
+      "expansion:diver_boots"
+    ]
+  ]
+}

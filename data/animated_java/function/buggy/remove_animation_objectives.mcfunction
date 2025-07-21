@@ -3,4 +3,5 @@ scoreboard objectives remove aj.steer_left.frame
 scoreboard objectives remove aj.steer_right.frame
 scoreboard objectives remove aj.drive.frame
 scoreboard objectives remove aj.drive_back.frame
+scoreboard objectives remove aj.setup_text.frame
 tellraw @a [[{"text":"\n[","color":"gray"},{"text":"AJ","color":"aqua"},"] ",[{"text":"(from ","color":"gray","italic":true},"buggy",")"]," -> "],{"text":"Successfully removed known animation scoreboard objectives.","color":"red"},{"text":"\nIf you have exported multiple times you may have to manually remove some objectives from previous exports manually, as Animated Java can only remove the latest export's objectives.","color":"gray","italic":true},["\n"]]

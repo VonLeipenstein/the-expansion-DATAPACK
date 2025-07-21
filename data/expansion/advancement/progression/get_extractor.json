@@ -1,0 +1,40 @@
+{
+    "parent": "expansion:progression/get_amethonium",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_getextractor_title"
+        },
+        "description": {
+            "translate": "exp_advancement_getextractor_desc"
+        },
+        "icon": {
+          "id": "minecraft:carrot_on_a_stick",
+          "components": {
+            "item_model": "expansion:blocks/extractor"
+          }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_extractor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": "{exp_item:{name:\"extractor\"}}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_extractor"
+        ]
+    ]
+}

@@ -8,9 +8,9 @@
             "translate": "exp_advancement_getvulcanium_desc"
         },
         "icon": {
-          "id": "minecraft:waxed_exposed_cut_copper_slab",
+          "id": "minecraft:jigsaw",
           "components": {
-            "item_model": "expansion:blocks/vulcanium_ore"
+            "item_model": "expansion:crafting/vulcanium_shard"
           }
         },
         "frame": "task",

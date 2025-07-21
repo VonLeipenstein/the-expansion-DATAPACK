@@ -1,5 +1,5 @@
 # Players consume a base of 20 oxygen every second = 1 per tick
-scoreboard players set #temp exp.oxygen_lvl 10
+scoreboard players operation #temp exp.oxygen_lvl = #player.consumption exp.oxygen_lvl
 
 # Consome more oxygen when running, and less when sneaking
 execute if predicate expansion:utility/sprint run scoreboard players add #temp exp.oxygen_lvl 5

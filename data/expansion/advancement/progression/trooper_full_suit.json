@@ -1,0 +1,107 @@
+{
+  "parent": "expansion:progression/mars",
+  "display": {
+    "title": {
+      "translate": "exp_advancement_troopersuit_title"
+    },
+    "description": {
+      "translate": "exp_advancement_troopersuit_desc"
+    },
+    "icon": {
+          "id": "minecraft:poisonous_potato",
+          "components": {
+            "item_model": "expansion:armor/trooper/helmet"
+          }
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "expansion:trooper_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"trooper_helmet"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "expansion:trooper_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"trooper_chestplate"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+        "expansion:trooper_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"trooper_leggings"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+        "expansion:trooper_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"trooper_boots"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "expansion:trooper_helmet",
+      "expansion:trooper_chestplate",
+      "expansion:trooper_leggings",
+      "expansion:trooper_boots"
+    ]
+  ]
+}

@@ -4,6 +4,9 @@ execute on passengers if entity @s[type=item_display] run function expansion:veh
 # interaction
 execute on passengers if entity @s[type=interaction] run function expansion:vehicles/rocket/convert_to_module/interaction
 
+# kill ajmodel
+execute on passengers if entity @s[tag=aj.rocket.root] run function animated_java:rocket/remove/this
+
 # root entity
 tag @s add exp.lunar_module
 tag @s remove exp.rocket

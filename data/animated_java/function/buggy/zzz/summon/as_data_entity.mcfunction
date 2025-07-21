@@ -11,5 +11,7 @@ execute on vehicle on passengers if entity @s[tag=aj.buggy.node.hexadecagon3] ru
 data modify entity @s data.uuids.bone_hexadecagon3 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.buggy.node.hexadecagon4] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_hexadecagon4 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.buggy.node.text_display] run function animated_java:global/internal/gu/convert_uuid_array_to_string
+data modify entity @s data.uuids.text_display_text_display set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.buggy.node.root] run function animated_java:global/internal/gu/convert_uuid_array_to_string
 data modify entity @s data.uuids.bone_root set from storage aj:uuid main.out

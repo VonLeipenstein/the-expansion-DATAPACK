@@ -1,2 +1,2 @@
-scoreboard players set @s exp.oxygen_lvl 0
-scoreboard players set @s exp.oxygen_max 100
+scoreboard players operation @s exp.oxygen_max = #player.max exp.oxygen_max
+scoreboard players operation @s exp.oxygen_lvl = @s exp.oxygen_max

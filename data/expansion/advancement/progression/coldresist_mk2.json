@@ -1,11 +1,11 @@
 {
-  "parent": "expansion:progression/get_cryonite",
+  "parent": "expansion:progression/coldresist_mk1",
   "display": {
     "title": {
-      "translate": "exp_advancement_coolingmod_title"
+      "translate": "exp_advancement_warmingmodmk2_title"
     },
     "description": {
-      "translate": "exp_advancement_coolingmod_desc"
+      "translate": "exp_advancement_warmingmodmk2_desc"
     },
     "icon": {
           "id": "minecraft:jigsaw",
@@ -13,26 +13,23 @@
             "item_model": "expansion:modules/equipment",
             "custom_model_data": {
               "strings": [
-                "cooling"
+                "warming"
+              ],
+              "floats": [
+                2
               ]
             }
           }
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
   "criteria": {
-    "expansion:cooling_module": {
+    "expansion:warming_module": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": {
-          "location": {
-            "dimension": "expansion:mars",
-            "structures": "expansion:mars/cannon"
-          }
-        },
         "items": [
           {
             "items": [
@@ -41,8 +38,18 @@
             "predicates": {
               "minecraft:custom_data":{
                 "exp_item":{
-                  "name":"heat_resist_module"
+                  "name":"cold_resist_module"
                 }
+              }
+            },
+            "components": {
+              "custom_model_data": {
+                "strings": [
+                "warming"
+                ],
+                "floats": [
+                  2
+                ]
               }
             }
           }
@@ -52,7 +59,7 @@
   },
   "requirements": [
     [
-      "expansion:cooling_module"
+      "expansion:warming_module"
     ]
   ]
 }

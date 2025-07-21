@@ -2,4 +2,5 @@
 execute unless entity @s[tag=aj.rocket.root] run return 0
 execute unless score @s aj.is_rig_loaded matches 1 run function #animated_java:global/root/on_load
 execute if entity @s[tag=aj.rocket.animation.rocket.button_push.playing] run function animated_java:rocket/animations/rocket.button_push/zzz/on_tick
+execute if entity @s[tag=aj.rocket.animation.rocket.setup_text.playing] run function animated_java:rocket/animations/rocket.setup_text/zzz/on_tick
 execute at @s on passengers run rotate @s ~ ~

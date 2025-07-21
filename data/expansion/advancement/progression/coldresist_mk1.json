@@ -1,0 +1,65 @@
+{
+  "parent": "expansion:progression/get_enhancer",
+  "display": {
+    "title": {
+      "translate": "exp_advancement_warmingmodmk1_title"
+    },
+    "description": {
+      "translate": "exp_advancement_warmingmodmk1_desc"
+    },
+    "icon": {
+          "id": "minecraft:jigsaw",
+          "components": {
+            "item_model": "expansion:modules/equipment",
+            "custom_model_data": {
+              "strings": [
+                "warming"
+              ],
+              "floats": [
+                1
+              ]
+            }
+          }
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "expansion:warming_module": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jigsaw"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"cold_resist_module"
+                }
+              }
+            },
+            "components": {
+              "custom_model_data": {
+                "strings": [
+                "warming"
+                ],
+                "floats": [
+                  1
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "expansion:warming_module"
+    ]
+  ]
+}

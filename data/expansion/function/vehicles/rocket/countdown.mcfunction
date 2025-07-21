@@ -1,3 +1,8 @@
+# Make sure the rocket is fully fueled before launch
+execute unless score @s exp.fuel_level = @s exp.fuel_max unless entity @s[tag=exp.fueling_rocket] run return run tag @s add exp.fueling_rocket
+execute unless score @s exp.fuel_level = @s exp.fuel_max run return fail
+
+# engage the countdown
 execute if score @s exp.timer_2 matches 1.. run particle minecraft:flame ~ ~1 ~ 4 0.1 4 0 100
 execute if score @s exp.timer_2 matches 1.. run particle minecraft:campfire_signal_smoke ~ ~1 ~ 4 2 4 0 20
 

@@ -1,5 +1,5 @@
 {
-    "parent": "expansion:progression/get_guide",
+    "parent": "expansion:progression/get_arcfurnace",
     "display": {
         "title": {
             "translate": "exp_advancement_getsteel_title"

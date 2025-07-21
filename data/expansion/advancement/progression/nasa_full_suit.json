@@ -1,0 +1,107 @@
+{
+  "parent": "expansion:progression/get_amethonium",
+  "display": {
+    "title": {
+      "translate": "exp_advancement_nasasuit_title"
+    },
+    "description": {
+      "translate": "exp_advancement_nasasuit_desc"
+    },
+    "icon": {
+          "id": "minecraft:poisonous_potato",
+          "components": {
+            "item_model": "expansion:armor/nasa/helmet"
+          }
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "expansion:nasa_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"nasa_helmet"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "expansion:nasa_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"nasa_chestplate"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+        "expansion:nasa_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"nasa_leggings"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+        "expansion:nasa_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"nasa_boots"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "expansion:nasa_helmet",
+      "expansion:nasa_chestplate",
+      "expansion:nasa_leggings",
+      "expansion:nasa_boots"
+    ]
+  ]
+}

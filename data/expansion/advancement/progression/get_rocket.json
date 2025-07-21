@@ -1,5 +1,5 @@
 {
-    "parent": "expansion:progression/get_steel",
+    "parent": "expansion:progression/get_fabricator",
     "display": {
         "title": {
             "translate": "exp_advancement_getrocket_title"

@@ -7,6 +7,15 @@ function expansion:blocks/set_rotation
 execute at @s rotated ~ 0 run function animated_java:buggy/summon {args: {}}
 ride @e[type=item_display,tag=aj.buggy.root,distance=..0.01,limit=1] mount @s
 
+# setup the text displays
+execute on passengers if entity @s[tag=aj.buggy.root] run function animated_java:buggy/animations/setup_text/play
+execute on passengers if entity @s[tag=aj.buggy.root] on passengers if entity @s[tag=aj.buggy.node.text_display] run data modify entity @s text set value \
+[\
+{text:"",color:"white"},\
+{text:"Speed:\n0%",color:"green"},\
+{text:"\nOxygen:\n0%",color:"aqua"},\
+]
+
 # copy the buggy item to a storage
 data modify entity @s equipment.feet set from entity @p[tag=exp.tick_player] SelectedItem
 

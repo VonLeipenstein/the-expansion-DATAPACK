@@ -1,5 +1,5 @@
 {
-    "parent": "expansion:progression/trade_spaceship",
+    "parent": "expansion:progression/get_extractor",
     "display": {
         "title": {
             "translate": "exp_advancement_lacrymae_title"
@@ -37,6 +37,15 @@
                                   "name":"fuel_cell"
                                 }
                               }
+                        },
+                        "components": {
+                            "custom_model_data": {
+                                "floats": [
+                                    1,
+                                    100
+                                ],
+                                "strings": ["lacrymae"]
+                            }
                         }
                     }
                 ]

@@ -1,0 +1,65 @@
+{
+  "parent": "expansion:progression/heatresist_mk2",
+  "display": {
+    "title": {
+      "translate": "exp_advancement_coolingmodmk3_title"
+    },
+    "description": {
+      "translate": "exp_advancement_coolingmodmk3_desc"
+    },
+    "icon": {
+          "id": "minecraft:jigsaw",
+          "components": {
+            "item_model": "expansion:modules/equipment",
+            "custom_model_data": {
+              "strings": [
+                "cooling"
+              ],
+              "floats": [
+                3
+              ]
+            }
+          }
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "expansion:cooling_module": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:jigsaw"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"heat_resist_module"
+                }
+              }
+            },
+            "components": {
+              "custom_model_data": {
+                "strings": [
+                "cooling"
+                ],
+                "floats": [
+                  3
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "expansion:cooling_module"
+    ]
+  ]
+}

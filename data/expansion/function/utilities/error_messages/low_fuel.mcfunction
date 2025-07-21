@@ -1,5 +1,8 @@
 title @s subtitle {text:" "}
-title @s title {translate:"exp_screentxt_lowfuel_title",color:"red",bold:true}
+title @s title {translate:"exp_screentxt_launcherror_title",color:"red",bold:true}
+
 # calculate how much blaze powder is still needed
-execute on vehicle on vehicle on vehicle run function expansion:vehicles/rocket/calculate_fuel
-execute on vehicle on vehicle on vehicle run title @p[tag=exp.clicked] subtitle [{translate:"exp_screentxt_rocket_fuelfail1"},{score:{name:"@s",objective:"exp.counter_1"}},{translate:"exp_screentxt_rocket_fuelfail2"}]
+execute store result score #temp exp.counter_1 run clear @s blaze_powder 0
+scoreboard players remove #temp exp.counter_1 16
+scoreboard players operation #temp exp.counter_1 *= #-1 exp.const
+title @s subtitle [{translate:"exp_screentxt_rocket_fuelfail1"},{score:{name:"#temp",objective:"exp.counter_1"}},{translate:"exp_screentxt_rocket_fuelfail2"}]

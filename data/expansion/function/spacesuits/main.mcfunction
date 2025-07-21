@@ -14,7 +14,7 @@ execute if predicate expansion:periodic/10 run function expansion:spacesuits/int
 execute if predicate expansion:armor/all run function expansion:spacesuits/oxygen/main
 
 # Actionbar
-execute if predicate expansion:periodic/10 unless entity @s[tag=exp.inside_vehicle] run function expansion:spacesuits/actionbar/main
+execute if predicate expansion:periodic/10 unless entity @s[tag=exp.inside_spaceship] unless entity @s[tag=exp.inside_module] unless entity @s[tag=exp.inside_capsule] run function expansion:spacesuits/actionbar/main
 
 ## Other Modules
 # rocket boots module

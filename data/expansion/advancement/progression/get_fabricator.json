@@ -1,0 +1,40 @@
+{
+    "parent": "expansion:progression/get_steel",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_getfabricator_title"
+        },
+        "description": {
+            "translate": "exp_advancement_getfabricator_desc"
+        },
+        "icon": {
+          "id": "minecraft:carrot_on_a_stick",
+          "components": {
+            "item_model": "expansion:blocks/fabricator"
+          }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_fabricator": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:custom_data": "{exp_item:{name:\"fabricator\"}}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_fabricator"
+        ]
+    ]
+}

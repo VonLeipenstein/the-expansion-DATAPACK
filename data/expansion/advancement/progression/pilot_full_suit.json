@@ -1,0 +1,107 @@
+{
+  "parent": "expansion:progression/jupiter",
+  "display": {
+    "title": {
+      "translate": "exp_advancement_pilotsuit_title"
+    },
+    "description": {
+      "translate": "exp_advancement_pilotsuit_desc"
+    },
+    "icon": {
+          "id": "minecraft:poisonous_potato",
+          "components": {
+            "item_model": "expansion:armor/pilot/helmet"
+          }
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "expansion:pilot_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"pilot_helmet"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "expansion:pilot_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"pilot_chestplate"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+        "expansion:pilot_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"pilot_leggings"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+        "expansion:pilot_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:poisonous_potato"
+            ],
+            "predicates": {
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"pilot_boots"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "expansion:pilot_helmet",
+      "expansion:pilot_chestplate",
+      "expansion:pilot_leggings",
+      "expansion:pilot_boots"
+    ]
+  ]
+}

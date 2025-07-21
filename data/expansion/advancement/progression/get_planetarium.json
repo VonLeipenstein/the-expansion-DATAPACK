@@ -1,5 +1,5 @@
 {
-    "parent": "expansion:progression/trade_spaceship",
+    "parent": "expansion:progression/get_amethonium",
     "display": {
         "title": {
             "translate": "exp_advancement_getplanetarium_title"

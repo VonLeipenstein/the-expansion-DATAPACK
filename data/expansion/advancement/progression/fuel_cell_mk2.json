@@ -1,0 +1,60 @@
+{
+    "parent": "expansion:progression/lacrymae",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_fuelcellmk2_title"
+        },
+        "description": {
+            "translate": "exp_advancement_fuelcellmk2_desc"
+        },
+        "icon": {
+            "id": "minecraft:carrot_on_a_stick",
+            "components": {
+                "item_model": "expansion:fuel_cell",
+                "custom_model_data": {
+                    "floats": [2,100],
+                    "strings": ["lacrymae"]
+                }
+            }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_fuel_cell": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:carrot_on_a_stick"
+                        ],
+                        "predicates": {
+                            "custom_data": {
+                                "exp_item":{
+                                  "name":"fuel_cell"
+                                }
+                              }
+                        },
+                        "components": {
+                            "custom_model_data": {
+                                "floats": [
+                                    2,
+                                    100
+                                ],
+                                "strings": ["lacrymae"]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_fuel_cell"
+        ]
+    ]
+}

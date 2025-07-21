@@ -1,11 +1,11 @@
 {
-  "parent": "expansion:progression/get_vulcanium",
+  "parent": "expansion:progression/get_enhancer",
   "display": {
     "title": {
-      "translate": "exp_advancement_warmingmod_title"
+      "translate": "exp_advancement_coolingmodmk1_title"
     },
     "description": {
-      "translate": "exp_advancement_warmingmod_desc"
+      "translate": "exp_advancement_coolingmodmk1_desc"
     },
     "icon": {
           "id": "minecraft:jigsaw",
@@ -13,26 +13,23 @@
             "item_model": "expansion:modules/equipment",
             "custom_model_data": {
               "strings": [
-                "warming"
+                "cooling"
+              ],
+              "floats": [
+                1
               ]
             }
           }
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
   "criteria": {
-    "expansion:warming_module": {
+    "expansion:cooling_module": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "player": {
-          "location": {
-            "dimension": "expansion:venus",
-            "structures": "expansion:venus/rover"
-          }
-        },
         "items": [
           {
             "items": [
@@ -41,8 +38,18 @@
             "predicates": {
               "minecraft:custom_data":{
                 "exp_item":{
-                  "name":"cold_resist_module"
+                  "name":"heat_resist_module"
                 }
+              }
+            },
+            "components": {
+              "custom_model_data": {
+                "strings": [
+                "cooling"
+                ],
+                "floats": [
+                  1
+                ]
               }
             }
           }
@@ -52,7 +59,7 @@
   },
   "requirements": [
     [
-      "expansion:warming_module"
+      "expansion:cooling_module"
     ]
   ]
 }
