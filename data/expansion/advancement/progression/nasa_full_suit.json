@@ -98,9 +98,15 @@
   },
   "requirements": [
     [
-      "expansion:nasa_helmet",
-      "expansion:nasa_chestplate",
-      "expansion:nasa_leggings",
+      "expansion:nasa_helmet"
+    ],
+    [
+      "expansion:nasa_chestplate"
+    ],
+    [
+      "expansion:nasa_leggings"
+    ],
+    [
       "expansion:nasa_boots"
     ]
   ]

@@ -1,7 +1,11 @@
 {
 	"pack": {
 		"pack_format": 71,
-		"description": "The Expansion - Explore Space In Minecraft [1.21.5 to 1.21.7]"
+		"description": "The Expansion [1.21.5 to 1.21.8]",
+		"supported_formats": [
+			71,
+			81
+		]
 	},
 	"overlays": {
 		"entries": [

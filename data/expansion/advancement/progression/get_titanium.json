@@ -8,9 +8,9 @@
             "translate": "exp_advancement_gettitanium_desc"
         },
         "icon": {
-          "id": "minecraft:purpur_slab",
+          "id": "minecraft:jigsaw",
           "components": {
-            "item_model": "expansion:blocks/titanium_ore"
+            "item_model": "expansion:crafting/raw_titanium"
           }
         },
         "frame": "task",

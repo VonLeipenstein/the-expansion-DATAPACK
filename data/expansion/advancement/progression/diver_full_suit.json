@@ -98,9 +98,15 @@
   },
   "requirements": [
     [
-      "expansion:diver_helmet",
-      "expansion:diver_chestplate",
-      "expansion:diver_leggings",
+      "expansion:diver_helmet"
+    ],
+    [
+      "expansion:diver_chestplate"
+    ],
+    [
+      "expansion:diver_leggings"
+    ],
+    [
       "expansion:diver_boots"
     ]
   ]

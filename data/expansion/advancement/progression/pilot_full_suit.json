@@ -98,9 +98,15 @@
   },
   "requirements": [
     [
-      "expansion:pilot_helmet",
-      "expansion:pilot_chestplate",
-      "expansion:pilot_leggings",
+      "expansion:pilot_helmet"
+    ],
+    [
+      "expansion:pilot_chestplate"
+    ],
+    [
+      "expansion:pilot_leggings"
+    ],
+    [
       "expansion:pilot_boots"
     ]
   ]

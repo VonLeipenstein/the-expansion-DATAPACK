@@ -19,6 +19,9 @@ effect clear @s levitation
 effect give @s slow_falling infinite 1 true
 attribute @s safe_fall_distance base set 10000
 
+# Overlayed on 1.21.6+
+function expansion:utilities/reset_waypoint
+
 # camel
 execute on passengers if entity @s[type=camel] run function expansion:vehicles/rocket/convert_to_module/seat
 

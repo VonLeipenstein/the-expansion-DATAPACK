@@ -1,5 +1,5 @@
 # Adapt the icon of oxygen tanks to their level
-execute if data storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen run function expansion:spacesuits/module_icons/find_tank_icon/init
+execute if data storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen.lvl run function expansion:spacesuits/module_icons/find_tank_icon
 
 # if the module has no icon (empty module)
 execute unless data storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon.layer1 run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon.layer1 set value "＀"

@@ -5,10 +5,13 @@
 # The player only suffocates if its own reserve runs out
 
 # Initiate a players oxygen score if they don't yet have any
-execute unless score @s exp.oxygen_max = #player exp.oxygen_max run function expansion:mechanics/oxygen/init
+execute unless score @s exp.oxygen_max = #player.max exp.oxygen_max run function expansion:mechanics/oxygen/init
 
 # Suffocate player
 execute if predicate expansion:periodic/10 unless score @s exp.oxygen_lvl matches 1.. run function expansion:mechanics/oxygen/suffocate
+
+# Lose some oxygen when taking damage
+execute if entity @s[nbt={HurtTime:9s}] run scoreboard players operation @s exp.oxygen_lvl -= #player.lostwhenhurt exp.oxygen_lvl
 
 # Remove oxygen
 # Needs to be after suffocate so the entire next tick has the chance to refill the lost oxygen

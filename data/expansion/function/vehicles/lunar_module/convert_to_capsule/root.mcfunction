@@ -17,6 +17,9 @@ effect clear @s slow_falling
 attribute @s safe_fall_distance base set 10000
 scoreboard players reset @s exp.timer_2
 
+# Overlayed on 1.21.6+
+function expansion:utilities/reset_waypoint
+
 # move the passenger here
 execute if entity @p[tag=exp.move_pilot] run ride @p[tag=exp.move_pilot] mount @s
 tag @p[tag=exp.move_pilot] remove exp.move_pilot

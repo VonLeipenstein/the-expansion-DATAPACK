@@ -3,7 +3,7 @@ execute store result score #input exp.math run data get storage expansion:temp M
 execute store result score #max exp.math run data get storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen.max
 function expansion:utilities/percentage
 
-execute if score #output exp.percentage matches 0..5 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon.layer2 set value "切"
+execute if score #output exp.percentage matches ..5 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon.layer2 set value "廓"
 execute if score #output exp.percentage matches 6..15 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon.layer2 set value "度"
 execute if score #output exp.percentage matches 16..25 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon.layer2 set value "拓"
 execute if score #output exp.percentage matches 26..35 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon.layer2 set value "糖"

@@ -34,7 +34,8 @@
       "expansion:moon/ores/diamond",
       "expansion:moon/ores/iron",
       "expansion:moon/ores/gold",
-      "expansion:moon/ores/lapis"
+      "expansion:moon/ores/lapis",
+      "expansion:mars/ores/cryonite_ore_extra"
     ],
     [],
     [],

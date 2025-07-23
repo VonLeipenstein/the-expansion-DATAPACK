@@ -2,8 +2,8 @@
 scoreboard players operation #temp exp.oxygen_lvl = #player.consumption exp.oxygen_lvl
 
 # Consome more oxygen when running, and less when sneaking
-execute if predicate expansion:utility/sprint run scoreboard players add #temp exp.oxygen_lvl 5
-execute if predicate expansion:utility/sneak run scoreboard players remove #temp exp.oxygen_lvl 5
+execute if predicate expansion:utility/sprint store result score #temp exp.oxygen_lvl run scoreboard players operation #temp exp.oxygen_lvl *= #2 exp.const
+execute if predicate expansion:utility/sneak store result score #temp exp.oxygen_lvl run scoreboard players operation #temp exp.oxygen_lvl /= #2 exp.const
 
 # Subtract the calculated oxygen loss from the current lvl
 scoreboard players operation @s exp.oxygen_lvl -= #temp exp.oxygen_lvl
