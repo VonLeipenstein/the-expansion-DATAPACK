@@ -1,0 +1,48 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "exp_weapons_phasershield_name",
+                "italic": false
+              },
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_model": "expansion:phasershield",
+                "blocks_attacks": {
+                  "block_sound": "minecraft:block.copper_bulb.place",
+                  "block_delay_seconds": 0,
+                  "bypassed_by": "#minecraft:bypasses_shield",
+                  "disabled_sound": "minecraft:block.copper_bulb.break",
+                  "disable_cooldown_scale": 0.2
+                },
+                "tooltip_display": {"hidden_components":["minecraft:unbreakable"]},
+                "max_damage": 640
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{exp_item:{name:\"phasershield\"}}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

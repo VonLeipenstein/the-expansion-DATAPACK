@@ -1,5 +1,5 @@
 {
-    "name": "expansion:entities/san_holo",
+    "name": "expansion:entities/evil_drone",
     "fallback": "minecraft:empty",
     "elements": [
       {

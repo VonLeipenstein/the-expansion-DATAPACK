@@ -184,24 +184,30 @@
       "xz_scale": 1.0,
       "y_scale": 0.7142857142857143
     },
-    "initial_density_without_jaggedness": {
-      "argument1": 4.0,
-      "argument2": {
-        "argument": {
-          "argument1": {
-            "argument1": 0.0,
-            "argument2": "expansion:venus/depth",
-            "type": "minecraft:add"
-          },
-          "argument2": {
-            "argument": "expansion:venus/factor",
-            "type": "minecraft:cache_2d"
-          },
-          "type": "minecraft:mul"
-        },
-        "type": "minecraft:quarter_negative"
-      },
-      "type": "minecraft:mul"
+    "preliminary_surface_level": {
+      "type": "minecraft:find_top_surface",
+      "cell_height": 8,
+      "lower_bound": -64,
+      "upper_bound": 320,
+      "density": {
+        "type": "minecraft:mul",
+        "argument1": 4,
+        "argument2": {
+          "type": "minecraft:quarter_negative",
+          "argument": {
+            "type": "minecraft:mul",
+            "argument1": {
+              "type": "minecraft:add",
+              "argument1": 0,
+              "argument2": "expansion:venus/depth"
+            },
+            "argument2": {
+              "type": "minecraft:cache_2d",
+              "argument": "expansion:venus/factor"
+            }
+          }
+        }
+      }
     },
     "lava": {
       "type": "minecraft:noise",
@@ -469,10 +475,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:blackstone",
-                            "Properties": {
-                              "level": "0"
-                            }
+                            "Name": "minecraft:blackstone"
                           }
                         }
                       ]
@@ -554,11 +557,7 @@
                   "then_run": {
                     "type": "minecraft:block",
                     "result_state": {
-                      "Name": "minecraft:smooth_basalt",
-                      "Properties": {
-                        "l": "",
-                        "axis": "y"
-                      }
+                      "Name": "minecraft:smooth_basalt"
                     }
                   }
                 }

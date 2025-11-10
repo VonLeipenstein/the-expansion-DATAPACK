@@ -1,1 +1,0 @@
-attribute @s minecraft:camera_distance base set 8.0

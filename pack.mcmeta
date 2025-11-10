@@ -1,22 +1,7 @@
 {
 	"pack": {
-		"pack_format": 71,
-		"description": "The Expansion [1.21.5 to 1.21.8]",
-		"supported_formats": [
-			71,
-			81
-		]
-	},
-	"overlays": {
-		"entries": [
-			{
-				"directory": "animated_java",
-				"formats": 71
-			},
-			{
-				"directory": "1.21.6",
-				"formats": [80, 81]
-			}
-		]
+		"description": "The Expansion [1.21.9/10]",
+		"min_format": [82],
+		"max_format": [88,0]
 	}
 }

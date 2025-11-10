@@ -1,1 +1,1 @@
-# Overlayed on 1.21.6+
+attribute @s minecraft:waypoint_transmit_range base reset

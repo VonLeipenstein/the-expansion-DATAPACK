@@ -1,3 +1,8 @@
+tag @s add exp.inserted_trades_v2.2
+
+data remove entity @s Offers.Recipes
+
+# Planetarium
 data modify entity @s Offers.Recipes append value \
 {\
     maxUses:2147483647,\
@@ -16,6 +21,7 @@ data modify entity @s Offers.Recipes append value \
     }\
 }
 
+# Fuel cell
 data modify entity @s Offers.Recipes append value \
 {\
     maxUses:2147483647,\
@@ -45,6 +51,7 @@ data modify entity @s Offers.Recipes append value \
     }\
 }
 
+# Extractor
 data modify entity @s Offers.Recipes append value \
 {\
     maxUses:2147483647,\
@@ -75,6 +82,7 @@ data modify entity @s Offers.Recipes append value \
     }\
 }
 
+# Spaceship Cockpit
 data modify entity @s Offers.Recipes append value \
 {\
     maxUses:2147483647,\
@@ -83,6 +91,7 @@ data modify entity @s Offers.Recipes append value \
     sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shipcockpit_name","italic":false},"minecraft:custom_data":{exp_item:{name:"spaceship_cockpit"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/cockpit"}}\
 }
 
+# Spaceship Engines
 data modify entity @s Offers.Recipes append value \
 {\
     maxUses:2147483647,buy:{id:"minecraft:jigsaw",count:30,components:{"minecraft:custom_name":{translate:"exp_items_rawtitanium_name","italic":false},"minecraft:custom_data":{exp_item:{name:"raw_titanium",crafting_count:1,max_stack_size:64}},"minecraft:item_model":"expansion:crafting/raw_titanium"}},\
@@ -90,6 +99,7 @@ data modify entity @s Offers.Recipes append value \
     sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shipengines_name","italic":false},"minecraft:custom_data":{exp_item:{name:"spaceship_engines"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/engines"}}\
 }
 
+# Spaceship Right Wing
 data modify entity @s Offers.Recipes append value \
 {\
     maxUses:2147483647,\
@@ -97,6 +107,7 @@ data modify entity @s Offers.Recipes append value \
     sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shiprwing_name"},"minecraft:custom_data":{exp_item:{name:"spaceship_right_wing"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/rightwing"}}\
 }
 
+# Spaceship Left Wing
 data modify entity @s Offers.Recipes append value \
 {\
     maxUses:2147483647,\
@@ -104,6 +115,7 @@ data modify entity @s Offers.Recipes append value \
     sell:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_name":{translate:"exp_items_shiplwing_name"},"minecraft:custom_data":{exp_item:{name:"spaceship_left_wing"}},"minecraft:item_model":"expansion:crafting/spaceship_parts/leftwing"}}\
 }
 
+# Spaceship Nose
 data modify entity @s Offers.Recipes append value \
 {\
     maxUses:2147483647,\

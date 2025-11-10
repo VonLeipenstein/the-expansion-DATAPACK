@@ -12,7 +12,7 @@ execute if predicate expansion:nbt_checks/selected_item/items/thermometer run re
 execute if entity @s[tag=exp.inside_vehicle] run return fail
 
 # pet drone
-execute if predicate expansion:nbt_checks/selected_item/items/pet_drone run return run execute unless entity @s[tag=exp.has_active_drone] run function expansion:mobs/drone_pet/summon/init
+execute if predicate expansion:nbt_checks/selected_item/items/pet_drone run return run execute unless entity @s[tag=exp.has_active_drone] run function expansion:items/drone_pet/use
 # railgun
 execute if predicate expansion:nbt_checks/selected_item/items/railgun run return run execute unless score @s exp.warmup matches 1.. unless score @s exp.cooldown matches 1.. run function expansion:items/railgun/main
 # cryoblaster

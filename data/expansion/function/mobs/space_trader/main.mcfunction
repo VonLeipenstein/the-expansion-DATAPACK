@@ -1,0 +1,1 @@
+execute unless entity @s[tag=exp.inserted_trades_v2.2] run function expansion:mobs/space_trader/insert_trades

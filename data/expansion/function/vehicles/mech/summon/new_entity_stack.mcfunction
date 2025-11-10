@@ -14,6 +14,10 @@ summon minecraft:armor_stand ^ ^ ^ {\
     Passengers:[\
         {\
             id:"minecraft:marker",\
+            Tags:["exp.mob_marker"]\
+        },\
+        {\
+            id:"minecraft:marker",\
             Tags:["exp.movedir"]\
         },\
         {\

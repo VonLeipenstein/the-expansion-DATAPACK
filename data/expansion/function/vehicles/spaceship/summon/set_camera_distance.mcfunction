@@ -1,1 +1,1 @@
-# Overlayed on 1.21.6+
+execute on passengers if entity @s[tag=exp.spaceship_seat] run attribute @s minecraft:camera_distance base set 8.0

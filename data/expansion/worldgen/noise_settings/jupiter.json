@@ -27,7 +27,13 @@
     "erosion": 0,
     "depth": 0,
     "ridges": 0,
-    "initial_density_without_jaggedness": 0,
+    "preliminary_surface_level":{
+      "type": "minecraft:find_top_surface",
+      "cell_height": 8,
+      "lower_bound": -64,
+      "upper_bound": 320,
+      "density": 0
+    },
     "final_density": 0,
     "vein_toggle": 0,
     "vein_ridged": 0,
