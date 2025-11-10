@@ -33,7 +33,7 @@ data modify storage expansion:temp actionbar.oxygen set value \
 ]
 
 # Color in pieces of the oxygen bar based on the tanks percentage
-execute if score @s exp.oxygen_percent matches 1.. run data modify storage expansion:temp actionbar.oxygen[1].text set value "﬍ﬃﬆ"
+execute if score @s exp.oxygen_percent matches 1.. run data modify storage expansion:temp actionbar.oxygen[1].text set value "﬍ﬆ"
 execute if score @s exp.oxygen_percent matches 6.. run data modify storage expansion:temp actionbar.oxygen[1].text set value "ﬃﬆ"
 execute if score @s exp.oxygen_percent matches 11.. run data modify storage expansion:temp actionbar.oxygen[2].text set value "﬎ﬆ"
 execute if score @s exp.oxygen_percent matches 16.. run data modify storage expansion:temp actionbar.oxygen[2].text set value "ﬄﬆ"

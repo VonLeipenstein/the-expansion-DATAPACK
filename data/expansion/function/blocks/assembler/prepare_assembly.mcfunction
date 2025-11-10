@@ -1,5 +1,6 @@
 scoreboard players set @s exp.timer_1 200
 
+data merge entity @s {transformation:{scale:[0,0,0]}}
 data merge entity @s {transformation:{scale:[1,1,1]},interpolation_duration:200,start_interpolation:-1}
 
 item modify block ~ ~ ~ container.1 expansion:utility/reduce_count
