@@ -19,20 +19,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 8,
-          "value": "expansion:items/raw_titanium",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
           "weight": 1,
           "value": "expansion:vehicles/skins/zwaluw",
           "functions": [
