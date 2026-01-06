@@ -4,10 +4,7 @@
   "has_precipitation": false,
   "temperature_modifier": "frozen",
   "effects": {
-    "sky_color": 0,
-    "fog_color": 1536,
     "water_color": 8821154,
-    "water_fog_color": 8821154,
     "grass_color": 16777215,
     "foliage_color": 16777215
   },

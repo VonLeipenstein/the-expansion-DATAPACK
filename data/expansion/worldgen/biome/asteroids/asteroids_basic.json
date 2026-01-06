@@ -1,9 +1,6 @@
 {
   "effects": {
-    "sky_color": 0,
-    "fog_color": 1024,
-    "water_color": 6394,
-    "water_fog_color": 6394
+    "water_color": 6394
   },
   "spawners": {
     "water_ambient": [],

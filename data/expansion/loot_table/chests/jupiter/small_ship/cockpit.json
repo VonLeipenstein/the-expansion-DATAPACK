@@ -16,17 +16,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "expansion:vehicles/skins/zwaluw",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ]
         }
       ]
     },

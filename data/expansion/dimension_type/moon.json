@@ -1,20 +1,34 @@
 {
   "logical_height": 384,
   "infiniburn": "#minecraft:infiniburn_overworld",
-  "effects": "minecraft:overworld",
   "ambient_light": 0,
-  "respawn_anchor_works": false,
-  "fixed_time": 1000,
-  "has_raids": false,
+  "attributes": {
+    "visual/moon_angle": 80,
+    "visual/moon_phase": "first_quarter",
+    
+    "visual/star_brightness": 1.0,
+    "visual/star_angle": 0,
+    
+    "visual/cloud_color": 0,
+    "visual/cloud_fog_end_distance": 0.0011,
+
+    "visual/fog_color": 0,
+
+    "visual/sky_color": "#000000",
+    "visual/sky_light_color": "#ffffff",
+    "visual/sky_light_factor": 1
+  },
+  "skybox": "overworld",
+  "has_fixed_time": false,
+  "cardinal_light": "default",
+  "timelines": [
+    "expansion:moon/day"
+  ],
   "min_y": -64,
   "height": 384,
-  "natural": true,
   "coordinate_scale": 1,
-  "piglin_safe": false,
-  "bed_works": true,
   "has_skylight": true,
   "has_ceiling": false,
-  "ultrawarm": false,
   "monster_spawn_block_light_limit": 0,
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",

@@ -1,16 +1,20 @@
 {
   "effects": {
-    "sky_color": 0,
     "foliage_color": 2933548,
     "grass_color": 1955613,
-    "fog_color": 512,
-    "water_color": 6394,
-    "water_fog_color": 6394,
-    "particle": {
-      "options": {
-        "type": "minecraft:white_ash"
-      },
-      "probability": 0.05
+    "water_color": 6394
+  },
+    "attributes": {
+    "visual/ambient_particles": {
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:white_ash"
+          },
+          "probability": 0.05
+        }
+      ],
+      "modifier": "override"
     }
   },
   "carvers": [],

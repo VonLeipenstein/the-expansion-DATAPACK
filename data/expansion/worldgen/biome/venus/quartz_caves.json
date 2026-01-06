@@ -36,18 +36,9 @@
     []
   ],
   "effects": {
-    "sky_color": 16764692,
     "foliage_color": 10387789,
     "grass_color": 9470285,
-    "fog_color": 0,
-    "water_color": 5404,
-    "water_fog_color": 146514,
-    "particle": {
-      "options": {
-        "type": "minecraft:end_rod"
-      },
-      "probability": 0.01
-    }
+    "water_color": 5404
   },
   "has_precipitation": false,
   "temperature": 0.5,

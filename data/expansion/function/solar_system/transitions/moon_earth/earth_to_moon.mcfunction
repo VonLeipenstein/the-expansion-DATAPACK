@@ -1,6 +1,3 @@
-# disable weather
-function expansion:utilities/weather/disable_weather
-
 # teleport
 execute on vehicle on vehicle in expansion:moon run tp @s ~ 300 ~
 

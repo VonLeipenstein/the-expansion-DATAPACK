@@ -4,8 +4,7 @@
     "foliage_color": 12510378,
     "grass_color": 15070173,
     "fog_color": 256,
-    "water_color": 6394,
-    "water_fog_color": 6394
+    "water_color": 6394
   },
   "spawners": {
     "water_ambient": [],

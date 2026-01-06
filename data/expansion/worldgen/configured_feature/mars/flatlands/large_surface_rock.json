@@ -13,7 +13,7 @@
         "state": {
           "Name": "minecraft:deepslate",
           "Properties": {
-            "axis": "Y"
+            "axis": "y"
           }
         }
       },
@@ -28,7 +28,7 @@
         "state": {
           "Name": "minecraft:deepslate",
           "Properties": {
-            "axis": "Y"
+            "axis": "y"
           }
         }
       },
@@ -37,7 +37,7 @@
         "state": {
           "Name": "minecraft:deepslate",
           "Properties": {
-            "axis": "Y"
+            "axis": "y"
           }
         }
       },

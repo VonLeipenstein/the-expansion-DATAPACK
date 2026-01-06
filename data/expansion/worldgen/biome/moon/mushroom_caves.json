@@ -1,16 +1,20 @@
 {
   "effects": {
-    "sky_color": 0,
     "foliage_color": 1424116,
     "grass_color": 1424116,
-    "fog_color": 512,
-    "water_color": 6394,
-    "water_fog_color": 6394,
-    "particle": {
-      "options": {
-        "type": "minecraft:mycelium"
-      },
-      "probability": 0.2
+    "water_color": 6394
+  },
+    "attributes": {
+    "visual/ambient_particles": {
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:mycelium"
+          },
+          "probability": 0.05
+        }
+      ],
+      "modifier": "override"
     }
   },
   "carvers": [],
