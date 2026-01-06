@@ -18,4 +18,4 @@ execute if entity @s[nbt={HurtTime:9s}] run scoreboard players operation @s exp.
 execute if predicate expansion:periodic/10 if score @s exp.oxygen_lvl matches 1.. run function expansion:mechanics/oxygen/lose
 
 # instantly replenish oxygen if the player is on a planet with oxygen, unless if the player is wearing a full suit
-execute if predicate expansion:dimension/oxygen_available unless predicate expansion:armor/all run scoreboard players operation @s exp.oxygen_lvl = @s exp.oxygen_max
+execute unless predicate expansion:dimension/oxygen_absent unless predicate expansion:armor/all run scoreboard players operation @s exp.oxygen_lvl = @s exp.oxygen_max
