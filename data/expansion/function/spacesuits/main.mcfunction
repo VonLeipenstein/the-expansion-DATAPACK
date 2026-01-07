@@ -8,7 +8,7 @@ execute if predicate expansion:armor/all run function expansion:spacesuits/set_b
 execute if predicate expansion:periodic/10 run function expansion:spacesuits/extract_scores
 
 # Apply temperature damage to suit pieces
-execute if predicate expansion:periodic/10 run function expansion:spacesuits/integrity/main
+execute if predicate expansion:periodic/10 unless entity @s[gamemode=creative] unless entity @s[gamemode=spectator] run function expansion:spacesuits/integrity/main
 
 # Leak oxygen and refill a players reserve only if the player wears a full suit
 execute if predicate expansion:armor/all run function expansion:spacesuits/oxygen/main

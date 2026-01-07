@@ -8,14 +8,14 @@
 execute unless score @s exp.oxygen_max = #player.max exp.oxygen_max run function expansion:mechanics/oxygen/init
 
 # Suffocate player
-execute if predicate expansion:periodic/10 unless score @s exp.oxygen_lvl matches 1.. run function expansion:mechanics/oxygen/suffocate
+execute if predicate expansion:periodic/10 unless score @s exp.oxygen_lvl matches 1.. unless entity @s[gamemode=creative] unless entity @s[gamemode=spectator] run function expansion:mechanics/oxygen/suffocate
 
 # Lose some oxygen when taking damage
 execute if entity @s[nbt={HurtTime:9s}] run scoreboard players operation @s exp.oxygen_lvl -= #player.lostwhenhurt exp.oxygen_lvl
 
 # Remove oxygen
 # Needs to be after suffocate so the entire next tick has the chance to refill the lost oxygen
-execute if predicate expansion:periodic/10 if score @s exp.oxygen_lvl matches 1.. run function expansion:mechanics/oxygen/lose
+execute if predicate expansion:periodic/10 if score @s exp.oxygen_lvl matches 1.. unless entity @s[gamemode=creative] unless entity @s[gamemode=spectator] run function expansion:mechanics/oxygen/lose
 
 # instantly replenish oxygen if the player is on a planet with oxygen, unless if the player is wearing a full suit
 execute unless predicate expansion:dimension/oxygen_absent unless predicate expansion:armor/all run scoreboard players operation @s exp.oxygen_lvl = @s exp.oxygen_max
