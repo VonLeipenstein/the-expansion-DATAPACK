@@ -14,6 +14,7 @@ execute if entity @s[tag=exp.player_nearby] if block ~ ~ ~ minecraft:barrel run 
 execute if entity @s[tag=exp.terraformer] run return run function expansion:blocks/terraformer/main
 execute if entity @s[tag=exp.modstation] run return run function expansion:blocks/modification_station/main
 execute if entity @s[tag=exp.drone_home] run return run function expansion:mobs/evil_drone/drone_home/main
+execute if entity @s[tag=exp.cargo_rocket_pad] run return run function expansion:blocks/cargo_rocket_pad/main
 
 ## blocks that only function when a player is within 50 blocks
 execute unless entity @s[tag=exp.loaded] run return fail

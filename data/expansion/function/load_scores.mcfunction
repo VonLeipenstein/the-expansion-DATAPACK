@@ -76,6 +76,7 @@ scoreboard objectives add exp.size_mod dummy
 scoreboard objectives add exp.unique_id dummy
 # ids
 scoreboard objectives add exp.arc_id dummy
+scoreboard objectives add exp.pad_id dummy
 # weapons/damage
 scoreboard objectives add exp.ammo dummy
 scoreboard objectives add exp.max_ammo dummy

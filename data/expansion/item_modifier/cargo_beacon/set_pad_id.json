@@ -1,0 +1,15 @@
+{
+  "function": "minecraft:copy_custom_data",
+  "source": {
+    "type": "minecraft:storage",
+    "source": "expansion:temp"
+  },
+  "ops": [
+    {
+      "source": "data.pad_id",
+      "target": "pad_id",
+      "op": "replace"
+    }
+  ]
+}
+
