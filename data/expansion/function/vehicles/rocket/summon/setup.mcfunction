@@ -41,4 +41,7 @@ function expansion:vehicles/rocket/summon/set_waypoint
 # set the max fuel
 scoreboard players set @s exp.fuel_max 640
 
+# mount the rocket onto a launch pad (if there is any)
+ride @s mount @n[type=minecraft:item_display,tag=exp.launch_pad,distance=..0.01]
+
 tag @s remove exp.new_vehicle

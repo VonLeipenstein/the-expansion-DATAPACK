@@ -64,6 +64,8 @@ execute if function expansion:utilities/recipe_predicates/extractor run return r
 execute if function expansion:utilities/recipe_predicates/tesla_coil run return run loot replace entity @s container.0 loot expansion:blocks/tesla_coil
 # modstation
 execute if function expansion:utilities/recipe_predicates/modstation run return run loot replace entity @s container.0 loot expansion:blocks/modstation
+# rocket pad
+execute if function expansion:utilities/recipe_predicates/launch_pad run return run loot replace entity @s container.0 loot expansion:blocks/launch_pad
 
 ## VEHICLES
 # rocket top

@@ -12,4 +12,4 @@ execute if score @s exp.y matches ..8 run data merge entity @s {Motion:[0.0,-0.5
 execute if score @s exp.y matches ..4 run data merge entity @s {Motion:[0.0,-0.1,0.0]}
 execute if score @s exp.y matches ..2 run data merge entity @s {Motion:[0.0,-0.05,0.0]}
 
-execute at @s unless block ~ ~-0.1 ~ #air if entity @s[nbt={OnGround:1b}] run function expansion:blocks/cargo_rocket_pad/rocket/touchdown
+execute at @s unless block ~ ~-0.1 ~ #air if entity @s[nbt={OnGround:1b}] run function expansion:blocks/launch_pad/rocket/touchdown

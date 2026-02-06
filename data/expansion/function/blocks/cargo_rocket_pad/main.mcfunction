@@ -1,1 +1,0 @@
-execute on passengers if entity @s[type=snowball] on origin at @s run function expansion:blocks/cargo_rocket_pad/rocket/main

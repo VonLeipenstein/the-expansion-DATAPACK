@@ -11,4 +11,4 @@ ride @e[type=minecraft:armor_stand,tag=exp.cargo_rocket,tag=exp.new_vehicle,dist
 execute on passengers if entity @s[tag=exp.cargo_rocket] run function expansion:vehicles/cargo_rocket/summon/setup
 
 # give the player a beacon matching this launchpad
-function expansion:blocks/cargo_rocket_pad/beacon/drop
+function expansion:blocks/launch_pad/beacon/drop

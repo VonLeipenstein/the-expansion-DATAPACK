@@ -1,5 +1,3 @@
-data remove entity @s interaction
-
 # stop the interaction if the player is holding an identical core to the one already in the slot
 scoreboard players reset #temp exp.hold_value
 execute on passengers on origin if predicate expansion:nbt_checks/portal/has_core store result score #temp exp.hold_value run data get entity @s item.components."minecraft:custom_data".core_id

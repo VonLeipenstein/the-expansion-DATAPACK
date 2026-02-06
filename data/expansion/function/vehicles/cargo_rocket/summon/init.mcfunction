@@ -10,7 +10,7 @@ summon minecraft:armor_stand ~ ~ ~ {\
         "exp.vehicle",\
         "smithed.block"\
     ],\
-    attributes:[{id:"minecraft:scale",base:0.3}],\
+    attributes:[{id:"minecraft:scale",base:0.5}],\
     Passengers:[\
         {\
             id:"minecraft:interaction",\
@@ -34,7 +34,7 @@ summon minecraft:armor_stand ~ ~ ~ {\
             },\
             transformation:{\
                 scale:[1.7,1.7,1.7],\
-                translation:[0.0,2.0,0.0],\
+                translation:[0.0,1.6,0.0],\
                 left_rotation:[0,0,0,1],\
                 right_rotation:[0,0,0,1]\
             }\

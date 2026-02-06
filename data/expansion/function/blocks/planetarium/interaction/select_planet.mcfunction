@@ -1,5 +1,3 @@
-data remove entity @s interaction
-
 # select the corresponding pivot and make it the root
 execute on vehicle on passengers if entity @s[type=snowball] on origin unless entity @s[tag=exp.planetarium_root] run return run function expansion:blocks/planetarium/init_root
 

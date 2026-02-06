@@ -19,4 +19,4 @@ execute if score @s exp.timer_1 matches 20 at @s if entity @s[tag=exp.returning]
 execute if score @s exp.timer_1 matches 20 in expansion:transporter_utility run tp @s 0 0 0
 
 # transport the rocket which is no in the utility dimension to the target destination
-execute if score @s exp.timer_1 matches 0 run function expansion:blocks/cargo_rocket_pad/rocket/transport
+execute if score @s exp.timer_1 matches 0 run function expansion:blocks/launch_pad/rocket/transport

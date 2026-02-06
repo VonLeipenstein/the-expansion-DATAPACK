@@ -1,6 +1,3 @@
-data remove entity @s interaction
-data remove entity @s attack
-
 # take the tank if there is one
 execute on vehicle if items entity @s container.0 * unless items entity @p[tag=exp.clicked] weapon.mainhand * run return run function expansion:blocks/compressor/take_tank
 

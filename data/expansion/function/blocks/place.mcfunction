@@ -9,12 +9,11 @@ execute if predicate expansion:nbt_checks/selected_item/blocks/fabricator run fu
 execute if predicate expansion:nbt_checks/selected_item/blocks/oxygenator run function expansion:blocks/oxygenator/place/init
 execute if predicate expansion:nbt_checks/selected_item/blocks/portal run function expansion:blocks/portal/place/init
 execute if predicate expansion:nbt_checks/selected_item/blocks/assembler run function expansion:blocks/assembler/place/init
-execute if predicate expansion:nbt_checks/selected_item/blocks/rocket_part run function expansion:blocks/rocket_parts/place/init
 execute if predicate expansion:nbt_checks/selected_item/blocks/tesla_coil run function expansion:blocks/tesla_coil/place/init
 execute if predicate expansion:nbt_checks/selected_item/blocks/modstation run function expansion:blocks/modification_station/place/init
 execute if predicate expansion:nbt_checks/selected_item/items/pocket_space run function expansion:blocks/transporter/place/init
-execute if predicate expansion:nbt_checks/selected_item/blocks/launch_pad run function expansion:blocks/cargo_rocket_pad/place/init
-execute if predicate expansion:nbt_checks/selected_item/items/cargo_beacon run function expansion:blocks/cargo_rocket_pad/beacon/place
+execute if predicate expansion:nbt_checks/selected_item/blocks/launch_pad run function expansion:blocks/launch_pad/place/init
+execute if predicate expansion:nbt_checks/selected_item/items/cargo_beacon run function expansion:blocks/launch_pad/beacon/place
 
 # remove one from the held item count
 item modify entity @s[gamemode=!creative] weapon.mainhand expansion:utility/reduce_count

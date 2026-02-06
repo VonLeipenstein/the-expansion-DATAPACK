@@ -16,6 +16,3 @@ execute on target on vehicle if entity @s[tag=exp.rocket_pilot_seat] on passenge
 execute if entity @s[tag=exp.rocket_pilot_rcdet] run tag @s add exp.rocket_button_rcdet
 execute if entity @s[tag=exp.rocket_pilot_rcdet] run tag @s remove exp.rocket_pilot_rcdet
 execute if entity @s[tag=exp.rocket_passenger_rcdet] run tag @s remove exp.rocket_passenger_rcdet
-
-# remove the rightclick data from the interaction entity
-data remove entity @s interaction

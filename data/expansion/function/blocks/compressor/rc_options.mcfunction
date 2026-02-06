@@ -6,8 +6,8 @@ execute if data entity @s SelectedItem.components."minecraft:custom_data".oxygen
 execute if predicate expansion:utility/sneak if predicate expansion:nbt_checks/armor/space_equipment/equipment run scoreboard players add #temp exp.bool 2
 
 tag @s add exp.clicked
-execute as @n[type=minecraft:interaction,tag=exp.compressor.rcdet,nbt={interaction:{}},distance=..10] run function expansion:blocks/compressor/tank_swap
-execute as @n[type=minecraft:interaction,tag=exp.compressor.rcdet,nbt={attack:{}},distance=..10] run function expansion:blocks/compressor/tank_swap
+execute as @n[type=minecraft:interaction,tag=exp.compressor.rcdet,nbt={interaction:{}},distance=..10] if function expansion:utilities/remove_interaction run function expansion:blocks/compressor/tank_swap
+execute as @n[type=minecraft:interaction,tag=exp.compressor.rcdet,nbt={attack:{}},distance=..10] if function expansion:utilities/remove_attack run function expansion:blocks/compressor/tank_swap
 tag @s remove exp.clicked
 
 scoreboard players reset #temp

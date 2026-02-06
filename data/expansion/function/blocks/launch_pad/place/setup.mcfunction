@@ -1,6 +1,6 @@
-tag @s remove exp.cargo_rocket_pad.new
+tag @s remove exp.launch_pad.new
 
-item replace entity @s contents from entity @p[tag=exp.tick_player] weapon.mainhand
+item replace entity @s contents from entity @p[tag=exp.tick_player] weapon.mainhand expansion:portal/count_to_1
 
 # assign a pad ID
 scoreboard players add #global exp.pad_id 1

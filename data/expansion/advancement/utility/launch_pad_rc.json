@@ -1,7 +1,7 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:player_hurt_entity",
+      "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": [
           {
@@ -9,7 +9,7 @@
             "entity": "this",
             "predicate": {
               "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"exp.cargo_rocket_pad_hitbox\"]}"
+              "nbt": "{Tags:[\"exp.launch_pad_hitbox\"]}"
             }
           }
         ]
@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:blocks/cargo_rocket_pad/interaction/leftclick"
+    "function": "expansion:blocks/launch_pad/interaction/rightclick"
   }
 }
