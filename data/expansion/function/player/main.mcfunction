@@ -16,7 +16,7 @@ execute unless score @s exp.unique_id matches 1.. run function expansion:player/
 scoreboard players operation #search exp.unique_id = @s exp.unique_id
 
 ## Rightclick
-execute if score @s exp.rightclick matches 1.. if predicate expansion:nbt_checks/selected_item/expansion_coas run function expansion:player/rightclick/main
+execute if score @s exp.rightclick matches 1.. if predicate expansion:holding/expansion_coas run function expansion:player/rightclick/main
 
 ## Gravity
 execute if predicate expansion:periodic/5 run function expansion:mechanics/gravity/main

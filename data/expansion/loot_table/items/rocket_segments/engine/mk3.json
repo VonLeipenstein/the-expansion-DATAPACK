@@ -1,0 +1,81 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name":[
+                {
+                  "translate": "exp_vehicles_rocketsegment_engine_name",
+                  "italic": false
+                },
+                {
+                  "translate": "exp_modules_mk3"
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_components",
+                  "components": {
+                    "item_model": "expansion:vehicles/rocket",
+                    "custom_model_data": {
+                      "strings": [
+                        "bottom"
+                      ]
+                    },
+                    "minecraft:max_stack_size": 64,
+                    "!minecraft:max_damage": {},
+                    "minecraft:unbreakable": {},
+                    "tooltip_display": {"hidden_components":["minecraft:unbreakable"]}
+                  }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{exp_item:{name:\"rocket_segment\",crafting_count:1,max_stack_size:64,expansion_coas:1b,exp_tool:1b},rocket_segment:{type:\"bottom\",id:\"engine\",stats:{weight:4,fuel:0,thrust:12}}}"
+            },
+            {
+              "function": "minecraft:set_lore",
+          "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "exp_lore_tooltips"
+                },
+                {
+                  "translate": "exp_vehicles_rocketsegment_engine_tip1"
+                },
+                [
+                  {
+                    "translate": "exp_vehicles_rocketsegment_weight"
+                  },
+                  {
+                    "text": "2",
+                    "color": "gray",
+                    "bold": true,
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "exp_vehicles_rocketsegment_thrust"
+                  },
+                  {
+                    "text": "5",
+                    "color": "gray",
+                    "bold": true,
+                    "italic": false
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

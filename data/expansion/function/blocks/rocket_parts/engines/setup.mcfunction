@@ -2,6 +2,12 @@ tag @s remove exp.rocket_part.new
 
 ride @s mount @n[type=minecraft:item_display,tag=exp.launch_pad,distance=..0.01]
 
-data merge entity @s {transformation:{scale:[2.0,2.0,2.0],translation:[0,1,0]}}
+data merge entity @s {transformation:{scale:[2.5,2.5,2.5],translation:[0,1.25,0]}}
 
-execute facing ~ ~-1 ~ positioned ~ ~0.2 ~ run function expansion:blocks/rocket_parts/place_particles
+execute at @s facing ~ ~-1 ~ run function expansion:blocks/rocket_parts/place_particles
+
+# remove one from the held item count
+execute as @p[tag=exp.clicked] run item modify entity @s[gamemode=!creative] weapon.mainhand expansion:utility/reduce_count
+
+# sound
+execute as @p[tag=exp.clicked] run playsound minecraft:block.metal.place block @s

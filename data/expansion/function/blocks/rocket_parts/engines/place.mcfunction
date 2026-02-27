@@ -1,11 +1,11 @@
-# can only be placed on top of the engines
-execute on vehicle unless entity @s[tag=exp.launch_pad] run return run say place on pad
-execute if function expansion:blocks/launch_pad/has_passenger run return run say occupied
+# can only be placed on top of the launch pad
+execute on vehicle unless entity @s[tag=exp.launch_pad] as @p[tag=exp.clicked] run return run function expansion:utilities/error_messages/try_place_rocket_part
+execute if function expansion:blocks/launch_pad/occupied as @p[tag=exp.clicked] run return run function expansion:utilities/error_messages/launch_pad_occupied
 
 summon minecraft:item_display ~ ~ ~ \
 {\
     Tags:["exp.rocket_part","exp.rocket_part.new",exp.rocket_bottom,"exp.block","smithed.block"],\
-    Passengers:[{id:"minecraft:interaction",Tags:["exp.rocketpart_rcdet"],width:2,height:2,response:1b}],\
+    Passengers:[{id:"minecraft:interaction",Tags:["exp.rocketpart_rcdet"],width:2.5,height:2.5,response:1b}],\
     item:{\
         id:"minecraft:carrot_on_a_stick",\
         count:1,\

@@ -5,3 +5,6 @@ effect give @s minecraft:levitation 1 20 true
 execute anchored eyes run particle minecraft:campfire_signal_smoke ~ ~-2 ~ 1 1 1 0 10 force
 execute anchored eyes run particle minecraft:flame ~ ~-2 ~ .5 .5 .5 0.1 50 force
 execute anchored eyes run particle minecraft:large_smoke ~ ~-2 ~ .5 .5 .5 0.1 50 force
+
+# transport to the moon when reaching y=500
+execute if predicate expansion:location/space_edge run function expansion:solar_system/transitions/moon_earth/earth_to_moon

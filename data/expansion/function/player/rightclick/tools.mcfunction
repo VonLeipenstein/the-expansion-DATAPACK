@@ -1,27 +1,35 @@
 ## Tools you can activate in vehicles
-# oxygen system
-execute if predicate expansion:nbt_checks/selected_item/items/oxygen_tank run return run execute if predicate expansion:armor/any if items entity @s armor.* *[custom_data~{ModStorage:[{components:{"minecraft:custom_data":{exp_item:{name:"oxygen_tank"}}}}]}] run function expansion:items/oxygen_tank/init
-# fleet finder
-execute if predicate expansion:nbt_checks/selected_item/items/fleet_finder run return run function expansion:items/fleet_finder/find
-# repair kit
-execute if predicate expansion:nbt_checks/selected_item/items/repair_kit run return run function expansion:items/repair_kit/init
-# thermometer
-execute if predicate expansion:nbt_checks/selected_item/items/thermometer run return run function expansion:items/thermometer/init
+# Oxygen system
+execute if predicate expansion:holding/items/oxygen_tank run return run function expansion:items/oxygen_tank/use
+# Fleet finder
+execute if predicate expansion:holding/items/fleet_finder run return run function expansion:items/fleet_finder/use
+# Repair kit
+execute if predicate expansion:holding/items/repair_kit run return run function expansion:items/repair_kit/use
+# Thermometer
+execute if predicate expansion:holding/items/thermometer run return run function expansion:items/thermometer/use
 
 ## Tools you can't activate inside vehicles
-execute if entity @s[tag=exp.inside_vehicle] run return fail
+execute if entity @s[tag=exp.inside_vehicle] run return run function expansion:utilities/error_messages/usetool_notinvehicle
 
-# pet drone
-execute if predicate expansion:nbt_checks/selected_item/items/pet_drone run return run execute unless entity @s[tag=exp.has_active_drone] run function expansion:items/drone_pet/use
-# railgun
-execute if predicate expansion:nbt_checks/selected_item/items/railgun run return run execute unless score @s exp.warmup matches 1.. unless score @s exp.cooldown matches 1.. run function expansion:items/railgun/main
-# cryoblaster
-execute if predicate expansion:nbt_checks/selected_item/items/cryoblaster run return run function expansion:items/cryoblaster/use
-# arc_thrower
-execute if predicate expansion:nbt_checks/selected_item/items/arc_thrower run return run function expansion:items/arc_thrower/use
-# blaster
-execute if predicate expansion:nbt_checks/selected_item/items/blaster run return run function expansion:items/blaster/use
-# cataclysm cannon
-execute if predicate expansion:nbt_checks/selected_item/items/cataclysm_cannon run return run function expansion:items/cataclysm_cannon/use
-# rocket launcher
-execute if predicate expansion:nbt_checks/selected_item/items/rocket_launcher run return run function expansion:items/rocket_launcher/use
+# Pet drone
+execute if predicate expansion:holding/items/pet_drone run return run function expansion:items/drone_pet/use
+# Railgun
+execute if predicate expansion:holding/items/railgun run return run function expansion:items/railgun/use
+# Cryoblaster
+execute if predicate expansion:holding/items/cryoblaster run return run function expansion:items/cryoblaster/use
+# Arc_thrower
+execute if predicate expansion:holding/items/arc_thrower run return run function expansion:items/arc_thrower/use
+# Blaster
+execute if predicate expansion:holding/items/blaster run return run function expansion:items/blaster/use
+# Cataclysm cannon
+execute if predicate expansion:holding/items/cataclysm_cannon run return run function expansion:items/cataclysm_cannon/use
+# Rocket launcher
+execute if predicate expansion:holding/items/rocket_launcher run return run function expansion:items/rocket_launcher/use
+# Rocket parts
+execute if predicate expansion:holding/blocks/rocket_part run return run function expansion:utilities/error_messages/try_place_rocket_part
+# Cargo Rocket Remote
+execute if predicate expansion:holding/items/cargo_rocket_remote run return run function expansion:items/cargo_rocket_remote/use
+
+# Rocket segments
+execute if predicate expansion:holding/items/rocket_segment/any run return run function expansion:utilities/error_messages/try_place_rocket_part
+

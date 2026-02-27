@@ -2,7 +2,7 @@ scoreboard players operation #search exp.unique_id = @s exp.unique_id
 
 function expansion:blocks/portal/deactivation/search_match_id
 
-execute on passengers if predicate expansion:nbt_checks/portal/has_core at @s[tag=exp.core_port] run function expansion:blocks/portal/destroy/retrieve_cores
+execute on passengers if predicate expansion:contents/portal_core at @s[tag=exp.core_port] run function expansion:blocks/portal/destroy/retrieve_cores
 
 loot give @p loot expansion:blocks/portal
 

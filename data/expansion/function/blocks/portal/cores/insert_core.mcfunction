@@ -1,5 +1,5 @@
 # copy and remove from player
-item replace entity @s container.0 from entity @p weapon.mainhand expansion:portal/count_to_1
+item replace entity @s container.0 from entity @p weapon.mainhand expansion:utility/count_to_1
 item modify entity @p weapon.mainhand expansion:utility/reduce_count
 
 # store core id

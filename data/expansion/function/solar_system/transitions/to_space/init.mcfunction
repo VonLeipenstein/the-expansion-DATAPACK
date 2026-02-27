@@ -1,5 +1,4 @@
 # --- only runs as the spaceship
-
 function expansion:vehicles/spaceship/markers/activate_markers
 
 # teleport the player to space

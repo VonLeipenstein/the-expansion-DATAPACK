@@ -6,7 +6,7 @@
         "player": [
           {
             "condition": "minecraft:reference",
-            "name": "expansion:nbt_checks/root_vehicle/rocket"
+            "name": "expansion:riding/rocket"
           }
         ],
         "entity": [

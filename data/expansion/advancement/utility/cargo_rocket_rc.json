@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:vehicles/cargo_rocket/click"
+    "function": "expansion:vehicles/cargo_rocket/click_detection/rightclick"
   }
 }

@@ -1376,6 +1376,9 @@
                       "translate":"exp_guide1_rocket"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff30  ","hover_event":{"action":"show_text","value":[{"translate":"exp_vehicles_rocket_name"},{"translate":"exp_guide1_rocket_tip"},{"translate":"exp_guide1_rocket_craft"}]}}]
                     },
                     {
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\ufa43  ","hover_event":{"action":"show_text","value":[{"translate":"exp_blocks_launchpad_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa44"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                    },
+                    {
                       "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff41  ","hover_event":{"action":"show_text","value":[{"translate":"exp_items_rocketbottom_name"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff85"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
                     },
                     {

@@ -1,0 +1,14 @@
+{
+    "condition": "any_of",
+    "terms": 
+    [
+        {
+            "condition": "reference",
+            "name": "expansion:holding/block"
+        },
+        {
+            "condition": "reference",
+            "name": "expansion:holding/vehicle"
+        }
+    ]
+}

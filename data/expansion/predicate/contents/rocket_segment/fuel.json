@@ -1,0 +1,20 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "passenger": {
+      "type": "minecraft:item_display",
+      "slots": {
+        "contents": {
+          "predicates": {
+            "custom_data": {
+              "rocket_segment":{
+                "id":"fuel"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

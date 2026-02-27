@@ -2,10 +2,10 @@
 tag @s add exp.transporting
 
 # initiate the transport
-execute unless predicate expansion:nbt_checks/selected_item/items/pocket_space unless predicate expansion:utility/sneak at @n[type=minecraft:interaction,tag=exp.transporter_rcdet,nbt={interaction:{}}] as @n[type=minecraft:item_display,tag=exp.transporter] at @s run function expansion:items/transporter/initiate_transport
+execute unless predicate expansion:holding/items/pocket_space unless predicate expansion:utility/sneak at @n[type=minecraft:interaction,tag=exp.transporter_rcdet,nbt={interaction:{}}] as @n[type=minecraft:item_display,tag=exp.transporter] at @s run function expansion:items/transporter/initiate_transport
 
 # link an unassigned pocket space to this pocket space
-execute if predicate expansion:nbt_checks/selected_item/items/pocket_space at @n[type=minecraft:interaction,tag=exp.transporter_rcdet,nbt={interaction:{}}] as @n[type=minecraft:item_display,tag=exp.transporter] run function expansion:items/transporter/link/init
+execute if predicate expansion:holding/items/pocket_space at @n[type=minecraft:interaction,tag=exp.transporter_rcdet,nbt={interaction:{}}] as @n[type=minecraft:item_display,tag=exp.transporter] run function expansion:items/transporter/link/init
 
 # reset the interaction entity
 data remove entity @n[type=minecraft:interaction,tag=exp.transporter_rcdet,nbt={interaction:{}}] interaction

@@ -8,4 +8,3 @@ data merge entity @s[predicate=expansion:dimension/zero_gravity] {NoGravity:1b}
 
 scoreboard players reset @s exp.timer_2
 scoreboard players reset @s exp.speed
-tag @s remove exp.has_passenger

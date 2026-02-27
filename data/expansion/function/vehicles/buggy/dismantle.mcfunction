@@ -1,4 +1,4 @@
-execute as @p unless predicate expansion:nbt_checks/selected_item/items/wrench run return run function expansion:utilities/error_messages/no_dismantle_wrench
+execute as @p unless predicate expansion:holding/items/wrench run return run function expansion:utilities/error_messages/no_dismantle_wrench
 execute as @p unless predicate expansion:utility/sneak run return run function expansion:utilities/error_messages/no_dismantle_sneak
 
 execute unless entity @s[tag=exp.prompted_dismantle] run tellraw @p {translate:"exp_vehicles_spaceship_dismantle"}

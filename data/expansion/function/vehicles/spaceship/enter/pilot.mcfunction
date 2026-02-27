@@ -1,5 +1,5 @@
 # assign a pilot tag to the first player who enters
-tag @p[tag=exp.clicked_ship] add exp.spaceship_pilot
+tag @p[tag=exp.clicked] add exp.spaceship_pilot
 
 # make the player ride the armor stand
 execute on passengers store result entity @s[tag=exp.spaceship_seat] Rotation[0] float 1 on vehicle run data get entity @s Rotation[0]

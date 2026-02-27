@@ -2,7 +2,7 @@
 function expansion:blocks/determine_rotation
 
 # place blocks
-execute if predicate expansion:nbt_checks/selected_item/blocks/block run return run function expansion:blocks/place
+execute if predicate expansion:holding/block run return run function expansion:blocks/place
 
 # place vehicles
-execute if predicate expansion:nbt_checks/selected_item/vehicles/vehicle run return run function expansion:vehicles/place
+execute if predicate expansion:holding/vehicle run return run function expansion:vehicles/place

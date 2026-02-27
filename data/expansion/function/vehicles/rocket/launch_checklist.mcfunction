@@ -3,7 +3,7 @@ execute on passengers if entity @s[tag=aj.rocket.root] on passengers if entity @
 {text:"",underlined:false},\
 {text:"Launch Checklist:",color:"white",underlined:true},\
 {text:"\n☐ "},\
-{text:"3x3 Launchpad",color:"white"},\
+{text:"Launchpad",color:"white"},\
 {text:"\n☐ "},\
 {text:"16 Blaze Powder",color:"white"},\
 {text:"\n☐ "},\
@@ -11,8 +11,7 @@ execute on passengers if entity @s[tag=aj.rocket.root] on passengers if entity @
 {text:"\n☐ "},\
 {text:"Oxygen Tanks",color:"white"},\
 {text:"\n☐ "},\
-{text:"Some Repair Kits",color:"white"},\
-{text:"\n\nGodspeed,\n ~VonLeipenstein"}\
+{text:"Some Repair Kits",color:"white"}\
 ]
 
 execute at @s if function expansion:vehicles/rocket/has_launchpad on passengers if entity @s[tag=aj.rocket.root] on passengers if entity @s[tag=aj.rocket.node.text_display] run data modify entity @s text.extra[1] set value {text:"\n☑ ",color:"green"}

@@ -14,6 +14,9 @@ execute if score @s exp.y matches ..-60 run tp @s ~ -59 ~
 # rotate the seat with the ship
 execute at @s on passengers if entity @s[tag=exp.spaceship_seat] run rotate @s ~ 0
 
+## -- SPACE TRANSITION
+execute if predicate expansion:location/space_edge if predicate expansion:dimension/has_space_transition run function expansion:solar_system/transitions/to_space/init
+
 ## --- MARKERS
 # marker functions
 execute if entity @s[tag=exp.has_active_markers] \

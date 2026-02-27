@@ -39,6 +39,8 @@ scoreboard objectives add exp.suit_integrity dummy
 scoreboard objectives add exp.armor dummy
 # vehicles
 scoreboard objectives add exp.speed dummy
+scoreboard objectives add exp.weight dummy
+scoreboard objectives add exp.thrust dummy
 scoreboard objectives add exp.speed_mod dummy
 scoreboard objectives add exp.speed_max dummy
 scoreboard objectives add exp.passenger_count dummy

@@ -1,13 +1,11 @@
 {
-    "condition": "minecraft:location_check",
-    "predicate": {
-      "position": {
-        "y": {
-          "min": 1000,
-          "max": 1100
-        }
-      },
-      "dimension": "expansion:moon"
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "position": {
+      "y": {
+        "min": 500,
+        "max": 1000
+      }
     }
   }
-  
+}

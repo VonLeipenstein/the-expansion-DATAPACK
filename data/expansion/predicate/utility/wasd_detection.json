@@ -3,11 +3,11 @@
     "terms": [
       {
         "condition": "minecraft:reference",
-        "name": "expansion:nbt_checks/root_vehicle/buggy"
+        "name": "expansion:riding/buggy"
       },
       {
         "condition": "minecraft:reference",
-        "name": "expansion:nbt_checks/root_vehicle/spaceship"
+        "name": "expansion:riding/spaceship"
       }
     ]
   }

@@ -1,3 +1,6 @@
+# dont summon a new drone if one was already active
+execute if entity @s[tag=exp.has_active_drone] run return run function expansion:utilities/error_messages/drone_alreadyactive
+
 # summon the drone pet
 function expansion:mobs/drone_pet/summon/summon
 

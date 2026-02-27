@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "vehicle":{
+      "vehicle": {
+        "nbt": {
+          "Tags":[
+            "exp.rocket_segment"
+          ]
+        }
+      } 
+    }
+  }
+}
