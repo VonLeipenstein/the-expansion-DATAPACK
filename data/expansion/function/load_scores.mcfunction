@@ -26,6 +26,7 @@ scoreboard objectives add exp.fuel_level dummy
 scoreboard objectives add exp.fuel_max dummy
 scoreboard objectives add exp.fuel_efficiency dummy
 scoreboard objectives add exp.fuel_percentage dummy
+scoreboard objectives add exp.fuel_consumption dummy
 # oxygen
 scoreboard objectives add exp.oxygen_lvl dummy
 scoreboard objectives add exp.oxygen_max dummy

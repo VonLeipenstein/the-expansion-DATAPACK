@@ -8,6 +8,7 @@ summon minecraft:item_display ~ ~ ~ {\
         {id:"minecraft:text_display",Tags:["exp.rocket_destination"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.destination_left"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.destination_right"],background:0,alignment:"center"},\
+        {id:"minecraft:text_display",Tags:["exp.rocket_trip"],background:0,alignment:"center"},\
         {id:"minecraft:snowball",Tags:["exp.rocket_link"],Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b},\
         {id:"minecraft:snowball",Tags:["exp.left_link"],Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b},\
         {id:"minecraft:snowball",Tags:["exp.right_link"],Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b},\

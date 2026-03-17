@@ -13,6 +13,8 @@ execute on vehicle store result score #temp exp.fuel_max on passengers on passen
 
 execute unless score #temp exp.fuel_level < #temp exp.fuel_max run data modify storage expansion:temp diagnostics[5].text set value "\n\n\n\n"
 
+execute on vehicle store result score #temp exp.fuel_max on passengers on passengers if entity @s[tag=exp.rocket_segment] run scoreboard players get @s exp.fuel_max
+
 execute on vehicle if score @s exp.hold_value matches 0 run data modify storage expansion:temp destination[2] set value {text:"Earth\n",bold:true,color:"green"}
 execute on vehicle if score @s exp.hold_value matches 1 run data modify storage expansion:temp destination[2] set value {text:"The Moon\n",bold:true,color:"gray"}
 execute on vehicle if score @s exp.hold_value matches 2 run data modify storage expansion:temp destination[2] set value {text:"Mars\n",bold:true,color:"red"}
