@@ -8,7 +8,6 @@ data modify storage expansion:temp destination set value \
 ]
 
 # calculate the required fuel, fuel max is required fuel, fuel level is current fuel
-execute on vehicle store result score #temp exp.fuel_consumption on passengers on passengers if entity @s[tag=exp.rocket_segment] run scoreboard players get @s exp.fuel_consumption
 execute on vehicle store result score #temp exp.fuel_max on passengers on passengers if entity @s[tag=exp.rocket_segment] run scoreboard players get @s exp.fuel_max
 
 execute unless score #temp exp.fuel_level < #temp exp.fuel_max run data modify storage expansion:temp diagnostics[5].text set value "\n\n\n\n"

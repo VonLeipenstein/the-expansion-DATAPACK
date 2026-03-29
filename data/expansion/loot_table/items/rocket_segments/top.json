@@ -32,7 +32,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"rocket_segment\",crafting_count:1,max_stack_size:64,expansion_coas:1b,exp_tool:1b},rocket_segment:{type:\"top\",id:\"top\",stats:{weight:5,fuel:0,thrust:0,consumption:0}}}"
+              "tag": "{exp_item:{name:\"rocket_segment\",crafting_count:1,max_stack_size:64,expansion_coas:1b,exp_tool:1b},rocket_segment:{type:\"top\",id:\"top\",stats:{mass:3,fuel:0,thrust:0,consumption:0}}}"
             },
             {
               "function": "minecraft:set_lore",
