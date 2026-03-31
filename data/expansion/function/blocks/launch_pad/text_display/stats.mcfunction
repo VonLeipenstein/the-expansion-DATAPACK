@@ -4,38 +4,21 @@ execute on vehicle unless predicate expansion:passengers/rocket_segment on passe
 {text:"Place a Rocket\nSegment to start\nbuilding your Rocket!",underlined:false}\
 ]
 
-#extract rocket scores
-execute store result score @s exp.mass on vehicle on passengers on passengers if entity @s[tag=exp.rocket_segment] run scoreboard players get @s exp.mass
-execute store result score @s exp.engine_thrust on vehicle on passengers on passengers if entity @s[tag=exp.rocket_segment] run scoreboard players get @s exp.engine_thrust
-execute store result score @s exp.engine_efficiency on vehicle on passengers on passengers if entity @s[tag=exp.rocket_segment] run scoreboard players get @s exp.engine_efficiency
-execute store result score @s exp.fuel_level on vehicle on passengers on passengers if entity @s[tag=exp.rocket_segment] run scoreboard players get @s exp.fuel_level
-execute store result score @s exp.fuel_max on vehicle on passengers on passengers if entity @s[tag=exp.rocket_segment] run scoreboard players get @s exp.fuel_max
-
-# calculate rocket weight based on mass and current planet gravity
-execute store result score @s exp.weight run function expansion:blocks/launch_pad/calculate_weight
-
-# calculate required fuel based on weight and engine efficiency
-execute store result score #required exp.fuel_level run function expansion:blocks/launch_pad/calculate_fuel_requirement
-
 # prepare a text storage
 data modify storage expansion:temp diagnostics set value \
 [\
 {text:""},\
-{text:"\nWeight: "},\
-{score:{name:"@s",objective:"exp.weight"}},\
-{text:" ("},\
-{score:{name:"@s",objective:"exp.mass"}},\
-{text:")"},\
+{text:"\nStats: "},\
+{text:"\nMass: "},\
+{score:{name:"#stat",objective:"exp.mass"}},\
 {text:"\nThrust: "},\
-{score:{name:"@s",objective:"exp.engine_thrust"}},\
+{score:{name:"#stat",objective:"exp.engine_thrust"}},\
 {text:"\nEfficiency: "},\
-{score:{name:"@s",objective:"exp.engine_efficiency"}},\
-{text:"\nFuel Capacity: "},\
-{score:{name:"@s",objective:"exp.fuel_max"}},\
-{text:"\nFuel Level: "},\
-{score:{name:"@s",objective:"exp.fuel_level"}},\
-{text:"\nRequired Fuel: "},\
-{score:{name:"#required",objective:"exp.fuel_level"}},\
+{score:{name:"#stat",objective:"exp.engine_efficiency"}},\
+{text:"\nFuel: "},\
+{score:{name:"#stat",objective:"exp.fuel_level"}},\
+{text:"/"},\
+{score:{name:"#stat",objective:"exp.fuel_max"}},\
 ]
 
 # Check if the required parts are present

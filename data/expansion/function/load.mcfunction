@@ -1,6 +1,9 @@
 # load all the scores
 function expansion:load_scores
 
+# load all the constants
+function expansion:load_constants
+
 # trigger the generation of the solar system
 function expansion:solar_system/generation/start_system_generation
 

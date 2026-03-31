@@ -5,6 +5,7 @@ summon minecraft:item_display ~ ~ ~ {\
     transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,0.0f,0.0f],scale:[1.0f,1.0f,1.0f]},\
     Passengers:[\
         {id:"minecraft:text_display",Tags:["exp.rocket_diagnostics"],background:0,alignment:"center"},\
+        {id:"minecraft:text_display",Tags:["exp.rocket_origin"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.rocket_destination"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.destination_left"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.destination_right"],background:0,alignment:"center"},\
