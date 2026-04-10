@@ -12,6 +12,7 @@ scoreboard players set #player.consumption exp.oxygen_lvl 10
 scoreboard players set #player.lostwhenhurt exp.oxygen_lvl 50
 
 # planet gravity ID
+scoreboard players set #earth exp.gravity_id 0
 scoreboard players set #moon exp.gravity_id 1
 scoreboard players set #mars exp.gravity_id 2
 scoreboard players set #venus exp.gravity_id 3
@@ -27,6 +28,20 @@ scoreboard players set #venus exp.gravity 90
 scoreboard players set #jupiter exp.gravity 250
 scoreboard players set #europa exp.gravity 15
 scoreboard players set #zero exp.gravity 0
+
+# rocket distance costs
+scoreboard players set #overworld_to_moon_required exp.fuel_level 15
+scoreboard players set #overworld_to_mars_required exp.fuel_level 50
+scoreboard players set #overworld_to_venus_required exp.fuel_level 50
+scoreboard players set #moon_to_overworld_required exp.fuel_level 15
+scoreboard players set #moon_to_mars_required exp.fuel_level 50
+scoreboard players set #moon_to_venus_required exp.fuel_level 50
+scoreboard players set #mars_to_overworld_required exp.fuel_level 50
+scoreboard players set #mars_to_moon_required exp.fuel_level 50
+scoreboard players set #mars_to_venus_required exp.fuel_level 100
+scoreboard players set #venus_to_overworld_required exp.fuel_level 50
+scoreboard players set #venus_to_moon_required exp.fuel_level 50
+scoreboard players set #venus_to_mars_required exp.fuel_level 100
 
 # constants
 scoreboard players set #-46496 exp.const -46496

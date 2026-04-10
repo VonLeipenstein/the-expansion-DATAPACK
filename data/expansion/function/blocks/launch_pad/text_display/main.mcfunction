@@ -6,10 +6,15 @@
 # - function expansion:blocks/launch_pad/main (1 caller) [OK above +1]
 # <<< generated function callers <<<
 
-execute if predicate expansion:periodic/5 if entity @s[tag=exp.rocket_diagnostics] run function expansion:blocks/launch_pad/text_display/stats
 
-execute if predicate expansion:periodic/5 if entity @s[tag=exp.rocket_origin] run function expansion:blocks/launch_pad/text_display/origin
+execute on vehicle run function expansion:blocks/launch_pad/calculate_stats
 
-execute if predicate expansion:periodic/5 if entity @s[tag=exp.rocket_destination] run function expansion:blocks/launch_pad/text_display/destination
+execute if entity @s[tag=exp.rocket_origin] run function expansion:blocks/launch_pad/text_display/origin
 
-execute if predicate expansion:periodic/5 if entity @s[tag=exp.rocket_trip] run function expansion:blocks/launch_pad/text_display/trip
+execute if entity @s[tag=exp.rocket_destination] run function expansion:blocks/launch_pad/text_display/destination
+
+execute if entity @s[tag=exp.rocket_trip] run function expansion:blocks/launch_pad/text_display/trip
+
+execute if entity @s[tag=exp.rocket_diagnostics] run function expansion:blocks/launch_pad/text_display/stats
+
+execute on vehicle run function expansion:blocks/launch_pad/reset_scores

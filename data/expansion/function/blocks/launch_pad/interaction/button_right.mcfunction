@@ -11,10 +11,10 @@ scoreboard players add @s exp.hold_value 1
 
 execute if score @s exp.hold_value matches 4 run scoreboard players set @s exp.hold_value 0
 
-execute if dimension minecraft:overworld if score @s exp.hold_value matches 0 run scoreboard players add @s exp.hold_value 1
-execute if dimension expansion:moon if score @s exp.hold_value matches 1 run scoreboard players add @s exp.hold_value 1
-execute if dimension expansion:mars if score @s exp.hold_value matches 2 run scoreboard players add @s exp.hold_value 1
-execute if dimension expansion:venus if score @s exp.hold_value matches 3 run scoreboard players add @s exp.hold_value 1
+execute if dimension minecraft:overworld if score @s exp.hold_value = #earth exp.gravity_id run scoreboard players add @s exp.hold_value 1
+execute if dimension expansion:moon if score @s exp.hold_value = #moon exp.gravity_id run scoreboard players add @s exp.hold_value 1
+execute if dimension expansion:mars if score @s exp.hold_value = #mars exp.gravity_id run scoreboard players add @s exp.hold_value 1
+execute if dimension expansion:venus if score @s exp.hold_value = #venus exp.gravity_id run scoreboard players add @s exp.hold_value 1
 
 execute if score @s exp.hold_value matches 4 run scoreboard players set @s exp.hold_value 0
 

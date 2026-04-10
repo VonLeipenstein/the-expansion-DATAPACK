@@ -6,32 +6,31 @@
 # - function expansion:blocks/launch_pad/text_display/main (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
-scoreboard players operation #origin_total exp.fuel_level = #origin_required exp.fuel_level
-scoreboard players operation #origin_total exp.fuel_level += #trip_required exp.fuel_level
-
-scoreboard players operation #destination_total exp.fuel_level = #destination_required exp.fuel_level
-scoreboard players operation #destination_total exp.fuel_level += #trip_required exp.fuel_level
+execute on vehicle unless predicate expansion:passengers/rocket_segment on passengers if entity @s[tag=exp.rocket_trip] run return run data modify entity @s text set value [{text:""}]
 
 # create a text storage
 data modify storage expansion:temp trip set value \
 [\
 {text:""},\
+{text:"\n----------------\n"},\
 {text:"Distance Cost: "},\
 {score:{name:"#trip_required",objective:"exp.fuel_level"}},\
-{text:"\n\nEarth","color":"green",bold:true,underlined:true},{text:" -> "},{text:"Moon\n",color:"gray",bold:true,underlined:true},\
-{score:{name:"#origin_required",objective:"exp.fuel_level"},color:"blue"},\
+{text:"\n----------------\n"},\
+{text:"Earth","color":"green",bold:true,underlined:true},{text:" → "},{text:"Moon\n",color:"gray",bold:true,underlined:true},\
+{score:{name:"#origin_required",objective:"exp.fuel_level"},color:"gold"},\
 {text:" + "},\
 {score:{name:"#trip_required",objective:"exp.fuel_level"}},\
 {text:" = "},\
 {score:{name:"#origin_total",objective:"exp.fuel_level"}},\
 {text:"\n\n"},\
-{text:"Moon","color":"gray",bold:true,underlined:true},{text:" -> "},{text:"Earth\n",color:"green",bold:true,underlined:true},\
-{score:{name:"#destination_required",objective:"exp.fuel_level"},color:"blue"},\
+{text:"Moon","color":"gray",bold:true,underlined:true},{text:" → "},{text:"Earth\n",color:"green",bold:true,underlined:true},\
+{score:{name:"#destination_required",objective:"exp.fuel_level"},color:"gold"},\
 {text:" + "},\
 {score:{name:"#trip_required",objective:"exp.fuel_level"}},\
 {text:" = "},\
 {score:{name:"#destination_total",objective:"exp.fuel_level"}},\
-{text:"\n\nRequired Fuel:\n",underlined:true},\
+{text:"\n----------------\n"},\
+{text:"Required Fuel:\n",underlined:true},\
 {score:{name:"#origin_total",objective:"exp.fuel_level"}},\
 {text:"\n\nRecommended Fuel:\n",underlined:true},\
 {score:{name:"#origin_total",objective:"exp.fuel_level"}},\
@@ -39,10 +38,8 @@ data modify storage expansion:temp trip set value \
 {score:{name:"#destination_total",objective:"exp.fuel_level"}},\
 {text:" = "},\
 {score:{name:"#total_required",objective:"exp.fuel_level"}},\
-{text:"\n                        "},\
+{text:"\n\n\n                        "},\
 ]
-
-
 
 # merge the scores with the text display
 data modify entity @s text set from storage expansion:temp trip
