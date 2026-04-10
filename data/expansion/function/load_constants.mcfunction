@@ -13,11 +13,11 @@ scoreboard players set #zero exp.gravity_id 6
 
 # planet gravity scores (gravity = score / 100)
 scoreboard players set #earth exp.gravity 100
-scoreboard players set #moon exp.gravity 17
-scoreboard players set #mars exp.gravity 38
-scoreboard players set #venus exp.gravity 89
-scoreboard players set #jupiter exp.gravity 253
-scoreboard players set #europa exp.gravity 13
+scoreboard players set #moon exp.gravity 20
+scoreboard players set #mars exp.gravity 40
+scoreboard players set #venus exp.gravity 90
+scoreboard players set #jupiter exp.gravity 250
+scoreboard players set #europa exp.gravity 15
 scoreboard players set #zero exp.gravity 0
 
 # constants

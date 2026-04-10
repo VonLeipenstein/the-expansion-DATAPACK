@@ -21,7 +21,7 @@ execute if predicate expansion:contents/rocket_segment/control run tag @s add ex
 execute store result score @s exp.mass on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.mass
 execute store result score @s exp.engine_thrust on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.thrust
 execute store result score @s exp.fuel_max on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.fuel
-execute store result score @s exp.engine_efficiency on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.consumption
+execute store result score @s exp.engine_efficiency on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.efficiency
 
 # Merge the segment scores with the vehicle root
 scoreboard players operation #temp exp.mass = @s exp.mass

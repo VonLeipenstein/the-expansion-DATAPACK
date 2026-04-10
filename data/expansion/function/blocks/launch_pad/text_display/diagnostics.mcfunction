@@ -29,9 +29,7 @@ data modify storage expansion:temp diagnostics set value \
 ],\
 [\
     {text:"",color:"green"},\
-    {text:"\nFuel: ",bold:true},\
-    {score:{name:"@s",objective:"exp.fuel_level"}},\
-    {text:"/"},\
+    {text:"\nFuel Capacity: ",bold:true},\
     {score:{name:"@s",objective:"exp.fuel_max"}},\
 ],\
 {text:"\n\nDiagnosis:\n"},\

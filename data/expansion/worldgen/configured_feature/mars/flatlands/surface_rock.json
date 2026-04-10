@@ -13,10 +13,7 @@
                         "entries": [
                             {
                                 "data": {
-                                    "Name": "minecraft:cobbled_deepslate",
-                                    "Properties": {
-                                        "axis": "Y"
-                                    }
+                                    "Name": "minecraft:cobbled_deepslate"
                                 },
                                 "weight": 3
                             },
