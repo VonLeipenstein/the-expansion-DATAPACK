@@ -6,7 +6,7 @@
 # - function expansion:spacesuits/integrity/main (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
-scoreboard players set #temp exp.damage 10
+scoreboard players operation #temp exp.damage = #suit_water_damage exp.damage
 
 execute if predicate expansion:armor/head unless predicate expansion:armor/diver/head run scoreboard players operation #head exp.damage += #temp exp.damage
 execute if predicate expansion:armor/chest unless predicate expansion:armor/diver/chest run scoreboard players operation #chest exp.damage += #temp exp.damage

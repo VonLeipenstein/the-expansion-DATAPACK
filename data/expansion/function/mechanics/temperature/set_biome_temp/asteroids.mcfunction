@@ -6,4 +6,4 @@
 # - function expansion:mechanics/temperature/set_biome_temp/main (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
-scoreboard players set @s exp.temperature -5
+scoreboard players operation @s exp.temperature = #asteroid exp.temperature

@@ -6,7 +6,7 @@
 # - function expansion:items/railgun/use (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
-scoreboard players set #temp exp.ammo 1
+scoreboard players operation #temp exp.ammo = #railgun_ammo_on_reload exp.ammo
 
 execute store result storage expansion:ammo data.ammo byte 1 run scoreboard players get #temp exp.ammo
 item modify entity @s weapon.mainhand expansion:railgun/ammo

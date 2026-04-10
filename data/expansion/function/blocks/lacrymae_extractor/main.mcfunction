@@ -10,7 +10,7 @@
 execute unless block ~ ~ ~ minecraft:dropper run function expansion:blocks/lacrymae_extractor/destroy
 
 # Start extraction if conditions are met
-execute unless score @s exp.timer_1 matches 1.. if function expansion:blocks/lacrymae_extractor/check_valid run scoreboard players set @s exp.timer_1 120
+execute unless score @s exp.timer_1 matches 1.. if function expansion:blocks/lacrymae_extractor/check_valid run scoreboard players operation @s exp.timer_1 = #lacrymae_extraction_time exp.timer_1
 
 # while extracting
 execute if score @s exp.timer_1 matches 1.. run function expansion:blocks/lacrymae_extractor/extract/main

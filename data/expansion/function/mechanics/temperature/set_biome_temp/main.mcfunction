@@ -16,4 +16,4 @@ execute if dimension expansion:asteroids run return run function expansion:mecha
 execute if dimension expansion:space run return run function expansion:mechanics/temperature/set_biome_temp/space
 
 # all other biomes are temperature 0
-scoreboard players set @s exp.temperature 0
+scoreboard players operation @s exp.temperature = #earth exp.temperature

@@ -7,7 +7,7 @@
 # <<< generated function callers <<<
 
 # The caves are very warm on Venus
-execute if biome ~ ~ ~ #expansion:venus_caves run return run scoreboard players set @s exp.temperature 16
+execute if biome ~ ~ ~ #expansion:venus_caves run return run scoreboard players operation @s exp.temperature = #venus_caves exp.temperature
 
 # other biomes
-scoreboard players set @s exp.temperature 8
+scoreboard players operation @s exp.temperature = #venus exp.temperature

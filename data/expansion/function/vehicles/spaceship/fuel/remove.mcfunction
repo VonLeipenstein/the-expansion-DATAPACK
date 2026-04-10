@@ -7,7 +7,7 @@
 # <<< generated function callers <<<
 
 # base fuel reduction
-scoreboard players set #temp exp.fuel_level 20
+scoreboard players operation #temp exp.fuel_level = #spaceship_fuel_consumption exp.fuel_level
 
 # reduction calculation
 scoreboard players operation #temp exp.fuel_level *= @s exp.fuel_efficiency

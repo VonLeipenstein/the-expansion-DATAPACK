@@ -26,4 +26,4 @@ execute store result storage expansion:ammo data.ammo byte 1 run scoreboard play
 item modify entity @s weapon.mainhand expansion:railgun/ammo
 
 # set a cooldown to prevent from shooting again
-scoreboard players set @s exp.cooldown 15
+scoreboard players operation @s exp.cooldown = #railgun_cooldown exp.cooldown

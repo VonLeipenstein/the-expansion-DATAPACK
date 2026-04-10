@@ -11,6 +11,35 @@ scoreboard players set #player.max exp.oxygen_max 100
 scoreboard players set #player.consumption exp.oxygen_lvl 10
 scoreboard players set #player.lostwhenhurt exp.oxygen_lvl 50
 
+# suit water damage
+scoreboard players set #suit_water_damage exp.damage 10
+
+# repair kit
+scoreboard players set #minimum_to_repair exp.suit_integrity 91
+scoreboard players set #repair_kit_durability_cost exp.damage 5000
+scoreboard players set #suit_repair_amount exp.suit_integrity -10000
+
+# railgun
+scoreboard players set #railgun_cooldown exp.cooldown 15
+scoreboard players set #railgun_warmup exp.warmup 15
+scoreboard players set #railgun_ammo_on_reload exp.ammo 1
+
+# Spaceship
+scoreboard players set #spaceship_fuel_consumption exp.fuel_level 20
+
+# planet temperature stats
+scoreboard players set #earth exp.temperature 0
+scoreboard players set #moon exp.temperature -2
+scoreboard players set #moon_ice_caves exp.temperature -8
+scoreboard players set #mars exp.temperature -5
+scoreboard players set #mars_ice_caves exp.temperature -8
+scoreboard players set #venus exp.temperature 8
+scoreboard players set #venus_caves exp.temperature 16
+scoreboard players set #jupiter exp.temperature -10
+scoreboard players set #europa exp.temperature -10
+scoreboard players set #space exp.temperature -5
+scoreboard players set #asteroids exp.temperature -5
+
 # planet gravity ID
 scoreboard players set #earth exp.gravity_id 0
 scoreboard players set #moon exp.gravity_id 1
@@ -42,6 +71,10 @@ scoreboard players set #mars_to_venus_required exp.fuel_level 100
 scoreboard players set #venus_to_overworld_required exp.fuel_level 50
 scoreboard players set #venus_to_moon_required exp.fuel_level 50
 scoreboard players set #venus_to_mars_required exp.fuel_level 100
+
+#> Block Constants
+scoreboard players set #lacrymae_extraction_time exp.timer_1 120
+scoreboard players set #tesla_coil_cooldown exp.cooldown 20
 
 # constants
 scoreboard players set #-46496 exp.const -46496

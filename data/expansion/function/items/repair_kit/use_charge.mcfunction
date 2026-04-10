@@ -7,7 +7,7 @@
 # <<< generated function callers <<<
 
 # deplete durability from the item
-scoreboard players set #temp exp.damage 5000
+scoreboard players operation #temp exp.damage = #suit_repair_amount exp.damage
 item modify entity @s weapon.mainhand expansion:space_equipment/damage
 scoreboard players reset #temp exp.damage
 

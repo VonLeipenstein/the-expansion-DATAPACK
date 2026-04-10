@@ -7,5 +7,5 @@
 # - function expansion:mobs/martian/ranged/shooting/main (1 caller) [WARN side/down 6]
 # <<< generated function callers <<<
 
-scoreboard players set @s exp.warmup 15
+scoreboard players operation @s exp.warmup = #railgun_warmup exp.warmup
 playsound expansion:railgun.shoot player @a ~ ~ ~ 0.5 1 0.01

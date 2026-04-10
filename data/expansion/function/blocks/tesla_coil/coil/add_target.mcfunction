@@ -8,7 +8,7 @@
 # <<< generated function callers <<<
 
 # apply the cooldown
-scoreboard players set @s exp.cooldown 20
+scoreboard players operation @s exp.cooldown = #tesla_coil_cooldown exp.cooldown
 
 # cast a zap
 execute at @s positioned ~ ~1 ~ facing ~ ~1 ~ run function expansion:blocks/tesla_coil/coil/zap

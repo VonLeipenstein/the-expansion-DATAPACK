@@ -7,4 +7,4 @@
 # <<< generated function callers <<<
 
 # repair all worn armor pieces
-execute unless score @s exp.suit_integrity matches 91.. if predicate expansion:armor/any run function expansion:items/repair_kit/repair
+execute unless score @s exp.suit_integrity >= #minimum_to_repair exp.suit_integrity if predicate expansion:armor/any run function expansion:items/repair_kit/repair
