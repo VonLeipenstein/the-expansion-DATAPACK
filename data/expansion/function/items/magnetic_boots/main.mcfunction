@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/magnetic_boots/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:spacesuits/main (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 tag @s add exp.ignores_gravity_effects
 
 # check if there are no air blocks underneath the player

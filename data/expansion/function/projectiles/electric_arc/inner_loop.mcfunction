@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/electric_arc/inner_loop
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:projectiles/electric_arc/inner_loop (1 caller) [OK same-folder]
+# - function expansion:projectiles/electric_arc/loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players remove @s exp.max_range 1
 scoreboard players remove #temp exp.speed 1
 

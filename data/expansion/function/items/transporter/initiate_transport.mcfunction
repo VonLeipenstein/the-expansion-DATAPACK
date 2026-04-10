@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/transporter/initiate_transport
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:items/transporter/transport_block/click_detection/rightclick (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 # assign a unique score to an unassigned pocket space
 scoreboard players reset #temp exp.unique_id
 execute store result score #temp exp.unique_id run data get entity @s item.components."minecraft:custom_data".room_id

@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/calculate_fuel_requirement
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # fuel required to launch from origin
 scoreboard players operation #origin_required exp.fuel_level = #temp exp.engine_efficiency
 return run scoreboard players operation #origin_required exp.fuel_level *= #origin exp.weight

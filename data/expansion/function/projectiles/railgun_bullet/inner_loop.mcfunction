@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/railgun_bullet/inner_loop
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:projectiles/railgun_bullet/inner_loop (1 caller) [OK same-folder]
+# - function expansion:projectiles/railgun_bullet/loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 tp @s ^ ^ ^1
 
 scoreboard players remove @s exp.max_range 1

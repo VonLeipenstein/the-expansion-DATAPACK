@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/interaction/interact
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 0/0 honored
+# Sources:
+# - advancement expansion:utility/enhancer_lc (1 caller)
+# - advancement expansion:utility/enhancer_rc (1 caller)
+# <<< generated function callers <<<
+
 advancement revoke @s only expansion:utility/enhancer_rc
 advancement revoke @s only expansion:utility/enhancer_lc
 

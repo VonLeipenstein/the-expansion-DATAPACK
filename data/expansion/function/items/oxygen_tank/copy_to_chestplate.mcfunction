@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/oxygen_tank/copy_to_chestplate
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/fabricator/recipes (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 loot replace entity @s contents loot expansion:armor/diver/chestplate
 
 # copy the recipe tanks stats to the new tank

@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/planetarium/prepare/infoboard
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # transforms
 data merge entity @s[tag=exp.infoboard_left] {line_width:180,alignment:"center",brightness:{sky:15,block:15},billboard:"vertical",transformation:{translation:[-2.6,-2.75,0.0],scale:[0.0,0.0,0.0]},background:0}
 data merge entity @s[tag=exp.infoboard_right] {line_width:180,alignment:"center",brightness:{sky:15,block:15},billboard:"vertical",transformation:{translation:[2.6,-2.75,0.0],scale:[0.0,0.0,0.0]},background:0}

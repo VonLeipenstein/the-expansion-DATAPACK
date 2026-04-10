@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mechanics/events/moon_study/calculation
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mechanics/events/moon_study/check (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # store player x rotation
 execute store result score #temp exp.rotation run data get entity @s Rotation[1] 1000
 # store current time

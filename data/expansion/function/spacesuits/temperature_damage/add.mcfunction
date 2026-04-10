@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/temperature_damage/add
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:spacesuits/integrity/check_piece (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 # If the durability is depleted, add this damage to all suit pieces
 execute if score #temp exp.health = #temp exp.max_health run function expansion:spacesuits/temperature_damage/damage_all
 

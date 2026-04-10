@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/exits/remove_effects
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/exits/passenger (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # clear all the spaceships effects
 effect clear @s minecraft:invisibility
 effect clear @s minecraft:weakness

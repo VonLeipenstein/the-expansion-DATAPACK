@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:mechanics/events/test/cast
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 spreadplayers ~ ~ 10 50 false @s
 #execute store result entity @s Rotation[0] float 1 run function expansion:utilities/random/-180_180
 #execute store result entity @s Rotation[1] float 1 run function expansion:utilities/random/-90_90

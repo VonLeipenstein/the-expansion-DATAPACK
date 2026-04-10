@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/propulsion/rotation/model
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/propulsion/rotation/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute store result score @s exp.pitch on vehicle run scoreboard players get @s exp.pitch
 execute store result score @s exp.yaw on vehicle run scoreboard players get @s exp.yaw
 execute store result score @s exp.roll on vehicle run scoreboard players get @s exp.roll

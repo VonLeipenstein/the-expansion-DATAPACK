@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/planetarium/disable_node
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:blocks/planetarium/disabled_branch (1 caller) [OK same-folder]
+# - function expansion:blocks/planetarium/remove_root_display (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 tag @s add exp.disabled_node
 
 # make the size zero

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/assembler/recipes
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/assembler/button_push (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # buggy
 execute if function expansion:utilities/recipe_predicates/buggy run return run function expansion:vehicles/buggy/craft
 # spaceship

@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/exits/passenger
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:player/death (1 caller) [WARN side/down 4]
+# - function expansion:vehicles/exit (1 caller) [OK above +2]
+# <<< generated function callers <<<
+
 # temporary tag
 tag @s add exp.exiting_ship
 # make the player ride the spaceship to make it easier to detect entities

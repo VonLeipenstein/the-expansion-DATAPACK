@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/electric_arc/sound
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/tesla_coil/coil/add_target (1 caller) [WARN side/down 5]
+# <<< generated function callers <<<
+
 # zap sound
 execute if block ~ ~-1 ~ note_block[note=0] run playsound expansion:teslacoil.zap block @a ~ ~ ~ 0.6 0.08
 execute if block ~ ~-1 ~ note_block[note=1] run playsound expansion:teslacoil.zap block @a ~ ~ ~ 0.6 0.16

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/summon/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/mech/summon/summon (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # summon evil passenger
 execute summon skeleton run function expansion:mobs/mech/summon/pilot
 

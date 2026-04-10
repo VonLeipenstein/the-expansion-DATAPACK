@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/behavior/movement/backing_away/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/mech/behavior/movement/main (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 ## STATE RULES
 scoreboard players set @s exp.yaw 180
 scoreboard players set @s exp.warmup 1

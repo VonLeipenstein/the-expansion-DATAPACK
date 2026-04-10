@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/tesla_coil/coil/zap
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/tesla_coil/coil/add_target (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # speed is the amount of blocks per tick the signal travels
 # half the max range divides the load over 2 ticks
 scoreboard players set #temp exp.speed 15

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/fabricator/printing/stop_print
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/fabricator/printing/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # if there is already an item(the same item as checked previously) then increment its count.
 execute store result score @s exp.hold_count run data get entity @s item.components."minecraft:custom_data".exp_item.crafting_count
 

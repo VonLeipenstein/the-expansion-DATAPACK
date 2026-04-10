@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/destroy/destroy_portal
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/portal/destroy/interact (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players operation #search exp.unique_id = @s exp.unique_id
 
 function expansion:blocks/portal/deactivation/search_match_id

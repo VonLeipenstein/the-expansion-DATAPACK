@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/inside
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 ## --- MOVEMENT AND ROTATION
 # store spaceships position
 execute if predicate expansion:periodic/2 run function expansion:utilities/store_pos_in_score

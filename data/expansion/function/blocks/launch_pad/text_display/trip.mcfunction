@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/text_display/trip
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/text_display/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players operation #origin_total exp.fuel_level = #origin_required exp.fuel_level
 scoreboard players operation #origin_total exp.fuel_level += #trip_required exp.fuel_level
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/propulsion/rotate_legs
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/mech/propulsion/drive (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # store the movement rotation into an entity rotation so the mech legs know where to turn to
 # revert for walking backwards as we have a backwards animation
 execute on vehicle unless score @s exp.yaw matches -90..90 run scoreboard players add #angle exp.math 180

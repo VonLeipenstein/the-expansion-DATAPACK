@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/cryoblaster/place_wall
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/cryoblaster/action (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 setblock ^ ^ ^2 minecraft:packed_ice keep
 setblock ^ ^1 ^2 minecraft:packed_ice keep
 setblock ^ ^2 ^2 minecraft:packed_ice keep

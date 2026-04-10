@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/oxygenator/oxygenate/scan/init/main
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:blocks/oxygenator/gui/buttons/toggle_scan (1 caller) [WARN side/down 5]
+# - function expansion:blocks/oxygenator/main (1 caller) [OK above +3]
+# <<< generated function callers <<<
+
 scoreboard players operation #search exp.unique_id = @s exp.unique_id
 scoreboard players set #temp exp.bool 1
 

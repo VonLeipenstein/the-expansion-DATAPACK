@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/homing_rocket/deflect/deflect
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:projectiles/homing_rocket/deflect/hit (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute on passengers run data remove entity @s interaction
 
 # rotate the rocket as the returner

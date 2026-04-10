@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/modification_station/interaction
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/modification_station/player_nearby (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # detect button presses
 execute unless items block ~ ~ ~ container.17 * run function expansion:blocks/modification_station/gui/buttons/upgrade_button
 execute unless items block ~ ~ ~ container.26 * run function expansion:blocks/modification_station/gui/buttons/remove_button

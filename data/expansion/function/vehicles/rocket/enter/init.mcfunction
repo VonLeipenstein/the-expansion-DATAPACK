@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket/enter/init
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/rocket/click_detection/rightclick (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 # mount the pilot seat unless there is already a player sitting here.
 execute if entity @s[tag=exp.rocket_pilot_rcdet] on vehicle on passengers if entity @s[tag=exp.rocket_seat] run ride @p[tag=exp.clicked] mount @s
 

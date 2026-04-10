@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/place/init
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/place (1 caller) [OK above +2]
+# <<< generated function callers <<<
+
 execute unless predicate expansion:location/sky_access run return run say requires sky access
 
 summon minecraft:item_display ~ ~ ~ {\

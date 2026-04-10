@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/anim_control/start_walking
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/mech/propulsion/drive (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 function expansion:vehicles/mech/anim_control/stop_walking
 
 tag @s add exp.mech_walking

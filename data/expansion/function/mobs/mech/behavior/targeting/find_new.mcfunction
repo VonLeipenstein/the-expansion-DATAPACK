@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/behavior/targeting/find_new
+# Total callers: 3 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:mobs/mech/behavior/targeting/init (1 caller) [OK same-folder]
+# - function expansion:mobs/mech/behavior/targeting/main (2 callers) [OK same-folder]
+# <<< generated function callers <<<
+
 # reset the target
 data modify storage expansion:owner data.current_UUID set from entity @s UUID
 

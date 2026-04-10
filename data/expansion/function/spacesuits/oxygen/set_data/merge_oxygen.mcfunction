@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/oxygen/set_data/merge_oxygen
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/oxygen/replenish_from_tank (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 ## Parameters
 # - #temp exp.oxygen_lvl : new oxygen lvl
 # - #new exp.oxygen_percent : new oxygen percent

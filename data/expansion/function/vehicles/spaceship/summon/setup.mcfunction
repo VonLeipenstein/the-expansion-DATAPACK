@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/summon/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/summon/init (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 function expansion:blocks/set_rotation
 
 # set the model from the players hand item

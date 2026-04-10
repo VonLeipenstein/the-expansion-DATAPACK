@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:utilities/error_messages/low_oxygen
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:mechanics/oxygen/suffocate (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 execute unless predicate expansion:periodic/30 run return fail
 
 title @s subtitle {text:" "}

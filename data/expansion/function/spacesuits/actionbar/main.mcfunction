@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/actionbar/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/main (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # show titles
 data merge storage expansion:temp {\
     actionbar:{\

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/oxygen/set_data/merge_score
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/oxygen/set_data/storage_loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # get the capacity of this oxygen tank
 execute store result score #temp exp.oxygen_max run data get storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen.max
 

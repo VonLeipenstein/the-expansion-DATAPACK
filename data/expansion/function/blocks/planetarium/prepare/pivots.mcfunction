@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/planetarium/prepare/pivots
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/planetarium/place/setup (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 # general tags
 tag @s add exp.planetarium_pivot
 tag @s add exp.planetarium_part

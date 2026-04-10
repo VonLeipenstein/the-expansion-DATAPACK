@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/activation/search_match_code
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/portal/prepare_array (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 scoreboard players reset #temp exp.hold_value_alt
 execute store result score #temp exp.hold_value_alt on passengers if entity @s[tag=exp.port_1] run scoreboard players get @s exp.hold_value_alt
 execute if score #temp exp.hold_value_alt matches 1 run function expansion:blocks/portal/activation/core1/check1

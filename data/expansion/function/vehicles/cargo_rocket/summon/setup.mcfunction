@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/cargo_rocket/summon/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/summon_rocket (1 caller) [WARN side/down 5]
+# <<< generated function callers <<<
+
 tag @s remove exp.new_vehicle
 
 # store the used rocket item so it can drop when the rocket is destroyed

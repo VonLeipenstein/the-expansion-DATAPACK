@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/cryoblaster/use
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:player/rightclick/tools (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 # mode chooser
 execute if predicate expansion:utility/sneak run return run function expansion:items/cryoblaster/switch_modes
 

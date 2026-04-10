@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/click_detection/leftclick
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/0 honored
+# Sources:
+# - advancement expansion:utility/mech_lc (1 caller)
+# <<< generated function callers <<<
+
 # lefthand actions
 execute if predicate expansion:riding/mech on vehicle on vehicle on passengers if entity @s[tag=exp.left_arm_control] run function expansion:vehicles/mech/actions/input
 

@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/fabricator/gui/gui
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:blocks/fabricator/crafting (1 caller) [OK above +1]
+# - function expansion:blocks/fabricator/place/setup (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 execute unless items block ~ ~ ~ container.0 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:0, Type:"filler"}
 
 execute unless items block ~ ~ ~ container.4 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:4, Type:"filler"}

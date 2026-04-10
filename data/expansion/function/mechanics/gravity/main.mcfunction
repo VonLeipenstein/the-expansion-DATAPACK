@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mechanics/gravity/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:player/main (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 ## Merge your gravity with other nearby entities
 scoreboard players operation #search exp.gravity_id = @s exp.gravity_id
 execute as @e[type=!player,type=!#expansion:ignore_gravity,predicate=!expansion:compare_score/gravity_id,tag=!exp.origin_link,distance=..100,limit=1] run function expansion:mechanics/gravity/apply

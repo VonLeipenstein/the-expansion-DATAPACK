@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/planetarium/prepare/initialize_models
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/planetarium/place/setup (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 data merge entity @s {CustomNameVisible:0b,teleport_duration:20,brightness:{sky:15,block:15}}
 
 # prepare text displays

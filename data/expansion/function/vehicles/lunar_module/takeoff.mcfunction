@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/lunar_module/takeoff
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/lunar_module/countdown (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 kill @e[type=minecraft:interaction,tag=exp.module_takeoff,limit=1,sort=nearest]
 playsound expansion:lunarmodule.launch player @p ~ ~ ~
 particle flame ~ ~2 ~ 0 0 0 0.2 200

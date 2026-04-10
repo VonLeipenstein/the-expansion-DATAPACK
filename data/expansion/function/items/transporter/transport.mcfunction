@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/transporter/transport
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/transporter/initiate_transport (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 data merge entity @s {Silent:1b,Marker:1b,Invisible:1b}
 tag @s add exp.room_position
 tag @s add exp.position_new

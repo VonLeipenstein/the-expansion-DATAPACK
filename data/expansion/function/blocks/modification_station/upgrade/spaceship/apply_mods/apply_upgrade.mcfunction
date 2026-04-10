@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/modification_station/upgrade/spaceship/apply_mods/apply_upgrade
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/modification_station/upgrade/apply (1 caller) [OK above +2]
+# <<< generated function callers <<<
+
 # merge the mod array with the spaceship
 data modify entity @s data.ModStorage merge from storage expansion:temp ModStorage
 

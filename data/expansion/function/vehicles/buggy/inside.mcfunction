@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/buggy/inside
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/buggy/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # increase speed while pressing W.
 execute on passengers if entity @s[type=player] if predicate expansion:input/forward unless predicate expansion:input/backward on vehicle if score @s exp.speed matches -10..49 run scoreboard players add @s exp.speed 1
 execute on passengers if entity @s[type=player] if predicate expansion:input/forward unless predicate expansion:input/backward on vehicle if score @s exp.speed matches -50..-11 run scoreboard players add @s exp.speed 2

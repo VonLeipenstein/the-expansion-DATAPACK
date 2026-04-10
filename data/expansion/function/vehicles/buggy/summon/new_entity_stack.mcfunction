@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/buggy/summon/new_entity_stack
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/buggy/summon/init (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 summon minecraft:armor_stand ^ ^ ^ {\
     Silent:1b,\
     Small:1b,\

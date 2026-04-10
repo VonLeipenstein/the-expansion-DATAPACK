@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/propulsion/rotation/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/inside (1 caller) [OK above +2]
+# <<< generated function callers <<<
+
 # Store the players rotation inside a marker
 execute unless entity @s[tag=exp.ignore_player_rotation] on passengers if entity @s[tag=exp.player_rotation] run function expansion:vehicles/spaceship/propulsion/rotation/player
 

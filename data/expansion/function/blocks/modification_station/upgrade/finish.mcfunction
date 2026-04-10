@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/modification_station/upgrade/finish
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/modification_station/upgrade/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # 
 data modify storage expansion:temp ModStorage set from entity @s data.ModStorage
 execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin run function expansion:blocks/modification_station/upgrade/apply

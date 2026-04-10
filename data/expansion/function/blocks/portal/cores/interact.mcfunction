@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/cores/interact
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/0 honored
+# Sources:
+# - advancement expansion:utility/portal_core_insert (1 caller)
+# <<< generated function callers <<<
+
 advancement revoke @s only expansion:utility/portal_core_insert
 
 # remember if a player is holding a core

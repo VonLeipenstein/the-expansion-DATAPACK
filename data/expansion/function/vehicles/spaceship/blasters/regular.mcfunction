@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/blasters/regular
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/blasters/choose (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # set regular blast parameters
 scoreboard players set #temp exp.unique_id 0
 scoreboard players set #temp exp.speed 5

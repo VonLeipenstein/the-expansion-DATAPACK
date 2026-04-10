@@ -1,3 +1,13 @@
+# >>> generated function callers >>>
+# Callers for expansion:mechanics/oxygen/refill_calculation
+# Total callers: 3 from 3 source(s)
+# Folder rule (function callers): 1/3 honored
+# Sources:
+# - function expansion:items/oxygen_tank/refill_equipment (1 caller) [WARN side/down 4]
+# - function expansion:mechanics/oxygen/fill_tank_from_buggy (1 caller) [OK same-folder]
+# - function expansion:spacesuits/oxygen/replenish_from_tank (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 # add and remove oxygen from the source to the target
 scoreboard players operation #missing exp.oxygen_lvl = #target exp.oxygen_max
 scoreboard players operation #missing exp.oxygen_lvl -= #target exp.oxygen_lvl

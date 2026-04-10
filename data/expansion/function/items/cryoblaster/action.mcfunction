@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/cryoblaster/action
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/cryoblaster/use (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # remove the ammo
 scoreboard players operation #temp exp.ammo -= #temp exp.hold_value_alt
 

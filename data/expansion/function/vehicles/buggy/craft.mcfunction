@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/buggy/craft
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/assembler/recipes (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 # run from the recipes of the assembler
 loot replace entity @s container.0 loot expansion:vehicles/buggy
 

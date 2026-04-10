@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/deactivation/pause_portal
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:blocks/portal/activation/check_matches (1 caller) [WARN side/down 2]
+# - function expansion:blocks/portal/deactivation/deactivate_portal (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 tag @s remove exp.activated_portal
 tag @s add exp.paused_portal
 

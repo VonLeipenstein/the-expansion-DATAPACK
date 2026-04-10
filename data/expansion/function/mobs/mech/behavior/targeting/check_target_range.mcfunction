@@ -1,3 +1,13 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/behavior/targeting/check_target_range
+# Total callers: 3 from 3 source(s)
+# Folder rule (function callers): 3/3 honored
+# Sources:
+# - function expansion:mobs/mech/behavior/targeting/target_in_range (1 caller) [OK same-folder]
+# - function expansion:mobs/mech/behavior/targeting/target_too_close (1 caller) [OK same-folder]
+# - function expansion:mobs/mech/behavior/targeting/target_too_far (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players reset #temp exp.distance
 
 # run the check at once if this entity is already an arm

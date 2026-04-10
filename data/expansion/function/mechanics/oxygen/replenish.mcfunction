@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:mechanics/oxygen/replenish
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 0/2 honored
+# Sources:
+# - function expansion:blocks/oxygenator/oxygenate/connected_player (1 caller) [WARN side/down 5]
+# - function expansion:blocks/terraformer/connected_player (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 # Used by sources other than the players suit tank to replenish entity oxygen.
 # Entities who replenish their oxygen like this get tagged
 # Tag is used to determine if their armor should leak in this space

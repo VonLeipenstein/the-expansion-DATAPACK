@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/upgrade/apply/effects/effects
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/enhancer/upgrade/apply/effects/storage_loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 ## During the loop, gather scores from modules
 
 # oxygen lvl

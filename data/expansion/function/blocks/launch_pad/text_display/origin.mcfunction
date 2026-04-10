@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/text_display/origin
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/text_display/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # create a text storage
 data modify storage expansion:temp origin set value \
 [\

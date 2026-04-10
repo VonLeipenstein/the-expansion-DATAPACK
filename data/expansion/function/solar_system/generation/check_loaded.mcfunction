@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:solar_system/generation/check_loaded
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:solar_system/generation/attempt_placement (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # check if the entire planet area is loaded before returning true
 
 execute unless loaded ~-80 ~ ~-80 run return fail

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:utilities/recipe_predicates/nasa_boots
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/fabricator/recipes (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 execute unless items block ~ ~ ~ container.1 * \
         unless items block ~ ~ ~ container.2 * \
         unless items block ~ ~ ~ container.3 * \

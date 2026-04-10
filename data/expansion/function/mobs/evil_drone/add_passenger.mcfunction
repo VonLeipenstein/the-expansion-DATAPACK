@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/evil_drone/add_passenger
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/evil_drone/no_passenger (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 data merge entity @s {NoAI:1b,Silent:1b,DeathLootTable:"expansion:empty",AbsorptionAmount:20f,equipment:{},Health:20f,Tags:["exp.evil_drone_hitbox"],active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:-1,show_particles:0b}],attributes:[{id:max_health,base:20}]}
 
 ride @s mount @e[type=armor_stand,tag=exp.evil_drone,distance=..10,limit=1,sort=nearest]

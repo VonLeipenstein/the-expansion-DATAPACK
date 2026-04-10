@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/railgun/particles/outer
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/railgun/shoot (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 particle gust
 
 particle cloud ~ ~ ~ ^ ^1000000 ^ 0.00000015 0

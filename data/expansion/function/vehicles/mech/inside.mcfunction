@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/inside
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/mech/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # when no input is given, but the mech is still walking, keep walking until the walking frame that is closest to the idle state
 execute if function expansion:vehicles/mech/propulsion/should_stop_walking run function expansion:vehicles/mech/anim_control/signal_stop
 

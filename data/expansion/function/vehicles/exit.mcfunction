@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/exit
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Remain inside the exited vehicle if you're landing on the earth or moon
 execute if entity @s[tag=exp.inside_rocket] if entity @s[tag=exp.rocket_pilot] as @n[type=armor_stand,tag=exp.rocket,distance=..10] unless entity @s[nbt={OnGround:1b}] unless predicate expansion:riding/launch_pad on passengers if entity @s[tag=exp.rocket_pilot_seat] run return run ride @p[tag=exp.tick_player] mount @s
 execute if entity @s[tag=exp.inside_rocket] if entity @s[tag=!exp.rocket_pilot] as @n[type=armor_stand,tag=exp.rocket,distance=..10] unless entity @s[nbt={OnGround:1b}] unless predicate expansion:riding/launch_pad on passengers on passengers on passengers if entity @s[tag=exp.rocket_pilot_seat] run return run ride @p[tag=exp.tick_player] mount @s

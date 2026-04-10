@@ -1,3 +1,14 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/ship_blaster/cast
+# Total callers: 7 from 4 source(s)
+# Folder rule (function callers): 0/4 honored
+# Sources:
+# - function expansion:items/blaster/use (1 caller) [WARN side/down 4]
+# - function expansion:vehicles/spaceship/blasters/digging (2 callers) [WARN side/down 5]
+# - function expansion:vehicles/spaceship/blasters/gatling (2 callers) [WARN side/down 5]
+# - function expansion:vehicles/spaceship/blasters/regular (2 callers) [WARN side/down 5]
+# <<< generated function callers <<<
+
 execute unless function expansion:projectiles/slowcaster_debug run return fail
 
 # render the bullet

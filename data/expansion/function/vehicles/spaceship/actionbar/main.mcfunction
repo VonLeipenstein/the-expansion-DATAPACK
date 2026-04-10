@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/actionbar/main
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:vehicles/spaceship/enter/pilot (1 caller) [WARN side/down 2]
+# - function expansion:vehicles/spaceship/inside (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # update the speed percentage when the speed changes
 scoreboard players set #offset exp.math 10
 scoreboard players operation #total exp.math = @s exp.speed_max

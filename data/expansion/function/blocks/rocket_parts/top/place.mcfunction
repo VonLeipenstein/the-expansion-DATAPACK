@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/rocket_parts/top/place
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/rocket_parts/rightclick (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # can only be placed on top of the cockpit
 execute on vehicle unless entity @s[tag=exp.rocket_cockpit] as @p[tag=exp.clicked] run return run function expansion:utilities/error_messages/try_place_rocket_part
 execute if function expansion:blocks/launch_pad/has_passenger as @p[tag=exp.clicked] run return fail

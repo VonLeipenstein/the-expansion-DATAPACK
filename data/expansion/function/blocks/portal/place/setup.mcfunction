@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/place/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/portal/place/init (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # give the portal a custom id (not used for teleportation)
 scoreboard players add #portal_id exp.unique_id 1
 scoreboard players operation @s exp.unique_id = #portal_id exp.unique_id

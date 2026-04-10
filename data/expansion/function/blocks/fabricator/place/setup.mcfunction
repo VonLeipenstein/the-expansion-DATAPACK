@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/fabricator/place/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/fabricator/place/init (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 tag @s remove exp.fabricator.new
 
 function expansion:blocks/set_rotation

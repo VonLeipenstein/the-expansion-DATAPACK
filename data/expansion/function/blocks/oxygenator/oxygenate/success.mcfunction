@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/oxygenator/oxygenate/success
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/oxygenator/oxygenate/scan/check_fail (1 caller) [WARN side/down 1]
+# <<< generated function callers <<<
+
 # provide entities that were hit by the wave with oxygen
 # and remove entities from the oxygen supply if they werent hit by the wave
 execute on passengers if entity @s[tag=exp.oxygen_link] run function expansion:blocks/oxygenator/oxygenate/oxygen_link/check

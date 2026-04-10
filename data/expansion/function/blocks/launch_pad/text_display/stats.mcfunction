@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/text_display/stats
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/text_display/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute on vehicle unless predicate expansion:passengers/rocket_segment on passengers if entity @s[tag=exp.rocket_diagnostics] run return run data modify entity @s text set value \
 [\
 {text:"No Active Rocket\n\n",underlined:true},\

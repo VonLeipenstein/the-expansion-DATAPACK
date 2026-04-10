@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/homing_rocket/loop
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:projectiles/main (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # rotate towards the target
 execute at @s anchored feet on passengers if entity @s[type=snowball] on origin facing entity @s eyes as @e[type=item_display,tag=exp.homing_rocket,distance=..0.1] positioned ^ ^ ^2 rotated as @s positioned ^ ^ ^10 facing entity @s feet facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
 

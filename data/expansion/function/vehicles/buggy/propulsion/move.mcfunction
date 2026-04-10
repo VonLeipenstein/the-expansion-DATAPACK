@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/buggy/propulsion/move
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/buggy/propulsion/drive (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # calculate sin of the angle
 function expansion:utilities/math/sin
 execute if score #angle exp.math matches -180..0 run scoreboard players operation #num exp.math *= #-1 exp.const

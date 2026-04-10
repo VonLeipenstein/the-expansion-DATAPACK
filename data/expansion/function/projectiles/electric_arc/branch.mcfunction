@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/electric_arc/branch
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:projectiles/electric_arc/bend/check (1 caller) [WARN side/down 1]
+# <<< generated function callers <<<
+
 # consume a branch charge
 scoreboard players remove @s exp.counter_1 1
 

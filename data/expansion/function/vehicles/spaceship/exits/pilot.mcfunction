@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/exits/pilot
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/exits/passenger (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # change the model to the landed version
 execute on passengers as @s[tag=exp.spaceship_display] run data modify entity @s item.components.minecraft:custom_model_data.strings insert 1 value "landed"
 

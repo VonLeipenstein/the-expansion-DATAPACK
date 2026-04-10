@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/rocket_parts/engines/place
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:blocks/launch_pad/interaction/place_rocket_engines (1 caller) [WARN side/down 4]
+# - function expansion:blocks/rocket_parts/rightclick (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # can only be placed on top of the launch pad
 execute on vehicle unless entity @s[tag=exp.launch_pad] as @p[tag=exp.clicked] run return run function expansion:utilities/error_messages/try_place_rocket_part
 execute if function expansion:blocks/launch_pad/occupied as @p[tag=exp.clicked] run return run function expansion:utilities/error_messages/launch_pad_occupied

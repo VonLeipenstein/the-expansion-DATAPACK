@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/text_display/diagnostics
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 execute on vehicle unless predicate expansion:passengers/rocket_segment on passengers if entity @s[tag=exp.rocket_diagnostics] run return run data modify entity @s text set value \
 [\
 {text:"No Active Rocket\n\n",underlined:true},\

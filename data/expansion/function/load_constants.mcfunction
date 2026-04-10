@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:load_constants
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:load (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # player oxygen stat
 scoreboard players set #player.max exp.oxygen_max 100
 scoreboard players set #player.consumption exp.oxygen_lvl 10

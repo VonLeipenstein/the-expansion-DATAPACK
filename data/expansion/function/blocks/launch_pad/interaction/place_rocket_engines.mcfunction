@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/interaction/place_rocket_engines
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 execute unless predicate expansion:holding/blocks/rocket_bottom run return run function expansion:utilities/error_messages/launch_pad_engines_tip
 
 # now we know the player is holding the engines, place the engines on the launch pad

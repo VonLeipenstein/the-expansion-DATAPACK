@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/rocket_parts/cockpit/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/rocket_parts/cockpit/place (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 tag @s remove exp.rocket_part.new
 
 execute positioned ~ ~-2.5 ~ run ride @s mount @n[type=minecraft:interaction,tag=exp.rocketpart_rcdet,distance=..0.01]

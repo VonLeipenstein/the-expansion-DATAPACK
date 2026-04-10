@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/fleet_finder/use
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 0/2 honored
+# Sources:
+# - function expansion:player/rightclick/tools (1 caller) [WARN side/down 4]
+# - function expansion:vehicles/spaceship/click_detection/rightclick (1 caller) [WARN side/down 5]
+# <<< generated function callers <<<
+
 # locate the jupiter fleet
 execute store result score #temp exp.distance run locate structure #expansion:jupiter_fleet
 

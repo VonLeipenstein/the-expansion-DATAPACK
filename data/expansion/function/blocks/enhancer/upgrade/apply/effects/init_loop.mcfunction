@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/upgrade/apply/effects/init_loop
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:blocks/enhancer/upgrade/enhance (1 caller) [OK above +2]
+# - function expansion:blocks/enhancer/upgrade/remove (1 caller) [OK above +2]
+# <<< generated function callers <<<
+
 # reset all the stats of this item
 function expansion:blocks/enhancer/upgrade/apply/effects/reset
 

@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/terraformer/terraform/init
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # 
 execute if score @s exp.counter_1 matches 0 run spreadplayers ~ ~ 0 40 false @s
 execute if score @s exp.counter_1 matches 1 run spreadplayers ~ ~ 0 24 false @s

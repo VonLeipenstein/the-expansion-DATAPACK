@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/railgun/shoot
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 0/2 honored
+# Sources:
+# - function expansion:mobs/martian/ranged/shooting/shoot (1 caller) [WARN side/down 6]
+# - function expansion:utilities/warmup/finish (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 function expansion:items/railgun/get_ammo
 scoreboard players remove #temp exp.ammo 1
 

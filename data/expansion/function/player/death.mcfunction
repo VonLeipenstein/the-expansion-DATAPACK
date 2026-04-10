@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:player/death
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:player/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # exit vehicles upon death
 execute if entity @s[tag=exp.inside_spaceship] run function expansion:vehicles/spaceship/exits/passenger
 execute if entity @s[tag=exp.inside_module] run function expansion:vehicles/lunar_module/exit/init

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/upgrade/enhance
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/enhancer/gui/buttons/enhance (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 # Copy the equipment ModStorage to a storage for easier access and better performance
 data modify storage expansion:temp ModStorage set from entity @s item.components."minecraft:custom_data".ModStorage
 

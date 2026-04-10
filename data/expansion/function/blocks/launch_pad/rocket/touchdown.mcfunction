@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/rocket/touchdown
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/rocket/landing (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # kill the beacon upon arrival
 scoreboard players operation #search exp.pad_id = @s exp.pad_id
 execute if entity @s[tag=exp.delivering] run kill @e[type=minecraft:marker,tag=exp.cargo_beacon,predicate=expansion:compare_score/pad_id,limit=1]

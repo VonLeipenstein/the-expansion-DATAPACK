@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/summon/init_model
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/summon/setup (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # set model transformations
 data merge entity @s {transformation:{translation:[0.0f,0.0f,0.0f],scale:[0.6f,0.6f,0.6f]},interpolation_duration:5,teleport_duration:5}
 # merge model rotation with the base entity

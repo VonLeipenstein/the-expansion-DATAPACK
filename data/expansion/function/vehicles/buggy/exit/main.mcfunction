@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/buggy/exit/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/buggy/exit/init (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute at @s run stopsound @a player expansion:buggy.engine_driving
 
 execute at @s positioned ^1 ^ ^ if block ~ ~ ~ #expansion:air if block ~ ~1 ~ #expansion:air run tp @p[tag=exp.tick_player] ~ ~ ~

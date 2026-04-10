@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/space_trader/insert_trades
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/space_trader/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 tag @s add exp.inserted_trades_v2.2
 
 data remove entity @s Offers.Recipes

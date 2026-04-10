@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:_commands/uninstall
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # Removes all the scores, disables functions and revokes advancements
 scoreboard objectives remove exp.rightclick
 scoreboard objectives remove exp.jump

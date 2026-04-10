@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:utilities/altitude/loop
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:utilities/altitude/cast (1 caller) [OK same-folder]
+# - function expansion:utilities/altitude/loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # return the accumulated altitude if you hit a block
 execute unless block ~ ~ ~ #expansion:air run return run scoreboard players get #altitude exp.distance
 

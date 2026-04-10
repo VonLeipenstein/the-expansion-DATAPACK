@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:tick (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 execute if entity @s[tag=exp.electric_arc] run return run function expansion:projectiles/electric_arc/loop
 
 execute if entity @s[tag=exp.ship_blaster] run return run function expansion:projectiles/ship_blaster/loop

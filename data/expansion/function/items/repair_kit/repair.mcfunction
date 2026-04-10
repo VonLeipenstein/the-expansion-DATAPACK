@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/repair_kit/repair
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/repair_kit/use (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players set #temp exp.damage -10000
 execute if items entity @s armor.head *[custom_data~{exp_armor:{Slot:103b}}] run item modify entity @s armor.head expansion:space_equipment/damage
 execute if items entity @s armor.chest *[custom_data~{exp_armor:{Slot:102b}}] run item modify entity @s armor.chest expansion:space_equipment/damage

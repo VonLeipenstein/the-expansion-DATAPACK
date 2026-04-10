@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/propulsion/rotation/roll
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/propulsion/rotation/get_euler_angles (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute store result score @s exp.roll on passengers if entity @s[tag=exp.player_rotation] run data get entity @s Rotation[0] 1000
 
 # make sure the tilt angle is in the correct format

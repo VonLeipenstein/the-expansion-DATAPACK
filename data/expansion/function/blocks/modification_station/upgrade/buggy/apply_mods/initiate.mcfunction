@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/modification_station/upgrade/buggy/apply_mods/initiate
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/modification_station/upgrade/init (1 caller) [OK above +2]
+# <<< generated function callers <<<
+
 # store any upgrades inside the armor stands head item and check if there is any, don't overwrite existing upgrades
 data remove storage expansion:temp ModStorage
 execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin run data modify storage expansion:temp ModStorage set from entity @s data.ModStorage

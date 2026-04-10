@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/markers/markers
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/inside (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 execute store result score #temp exp.yaw on vehicle run data get entity @s Rotation[0]
 execute store result score @s exp.yaw run data get entity @s Rotation[0]
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:solar_system/generation/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:tick (1 caller) [OK above +2]
+# <<< generated function callers <<<
+
 # generate the planets depending on the exp.bool score
 # the returns make sure only one planet is generated at a time 
 # while allowing for multiple generations to be prompted simultaneously

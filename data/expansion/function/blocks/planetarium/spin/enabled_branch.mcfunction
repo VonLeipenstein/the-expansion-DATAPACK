@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/planetarium/spin/enabled_branch
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/planetarium/spin/displays (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # prepare the distance for the planets down this pivot
 execute unless entity @s[tag=exp.root_display] run scoreboard players operation #temp exp.distance = @s exp.distance
 execute if entity @s[tag=exp.root_display] run scoreboard players set #temp exp.distance 0

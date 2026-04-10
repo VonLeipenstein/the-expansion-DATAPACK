@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/fabricator/printing/compare_output
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:blocks/fabricator/printing/stop_print (1 caller) [OK same-folder]
+# - function expansion:blocks/fabricator/printing/valid_output (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # reset score
 scoreboard players reset @s exp.bool
 

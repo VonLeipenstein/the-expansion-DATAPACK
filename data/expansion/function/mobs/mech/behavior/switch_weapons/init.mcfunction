@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/behavior/switch_weapons/init
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 0/2 honored
+# Sources:
+# - function expansion:mobs/mech/bots/summon (1 caller) [WARN side/down 3]
+# - function expansion:mobs/mech/health/hurt (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 scoreboard players set @s exp.counter_2 200
 
 execute if entity @s[tag=exp.mech_switched2] run tag @s add exp.mech_switched3

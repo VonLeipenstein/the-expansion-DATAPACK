@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/place
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 0/2 honored
+# Sources:
+# - function expansion:player/rightclick/placement (1 caller) [WARN side/down 3]
+# - function expansion:vehicles/rocket_segment/click_detection/rightclick (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 # place the correct block
 execute if predicate expansion:holding/blocks/planetarium run function expansion:blocks/planetarium/place/init
 execute if predicate expansion:holding/blocks/terraformer run function expansion:blocks/terraformer/place/init

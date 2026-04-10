@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/unequip/reset_armor
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/unequip/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Tag worn (valid) armor items to exlude them from the operations
 execute if items entity @s armor.head *[minecraft:custom_data~{exp_armor.equipped:1b}] run item modify entity @s armor.head {"function": "minecraft:set_custom_data",tag:{exp_armor.equipped:2b}}
 execute if items entity @s armor.chest *[minecraft:custom_data~{exp_armor.equipped:1b}] run item modify entity @s armor.chest {"function": "minecraft:set_custom_data",tag:{exp_armor.equipped:2b}}

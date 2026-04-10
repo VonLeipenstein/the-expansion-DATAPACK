@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/click_detection/rightclick
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/0 honored
+# Sources:
+# - advancement expansion:utility/mech_rc (1 caller)
+# <<< generated function callers <<<
+
 # execute the righthands action if the player is already inside the mech
 execute if predicate expansion:riding/mech on vehicle on vehicle on passengers if entity @s[tag=exp.right_arm_control] run function expansion:vehicles/mech/actions/input
 

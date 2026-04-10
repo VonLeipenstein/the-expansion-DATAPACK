@@ -1,3 +1,13 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/planetarium/scale_branches
+# Total callers: 3 from 3 source(s)
+# Folder rule (function callers): 3/3 honored
+# Sources:
+# - function expansion:blocks/planetarium/init_root (1 caller) [OK same-folder]
+# - function expansion:blocks/planetarium/scale_branches (1 caller) [OK same-folder]
+# - function expansion:blocks/planetarium/showcase_parent (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players add #temp exp.counter_1 1
 
 # scale up

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/assembler/prepare_assembly
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/assembler/button_push (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players set @s exp.timer_1 200
 
 data merge entity @s {transformation:{scale:[0,0,0]}}

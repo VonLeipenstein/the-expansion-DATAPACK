@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/modification_station/upgrade/init
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/modification_station/gui/buttons/upgrade_button (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin run tag @s add exp.being_modified
 
 scoreboard players reset @s exp.bool

@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/upgrade/apply/storage_loop
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:blocks/enhancer/upgrade/apply/init_loop (1 caller) [OK same-folder]
+# - function expansion:blocks/enhancer/upgrade/apply/storage_loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # check the values for this entry
 data remove storage expansion:temp allowed
 scoreboard players add #temp exp.counter_1 1

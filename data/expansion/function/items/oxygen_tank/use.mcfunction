@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/oxygen_tank/use
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:player/rightclick/tools (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 # only refill the suits tank if I am wearing an entire suit
 execute unless predicate expansion:armor/all run return run function expansion:utilities/error_messages/refilltank_nofullsuit
 

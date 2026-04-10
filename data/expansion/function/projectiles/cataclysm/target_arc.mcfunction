@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/cataclysm/target_arc
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:projectiles/cataclysm/loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # find a target to home towards
 execute rotated ~ ~ positioned ^ ^ ^2 run function expansion:items/cataclysm_cannon/target
 

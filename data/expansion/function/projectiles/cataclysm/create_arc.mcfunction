@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/cataclysm/create_arc
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:projectiles/cataclysm/loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute store result entity @s Rotation[0] float 1 run function expansion:utilities/random/-180_180
 execute store result entity @s Rotation[1] float 1 run function expansion:utilities/random/-90_90
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:player/main (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 # If your equipment doesn't have the tag but you are wearing it, equip it
 execute if function expansion:spacesuits/equip/check_tags run function expansion:spacesuits/equip/main
 

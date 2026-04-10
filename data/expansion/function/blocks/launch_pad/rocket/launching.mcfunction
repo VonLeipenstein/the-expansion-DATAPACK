@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/rocket/launching
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/rocket/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players remove @s exp.timer_1 1
 
 particle campfire_signal_smoke ~ ~1 ~ 0 0 0 0.01 2 force

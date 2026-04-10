@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/upgrade/apply/effects/durability
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/enhancer/upgrade/apply/effects/init_loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Display the added percentage in the item lore
 data merge storage expansion:temp {durability:[{text:"+",color:"green"},{score:{name:"#temp",objective:"exp.max_health"}},{text:"%"}]}
 execute if score #temp exp.max_health matches ..-1 run data modify storage expansion:temp durability[0] set value {text:"",color:"red"}

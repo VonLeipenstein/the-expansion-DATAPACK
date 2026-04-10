@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket/launch_checklist
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/rocket/text_display (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute on passengers if entity @s[tag=aj.rocket.root] on passengers if entity @s[tag=aj.rocket.node.text_display] run data modify entity @s text set value \
 [\
 {text:"",underlined:false},\

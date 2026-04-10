@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:_commands/give/blocks
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 setblock ~ ~ ~ chest{CustomName:{text:"Blocks",color:"#00FFEE"}} replace
 
 

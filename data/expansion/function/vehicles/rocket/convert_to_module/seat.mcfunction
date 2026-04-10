@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket/convert_to_module/seat
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/rocket/convert_to_module/root (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 attribute @s scale base set 1.0
 tag @s add exp.module_seats
 tag @s remove exp.rocket_pilot_seat

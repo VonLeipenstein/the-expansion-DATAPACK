@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/transporter/return/portal
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/transporter/storage_tick (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # aesthetics
 tp @s ~ ~ ~ ~10 ~
 particle minecraft:totem_of_undying ^ ^5 ^0.7 ^ ^ ^ 0 0

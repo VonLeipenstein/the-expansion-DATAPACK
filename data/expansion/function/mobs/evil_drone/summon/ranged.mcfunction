@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/evil_drone/summon/ranged
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:mobs/evil_drone/drone_home/main (1 caller) [WARN side/down 2]
+# - function expansion:mobs/evil_drone/summon/from_spawner (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 summon armor_stand ~ ~ ~ {Silent:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["exp.evil_drone","exp.new_drone","exp.ranged_drone","exp.mob"],Passengers:[{id:"minecraft:marker",Tags:["exp.mob_marker"],data:{someData:1b}}],equipment:{head:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:item_model":"expansion:mobs/evil_drone"}}},CustomName:"Emergency Drone"}
 
 # randomly summon a drone that can leave the nest

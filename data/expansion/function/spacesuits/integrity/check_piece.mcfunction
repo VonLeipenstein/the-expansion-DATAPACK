@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/integrity/check_piece
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/integrity/iterate_over_armor (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # reset values
 scoreboard players reset #temp exp.health
 scoreboard players reset #temp exp.max_health

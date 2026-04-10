@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/drone_pet/summon/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/drone_pet/summon/summon (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # give the drone the same id as the player
 scoreboard players operation @s exp.unique_id = #search exp.unique_id
 execute on passengers run scoreboard players operation @s exp.unique_id = #search exp.unique_id

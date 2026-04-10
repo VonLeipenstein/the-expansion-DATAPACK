@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/activation/check_matches
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/portal/activation/periodic_checkup (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # reset timer
 scoreboard players set @s exp.timer_2 1
 

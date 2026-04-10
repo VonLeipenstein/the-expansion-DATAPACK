@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/compressor/compress/insert_oxygen
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/compressor/compress/insert_check (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # refill calculation
 scoreboard players add #target exp.oxygen_lvl 2000
 execute if score #target exp.oxygen_lvl > #target exp.oxygen_max run scoreboard players operation #target exp.oxygen_lvl = #target exp.oxygen_max

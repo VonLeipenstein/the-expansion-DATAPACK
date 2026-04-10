@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/rocket_parts/create_rocket
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/transform/main (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 # summon a new rocket
 function expansion:vehicles/rocket/summon/init
 

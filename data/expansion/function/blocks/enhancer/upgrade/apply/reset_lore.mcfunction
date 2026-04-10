@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/upgrade/apply/reset_lore
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:blocks/enhancer/upgrade/enhance (1 caller) [OK above +1]
+# - function expansion:blocks/enhancer/upgrade/remove (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 data merge storage expansion:temp {icons:{text:"",color:"white"}}
 
 # get the modstorage length

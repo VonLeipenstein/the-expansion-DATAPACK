@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/markers/distance_to_planet
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/markers/markers (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 ## DISTANCE TEST
 function expansion:utilities/store_pos_in_score
 scoreboard players operation #x2 exp.math = @s exp.x

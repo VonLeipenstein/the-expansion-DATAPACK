@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/repair_kit/use_charge
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/repair_kit/repair (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # deplete durability from the item
 scoreboard players set #temp exp.damage 5000
 item modify entity @s weapon.mainhand expansion:space_equipment/damage

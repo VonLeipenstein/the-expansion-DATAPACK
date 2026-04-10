@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/upgrade/remove
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:blocks/enhancer/display_helmet (1 caller) [OK above +1]
+# - function expansion:blocks/enhancer/gui/buttons/remove (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 ## Removes any modules from the Equipment in slot 10 and adds them to the block
 # Performance takes quite a hit but I chose ease of use over performance
 

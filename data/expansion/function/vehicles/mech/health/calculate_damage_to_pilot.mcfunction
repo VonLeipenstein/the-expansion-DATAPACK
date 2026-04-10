@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/health/calculate_damage_to_pilot
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # obtain current and max health
 execute store result score #temp1 exp.health run data get entity @s Health
 execute store result score #temp2 exp.health run attribute @s max_health get

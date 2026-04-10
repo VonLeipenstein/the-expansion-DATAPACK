@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:solar_system/transitions/to_space/init
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/inside (1 caller) [WARN side/down 5]
+# <<< generated function callers <<<
+
 # --- only runs as the spaceship
 function expansion:vehicles/spaceship/markers/activate_markers
 

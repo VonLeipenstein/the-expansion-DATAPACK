@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/autocannon_bullet/cast
+# Total callers: 4 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/mech/actions/shoot/init (4 callers) [WARN side/down 6]
+# <<< generated function callers <<<
+
 execute unless function expansion:projectiles/slowcaster_debug run return fail
 
 tag @s add exp.autocannon_bullet

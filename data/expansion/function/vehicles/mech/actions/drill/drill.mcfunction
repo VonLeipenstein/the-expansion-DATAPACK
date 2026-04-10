@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/actions/drill/drill
+# Total callers: 6 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/mech/actions/drill/check (6 callers) [OK same-folder]
+# <<< generated function callers <<<
+
 #particle end_rod ^2 ^ ^
 #particle end_rod ^-2 ^ ^
 #particle end_rod ^2 ^3 ^

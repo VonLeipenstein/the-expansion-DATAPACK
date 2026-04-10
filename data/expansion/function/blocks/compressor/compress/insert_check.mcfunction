@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/compressor/compress/insert_check
+# Total callers: 2 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/compressor/compress/main (2 callers) [OK same-folder]
+# <<< generated function callers <<<
+
 # extract parameters
 execute store result score #target exp.oxygen_lvl run data get entity @s item.components."minecraft:custom_data".oxygen.lvl
 execute store result score #target exp.oxygen_max run data get entity @s item.components."minecraft:custom_data".oxygen.max

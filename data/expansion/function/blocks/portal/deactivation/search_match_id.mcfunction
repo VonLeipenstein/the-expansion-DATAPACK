@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/deactivation/search_match_id
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:blocks/portal/deactivation/deactivate_portal (1 caller) [OK same-folder]
+# - function expansion:blocks/portal/destroy/destroy_portal (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 execute store result score input exp.value run data get entity @s item.components."minecraft:custom_data".portal_array[0].portal_id
 function expansion:blocks/portal/activation/dec_to_bin
 

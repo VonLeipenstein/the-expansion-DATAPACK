@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/terraformer/particles/terraformer_sphere_particle
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/terraformer/sphere_mode (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 #Particles Generated with: Cloud Wolf's Particle Grapher
 particle end_rod ^0.000 ^40.000 ^0.000 0 0 0 0 1 force @a
 particle end_rod ^2.993 ^39.888 ^0.000 0 0 0 0 1 force @a

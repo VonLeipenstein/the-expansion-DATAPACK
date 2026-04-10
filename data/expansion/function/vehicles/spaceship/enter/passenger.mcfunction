@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/enter/passenger
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/click_detection/rightclick (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 # add tags to the player to be able to detect if they are inside the spaceship, 
 tag @p[tag=exp.clicked] add exp.inside_spaceship
 tag @p[tag=exp.clicked] add exp.inside_vehicle

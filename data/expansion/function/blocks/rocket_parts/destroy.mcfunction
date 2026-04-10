@@ -1,3 +1,13 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/rocket_parts/destroy
+# Total callers: 3 from 3 source(s)
+# Folder rule (function callers): 3/3 honored
+# Sources:
+# - function expansion:blocks/rocket_parts/create_rocket (1 caller) [OK same-folder]
+# - function expansion:blocks/rocket_parts/destroy (1 caller) [OK same-folder]
+# - function expansion:blocks/rocket_parts/init_pickup (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # recrsively break mounted parts
 execute on passengers on passengers if entity @s[tag=exp.rocket_part] at @s run function expansion:blocks/rocket_parts/destroy
 

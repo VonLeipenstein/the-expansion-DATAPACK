@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/actionbar/oxygen_bar
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/actionbar/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Check if the suit even has an oxygen tank to begin with
 # If not, draw the outline of the oxygen bar
 execute unless score #suit exp.oxygen_max matches 1.. \

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/oxygenator/oxygenate/scan/check_fail
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/oxygenator/oxygenate/scan/perform (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # If the pressurization took too long
 execute if score @s exp.timer_1 matches ..10 run return run function expansion:blocks/oxygenator/oxygenate/scan/fails/toolong
 

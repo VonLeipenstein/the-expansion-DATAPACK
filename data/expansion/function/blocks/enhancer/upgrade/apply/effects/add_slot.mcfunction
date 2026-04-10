@@ -1,3 +1,14 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/upgrade/apply/effects/add_slot
+# Total callers: 4 from 4 source(s)
+# Folder rule (function callers): 4/4 honored
+# Sources:
+# - function expansion:blocks/enhancer/upgrade/apply/slot_1 (1 caller) [OK above +1]
+# - function expansion:blocks/enhancer/upgrade/apply/slot_2 (1 caller) [OK above +1]
+# - function expansion:blocks/enhancer/upgrade/apply/slot_3 (1 caller) [OK above +1]
+# - function expansion:blocks/enhancer/upgrade/apply/slot_4 (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # ugly but functional, never gonna touch this again anyway
 execute if score #temp exp.counter_1 matches 1 run data modify storage expansion:temp ModStorage insert 0 value {}
 execute if score #temp exp.counter_1 matches 2 run data modify storage expansion:temp ModStorage insert 1 value {}

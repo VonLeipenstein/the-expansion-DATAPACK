@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/interaction/button_right
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:blocks/launch_pad/interaction/leftclick (1 caller) [OK same-folder]
+# - function expansion:blocks/launch_pad/interaction/rightclick (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players add @s exp.hold_value 1
 
 execute if score @s exp.hold_value matches 4 run scoreboard players set @s exp.hold_value 0

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/transporter/transport_block/click_detection/rightclick
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/0 honored
+# Sources:
+# - advancement expansion:utility/transporter_rc (1 caller)
+# <<< generated function callers <<<
+
 # add a tag to identify the currently transporting player
 tag @s add exp.transporting
 

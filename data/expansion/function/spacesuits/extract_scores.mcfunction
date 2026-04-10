@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/extract_scores
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Get player armor data in storage
 function expansion:utilities/copy_armor_to_storage
 

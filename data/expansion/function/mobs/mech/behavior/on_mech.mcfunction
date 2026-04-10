@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/behavior/on_mech
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/mech/behavior/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # movement FSM (unless jumping)
 function expansion:mobs/mech/behavior/movement/main
 execute if score @s exp.counter_1 matches 1.. run function expansion:mobs/mech/behavior/movement/jumping

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/bots/switching
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/mech/bots/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # stop movement if the bots are doing their work
 scoreboard players set @s exp.warmup 0
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket_segment/launching/countdown
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/rocket_segment/inside (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 execute unless score #temp exp.jump matches 1 run return run function expansion:vehicles/rocket_segment/launching/abort
 
 # engage the countdown

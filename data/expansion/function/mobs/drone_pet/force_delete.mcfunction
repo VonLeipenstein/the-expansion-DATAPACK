@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/drone_pet/force_delete
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/drone_pet/force_dismiss (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 playsound expansion:drone.dismiss neutral @a ~ ~ ~
 
 execute on passengers run kill @s

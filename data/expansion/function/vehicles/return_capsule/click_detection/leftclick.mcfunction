@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/return_capsule/click_detection/leftclick
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/0 honored
+# Sources:
+# - advancement expansion:utility/capsule_lc (1 caller)
+# <<< generated function callers <<<
+
 # revoke the rightclick advancement
 advancement revoke @s only expansion:utility/capsule_lc
 

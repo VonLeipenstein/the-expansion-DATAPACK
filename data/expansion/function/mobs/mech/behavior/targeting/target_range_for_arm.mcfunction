@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/behavior/targeting/target_range_for_arm
+# Total callers: 3 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/mech/behavior/targeting/check_target_range (3 callers) [OK same-folder]
+# <<< generated function callers <<<
+
 # A function to check the position of the target with respect to weapon range
 # It never fails, a target is always somewhere
 

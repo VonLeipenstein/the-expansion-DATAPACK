@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/electric_arc/bend/bend
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:projectiles/electric_arc/bend/check (1 caller) [OK same-folder]
+# - function expansion:projectiles/electric_arc/cast (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # update the rotation of snowball entities to turn towards their targets
 execute if entity @s[type=snowball] run function expansion:projectiles/electric_arc/bend/towards_target
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/actionbar/fuel_bar
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/actionbar/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # If not, draw the outline of the oxygen bar
 execute on passengers if entity @s[tag=exp.fuel_slot] unless items entity @s contents * \
         run return run data modify storage expansion:temp actionbar.fuel set value \

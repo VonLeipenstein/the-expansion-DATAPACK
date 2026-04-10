@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/calculate_stats
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # reset all scores
 scoreboard players reset #stat exp.mass
 scoreboard players reset #stat exp.engine_thrust

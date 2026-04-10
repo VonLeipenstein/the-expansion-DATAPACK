@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:solar_system/generation/attempt_placement
+# Total callers: 6 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:solar_system/generation/main (6 callers) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players add #generating exp.value 1
 
 # prepare the area for generation

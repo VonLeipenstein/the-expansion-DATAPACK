@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket/summon/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/rocket/summon/init (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # summon and mount the animated model 
 execute at @s rotated ~ 0 run function animated_java:rocket/summon {args: {}}
 ride @e[type=item_display,tag=aj.rocket.root,distance=..0.01,limit=1] mount @s

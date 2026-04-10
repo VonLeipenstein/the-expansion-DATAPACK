@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/compressor/insert_tank
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/compressor/tank_swap (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # remove the players handheld item in the case of a normal swap
 item replace entity @s container.0 from entity @p[tag=exp.clicked] weapon.mainhand expansion:utility/count_to_1
 item modify entity @p[tag=exp.clicked] weapon.mainhand expansion:utility/reduce_count

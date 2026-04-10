@@ -1,3 +1,14 @@
+# >>> generated function callers >>>
+# Callers for expansion:utilities/raycast/target/loop
+# Total callers: 4 from 4 source(s)
+# Folder rule (function callers): 1/4 honored
+# Sources:
+# - function expansion:items/arc_thrower/target (1 caller) [WARN side/down 5]
+# - function expansion:items/cataclysm_cannon/target (1 caller) [WARN side/down 5]
+# - function expansion:projectiles/homing_rocket/target/cast (1 caller) [WARN side/down 6]
+# - function expansion:utilities/raycast/target/loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # range
 scoreboard players remove #temp exp.max_range 1
 scoreboard players remove #temp exp.cooldown 1

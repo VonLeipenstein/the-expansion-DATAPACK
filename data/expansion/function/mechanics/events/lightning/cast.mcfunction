@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:mechanics/events/lightning/cast
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:mechanics/events/lightning/init (1 caller) [OK same-folder]
+# - function expansion:mechanics/events/test/init (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 spreadplayers ~ ~ 10 50 false @s
 #execute store result entity @s Rotation[0] float 1 run function expansion:utilities/random/-180_180
 #execute store result entity @s Rotation[1] float 1 run function expansion:utilities/random/-90_90 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/cargo_rocket_remote/use
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:player/rightclick/tools (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 # signal the assigned launch pad
 execute store result score #search exp.pad_id run data get entity @s SelectedItem.components."minecraft:custom_data".pad_id
 

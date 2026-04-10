@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/compressor/compress/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/compressor/main (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 scoreboard players add @s exp.timer_1 1
 
 # slow timer

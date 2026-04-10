@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket/text_display
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/rocket/inside (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # calculate the fuel percentage
 function expansion:utilities/fuel_percentage
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:player/rightclick/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:player/main (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # place blocks or vehicles
 execute if predicate expansion:holding/placeable anchored eyes if block ~ ~ ~ #expansion:airliq run function expansion:utilities/raycast/placement/cast
 

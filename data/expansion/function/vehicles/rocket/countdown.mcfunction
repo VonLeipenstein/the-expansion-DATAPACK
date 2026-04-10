@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket/countdown
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/rocket/inside (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Make sure the rocket is fully fueled before launch
 execute unless score @s exp.fuel_level = @s exp.fuel_max unless entity @s[tag=exp.fueling_rocket] run return run tag @s add exp.fueling_rocket
 execute unless score @s exp.fuel_level = @s exp.fuel_max run return fail

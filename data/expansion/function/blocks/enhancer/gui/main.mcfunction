@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/gui/main
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:blocks/enhancer/place/setup (1 caller) [WARN side/down 2]
+# - function expansion:blocks/enhancer/player_nearby (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # store the amount of module slots of the equipment in a score
 execute store result score @s exp.hold_count run data get entity @s item.components."minecraft:custom_data".ModStorage
 

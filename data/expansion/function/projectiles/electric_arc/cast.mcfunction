@@ -1,3 +1,20 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/electric_arc/cast
+# Total callers: 10 from 10 source(s)
+# Folder rule (function callers): 1/10 honored
+# Sources:
+# - function expansion:blocks/tesla_coil/coil/idle_zaps (1 caller) [WARN side/down 5]
+# - function expansion:blocks/tesla_coil/coil/zap (1 caller) [WARN side/down 5]
+# - function expansion:items/arc_thrower/cast (1 caller) [WARN side/down 4]
+# - function expansion:mechanics/events/core/cast (1 caller) [WARN side/down 5]
+# - function expansion:mechanics/events/lightning/cast (1 caller) [WARN side/down 5]
+# - function expansion:mechanics/events/test/cast (1 caller) [WARN side/down 5]
+# - function expansion:mobs/mech/health/lightning_explosion (1 caller) [WARN side/down 5]
+# - function expansion:projectiles/cataclysm/create_arc (1 caller) [WARN side/down 2]
+# - function expansion:projectiles/cataclysm/target_arc (1 caller) [WARN side/down 2]
+# - function expansion:projectiles/electric_arc/branch (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute unless function expansion:projectiles/slowcaster_debug run return fail
 
 tag @s add exp.electric_arc

@@ -1,3 +1,13 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/oxygen/get_data/init_loop
+# Total callers: 3 from 3 source(s)
+# Folder rule (function callers): 2/3 honored
+# Sources:
+# - function expansion:items/oxygen_tank/refill_equipment (1 caller) [WARN side/down 5]
+# - function expansion:spacesuits/oxygen/leakage_loss (1 caller) [OK above +1]
+# - function expansion:spacesuits/oxygen/replenish_from_tank (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # get the total oxygen values from the storage expansion:temp ModStorage
 # Sets the values in the scores below
 scoreboard players reset #temp exp.oxygen_lvl

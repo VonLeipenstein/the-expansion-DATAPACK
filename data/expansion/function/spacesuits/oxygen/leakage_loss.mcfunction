@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/oxygen/leakage_loss
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/oxygen/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Get oxygen scores every tick
 function expansion:spacesuits/oxygen/get_data
 execute store result score #suit exp.oxygen_percent run function expansion:spacesuits/oxygen/get_data/init_loop

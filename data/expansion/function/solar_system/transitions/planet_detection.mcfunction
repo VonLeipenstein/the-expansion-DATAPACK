@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:solar_system/transitions/planet_detection
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:player/main (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 execute positioned 0 128 0 if entity @s[distance=..100] run function expansion:solar_system/transitions/from_space/to_earth/init
 execute positioned -608 128 112 if entity @s[distance=..100] run function expansion:solar_system/transitions/from_space/to_moon/init
 execute positioned -1872 128 -1328 if entity @s[distance=..100] run function expansion:solar_system/transitions/from_space/to_mars/init

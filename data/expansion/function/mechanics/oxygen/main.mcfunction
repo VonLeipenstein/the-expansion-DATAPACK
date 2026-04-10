@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mechanics/oxygen/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:player/main (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 ## System:
 # The player has an internal oxygen reserve which constantly depletes
 # The suits oxygen tanks replenish the reserve from their own

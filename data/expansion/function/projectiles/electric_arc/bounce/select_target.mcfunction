@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/electric_arc/bounce/select_target
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:projectiles/electric_arc/hit/hit (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 # set the bounce entity to the new owner
 data modify entity @s Owner set from storage expansion:owner data.current_UUID
 

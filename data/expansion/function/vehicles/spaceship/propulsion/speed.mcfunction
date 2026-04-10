@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/propulsion/speed
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/inside (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # speed for bigger FOV
 #execute on passengers if entity @s[tag=exp.spaceship_seat] on passengers run effect give @s speed 1 4 true
 execute on passengers if entity @s[tag=exp.spaceship_seat] on passengers run effect give @s resistance 1 4 true

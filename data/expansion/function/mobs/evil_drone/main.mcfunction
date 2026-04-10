@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/evil_drone/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/main (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 execute unless predicate expansion:passengers/drone_hitbox run function expansion:mobs/evil_drone/no_passenger
 
 execute unless entity @s[tag=exp.home_too_far] unless entity @p[gamemode=!spectator,gamemode=!creative,distance=..30] run function expansion:mobs/evil_drone/idle

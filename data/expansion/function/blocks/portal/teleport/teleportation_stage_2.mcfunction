@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/teleport/teleportation_stage_2
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:blocks/portal/teleport/teleportation_stage_0 (1 caller) [OK same-folder]
+# - function expansion:blocks/portal/teleport/teleportation_stage_1 (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Synchronises the rotation of the armor stand with the target portals rotation and load the dimension
 data modify entity @s Rotation[0] set from storage expansion:portal portal_out[0].facing
 execute store result score #temp exp.dim_test run data get storage expansion:portal portal_out[0].dim

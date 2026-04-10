@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket_segment/landing/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/rocket_segment/inside (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 execute at @s store result score @s exp.y run function expansion:utilities/altitude/cast
 
 particle campfire_signal_smoke ~ ~ ~ 0 0 0 0.01 2 force

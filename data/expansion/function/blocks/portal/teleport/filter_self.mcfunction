@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/teleport/filter_self
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/portal/prepare_array (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 execute store result score input exp.value run data get entity @s item.components."minecraft:custom_data".portal_array[0].portal_id
 function expansion:blocks/portal/activation/dec_to_bin
 

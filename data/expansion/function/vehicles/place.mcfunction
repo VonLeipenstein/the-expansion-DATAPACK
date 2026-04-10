@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/place
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:player/rightclick/placement (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 execute if predicate expansion:holding/vehicles/moon_buggy run function expansion:vehicles/buggy/summon/init
 execute if predicate expansion:holding/vehicles/spaceship run function expansion:vehicles/spaceship/summon/init
 execute if predicate expansion:holding/vehicles/rocket run function expansion:vehicles/rocket/summon/init

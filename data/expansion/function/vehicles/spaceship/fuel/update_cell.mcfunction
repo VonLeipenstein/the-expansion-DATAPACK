@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/fuel/update_cell
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/fuel/swap_cell (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # calculate current fuel percentage of the ship
 execute on vehicle run function expansion:utilities/fuel_percentage
 

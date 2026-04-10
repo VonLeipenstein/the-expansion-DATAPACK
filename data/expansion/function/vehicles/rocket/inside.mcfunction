@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket/inside
+# Total callers: 2 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/rocket/main (2 callers) [OK same-folder]
+# <<< generated function callers <<<
+
 # runs when fueling
 execute if entity @s[tag=exp.fueling_rocket] run function expansion:vehicles/rocket/fuel
 

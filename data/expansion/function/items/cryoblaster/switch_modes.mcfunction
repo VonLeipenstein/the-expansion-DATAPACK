@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/cryoblaster/switch_modes
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/cryoblaster/use (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 function expansion:items/cryoblaster/get_mode
 
 # increment and loop its value between 1 and 3

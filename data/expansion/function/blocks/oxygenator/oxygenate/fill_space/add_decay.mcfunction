@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/oxygenator/oxygenate/fill_space/add_decay
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # remove markers that have no active neighbours
 execute at @s unless entity @e[type=item_display,scores={exp.counter_1=1..},distance=..1.01,limit=1] run kill @s
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/transporter/save_dimension
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/transporter/transport (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute if predicate expansion:dimension/the_end run scoreboard players set @s exp.dim_test -2
 execute if predicate expansion:dimension/the_nether run scoreboard players set @s exp.dim_test -1
 execute if predicate expansion:dimension/overworld run scoreboard players set @s exp.dim_test 0

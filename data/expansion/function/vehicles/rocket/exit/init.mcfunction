@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket/exit/init
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:player/death (1 caller) [WARN side/down 4]
+# - function expansion:vehicles/exit (1 caller) [OK above +2]
+# <<< generated function callers <<<
+
 # stop the launching sound and reset the timer
 scoreboard players reset @n[type=minecraft:armor_stand,tag=exp.rocket,distance=..7] exp.timer_2
 stopsound @s player expansion:rocket.launch

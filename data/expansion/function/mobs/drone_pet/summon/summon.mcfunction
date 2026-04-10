@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/drone_pet/summon/summon
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:items/drone_pet/use (1 caller) [WARN side/down 5]
+# <<< generated function callers <<<
+
 summon minecraft:item_display ~ ~1 ~ {\
     Tags:[\
         "exp.pet_drone",\

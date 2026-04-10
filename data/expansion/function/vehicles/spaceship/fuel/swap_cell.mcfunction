@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/fuel/swap_cell
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/click_detection/rightclick (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 ## AS ship AT player
 
 # update item value from ship

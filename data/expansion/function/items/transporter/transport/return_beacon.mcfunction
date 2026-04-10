@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/transporter/transport/return_beacon
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:items/transporter/first_transport/generate_room (1 caller) [WARN side/down 2]
+# - function expansion:items/transporter/transport/finish (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # check if this pocket space has already registered an exit location, the player has made a loop
 execute if score @s exp.dim_test matches -10.. unless score @s exp.dim_test = #temp exp.dim_test run function expansion:items/transporter/loop/punishment
 

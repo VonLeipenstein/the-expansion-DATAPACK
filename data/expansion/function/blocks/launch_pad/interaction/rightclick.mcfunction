@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/interaction/rightclick
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/0 honored
+# Sources:
+# - advancement expansion:utility/launch_pad_rc (1 caller)
+# <<< generated function callers <<<
+
 advancement revoke @s only expansion:utility/launch_pad_rc
 
 # Context Tagging

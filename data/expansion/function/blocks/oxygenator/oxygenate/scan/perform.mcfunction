@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/oxygenator/oxygenate/scan/perform
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/oxygenator/oxygenate/scan/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Expand scan layer
 execute as @e[type=item_display,tag=exp.oxygen_marker,scores={exp.delay=1..},predicate=expansion:compare_score/unique_id,distance=..20,limit=300] run function expansion:blocks/oxygenator/oxygenate/fill_space/main
 # Kill previous layer

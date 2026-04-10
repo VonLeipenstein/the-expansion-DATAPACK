@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket_segment/landing/land_particles
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/rocket_segment/landing/touchdown (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 particle minecraft:campfire_cosy_smoke ~ ~ ~ ^ ^1000000 ^ 0.00000015 0
 particle minecraft:campfire_cosy_smoke ~ ~ ~ ^195000 ^981000 ^ 0.00000015 0
 particle minecraft:campfire_cosy_smoke ~ ~ ~ ^382000 ^924000 ^ 0.00000015 0

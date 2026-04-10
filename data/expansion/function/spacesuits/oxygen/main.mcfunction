@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/oxygen/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/main (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # Lose a percentage of the suits oxygen reserve (tank) based on the suit integrity
 execute if predicate expansion:periodic/10 if predicate expansion:dimension/oxygen_absent unless entity @s[tag=exp.inside_pressurized_space] run function expansion:spacesuits/oxygen/leakage_loss
 tag @s remove exp.inside_pressurized_space

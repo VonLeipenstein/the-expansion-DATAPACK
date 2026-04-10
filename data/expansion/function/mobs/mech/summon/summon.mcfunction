@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/summon/summon
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # summon normal mech vehicle
 function expansion:vehicles/mech/summon/init
 

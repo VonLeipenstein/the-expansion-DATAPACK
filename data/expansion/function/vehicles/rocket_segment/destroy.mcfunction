@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket_segment/destroy
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:vehicles/rocket_segment/click_detection/leftclick (1 caller) [WARN side/down 1]
+# - function expansion:vehicles/rocket_segment/destroy (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # recursively break mounted parts
 execute on passengers if entity @s[type=interaction] on passengers if entity @s[tag=exp.rocket_segment] at @s run function expansion:vehicles/rocket_segment/destroy
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/return_capsule/summon_return_capsule
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/return_capsule/summon/init (1 caller) [WARN side/down 1]
+# <<< generated function callers <<<
+
 summon minecraft:armor_stand ~ ~ ~ {\
     Silent:1b,\
     Marker:0b,\

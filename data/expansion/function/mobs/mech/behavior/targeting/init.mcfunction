@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/behavior/targeting/init
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # Step 1: cast a ray to the current target to determine if it is still within vision
 # Step 2: if the current target is not visible, find a new target
 execute if function expansion:mobs/mech/behavior/targeting/has_target rotated as @s anchored eyes positioned ^ ^ ^ unless function expansion:mobs/mech/behavior/targeting/target_visible run function expansion:mobs/mech/behavior/targeting/find_new

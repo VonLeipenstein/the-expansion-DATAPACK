@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/cores/insert_core
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/portal/cores/swap_core (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # copy and remove from player
 item replace entity @s container.0 from entity @p weapon.mainhand expansion:utility/count_to_1
 item modify entity @p weapon.mainhand expansion:utility/reduce_count

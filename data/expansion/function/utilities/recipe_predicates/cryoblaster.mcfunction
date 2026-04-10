@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:utilities/recipe_predicates/cryoblaster
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/assembler/recipes (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 execute if items block ~ ~ ~ container.1 jigsaw[custom_data~{exp_item:{name:"amethonium_plate"}}] \
         if items block ~ ~ ~ container.2 jigsaw[custom_data~{exp_item:{name:"amethonium_ingot"}}] \
         unless items block ~ ~ ~ container.3 * \

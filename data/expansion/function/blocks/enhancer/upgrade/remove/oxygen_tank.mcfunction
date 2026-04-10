@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/upgrade/remove/oxygen_tank
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/enhancer/upgrade/remove/effects (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # calculate the current oxygen percentage
 execute store result score #input exp.math run data get storage expansion:temp RemovedModule.components."minecraft:custom_data".oxygen.lvl
 execute store result score #max exp.math run data get storage expansion:temp RemovedModule.components."minecraft:custom_data".oxygen.max

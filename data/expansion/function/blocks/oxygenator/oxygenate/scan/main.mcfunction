@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/oxygenator/oxygenate/scan/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/oxygenator/main (1 caller) [OK above +2]
+# <<< generated function callers <<<
+
 # Prepare the ID score and reset scores
 scoreboard players operation #search exp.unique_id = @s exp.unique_id
 scoreboard players reset #temp exp.hold_value

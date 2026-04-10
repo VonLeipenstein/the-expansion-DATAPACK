@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/hyperdrive/init
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 scoreboard players operation #temp exp.warmup = @s exp.warmup
 scoreboard players operation #temp exp.warmup *= #temp exp.warmup
 

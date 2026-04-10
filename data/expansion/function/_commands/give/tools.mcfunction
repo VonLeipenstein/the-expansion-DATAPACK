@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:_commands/give/tools
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 setblock ~ ~ ~ chest{CustomName:{text:"Tools",color:"#00FFEE"}} replace
 
 

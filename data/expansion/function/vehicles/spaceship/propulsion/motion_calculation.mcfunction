@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/propulsion/motion_calculation
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/spaceship/propulsion/fly (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # vertical rotation
 scoreboard players operation #input exp.math = @s exp.yaw
 scoreboard players operation #input exp.math /= #1000 exp.const

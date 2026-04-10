@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/cargo_rocket/summon/init
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/summon_rocket (1 caller) [WARN side/down 5]
+# <<< generated function callers <<<
+
 summon minecraft:armor_stand ~ ~ ~ {\
     Silent:1b,\
     Marker:0b,\

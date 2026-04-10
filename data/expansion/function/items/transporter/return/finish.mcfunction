@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/transporter/return/finish
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/transporter/return/init (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # change the return location for the nether because of dimension scale 8
 execute if score #temp exp.dim_test matches -1 run scoreboard players operation #temp exp.x *= #8 exp.const
 execute if score #temp exp.dim_test matches -1 run scoreboard players operation #temp exp.z *= #8 exp.const

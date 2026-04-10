@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/health/lightning_explosion
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:mobs/mech/health/die/main (1 caller) [WARN side/down 1]
+# <<< generated function callers <<<
+
 execute store result entity @s Rotation[0] float 1 run function expansion:utilities/random/-180_180
 execute store result entity @s Rotation[1] float 1 run function expansion:utilities/random/-90_90
 

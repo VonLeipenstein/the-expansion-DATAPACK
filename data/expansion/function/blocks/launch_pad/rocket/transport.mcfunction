@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/rocket/transport
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/rocket/launching (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # find the assigned beacon
 scoreboard players operation #search exp.pad_id = @s exp.pad_id
 

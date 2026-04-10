@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:tick (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # If the entity is a spawner which may be created by a structure, then spawn the mob
 execute if entity @s[tag=exp.mob_spawner] unless score #STRUCTURE_MOB_SPAWNING exp.bool matches 0 run return run function expansion:mobs/spawn
 

@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:_commands/give/vehicles
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 setblock ~ ~ ~ chest{CustomName:{text:"Vehicles",color:"#00FFEE"}} replace
 
 

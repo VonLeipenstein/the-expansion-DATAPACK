@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/railgun/use
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:player/rightclick/tools (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 # stop when warmup or cooldown is active
 execute if score @s exp.warmup matches 1.. run return fail
 execute if score @s exp.cooldown matches 1.. run return fail

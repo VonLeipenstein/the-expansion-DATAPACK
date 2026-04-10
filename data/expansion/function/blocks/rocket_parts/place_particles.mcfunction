@@ -1,3 +1,14 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/rocket_parts/place_particles
+# Total callers: 4 from 4 source(s)
+# Folder rule (function callers): 0/4 honored
+# Sources:
+# - function expansion:blocks/rocket_parts/cockpit/setup (1 caller) [WARN side/down 1]
+# - function expansion:blocks/rocket_parts/engines/setup (1 caller) [WARN side/down 1]
+# - function expansion:blocks/rocket_parts/top/setup (1 caller) [WARN side/down 1]
+# - function expansion:vehicles/rocket_segment/place/setup (1 caller) [WARN side/down 5]
+# <<< generated function callers <<<
+
 particle minecraft:cloud ~ ~ ~ ^ ^1000000 ^ 0.00000015 0
 particle minecraft:cloud ~ ~ ~ ^195000 ^981000 ^ 0.00000015 0
 particle minecraft:cloud ~ ~ ~ ^382000 ^924000 ^ 0.00000015 0

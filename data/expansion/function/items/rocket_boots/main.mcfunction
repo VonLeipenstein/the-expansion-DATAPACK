@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/rocket_boots/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:spacesuits/main (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 # apply a tag to start flying
 scoreboard players add @s[predicate=expansion:input/jump,tag=!exp.flying_boots] exp.rboots_warmup 1
 scoreboard players reset @s[predicate=!expansion:input/jump] exp.rboots_warmup

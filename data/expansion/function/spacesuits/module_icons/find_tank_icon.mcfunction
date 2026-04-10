@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/module_icons/find_tank_icon
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/module_icons/display_icon (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # calculate the current oxygen percentage
 execute store result score #input exp.math run data get storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen.lvl
 execute store result score #max exp.math run data get storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen.max

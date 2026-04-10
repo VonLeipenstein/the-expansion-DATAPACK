@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/oxygenator/oxygenate/fill_space/scan_nearby_blocks
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/oxygenator/oxygenate/fill_space/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # count the total number of passengers, if it is 0 it means that no new markers were able to be made, 
 # meaning that the oxygenation was completed successfully
 scoreboard players add #temp exp.hold_value 1

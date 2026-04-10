@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:_commands/give/crafting_items
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 setblock ~ ~ ~ chest{CustomName:{text:"Crafting items",color:"#00FFEE"}} replace
 
 

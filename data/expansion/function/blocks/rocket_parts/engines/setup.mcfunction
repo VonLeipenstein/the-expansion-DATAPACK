@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/rocket_parts/engines/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/rocket_parts/engines/place (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 tag @s remove exp.rocket_part.new
 
 ride @s mount @n[type=minecraft:item_display,tag=exp.launch_pad,distance=..0.01]

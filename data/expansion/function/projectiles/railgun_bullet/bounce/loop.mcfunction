@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:projectiles/railgun_bullet/bounce/loop
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:projectiles/railgun_bullet/bounce/loop (1 caller) [OK same-folder]
+# - function expansion:projectiles/railgun_bullet/quickcast (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # x plane
 execute if function expansion:projectiles/railgun_bullet/bounce/check_x run function expansion:projectiles/railgun_bullet/bounce/xplane
 # y plane

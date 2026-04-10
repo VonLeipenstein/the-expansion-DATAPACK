@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:load_scores
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:load (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # reset triggers
 scoreboard objectives remove exp.rightclick
 scoreboard objectives remove exp.jump

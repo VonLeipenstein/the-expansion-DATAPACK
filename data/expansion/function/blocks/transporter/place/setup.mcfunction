@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/transporter/place/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/transporter/place/init (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 tag @s remove exp.transporter.new
 
 item replace entity @s container.0 from entity @p[tag=exp.tick_player] weapon.mainhand

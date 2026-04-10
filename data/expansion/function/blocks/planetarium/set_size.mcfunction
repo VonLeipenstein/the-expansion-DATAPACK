@@ -1,3 +1,14 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/planetarium/set_size
+# Total callers: 4 from 4 source(s)
+# Folder rule (function callers): 3/4 honored
+# Sources:
+# - function expansion:blocks/planetarium/disable_node (1 caller) [OK same-folder]
+# - function expansion:blocks/planetarium/enable_node (1 caller) [OK same-folder]
+# - function expansion:blocks/planetarium/prepare/initialize_models (1 caller) [WARN side/down 1]
+# - function expansion:blocks/planetarium/scale_branches (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players operation #temp exp.size *= @s exp.size_mod
 scoreboard players operation #temp exp.size /= #100 exp.const
 

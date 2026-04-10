@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/teleport/teleport
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/portal/teleport/teleportation_stage_2 (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute if score #temp exp.dim_test matches 0 in minecraft:overworld align xyz positioned ~0.5 ~ ~0.5 run tp @s ~ ~ ~ ~ ~
 execute if score #temp exp.dim_test matches 1 in expansion:moon align xyz positioned ~0.5 ~ ~0.5 run tp @s ~ ~ ~ ~ ~
 execute if score #temp exp.dim_test matches 2 in expansion:mars align xyz positioned ~0.5 ~ ~0.5 run tp @s ~ ~ ~ ~ ~

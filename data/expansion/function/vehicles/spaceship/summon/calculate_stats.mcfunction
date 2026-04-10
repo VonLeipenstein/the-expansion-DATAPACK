@@ -1,3 +1,13 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/summon/calculate_stats
+# Total callers: 3 from 3 source(s)
+# Folder rule (function callers): 1/3 honored
+# Sources:
+# - function expansion:blocks/modification_station/upgrade/spaceship/apply_mods/apply_upgrade (1 caller) [WARN side/down 8]
+# - function expansion:blocks/modification_station/upgrade/spaceship/remove_mods/initiate (1 caller) [WARN side/down 8]
+# - function expansion:vehicles/spaceship/summon/setup (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 ## speed_max
 execute store result score #speed_max exp.math run data get entity @s data.stats.speed_max.base
 execute store result score #speed_max_mod exp.math run data get entity @s data.stats.speed_max.add_percent

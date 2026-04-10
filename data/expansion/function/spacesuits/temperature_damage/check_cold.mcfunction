@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/temperature_damage/check_cold
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/temperature_damage/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players set #base exp.temperature 0
 execute if data storage expansion:temp player.armor[0].id store result score #base exp.temperature run data get storage expansion:temp player.armor[0].components."minecraft:custom_data".cold_resist.total -1
 

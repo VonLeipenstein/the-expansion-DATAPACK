@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/planetarium/spin/comets
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 execute anchored eyes facing ~ ~ ~ positioned ^ ^ ^2 rotated as @s positioned ^ ^ ^400 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^1.6 ~1 ~
 
 # randomness

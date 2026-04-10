@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mechanics/oxygen/fill_tank_from_buggy
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/buggy/click_detection/rightclick (1 caller) [WARN side/down 5]
+# <<< generated function callers <<<
+
 # extract parameters
 scoreboard players operation #source exp.oxygen_lvl = @s exp.oxygen_lvl
 scoreboard players operation #source exp.oxygen_max = @s exp.oxygen_max

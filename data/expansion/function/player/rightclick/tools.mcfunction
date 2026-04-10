@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:player/rightclick/tools
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - advancement exp_hitbox:rightclick_on_hitbox (1 caller)
+# - function expansion:player/rightclick/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 ## Tools you can activate in vehicles
 # Oxygen system
 execute if predicate expansion:holding/items/oxygen_tank run return run function expansion:items/oxygen_tank/use

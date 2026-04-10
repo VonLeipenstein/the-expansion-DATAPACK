@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/tesla_coil/transform_mob
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 execute if entity @s[type=minecraft:creeper] run summon minecraft:creeper ~ ~ ~ {powered:1b}
 execute if entity @s[type=minecraft:pig] run summon minecraft:zombified_piglin ~ ~ ~
 execute if entity @s[type=minecraft:villager] run summon minecraft:witch ~ ~ ~

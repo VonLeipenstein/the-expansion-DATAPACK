@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:spacesuits/oxygen/replenish_from_tank
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:spacesuits/oxygen/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Note to self: This function doesn't run continuously because oxygen isn't removed continuously
 
 # Get oxygen scores from armor

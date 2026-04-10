@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/fabricator/add_display
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/fabricator/printing/start_print (1 caller) [WARN side/down 1]
+# <<< generated function callers <<<
+
 # temporarily copy the to be crafted item to the block
 execute on vehicle run item replace block ~ ~ ~ container.0 from entity @s container.0
 item replace entity @s container.0 from block ~ ~ ~ container.0

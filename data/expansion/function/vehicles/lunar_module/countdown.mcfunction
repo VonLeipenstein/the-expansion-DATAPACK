@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/lunar_module/countdown
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/lunar_module/inside (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute on passengers on passengers run title @s subtitle {text:" "}
 execute if entity @s[scores={exp.timer_2=200}] on passengers on passengers run title @s title {text:"10",color:"gold",bold:true}
 execute if entity @s[scores={exp.timer_2=180}] on passengers on passengers run title @s title {text:"9",color:"gold",bold:true}

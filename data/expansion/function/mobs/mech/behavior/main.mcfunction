@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/behavior/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/mech/main (1 caller) [WARN side/down 5]
+# <<< generated function callers <<<
+
 execute on vehicle on vehicle if score @s exp.death matches 1.. run return run function expansion:mobs/mech/health/die/main
 
 # face the current target

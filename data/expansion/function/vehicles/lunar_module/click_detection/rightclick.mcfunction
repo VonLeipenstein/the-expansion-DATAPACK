@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/lunar_module/click_detection/rightclick
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/0 honored
+# Sources:
+# - advancement expansion:utility/module_rc (1 caller)
+# <<< generated function callers <<<
+
 # revoke the rightclick advancement
 advancement revoke @s only expansion:utility/module_rc
 

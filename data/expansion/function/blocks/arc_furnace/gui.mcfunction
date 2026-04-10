@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/arc_furnace/gui
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/arc_furnace/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 execute if entity @s[tag=exp.smelting] unless items block ~ ~ ~ container.1 * run loot replace block ~ ~ ~ container.1 loot expansion:items/gui/arc_furnace_animated
 execute if entity @s[tag=!exp.smelting] unless items block ~ ~ ~ container.1 * run loot replace block ~ ~ ~ container.1 loot expansion:items/gui/arc_furnace
 

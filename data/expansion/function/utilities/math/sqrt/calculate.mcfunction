@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:utilities/math/sqrt/calculate
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:utilities/math/distance/calculate (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 ## Credits to Triton365
 # https://github.com/Triton365/fast_integer_sqrt/blob/main/functions/isqrt_noreturn.mcfunction
 

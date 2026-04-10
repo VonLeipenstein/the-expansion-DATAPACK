@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/oxygen_tank/refill_equipment
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/oxygen_tank/use (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Get tank parameters
 data modify storage expansion:temp oxygen set from entity @s SelectedItem.components."minecraft:custom_data".oxygen
 execute store result score #source exp.oxygen_lvl run data get storage expansion:temp oxygen.lvl

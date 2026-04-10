@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/cargo_rocket/summon/tier2/init
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 summon minecraft:armor_stand ~ ~ ~ {\
     Silent:1b,\
     Marker:0b,\

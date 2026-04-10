@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:utilities/math/atan2
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 ## Remez Algorithm
 #a := min (|x|, |y|) / max (|x|, |y|)
 #s := a * a

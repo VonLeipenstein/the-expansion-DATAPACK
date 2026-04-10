@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:solar_system/generation/prepare_area
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:solar_system/generation/attempt_placement (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # gradually forceload all the required chunks
 execute if score #generating exp.value matches 20 run forceload add ~-80 ~-80 ~-40 ~-40
 execute if score #generating exp.value matches 25 run forceload add ~-40 ~-80 ~ ~-40

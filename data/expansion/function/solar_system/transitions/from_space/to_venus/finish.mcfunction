@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:solar_system/transitions/from_space/to_venus/finish
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:solar_system/transitions/from_space/to_venus/prepare (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 data modify entity @s Pos set from storage expansion:return_pos data.ReturnPos
 
 execute at @s as @a[tag=exp.tick_player] on vehicle on vehicle in expansion:venus run tp @s ~ 300 ~ ~ 35

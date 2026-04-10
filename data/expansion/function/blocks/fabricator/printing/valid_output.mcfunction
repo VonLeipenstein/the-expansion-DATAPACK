@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/fabricator/printing/valid_output
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/fabricator/printing/prepare_print (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # check if the item already in the output slot is the same as the item about to be printed
 execute if items block ~ ~ ~ container.15 * unless function expansion:blocks/fabricator/printing/compare_output run return fail
 

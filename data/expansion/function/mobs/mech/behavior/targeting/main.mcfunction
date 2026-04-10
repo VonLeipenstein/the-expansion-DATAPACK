@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/behavior/targeting/main
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/mech/behavior/on_mech (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # periodically check if the target is still visible and within range
 # find a new target if not
 execute if predicate expansion:periodic/20 unless function expansion:mobs/mech/behavior/targeting/target_visible run function expansion:mobs/mech/behavior/targeting/find_new

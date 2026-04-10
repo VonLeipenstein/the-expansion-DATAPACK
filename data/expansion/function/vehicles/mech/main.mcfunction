@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/main
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:mobs/mech/main (1 caller) [WARN side/down 4]
+# - function expansion:vehicles/main (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # make torso rotate with the pilot
 execute anchored eyes rotated as @s on vehicle on vehicle positioned as @s on passengers if entity @s[tag=!aj.mech_legs.root,type=!interaction] positioned ^ ^ ^8 rotated as @s positioned ^ ^ ^40 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run rotate @s ~ 0
 

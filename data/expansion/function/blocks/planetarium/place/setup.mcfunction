@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/planetarium/place/setup
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/planetarium/place/init (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 setblock ~ ~ ~ minecraft:cobblestone{CustomName:{translate:"exp_blocks_planetarium_name",color:"dark_gray"}} replace
 
 # place the main block

@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/summon_rocket
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # sky access
 execute at @s unless predicate expansion:location/sky_access run return run say requires sky access
 

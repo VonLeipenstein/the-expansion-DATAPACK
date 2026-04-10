@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/demount
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 execute as @p if entity @s[gamemode=!creative] at @s run loot spawn ~ ~ ~ loot expansion:vehicles/mech
 
 execute store result entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{exp_item:{name:"mech"}}}}},limit=1,sort=nearest] Item.components."minecraft:custom_data".mech_left_id int 1 on passengers if entity @s[tag=exp.left_arm_control] run scoreboard players get @s exp.mech_action_id

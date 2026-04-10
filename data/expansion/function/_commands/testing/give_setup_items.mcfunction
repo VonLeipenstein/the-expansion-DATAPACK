@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:_commands/testing/give_setup_items
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # arc furnace
 give @s copper_ingot 2
 give @s coal

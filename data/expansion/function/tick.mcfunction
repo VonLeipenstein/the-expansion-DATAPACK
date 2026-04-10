@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:tick
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:tick_toggle (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # players
 execute as @a at @s run function expansion:player/main
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/propulsion/jumping/allowed
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/mech/propulsion/drive (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # only proceed if the jump input is given
 execute unless score @s exp.jump matches 1 run return fail
 

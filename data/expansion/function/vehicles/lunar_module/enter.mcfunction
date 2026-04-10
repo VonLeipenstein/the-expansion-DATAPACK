@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/lunar_module/enter
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/lunar_module/click_detection/rightclick (1 caller) [WARN side/down 1]
+# <<< generated function callers <<<
+
 execute on target run tag @s add exp.entering_module
 execute on target run tag @s add exp.inside_module
 execute on target run tag @s add exp.inside_vehicle

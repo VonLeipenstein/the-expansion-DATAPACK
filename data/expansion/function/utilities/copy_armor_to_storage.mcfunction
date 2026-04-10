@@ -1,3 +1,13 @@
+# >>> generated function callers >>>
+# Callers for expansion:utilities/copy_armor_to_storage
+# Total callers: 3 from 3 source(s)
+# Folder rule (function callers): 0/3 honored
+# Sources:
+# - function expansion:items/thermometer/use (1 caller) [WARN side/down 3]
+# - function expansion:spacesuits/extract_scores (1 caller) [WARN side/down 2]
+# - function expansion:spacesuits/get_armor_modules/init_loop (1 caller) [WARN side/down 3]
+# <<< generated function callers <<<
+
 # return if the data is already present to prevent successive player nbt retrieval
 execute if data storage expansion:temp player.armor run return fail
 

@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/enhancer/upgrade/apply/check_allowed/storage_loop
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:blocks/enhancer/upgrade/apply/check_allowed/init_loop (1 caller) [OK same-folder]
+# - function expansion:blocks/enhancer/upgrade/apply/check_allowed/storage_loop (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # check the values for this entry
 execute store result score #allowed exp.unique_id run data get storage expansion:temp allowed[0]
 execute if score #allowed exp.unique_id = #temp exp.unique_id run return run scoreboard players reset #allowed exp.unique_id

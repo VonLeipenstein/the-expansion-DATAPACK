@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:_commands/give/modules
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 setblock ~ ~ ~ chest{CustomName:{text:"Upgrades",color:"#00FFEE"}} replace
 
 loot insert ~ ~ ~ loot expansion:blocks/enhancer

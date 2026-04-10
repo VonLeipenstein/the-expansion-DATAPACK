@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/launch_pad/place/setup_buttons
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/launch_pad/place/setup (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # summon destination buttons:
 summon interaction ~ ~ ~ {Tags:["exp.launch_pad_hitbox","exp.destination_left"],height:0.5,width:0.5,response:1b,Passengers:[{id:"minecraft:snowball",Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b}]}
 summon interaction ~ ~ ~ {Tags:["exp.launch_pad_hitbox","exp.destination_right"],height:0.5,width:0.5,response:1b,Passengers:[{id:"minecraft:snowball",Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b}]}

@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/buggy/anim_control/spin
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # Initialize
 data modify storage expansion:rotation in.rotation set value [0f,0f,0f]
 data modify storage expansion:rotation transformation_old set from entity @s transformation

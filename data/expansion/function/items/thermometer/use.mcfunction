@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/thermometer/use
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:player/rightclick/tools (1 caller) [WARN side/down 4]
+# <<< generated function callers <<<
+
 # copy armor to storage for less player nbt operations
 function expansion:utilities/copy_armor_to_storage
 

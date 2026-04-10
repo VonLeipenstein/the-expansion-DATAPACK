@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/spaceship/markers/summon_markers
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 summon minecraft:item_display ~ ~ ~ {CustomNameVisible:1b,teleport_duration:1,Tags:["exp.planet_marker","exp.earth_marker"],CustomName:{text:"Earth",color:"green"},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;162119669,710429448,-1690736789,-84268047],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5MTk2YjMzMGM2Yjg5NjJmMjNhZDU2MjdmYjZlY2NlNDcyZWFmNWM5ZDQ0Zjc5MWY2NzA5YzdkMGY0ZGVjZSJ9fX0="}]}}}}
 summon minecraft:item_display ~ ~ ~ {CustomNameVisible:1b,teleport_duration:1,Tags:["exp.planet_marker","exp.moon_marker"],CustomName:{text:"The Moon",color:"white"},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;863215294,-1780921430,-1773460256,1982824210],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwYTFhN2JiMDdmZGI0ZTZhODZlMzQxODE2ZTg4NDNkZGFmN2NmMzcxM2EzNjY2ZDc0YjcyZjk4NjE5ZjA2MyJ9fX0="}]}}}}
 summon minecraft:item_display ~ ~ ~ {CustomNameVisible:1b,teleport_duration:1,Tags:["exp.planet_marker","exp.mars_marker"],CustomName:{text:"Mars",color:"red"},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;1973206117,-1615312043,-1354591611,1559144542],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM3ODU3ZTE2OWVkMzdiMjQ4OTVjM2ZkZTQyNjJkYWU2ZTg3NDI4NjFlYjczZWRhMTU0M2NiNGMwM2E2N2UzIn19fQ=="}]}}}}

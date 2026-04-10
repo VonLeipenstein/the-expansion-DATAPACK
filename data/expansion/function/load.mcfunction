@@ -1,3 +1,9 @@
+# >>> generated function callers >>>
+# Callers for expansion:load
+# Total callers: 0
+# None found
+# <<< generated function callers <<<
+
 # load all the scores
 function expansion:load_scores
 

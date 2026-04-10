@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/buggy/propulsion/drive
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/buggy/inside (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
 # store rotation data and assign it to a scoreboard value
 execute store result score #angle exp.math run data get entity @s Rotation[0] 1
 scoreboard players operation #input exp.math = #angle exp.math

@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/cryoblaster/get_mode
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 2/2 honored
+# Sources:
+# - function expansion:items/cryoblaster/switch_modes (1 caller) [OK same-folder]
+# - function expansion:items/cryoblaster/use (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 scoreboard players set #temp exp.hold_value 0
 
 # extract the current mode from the item

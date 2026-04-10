@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/transporter/place/init
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/place (1 caller) [OK above +2]
+# <<< generated function callers <<<
+
 # obtain the room id for display on the block
 execute store result score #temp exp.unique_id run data get entity @s SelectedItem.components."minecraft:custom_data".room_id
 

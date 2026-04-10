@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/lacrymae_extractor/extract/finish
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/lacrymae_extractor/extract/main (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # particles
 playsound minecraft:block.brewing_stand.brew block @a ~ ~ ~
 particle minecraft:cloud ~ ~0.7 ~ 0.3 0.3 0.3 0 50

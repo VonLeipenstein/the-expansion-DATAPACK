@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket/launch_init
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:vehicles/rocket/click_detection/buttons/launch_button_push (1 caller) [WARN side/down 2]
+# <<< generated function callers <<<
+
 # check for an obsidian launchpad
 execute unless function expansion:vehicles/rocket/has_launchpad on passengers if entity @s[tag=exp.rocket_seat] on passengers if entity @s[type=player] run return run function expansion:utilities/error_messages/launchpad
 

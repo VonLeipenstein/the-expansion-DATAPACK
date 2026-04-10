@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket/convert_to_module/root
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:solar_system/transitions/moon_earth/earth_to_moon (1 caller) [WARN side/down 6]
+# <<< generated function callers <<<
+
 # display
 execute on passengers if entity @s[type=item_display] run function expansion:vehicles/rocket/convert_to_module/display
 

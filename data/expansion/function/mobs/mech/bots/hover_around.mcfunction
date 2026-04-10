@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:mobs/mech/bots/hover_around
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:mobs/mech/bots/switching (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # heal the mech for each bot
 execute if predicate expansion:periodic/20 as @e[type=armor_stand,tag=exp.mech,distance=..0.01,limit=1] run function expansion:mobs/mech/health/heal
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/fabricator/recipes
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 0/1 honored
+# Sources:
+# - function expansion:blocks/fabricator/printing/check_recipes (1 caller) [WARN side/down 1]
+# <<< generated function callers <<<
+
 loot replace entity @s container.0 loot expansion:items/gui/filler
 data merge entity @s {transformation:{scale:[0.0f,0.0f,0.0f]}}
 

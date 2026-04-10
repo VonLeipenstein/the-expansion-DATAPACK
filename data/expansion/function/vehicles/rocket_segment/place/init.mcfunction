@@ -1,3 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/rocket_segment/place/init
+# Total callers: 3 from 2 source(s)
+# Folder rule (function callers): 0/2 honored
+# Sources:
+# - function expansion:blocks/launch_pad/interaction/rightclick (1 caller) [WARN side/down 6]
+# - function expansion:vehicles/rocket_segment/click_detection/rightclick (2 callers) [WARN side/down 2]
+# <<< generated function callers <<<
+
 # run as the entity that will be mounted by this new segment
 tag @s add exp.vehicle_segment
 

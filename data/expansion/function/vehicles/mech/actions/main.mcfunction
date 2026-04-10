@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:vehicles/mech/actions/main
+# Total callers: 2 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:vehicles/mech/inside (2 callers) [OK above +1]
+# <<< generated function callers <<<
+
 # prevent the action if the ammo is insufficient
 execute if function expansion:vehicles/mech/actions/reload/check run return run function expansion:vehicles/mech/actions/reload/no_ammo
 

@@ -1,3 +1,11 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/portal/activation/create_array
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:blocks/portal/activation/init (1 caller) [OK same-folder]
+# <<< generated function callers <<<
+
 # Create a default array.
 data modify storage expansion:portal init.portal_array set value [{matches:false,scale:1,facing:0f,dim:-1,core1:0,core2:0,core3:0,core4:0,core5:0,x:0.0d,dy:0.0d,y:0.0d,z:0.0d,bit0:false,bit1:false,bit2:false,bit3:false,bit4:false,bit5:false,bit6:false,bit7:false,bit8:false,bit9:false,bit10:false,bit11:false}]
 
