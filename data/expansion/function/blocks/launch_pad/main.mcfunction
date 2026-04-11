@@ -9,4 +9,4 @@
 # calculate the stats for the rocket so the text displays can easily retrieve them
 execute on passengers if entity @s[type=snowball] on origin at @s run function expansion:blocks/launch_pad/rocket/main
 
-execute if predicate expansion:periodic/5 on passengers if entity @s[type=minecraft:text_display] run function expansion:blocks/launch_pad/text_display/main
+execute if predicate expansion:periodic/5 run function expansion:blocks/launch_pad/text_display/main

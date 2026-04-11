@@ -1,0 +1,2 @@
+data modify storage expansion:temp launchpad.stats[11] set value {text:"Insufficient Fuel\nfor Round-trip\n\nRight-click Fuel\nTank segments with\na Fuel Canister to\nrefuel\n",color:"gold"}
+data modify storage expansion:temp launchpad.trip[5][0].color set value "gold"
