@@ -24,6 +24,7 @@ execute if predicate expansion:contents/rocket_segment/body run tag @s add exp.b
 execute if predicate expansion:contents/rocket_segment/bottom run tag @s add exp.bottom_segment
 # Set the ID tag for this segment
 execute if predicate expansion:contents/rocket_segment/control run tag @s add exp.control_segment
+execute if predicate expansion:contents/rocket_segment/fuel run function expansion:vehicles/rocket_segment/fuel/place
 
 # Get the segment scores
 execute store result score @s exp.mass on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.mass
@@ -32,17 +33,7 @@ execute store result score @s exp.fuel_max on passengers if entity @s[tag=exp.se
 execute store result score @s exp.engine_efficiency on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.efficiency
 
 # Merge the segment scores with the vehicle root
-scoreboard players operation #temp exp.mass = @s exp.mass
-scoreboard players operation #temp exp.engine_thrust = @s exp.engine_thrust
-scoreboard players operation #temp exp.engine_efficiency = @s exp.engine_efficiency
-scoreboard players operation #temp exp.fuel_max = @s exp.fuel_max
-scoreboard players operation #temp exp.fuel_level = @s exp.fuel_level
-execute if predicate expansion:riding/rocket_segment run function expansion:vehicles/rocket_segment/merge_stats_with_root
-scoreboard players reset #temp exp.mass
-scoreboard players reset #temp exp.engine_thrust
-scoreboard players reset #temp exp.engine_efficiency
-scoreboard players reset #temp exp.fuel_max
-scoreboard players reset #temp exp.fuel_level
+function expansion:vehicles/rocket_segment/merge_stats_with_root
 
 # Aesthetics
 execute at @s facing ~ ~-1 ~ run function expansion:blocks/rocket_parts/place_particles

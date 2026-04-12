@@ -15,7 +15,7 @@ function expansion:blocks/launch_pad/text_display/destination
 function expansion:blocks/launch_pad/text_display/trip
 
 # WARNINGS
-#execute if score #stat exp.fuel_level < #total_required exp.fuel_level run function expansion:blocks/launch_pad/text_display/warnings/fuel_level
+execute if score #stat exp.fuel_level < #total_required exp.fuel_level run function expansion:blocks/launch_pad/text_display/warnings/fuel_level
 execute if score #stat exp.fuel_max < #total_required exp.fuel_level run function expansion:blocks/launch_pad/text_display/warnings/fuel_capacity
 execute if score #destination exp.weight > #stat exp.engine_thrust run function expansion:blocks/launch_pad/text_display/warnings/weight
 

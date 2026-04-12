@@ -1,0 +1,15 @@
+[
+    {
+      "function": "minecraft:set_count",
+      "count": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#temp"
+        },
+        "score": "exp.hold_count"
+      },
+      "add": true
+    }
+  ]
+  

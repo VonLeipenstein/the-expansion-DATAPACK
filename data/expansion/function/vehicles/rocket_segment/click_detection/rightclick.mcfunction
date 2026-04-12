@@ -45,18 +45,28 @@ execute as @n[type=minecraft:interaction,tag=exp.clicked_entity,distance=..10] \
         run function expansion:utilities/hitbox/reset_click
 
 # ELSE IF
-execute if predicate expansion:holding/blocks/launch_pad \
+execute if predicate expansion:holding/items/rocket_propellant \
         as @n[type=minecraft:interaction,tag=exp.clicked_entity,distance=..10] \
         on vehicle \
-        if entity @s[tag=exp.rocket_segment,tag=exp.bottom_segment] \
-        unless predicate expansion:riding/launch_pad \
-        if entity @s[nbt={OnGround:1b}] \
         at @s \
-        align xyz positioned ~.5 ~ ~.5 \
-        as @p[tag=exp.clicking_player] \
-        if function expansion:blocks/place \
+        if entity @s[tag=exp.rocket_segment,tag=exp.fuel_segment] \
+        if function expansion:vehicles/rocket_segment/fuel/fuel \
         run return \
         run function expansion:utilities/hitbox/reset_click
+
+# # ELSE IF
+# execute if predicate expansion:holding/blocks/launch_pad \
+#         as @n[type=minecraft:interaction,tag=exp.clicked_entity,distance=..10] \
+#         on vehicle \
+#         if entity @s[tag=exp.rocket_segment,tag=exp.bottom_segment] \
+#         unless predicate expansion:riding/launch_pad \
+#         if entity @s[nbt={OnGround:1b}] \
+#         at @s \
+#         align xyz positioned ~.5 ~ ~.5 \
+#         as @p[tag=exp.clicking_player] \
+#         if function expansion:blocks/place \
+#         run return \
+#         run function expansion:utilities/hitbox/reset_click
 
 # ELSE
 function expansion:utilities/hitbox/reset_click

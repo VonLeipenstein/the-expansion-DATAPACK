@@ -1,19 +1,21 @@
-# >>> generated function callers >>>
-# Callers for expansion:vehicles/rocket_segment/merge_stats_with_root
-# Total callers: 3 from 3 source(s)
-# Folder rule (function callers): 2/3 honored
-# Sources:
-# - function expansion:vehicles/rocket_segment/destroy (1 caller) [OK same-folder]
-# - function expansion:vehicles/rocket_segment/merge_stats_with_root (1 caller) [OK same-folder]
-# - function expansion:vehicles/rocket_segment/place/setup (1 caller) [WARN side/down 1]
-# <<< generated function callers <<<
+scoreboard players operation #temp exp.mass = @s exp.mass
+scoreboard players operation #temp exp.engine_thrust = @s exp.engine_thrust
+scoreboard players operation #temp exp.engine_efficiency = @s exp.engine_efficiency
+scoreboard players operation #temp exp.fuel_max = @s exp.fuel_max
+scoreboard players operation #temp exp.fuel_level = @s exp.fuel_level
 
-# Check if this has a vehicle, if yes, select the vehicle
-execute if predicate expansion:riding/rocket_segment on vehicle on vehicle run return run function expansion:vehicles/rocket_segment/merge_stats_with_root
+# add or remove stat toggle
+execute if score #subtract exp.bool matches 1 run scoreboard players operation #temp exp.mass *= #-1 exp.const
+execute if score #subtract exp.bool matches 1 run scoreboard players operation #temp exp.engine_thrust *= #-1 exp.const
+execute if score #subtract exp.bool matches 1 run scoreboard players operation #temp exp.engine_efficiency *= #-1 exp.const
+execute if score #subtract exp.bool matches 1 run scoreboard players operation #temp exp.fuel_max *= #-1 exp.const
+execute if score #subtract exp.bool matches 1 run scoreboard players operation #temp exp.fuel_level *= #-1 exp.const
 
-# If not, merge the scores
-scoreboard players operation @s exp.mass += #temp exp.mass
-scoreboard players operation @s exp.engine_thrust += #temp exp.engine_thrust
-scoreboard players operation @s exp.engine_efficiency += #temp exp.engine_efficiency
-scoreboard players operation @s exp.fuel_max += #temp exp.fuel_max
-scoreboard players operation @s exp.fuel_level += #temp exp.fuel_level
+execute if predicate expansion:riding/rocket_segment run function expansion:vehicles/rocket_segment/merge_stats_with_root_loop
+scoreboard players reset #temp exp.mass
+scoreboard players reset #temp exp.engine_thrust
+scoreboard players reset #temp exp.engine_efficiency
+scoreboard players reset #temp exp.fuel_max
+scoreboard players reset #temp exp.fuel_level
+
+scoreboard players reset #subtract exp.bool
