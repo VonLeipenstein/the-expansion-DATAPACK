@@ -12,6 +12,7 @@ execute on passengers if entity @s[type=interaction] on passengers if entity @s[
 
 # drop this segment
 execute on passengers if entity @s[tag=exp.segment_display] run loot spawn ~ ~ ~ loot expansion:slot/contents
+execute as @e[type=item,nbt={Age:0s}] at @s run data merge entity @s {PickupDelay:0}
 
 # run segment specific destroys
 execute if entity @s[tag=exp.fuel_segment] run function expansion:vehicles/rocket_segment/fuel/destroy

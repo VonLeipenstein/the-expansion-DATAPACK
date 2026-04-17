@@ -6,12 +6,14 @@
 # - function expansion:vehicles/rocket_segment/inside (1 caller) [OK above +1]
 # <<< generated function callers <<<
 
-#execute unless score @s exp.fuel_max matches 1.. run return run say this rocket has no fuel tank
-#execute unless score @s exp.fuel_level matches 1.. run return run say This rockets fuel tank is empty
+# checks if the rocket is allowed to launch
 
-execute if score @s exp.weight > @s exp.engine_thrust run say this rocket is too heavy
-execute if score @s exp.weight > @s exp.engine_thrust run return fail
+# A rocket may launch if it has fuel and an engine.
+# However, it will explode without a nose cone, scattering the individual parts.
+# If it has insufficient launch fuel, it will not reach orbit and fall back
 
-scoreboard players set @s exp.dimension 1
+# rocket is not launching or landing
+execute if entity @s[tag=exp.launching] run return fail
+execute if entity @s[tag=exp.landing] run return fail
 
 return 1

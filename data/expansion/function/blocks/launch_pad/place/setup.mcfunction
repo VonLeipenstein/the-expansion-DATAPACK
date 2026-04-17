@@ -40,7 +40,12 @@ execute at @s run function expansion:blocks/launch_pad/place/setup_buttons
 scoreboard players add #global exp.pad_id 1
 scoreboard players operation @s exp.pad_id = #global exp.pad_id
 
-scoreboard players operation @s exp.hold_value = #earth exp.gravity_id
-execute if dimension minecraft:overworld run scoreboard players operation @s exp.hold_value = #moon exp.gravity_id
+execute if dimension minecraft:overworld run scoreboard players operation @s exp.origin = #earth exp.gravity_id
+execute if dimension expansion:moon run scoreboard players operation @s exp.origin = #moon exp.gravity_id
+execute if dimension expansion:mars run scoreboard players operation @s exp.origin = #mars exp.gravity_id
+execute if dimension expansion:venus run scoreboard players operation @s exp.origin = #venus exp.gravity_id
+
+scoreboard players operation @s exp.destination = @s exp.origin
+function expansion:blocks/launch_pad/interaction/button_right
 
 forceload add ~ ~

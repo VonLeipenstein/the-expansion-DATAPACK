@@ -7,15 +7,12 @@
 # - function expansion:blocks/launch_pad/interaction/rightclick (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
-scoreboard players remove @s exp.hold_value 1
+scoreboard players remove @s exp.destination 1
 
-execute if score @s exp.hold_value matches -1 run scoreboard players set @s exp.hold_value 3
+execute if score @s exp.destination matches -1 run scoreboard players set @s exp.destination 3
 
-execute if dimension minecraft:overworld if score @s exp.hold_value = #earth exp.gravity_id run scoreboard players remove @s exp.hold_value 1
-execute if dimension expansion:moon if score @s exp.hold_value = #moon exp.gravity_id run scoreboard players remove @s exp.hold_value 1
-execute if dimension expansion:mars if score @s exp.hold_value = #mars exp.gravity_id run scoreboard players remove @s exp.hold_value 1
-execute if dimension expansion:venus if score @s exp.hold_value = #venus exp.gravity_id run scoreboard players remove @s exp.hold_value 1
+execute if score @s exp.origin = @s exp.destination run scoreboard players remove @s exp.destination 1
 
-execute if score @s exp.hold_value matches -1 run scoreboard players set @s exp.hold_value 3
+execute if score @s exp.destination matches -1 run scoreboard players set @s exp.destination 3
 
 return 1

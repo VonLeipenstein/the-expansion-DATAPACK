@@ -1,12 +1,5 @@
-# >>> generated function callers >>>
-# Callers for expansion:blocks/launch_pad/text_display/main
-# Total callers: 1 from 1 source(s)
-# Folder rule (function callers): 1/1 honored
-# Sources:
-# - function expansion:blocks/launch_pad/main (1 caller) [OK above +1]
-# <<< generated function callers <<<
-
-function expansion:blocks/launch_pad/calculate_stats
+# calculate all stats for the rocket
+function expansion:blocks/launch_pad/text_display/calculate_stats
 
 # Set up text data for stats, origin, destination, and trip
 function expansion:blocks/launch_pad/text_display/stats
@@ -29,10 +22,11 @@ execute unless score #top exp.hold_count matches 1.. run function expansion:bloc
 execute unless score #body exp.hold_count matches 1.. run function expansion:blocks/launch_pad/text_display/errors/missing_body
 execute unless score #bottom exp.hold_count matches 1.. run function expansion:blocks/launch_pad/text_display/errors/missing_engines
 
-# Merge text data with entity
+# Merge text data with entities
 execute on passengers if entity @s[tag=exp.rocket_diagnostics] run data modify entity @s text set from storage expansion:temp launchpad.stats
 execute on passengers if entity @s[tag=exp.rocket_destination] run data modify entity @s text set from storage expansion:temp launchpad.destination
 execute on passengers if entity @s[tag=exp.rocket_origin] run data modify entity @s text set from storage expansion:temp launchpad.origin
 execute on passengers if entity @s[tag=exp.rocket_trip] run data modify entity @s text set from storage expansion:temp launchpad.trip
 
-function expansion:blocks/launch_pad/reset_scores
+# Reset scores
+function expansion:blocks/launch_pad/text_display/reset_scores

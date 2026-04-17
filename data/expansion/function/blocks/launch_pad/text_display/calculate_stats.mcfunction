@@ -16,21 +16,21 @@ execute store result score #stat exp.fuel_level on passengers on passengers if e
 execute store result score #stat exp.fuel_max on passengers on passengers if entity @s[tag=exp.rocket_segment] run scoreboard players get @s exp.fuel_max
 
 # trip fuel requirement
-execute if dimension minecraft:overworld if score @s exp.hold_value = #moon exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #overworld_to_moon_required exp.fuel_level
-execute if dimension minecraft:overworld if score @s exp.hold_value = #mars exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #overworld_to_mars_required exp.fuel_level
-execute if dimension minecraft:overworld if score @s exp.hold_value = #venus exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #overworld_to_venus_required exp.fuel_level
+execute if score @s exp.origin = #earth exp.gravity_id if score @s exp.destination = #moon exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #overworld_to_moon_required exp.fuel_level
+execute if score @s exp.origin = #earth exp.gravity_id if score @s exp.destination = #mars exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #overworld_to_mars_required exp.fuel_level
+execute if score @s exp.origin = #earth exp.gravity_id if score @s exp.destination = #venus exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #overworld_to_venus_required exp.fuel_level
 
-execute if dimension expansion:moon if score @s exp.hold_value = #earth exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #moon_to_overworld_required exp.fuel_level
-execute if dimension expansion:moon if score @s exp.hold_value = #mars exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #moon_to_mars_required exp.fuel_level
-execute if dimension expansion:moon if score @s exp.hold_value = #venus exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #moon_to_venus_required exp.fuel_level
+execute if score @s exp.origin = #moon exp.gravity_id if score @s exp.destination = #earth exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #moon_to_overworld_required exp.fuel_level
+execute if score @s exp.origin = #moon exp.gravity_id if score @s exp.destination = #mars exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #moon_to_mars_required exp.fuel_level
+execute if score @s exp.origin = #moon exp.gravity_id if score @s exp.destination = #venus exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #moon_to_venus_required exp.fuel_level
 
-execute if dimension expansion:mars if score @s exp.hold_value = #earth exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #mars_to_overworld_required exp.fuel_level
-execute if dimension expansion:mars if score @s exp.hold_value = #moon exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #mars_to_moon_required exp.fuel_level
-execute if dimension expansion:mars if score @s exp.hold_value = #venus exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #mars_to_venus_required exp.fuel_level
+execute if score @s exp.origin = #mars exp.gravity_id if score @s exp.destination = #earth exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #mars_to_overworld_required exp.fuel_level
+execute if score @s exp.origin = #mars exp.gravity_id if score @s exp.destination = #moon exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #mars_to_moon_required exp.fuel_level
+execute if score @s exp.origin = #mars exp.gravity_id if score @s exp.destination = #venus exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #mars_to_venus_required exp.fuel_level
 
-execute if dimension expansion:venus if score @s exp.hold_value = #earth exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #venus_to_overworld_required exp.fuel_level
-execute if dimension expansion:venus if score @s exp.hold_value = #moon exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #venus_to_moon_required exp.fuel_level
-execute if dimension expansion:venus if score @s exp.hold_value = #mars exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #venus_to_mars_required exp.fuel_level
+execute if score @s exp.origin = #venus exp.gravity_id if score @s exp.destination = #earth exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #venus_to_overworld_required exp.fuel_level
+execute if score @s exp.origin = #venus exp.gravity_id if score @s exp.destination = #moon exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #venus_to_moon_required exp.fuel_level
+execute if score @s exp.origin = #venus exp.gravity_id if score @s exp.destination = #mars exp.gravity_id run scoreboard players operation #trip_required exp.fuel_level = #venus_to_mars_required exp.fuel_level
 
 # get origin gravity score
 scoreboard players operation #whole exp.engine_efficiency = #stat exp.engine_efficiency
@@ -46,10 +46,10 @@ execute store result score #origin_whole exp.gravity run scoreboard players oper
 execute store result score #origin_decimal exp.gravity run scoreboard players operation #origin_decimal exp.gravity %= #100 exp.const
 
 # get destination gravity score
-execute if score @s exp.hold_value = #earth exp.gravity_id in minecraft:overworld store result score #destination exp.gravity run function expansion:mechanics/gravity/get_score
-execute if score @s exp.hold_value = #moon exp.gravity_id in expansion:moon store result score #destination exp.gravity run function expansion:mechanics/gravity/get_score
-execute if score @s exp.hold_value = #mars exp.gravity_id in expansion:mars store result score #destination exp.gravity run function expansion:mechanics/gravity/get_score
-execute if score @s exp.hold_value = #venus exp.gravity_id in expansion:venus store result score #destination exp.gravity run function expansion:mechanics/gravity/get_score
+execute if score @s exp.destination = #earth exp.gravity_id in minecraft:overworld store result score #destination exp.gravity run function expansion:mechanics/gravity/get_score
+execute if score @s exp.destination = #moon exp.gravity_id in expansion:moon store result score #destination exp.gravity run function expansion:mechanics/gravity/get_score
+execute if score @s exp.destination = #mars exp.gravity_id in expansion:mars store result score #destination exp.gravity run function expansion:mechanics/gravity/get_score
+execute if score @s exp.destination = #venus exp.gravity_id in expansion:venus store result score #destination exp.gravity run function expansion:mechanics/gravity/get_score
 scoreboard players operation #destination_whole exp.gravity = #destination exp.gravity
 scoreboard players operation #destination_decimal exp.gravity = #destination exp.gravity
 execute store result score #destination_whole exp.gravity run scoreboard players operation #destination_whole exp.gravity /= #100 exp.const

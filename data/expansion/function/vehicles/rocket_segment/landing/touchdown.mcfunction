@@ -8,7 +8,9 @@
 
 tag @s remove exp.landing
 
+#execute if score @s exp.dy matches ..-20 run function expansion:vehicles/rocket_segment/landing/crash
+
 # mount a launch pad, if there is any
-ride @s mount @e[type=minecraft:item_display,tag=exp.launch_pad,distance=..2,limit=1]
+ride @s mount @e[type=minecraft:interaction,tag=exp.launch_pad_hitbox,distance=..2,limit=1]
 
 execute facing ~ ~1 ~ run function expansion:vehicles/rocket_segment/landing/land_particles

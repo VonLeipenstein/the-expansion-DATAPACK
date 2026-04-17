@@ -70,6 +70,8 @@ scoreboard objectives add exp.counter_1 dummy
 scoreboard objectives add exp.counter_2 dummy
 scoreboard objectives add exp.hold_count dummy
 # position
+scoreboard objectives add exp.origin dummy
+scoreboard objectives add exp.destination dummy
 scoreboard objectives add exp.dimension dummy
 scoreboard objectives add exp.rotation dummy
 scoreboard objectives add exp.x dummy

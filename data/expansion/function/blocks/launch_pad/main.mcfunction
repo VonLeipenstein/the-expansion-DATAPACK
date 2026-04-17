@@ -6,7 +6,12 @@
 # - function expansion:blocks/main (1 caller) [OK above +1]
 # <<< generated function callers <<<
 
-# calculate the stats for the rocket so the text displays can easily retrieve them
-execute on passengers if entity @s[type=snowball] on origin at @s run function expansion:blocks/launch_pad/rocket/main
+# ticks as the rocket bound to this launchpad
+# execute on passengers if entity @s[type=snowball] on origin at @s run function expansion:blocks/launch_pad/rocket/main
 
-execute if predicate expansion:periodic/5 run function expansion:blocks/launch_pad/text_display/main
+# Periodic main functions (updating text displays, checkling launch requirements)
+execute if predicate expansion:periodic/5 run function expansion:blocks/launch_pad/main_5t
+
+# Keep the origin and destination planet up to date
+execute on passengers if entity @s[type=interaction] on passengers if entity @s[tag=exp.rocket_segment] store result score @s exp.origin on vehicle on vehicle run scoreboard players get @s exp.origin
+execute on passengers if entity @s[type=interaction] on passengers if entity @s[tag=exp.rocket_segment] store result score @s exp.destination on vehicle on vehicle run scoreboard players get @s exp.destination

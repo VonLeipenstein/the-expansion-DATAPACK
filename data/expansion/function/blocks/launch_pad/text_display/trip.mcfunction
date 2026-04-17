@@ -89,20 +89,22 @@ execute unless score #temp exp.counter_1 matches 4 run return run data modify st
     {text:"Build a valid\nRocket before\ncalculating fuel\nrequirements\nfor your trip\n\n\n\n\n\n",underlined:false}\
 ]
 
-execute if score @s exp.hold_value = #earth exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][2] set value {text:"Earth"}
-execute if score @s exp.hold_value = #moon exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][2] set value {text:"The Moon"}
-execute if score @s exp.hold_value = #mars exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][2] set value {text:"Mars"}
-execute if score @s exp.hold_value = #venus exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][2] set value {text:"Venus"}
-execute if dimension minecraft:overworld run data modify storage expansion:temp launchpad.trip[3][2][1][0] set value {text:"Earth"}
-execute if dimension expansion:moon run data modify storage expansion:temp launchpad.trip[3][2][1][0] set value {text:"The Moon"}
-execute if dimension expansion:mars run data modify storage expansion:temp launchpad.trip[3][2][1][0] set value {text:"Mars"}
-execute if dimension expansion:venus run data modify storage expansion:temp launchpad.trip[3][2][1][0] set value {text:"Venus"}
+execute if score @s exp.destination = #earth exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][2] set value {text:"Earth"}
+execute if score @s exp.destination = #moon exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][2] set value {text:"The Moon"}
+execute if score @s exp.destination = #mars exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][2] set value {text:"Mars"}
+execute if score @s exp.destination = #venus exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][2] set value {text:"Venus"}
 
-execute if score @s exp.hold_value = #earth exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][0] set value {text:"Earth"}
-execute if score @s exp.hold_value = #moon exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][0] set value {text:"The Moon"}
-execute if score @s exp.hold_value = #mars exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][0] set value {text:"Mars"}
-execute if score @s exp.hold_value = #venus exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][0] set value {text:"Venus"}
-execute if dimension minecraft:overworld run data modify storage expansion:temp launchpad.trip[3][6][1][2] set value {text:"Earth"}
-execute if dimension expansion:moon run data modify storage expansion:temp launchpad.trip[3][6][1][2] set value {text:"The Moon"}
-execute if dimension expansion:mars run data modify storage expansion:temp launchpad.trip[3][6][1][2] set value {text:"Mars"}
-execute if dimension expansion:venus run data modify storage expansion:temp launchpad.trip[3][6][1][2] set value {text:"Venus"}
+execute if score @s exp.origin = #earth exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][0] set value {text:"Earth"}
+execute if score @s exp.origin = #moon exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][0] set value {text:"The Moon"}
+execute if score @s exp.origin = #mars exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][0] set value {text:"Mars"}
+execute if score @s exp.origin = #venus exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][2][1][0] set value {text:"Venus"}
+
+execute if score @s exp.destination = #earth exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][0] set value {text:"Earth"}
+execute if score @s exp.destination = #moon exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][0] set value {text:"The Moon"}
+execute if score @s exp.destination = #mars exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][0] set value {text:"Mars"}
+execute if score @s exp.destination = #venus exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][0] set value {text:"Venus"}
+
+execute if score @s exp.origin = #earth exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][2] set value {text:"Earth"}
+execute if score @s exp.origin = #moon exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][2] set value {text:"The Moon"}
+execute if score @s exp.origin = #mars exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][2] set value {text:"Mars"}
+execute if score @s exp.origin = #venus exp.gravity_id run data modify storage expansion:temp launchpad.trip[3][6][1][2] set value {text:"Venus"}
