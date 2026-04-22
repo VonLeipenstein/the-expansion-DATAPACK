@@ -37,7 +37,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"rocket_segment\",crafting_count:1,max_stack_size:64,expansion_coas:1b,exp_tool:1b},rocket_segment:{type:\"bottom\",id:\"engine\",stats:{mass:10,fuel:0,thrust:40,efficiency:2}}}"
+              "tag": "{exp_item:{name:\"rocket_segment\",crafting_count:1,max_stack_size:64,expansion_coas:1b,exp_tool:1b},rocket_segment:{type:\"bottom\",id:\"engine\",stats:{mass:10,capacity:0,thrust:40,efficiency:2}}}"
             },
             {
               "function": "minecraft:set_lore",

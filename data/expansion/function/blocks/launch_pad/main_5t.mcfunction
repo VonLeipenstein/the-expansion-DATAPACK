@@ -1,5 +1,5 @@
-# calculate all stats for the rocket
-function expansion:blocks/launch_pad/text_display/calculate_stats
+# calculate all stats for the rocket (as the rocket)
+execute on passengers on passengers if entity @s[tag=exp.rocket_segment] run function expansion:vehicles/rocket_segment/get_stat/all
 
 # Set up text data for stats, origin, destination, and trip
 function expansion:blocks/launch_pad/text_display/stats

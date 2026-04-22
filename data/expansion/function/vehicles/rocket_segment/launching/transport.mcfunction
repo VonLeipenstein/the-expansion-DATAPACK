@@ -9,6 +9,11 @@
 # start landing sequence
 function expansion:vehicles/rocket_segment/landing/init
 
+# consume the trip fuel
+execute store result score #temp exp.fuel_level run function expansion:vehicles/rocket_segment/get_stat/trip_cost
+scoreboard players operation @s exp.fuel_level -= #temp exp.fuel_level
+scoreboard players reset #temp exp.fuel_level
+
 # teleport the rocket to the dimension specified in the destination score
 execute if score @s exp.destination matches 0 in minecraft:overworld run tp @s ~ 500 ~
 execute if score @s exp.destination matches 1 in expansion:moon run tp @s ~ 500 ~

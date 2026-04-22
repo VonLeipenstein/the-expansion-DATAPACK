@@ -26,15 +26,6 @@ execute if predicate expansion:contents/rocket_segment/bottom run tag @s add exp
 execute if predicate expansion:contents/rocket_segment/control run tag @s add exp.control_segment
 execute if predicate expansion:contents/rocket_segment/fuel run function expansion:vehicles/rocket_segment/fuel/place
 
-# Get the segment scores
-execute store result score @s exp.mass on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.mass
-execute store result score @s exp.engine_thrust on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.thrust
-execute store result score @s exp.fuel_max on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.fuel
-execute store result score @s exp.engine_efficiency on passengers if entity @s[tag=exp.segment_display] run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.efficiency
-
-# Merge the segment scores with the vehicle root
-function expansion:vehicles/rocket_segment/merge_stats_with_root
-
 # Aesthetics
 execute at @s facing ~ ~-1 ~ run function expansion:blocks/rocket_parts/place_particles
 execute as @p[tag=exp.clicking_player] run playsound minecraft:block.metal.place block @s

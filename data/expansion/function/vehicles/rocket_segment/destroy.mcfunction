@@ -17,10 +17,6 @@ execute as @e[type=item,nbt={Age:0s}] at @s run data merge entity @s {PickupDela
 # run segment specific destroys
 execute if entity @s[tag=exp.fuel_segment] run function expansion:vehicles/rocket_segment/fuel/destroy
 
-# remove my segment from the root stats
-scoreboard players set #subtract exp.bool 1
-function expansion:vehicles/rocket_segment/merge_stats_with_root
-
 # destroy the rocket segment stack
 execute on passengers if entity @s[tag=exp.segment_display] run kill @s
 execute on passengers if entity @s[tag=exp.rocketsegment_rcdet] run kill @s
