@@ -7,6 +7,8 @@
 # - function expansion:vehicles/rocket_segment/destroy (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
+execute on vehicle run tag @s add exp.reload_signal
+
 # recursively break mounted parts
 execute on passengers if entity @s[type=interaction] on passengers if entity @s[tag=exp.rocket_segment] at @s run function expansion:vehicles/rocket_segment/destroy
 
@@ -22,3 +24,5 @@ execute on passengers if entity @s[tag=exp.segment_display] run kill @s
 execute on passengers if entity @s[tag=exp.rocketsegment_rcdet] run kill @s
 execute on passengers if entity @s[tag=exp.fuel_storage] run kill @s
 kill @s
+
+execute as @n[tag=exp.reload_signal,distance=..10] run function expansion:vehicles/rocket_segment/reload_launchpad

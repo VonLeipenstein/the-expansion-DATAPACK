@@ -13,3 +13,5 @@ execute if score @s exp.origin = #mars exp.gravity_id if score @s exp.destinatio
 execute if score @s exp.origin = #venus exp.gravity_id if score @s exp.destination = #earth exp.gravity_id run return run scoreboard players operation #return exp.value = #venus_to_overworld_required exp.fuel_level
 execute if score @s exp.origin = #venus exp.gravity_id if score @s exp.destination = #moon exp.gravity_id run return run scoreboard players operation #return exp.value = #venus_to_moon_required exp.fuel_level
 execute if score @s exp.origin = #venus exp.gravity_id if score @s exp.destination = #mars exp.gravity_id run return run scoreboard players operation #return exp.value = #venus_to_mars_required exp.fuel_level
+
+return 0

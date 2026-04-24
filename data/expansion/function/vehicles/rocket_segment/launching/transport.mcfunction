@@ -6,19 +6,22 @@
 # - function expansion:vehicles/rocket_segment/launching/propulsion (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
-# start landing sequence
+# Start landing sequence
 function expansion:vehicles/rocket_segment/landing/init
 
-# consume the trip fuel
-execute store result score #temp exp.fuel_level run function expansion:vehicles/rocket_segment/get_stat/trip_cost
-scoreboard players operation @s exp.fuel_level -= #temp exp.fuel_level
-scoreboard players reset #temp exp.fuel_level
+# Consume the trip fuel
+execute store result score #remove exp.fuel_level run function expansion:vehicles/rocket_segment/get_stat/trip_cost
+tellraw @a [{"text":"trip cost: "},{"score":{"name":"#remove","objective":"exp.fuel_level"}},{"text":" fuel"}]
+function expansion:vehicles/rocket_segment/consume_fuel
 
-# teleport the rocket to the dimension specified in the destination score
+# Teleport the rocket to the dimension specified in the destination score
 execute if score @s exp.destination matches 0 in minecraft:overworld run tp @s ~ 500 ~
 execute if score @s exp.destination matches 1 in expansion:moon run tp @s ~ 500 ~
 execute if score @s exp.destination matches 2 in expansion:mars run tp @s ~ 500 ~
 execute if score @s exp.destination matches 3 in expansion:venus run tp @s ~ 500 ~
 
-# make the origin the new destination for the return launch
+# Make the origin the new destination for the return launch
+scoreboard players operation #temp exp.destination = @s exp.destination
 scoreboard players operation @s exp.destination = @s exp.origin
+scoreboard players operation @s exp.origin = #temp exp.destination
+scoreboard players reset #temp exp.destination

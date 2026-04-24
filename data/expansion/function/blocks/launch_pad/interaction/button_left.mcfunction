@@ -9,10 +9,12 @@
 
 scoreboard players remove @s exp.destination 1
 
-execute if score @s exp.destination matches -1 run scoreboard players set @s exp.destination 3
+execute if score @s exp.origin = @s exp.destination run scoreboard players remove @s exp.destination 1
+
+execute if score @s exp.destination matches ..-1 run scoreboard players set @s exp.destination 3
 
 execute if score @s exp.origin = @s exp.destination run scoreboard players remove @s exp.destination 1
 
-execute if score @s exp.destination matches -1 run scoreboard players set @s exp.destination 3
+function expansion:blocks/launch_pad/reload
 
 return 1

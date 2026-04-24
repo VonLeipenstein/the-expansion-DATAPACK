@@ -21,7 +21,9 @@ scoreboard players operation @s exp.timer_1 /= #temp exp.fuel_level
 scoreboard players reset #temp exp.y
 scoreboard players reset #temp exp.fuel_level
 
-tellraw @s [{"text":"interval: "},{"score":{"name":"@s","objective":"exp.timer_1"}},{"text":" blocks"}]
+scoreboard players reset @s exp.y
+
+tellraw @a [{"text":"interval: "},{"score":{"name":"@s","objective":"exp.timer_1"}},{"text":" blocks"},{"text":" (launch cost: "},{"score":{"name":"@s","objective":"exp.fuel_level"}},{"text":" fuel)"}]
 
 ride @s dismount
 tag @s add exp.launching

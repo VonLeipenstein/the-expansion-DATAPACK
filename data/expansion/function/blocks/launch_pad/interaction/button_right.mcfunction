@@ -9,10 +9,12 @@
 
 scoreboard players add @s exp.destination 1
 
-execute if score @s exp.destination matches 4 run scoreboard players set @s exp.destination 0
+execute if score @s exp.origin = @s exp.destination run scoreboard players add @s exp.destination 1
+
+execute if score @s exp.destination matches 4.. run scoreboard players set @s exp.destination 0
 
 execute if score @s exp.origin = @s exp.destination run scoreboard players add @s exp.destination 1
 
-execute if score @s exp.destination matches 4 run scoreboard players set @s exp.destination 0
+function expansion:blocks/launch_pad/reload
 
 return 1

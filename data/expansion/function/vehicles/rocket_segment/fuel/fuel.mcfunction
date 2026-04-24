@@ -10,16 +10,15 @@ scoreboard players operation #missing exp.fuel_level -= #temp exp.fuel_level
 execute if score #held exp.fuel_level > #missing exp.fuel_level run scoreboard players operation #held exp.fuel_level = #missing exp.fuel_level
 
 # update the segments fuel storage
-scoreboard players operation #temp exp.hold_count = #held exp.fuel_level
-execute on passengers if entity @s[tag=exp.segment_display] store result entity @s item.components."minecraft:custom_data".stats.fuel.level
-
+scoreboard players operation @s exp.fuel_level += #held exp.fuel_level
 
 # remove fuel count from player's hand
-scoreboard players operation #temp exp.hold_count *= #-1 exp.const
+scoreboard players operation #held exp.fuel_level *= #-1 exp.const
 execute as @p[tag=exp.clicking_player] run item modify entity @s[gamemode=!creative] weapon.mainhand expansion:utility/add_count_from_temp_score
+
+function expansion:vehicles/rocket_segment/reload_launchpad
 
 # reset used scores
 scoreboard players reset #temp exp.fuel_level
 scoreboard players reset #held exp.fuel_level
 scoreboard players reset #missing exp.fuel_level
-scoreboard players reset #temp exp.hold_count

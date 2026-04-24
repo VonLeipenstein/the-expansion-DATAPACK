@@ -24,4 +24,6 @@ execute as @n[type=minecraft:armor_stand,tag=exp.rocket_segment.new,distance=..0
 
 tag @s remove exp.vehicle_segment
 
+function expansion:vehicles/rocket_segment/reload_launchpad
+
 return 1
