@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "coordinate_scale": 1,
   "has_skylight": false,
@@ -44,4 +45,50 @@
       "min_inclusive": 0,
       "max_inclusive": 7
   }
+=======
+﻿{
+    "coordinate_scale":  1,
+    "has_skylight":  false,
+    "has_ceiling":  false,
+    "attributes":  {
+                       "visual/sun_angle":  180,
+                       "visual/moon_phase":  "first_quarter",
+                       "visual/cloud_color":  0,
+                       "visual/cloud_fog_end_distance":  0.0015,
+                       "visual/fog_color":  0,
+                       "visual/sky_color":  "#000000",
+                       "visual/sky_light_color":  "#ffffff",
+                       "visual/sky_light_factor":  1,
+                       "visual/ambient_particles":  {
+                                                        "argument":  [
+                                                                         {
+                                                                             "particle":  {
+                                                                                              "type":  "minecraft:end_rod"
+                                                                                          },
+                                                                             "probability":  0.01
+                                                                         }
+                                                                     ],
+                                                        "modifier":  "override"
+                                                    }
+                   },
+    "skybox":  "overworld",
+    "has_fixed_time":  false,
+    "cardinal_light":  "default",
+    "timelines":  [
+
+                  ],
+    "min_y":  128,
+    "height":  160,
+    "logical_height":  160,
+    "infiniburn":  "#minecraft:infiniburn_overworld",
+    "ambient_light":  1,
+    "monster_spawn_block_light_limit":  0,
+    "monster_spawn_light_level":  {
+                                      "type":  "minecraft:uniform",
+                                      "min_inclusive":  0,
+                                      "max_inclusive":  7
+                                  },
+    "has_ender_dragon_fight":  false
+>>>>>>> Stashed changes
 }
+

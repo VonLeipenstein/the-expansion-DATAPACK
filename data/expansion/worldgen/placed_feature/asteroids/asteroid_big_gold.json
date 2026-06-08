@@ -1,4 +1,7 @@
-{
-    "feature": "expansion:asteroids/asteroid_big_gold",
-    "placement": []
+﻿{
+    "feature":  "expansion:asteroids/asteroid_big_gold",
+    "placement":  [
+
+                  ]
 }
+

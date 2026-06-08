@@ -1,7 +1,11 @@
 # store player x rotation
 execute store result score #temp exp.rotation run data get entity @s Rotation[1] 1000
 # store current time
+<<<<<<< Updated upstream
 execute store result score #temp exp.time run time query daytime
+=======
+execute store result score #temp exp.time run time of minecraft:overworld query minecraft:day
+>>>>>>> Stashed changes
 scoreboard players operation #temp exp.time *= #1000 exp.const
 
 # calculate player angle ratio
@@ -23,4 +27,8 @@ execute if score @s exp.timer_1 matches 400 run function expansion:mechanics/eve
 
 # reset all used scoreboards
 scoreboard players reset #temp exp.time
+<<<<<<< Updated upstream
 scoreboard players reset #temp exp.rotation
+=======
+scoreboard players reset #temp exp.rotation
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "logical_height": 384,
   "infiniburn": "#minecraft:infiniburn_overworld",
@@ -35,4 +36,41 @@
       "min_inclusive": 0,
       "max_inclusive": 7
   }
+=======
+﻿{
+    "logical_height":  384,
+    "infiniburn":  "#minecraft:infiniburn_overworld",
+    "ambient_light":  0.1,
+    "attributes":  {
+                       "visual/moon_angle":  90,
+                       "visual/moon_phase":  "first_quarter",
+                       "visual/star_brightness":  1.0,
+                       "visual/star_angle":  0,
+                       "visual/cloud_color":  0,
+                       "visual/cloud_fog_end_distance":  0.0012,
+                       "visual/fog_color":  0,
+                       "visual/sky_color":  "#000000",
+                       "visual/sky_light_color":  "#ffffff",
+                       "visual/sky_light_factor":  1
+                   },
+    "skybox":  "overworld",
+    "has_fixed_time":  false,
+    "cardinal_light":  "default",
+    "timelines":  [
+
+                  ],
+    "min_y":  -64,
+    "height":  384,
+    "coordinate_scale":  1,
+    "has_skylight":  false,
+    "has_ceiling":  false,
+    "monster_spawn_block_light_limit":  0,
+    "monster_spawn_light_level":  {
+                                      "type":  "minecraft:uniform",
+                                      "min_inclusive":  0,
+                                      "max_inclusive":  7
+                                  },
+    "has_ender_dragon_fight":  false
+>>>>>>> Stashed changes
 }
+

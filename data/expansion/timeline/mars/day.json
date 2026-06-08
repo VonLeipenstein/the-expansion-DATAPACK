@@ -1,4 +1,8 @@
 {
+<<<<<<< Updated upstream
+=======
+    "clock": "minecraft:overworld",
+>>>>>>> Stashed changes
     "period_ticks": 24000,
     "tracks": {
         "minecraft:gameplay/sky_light_level": {
@@ -332,4 +336,8 @@
         ]
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

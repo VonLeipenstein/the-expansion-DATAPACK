@@ -1,4 +1,7 @@
-{
-    "feature": "expansion:asteroids/asteroid_small_lapis",
-    "placement": []
+﻿{
+    "feature":  "expansion:asteroids/asteroid_small_lapis",
+    "placement":  [
+
+                  ]
 }
+

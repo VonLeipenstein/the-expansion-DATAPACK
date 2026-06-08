@@ -1,4 +1,7 @@
-{
-    "feature": "expansion:asteroids/asteroid_small_ice",
-    "placement": []
+﻿{
+    "feature":  "expansion:asteroids/asteroid_small_ice",
+    "placement":  [
+
+                  ]
 }
+

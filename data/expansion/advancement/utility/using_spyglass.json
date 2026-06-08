@@ -5,8 +5,13 @@
         "conditions": {
           "player": [
             {
-              "condition": "minecraft:reference",
-              "name": "expansion:time/dark_night"
+              "condition": "minecraft:time_check",
+              "clock": "minecraft:overworld",
+              "value": {
+                "min": 13700,
+                "max": 22300
+              },
+              "period": 24000
             },
             {
               "condition": "minecraft:entity_properties",

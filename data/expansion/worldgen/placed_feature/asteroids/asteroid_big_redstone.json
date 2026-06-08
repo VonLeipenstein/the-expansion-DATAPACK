@@ -1,4 +1,7 @@
-{
-    "feature": "expansion:asteroids/asteroid_big_redstone",
-    "placement": []
+﻿{
+    "feature":  "expansion:asteroids/asteroid_big_redstone",
+    "placement":  [
+
+                  ]
 }
+

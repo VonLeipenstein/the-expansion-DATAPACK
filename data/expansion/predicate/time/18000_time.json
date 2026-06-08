@@ -1,4 +1,5 @@
 {
   "condition": "minecraft:time_check",
+  "clock": "minecraft:overworld",
   "value": 18000
 }

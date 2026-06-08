@@ -1,4 +1,7 @@
-{
-    "feature": "expansion:asteroids/asteroid_small_titanium",
-    "placement": []
+﻿{
+    "feature":  "expansion:asteroids/asteroid_small_titanium",
+    "placement":  [
+
+                  ]
 }
+
