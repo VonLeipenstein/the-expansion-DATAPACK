@@ -1,9 +1,5 @@
 {
     "env": {
-<<<<<<< Updated upstream
-       "gameVersion":"1.21.11"
-=======
        "gameVersion":"26.1.2"
->>>>>>> Stashed changes
     }
  }

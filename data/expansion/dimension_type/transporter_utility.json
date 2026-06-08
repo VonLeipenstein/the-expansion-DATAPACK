@@ -1,20 +1,3 @@
-<<<<<<< Updated upstream
-{
-  "coordinate_scale": 1,
-  "has_skylight": false,
-  "has_ceiling": false,
-  "min_y": 0,
-  "height": 256,
-  "logical_height": 256,
-  "infiniburn": "#minecraft:infiniburn_overworld",
-  "ambient_light": 1,
-  "monster_spawn_block_light_limit": 0,
-  "monster_spawn_light_level": {
-    "type": "minecraft:uniform",
-      "min_inclusive": 0,
-      "max_inclusive": 7
-  }
-=======
 ﻿{
     "coordinate_scale":  1,
     "has_skylight":  false,
@@ -31,6 +14,5 @@
                                       "max_inclusive":  7
                                   },
     "has_ender_dragon_fight":  false
->>>>>>> Stashed changes
 }
 

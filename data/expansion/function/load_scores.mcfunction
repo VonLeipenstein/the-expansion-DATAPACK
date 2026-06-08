@@ -45,11 +45,8 @@ scoreboard objectives add exp.passenger_count dummy
 scoreboard objectives add exp.mech_action_id dummy
 scoreboard objectives add exp.mech_action_dur dummy
 scoreboard objectives add exp.mech_action_anim dummy
-<<<<<<< Updated upstream
-=======
 scoreboard objectives add exp.mech_left_dur dummy
 scoreboard objectives add exp.mech_right_dur dummy
->>>>>>> Stashed changes
 # timers
 scoreboard objectives add exp.timer_1 dummy
 scoreboard objectives add exp.timer_2 dummy
@@ -150,8 +147,4 @@ scoreboard players set #-90000 exp.const -90000
 scoreboard players set #100000 exp.const 100000
 scoreboard players set #1000000 exp.const 1000000
 scoreboard players set #10000000 exp.const 10000000
-<<<<<<< Updated upstream
 scoreboard players set #13700000 exp.const 13700000
-=======
-scoreboard players set #13700000 exp.const 13700000
->>>>>>> Stashed changes
