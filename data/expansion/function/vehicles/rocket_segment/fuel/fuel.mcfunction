@@ -14,11 +14,14 @@ scoreboard players operation @s exp.fuel_level += #held exp.fuel_level
 
 # remove fuel count from player's hand
 scoreboard players operation #held exp.fuel_level *= #-1 exp.const
+scoreboard players operation #temp exp.hold_count = #held exp.fuel_level
 execute as @p[tag=exp.clicking_player] run item modify entity @s[gamemode=!creative] weapon.mainhand expansion:utility/add_count_from_temp_score
 
+# refresh the launchpad values
 function expansion:vehicles/rocket_segment/reload_launchpad
 
 # reset used scores
 scoreboard players reset #temp exp.fuel_level
 scoreboard players reset #held exp.fuel_level
 scoreboard players reset #missing exp.fuel_level
+scoreboard players reset #temp exp.hold_count

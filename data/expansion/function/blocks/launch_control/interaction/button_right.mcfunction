@@ -15,6 +15,6 @@ execute if score @s exp.destination matches 4.. run scoreboard players set @s ex
 
 execute if score @s exp.origin = @s exp.destination run scoreboard players add @s exp.destination 1
 
-function expansion:blocks/launch_pad/reload
+function expansion:blocks/launch_control/reload
 
 return 1

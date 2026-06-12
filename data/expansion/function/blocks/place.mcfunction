@@ -22,6 +22,7 @@ execute if predicate expansion:holding/blocks/tesla_coil run function expansion:
 execute if predicate expansion:holding/blocks/modstation run function expansion:blocks/modification_station/place/init
 execute if predicate expansion:holding/items/pocket_space run function expansion:blocks/transporter/place/init
 execute if predicate expansion:holding/blocks/launch_pad run function expansion:blocks/launch_pad/place/init
+execute if predicate expansion:holding/blocks/launch_control run function expansion:blocks/launch_control/place/init
 
 # remove one from the held item count
 item modify entity @s[gamemode=!creative] weapon.mainhand expansion:utility/reduce_count

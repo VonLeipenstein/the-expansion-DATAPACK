@@ -23,5 +23,5 @@ data modify storage expansion:owner data.current_UUID set from entity @s UUID
 execute on passengers if entity @s[tag=exp.right_link] on origin on passengers if entity @s[type=snowball] run function expansion:utilities/snowball_link/link_from_storage
 
 # position buttons
-execute at @s on passengers if entity @s[tag=exp.left_link] on origin run tp @s ^ ^1.25 ^1.3
-execute at @s on passengers if entity @s[tag=exp.right_link] on origin run tp @s ^0.7 ^1.25 ^1.3
+execute at @s on passengers if entity @s[tag=exp.left_link] on origin run tp @s ^ ^1.25 ^-0.3
+execute at @s on passengers if entity @s[tag=exp.right_link] on origin run tp @s ^0.7 ^1.25 ^-0.3

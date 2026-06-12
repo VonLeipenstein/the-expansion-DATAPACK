@@ -15,6 +15,6 @@ execute if score @s exp.destination matches ..-1 run scoreboard players set @s e
 
 execute if score @s exp.origin = @s exp.destination run scoreboard players remove @s exp.destination 1
 
-function expansion:blocks/launch_pad/reload
+function expansion:blocks/launch_control/reload
 
 return 1

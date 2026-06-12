@@ -8,7 +8,7 @@
 
 tag @s remove exp.landing
 
-execute if score @s exp.dy matches ..-200 run function expansion:vehicles/rocket_segment/landing/crash
+#execute if score @s exp.dy matches ..-200 run function expansion:vehicles/rocket_segment/landing/crash
 
 # mount a launch pad, if there is any
 ride @s mount @e[type=minecraft:interaction,tag=exp.launch_pad_hitbox,distance=..2,limit=1]
