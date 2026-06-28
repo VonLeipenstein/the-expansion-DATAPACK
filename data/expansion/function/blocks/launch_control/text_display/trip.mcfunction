@@ -76,7 +76,7 @@ data modify storage expansion:temp launchpad.trip set value \
 ]
 
 
-execute unless predicate expansion:passengers/rocket_segment run return run data modify storage expansion:temp launchpad.trip set value [{text:""}]
+execute on passengers if entity @s[tag=exp.pad_link] on origin unless predicate expansion:passengers/rocket_segment run return run data modify storage expansion:temp launchpad.trip set value [{text:""}]
 
 scoreboard players reset #temp exp.counter_1
 execute if score #fuel exp.hold_count matches 1.. run scoreboard players add #temp exp.counter_1 1

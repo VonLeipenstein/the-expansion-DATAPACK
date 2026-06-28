@@ -7,8 +7,8 @@
 # <<< generated function callers <<<
 
 # summon destination buttons:
-summon interaction ~ ~ ~ {Tags:["exp.launch_pad_hitbox","exp.destination_left"],height:0.2,width:0.2,response:1b,Passengers:[{id:"minecraft:snowball",Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b}]}
-summon interaction ~ ~ ~ {Tags:["exp.launch_pad_hitbox","exp.destination_right"],height:0.2,width:0.2,response:1b,Passengers:[{id:"minecraft:snowball",Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b}]}
+summon interaction ~ ~ ~ {Tags:["exp.launch_control_hitbox","exp.destination_left"],height:0.2,width:0.2,response:1b,Passengers:[{id:"minecraft:snowball",Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b}]}
+summon interaction ~ ~ ~ {Tags:["exp.launch_control_hitbox","exp.destination_right"],height:0.2,width:0.2,response:1b,Passengers:[{id:"minecraft:snowball",Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b}]}
 
 # link launchpad to buttons
 execute as @n[type=interaction,tag=exp.destination_left,distance=..0.1] run data modify storage expansion:owner data.current_UUID set from entity @s UUID

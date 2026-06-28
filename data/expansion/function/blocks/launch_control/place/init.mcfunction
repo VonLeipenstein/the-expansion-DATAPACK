@@ -12,19 +12,18 @@ summon minecraft:item_display ~ ~ ~ {\
     Tags:["exp.launch_control","exp.launch_control.new","exp.block","smithed.block"],\
     transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,1.0f,0.0f],scale:[2.0f,2.0f,2.0f]},\
     Passengers:[\
-        {id:"minecraft:text_display",Tags:["exp.rocket_diagnostics_title"],background:0,alignment:"center",text:[{text:"Diagnostics",underlined:true,bold:true}]},\
+        {id:"minecraft:text_display",Tags:["exp.rocket_diagnostics_title"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.rocket_diagnostics"],background:0,alignment:"left"},\
-        {id:"minecraft:text_display",Tags:["exp.rocket_origin_title"],background:0,alignment:"center",text:[{text:""},{text:"Current Planet",underlined:true,bold:true},{text:"\n\n\n\n\n\n"},{text:"Earth",color:"green"},{text:"\n"}]},\
+        {id:"minecraft:text_display",Tags:["exp.rocket_origin_title"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.rocket_origin_texture"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.rocket_origin"],background:0,alignment:"right"},\
-        {id:"minecraft:text_display",Tags:["exp.rocket_destination_title"],background:0,alignment:"center",text:[{text:""},{text:"Select Destination",underlined:true,bold:true},{text:"\n\n\n\n\n\n"},{text:"Earth",color:"green"},{text:"\n"}]},\
+        {id:"minecraft:text_display",Tags:["exp.rocket_destination_title"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.rocket_destination_texture"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.rocket_destination"],background:0,alignment:"right"},\
         {id:"minecraft:text_display",Tags:["exp.destination_left"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.destination_right"],background:0,alignment:"center"},\
-        {id:"minecraft:text_display",Tags:["exp.rocket_trip_title"],background:0,alignment:"center",text:[{text:"Fuel Costs",underlined:true,bold:true}]},\
+        {id:"minecraft:text_display",Tags:["exp.rocket_trip_title"],background:0,alignment:"center"},\
         {id:"minecraft:text_display",Tags:["exp.rocket_trip"],background:0,alignment:"left"},\
-        {id:"minecraft:snowball",Tags:["exp.pad_link"],Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b},\
         {id:"minecraft:snowball",Tags:["exp.button_link","exp.left_link"],Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b},\
         {id:"minecraft:snowball",Tags:["exp.button_link","exp.right_link"],Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b},\
         {id:"minecraft:interaction",Tags:["exp.launch_control_hitbox"],width:1.0,height:0.061}\

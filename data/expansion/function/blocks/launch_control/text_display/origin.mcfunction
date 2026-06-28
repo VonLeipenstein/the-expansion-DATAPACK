@@ -6,10 +6,33 @@
 # - function expansion:blocks/launch_pad/text_display/main (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
+# calculate origin gravity score
+execute store result score #origin exp.gravity run function expansion:mechanics/gravity/get_score
+scoreboard players operation #origin_whole exp.gravity = #origin exp.gravity
+scoreboard players operation #origin_decimal exp.gravity = #origin exp.gravity
+execute store result score #origin_whole exp.gravity run scoreboard players operation #origin_whole exp.gravity /= #100 exp.const
+execute store result score #origin_decimal exp.gravity run scoreboard players operation #origin_decimal exp.gravity %= #100 exp.const
+
 # create a text storage
 data modify storage expansion:temp launchpad.origin set value \
 [\
     {text:"                               \n"},\
+    [\
+        {text:""}\
+    ],\
+    {text:"\n\n"},\
+    [\
+        {text:"\n"}\
+    ],\
+    {text:"\n\n"},\
+    [\
+        {text:"\n"}\
+    ],\
+    {text:"\n\n"}\
+]
+
+data modify storage expansion:temp launchpad.origin[1] set value \
+[\
     [\
         {text:"Gravity"},\
         {text:" = "},\
@@ -17,29 +40,36 @@ data modify storage expansion:temp launchpad.origin set value \
             {text:""},\
             {score:{name:"#origin_whole",objective:"exp.gravity"}},\
             {text:"."},\
-            {score:{name:"#origin_decimal",objective:"exp.gravity"}},\
-        ],\
-    ],\
-    {text:"\n\n"},\
+            {score:{name:"#origin_decimal",objective:"exp.gravity"}}\
+        ]\
+    ]\
+]
+
+execute if score #origin exp.weight matches 0.. run data modify storage expansion:temp launchpad.origin[3] set value \
+[\
     [\
         {text:""},\
         {text:"Rocket Weight",underlined:false},\
         {text:" = "},\
         {score:{name:"#origin",objective:"exp.weight"},bold:true},\
         {text:"\n"},\
-		{text:"Mass x Gravity",italic:true,color:"dark_gray"},\
-    ],\
-    {text:"\n\n"},\
+		{text:"Mass x Gravity",italic:true,color:"dark_gray"}\
+    ]\
+]
+
+execute if score #origin_required exp.fuel_level matches 0.. run data modify storage expansion:temp launchpad.origin[5] set value \
+[\
     [\
         {text:""},\
         {text:"Launch Cost",underlined:false},\
         {text:" = "},\
         {score:{name:"#origin_required",objective:"exp.fuel_level"},bold:true},\
         {text:"\n"},\
-		{text:"Weight / Efficiency",italic:true,color:"dark_gray"},\
-    ],\
-    {text:"\n\n"}\
+		{text:"Weight / Efficiency",italic:true,color:"dark_gray"}\
+    ]\
 ]
+
+execute on passengers if entity @s[tag=exp.rocket_origin] run data modify entity @s text set from storage expansion:temp launchpad.origin
 
 # set the origin planet title
 execute if score @s exp.origin = #earth exp.gravity_id on passengers if entity @s[tag=exp.rocket_origin_title] run data modify entity @s text.extra[2] set value {text:"Earth",bold:true,underlined:true,color:"green"}

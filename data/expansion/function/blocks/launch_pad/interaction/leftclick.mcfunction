@@ -18,19 +18,5 @@ execute as @n[type=minecraft:interaction,tag=exp.clicked_entity,distance=..10] \
         unless function expansion:blocks/launch_pad/occupied \
         run function expansion:blocks/launch_pad/destroy
 
-# IF holding a rocket part
-execute as @n[type=minecraft:interaction,tag=exp.clicked_entity,tag=exp.destination_left,distance=..10] \
-        on passengers if entity @s[type=snowball] on origin \
-        if function expansion:blocks/launch_control/interaction/button_left \
-        run return \
-        run function expansion:utilities/hitbox/reset_click
-
-# IF holding a rocket part
-execute as @n[type=minecraft:interaction,tag=exp.clicked_entity,tag=exp.destination_right,distance=..10] \
-        on passengers if entity @s[type=snowball] on origin \
-        if function expansion:blocks/launch_control/interaction/button_right \
-        run return \
-        run function expansion:utilities/hitbox/reset_click
-
 # ELSE
 function expansion:utilities/hitbox/reset_click

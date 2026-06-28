@@ -52,7 +52,7 @@ data modify storage expansion:temp launchpad.stats set value \
     {text:"\n                     "},\
 ]
 
-execute unless predicate expansion:passengers/rocket_segment run return run data modify storage expansion:temp launchpad.stats set value \
+execute on passengers if entity @s[tag=exp.pad_link] on origin unless predicate expansion:passengers/rocket_segment run return run data modify storage expansion:temp launchpad.stats set value \
 [\
     {text:"No Active Rocket\n\n",underlined:true},\
     {text:"Place a Rocket\nSegment to start\nbuilding your \nRocket!\n\n\n\n\n\n\n",underlined:false}\

@@ -10,11 +10,12 @@ execute at @p[tag=exp.clicked] run loot spawn ~ ~ ~ loot expansion:slot/contents
 
 # kill the entity stack
 execute on passengers if entity @s[type=interaction] run kill @s
-execute on passengers if entity @s[type=snowball] on origin on passengers run kill @s
-execute on passengers if entity @s[type=snowball] on origin run kill @s
+
+# remove pad link from linked control panels and reload them
+execute at @s on passengers if entity @s[tag=exp.control_link] on origin on passengers if entity @s[tag=exp.pad_link] if function expansion:blocks/launch_control/link_pad/owns_link run say hello
+execute at @s on passengers if entity @s[tag=exp.control_link] on origin on passengers if entity @s[tag=exp.pad_link] if function expansion:blocks/launch_control/link_pad/owns_link run kill @s
+execute at @s on passengers if entity @s[tag=exp.control_link] on origin run function expansion:blocks/launch_control/text_display/reset
 execute on passengers if entity @s[type=snowball] run kill @s
-execute on passengers if entity @s[type=marker] run kill @s
-execute on passengers if entity @s[type=text_display] run kill @s
 kill @s
 
 # remove the forceload of this chunk
