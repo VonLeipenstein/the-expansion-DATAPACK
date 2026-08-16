@@ -1,0 +1,40 @@
+# >>> generated function callers >>>
+# Callers for expansion:items/railgun/particles/outer
+# Total callers: 1 from 1 source(s)
+# Folder rule (function callers): 1/1 honored
+# Sources:
+# - function expansion:items/railgun/shoot (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
+particle end_rod ~ ~ ~ ^ ^1000000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^195000 ^981000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^382000 ^924000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^555000 ^832000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^707000 ^707000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^831000 ^556000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^924000 ^383000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^981000 ^196000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^1000000 ^ ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^981000 ^-194000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^924000 ^-382000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^832000 ^-555000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^708000 ^-706000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^557000 ^-831000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^384000 ^-923000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^197000 ^-980000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^ ^-1000000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-193000 ^-981000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-381000 ^-925000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-554000 ^-833000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-706000 ^-709000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-830000 ^-557000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-923000 ^-385000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-980000 ^-197000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-1000000 ^ ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-981000 ^193000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-925000 ^380000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-833000 ^553000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-709000 ^705000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-558000 ^830000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-385000 ^923000 ^ 0.00000015 0 force
+particle end_rod ~ ~ ~ ^-198000 ^980000 ^ 0.00000015 0 force

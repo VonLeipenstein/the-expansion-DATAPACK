@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": [
+    "minecraft:iron_ingot"
+  ],
+  "result": {
+    "id": "minecraft:jigsaw",
+    "components": {
+        "item_model": "expansion:crafting/steel_ingot",
+        "minecraft:max_stack_size": 64,
+        "custom_data": "{exp_item:{name:\"steel_ingot\",crafting_count:1,max_stack_size:64}}",
+        "custom_name": {
+            "translate": "exp_items_steelingot_name",
+            "italic": false
+        }
+    },
+    "count": 1
+  },
+  "experience": 0
+}

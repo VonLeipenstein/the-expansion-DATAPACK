@@ -4,6 +4,7 @@ scoreboard players reset #stat exp.engine_thrust
 scoreboard players reset #stat exp.engine_efficiency
 scoreboard players reset #stat exp.fuel_level
 scoreboard players reset #stat exp.fuel_max
+scoreboard players reset #stat exp.max_range
 
 scoreboard players reset #whole exp.engine_efficiency
 scoreboard players reset #decimal exp.engine_efficiency
@@ -23,7 +24,6 @@ scoreboard players reset #destination exp.weight
 
 scoreboard players reset #origin_required exp.fuel_level
 scoreboard players reset #destination_required exp.fuel_level
-scoreboard players reset #trip_required exp.fuel_level
 scoreboard players reset #total_required exp.fuel_level
 
 scoreboard players reset #top exp.hold_count

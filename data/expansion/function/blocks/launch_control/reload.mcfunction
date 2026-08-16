@@ -17,7 +17,6 @@ execute if score #stat exp.fuel_level < #origin_total exp.fuel_level run functio
 execute if score #stat exp.fuel_max < #origin_total exp.fuel_level run function expansion:blocks/launch_control/text_display/errors/fuel_capacity
 execute if score #origin exp.weight > #stat exp.engine_thrust run function expansion:blocks/launch_control/text_display/errors/weight
 
-execute unless score #fuel exp.hold_count matches 1.. run function expansion:blocks/launch_control/text_display/errors/missing_fuel_tank
 execute unless score #top exp.hold_count matches 1.. run function expansion:blocks/launch_control/text_display/errors/missing_nose_cone
 execute unless score #body exp.hold_count matches 1.. run function expansion:blocks/launch_control/text_display/errors/missing_body
 execute unless score #bottom exp.hold_count matches 1.. run function expansion:blocks/launch_control/text_display/errors/missing_engines
@@ -31,4 +30,4 @@ execute on passengers if entity @s[tag=exp.rocket_trip] run data modify entity @
 # Reset scores
 function expansion:blocks/launch_control/text_display/reset_scores
 
-execute on passengers if entity @s[tag=exp.pad_link] on origin on passengers run function expansion:blocks/launch_control/reload
+#execute on passengers if entity @s[tag=exp.pad_link] on origin on passengers run function expansion:blocks/launch_control/reload

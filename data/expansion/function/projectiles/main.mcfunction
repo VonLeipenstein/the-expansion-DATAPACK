@@ -24,5 +24,7 @@ execute if entity @s[tag=exp.cataclysm] run return run function expansion:projec
 
 execute if entity @s[tag=exp.spiral] run return run function expansion:projectiles/spiral/loop
 
+execute if entity @s[tag=exp.beam] run return run function expansion:projectiles/beam/loop
+
 # not really a slowcaster but it was the most applicable here: Rocket segments after an explosion
 execute if entity @s[tag=exp.rocket_segment] run return run function expansion:vehicles/rocket_segment/explode/trail

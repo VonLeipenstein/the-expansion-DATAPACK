@@ -3,11 +3,17 @@
   "entity": "this",
   "predicate": {
     "vehicle": {
-      "nbt": {
-        "Tags":[
-          "exp.control_segment"
-        ]
+      "vehicle": {
+        "vehicle": {
+          "vehicle": {
+            "nbt": {
+              "Tags":[
+                "exp.control_segment"
+              ]
+            }
+          } 
+        }
       }
-    } 
+    }
   }
 }

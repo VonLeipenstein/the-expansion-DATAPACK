@@ -14,9 +14,7 @@ execute store result score #stat exp.engine_thrust run function expansion:vehicl
 execute store result score #stat exp.engine_efficiency run function expansion:vehicles/rocket_segment/get_stat/efficiency/total
 execute store result score #stat exp.fuel_level run function expansion:vehicles/rocket_segment/get_stat/fuel/total
 execute store result score #stat exp.fuel_max run function expansion:vehicles/rocket_segment/get_stat/capacity/total
-
-# trip fuel requirement
-execute store result score #trip_required exp.fuel_level run function expansion:vehicles/rocket_segment/get_stat/trip_cost
+execute store result score #stat exp.max_range run function expansion:vehicles/rocket_segment/get_stat/range/total
 
 # engine efficiency decimal and whole part
 scoreboard players operation #whole exp.engine_efficiency = #stat exp.engine_efficiency
@@ -32,19 +30,17 @@ scoreboard players operation #input exp.gravity = #destination exp.gravity
 execute store result score #destination exp.weight run function expansion:vehicles/rocket_segment/get_stat/weight
 
 # fuel required to launch from origin
-scoreboard players operation #origin_required exp.fuel_level = #whole exp.engine_efficiency
-scoreboard players operation #origin_required exp.fuel_level *= #origin exp.weight
+scoreboard players operation #origin_required exp.fuel_level = #origin exp.weight
+scoreboard players operation #origin_required exp.fuel_level *= #100 exp.const
+scoreboard players operation #origin_required exp.fuel_level /= #stat exp.engine_efficiency
 scoreboard players operation #origin_total exp.fuel_level = #origin_required exp.fuel_level
-scoreboard players operation #origin_total exp.fuel_level += #trip_required exp.fuel_level
 
 # fuel required to launch from destination
-scoreboard players operation #destination_required exp.fuel_level = #whole exp.engine_efficiency
-scoreboard players operation #destination_required exp.fuel_level *= #destination exp.weight
+scoreboard players operation #destination_required exp.fuel_level = #destination exp.weight
+scoreboard players operation #destination_required exp.fuel_level *= #100 exp.const
+scoreboard players operation #destination_required exp.fuel_level /= #stat exp.engine_efficiency
 scoreboard players operation #destination_total exp.fuel_level = #destination_required exp.fuel_level
-scoreboard players operation #destination_total exp.fuel_level += #trip_required exp.fuel_level
 
 # total fuel requirement
 scoreboard players operation #total_required exp.fuel_level = #origin_required exp.fuel_level
 scoreboard players operation #total_required exp.fuel_level += #destination_required exp.fuel_level
-scoreboard players operation #total_required exp.fuel_level += #trip_required exp.fuel_level
-scoreboard players operation #total_required exp.fuel_level += #trip_required exp.fuel_level

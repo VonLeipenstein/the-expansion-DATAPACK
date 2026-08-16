@@ -58,19 +58,13 @@ scoreboard players set #jupiter exp.gravity 250
 scoreboard players set #europa exp.gravity 15
 scoreboard players set #zero exp.gravity 0
 
-# rocket distance costs
-scoreboard players set #overworld_to_moon_required exp.fuel_level 15
-scoreboard players set #overworld_to_mars_required exp.fuel_level 50
-scoreboard players set #overworld_to_venus_required exp.fuel_level 50
-scoreboard players set #moon_to_overworld_required exp.fuel_level 15
-scoreboard players set #moon_to_mars_required exp.fuel_level 50
-scoreboard players set #moon_to_venus_required exp.fuel_level 50
-scoreboard players set #mars_to_overworld_required exp.fuel_level 50
-scoreboard players set #mars_to_moon_required exp.fuel_level 50
-scoreboard players set #mars_to_venus_required exp.fuel_level 100
-scoreboard players set #venus_to_overworld_required exp.fuel_level 50
-scoreboard players set #venus_to_moon_required exp.fuel_level 50
-scoreboard players set #venus_to_mars_required exp.fuel_level 100
+# rocket planet distance
+scoreboard players set #overworld_moon exp.distance 1
+scoreboard players set #overworld_mars exp.distance 2
+scoreboard players set #overworld_venus exp.distance 2
+scoreboard players set #moon_mars exp.distance 2
+scoreboard players set #moon_venus exp.distance 2
+scoreboard players set #mars_venus exp.distance 3
 
 #> Block Constants
 scoreboard players set #lacrymae_extraction_time exp.timer_1 120

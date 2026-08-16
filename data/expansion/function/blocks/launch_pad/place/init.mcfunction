@@ -13,7 +13,7 @@ summon minecraft:item_display ~ ~ ~ {\
     transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,1.0f,0.0f],scale:[2.0f,2.0f,2.0f]},\
     Passengers:[\
         {id:"minecraft:snowball",Tags:["exp.rocket_link"],Item:{id:"jigsaw",components:{item_model:"expansion:empty"}},Invulnerable:1b,NoGravity:1b},\
-        {id:"minecraft:interaction",Tags:["exp.launch_pad_hitbox"],width:3.0,height:0.3}\
+        {id:"minecraft:interaction",Tags:["exp.launch_pad_hitbox"],width:3.0,height:0.0625}\
     ]\
 }
 

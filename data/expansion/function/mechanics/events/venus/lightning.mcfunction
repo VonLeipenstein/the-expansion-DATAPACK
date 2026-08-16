@@ -4,6 +4,5 @@
 # None found
 # <<< generated function callers <<<
 
-spreadplayers ~ ~ 25 200 false @s
-execute at @s run summon minecraft:lightning_bolt ~ ~ ~
-kill @s
+spreadplayers ~ ~ 10 50 false @s
+execute at @s run function expansion:mechanics/events/plasma_lightning/init

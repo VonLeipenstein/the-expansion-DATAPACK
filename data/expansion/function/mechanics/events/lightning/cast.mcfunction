@@ -6,11 +6,7 @@
 # - function expansion:mechanics/events/lightning/init (1 caller) [OK same-folder]
 # - function expansion:mechanics/events/test/init (1 caller) [WARN side/down 2]
 # <<< generated function callers <<<
-
-spreadplayers ~ ~ 10 50 false @s
-#execute store result entity @s Rotation[0] float 1 run function expansion:utilities/random/-180_180
-#execute store result entity @s Rotation[1] float 1 run function expansion:utilities/random/-90_90 
-
+say cast
 # speed is the amount of blocks per tick the signal travels
 # half the max range divides the load over 2 ticks
 scoreboard players set #temp exp.speed 40

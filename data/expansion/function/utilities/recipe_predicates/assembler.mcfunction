@@ -7,7 +7,7 @@
 # <<< generated function callers <<<
 
 execute if items block ~ ~ ~ container.1 *[custom_data~{exp_item:{name:"steel_ingot"}}] \
-        if items block ~ ~ ~ container.2 *[custom_data~{exp_item:{name:"amethonium_plate"}}] \
+        if items block ~ ~ ~ container.2 *[custom_data~{exp_item:{name:"titanium_plate"}}] \
         if items block ~ ~ ~ container.3 *[custom_data~{exp_item:{name:"steel_ingot"}}] \
         \
         if items block ~ ~ ~ container.10 *[custom_data~{exp_item:{name:"robot_arm"}}] \

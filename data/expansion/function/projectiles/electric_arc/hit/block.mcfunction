@@ -8,4 +8,6 @@
 
 #particle explosion ~ ~ ~ 0 0 0 0 1 force
 
+execute if score @s exp.unique_id matches 5 positioned ~ ~1 ~ run particle minecraft:flash{color:-16711694}
+
 return 1

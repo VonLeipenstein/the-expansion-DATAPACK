@@ -27,6 +27,9 @@
             },
             {
               "translate": "exp_blocks_launchcontrol_tip1"
+            },
+            {
+              "translate": "exp_blocks_launchcontrol_tip2"
             }
           ]
         },

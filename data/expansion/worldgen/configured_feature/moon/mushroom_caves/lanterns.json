@@ -43,7 +43,7 @@
         "provider": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "minecraft:sea_lantern"
+            "Name": "minecraft:pearlescent_froglight"
           }
         }
       }

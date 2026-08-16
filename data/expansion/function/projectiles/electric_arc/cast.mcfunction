@@ -44,7 +44,7 @@ function expansion:projectiles/electric_arc/bend/get_rotation
 # immediately add some random rotation, mainly used for nice branches
 function expansion:projectiles/electric_arc/bend/bend
 scoreboard players operation @s exp.yaw = #temp exp.yaw
-scoreboard players operation @s exp.yaw = #temp exp.yaw
+scoreboard players operation @s exp.pitch = #temp exp.pitch
 
 # reset temp scores
 scoreboard players reset #temp exp.max_range

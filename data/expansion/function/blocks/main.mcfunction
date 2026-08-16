@@ -36,3 +36,4 @@ execute if entity @s[tag=exp.tesla_coil] run return run function expansion:block
 execute if entity @s[tag=exp.fabricator] run return run function expansion:blocks/fabricator/main
 execute if entity @s[tag=exp.assembler] run return run function expansion:blocks/assembler/main
 execute if entity @s[tag=exp.portal] run return run function expansion:blocks/portal/main
+execute if entity @s[tag=exp.infuser] run return run function expansion:blocks/infuser/main

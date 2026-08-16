@@ -1,0 +1,1 @@
+scoreboard players set @s exp.timer_1 300

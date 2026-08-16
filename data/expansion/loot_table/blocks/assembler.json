@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_name",
                 "name": {
-                  "translate": "exp_cntrp_assembler_name",
+                  "translate": "exp_blocks_assembler_name",
                   "italic": false
                 },
                 "entity": "this"

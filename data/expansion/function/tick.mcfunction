@@ -20,3 +20,6 @@ execute as @e[type=#expansion:block_base,tag=exp.block] at @s positioned ~ ~-1 ~
 
 # slowcasters
 execute as @e[type=#expansion:slowcasters,tag=exp.slowcast] at @s run function expansion:projectiles/main
+
+# events
+execute in expansion:venus if entity @a[distance=0..] at @r[distance=0..] if predicate expansion:chance/0005_chance summon marker run function expansion:mechanics/events/venus/lightning

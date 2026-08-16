@@ -13,6 +13,7 @@ tag @s add exp.vehicle_segment
 summon minecraft:armor_stand ~ ~ ~ \
 {\
     attributes:[{id:"minecraft:scale",base:0}],\
+    Invisible:1b,Invulnerable:1b,\
     Tags:["exp.rocket_segment","exp.rocket_segment.new","exp.block","smithed.block"],\
     Passengers:[\
         {id:"minecraft:interaction",Tags:["exp.rocketsegment_rcdet"],width:2,height:2,response:1b},\

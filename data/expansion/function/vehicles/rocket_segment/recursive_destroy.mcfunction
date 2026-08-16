@@ -5,5 +5,5 @@ execute on vehicle run tag @s add exp.signal_pad
 
 # destroy this part
 function expansion:vehicles/rocket_segment/destroy
-say hi
+
 execute as @n[tag=exp.signal_pad,distance=..10] run function expansion:vehicles/rocket_segment/reload_launchpad

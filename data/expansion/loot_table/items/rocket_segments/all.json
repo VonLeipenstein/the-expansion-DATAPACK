@@ -6,7 +6,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/rocket_segments/engine/mk1"
+            "value": "expansion:items/rocket_segments/class1/engine/crude"
           }
         ]
       },
@@ -16,7 +16,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/rocket_segments/control"
+            "value": "expansion:items/rocket_segments/class1/body/control"
           }
         ]
       },
@@ -26,7 +26,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/rocket_segments/fuel"
+            "value": "expansion:items/rocket_segments/class1/body/fuel"
           }
         ]
       },
@@ -36,7 +36,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/rocket_segments/top"
+            "value": "expansion:items/rocket_segments/class1/top/standard"
           }
         ]
       }

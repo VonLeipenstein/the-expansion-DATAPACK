@@ -12,6 +12,8 @@ data merge entity @s {transformation:{scale:[0.0f,0.0f,0.0f]}}
 ## CRAFTING ITEMS
 # steel plate
 execute if function expansion:utilities/recipe_predicates/steel_plate run return run loot replace entity @s container.0 loot expansion:items/steel_plate
+# titanium plate
+execute if function expansion:utilities/recipe_predicates/titanium_plate run return run loot replace entity @s container.0 loot expansion:items/titanium_plate
 # amethonium plate
 execute if function expansion:utilities/recipe_predicates/amethonium_plate run return run loot replace entity @s container.0 loot expansion:items/amethonium_plate
 # processing unit
@@ -74,6 +76,8 @@ execute if function expansion:utilities/recipe_predicates/tesla_coil run return 
 execute if function expansion:utilities/recipe_predicates/modstation run return run loot replace entity @s container.0 loot expansion:blocks/modstation
 # rocket pad
 execute if function expansion:utilities/recipe_predicates/launch_pad run return run loot replace entity @s container.0 loot expansion:blocks/launch_pad
+# rocket pad
+execute if function expansion:utilities/recipe_predicates/launch_control run return run loot replace entity @s container.0 loot expansion:blocks/launch_control
 
 ## VEHICLES
 # rocket top

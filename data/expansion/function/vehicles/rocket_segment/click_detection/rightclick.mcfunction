@@ -49,7 +49,7 @@ execute if predicate expansion:holding/items/rocket_propellant \
         as @n[type=minecraft:interaction,tag=exp.clicked_entity,distance=..10] \
         on vehicle \
         at @s \
-        if entity @s[tag=exp.rocket_segment,tag=exp.fuel_segment] \
+        if function expansion:vehicles/rocket_segment/checks/has_fuel_capacity \
         if function expansion:vehicles/rocket_segment/fuel/fuel \
         run return \
         run function expansion:utilities/hitbox/reset_click
