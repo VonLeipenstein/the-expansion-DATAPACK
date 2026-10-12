@@ -24,12 +24,7 @@
                             -1,
                             0
                         ],
-                        "blocks": [
-                            "minecraft:red_sand",
-                            "minecraft:smooth_red_sandstone",
-                            "minecraft:deepslate",
-                            "minecraft:cobbled_deepslate"
-                        ]
+                        "blocks": "#expansion:mars_cave_replaceable"
                     },
                     {
                         "type": "minecraft:matching_blocks",

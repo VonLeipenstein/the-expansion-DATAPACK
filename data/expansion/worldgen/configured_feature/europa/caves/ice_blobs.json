@@ -10,10 +10,7 @@
           "block": "minecraft:packed_ice"
         },
         "state": {
-          "Name": "minecraft:ice",
-          "Properties": {
-            "axis": "y"
-          }
+          "Name": "minecraft:ice"
         }
       }
     ]

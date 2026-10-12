@@ -13,6 +13,10 @@ execute unless items block ~ ~ ~ container.1 #expansion:extractable run return f
 
 execute unless items block ~ ~ ~ container.6 *[custom_data~{exp_item:{name:"fuel_cell"}}] run return fail
 
+scoreboard players set #source exp.unique_id 2
+execute store result score #target exp.unique_id run data get block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.id
+execute unless function expansion:blocks/voltameter/produce/same_fuel run return fail
+
 execute if function expansion:blocks/lacrymae_extractor/tank_full run return fail
 
 return 1

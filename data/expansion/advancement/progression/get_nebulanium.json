@@ -1,0 +1,43 @@
+{
+    "parent": "expansion:progression/get_titanium",
+    "display": {
+        "title": {
+            "translate": "exp_advancement_getnebulanium_title"
+        },
+        "description": {
+            "translate": "exp_advancement_getnebulanium_desc"
+        },
+        "icon": {
+          "id": "minecraft:jigsaw",
+          "components": {
+            "item_model": "expansion:crafting/nebulanium_ingot"
+          }
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "expansion:get_nebulanium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:jigsaw"
+                        ],
+                        "predicates": {
+                            "minecraft:custom_data": "{exp_item:{name:\"nebulanium_ingot\"}}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "expansion:get_nebulanium"
+        ]
+    ]
+}

@@ -7,25 +7,29 @@
   "logical_height": 384,
   "infiniburn": "#minecraft:infiniburn_nether",
   "ambient_light": 0,
-    "attributes": {
-      "visual/sun_angle": 80,
+  "attributes": {
+    "visual/sun_angle": 80,
 
-      "visual/moon_angle": 180,
-      
-      "visual/star_brightness": 0.3,
-      
-      "visual/sky_color": 16759552,
-      "visual/cloud_height": 180,
-      "visual/cloud_color": -989873408,
-      "visual/cloud_fog_end_distance": 1000,
+    "visual/moon_angle": 180,
+    
+    "visual/star_brightness": 0.3,
+    
+    "visual/sky_color": 16759552,
+    "visual/cloud_height": 180,
+    "visual/cloud_color": -989873408,
+    "visual/cloud_fog_end_distance": 1000,
 
-      "visual/fog_color": "#80661E",
-      "visual/fog_start_distance": 0,
-      "visual/fog_end_distance": 150,
-      
-      "visual/sky_fog_end_distance": 100,
-      
-      "visual/sky_light_factor": 1
+    "visual/fog_color": "#80661E",
+    "visual/fog_start_distance": 0,
+    "visual/fog_end_distance": 150,
+    
+    "visual/sky_fog_end_distance": 100,
+    
+    "visual/sky_light_factor": 1,
+
+    "gameplay/water_evaporates": true,
+    "minecraft:gameplay/fast_lava": true,
+    "minecraft:gameplay/increased_fire_burnout": true
   },
   "timelines": [
   ],

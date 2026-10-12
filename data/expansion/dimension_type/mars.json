@@ -15,7 +15,9 @@
 
     "visual/sky_color": 16757596,
     "visual/sky_light_color": 16777215,
-    "visual/sky_light_factor": 1
+    "visual/sky_light_factor": 1,
+
+    "minecraft:gameplay/increased_fire_burnout": true
   },
   "timelines": [
     "expansion:mars/day"

@@ -19,6 +19,7 @@ execute if predicate expansion:holding/items/rocket_segment/body \
         at @s \
         unless entity @s[tag=exp.top_segment,tag=exp.launch_pad] \
         unless predicate expansion:passengers/rocket_segment \
+        if function expansion:vehicles/rocket_segment/place/has_same_class \
         if function expansion:vehicles/rocket_segment/place/init \
         run return \
         run function expansion:utilities/hitbox/reset_click
@@ -30,6 +31,7 @@ execute if predicate expansion:holding/items/rocket_segment/top \
         at @s \
         unless entity @s[tag=exp.rocket_segment,tag=exp.top_segment] \
         unless predicate expansion:passengers/rocket_segment \
+        if function expansion:vehicles/rocket_segment/place/has_same_class \
         if function expansion:vehicles/rocket_segment/place/init \
         run return \
         run function expansion:utilities/hitbox/reset_click
@@ -45,7 +47,7 @@ execute as @n[type=minecraft:interaction,tag=exp.clicked_entity,distance=..10] \
         run function expansion:utilities/hitbox/reset_click
 
 # ELSE IF
-execute if predicate expansion:holding/items/rocket_propellant \
+execute if predicate expansion:holding/items/fuel_cell \
         as @n[type=minecraft:interaction,tag=exp.clicked_entity,distance=..10] \
         on vehicle \
         at @s \

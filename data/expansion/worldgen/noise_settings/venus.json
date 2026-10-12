@@ -394,7 +394,22 @@
                           "type": "minecraft:condition",
                           "if_true": {
                             "type": "minecraft:noise_threshold",
-                            "noise": "minecraft:ice",
+                            "noise": "expansion:surface_small",
+                            "min_threshold": -0.1,
+                            "max_threshold": 0.1
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "minecraft:magma_block"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:noise_threshold",
+                            "noise": "expansion:surface_small",
                             "min_threshold": -0.2,
                             "max_threshold": 0.2
                           },
@@ -500,7 +515,7 @@
                   "type": "minecraft:condition",
                   "if_true": {
                     "type": "minecraft:noise_threshold",
-                    "noise": "minecraft:ice",
+                    "noise": "expansion:surface_medium",
                     "min_threshold": -0.15,
                     "max_threshold": 0.15
                   },
@@ -761,9 +776,9 @@
                         "type": "minecraft:condition",
                         "if_true": {
                           "type": "minecraft:noise_threshold",
-                          "noise": "minecraft:ice",
-                          "min_threshold": -0.06,
-                          "max_threshold": 0.06
+                          "noise": "expansion:surface_medium",
+                          "min_threshold": -0.1,
+                          "max_threshold": 0.1
                         },
                         "then_run": {
                           "type": "minecraft:block",
@@ -771,17 +786,30 @@
                             "Name": "minecraft:magma_block"
                           }
                         }
-                      },
-                      {
-                        "type": "minecraft:block",
-                        "result_state": {
-                          "Name": "minecraft:blackstone"
-                        }
                       }
                     ]
                   }
                 }
               ]
+            }
+          },
+          {
+            "type": "minecraft:condition",
+            "if_true": {
+              "type": "vertical_gradient",
+              "false_at_and_above": {
+                "above_bottom": 20
+              },
+              "true_at_and_below": {
+                "above_bottom": 10
+              },
+              "random_name": "venus_magma"
+            },
+            "then_run": {
+              "type": "block",
+              "result_state": {
+                "Name": "magma_block"
+              }
             }
           }
         ]

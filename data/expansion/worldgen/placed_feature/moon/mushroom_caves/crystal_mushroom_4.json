@@ -27,7 +27,6 @@
       "target_condition": {
         "type": "minecraft:matching_blocks",
         "blocks": [
-          "minecraft:calcite",
           "minecraft:light_blue_terracotta",
           "minecraft:blackstone",
           "minecraft:smooth_basalt"

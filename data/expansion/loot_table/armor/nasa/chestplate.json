@@ -22,7 +22,7 @@
                 "!minecraft:food": {},
                 "minecraft:item_model": "expansion:armor/nasa/chestplate",
                 "minecraft:max_stack_size": 1,
-                "minecraft:max_damage": 1500,
+                "minecraft:max_damage": 2000,
                 "minecraft:damage": 0,
                 "minecraft:equippable": {
                   "slot": "chest",
@@ -53,7 +53,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"nasa_chestplate\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:102b,equipped:0b,set_name:\"nasa\"},exp.enhanceable:1b,heat_resist:{base:4,modifier:0,total:4},cold_resist:{base:4,modifier:0,total:4},armor:{base:6.0,add_value:0.0d},speed:{base:0.0,add_percent:0.0},max_damage:{base:1500,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:102b}"
+              "tag": "{exp_item:{name:\"nasa_chestplate\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:102b,equipped:0b,set_name:\"nasa\"},exp.enhanceable:1b,heat_resist:{base:8,modifier:0,total:8},cold_resist:{base:8,modifier:0,total:8},armor:{base:6.0,add_value:0.0d},speed:{base:0.0,add_percent:0.0},max_damage:{base:2000,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:102b}"
             },
             {
               "function": "minecraft:set_lore",

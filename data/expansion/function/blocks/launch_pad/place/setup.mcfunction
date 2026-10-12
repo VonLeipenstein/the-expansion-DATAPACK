@@ -21,7 +21,11 @@ execute if dimension expansion:moon run scoreboard players operation @s exp.orig
 execute if dimension expansion:mars run scoreboard players operation @s exp.origin = #mars exp.gravity_id
 execute if dimension expansion:venus run scoreboard players operation @s exp.origin = #venus exp.gravity_id
 
-scoreboard players operation @s exp.destination = @s exp.origin
+execute if dimension minecraft:overworld run scoreboard players operation @s exp.destination = #moon exp.gravity_id
+execute if dimension expansion:moon run scoreboard players operation @s exp.destination = #earth exp.gravity_id
+execute if dimension expansion:mars run scoreboard players operation @s exp.destination = #moon exp.gravity_id
+execute if dimension expansion:venus run scoreboard players operation @s exp.destination = #moon exp.gravity_id
+
 scoreboard players add @s exp.destination 1
 function expansion:blocks/launch_control/interaction/button_left
 

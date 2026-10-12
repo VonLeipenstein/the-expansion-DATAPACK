@@ -1213,7 +1213,41 @@
                       "text": " "
                     },
                     {
-                      "translate": "exp_guide1_amethoniumtier"
+                      "translate": "exp_guide1_nebulaniumtier"
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa71",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_nebulite_name"
+                              },
+                              {
+                                "translate": "exp_guide1_ore"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa72"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide1_oredesc_nebulite"
+                              }
+                            ]
+                          }
+                        }
+                      ]
                     },
                     {
                       "translate": "exp_guide_item_display",
@@ -1226,7 +1260,7 @@
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_amethoniumingot_name"
+                                "translate": "exp_items_nebulaniumingot_name"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -1267,7 +1301,7 @@
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_amethoniumplate_name"
+                                "translate": "exp_items_nebulaniumplate_name"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -2114,6 +2148,56 @@
                       ]
                     },
                     {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa41",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_tools_fuelcell_name"
+                              },
+                              {
+                                "translate": "exp_modules_mk3"
+                              },
+                              {
+                                "translate": "exp_guide1_fuelcell_lore"
+                              },
+                              {
+                                "translate": "exp_guide1_fuelcellmk3_lore"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa42"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\uff21\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
                       "translate": "exp_guide1_weapons"
                     },
                     {
@@ -2661,7 +2745,189 @@
                       ]
                     },
                     {
-                      "translate": "exp_guide1_mk2_armor"
+                      "text": "\n\n"
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa63",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_suit_golem_helmet"
+                              },
+                              {
+                                "translate": "exp_suit_golem_guidelore"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa67"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide1_tintedglasstip"
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\uff21\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa64",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_suit_golem_chestplate"
+                              },
+                              {
+                                "translate": "exp_suit_golem_guidelore"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa68"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\uff21\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa65",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_suit_golem_leggings"
+                              },
+                              {
+                                "translate": "exp_suit_golem_guidelore"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa69"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\uff21\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa66",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_suit_golem_boots"
+                              },
+                              {
+                                "translate": "exp_suit_golem_guidelore"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa70"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\uff21\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "text": "\n\n"
                     },
                     {
                       "translate": "exp_guide_item_display",
@@ -3970,6 +4236,214 @@
                       "font": "expansion:default",
                       "with": [
                         {
+                          "text": "\ufa53",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_rocketengine_name"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa58"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\uff21\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa54",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_rocketfuel_name"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa59"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\uff21\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa55",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_rocketcontrol_name"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa60"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\uff21\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa57",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_rockettop_name"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa61"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\uff21\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa56",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_rockettop_name"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa62"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\uff21\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide1_rocketparts_mk2"
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
                           "text": "\uff43  ",
                           "hover_event": {
                             "action": "show_text",
@@ -4086,9 +4560,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "translate": "exp_guide1_rocketparts_mk2"
                     }
                   ]
                 },
@@ -4516,27 +4987,6 @@
                       "font": "expansion:default",
                       "with": [
                         {
-                          "text": "\ufb01",
-                          "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                              {
-                                "translate": "item.minecraft.amethyst_shard"
-                              },
-                              {
-                                "translate": "exp_guide1_oredesc_amethyst"
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "translate": "exp_guide_item_display",
-                      "color": "white",
-                      "font": "expansion:default",
-                      "with": [
-                        {
                           "text": "\ufb15",
                           "hover_event": {
                             "action": "show_text",
@@ -4567,61 +5017,6 @@
                           "translate": "exp_guide1_tempexplainer"
                         }
                       }
-                    },
-                    {
-                      "translate": "exp_guide1_accessibility",
-                      "color": "black",
-                      "font": "minecraft:default"
-                    },
-                    {
-                      "translate": "exp_guide_item_display",
-                      "color": "white",
-                      "font": "expansion:default",
-                      "with": [
-                        {
-                          "text": "\uff30",
-                          "click_event": {
-                            "action": "change_page",
-                            "page": 12
-                          },
-                          "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                              {
-                                "translate": "exp_vehicles_rocket_name"
-                              },
-                              {
-                                "translate": "exp_guide_click"
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "translate": "exp_guide_item_display",
-                      "color": "white",
-                      "font": "expansion:default",
-                      "with": [
-                        {
-                          "text": "\uff32",
-                          "click_event": {
-                            "action": "change_page",
-                            "page": 12
-                          },
-                          "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                              {
-                                "translate": "exp_vehicles_spaceship_name"
-                              },
-                              {
-                                "translate": "exp_guide_click"
-                              }
-                            ]
-                          }
-                        }
-                      ]
                     }
                   ]
                 },
@@ -4687,6 +5082,40 @@
                       "font": "expansion:default",
                       "with": [
                         {
+                          "text": "\ufa71",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_nebulite_name"
+                              },
+                              {
+                                "translate": "exp_guide1_ore"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa72"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide1_oredesc_nebulite"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
                           "text": "\uff96",
                           "hover_event": {
                             "action": "show_text",
@@ -4730,36 +5159,6 @@
                           "translate": "exp_guide1_tempexplainer"
                         }
                       }
-                    },
-                    {
-                      "translate": "exp_guide1_accessibility",
-                      "color": "black",
-                      "font": "minecraft:default"
-                    },
-                    {
-                      "translate": "exp_guide_item_display",
-                      "color": "white",
-                      "font": "expansion:default",
-                      "with": [
-                        {
-                          "text": "\uff32",
-                          "click_event": {
-                            "action": "change_page",
-                            "page": 12
-                          },
-                          "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                              {
-                                "translate": "exp_vehicles_spaceship_name"
-                              },
-                              {
-                                "translate": "exp_guide_click"
-                              }
-                            ]
-                          }
-                        }
-                      ]
                     }
                   ]
                 },
@@ -4784,6 +5183,40 @@
                       "translate": "exp_guide1_materials",
                       "color": "black",
                       "font": "minecraft:default"
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:default",
+                      "with": [
+                        {
+                          "text": "\ufa71",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_nebulite_name"
+                              },
+                              {
+                                "translate": "exp_guide1_ore"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:default",
+                                "with": [
+                                  {
+                                    "text": "\ufa72"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide1_oredesc_nebulite"
+                              }
+                            ]
+                          }
+                        }
+                      ]
                     },
                     {
                       "translate": "exp_guide_item_display",
@@ -4834,36 +5267,6 @@
                           "translate": "exp_guide1_tempexplainer"
                         }
                       }
-                    },
-                    {
-                      "translate": "exp_guide1_accessibility",
-                      "color": "black",
-                      "font": "minecraft:default"
-                    },
-                    {
-                      "translate": "exp_guide_item_display",
-                      "color": "white",
-                      "font": "expansion:default",
-                      "with": [
-                        {
-                          "text": "\uff32",
-                          "click_event": {
-                            "action": "change_page",
-                            "page": 12
-                          },
-                          "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                              {
-                                "translate": "exp_vehicles_spaceship_name"
-                              },
-                              {
-                                "translate": "exp_guide_click"
-                              }
-                            ]
-                          }
-                        }
-                      ]
                     }
                   ]
                 },
@@ -4909,36 +5312,6 @@
                           "translate": "exp_guide1_tempexplainer"
                         }
                       }
-                    },
-                    {
-                      "translate": "exp_guide1_accessibility",
-                      "color": "black",
-                      "font": "minecraft:default"
-                    },
-                    {
-                      "translate": "exp_guide_item_display",
-                      "color": "white",
-                      "font": "expansion:default",
-                      "with": [
-                        {
-                          "text": "\uff32",
-                          "click_event": {
-                            "action": "change_page",
-                            "page": 12
-                          },
-                          "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                              {
-                                "translate": "exp_vehicles_spaceship_name"
-                              },
-                              {
-                                "translate": "exp_guide_click"
-                              }
-                            ]
-                          }
-                        }
-                      ]
                     }
                   ]
                 },
@@ -4984,36 +5357,6 @@
                           "translate": "exp_guide1_tempexplainer"
                         }
                       }
-                    },
-                    {
-                      "translate": "exp_guide1_accessibility",
-                      "color": "black",
-                      "font": "minecraft:default"
-                    },
-                    {
-                      "translate": "exp_guide_item_display",
-                      "color": "white",
-                      "font": "expansion:default",
-                      "with": [
-                        {
-                          "text": "\uff32",
-                          "click_event": {
-                            "action": "change_page",
-                            "page": 12
-                          },
-                          "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                              {
-                                "translate": "exp_vehicles_spaceship_name"
-                              },
-                              {
-                                "translate": "exp_guide_click"
-                              }
-                            ]
-                          }
-                        }
-                      ]
                     }
                   ]
                 },
@@ -5059,36 +5402,6 @@
                           "translate": "exp_guide1_tempexplainer"
                         }
                       }
-                    },
-                    {
-                      "translate": "exp_guide1_accessibility",
-                      "color": "black",
-                      "font": "minecraft:default"
-                    },
-                    {
-                      "translate": "exp_guide_item_display",
-                      "color": "white",
-                      "font": "expansion:default",
-                      "with": [
-                        {
-                          "text": "\uff32",
-                          "click_event": {
-                            "action": "change_page",
-                            "page": 12
-                          },
-                          "hover_event": {
-                            "action": "show_text",
-                            "value": [
-                              {
-                                "translate": "exp_vehicles_spaceship_name"
-                              },
-                              {
-                                "translate": "exp_guide_click"
-                              }
-                            ]
-                          }
-                        }
-                      ]
                     }
                   ]
                 }

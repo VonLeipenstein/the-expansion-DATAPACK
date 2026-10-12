@@ -12,10 +12,10 @@
   "features": [
     [],
     [],
-    [
-      "expansion:venus/basalt_pit/basalt_columns"
-    ],
     [],
+    [
+      "expansion:venus/basalt_pit/basalt_spike"
+    ],
     [],
     [],
     [],
@@ -30,19 +30,22 @@
     "water_color": 5404
   },
   "attributes": {
-    "visual/ambient_particles": {
-      "argument": [
-        {
-          "particle": {
-            "type": "minecraft:ash"
-          },
-          "probability": 0.05
-        }
-      ],
-      "modifier": "override"
-    }
+    "visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "minecraft:ash"
+        },
+        "probability": 0.1
+      },
+      {
+        "particle": {
+          "type": "smoke"
+        },
+        "probability": 0.01
+      }
+    ]
   },
   "has_precipitation": false,
-  "temperature": 0.5,
+  "temperature": 2,
   "downfall": 0.5
 }

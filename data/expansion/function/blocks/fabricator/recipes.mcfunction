@@ -14,8 +14,8 @@ data merge entity @s {transformation:{scale:[0.0f,0.0f,0.0f]}}
 execute if function expansion:utilities/recipe_predicates/steel_plate run return run loot replace entity @s container.0 loot expansion:items/steel_plate
 # titanium plate
 execute if function expansion:utilities/recipe_predicates/titanium_plate run return run loot replace entity @s container.0 loot expansion:items/titanium_plate
-# amethonium plate
-execute if function expansion:utilities/recipe_predicates/amethonium_plate run return run loot replace entity @s container.0 loot expansion:items/amethonium_plate
+# nebulanium plate
+execute if function expansion:utilities/recipe_predicates/nebulanium_plate run return run loot replace entity @s container.0 loot expansion:items/nebulanium_plate
 # processing unit
 execute if function expansion:utilities/recipe_predicates/processing_unit run return run loot replace entity @s container.0 loot expansion:items/processing_unit
 # wrench
@@ -138,6 +138,11 @@ execute if function expansion:utilities/recipe_predicates/diver_helmet run retur
 execute if function expansion:utilities/recipe_predicates/diver_chestplate run return run function expansion:items/oxygen_tank/copy_to_chestplate
 execute if function expansion:utilities/recipe_predicates/diver_leggings run return run loot replace entity @s container.0 loot expansion:armor/diver/leggings
 execute if function expansion:utilities/recipe_predicates/diver_boots run return run loot replace entity @s container.0 loot expansion:armor/diver/boots
+# golem
+execute if function expansion:utilities/recipe_predicates/golem_helmet run return run loot replace entity @s container.0 loot expansion:armor/golem/helmet
+execute if function expansion:utilities/recipe_predicates/golem_chestplate run return run loot replace entity @s container.0 loot expansion:armor/golem/chestplate
+execute if function expansion:utilities/recipe_predicates/golem_leggings run return run loot replace entity @s container.0 loot expansion:armor/golem/leggings
+execute if function expansion:utilities/recipe_predicates/golem_boots run return run loot replace entity @s container.0 loot expansion:armor/golem/boots
 # nasa
 execute if function expansion:utilities/recipe_predicates/nasa_helmet run return run loot replace entity @s container.0 loot expansion:armor/nasa/helmet
 execute if function expansion:utilities/recipe_predicates/nasa_chestplate run return run loot replace entity @s container.0 loot expansion:armor/nasa/chestplate

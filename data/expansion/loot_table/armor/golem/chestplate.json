@@ -22,7 +22,7 @@
                 "!minecraft:food": {},
                 "minecraft:item_model": "expansion:armor/golem/chestplate",
                 "minecraft:max_stack_size": 1,
-                "minecraft:max_damage": 2000,
+                "minecraft:max_damage": 1500,
                 "minecraft:damage": 0,
                 "minecraft:equippable": {
                   "slot": "chest",
@@ -38,7 +38,7 @@
                   {
                     "attribute": "minecraft:armor",
                     "id": "exp.chest_armor",
-                    "amount": 2,
+                    "amount": 8,
                     "operation": "add_value",
                     "slot": "chest"
                   }
@@ -46,7 +46,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"golem_chestplate\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:102b,equipped:0b,set_name:\"golem\"},exp.enhanceable:1b,heat_resist:{base:10,modifier:0,total:10},cold_resist:{base:10,modifier:0,total:10},speed:{base:0.0,add_percent:0.0},max_damage:{base:2000,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:102b}"
+              "tag": "{exp_item:{name:\"golem_chestplate\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:102b,equipped:0b,set_name:\"golem\"},exp.enhanceable:1b,heat_resist:{base:10,modifier:0,total:10},cold_resist:{base:10,modifier:0,total:10},armor:{base:8.0,add_value:0.0d},speed:{base:0.0,add_percent:0.0},max_damage:{base:1500,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:102b}"
             },
             {
               "function": "minecraft:set_lore",
@@ -88,7 +88,7 @@
                     "translate": "exp_modules_coldresist_lore"
                   },
                   {
-                    "text": "10",
+                    "text": "4",
                     "color": "green",
                     "bold": true,
                     "italic": false
@@ -99,7 +99,7 @@
                     "translate": "exp_modules_heatresist_lore"
                   },
                   {
-                    "text": "10",
+                    "text": "4",
                     "color": "green",
                     "bold": true,
                     "italic": false

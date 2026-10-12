@@ -7,6 +7,9 @@
 # - function expansion:vehicles/rocket_segment/destroy (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
+execute if entity @s[tag=exp.fuel_segment] run function expansion:vehicles/rocket_segment/fuel/destroy
+execute if entity @s[tag=exp.storage_segment] on passengers run kill @s[type=chest_minecart]
+
 # drop this segment
 execute on passengers if entity @s[tag=exp.segment_display] run loot spawn ~ ~ ~ loot expansion:slot/contents
 execute as @e[type=item,nbt={Age:0s}] at @s run data merge entity @s {PickupDelay:0}
@@ -14,6 +17,5 @@ execute as @e[type=item,nbt={Age:0s}] at @s run data merge entity @s {PickupDela
 # destroy the rocket segment stack
 execute on passengers if entity @s[tag=exp.segment_display] run kill @s
 execute on passengers if entity @s[tag=exp.rocketsegment_rcdet] run kill @s
-execute on passengers if entity @s[tag=exp.fuel_storage] run kill @s
 execute on passengers if entity @s[tag=exp.offset_camel] run function expansion:utilities/erase_entity
 kill @s

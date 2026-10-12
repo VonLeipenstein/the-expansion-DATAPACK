@@ -18,20 +18,20 @@ data modify storage expansion:temp launchpad.origin set value \
 [\
     {text:"                               \n"},\
     [\
-        {text:""}\
+        {text:""},\
+        {text:"\n\n"}\
     ],\
-    {text:"\n\n"},\
     [\
-        {text:"\n"}\
+        {text:"\n"},\
+        {text:"\n\n"}\
     ],\
-    {text:"\n\n"},\
     [\
-        {text:"\n"}\
-    ],\
-    {text:"\n\n"}\
+        {text:"\n"},\
+        {text:"\n\n"}\
+    ]\
 ]
 
-data modify storage expansion:temp launchpad.origin[1] set value \
+data modify storage expansion:temp launchpad.origin[1][0] set value \
 [\
     [\
         {text:"Gravity"},\
@@ -45,7 +45,7 @@ data modify storage expansion:temp launchpad.origin[1] set value \
     ]\
 ]
 
-execute if score #origin exp.weight matches 0.. run data modify storage expansion:temp launchpad.origin[3] set value \
+execute if score #origin exp.weight matches 0.. run data modify storage expansion:temp launchpad.origin[2][0] set value \
 [\
     [\
         {text:""},\
@@ -57,7 +57,7 @@ execute if score #origin exp.weight matches 0.. run data modify storage expansio
     ]\
 ]
 
-execute if score #origin_required exp.fuel_level matches 0.. run data modify storage expansion:temp launchpad.origin[5] set value \
+execute if score #origin_required exp.fuel_level matches 0.. run data modify storage expansion:temp launchpad.origin[3][0] set value \
 [\
     [\
         {text:""},\
@@ -78,7 +78,7 @@ execute if score @s exp.origin = #mars exp.gravity_id on passengers if entity @s
 execute if score @s exp.origin = #venus exp.gravity_id on passengers if entity @s[tag=exp.rocket_origin_title] run data modify entity @s text.extra[2] set value {text:"Venus",bold:true,underlined:true,color:"gold"}
 
 # Set the origin planet sprite
-execute if score @s exp.origin = #earth exp.gravity_id on passengers if entity @s[tag=exp.rocket_origin_texture] run data modify entity @s text set value [{"player":{"hat":true,"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5MTk2YjMzMGM2Yjg5NjJmMjNhZDU2MjdmYjZlY2NlNDcyZWFmNWM5ZDQ0Zjc5MWY2NzA5YzdkMGY0ZGVjZSJ9fX0="}]}}]
-execute if score @s exp.origin = #moon exp.gravity_id on passengers if entity @s[tag=exp.rocket_origin_texture] run data modify entity @s text set value [{"player":{"hat":true,"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwYTFhN2JiMDdmZGI0ZTZhODZlMzQxODE2ZTg4NDNkZGFmN2NmMzcxM2EzNjY2ZDc0YjcyZjk4NjE5ZjA2MyJ9fX0="}]}}]
-execute if score @s exp.origin = #mars exp.gravity_id on passengers if entity @s[tag=exp.rocket_origin_texture] run data modify entity @s text set value [{"player":{"hat":true,"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM3ODU3ZTE2OWVkMzdiMjQ4OTVjM2ZkZTQyNjJkYWU2ZTg3NDI4NjFlYjczZWRhMTU0M2NiNGMwM2E2N2UzIn19fQ=="}]}}]
-execute if score @s exp.origin = #venus exp.gravity_id on passengers if entity @s[tag=exp.rocket_origin_texture] run data modify entity @s text set value [{"player":{"hat":true,"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGVmMTQ3ZGRjOTA4ZTY4MjVjMjI5OTk3YWE1Mjk3NjFmNTE2OTFhMTFjOTU1MTI5YTIzMzYzMmQ1NTQ4NzVlIn19fQ=="}]}}]
+execute if score @s exp.origin = #earth exp.gravity_id on passengers if entity @s[tag=exp.rocket_origin_texture] run data modify entity @s text set value [{"player":{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5MTk2YjMzMGM2Yjg5NjJmMjNhZDU2MjdmYjZlY2NlNDcyZWFmNWM5ZDQ0Zjc5MWY2NzA5YzdkMGY0ZGVjZSJ9fX0="}]}}]
+execute if score @s exp.origin = #moon exp.gravity_id on passengers if entity @s[tag=exp.rocket_origin_texture] run data modify entity @s text set value [{"player":{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzAwYTFhN2JiMDdmZGI0ZTZhODZlMzQxODE2ZTg4NDNkZGFmN2NmMzcxM2EzNjY2ZDc0YjcyZjk4NjE5ZjA2MyJ9fX0="}]}}]
+execute if score @s exp.origin = #mars exp.gravity_id on passengers if entity @s[tag=exp.rocket_origin_texture] run data modify entity @s text set value [{"player":{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM3ODU3ZTE2OWVkMzdiMjQ4OTVjM2ZkZTQyNjJkYWU2ZTg3NDI4NjFlYjczZWRhMTU0M2NiNGMwM2E2N2UzIn19fQ=="}]}}]
+execute if score @s exp.origin = #venus exp.gravity_id on passengers if entity @s[tag=exp.rocket_origin_texture] run data modify entity @s text set value [{"player":{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGVmMTQ3ZGRjOTA4ZTY4MjVjMjI5OTk3YWE1Mjk3NjFmNTE2OTFhMTFjOTU1MTI5YTIzMzYzMmQ1NTQ4NzVlIn19fQ=="}]}}]

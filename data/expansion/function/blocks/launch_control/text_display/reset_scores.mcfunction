@@ -30,3 +30,5 @@ scoreboard players reset #top exp.hold_count
 scoreboard players reset #body exp.hold_count
 scoreboard players reset #bottom exp.hold_count
 scoreboard players reset #fuel exp.hold_count
+
+scoreboard players reset #destination exp.distance

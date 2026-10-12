@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:deepslate_tile_slab",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "exp_blocks_nebuliteore_name",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_model": "expansion:blocks/nebulite_ore",
+                "minecraft:block_state": {
+                  "type": "double",
+                  "waterlogged": "true"
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{nebulite_ore:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

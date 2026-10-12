@@ -23,7 +23,7 @@
     "barrier": {
       "type": "minecraft:noise",
       "noise": "minecraft:aquifer_barrier",
-      "xz_scale": 1.0,
+      "xz_scale": 1,
       "y_scale": 0.5
     },
     "continents": "expansion:mars/continents",
@@ -172,13 +172,13 @@
     "fluid_level_floodedness": {
       "type": "minecraft:noise",
       "noise": "minecraft:aquifer_fluid_level_floodedness",
-      "xz_scale": 1.0,
+      "xz_scale": 1,
       "y_scale": 0.67
     },
     "fluid_level_spread": {
       "type": "minecraft:noise",
       "noise": "minecraft:aquifer_fluid_level_spread",
-      "xz_scale": 1.0,
+      "xz_scale": 1,
       "y_scale": 0.7142857142857143
     },
     "preliminary_surface_level": {
@@ -209,32 +209,32 @@
     "lava": {
       "type": "minecraft:noise",
       "noise": "minecraft:aquifer_lava",
-      "xz_scale": 1.0,
-      "y_scale": 1.0
+      "xz_scale": 1,
+      "y_scale": 1
     },
     "temperature": {
       "type": "minecraft:shifted_noise",
       "noise": "minecraft:temperature",
       "shift_x": "minecraft:shift_x",
-      "shift_y": 0.0,
+      "shift_y": 0,
       "shift_z": "minecraft:shift_z",
       "xz_scale": 0.25,
-      "y_scale": 0.0
+      "y_scale": 0
     },
     "vegetation": {
       "type": "minecraft:shifted_noise",
       "noise": "minecraft:vegetation",
       "shift_x": "minecraft:shift_x",
-      "shift_y": 0.0,
+      "shift_y": 0,
       "shift_z": "minecraft:shift_z",
       "xz_scale": 0.25,
-      "y_scale": 0.0
+      "y_scale": 0
     },
     "vein_gap": {
       "type": "minecraft:noise",
       "noise": "minecraft:ore_gap",
-      "xz_scale": 1.0,
-      "y_scale": 1.0
+      "xz_scale": 1,
+      "y_scale": 1
     },
     "vein_ridged": {
       "type": "minecraft:add",
@@ -248,15 +248,15 @@
             "argument": {
               "type": "minecraft:range_choice",
               "input": "minecraft:y",
-              "max_exclusive": 51.0,
-              "min_inclusive": -60.0,
+              "max_exclusive": 51,
+              "min_inclusive": -60,
               "when_in_range": {
                 "type": "minecraft:noise",
                 "noise": "minecraft:ore_vein_a",
-                "xz_scale": 4.0,
-                "y_scale": 4.0
+                "xz_scale": 4,
+                "y_scale": 4
               },
-              "when_out_of_range": 0.0
+              "when_out_of_range": 0
             }
           }
         },
@@ -267,15 +267,15 @@
             "argument": {
               "type": "minecraft:range_choice",
               "input": "minecraft:y",
-              "max_exclusive": 51.0,
-              "min_inclusive": -60.0,
+              "max_exclusive": 51,
+              "min_inclusive": -60,
               "when_in_range": {
                 "type": "minecraft:noise",
                 "noise": "minecraft:ore_vein_b",
-                "xz_scale": 4.0,
-                "y_scale": 4.0
+                "xz_scale": 4,
+                "y_scale": 4
               },
-              "when_out_of_range": 0.0
+              "when_out_of_range": 0
             }
           }
         }
@@ -286,15 +286,15 @@
       "argument": {
         "type": "minecraft:range_choice",
         "input": "minecraft:y",
-        "max_exclusive": 51.0,
-        "min_inclusive": -60.0,
+        "max_exclusive": 51,
+        "min_inclusive": -60,
         "when_in_range": {
           "type": "minecraft:noise",
           "noise": "minecraft:ore_veininess",
           "xz_scale": 1.5,
           "y_scale": 1.5
         },
-        "when_out_of_range": 0.0
+        "when_out_of_range": 0
       }
     }
   },
@@ -348,6 +348,73 @@
                         "if_true": {
                           "type": "minecraft:biome",
                           "biome_is": [
+                            "expansion:mars/valley",
+                            "expansion:mars/dried_river"
+                          ]
+                        },
+                        "then_run": {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "vertical_gradient",
+                            "false_at_and_above": {
+                              "absolute": 85
+                            },
+                            "true_at_and_below": {
+                              "absolute": 70
+                            },
+                            "random_name": "basalt_gradient"
+                          },
+                          "then_run": {
+                            "type": "minecraft:sequence",
+                            "sequence": [
+                              {
+                                "type": "condition",
+                                "if_true": {
+                                  "type": "minecraft:biome",
+                                  "biome_is": [
+                                    "expansion:mars/valley"
+                                  ]
+                                },
+                                "then_run": {
+                                  "type": "block",
+                                  "result_state": {
+                                    "Name": "minecraft:smooth_basalt"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "condition",
+                                "if_true": {
+                                  "type": "noise_threshold",
+                                  "noise": "expansion:surface_medium",
+                                  "max_threshold": 0.2,
+                                  "min_threshold": -0.2
+                                },
+                                "then_run": {
+                                  "type": "minecraft:block",
+                                  "result_state": {
+                                    "Name": "minecraft:smooth_basalt"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "minecraft:block",
+                                "result_state": {
+                                  "Name": "deepslate",
+                                    "Properties": {
+                                      "axis": "y"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                          "type": "minecraft:biome",
+                          "biome_is": [
                             "expansion:mars/volcano"
                           ]
                         },
@@ -358,7 +425,7 @@
                               "type": "minecraft:condition",
                               "if_true": {
                                 "type": "minecraft:noise_threshold",
-                                "noise": "minecraft:ice",
+                                "noise": "expansion:surface_medium",
                                 "min_threshold": -0.05,
                                 "max_threshold": 0.05
                               },
@@ -373,7 +440,7 @@
                               "type": "minecraft:condition",
                               "if_true": {
                                 "type": "minecraft:noise_threshold",
-                                "noise": "minecraft:ice",
+                                "noise": "expansion:surface_medium",
                                 "min_threshold": -0.1,
                                 "max_threshold": 0.1
                               },
@@ -632,84 +699,6 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "expansion:mars/nether_edge"
-              ]
-            },
-            "then_run": {
-              "type": "minecraft:sequence",
-              "sequence": [
-                {
-                  "type": "minecraft:condition",
-                  "if_true": {
-                    "type": "minecraft:stone_depth",
-                    "offset": 0,
-                    "surface_type": "floor",
-                    "add_surface_depth": false,
-                    "secondary_depth_range": 0
-                  },
-                  "then_run": {
-                    "type": "minecraft:sequence",
-                    "sequence": [
-                      {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                          "type": "minecraft:noise_threshold",
-                          "noise": "expansion:mars_nether_edge_biomes",
-                          "min_threshold": 0.2,
-                          "max_threshold": 2
-                        },
-                        "then_run": {
-                          "type": "minecraft:block",
-                          "result_state": {
-                            "Name": "minecraft:warped_nylium"
-                          }
-                        }
-                      },
-                      {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                          "type": "minecraft:noise_threshold",
-                          "noise": "expansion:mars_nether_edge_biomes",
-                          "min_threshold": -2,
-                          "max_threshold": -0.2
-                        },
-                        "then_run": {
-                          "type": "minecraft:block",
-                          "result_state": {
-                            "Name": "minecraft:warped_nylium"
-                          }
-                        }
-                      }
-                    ]
-                  }
-                },
-                {
-                  "type": "minecraft:condition",
-                  "if_true": {
-                    "type": "minecraft:vertical_gradient",
-                    "random_name": "nether",
-                    "true_at_and_below": {
-                      "absolute": 0
-                    },
-                    "false_at_and_above": {
-                      "absolute": 20
-                    }
-                  },
-                  "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                      "Name": "minecraft:netherrack"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "type": "minecraft:condition",
-            "if_true": {
-              "type": "minecraft:biome",
-              "biome_is": [
                 "expansion:mars/salt_flats"
               ]
             },
@@ -720,7 +709,7 @@
                   "type": "minecraft:condition",
                   "if_true": {
                     "type": "minecraft:noise_threshold",
-                    "noise": "minecraft:ice",
+                    "noise": "expansion:surface_small",
                     "min_threshold": -0.07,
                     "max_threshold": 0.07
                   },
@@ -731,7 +720,7 @@
                         "type": "minecraft:condition",
                         "if_true": {
                           "type": "minecraft:stone_depth",
-                          "offset": 6,
+                          "offset": 2,
                           "surface_type": "ceiling",
                           "add_surface_depth": false,
                           "secondary_depth_range": 0
@@ -739,7 +728,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:white_stained_glass"
+                            "Name": "minecraft:air"
                           }
                         }
                       },
@@ -747,7 +736,7 @@
                         "type": "minecraft:condition",
                         "if_true": {
                           "type": "minecraft:stone_depth",
-                          "offset": 7,
+                          "offset": 3,
                           "surface_type": "ceiling",
                           "add_surface_depth": false,
                           "secondary_depth_range": 0
@@ -755,7 +744,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:sea_lantern"
+                            "Name": "minecraft:shroomlight"
                           }
                         }
                       }
@@ -786,22 +775,6 @@
                           "type": "minecraft:block",
                           "result_state": {
                             "Name": "minecraft:white_concrete_powder"
-                          }
-                        }
-                      },
-                      {
-                        "type": "minecraft:condition",
-                        "if_true": {
-                          "type": "minecraft:stone_depth",
-                          "offset": 7,
-                          "surface_type": "floor",
-                          "add_surface_depth": false,
-                          "secondary_depth_range": 0
-                        },
-                        "then_run": {
-                          "type": "minecraft:block",
-                          "result_state": {
-                            "Name": "minecraft:sea_lantern"
                           }
                         }
                       }
@@ -888,20 +861,27 @@
                       }
                     ]
                   }
-                },
-                {
-                  "type": "minecraft:condition",
-                  "if_true": {
-                    "type": "minecraft:steep"
-                  },
-                  "then_run": {
-                    "type": "minecraft:block",
-                    "result_state": {
-                      "Name": "minecraft:red_terracotta"
-                    }
-                  }
                 }
               ]
+            }
+          },
+          {
+            "type": "minecraft:condition",
+            "if_true": {
+              "type": "vertical_gradient",
+              "false_at_and_above": {
+                "above_bottom": 20
+              },
+              "true_at_and_below": {
+                "above_bottom": 10
+              },
+              "random_name": "mars_magma"
+            },
+            "then_run": {
+              "type": "block",
+              "result_state": {
+                "Name": "magma_block"
+              }
             }
           }
         ]

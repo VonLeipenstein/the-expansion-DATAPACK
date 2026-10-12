@@ -8,6 +8,6 @@
 
 execute if function expansion:blocks/infuser/melting/compare_output run return fail
 
-execute if items block ~ ~ ~ container.7 * on passengers run function expansion:blocks/infuser/melting/add_product
-execute unless items block ~ ~ ~ container.7 * on passengers run function expansion:blocks/infuser/melting/insert_product
-execute on passengers run item replace entity @s container.0 with minecraft:air
+execute if items block ~ ~ ~ container.7 * on passengers if entity @s[tag=exp.output] run function expansion:blocks/infuser/melting/add_product
+execute unless items block ~ ~ ~ container.7 * on passengers if entity @s[tag=exp.output] run function expansion:blocks/infuser/melting/insert_product
+execute on passengers if entity @s[tag=exp.output] run item replace entity @s container.0 with minecraft:air

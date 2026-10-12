@@ -206,8 +206,8 @@
     "lava": {
       "type": "minecraft:noise",
       "noise": "minecraft:aquifer_lava",
-      "xz_scale": 1.0,
-      "y_scale": 1.0
+      "xz_scale": 0.0,
+      "y_scale": 0.0
     },
     "temperature": {
       "type": "minecraft:shifted_noise",
@@ -345,8 +345,7 @@
                         "if_true": {
                           "type": "minecraft:biome",
                           "biome_is": [
-                            "expansion:moon/flatlands",
-                            "expansion:moon/crater"
+                            "expansion:moon/flatlands"
                           ]
                         },
                         "then_run": {
@@ -371,7 +370,7 @@
                               "type": "minecraft:condition",
                               "if_true": {
                                 "type": "minecraft:noise_threshold",
-                                "noise": "minecraft:ice",
+                                "noise": "expansion:surface_small",
                                 "min_threshold": -0.2,
                                 "max_threshold": 0.2
                               },
@@ -401,6 +400,35 @@
                               }
                             }
                           ]
+                        }
+                      },
+                      {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                          "type": "minecraft:biome",
+                          "biome_is": [
+                            "expansion:moon/crater",
+                            "expansion:moon/crater_slopes"
+                          ]
+                        },
+                        "then_run": {
+                          "type": "minecraft:condition",
+                          "if_true": {
+                            "type": "minecraft:vertical_gradient",
+                            "false_at_and_above": {
+                              "absolute": 50
+                            },
+                            "true_at_and_below": {
+                              "absolute": 40
+                            },
+                            "random_name": "crater_gradient"
+                          },
+                          "then_run": {
+                            "type": "minecraft:block",
+                            "result_state": {
+                              "Name": "gray_concrete_powder"
+                            }
+                          }
                         }
                       }
                     ]

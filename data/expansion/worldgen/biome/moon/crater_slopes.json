@@ -13,7 +13,11 @@
     [],
     [],
     [],
-    [],
+    [
+      "expansion:moon/ores/titanium_upper",
+      "expansion:moon/ores/iron_upper",
+      "expansion:moon/ores/copper"
+    ],
     [],
     [],
     []
@@ -27,8 +31,8 @@
     "monster": []
   },
   "spawn_costs": {},
-  "temperature": 0.5,
-  "temperature_modifier": "none",
-  "downfall": 0.5,
+  "temperature": -1,
+  "downfall": 0.4,
+  "temperature_modifier": "frozen",
   "has_precipitation": false
 }

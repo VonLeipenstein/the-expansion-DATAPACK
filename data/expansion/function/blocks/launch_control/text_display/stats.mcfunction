@@ -11,44 +11,41 @@ data modify storage expansion:temp launchpad.stats set value \
 [\
     {text:""},\
     [\
-        {text:"",color:"green"},\
+        {text:""},\
         {text:"Mass: "},\
-        {score:{name:"#stat",objective:"exp.mass"},bold:true}\
+        {score:{name:"#stat",objective:"exp.mass"},bold:true,color:"green"},\
+        {text:"\n"}\
     ],\
-    {text:"\n"},\
     [\
-        {text:"",color:"green"},\
+        {text:""},\
         {text:"Thrust: "},\
-        {score:{name:"#stat",objective:"exp.engine_thrust"},bold:true}\
+        {score:{name:"#stat",objective:"exp.engine_thrust"},bold:true,color:"green"},\
+        {text:"\n"}\
     ],\
-    {text:"\n"},\
     [\
-        {text:"",color:"green"},\
+        {text:""},\
+        {text:"Range: "},\
+        {score:{name:"#stat",objective:"exp.max_range"},bold:true,color:"green"},\
+        {text:"\n"}\
+    ],\
+    [\
+        {text:""},\
         {text:"Efficiency: "},\
         [\
-            {text:"",bold:true},\
+            {text:"",bold:true,color:"green"},\
             {score:{name:"#whole",objective:"exp.engine_efficiency"}},\
             {text:"."},\
             {score:{name:"#decimal",objective:"exp.engine_efficiency"}}\
-        ]\
+        ],\
+        {text:"\n"}\
     ],\
-    {text:"\n"},\
-    [\
-        {text:"",color:"green"},\
-        {text:"Capacity: "},\
-        {score:{name:"#stat",objective:"exp.fuel_max"},bold:true}\
-    ],\
-    {text:"\n----------------\n"},\
     [\
         {text:""},\
-        {text:"Launch Ready: "},\
-        {text:"✔",color:"green",bold:true},\
-        {text:"\n"},\
-        {text:"Return Ready: "},\
-        {text:"✔",color:"green",bold:true},\
+        {text:"Capacity: "},\
+        {score:{name:"#stat",objective:"exp.fuel_max"},bold:true,color:"green"}\
     ],\
     {text:"\n----------------\n"},\
-    {text:"\n\n\n\n\n\n\n"},\
+    {text:"\n\n\n\n\n\n\n\n\n"},\
     {text:"\n                     "},\
 ]
 

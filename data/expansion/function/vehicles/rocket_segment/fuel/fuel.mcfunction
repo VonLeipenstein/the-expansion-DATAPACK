@@ -1,27 +1,30 @@
-# get fuel count from players hand
-execute store result score #held exp.fuel_level as @p[tag=exp.clicking_player] run data get entity @s SelectedItem.count
+# swap fuel cells
 
-# calculate missing fuel count for this segment
-execute store result score #missing exp.fuel_level run function expansion:vehicles/rocket_segment/get_stat/capacity/segment
-execute store result score #temp exp.fuel_level run function expansion:vehicles/rocket_segment/get_stat/fuel/segment
-scoreboard players operation #missing exp.fuel_level -= #temp exp.fuel_level
+# prevent swapping wrong fuel cell
+execute as @p if items entity @s weapon.mainhand *[minecraft:custom_data~{fuel:{id:2}}] run return run function expansion:utilities/error_messages/wrong_fuel_type
 
-# if held fuel count is greater than missing fuel count, set fuel count to missing fuel count
-execute if score #held exp.fuel_level > #missing exp.fuel_level run scoreboard players operation #held exp.fuel_level = #missing exp.fuel_level
+# update item value from ship
+execute on passengers if entity @s[tag=exp.fuel_slot] run function expansion:vehicles/spaceship/fuel/update_cell
 
-# update the segments fuel storage
-scoreboard players operation @s exp.fuel_level += #held exp.fuel_level
+# store player item
+data modify storage expansion:temp fuel_cell set from entity @p SelectedItem
 
-# remove fuel count from player's hand
-scoreboard players operation #held exp.fuel_level *= #-1 exp.const
-scoreboard players operation #temp exp.hold_count = #held exp.fuel_level
-execute as @p[tag=exp.clicking_player] run item modify entity @s[gamemode=!creative] weapon.mainhand expansion:utility/add_count_from_temp_score
+# replace player item with ship item
+execute on passengers if entity @s[tag=exp.fuel_slot] run item replace entity @p weapon.mainhand from entity @s contents
+
+# replace ship item with stored player item
+execute on passengers if entity @s[tag=exp.fuel_slot] run data modify entity @s item set from storage expansion:temp fuel_cell
+
+# update ship value from item
+execute store result score @s exp.fuel_level on passengers if entity @s[tag=exp.fuel_slot] run data get entity @s item.components."minecraft:custom_data".fuel.lvl
+execute store result score @s exp.fuel_max on passengers if entity @s[tag=exp.fuel_slot] run data get entity @s item.components."minecraft:custom_data".fuel.max
+execute store result entity @s data.stats.fuel_max.base int 1 run scoreboard players get @s exp.fuel_max
+execute on passengers if entity @s[tag=exp.segment_display] run function expansion:vehicles/rocket_segment/fuel/update_indicator
+
+# reset temporary storage
+data remove storage expansion:temp fuel_cell
+# reset click detection
+execute on passengers if entity @s[type=interaction] run data remove entity @s interaction
 
 # refresh the launchpad values
 function expansion:vehicles/rocket_segment/reload_launchpad
-
-# reset used scores
-scoreboard players reset #temp exp.fuel_level
-scoreboard players reset #held exp.fuel_level
-scoreboard players reset #missing exp.fuel_level
-scoreboard players reset #temp exp.hold_count

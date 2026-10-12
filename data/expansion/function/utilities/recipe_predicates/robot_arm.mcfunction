@@ -7,11 +7,11 @@
 # <<< generated function callers <<<
 
 execute unless items block ~ ~ ~ container.1 * \
-        if items block ~ ~ ~ container.2 *[custom_data~{exp_item:{name:"amethonium_ingot"}}] \
+        if items block ~ ~ ~ container.2 *[custom_data~{exp_item:{name:"nebulanium_ingot"}}] \
         if items block ~ ~ ~ container.3 *[custom_data~{exp_item:{name:"simple_mechanism"}}] \
         \
         unless items block ~ ~ ~ container.10 * \
-        if items block ~ ~ ~ container.11 *[custom_data~{exp_item:{name:"amethonium_ingot"}}] \
+        if items block ~ ~ ~ container.11 *[custom_data~{exp_item:{name:"nebulanium_ingot"}}] \
         unless items block ~ ~ ~ container.12 * \
         \
         if items block ~ ~ ~ container.19 *[custom_data~{exp_item:{name:"steel_ingot"}}] \

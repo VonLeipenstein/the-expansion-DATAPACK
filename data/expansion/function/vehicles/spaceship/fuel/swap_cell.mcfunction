@@ -8,6 +8,9 @@
 
 ## AS ship AT player
 
+# prevent swapping wrong fuel cell
+execute as @p if items entity @s weapon.mainhand *[minecraft:custom_data~{fuel:{id:1}}] run return run function expansion:utilities/error_messages/wrong_fuel_type
+
 # update item value from ship
 execute on passengers if entity @s[tag=exp.fuel_slot] run function expansion:vehicles/spaceship/fuel/update_cell
 

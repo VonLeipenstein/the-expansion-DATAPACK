@@ -20,8 +20,8 @@ loot insert ~ ~ ~ loot expansion:items/elektromotor
 loot insert ~ ~ ~ loot expansion:items/fan
 loot insert ~ ~ ~ loot expansion:items/oxygen_filter
 loot insert ~ ~ ~ loot expansion:items/simple_mechanism
-loot insert ~ ~ ~ loot expansion:items/amethonium_plate
-loot insert ~ ~ ~ loot expansion:items/amethonium_ingot
+loot insert ~ ~ ~ loot expansion:items/nebulanium_plate
+loot insert ~ ~ ~ loot expansion:items/nebulanium_ingot
 loot insert ~ ~ ~ loot expansion:items/cryonite_crystal
 loot insert ~ ~ ~ loot expansion:items/raw_titanium
 loot insert ~ ~ ~ loot expansion:items/vulcanium_shard

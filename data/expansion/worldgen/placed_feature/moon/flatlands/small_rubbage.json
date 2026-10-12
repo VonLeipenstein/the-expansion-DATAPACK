@@ -25,7 +25,9 @@
                             0
                         ],
                         "blocks": [
-                            "minecraft:light_gray_concrete_powder"
+                            "minecraft:light_gray_concrete_powder",
+                            "minecraft:gray_concrete_powder"
+
                         ]
                     },
                     {

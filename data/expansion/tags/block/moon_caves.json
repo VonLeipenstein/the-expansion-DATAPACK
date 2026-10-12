@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:deepslate",
+    "minecraft:light_gray_concrete_powder"
+  ]
+}

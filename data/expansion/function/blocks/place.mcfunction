@@ -24,6 +24,7 @@ execute if predicate expansion:holding/items/pocket_space run function expansion
 execute if predicate expansion:holding/blocks/launch_pad run function expansion:blocks/launch_pad/place/init
 execute if predicate expansion:holding/blocks/launch_control run function expansion:blocks/launch_control/place/init
 execute if predicate expansion:holding/blocks/infuser run function expansion:blocks/infuser/place/init
+execute if predicate expansion:holding/blocks/voltameter run function expansion:blocks/voltameter/place/init
 
 # remove one from the held item count
 item modify entity @s[gamemode=!creative] weapon.mainhand expansion:utility/reduce_count

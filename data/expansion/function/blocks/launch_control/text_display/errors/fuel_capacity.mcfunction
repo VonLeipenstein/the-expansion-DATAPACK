@@ -1,8 +1,5 @@
-data modify storage expansion:temp launchpad.stats[11] set value {text:"Insufficient\nFuel Capacity\nfor one-way-trip\n\nAdd more Fuel\nTank segments to\nincrease Capacity\n",color:"red"}
-data modify storage expansion:temp launchpad.stats[9][2] set value {text:"❌",color:"red"}
-data modify storage expansion:temp launchpad.stats[9][5] set value {text:"❌",color:"red"}
-data modify storage expansion:temp launchpad.stats[7][0] set value {text:"⚠ ",color:"red"}
+data modify storage expansion:temp launchpad.stats[7] set value {text:"Insufficient\nFuel Capacity\nfor one-way-trip\n\nAdd more Fuel\nTank segments to\nincrease Capacity\n\n\n",color:"red"}
+data modify storage expansion:temp launchpad.stats[5][2].color set value "red"
 
-data modify storage expansion:temp launchpad.trip[3][0][0] set value {text:"⚠ ",color:"red"}
-data modify storage expansion:temp launchpad.trip[3][4][0] set value {text:"⚠ ",color:"red"}
-data modify storage expansion:temp launchpad.trip[5][0] set value {text:"⚠ ",color:"red"}
+data modify storage expansion:temp launchpad.trip[2][0][2].color set value "red"
+data modify storage expansion:temp launchpad.trip[2][4][2].color set value "red"

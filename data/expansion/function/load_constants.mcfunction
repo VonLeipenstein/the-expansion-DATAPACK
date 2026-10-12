@@ -25,7 +25,7 @@ scoreboard players set #railgun_warmup exp.warmup 15
 scoreboard players set #railgun_ammo_on_reload exp.ammo 1
 
 # Spaceship
-scoreboard players set #spaceship_fuel_consumption exp.fuel_level 20
+scoreboard players set #spaceship_fuel_consumption exp.fuel_level 500
 
 # planet temperature stats
 scoreboard players set #earth exp.temperature 0
@@ -66,7 +66,7 @@ scoreboard players set #moon_mars exp.distance 2
 scoreboard players set #moon_venus exp.distance 2
 scoreboard players set #mars_venus exp.distance 3
 
-#> Block Constants
+# Block Constants
 scoreboard players set #lacrymae_extraction_time exp.timer_1 120
 scoreboard players set #tesla_coil_cooldown exp.cooldown 20
 

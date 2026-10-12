@@ -1,2 +1,2 @@
-execute on passengers if entity @s[tag=exp.segment_display] run return run data get entity @s item.components."minecraft:custom_data".rocket_segment.stats.capacity
+execute on passengers if entity @s[tag=exp.fuel_slot] run return run data get entity @s item.components."minecraft:custom_data".fuel.max
 return 0

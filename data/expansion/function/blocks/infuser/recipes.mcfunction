@@ -6,8 +6,5 @@
 # - function expansion:blocks/infuser/main (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
-# steel ingot
-execute if function expansion:utilities/recipe_predicates/steel_ingot on passengers run return run loot replace entity @s container.0 loot expansion:items/steel_ingot
-
-# amethonium ingot
-execute if function expansion:utilities/recipe_predicates/amethonium_ingot on passengers run return run loot replace entity @s container.0 loot expansion:items/amethonium_ingot
+# nebulanium ingot
+execute if function expansion:utilities/recipe_predicates/nebulanium_ingot on passengers if entity @s[tag=exp.output] run return run loot replace entity @s contents loot expansion:items/nebulanium_ingot

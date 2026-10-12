@@ -6,9 +6,9 @@
 # - function expansion:blocks/fabricator/recipes (1 caller) [WARN side/down 4]
 # <<< generated function callers <<<
 
-execute if items block ~ ~ ~ container.1 *[custom_data~{exp_item:{name:"amethonium_plate"}}] \
+execute if items block ~ ~ ~ container.1 *[custom_data~{exp_item:{name:"nebulanium_plate"}}] \
         if items block ~ ~ ~ container.2 *[custom_data~{exp_item:{name:"monochrome_monitor"}}] \
-        if items block ~ ~ ~ container.3 *[custom_data~{exp_item:{name:"amethonium_plate"}}] \
+        if items block ~ ~ ~ container.3 *[custom_data~{exp_item:{name:"nebulanium_plate"}}] \
         \
         if items block ~ ~ ~ container.10 *[custom_data~{exp_item:{name:"circuit_board"}}] \
         if items block ~ ~ ~ container.11 tinted_glass \

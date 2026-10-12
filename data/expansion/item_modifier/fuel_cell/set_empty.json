@@ -1,0 +1,19 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "translate": "exp_tools_fuelcell_type"
+        },
+        {
+          "translate": "exp_tools_fuelcell_empty"
+        }
+      ]
+    ],
+    "mode": "replace_section",
+    "offset": 1,
+    "size": 1
+  }
+]

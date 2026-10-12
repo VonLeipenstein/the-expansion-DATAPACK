@@ -2,6 +2,9 @@
 execute on passengers if entity @s[type=interaction] on passengers if entity @s[tag=exp.rocket_segment] store result score @s exp.origin on vehicle on vehicle run scoreboard players get @s exp.origin
 execute on passengers if entity @s[type=interaction] on passengers if entity @s[tag=exp.rocket_segment] store result score @s exp.destination on vehicle on vehicle run scoreboard players get @s exp.destination
 
+# calculate the distance from the origin to the destination
+execute store result score #destination exp.distance run function expansion:vehicles/rocket_segment/get_stat/distance
+
 # get origin gravity score
 execute store result score #origin exp.gravity run function expansion:mechanics/gravity/get_score
 # get destination gravity score

@@ -42,7 +42,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/amethonium_ingot",
+          "value": "expansion:items/nebulanium_ingot",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -56,7 +56,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/amethonium_plate",
+          "value": "expansion:items/nebulanium_plate",
           "functions": [
             {
               "function": "minecraft:set_count",

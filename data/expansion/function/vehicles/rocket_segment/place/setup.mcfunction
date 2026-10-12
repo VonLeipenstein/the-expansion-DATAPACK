@@ -31,6 +31,7 @@ execute if predicate expansion:contents/rocket_segment/bottom run tag @s add exp
 # Set the ID tag for this segment
 execute if predicate expansion:contents/rocket_segment/control run function expansion:vehicles/rocket_segment/control/place
 execute if predicate expansion:contents/rocket_segment/fuel run function expansion:vehicles/rocket_segment/fuel/place
+execute if predicate expansion:contents/rocket_segment/storage run function expansion:vehicles/rocket_segment/storage/place
 
 # if placed on a launchpad, merge the destination and origin
 execute store result score @s exp.origin on vehicle on vehicle if entity @s[tag=exp.launch_pad] run scoreboard players get @s exp.origin

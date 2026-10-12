@@ -4,3 +4,5 @@ scoreboard players set @s exp.timer_1 0
 playsound minecraft:item.trident.thunder ambient @a ~ ~ ~ 5 0
 
 particle flash{color:16777215} ~ ~1 ~ ~ ~ ~ 0 1 force
+
+execute positioned ~ ~0.2 ~ facing ~ ~1 ~ run function expansion:blocks/infuser/charged/impact

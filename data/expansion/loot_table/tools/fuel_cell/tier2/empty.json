@@ -35,7 +35,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"fuel_cell\",crafting_count:1,max_stack_size:1,exp_tool:1b,expansion_coas:1b},tier:2b,fuel:{lvl:0,max:96000},icon:{layer1:\"\uff01\",layer2:\"\ufa0b\"}}"
+              "tag": "{exp_item:{name:\"fuel_cell\",crafting_count:1,max_stack_size:1,exp_tool:1b,expansion_coas:1b},tier:2b,fuel:{lvl:0,max:128,id:0},icon:{layer1:\"\uff01\",layer2:\"\ufa0b\"}}"
             },
             {
               "function": "minecraft:set_lore",
@@ -44,6 +44,14 @@
                 {
                   "text": ""
                 },
+                [
+                  {
+                    "translate": "exp_tools_fuelcell_type"
+                  },
+                  {
+                    "translate": "exp_tools_fuelcell_empty"
+                  }
+                ],
                 [
                   {
                     "translate": "exp_tools_fuelcell_lvl"

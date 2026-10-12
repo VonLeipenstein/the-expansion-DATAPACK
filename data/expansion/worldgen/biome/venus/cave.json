@@ -20,7 +20,9 @@
     ],
     [
       "expansion:venus/cave/basalt_pillars",
-      "expansion:venus/magma_caves/lava_spring"
+      "expansion:venus/magma_caves/lava_spring",
+      "expansion:venus/cave/spike_ceiling",
+      "expansion:venus/cave/spike_floor"
     ],
     [
       "expansion:venus/ores/diamond",
@@ -37,12 +39,22 @@
     [],
     []
   ],
+  "attributes": {
+    "visual/ambient_particles": [
+      {
+        "particle": {
+          "type": "ash"
+        },
+        "probability": 0.05
+      }
+    ]
+  },
   "effects": {
     "foliage_color": 10387789,
     "grass_color": 9470285,
     "water_color": 5404
   },
   "has_precipitation": false,
-  "temperature": 0.5,
+  "temperature": 2,
   "downfall": 0.5
 }

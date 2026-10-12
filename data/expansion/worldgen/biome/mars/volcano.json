@@ -14,7 +14,10 @@
     [],
     [],
     [],
-    [],
+    [
+      "expansion:mars/ores/nebulite_upper",
+      "expansion:mars/ores/titanium_upper"
+    ],
     [],
     []
   ],

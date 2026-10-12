@@ -15,12 +15,20 @@ execute store result score #temp exp.fuel_level run data get block ~ ~ ~ Items[{
 execute store result score #temp exp.fuel_max run data get block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.max
 
 # Add a bound random amount to the fuel level of the cell
-execute store result score #add exp.fuel_level run random value 8000..12000
+execute store result score #add exp.fuel_level run random value 6..12
 scoreboard players operation #temp exp.fuel_level += #add exp.fuel_level
 
 # merge the new fuel level with the cell
 execute if score #temp exp.fuel_level > #temp exp.fuel_max run scoreboard players operation #temp exp.fuel_level = #temp exp.fuel_max
 execute store result block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.lvl int 1 run scoreboard players get #temp exp.fuel_level
+
+# update fuel id
+# 0 for empty
+# 1 for hydrogen
+# 2 for lacrymae
+data modify block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_data".fuel.id set value 2
+item modify block ~ ~ ~ container.6 expansion:fuel_cell/set_lacrymae
+data modify block ~ ~ ~ Items[{Slot:6b}].components."minecraft:custom_model_data".strings[0] set value "lacrymae"
 
 # calculate cells new percentage
 scoreboard players operation #input exp.math = #temp exp.fuel_level

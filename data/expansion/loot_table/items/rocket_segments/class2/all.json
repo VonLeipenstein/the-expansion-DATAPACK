@@ -1,0 +1,54 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:items/rocket_segments/class2/engine/standard"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:items/rocket_segments/class2/engine/hauler"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:items/rocket_segments/class2/body/fuel"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:items/rocket_segments/class2/top/standard"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:items/rocket_segments/class2/body/control"
+          }
+        ]
+      }
+    ]
+}

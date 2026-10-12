@@ -17,7 +17,12 @@
 
     "visual/sky_color": "#000000",
     "visual/sky_light_color": "#ffffff",
-    "visual/sky_light_factor": 1
+    "visual/sky_light_factor": 1,
+
+    "visual/water_fog_end_distance": 200,
+    "visual/water_fog_color": "#00fff2",
+
+    "minecraft:gameplay/increased_fire_burnout": true
   },
   "skybox": "overworld",
   "has_fixed_time": false,
