@@ -6,7 +6,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/rocket_segments/class2/engine/standard"
+            "value": "expansion:items/rocket/class2/engine/standard"
           }
         ]
       },
@@ -16,7 +16,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/rocket_segments/class2/engine/hauler"
+            "value": "expansion:items/rocket/class2/engine/hauler"
           }
         ]
       },
@@ -26,7 +26,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/rocket_segments/class2/body/fuel"
+            "value": "expansion:items/rocket/class2/body/fuel"
           }
         ]
       },
@@ -36,7 +36,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/rocket_segments/class2/top/standard"
+            "value": "expansion:items/rocket/class2/top/standard"
           }
         ]
       },
@@ -46,7 +46,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/rocket_segments/class2/body/control"
+            "value": "expansion:items/rocket/class2/body/control"
           }
         ]
       }

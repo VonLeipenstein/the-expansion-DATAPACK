@@ -27,7 +27,7 @@ execute if entity @s[tag=exp.launch_pad] run return run function expansion:block
 ## blocks that only function when a player is within 50 blocks
 execute unless entity @s[tag=exp.loaded] run return fail
 execute if entity @s[tag=exp.oxygenator] run return run function expansion:blocks/oxygenator/main
-execute if entity @s[tag=exp.lacrymae_extractor] run return run function expansion:blocks/lacrymae_extractor/main
+execute if entity @s[tag=exp.lacrymae_extractor] run return run function expansion:blocks/extractor/main
 execute if entity @s[tag=exp.planetarium] run return run function expansion:blocks/planetarium/main
 execute if entity @s[tag=exp.compressor] run return run function expansion:blocks/compressor/main
 execute if entity @s[tag=exp.enhancer] run return run function expansion:blocks/enhancer/main

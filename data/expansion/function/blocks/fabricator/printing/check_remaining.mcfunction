@@ -21,5 +21,5 @@ execute unless score @s exp.value matches 1 if items block ~ ~ ~ container.20 * 
 execute unless score @s exp.value matches 1 if items block ~ ~ ~ container.21 * run scoreboard players set @s exp.value 1
 
 # run the print again if there are still items inside the printer
-execute if score @s exp.value matches 1 run function expansion:blocks/fabricator/printing/check_recipes
+execute if score @s exp.value matches 1 run function expansion:blocks/fabricator/printing/checks
 scoreboard players reset @s exp.value

@@ -8,7 +8,7 @@
 # - function expansion:blocks/compressor/place/setup (1 caller) [WARN side/down 2]
 # - function expansion:blocks/enhancer/place/setup (1 caller) [WARN side/down 2]
 # - function expansion:blocks/fabricator/place/setup (1 caller) [WARN side/down 2]
-# - function expansion:blocks/lacrymae_extractor/place/setup (1 caller) [WARN side/down 2]
+# - function expansion:blocks/extractor/place/setup (1 caller) [WARN side/down 2]
 # - function expansion:blocks/launch_pad/place/setup (1 caller) [WARN side/down 2]
 # - function expansion:blocks/modification_station/place/setup (1 caller) [WARN side/down 2]
 # - function expansion:blocks/oxygenator/place/setup (1 caller) [WARN side/down 2]

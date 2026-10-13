@@ -1,9 +1,9 @@
 # >>> generated function callers >>>
-# Callers for expansion:blocks/lacrymae_extractor/extract/finish
+# Callers for expansion:blocks/extractor/extract/finish
 # Total callers: 1 from 1 source(s)
 # Folder rule (function callers): 1/1 honored
 # Sources:
-# - function expansion:blocks/lacrymae_extractor/extract/main (1 caller) [OK same-folder]
+# - function expansion:blocks/extractor/extract/main (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
 # particles

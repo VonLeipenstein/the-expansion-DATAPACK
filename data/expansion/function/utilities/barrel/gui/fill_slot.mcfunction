@@ -8,7 +8,7 @@
 # - function expansion:blocks/enhancer/gui/main (26 callers) [WARN side/down 6]
 # - function expansion:blocks/enhancer/gui/none (26 callers) [WARN side/down 6]
 # - function expansion:blocks/fabricator/gui/gui (16 callers) [WARN side/down 6]
-# - function expansion:blocks/lacrymae_extractor/gui (6 callers) [WARN side/down 5]
+# - function expansion:blocks/extractor/gui (6 callers) [WARN side/down 5]
 # - function expansion:blocks/modification_station/gui/buggy (24 callers) [WARN side/down 6]
 # - function expansion:blocks/modification_station/gui/mech (23 callers) [WARN side/down 6]
 # - function expansion:blocks/modification_station/gui/none (27 callers) [WARN side/down 6]

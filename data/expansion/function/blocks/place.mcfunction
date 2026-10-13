@@ -10,7 +10,7 @@
 # place the correct block
 execute if predicate expansion:holding/blocks/planetarium run function expansion:blocks/planetarium/place/init
 execute if predicate expansion:holding/blocks/terraformer run function expansion:blocks/terraformer/place/init
-execute if predicate expansion:holding/blocks/lacrymae_extractor run function expansion:blocks/lacrymae_extractor/place/init
+execute if predicate expansion:holding/blocks/extractor run function expansion:blocks/extractor/place/init
 execute if predicate expansion:holding/blocks/compressor run function expansion:blocks/compressor/place/init
 execute if predicate expansion:holding/blocks/enhancer run function expansion:blocks/enhancer/place/init
 execute if predicate expansion:holding/blocks/arc_furnace run function expansion:blocks/arc_furnace/place/init

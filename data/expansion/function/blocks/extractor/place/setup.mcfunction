@@ -1,9 +1,9 @@
 # >>> generated function callers >>>
-# Callers for expansion:blocks/lacrymae_extractor/place/setup
+# Callers for expansion:blocks/extractor/place/setup
 # Total callers: 1 from 1 source(s)
 # Folder rule (function callers): 1/1 honored
 # Sources:
-# - function expansion:blocks/lacrymae_extractor/place/init (1 caller) [OK same-folder]
+# - function expansion:blocks/extractor/place/init (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
 tag @s remove exp.lacrymae_extractor.new

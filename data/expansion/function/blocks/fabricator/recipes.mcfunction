@@ -3,7 +3,7 @@
 # Total callers: 1 from 1 source(s)
 # Folder rule (function callers): 0/1 honored
 # Sources:
-# - function expansion:blocks/fabricator/printing/check_recipes (1 caller) [WARN side/down 1]
+# - function expansion:blocks/fabricator/printing/checks (1 caller) [WARN side/down 1]
 # <<< generated function callers <<<
 
 loot replace entity @s container.0 loot expansion:items/gui/filler
@@ -69,7 +69,7 @@ execute if function expansion:utilities/recipe_predicates/planetarium run return
 # fabricator
 execute if function expansion:utilities/recipe_predicates/fabricator run return run loot replace entity @s container.0 loot expansion:blocks/fabricator
 # extractor
-execute if function expansion:utilities/recipe_predicates/extractor run return run loot replace entity @s container.0 loot expansion:blocks/lacrymae_extractor
+execute if function expansion:utilities/recipe_predicates/extractor run return run loot replace entity @s container.0 loot expansion:blocks/extractor
 # tesla coil
 execute if function expansion:utilities/recipe_predicates/tesla_coil run return run loot replace entity @s container.0 loot expansion:blocks/tesla_coil
 # modstation

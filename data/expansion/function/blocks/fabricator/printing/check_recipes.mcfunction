@@ -1,5 +1,5 @@
 # >>> generated function callers >>>
-# Callers for expansion:blocks/fabricator/printing/check_recipes
+# Callers for expansion:blocks/fabricator/printing/checks
 # Total callers: 2 from 2 source(s)
 # Folder rule (function callers): 1/2 honored
 # Sources:
