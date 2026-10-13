@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "exp_vehicles_rocketsegment_spacer_name",
+                "translate": "exp_vehicles_rocketsegment_control_name",
                 "italic": false
               },
               "entity": "this"
@@ -18,9 +18,8 @@
             {
               "function": "minecraft:set_components",
                   "components": {
-                    "item_model": "expansion:vehicles/tier1_rocket_spacer",
+                    "item_model": "expansion:vehicles/rocket/class2/control",
                     "custom_model_data": {
-                      "floats": [0],
                       "strings": [
                         "cockpit"
                       ]
@@ -33,7 +32,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"rocket_segment\",crafting_count:1,max_stack_size:64,expansion_coas:1b,exp_tool:1b},rocket_segment:{type:\"body\",id:\"spacer\",class:1,size:{width:1.5,height:0.625},stats:{mass:12,capacity:0,thrust:0,efficiency:0,range:0}}}"
+              "tag": "{exp_item:{name:\"rocket_segment\",crafting_count:1,max_stack_size:64,expansion_coas:1b,exp_tool:1b},rocket_segment:{type:\"body\",id:\"control\",class:2,size:{width:1.5,height:1.875},stats:{mass:8,capacity:0,thrust:0,efficiency:0,range:0}}}"
             },
             {
               "function": "minecraft:set_lore",
@@ -43,7 +42,7 @@
                   "translate": "exp_lore_tooltips"
                 },
                 {
-                  "translate": "exp_vehicles_rocketsegment_fuel_tip1"
+                  "translate": "exp_vehicles_rocketsegment_control_tip1"
                 },
                 [
                   {
@@ -51,17 +50,6 @@
                   },
                   {
                     "text": "1",
-                    "color": "gray",
-                    "bold": true,
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "exp_vehicles_rocketsegment_fuel"
-                  },
-                  {
-                    "text": "?",
                     "color": "gray",
                     "bold": true,
                     "italic": false

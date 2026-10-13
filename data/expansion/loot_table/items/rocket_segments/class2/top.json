@@ -18,7 +18,7 @@
             {
               "function": "minecraft:set_components",
                   "components": {
-                    "item_model": "expansion:vehicles/tier2_rocket_top",
+                    "item_model": "expansion:vehicles/rocket/class2/top",
                     "custom_model_data": {
                       "strings": [
                         "top"

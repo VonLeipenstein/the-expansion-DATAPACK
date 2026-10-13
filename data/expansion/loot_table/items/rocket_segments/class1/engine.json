@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
                   "components": {
-                    "item_model": "expansion:vehicles/tier1_rocket_engine",
+                    "item_model": "expansion:vehicles/rocket/class1/engine",
                     "custom_model_data": {
                       "strings": [
                         "bottom"
