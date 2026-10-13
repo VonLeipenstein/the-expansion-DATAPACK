@@ -10,6 +10,9 @@
 # run as the entity that will be mounted by this new segment
 tag @s add exp.vehicle_segment
 
+# get the desired alignment of the to-be-placed entity
+execute as @p[tag=exp.clicking_player] run function expansion:blocks/determine_rotation
+
 summon minecraft:armor_stand ~ ~ ~ \
 {\
     attributes:[{id:"minecraft:scale",base:0}],\
@@ -21,7 +24,7 @@ summon minecraft:armor_stand ~ ~ ~ \
     ],\
 }
 
-execute as @n[type=minecraft:armor_stand,tag=exp.rocket_segment.new,distance=..0.01] run function expansion:vehicles/rocket_segment/place/setup
+execute as @n[type=minecraft:armor_stand,tag=exp.rocket_segment.new,distance=..0.01] if function expansion:blocks/set_rotation at @s run function expansion:vehicles/rocket_segment/place/setup
 
 tag @s remove exp.vehicle_segment
 

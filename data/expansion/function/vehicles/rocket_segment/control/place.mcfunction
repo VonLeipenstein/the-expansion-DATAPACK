@@ -4,5 +4,7 @@ summon camel ~ ~ ~ {Tags:["exp.offset_camel","exp.offset_camel.new"],Silent:1b,N
 
 ride @n[tag=exp.offset_camel.new,distance=..0.1] mount @s
 
-execute rotated as @s on passengers if entity @s[tag=exp.offset_camel] run rotate @s 180 ~
+execute rotated as @s on passengers if entity @s[tag=exp.offset_camel] run rotate @s ~180 ~
+execute rotated as @s on passengers if entity @s[tag=exp.offset_camel] on passengers run rotate @s ~ ~
+execute rotated as @s on passengers if entity @s[tag=exp.offset_camel] on passengers on passengers run rotate @s ~ ~
 execute on passengers if entity @s[tag=exp.offset_camel] run tag @s remove exp.offset_camel.new

@@ -8,10 +8,13 @@
 
 tag @s remove exp.rocket_segment.new
 
+# set rotation
+execute on passengers run rotate @s ~ ~
+
 # Mount the interacted entity, which is the clicked rocket segment
 ride @s mount @n[type=minecraft:interaction,tag=exp.clicked_entity,distance=..10]
 
-# Copy the players held item and set the modle transformation
+# Copy the players held item and set the model transformation
 execute on passengers if entity @s[tag=exp.segment_display] run item replace entity @s contents from entity @p[tag=exp.clicking_player] weapon.mainhand expansion:utility/count_to_1
 execute on passengers if entity @s[tag=exp.segment_display] run data merge entity @s {transformation:{scale:[2,2,2],translation:[0,0.875,0]}}
 

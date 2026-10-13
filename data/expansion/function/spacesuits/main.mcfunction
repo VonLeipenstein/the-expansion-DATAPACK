@@ -25,9 +25,9 @@ execute if predicate expansion:armor/all run function expansion:spacesuits/oxyge
 execute if predicate expansion:periodic/10 unless entity @s[tag=exp.inside_spaceship] unless entity @s[tag=exp.inside_module] unless entity @s[tag=exp.inside_capsule] run function expansion:spacesuits/actionbar/main
 
 ## Other Modules
-# rocket boots module
+# Rocket Boots
 execute if items entity @s armor.feet *[custom_data~{ModStorage:[{components:{"minecraft:custom_data":{exp_item:{name:"rocket_module"}}}}]}] run function expansion:items/rocket_boots/main
 
-# magnetic_boots 
+# Magnetic Boots 
 execute if items entity @s armor.feet *[custom_data~{ModStorage:[{components:{"minecraft:custom_data":{exp_item:{name:"magnetic_module"}}}}]}] run function expansion:items/magnetic_boots/main
 execute unless items entity @s armor.feet *[custom_data~{ModStorage:[{components:{"minecraft:custom_data":{exp_item:{name:"magnetic_module"}}}}]}] run tag @s[tag=exp.ignores_gravity_effects] remove exp.ignores_gravity_effects
