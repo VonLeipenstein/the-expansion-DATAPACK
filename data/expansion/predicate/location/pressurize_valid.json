@@ -8,7 +8,7 @@
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -19,7 +19,7 @@
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -30,7 +30,7 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -41,7 +41,7 @@
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -52,7 +52,7 @@
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -63,7 +63,7 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -74,7 +74,7 @@
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -85,7 +85,7 @@
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -96,7 +96,7 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -107,7 +107,7 @@
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -118,7 +118,7 @@
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -129,7 +129,7 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -140,7 +140,7 @@
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -151,7 +151,7 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -162,7 +162,7 @@
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -173,7 +173,7 @@
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -184,7 +184,7 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -195,7 +195,7 @@
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -206,7 +206,7 @@
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -217,7 +217,7 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -228,7 +228,7 @@
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -239,7 +239,7 @@
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -250,7 +250,7 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -261,7 +261,7 @@
       "offsetZ": 1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -272,7 +272,7 @@
       "offsetZ": 0,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -283,7 +283,7 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     },
@@ -294,7 +294,7 @@
       "offsetZ": -1,
       "predicate": {
         "block": {
-          "tag": "expansion:airtight"
+          "blocks": "expansion:airtight"
         }
       }
     }

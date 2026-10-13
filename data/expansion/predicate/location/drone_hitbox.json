@@ -8,7 +8,7 @@
         "offsetZ": 1,
         "predicate": {
           "block": {
-            "tag": "expansion:airtight"
+            "blocks": "expansion:airtight"
           }
         }
       }
