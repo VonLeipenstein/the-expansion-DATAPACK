@@ -7,7 +7,7 @@
 # - function expansion:blocks/enhancer/upgrade/apply/effects/oxygen_percent (1 caller) [WARN side/down 6]
 # - function expansion:blocks/enhancer/upgrade/remove/oxygen_tank (1 caller) [WARN side/down 5]
 # - function expansion:blocks/extractor/extract/finish (1 caller) [WARN side/down 4]
-# - function expansion:blocks/modification_station/upgrade/buggy/remove_mods/oxygen_tank (1 caller) [WARN side/down 6]
+# - function expansion:blocks/modstation/upgrade/buggy/remove_mods/oxygen_tank (1 caller) [WARN side/down 6]
 # - function expansion:items/fuel_cell/craft_mk2 (1 caller) [WARN side/down 3]
 # - function expansion:items/oxygen_tank/copy_to_chestplate (1 caller) [WARN side/down 3]
 # - function expansion:items/oxygen_tank/copy_to_tank (1 caller) [WARN side/down 3]

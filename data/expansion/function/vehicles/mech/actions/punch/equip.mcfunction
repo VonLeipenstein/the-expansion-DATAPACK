@@ -3,8 +3,8 @@
 # Total callers: 3 from 3 source(s)
 # Folder rule (function callers): 0/3 honored
 # Sources:
-# - function expansion:blocks/modification_station/upgrade/mech/remove_mods/lefthand (1 caller) [WARN side/down 9]
-# - function expansion:blocks/modification_station/upgrade/mech/remove_mods/righthand (1 caller) [WARN side/down 9]
+# - function expansion:blocks/modstation/upgrade/mech/remove_mods/lefthand (1 caller) [WARN side/down 9]
+# - function expansion:blocks/modstation/upgrade/mech/remove_mods/righthand (1 caller) [WARN side/down 9]
 # - function expansion:vehicles/mech/summon/equip_modules (1 caller) [WARN side/down 3]
 # <<< generated function callers <<<
 

@@ -20,7 +20,7 @@ execute if entity @s[tag=exp.player_nearby] if block ~ ~ ~ minecraft:barrel run 
 
 ## blocks that need to be loaded regardless of nearest player distance
 execute if entity @s[tag=exp.terraformer] run return run function expansion:blocks/terraformer/main
-execute if entity @s[tag=exp.modstation] run return run function expansion:blocks/modification_station/main
+execute if entity @s[tag=exp.modstation] run return run function expansion:blocks/modstation/main
 execute if entity @s[tag=exp.drone_home] run return run function expansion:mobs/evil_drone/drone_home/main
 execute if entity @s[tag=exp.launch_pad] run return run function expansion:blocks/launch_pad/main
 

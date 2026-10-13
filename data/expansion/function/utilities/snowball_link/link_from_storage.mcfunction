@@ -4,11 +4,11 @@
 # Folder rule (function callers): 1/17 honored
 # Sources:
 # - function expansion:blocks/launch_pad/place/setup_buttons (4 callers) [WARN side/down 5]
-# - function expansion:blocks/modification_station/mod_robots/link_to_vehicle (1 caller) [WARN side/down 5]
-# - function expansion:blocks/modification_station/place/link_bots (1 caller) [WARN side/down 5]
-# - function expansion:blocks/modification_station/place/link_origin (1 caller) [WARN side/down 5]
-# - function expansion:blocks/modification_station/select_vehicle/select (1 caller) [WARN side/down 5]
-# - function expansion:blocks/modification_station/upgrade/finish (1 caller) [WARN side/down 5]
+# - function expansion:blocks/modstation/mod_robots/link_to_vehicle (1 caller) [WARN side/down 5]
+# - function expansion:blocks/modstation/place/link_bots (1 caller) [WARN side/down 5]
+# - function expansion:blocks/modstation/place/link_origin (1 caller) [WARN side/down 5]
+# - function expansion:blocks/modstation/select_vehicle/select (1 caller) [WARN side/down 5]
+# - function expansion:blocks/modstation/upgrade/finish (1 caller) [WARN side/down 5]
 # - function expansion:blocks/oxygenator/oxygenate/create_origin_link (1 caller) [WARN side/down 5]
 # - function expansion:blocks/oxygenator/oxygenate/fill_space/link_marker (1 caller) [WARN side/down 6]
 # - function expansion:blocks/oxygenator/oxygenate/oxygen_link/finish (1 caller) [WARN side/down 6]

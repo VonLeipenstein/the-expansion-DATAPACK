@@ -19,7 +19,7 @@ execute if predicate expansion:holding/blocks/oxygenator run function expansion:
 execute if predicate expansion:holding/blocks/portal run function expansion:blocks/portal/place/init
 execute if predicate expansion:holding/blocks/assembler run function expansion:blocks/assembler/place/init
 execute if predicate expansion:holding/blocks/tesla_coil run function expansion:blocks/tesla_coil/place/init
-execute if predicate expansion:holding/blocks/modstation run function expansion:blocks/modification_station/place/init
+execute if predicate expansion:holding/blocks/modstation run function expansion:blocks/modstation/place/init
 execute if predicate expansion:holding/items/pocket_space run function expansion:blocks/transporter/place/init
 execute if predicate expansion:holding/blocks/launch_pad run function expansion:blocks/launch_pad/place/init
 execute if predicate expansion:holding/blocks/launch_control run function expansion:blocks/launch_control/place/init

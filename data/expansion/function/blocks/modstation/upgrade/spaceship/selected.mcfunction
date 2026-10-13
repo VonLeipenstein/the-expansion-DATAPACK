@@ -1,0 +1,12 @@
+# >>> generated function callers >>>
+# Callers for expansion:blocks/modstation/upgrade/spaceship/selected
+# Total callers: 2 from 2 source(s)
+# Folder rule (function callers): 1/2 honored
+# Sources:
+# - function expansion:blocks/modstation/gui/main (1 caller) [WARN side/down 3]
+# - function expansion:blocks/modstation/upgrade/init (1 caller) [OK above +1]
+# <<< generated function callers <<<
+
+execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin if entity @s[tag=exp.spaceship] run return 1
+
+return fail

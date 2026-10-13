@@ -3,8 +3,8 @@
 # Total callers: 3 from 3 source(s)
 # Folder rule (function callers): 1/3 honored
 # Sources:
-# - function expansion:blocks/modification_station/upgrade/spaceship/apply_mods/apply_upgrade (1 caller) [WARN side/down 8]
-# - function expansion:blocks/modification_station/upgrade/spaceship/remove_mods/initiate (1 caller) [WARN side/down 8]
+# - function expansion:blocks/modstation/upgrade/spaceship/apply_mods/apply_upgrade (1 caller) [WARN side/down 8]
+# - function expansion:blocks/modstation/upgrade/spaceship/remove_mods/initiate (1 caller) [WARN side/down 8]
 # - function expansion:vehicles/spaceship/summon/setup (1 caller) [OK same-folder]
 # <<< generated function callers <<<
 
