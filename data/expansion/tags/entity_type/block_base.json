@@ -2,6 +2,7 @@
 	"replace": false,
 	"values": [
 		"minecraft:marker",
-		"minecraft:item_display"
+		"minecraft:item_display",
+		"minecraft:block_display"
 	]
 }

@@ -1,0 +1,9 @@
+{
+    "values": [
+        "minecraft:purpur_slab",
+        "minecraft:mossy_cobblestone_slab",
+        "minecraft:deepslate_tile_slab",
+        "minecraft:waxed_exposed_cut_copper_slab"
+    ],
+    "replace": false
+}

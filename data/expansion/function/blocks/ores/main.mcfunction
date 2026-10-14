@@ -1,0 +1,1 @@
+execute unless block ~ ~ ~ minecraft:spawner run function expansion:blocks/ores/destroy

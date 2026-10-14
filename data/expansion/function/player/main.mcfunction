@@ -26,6 +26,9 @@ scoreboard players operation #search exp.unique_id = @s exp.unique_id
 ## Rightclick
 execute if score @s exp.rightclick matches 1.. if predicate expansion:holding/expansion_coas run function expansion:player/rightclick/main
 
+## Block replace raycast
+execute if predicate expansion:periodic/2 run function expansion:player/replace_raycast/hit_custom_block
+
 ## Gravity
 execute if predicate expansion:periodic/5 run function expansion:mechanics/gravity/main
 execute if score @s exp.gravity_id = #zero exp.gravity_id run function expansion:mechanics/gravity/zero/main

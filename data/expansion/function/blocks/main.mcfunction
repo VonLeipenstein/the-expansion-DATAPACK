@@ -38,3 +38,6 @@ execute if entity @s[tag=exp.assembler] run return run function expansion:blocks
 execute if entity @s[tag=exp.portal] run return run function expansion:blocks/portal/main
 execute if entity @s[tag=exp.infuser] run return run function expansion:blocks/infuser/main
 execute if entity @s[tag=exp.voltameter] run return run function expansion:blocks/voltameter/main
+
+## Blocks that only run when a player is nearby
+execute if entity @s[tag=exp.ore] at @s run return run function expansion:blocks/ores/main
