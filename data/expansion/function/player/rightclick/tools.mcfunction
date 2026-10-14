@@ -34,11 +34,8 @@ execute if predicate expansion:holding/items/blaster run return run function exp
 execute if predicate expansion:holding/items/cataclysm_cannon run return run function expansion:items/cataclysm_cannon/use
 # Rocket launcher
 execute if predicate expansion:holding/items/rocket_launcher run return run function expansion:items/rocket_launcher/use
-# Rocket parts
-execute if predicate expansion:holding/blocks/rocket_part run return run function expansion:utilities/error_messages/try_place_rocket_part
 # Cargo Rocket Remote
 execute if predicate expansion:holding/items/cargo_rocket_remote run return run function expansion:items/cargo_rocket_remote/use
 
 # Rocket segments
 execute if predicate expansion:holding/items/rocket_segment/any run return run function expansion:utilities/error_messages/try_place_rocket_part
-
