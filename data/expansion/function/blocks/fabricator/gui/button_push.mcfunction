@@ -6,6 +6,6 @@
 # - function expansion:blocks/fabricator/crafting (1 caller) [OK above +1]
 # <<< generated function callers <<<
 
-function expansion:blocks/fabricator/printing/checks
+function expansion:blocks/fabricator/printing/check_recipes
 
 function expansion:utilities/sounds/button

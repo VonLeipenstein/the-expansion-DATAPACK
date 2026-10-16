@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "exp_vehicles_rocketsegment_fuel_name",
+                "translate": "exp_items_rocketsegment_fuel",
                 "italic": false
               },
               "entity": "this"

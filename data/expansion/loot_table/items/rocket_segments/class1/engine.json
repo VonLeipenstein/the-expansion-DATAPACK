@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "name":[
                 {
-                  "translate": "exp_vehicles_rocketsegment_engine_name",
+                  "translate": "exp_items_rocketsegment_engine",
                   "italic": false
                 },
                 {

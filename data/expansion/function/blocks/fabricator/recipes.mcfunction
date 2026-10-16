@@ -50,6 +50,12 @@ execute if function expansion:utilities/recipe_predicates/electromotor run retur
 execute if function expansion:utilities/recipe_predicates/robot_arm run return run loot replace entity @s container.0 loot expansion:items/robot_arm
 # monochrome monitor
 execute if function expansion:utilities/recipe_predicates/monochrome_monitor run return run loot replace entity @s container.0 loot expansion:items/monochrome_monitor
+# steel canister
+execute if function expansion:utilities/recipe_predicates/steel_canister run return run loot replace entity @s container.0 loot expansion:items/steel_canister
+# titanium canister
+execute if function expansion:utilities/recipe_predicates/titanium_canister run return run loot replace entity @s container.0 loot expansion:items/titanium_canister
+# nebulanium canister
+execute if function expansion:utilities/recipe_predicates/nebulanium_canister run return run loot replace entity @s container.0 loot expansion:items/nebulanium_canister
 
 ## BLOCKS
 # assembler
@@ -74,28 +80,32 @@ execute if function expansion:utilities/recipe_predicates/extractor run return r
 execute if function expansion:utilities/recipe_predicates/tesla_coil run return run loot replace entity @s container.0 loot expansion:blocks/tesla_coil
 # modstation
 execute if function expansion:utilities/recipe_predicates/modstation run return run loot replace entity @s container.0 loot expansion:blocks/modstation
-# rocket pad
+# launch pad
 execute if function expansion:utilities/recipe_predicates/launch_pad run return run loot replace entity @s container.0 loot expansion:blocks/launch_pad
-# rocket pad
+# launch  control
 execute if function expansion:utilities/recipe_predicates/launch_control run return run loot replace entity @s container.0 loot expansion:blocks/launch_control
 
 ## VEHICLES
-# rocket top
-execute if function expansion:utilities/recipe_predicates/rocket_top run return run loot replace entity @s container.0 loot expansion:items/rocket_top
-# rocket cockpit
-execute if function expansion:utilities/recipe_predicates/rocket_cockpit run return run loot replace entity @s container.0 loot expansion:items/rocket_cockpit
-# rocket bottom
-execute if function expansion:utilities/recipe_predicates/rocket_bottom run return run loot replace entity @s container.0 loot expansion:items/rocket_bottom
-
-# spaceship left wing
+# class 1 rocket parts
+execute if function expansion:utilities/recipe_predicates/class1_engine run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class1/engine
+execute if function expansion:utilities/recipe_predicates/class1_fuel run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class1/fuel
+execute if function expansion:utilities/recipe_predicates/class1_control run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class1/control
+execute if function expansion:utilities/recipe_predicates/class1_top run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class1/top
+execute if function expansion:utilities/recipe_predicates/class1_thruster run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class1/thruster
+execute if function expansion:utilities/recipe_predicates/class1_spacer run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class1/spacer
+execute if function expansion:utilities/recipe_predicates/class1_cargo run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class1/cargo
+# class 2 rocket parts
+execute if function expansion:utilities/recipe_predicates/class2_engine run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class2/engine
+execute if function expansion:utilities/recipe_predicates/class2_fuel run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class2/fuel
+execute if function expansion:utilities/recipe_predicates/class2_control run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class2/control
+execute if function expansion:utilities/recipe_predicates/class2_top run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class2/top
+execute if function expansion:utilities/recipe_predicates/class2_thruster run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class2/thruster
+execute if function expansion:utilities/recipe_predicates/class2_spacer run return run loot replace entity @s container.0 loot expansion:items/rocket_segments/class2/spacer
+# spaceship parts
 execute if function expansion:utilities/recipe_predicates/spaceship_left_wing run return run loot replace entity @s container.0 loot expansion:items/spaceship_left_wing
-# spaceship right wing
 execute if function expansion:utilities/recipe_predicates/spaceship_right_wing run return run loot replace entity @s container.0 loot expansion:items/spaceship_right_wing
-# spaceship cockpit
 execute if function expansion:utilities/recipe_predicates/spaceship_cockpit run return run loot replace entity @s container.0 loot expansion:items/spaceship_cockpit
-# spaceship engines
 execute if function expansion:utilities/recipe_predicates/spaceship_engines run return run function expansion:items/fuel_cell/craft_spaceship_engines
-# spaceship nose
 execute if function expansion:utilities/recipe_predicates/spaceship_nose run return run loot replace entity @s container.0 loot expansion:items/spaceship_nose
 
 ## MODULES
@@ -123,10 +133,12 @@ execute if function expansion:utilities/recipe_predicates/magnetic_mod run retur
 ## TOOLS
 # oxygen tank
 execute if function expansion:utilities/recipe_predicates/oxygen_tank_mk1 run return run loot replace entity @s container.0 loot expansion:tools/oxygen_tanks/tier1/empty
-execute if function expansion:utilities/recipe_predicates/oxygen_tank_mk2 run return run function expansion:items/oxygen_tank/copy_to_tank
+execute if function expansion:utilities/recipe_predicates/oxygen_tank_mk2 run return run loot replace entity @s container.0 loot expansion:tools/oxygen_tanks/tier2/empty
+execute if function expansion:utilities/recipe_predicates/oxygen_tank_mk3 run return run loot replace entity @s container.0 loot expansion:tools/oxygen_tanks/tier3/empty
 # fuel cell
 execute if function expansion:utilities/recipe_predicates/fuel_cell_mk1 run return run loot replace entity @s container.0 loot expansion:tools/fuel_cell/tier1/empty
-execute if function expansion:utilities/recipe_predicates/fuel_cell_mk2 run return run function expansion:items/fuel_cell/craft_mk2
+execute if function expansion:utilities/recipe_predicates/fuel_cell_mk2 run return run loot replace entity @s container.0 loot expansion:tools/fuel_cell/tier2/empty
+execute if function expansion:utilities/recipe_predicates/fuel_cell_mk3 run return run loot replace entity @s container.0 loot expansion:tools/fuel_cell/tier3/empty
 # repair kit
 execute if function expansion:utilities/recipe_predicates/repair_kit run return run loot replace entity @s container.0 loot expansion:tools/repair_kit
 # thermometer

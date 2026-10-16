@@ -472,6 +472,47 @@
                       "font": "expansion:items",
                       "with": [
                         {
+                          "text": "\uff53",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_steelcanister_name"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:recipes",
+                                "with": [
+                                  {
+                                    "text": "\uff5d"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:blocks",
+                                "with": [
+                                  {
+                                    "text": "\uff01\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:items",
+                      "with": [
+                        {
                           "text": "\uff03",
                           "hover_event": {
                             "action": "show_text",
@@ -922,6 +963,47 @@
                       "font": "expansion:items",
                       "with": [
                         {
+                          "text": "\uff54",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_titaniumcanister_name"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:recipes",
+                                "with": [
+                                  {
+                                    "text": "\uff5e"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:blocks",
+                                "with": [
+                                  {
+                                    "text": "\uff01\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:items",
+                      "with": [
+                        {
                           "text": "\uff10",
                           "hover_event": {
                             "action": "show_text",
@@ -1004,12 +1086,12 @@
                       "font": "expansion:items",
                       "with": [
                         {
-                          "text": "\uff24",
+                          "text": "\uff0b",
                           "hover_event": {
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_monochromemonitor_name"
+                                "translate": "exp_items_elektromotor_name"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -1017,12 +1099,9 @@
                                 "font": "expansion:recipes",
                                 "with": [
                                   {
-                                    "text": "\uff31"
+                                    "text": "\uff09"
                                   }
                                 ]
-                              },
-                              {
-                                "translate": "exp_guide1_tintedglasstip"
                               },
                               {
                                 "translate": "exp_guide_craftedin"
@@ -1051,12 +1130,12 @@
                       "font": "expansion:items",
                       "with": [
                         {
-                          "text": "\uff0b",
+                          "text": "\uff24",
                           "hover_event": {
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_elektromotor_name"
+                                "translate": "exp_items_monochromemonitor_name"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -1064,9 +1143,12 @@
                                 "font": "expansion:recipes",
                                 "with": [
                                   {
-                                    "text": "\uff09"
+                                    "text": "\uff31"
                                   }
                                 ]
+                              },
+                              {
+                                "translate": "exp_guide1_tintedglasstip"
                               },
                               {
                                 "translate": "exp_guide_craftedin"
@@ -1332,6 +1414,47 @@
                       ]
                     },
                     {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:items",
+                      "with": [
+                        {
+                          "text": "\uff55",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_nebulaniumcanister_name"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:recipes",
+                                "with": [
+                                  {
+                                    "text": "\uff5f"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:blocks",
+                                "with": [
+                                  {
+                                    "text": "\uff01\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
                       "text": "\n\n"
                     }
                   ]
@@ -1417,19 +1540,6 @@
                               {
                                 "translate": "exp_guide_item_hover",
                                 "color": "white",
-                                "font": "expansion:pictures",
-                                "with": [
-                                  {
-                                    "text": "\uff06"
-                                  }
-                                ]
-                              },
-                              {
-                                "translate": "exp_guide1_fabricator_craft"
-                              },
-                              {
-                                "translate": "exp_guide_item_hover",
-                                "color": "white",
                                 "font": "expansion:recipes",
                                 "with": [
                                   {
@@ -1447,6 +1557,32 @@
                                 "with": [
                                   {
                                     "text": "\uff01\n"
+                                  }
+                                ]
+                              },
+                              {
+                                "text": "\n"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:recipes",
+                                "with": [
+                                  {
+                                    "text": "\uff54"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:blocks",
+                                "with": [
+                                  {
+                                    "text": "\uff0a\n"
                                   }
                                 ]
                               }
@@ -1889,10 +2025,10 @@
                               {
                                 "translate": "exp_guide_item_hover",
                                 "color": "white",
-                                "font": "expansion:items",
+                                "font": "expansion:recipes",
                                 "with": [
                                   {
-                                    "text": "\uff01"
+                                    "text": "\uff1b"
                                   }
                                 ]
                               },
@@ -2001,10 +2137,10 @@
                                 "translate": "exp_tools_oxygentank_name"
                               },
                               {
-                                "translate": "exp_modules_mk2"
+                                "translate": "exp_modules_mk3"
                               },
                               {
-                                "translate": "exp_guide1_oxygentankmk2_lore"
+                                "translate": "exp_guide1_oxygentankmk3_lore"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -2012,7 +2148,7 @@
                                 "font": "expansion:recipes",
                                 "with": [
                                   {
-                                    "text": "\uff37"
+                                    "text": "\uff4a"
                                   }
                                 ]
                               },
@@ -2067,7 +2203,13 @@
                                 "translate": "exp_modules_mk1"
                               },
                               {
-                                "translate": "exp_guide1_fuelcell_lore"
+                                "translate": "exp_tools_fuelcell_guidetip"
+                              },
+                              {
+                                "translate": "exp_tools_fuelcell_capacity"
+                              },
+                              {
+                                "translate": "exp_tools_fuelcell_capacity_mk1"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -2114,10 +2256,13 @@
                                 "translate": "exp_modules_mk2"
                               },
                               {
-                                "translate": "exp_guide1_fuelcell_lore"
+                                "translate": "exp_tools_fuelcell_guidetip"
                               },
                               {
-                                "translate": "exp_guide1_fuelcellmk2_lore"
+                                "translate": "exp_tools_fuelcell_capacity"
+                              },
+                              {
+                                "translate": "exp_tools_fuelcell_capacity_mk2"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -2153,7 +2298,7 @@
                       "font": "expansion:items",
                       "with": [
                         {
-                          "text": "\uff3b",
+                          "text": "\uff52",
                           "hover_event": {
                             "action": "show_text",
                             "value": [
@@ -2164,10 +2309,13 @@
                                 "translate": "exp_modules_mk3"
                               },
                               {
-                                "translate": "exp_guide1_fuelcell_lore"
+                                "translate": "exp_tools_fuelcell_guidetip"
                               },
                               {
-                                "translate": "exp_guide1_fuelcellmk3_lore"
+                                "translate": "exp_tools_fuelcell_capacity"
+                              },
+                              {
+                                "translate": "exp_tools_fuelcell_capacity_mk3"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -2175,7 +2323,7 @@
                                 "font": "expansion:recipes",
                                 "with": [
                                   {
-                                    "text": "\uff45"
+                                    "text": "\uff46"
                                   }
                                 ]
                               },
@@ -3700,7 +3848,19 @@
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_rocketengine_name"
+                                "translate": "exp_items_rocketsegment_engine"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_thrust"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_range"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -3741,7 +3901,16 @@
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_rocketfuel_name"
+                                "translate": "exp_items_rocketsegment_fuel"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_fuel"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -3782,7 +3951,13 @@
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_rocketcontrol_name"
+                                "translate": "exp_items_rocketsegment_control"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -3818,12 +3993,18 @@
                       "font": "expansion:items",
                       "with": [
                         {
-                          "text": "\uff43",
+                          "text": "\uff42",
                           "hover_event": {
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_rockettop_name"
+                                "translate": "exp_items_rocketsegment_top"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -3859,12 +4040,24 @@
                       "font": "expansion:items",
                       "with": [
                         {
-                          "text": "\uff42",
+                          "text": "\uff49",
                           "hover_event": {
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_rockettop_name"
+                                "translate": "exp_items_rocketsegment_thruster"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_thrust"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_range"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -3895,19 +4088,129 @@
                       ]
                     },
                     {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:items",
+                      "with": [
+                        {
+                          "text": "\uff4a",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_rocketsegment_spacer"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:recipes",
+                                "with": [
+                                  {
+                                    "text": "\uff5b"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:blocks",
+                                "with": [
+                                  {
+                                    "text": "\uff01\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "text": "\n\n"
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:items",
+                      "with": [
+                        {
+                          "text": "\uff43",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_rocketsegment_cargo"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:recipes",
+                                "with": [
+                                  {
+                                    "text": "\uff5c"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:blocks",
+                                "with": [
+                                  {
+                                    "text": "\uff01\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
                       "translate": "exp_guide1_rocketparts_mk2"
                     },
                     {
                       "translate": "exp_guide_item_display",
                       "color": "white",
+                      "font": "expansion:items",
                       "with": [
                         {
-                          "text": "\uff43  ",
+                          "text": "\uff4c",
                           "hover_event": {
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_rockettop_name"
+                                "translate": "exp_items_rocketsegment_engine"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_thrust"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_range"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -3915,7 +4218,7 @@
                                 "font": "expansion:recipes",
                                 "with": [
                                   {
-                                    "text": "\uff24"
+                                    "text": "\uff55"
                                   }
                                 ]
                               },
@@ -3940,14 +4243,24 @@
                     {
                       "translate": "exp_guide_item_display",
                       "color": "white",
+                      "font": "expansion:items",
                       "with": [
                         {
-                          "text": "\uff42  ",
+                          "text": "\uff4d",
                           "hover_event": {
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_rocketcockpit_name"
+                                "translate": "exp_items_rocketsegment_fuel"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_fuel"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -3955,7 +4268,7 @@
                                 "font": "expansion:recipes",
                                 "with": [
                                   {
-                                    "text": "\uff23"
+                                    "text": "\uff56"
                                   }
                                 ]
                               },
@@ -3980,14 +4293,21 @@
                     {
                       "translate": "exp_guide_item_display",
                       "color": "white",
+                      "font": "expansion:items",
                       "with": [
                         {
-                          "text": "\uff41  ",
+                          "text": "\uff4e",
                           "hover_event": {
                             "action": "show_text",
                             "value": [
                               {
-                                "translate": "exp_items_rocketbottom_name"
+                                "translate": "exp_items_rocketsegment_control"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
                               },
                               {
                                 "translate": "exp_guide_item_hover",
@@ -3995,7 +4315,154 @@
                                 "font": "expansion:recipes",
                                 "with": [
                                   {
-                                    "text": "\uff22"
+                                    "text": "\uff57"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:blocks",
+                                "with": [
+                                  {
+                                    "text": "\uff01\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:items",
+                      "with": [
+                        {
+                          "text": "\uff4f",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_rocketsegment_top"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:recipes",
+                                "with": [
+                                  {
+                                    "text": "\uff58"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:blocks",
+                                "with": [
+                                  {
+                                    "text": "\uff01\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:items",
+                      "with": [
+                        {
+                          "text": "\uff50",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_rocketsegment_thruster"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_thrust"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_range"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:recipes",
+                                "with": [
+                                  {
+                                    "text": "\uff59"
+                                  }
+                                ]
+                              },
+                              {
+                                "translate": "exp_guide_craftedin"
+                              },
+                              {
+                                "translate": "exp_guide_item_display",
+                                "color": "white",
+                                "font": "expansion:blocks",
+                                "with": [
+                                  {
+                                    "text": "\uff01\n"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate": "exp_guide_item_display",
+                      "color": "white",
+                      "font": "expansion:items",
+                      "with": [
+                        {
+                          "text": "\uff51",
+                          "hover_event": {
+                            "action": "show_text",
+                            "value": [
+                              {
+                                "translate": "exp_items_rocketsegment_spacer"
+                              },
+                              {
+                                "translate": "exp_items_rocketsegment_stats"
+                              },
+                              {
+                                "translate": "exp_vehicles_rocketstat_weight"
+                              },
+                              {
+                                "translate": "exp_guide_item_hover",
+                                "color": "white",
+                                "font": "expansion:recipes",
+                                "with": [
+                                  {
+                                    "text": "\uff5a"
                                   }
                                 ]
                               },

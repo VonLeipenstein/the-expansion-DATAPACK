@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "exp_vehicles_rocketsegment_storage_name",
+                "translate": "exp_items_rocketsegment_cargo",
                 "italic": false
               },
               "entity": "this"

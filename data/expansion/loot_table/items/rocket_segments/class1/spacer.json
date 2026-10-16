@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "exp_vehicles_rocketsegment_spacer_name",
+                "translate": "exp_items_rocketsegment_spacer",
                 "italic": false
               },
               "entity": "this"

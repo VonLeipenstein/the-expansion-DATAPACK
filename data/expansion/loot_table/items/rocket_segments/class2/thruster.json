@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "translate": "exp_vehicles_rocketsegment_thruster_name",
+                "translate": "exp_items_rocketsegment_thruster",
                 "italic": false
               },
               "entity": "this"
